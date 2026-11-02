@@ -3,6 +3,13 @@ name: gpt-themen
 description: Findet und framt Reel-Themen mit der höchsten Ausreißer-Chance für den Instagram-Account florent gpt (KI für jeden im Alltag, ChatGPT zuerst). Arbeitet nach Kräften statt Themenlisten. Eine Privatperson bekommt gerade weniger, als möglich wäre (Geld, einen besseren Platz, eine Chance, Wissen über sich), oder verliert etwas an ein System, und ChatGPT holt es ihr in 2 Minuten. Oder sie bekommt eine Liste, die sie sofort testet und speichert. Schreibt pro Thema mehrere Winkel, nimmt den stärksten, schreibt klare, überraschende Hooks nach einer festen Methode, prüft Abstände gegen das Log und liefert Themen-Karten bzw. den Wochenplan für bis zu 3 Reels am Tag. Nutze diesen Skill immer, wenn Niklas nach Themen, Topics, Ideen oder Bangern für florent gpt fragt, „was posten wir auf gpt“, „Wochenplan gpt“, „ist das ein gutes Thema für gpt“, „wie framen wir das“, „warum lief das Reel auf gpt (nicht)“, oder wenn Ergebnisse von gpt-Reels ins Log sollen. Nicht für florent_preusser, nicht fürs ausgeschriebene Skript (video-script), nicht für Satire (gruender-satire).
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # gpt-themen
 
 **Zuerst lesen:** `~/.claude/content-kern/banger-kern.md`. Dort stehen die Kräfte, die zwei Wege zum Ja, die Framing-Regeln, die K.-o.-Kriterien, Mix und Abstände sowie die Lern-Regel.

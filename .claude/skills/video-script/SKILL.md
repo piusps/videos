@@ -3,6 +3,13 @@ name: video-script
 description: Phase 1 of the Superkind reel pipeline — turns a topic into the spoken HeyGen script. Resolves the strategic core (core message, takeaway, cost of status quo, viewer action), picks Template A or B, applies the retention architecture (first-3-seconds hook, promised step count, felt payoff, re-hooks), writes the 110-140-word German script in HeyGen-safe spelling, picks the trigger word, and runs the mandatory script gate + scroller simulation. Writes brief.md and script.txt to broll/runs/<topic>/. Use for "schreib mir ein Skript zu X", "neues Skript", "Hook verbessern", "Skript kürzen", or as step 1 of heygen-video-generator. Also the home of the hook/creator research and the performance log in references/. Only for @florent_preusser normal videos (FP-N); @florentgpt hype scripts come from gpt-hype-script, satire scripts from ki-satire-skript / gpt-satire.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # Video Script — Phase 1
 
 **Input:** a topic keyword (plus any context the user gives).

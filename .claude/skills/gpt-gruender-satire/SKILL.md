@@ -3,6 +3,13 @@ name: gpt-gruender-satire
 description: Gründer-Satire NUR für @florentgpt (GPT-S) - Standard-Quelle für Idee und Sprechtext jedes Satire-Videos auf dem GPT-Account (Schritt 1 von gpt-satire-reel). Schreibt kurze, nonchalant-witzige Reel-Skripte, gelernt von help.hannaa, aber als eigene Figur - der Gründer, der die KI baut, die gerade den Alltag aller umkrempelt, und dem Chaos kalt und gierig zuschaut. Themen privat und beruflich gemischt (Freunde, Dating, Geld, Freizeit, Büro, Firma führt KI ein), echte Beobachtung für 22 bis 35, bewertet aus falscher Täter-Haltung, oft mit fachlich korrektem Mechanismus aus Ökonomie oder Psychologie. Nutze diesen Skill bei "Satire für Florent GPT", "Satire-Video für den GPT-Account", "Gründer-Satire", "Hanna-Style für florentgpt", "nonchalant", "mit Edge", "zum Weiterschicken" wenn @florentgpt gemeint ist. NIE für @florent_preusser (dort bleiben ki-satire / ki-satire-skript / fp-satire-reel unverändert). Die atzige Variante nur auf ausdrücklichen Wunsch über gpt-satire.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # Gründer-Satire · nur @florentgpt (GPT-S)
 
 > **Gegenmittel (seit 2026-10-27):** An diesem Skill ändert sich 0,0: gleiche Themen, gleicher Aufbau, Effekt/Mechanismus wird weiter genannt. Erst wenn das Skript steht, ordnet `gpt-satire-reel` einen passenden Guide zu und hängt nach der Pointe ein Outro an (höchstens 18 Wörter, `~/.claude/skills/gpt-satire-reel/references/nutzen-bruecke.md`). Kein Thema wegen eines Guides wählen, verwerfen oder umbauen.

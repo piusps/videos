@@ -3,6 +3,13 @@ name: firma-autor
 description: Autor für die Serie "Superkind baut eine Firma" (@pickthecompany) - macht aus der Musterbibliothek von firma-spy und der Serien-Bibel das Thema der nächsten Folge, schreibt Hook-Kandidaten, das gesprochene Skript (30–35 s), die Kommentar-Mechanik mit echtem Nutzen (Prompt/Setup für den Beruf des Kommentierenden) und die Caption, und prüft jede Tool-Behauptung gegen aktuelle Quellen. Nutze den Skill bei "Thema für Tag N", "Skript für die Firma-Serie", "Hooks für pickthecompany", "schreib die nächste Folge", oder als Schritt 1 von firma-chef. Baut kein Video (das machen firma-regie und firma-design).
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # firma-autor
 
 Eine Folge verkauft dem Zuschauer **eine Sache, die er heute in seinem eigenen Business mit Claude baut**. Die Firmen-Geschichte („KI baut ein Unternehmen von Null“) ist der rote Faden drumherum, nicht der Inhalt. Wer nur die eine Folge sieht, muss verstehen, worum es geht, und etwas mitnehmen.

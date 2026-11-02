@@ -3,6 +3,13 @@ name: ersetzt-radar
 description: Findet und scort Themen für Niklas' Reel-Format "Claude hat X ersetzt" für Unternehmer und Mittelstand (X = Pflicht-Experte, den jeder Unternehmer bezahlt, z. B. Steuerberater, Buchhalter, Anwalt, Lohnbüro, Datenschutzbeauftragter), legt sie in einer Excel ab, schreibt freigegebene Themen als Briefing mit Hook ins gemeinsame Content-Backlog (für ki-satire-skript) und gleicht die echte Reel-Performance von @florent_preusser gegen den Score ab. Nutze diesen Skill immer, wenn Niklas nach "was soll Claude als Nächstes ersetzen", "ersetzt-Themen", "Radar", "welche Themen ziehen", "Themen scoren", "Performance der Reels abgleichen", "warum lief X (nicht)", "wie performen die Reels" fragt, oder wenn eine geplante Radar-/Performance-Ausführung läuft. Für Think-in-Public-Thesen ist ai-takes zuständig, für Satire ki-satire, fürs Ausschreiben des Skripts ki-satire-skript. Nur für @florent_preusser.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # Ersetzt-Radar
 
 ## Die eine Regel

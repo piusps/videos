@@ -3,6 +3,13 @@ name: gpt-effekt-satire
 description: Effekt-Satire NUR für @florentgpt (GPT-S) - kurze Reels, die einen Business-, Gründer- oder Ökonomie-Effekt (Ratchet Effect, El Farol Bar Problem …) mit genau EINER kleinen Dating-Story zum Schmunzeln erklären (Max kocht beim ersten Date drei Gänge, jetzt erwartet Lea das jeden Freitag), dann den Effekt beim Namen nennen, dann das echte Beispiel aus Büro/Startup/KI-Alltag zeigen und am Ende die Story schließen. Sorgt dafür, dass HeyGen den Effekt-Namen richtig ausspricht (Sprachprobe + Whisper-Gegencheck, sonst deutscher Name), und gibt den Schnitt im "Fünf Tische"-Stil vor (Foto-Sticker der Figuren Max, Lea …, Serifentitel mit Effekt-Namen, Karten, rote Kreise). Nutze diesen Skill bei "Effekt-Video", "Effekt-Satire", "erklär einen Effekt mit Dating-Story", "so wie Nudeln mit Pesto / Kletterhalle", "Learning-Satire für florentgpt". Übergabe an gpt-satire-reel für Render und Schnitt. Nicht für @florent_preusser.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # Effekt-Satire · nur @florentgpt (GPT-S)
 
 > **Gegenmittel (seit 2026-10-27):** An diesem Skill ändert sich 0,0: gleiche Themen, gleicher Aufbau, Effekt/Mechanismus wird weiter genannt. Erst wenn das Skript steht, ordnet `gpt-satire-reel` einen passenden Guide zu und hängt nach der Pointe ein Outro an (höchstens 18 Wörter, `~/.claude/skills/gpt-satire-reel/references/nutzen-bruecke.md`). Kein Thema wegen eines Guides wählen, verwerfen oder umbauen.

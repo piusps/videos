@@ -3,6 +3,13 @@ name: ki-satire-skript
 description: Schreibt aus einer KI-Satire-Idee oder einem Ersetzt-Demo-Briefing aus ersetzt-radar (Hook plus Kern) ein fertiges, sprechbares Reel-Skript für Niklas' AI-Avatar im Stil von help.hannaa. Liefert den Sprechtext exakt so, wie er in das Avatar-Tool kopiert wird (Komma = kurze Pause, Punkt = lange Pause mit fallender Stimme, Bindestrich = Silbentrennung für deutliche Aussprache), dazu Text-Overlay, Wortzahl, geschätzte Dauer und einen Beat-Plan, der Zuschauer bis zur Pointe hält. Nutze diesen Skill immer, wenn Niklas ein Skript, Sprechtext, Avatar-Text, Voiceover, "schreib das aus", "mach daraus ein Reel", "Skript für Idee 3", "Skript für B-004", "vertonen" oder "fertig zum Drehen" will, auch wenn er nur die Nummer einer Idee oder eines Backlog-Briefings nennt. Für die Themenfindung selbst ist ki-satire zuständig, für Thesen ohne Witz ai-takes. Nur für @florent_preusser (FP-S und Ersetzt-Demos); Satire-Sprechtexte für @florentgpt schreibt gpt-satire.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 > **STOPP – keine Satire auf @florent_preusser (Henri 2026-10-21):** FP-S wird nicht mehr produziert, eingeplant oder gepostet. Satire gibt es nur noch auf @florentgpt (GPT-S). Wer nach Satire fragt, macht GPT-S. Bitte um FP-Satire: einmal nachfragen, ob wirklich gewollt.
 
 # KI-Satire-Skript: vom Hook zum Avatar-Text

@@ -3,6 +3,13 @@ name: gpt-hype-script
 description: Skripterstellung NUR für die normalen Videos (Hype/Tutorial) auf @florentgpt (B2C) - macht aus einem Themen-Briefing aus gpt-themen (H-NNN) den gesprochenen HeyGen-Text im Stil von @mavgpt, sinngemäß auf Deutsch, ChatGPT zuerst, einfachste Sprache. Wählt die passende Vorlage (T1 Tutorial "Ich zeig dir, wie du X machst" als Standard, T2 Liste, T3 "Was passiert, wenn", T4 Angst + Lösung, T5 "Ich hab gebaut", T6 "Claude kann jetzt"), spielt den Klickpfad in Claude durch, schreibt Hook-Kandidaten, Skript (90-160 Wörter, HeyGen-sicher), Trigger-Wort, Versprechen und Skript-Gate und legt brief.md, script.txt und format.json in broll/runs/gpt-<slug>/. Findet KEINE Themen (das macht gpt-themen). Nutze diesen Skill bei "Skript für H-0xx", "schreib das Florent-GPT-Skript", "Skript für den GPT-Account" oder als Schritt 2 von gpt-normal-reel. Nicht für @florent_preusser (video-script) und nicht für Satire (gpt-satire).
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # GPT-N · Skript für @florentgpt (Hype/Tutorial)
 
 **Input:** ein Briefing `H-NNN` aus `~/.claude/florentgpt/hype/backlog.md` (von `gpt-themen`). Nennt Pius nur ein Thema ohne Briefing, zuerst `gpt-themen` dafür ein Briefing schreiben lassen. Ohne Vorgabe: das offene Briefing mit dem höchsten Score.

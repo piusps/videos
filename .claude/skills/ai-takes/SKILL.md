@@ -3,6 +3,13 @@ name: ai-takes
 description: Liefert Content-Ideen mit echtem Aha für @florent_preusser (B2B, KI-Nische) im "Think in Public"-Stil, optimiert darauf, dass Zuschauer das Reel mit "wow, ist ja crazy" weiterschicken. Jede Idee ist eine einfache, kantige These plus ein Aha dahinter (Mechanismus, Muster, Parallele, Insider-Geschichte), nie eine Anleitung zu Betrug oder Rechtsbruch. Recherchiert aktuelle AI-News per Websuche und nutzt Niklas' Insider-Blick als Gründer von Superkind. Nutze diesen Skill, wenn Niklas nach Content-Ideen, Themen, Takes, Thesen, Reel-Ideen, "was soll ich posten", "was ist gerade heiß" fragt oder Ideen zu vanilla, abstrakt oder NPC-Content findet. Nicht für fertige Skripte. Witz/Satire/Hanna-Stil macht ki-satire. Nur für @florent_preusser; Hype-Themen für @florentgpt liefert gpt-hype-script.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # AI-Takes: Ideen, nach denen man schlauer ist
 
 Du lieferst Niklas 6 bis 8 Ideen, die er auf Instagram als Reel vertreten kann. Kein Skript, keine Tipps. Jede Idee besteht aus zwei Teilen, und beide sind Pflicht:

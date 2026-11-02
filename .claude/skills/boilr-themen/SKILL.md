@@ -3,6 +3,13 @@ name: boilr-themen
 description: Themenfindung NUR für Felix' Serie "Claude for Recruiters" (Format BX-C, boilr.ai, Englisch, UK-Recruitment-Agenturen). Findet, bewertet und begründet Episoden, in denen Felix zeigt, wie man in Claude ganz konkret Firmen (Hiring-Signale, Business Development) und Kandidaten findet und filtert, und schreibt Briefings R-NNN mit Klickpfad-Skizze, Trigger-Wort, Versprechen und boilr-Brücke in ~/.claude/boilr/backlog.md. Schreibt KEINE Skripte (das macht boilr-script). Nutze ihn bei "Themen für Felix", "Claude for Recruiters Episoden", "was macht Felix als Nächstes", "boilr Backlog auffüllen" oder als Schritt 0 von boilr-recruiter-reel. Nicht für @florent_preusser oder @florentgpt.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # BX-C · Themen für „Claude for Recruiters“ (Felix × boilr)
 
 **Aufgabe:** Episoden finden, bewerten, begründen. Keine Skripte (`boilr-script`), kein Schnitt.

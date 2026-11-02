@@ -3,6 +3,13 @@ name: superkraft-themen
 description: Superpower topics for consumer reels in the keyword-funnel format (mascot, Sir Token, @claudebyseb style) - topics where a locked door opens for the viewer, riding a current wave. Use when topics or ideas for such reels are requested, when a single topic should be checked or sharpened, or when a posted reel is reviewed. Money-back and fight-the-system topics belong to gpt-themen, B2B to @florent_preusser.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # superkraft-themen
 
 A superpower topic shows a viewer a **locked door** that is now open: they have wanted something for a long time, ruled it out for themselves because a **gatekeeper** stood in the way (money, training, years of practice, connections), and AI gets around that gatekeeper tonight. The topic sells **becoming**, not saving.

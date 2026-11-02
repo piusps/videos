@@ -58,6 +58,7 @@
 - [Vision Schwarm](project_vision_schwarm.md) — company vision film 2026-10-20: v3 = real Philips CRT (CC BY 3.0) B&W Niklas, FP pixel style KI part, framed image film, calm ElevenLabs piano bed
 - [Real logos only](feedback_real_logos.md) — BrandLogo uses official SVGs in broll/public/logos; self-drawn Slack mark looked like a swastika (2026-10-20)
 - [Superkind Desk Agent](project_superkind_desk.md) — heyclicky-style split reel; v10 2026-10-21 (32 s): Claude-style Superkind chat UI, starts with agent line, Enter → clean rest; own footage
+- [Themen-Abstand](feedback_themen_abstand.md) — since 2026-11-02 no topic repeat within 45 days on any account; check themen/themen-log.md before every topic
 - [Desk Agent style](feedback_desk_agent_style.md) — agent reels: Ava not Lisa, white/orange UI, captions on seam without logo, one key press then resting hands, premium SFX, lots of motion
 - [Outcome-First](feedback_outcome_first.md) — Superkind reels: result in frame 1, human ≤6 words, Teams/Outlook channels, ≤30–35 s; long version only for funnel (2026-10-21)
 - [OpenRouter video](reference_openrouter_video.md) — MiniMax Hailuo 3 Max via OpenRouter for specific motion B-roll; first_frame only, about $0.08/s, credits nearly used up

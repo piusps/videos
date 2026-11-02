@@ -3,6 +3,13 @@ name: ki-satire
 description: Liefert satirische, ironische Reel-Ideen nur für das Satire-Format auf @florent_preusser (FP-S, Orchestrator fp-satire-reel) nach der Methode von help.hannaa, übertragen auf KI, Arbeit und Change. Pro Idee Hook (erste 3 Sekunden, wörtlich), Kern und Pointe in so einfacher, gesprochener Sprache, dass jeder sie beim ersten Hören versteht. Feste Ich-Figur (der Rationalisierer), wiederkehrende Formate (Begriff-Reel, Anapher-Sketch, Kostenrechnung, Einzeiler, Unwort, Gegenüberstellung, Check), Backlog mit B-Nummern. Nutze diesen Skill, wenn Niklas witzige, ironische oder satirische Reels für den B2B-Account will, nach Hooks, Formaten, Serien, Sketchen oder seiner Figur fragt, "wie help.hannaa", "mit Witz", "unterhaltsamer" sagt oder die Sprache zu kompliziert findet. Thesen ohne Witz macht ai-takes. Satire für @florentgpt macht gpt-satire.
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 > **STOPP – keine Satire auf @florent_preusser (Henri 2026-10-21):** FP-S wird nicht mehr produziert, eingeplant oder gepostet. Satire gibt es nur noch auf @florentgpt (GPT-S). Wer nach Satire fragt, macht GPT-S. Bitte um FP-Satire: einmal nachfragen, ob wirklich gewollt.
 
 # KI-Satire: Hook und Kern, die jeder beim ersten Hören versteht

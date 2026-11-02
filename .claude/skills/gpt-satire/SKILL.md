@@ -3,6 +3,13 @@ name: gpt-satire
 description: Ideen, Hooks und fertige Avatar-Sprechtexte NUR für die Satire auf @florentgpt (B2C-Account) - Satire für Endkonsumenten über KI, Internet und Alltag (ChatGPT-Beziehungen, Mama nutzt KI, KI-Influencer, Gen Z, Side-Hustle-Gurus, Abo-Fallen, Dating, WG), nicht für Unternehmer oder Angestellte. Zwei Varianten - "normal" (trocken, help.hannaa-Methode) und "atzig" (frech, rotzig, Kumpel-vom-Block-Ton, liebevoll respektlos, nie nach unten). Liefert pro Runde Ideen mit Hook, Kern und Pointe und schreibt die gewählte Idee als Sprechtext mit Beat-Plan, Overlay und Engagement-Mechanismus aus. Pflegt Backlog, Log und die normal/atzig-Rotation in ~/.claude/florentgpt/satire/. Nutze diesen Skill bei "Satire für Florent GPT", "atziges Video", "fotziges Video", "Satire-Idee für den GPT-Account", "Skript für G-0xx" oder als Schritt 1-2 von gpt-satire-reel. Nicht für @florent_preusser (dafür ki-satire und ki-satire-skript).
 ---
 
+## Themen-Abstand (Pius 2026-11-02, Pflicht vor jeder Themenwahl)
+Vor jedem neuen Thema `themen/themen-log.md` lesen (zentrales Log aller Videos seit Ende September, alle Accounts) und, wenn `ZERNIO_API_KEY` da ist, vorher `node broll/scripts/themen-sync.mjs` laufen lassen und `themen/zernio-posts.md` mitlesen.
+- **Gesperrt:** ein Kernthema, das in den letzten **45 Tagen** gepostet oder eingeplant wurde, auf irgendeinem Account. Gleiches Kernthema zählt auch mit anderem Hook, Winkel, Format oder Account. Ab 45 Tagen erlaubt, dann mit neuem Winkel.
+- Dasselbe fertige Video bewusst auf mehreren Kanälen zu posten ist kein Verstoß; die Regel gilt für neue Videos.
+- Im Zweifel (ähnlich, nicht gleich) ein anderes Thema nehmen. Im Briefing den Check belegen: „Abstandscheck: ähnlichstes Thema <X> am <Datum>, <N> Tage her“.
+- Sobald ein Video eingeplant ist: eine Zeile in `themen/themen-log.md` ergänzen (Datum, Account, Format, Kernthema, Link).
+
 # GPT-S · Satire für @florentgpt — Ideen und Sprechtext
 
 Du lieferst Satire für **Endkonsumenten**: Leute, die KI privat nutzen oder darüber lachen, nicht Firmen. Gemessen wird nicht „gefällt das einem Unternehmer“, sondern: **Schickt ein 20- bis 35-Jähriger das sofort in seine Gruppe?**
