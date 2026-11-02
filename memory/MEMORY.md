@@ -1,0 +1,112 @@
+# Project Memory
+
+- [LinkedIn Post Generator](project_linkedin_generator.md) — Next.js app for LinkedIn posts; 5 pillars incl. "Mit 18 im Startup"; Autopilot (3×/wk 12:30, veto model) since 2026-10-02
+- [Video text hooks](feedback_video_text_hooks.md) — derive on-screen hook text from script's core message, styled like IG "Strong" caption preset, for muted scrollers
+- [Instagram Video Analyzer MCP](reference_instagram_video_analyzer_mcp.md) — installed at ~/mcp-servers/, needs Gemini key + manual backend start before use
+- [Autonomous video runs](feedback_autonomous_video_runs.md) — standing go for topic→finished video, strict script gate, no overlays on avatar
+- [Video run 1 feedback](feedback_video_run1.md) — calm gestures, 3 hard keyframed zooms, animated glass B-Roll, no trailing trigger word
+- [Camera angle switches](feedback_camera_angle_switches.md) — Cam 2 OFF since 2026-09-29 (opt-in only); lock exposure/light/colour/resolution to original, matching first/last frames at every cut; Seedance rejects real-person video
+- [Superkind Studio app](project_superkind_studio.md) — local app at broll/studio (localhost:4747) runs the whole reel pipeline; HeyGen key set, needs HeyGen API wallet + OpenRouter credits
+- [B-Roll unique per beat](feedback_broll_unique.md) — new local Remotion animation per script beat (GlassKit), not the reused landing-page template
+- [One folder per video](feedback_video_folders.md) — ~/Desktop/Superkind Videos/<Datum> <Thema>/ with Versionen, Rohmaterial, B-Roll
+- [HeyGen connector only](feedback_heygen_connector_only.md) — render/upload via HeyGen connector (plan credits), not API wallet; ~half the cost per video
+- [Office format](project_office_format.md) — seated office twin; FP-S satire since 2026-10-02 = white-wall look f4f3ac11 + funny music, dark serif titles
+- [Video skills per phase](feedback_video_skills_per_phase.md) — since 2026-09-29 one skill per video phase + orchestrator; new rules go into the owning phase skill
+- [No counting gestures, no local Cam 2](feedback_gestures_cam2.md) — motion prompts never mention fingers/counting; skip Cam 2 instead of the shaky local crop; no heavy whooshes or sub-hits, light UI whooshes stay
+- [Florent = Niklas](user_florent_niklas.md) — same founder; Niklas twin speaks as "Florent" (IG name); no real product UI in reels
+- [Explainer B-Roll style](feedback_explainer_broll_style.md) — 2nd B-Roll style (whiteboard/isometric/split) in its own skill video-broll-explainer; never overwrite the glass skill
+- [Vision video](project_vision_video.md) — pinned launch reel delivered 2026-09-29; real-footage spots at ~10-13 s and ~73-79 s still open
+- [Use ffmpeg](feedback_use_ffmpeg.md) — ffmpeg for all video/audio work; no system install, use broll/node_modules ffmpeg-static + @ffprobe-installer
+- [Workday rhythm](user_workday_rhythm.md) — Pius works ~10:30-20:30, lunch ~12:45-13:00 for 45-60 min; daily Outlook time-blocking
+- [Workload & Ads](project_workload_ads.md) — Pius: all creatives himself, 6k €/mo lead-gen ads, CPL ≤30 (max 32) €, 2 videos/day, soon 3-4 brands × 4 platforms
+- [Daily routine](project_daily_routine.md) — fixed 10:30-20:30 block template (ads checks, 2 videos, LinkedIn post, ad creative, community, leads); default for Outlook blocking
+- [Content-idea skills](reference_content_idea_skills.md) — ersetzt-radar + ki-satire/ai-takes installed 2026-09-30, data in ~/Documents/ersetzt-radar and ~/.claude/ki-satire
+- [boilr static ads](project_boilr_static_ads.md) — boilr.ai ad formats (iOS-UI mockups), copy formula from Ad Library, local creatives path, ad-set CPLs; ad-level perf still missing
+- [Satire edit style](feedback_satire_edit_style.md) — satire reels in help.hannaa style (skill video-satire-edit): stickers above head, serif titles, 1-word captions; overlays OK there
+- [Full delivery](feedback_full_delivery.md) — every reel: music + varied SFX + video/PDF/cover sent + IG/TikTok captions pasted (Abschluss-Checkliste)
+- [InstantDM MCP](reference_instantdm_mcp.md) — Instagram comments/DMs/insights for @florent_preusser via MCP "instantdm" (user scope); sends need explicit OK
+- [Portrait generation](feedback_portrait_generation.md) — profile pics of Niklas: real photo + local Vision cut-out pipeline (Instagram Profil/Werkzeug), not AI
+- [DM tone](feedback_dm_tone.md) — IG DMs/comment replies: no emojis, sounds like Florent himself, every comment reply ends with an easy question
+- [Accounts & formats](project_accounts_formats.md) — since 2026-10-01: @florent_preusser (FP-N/FP-S) + @florentgpt (GPT-N/GPT-S), router reel-formate; GPT-N look since 2026-10-05 = "Niklas gpt normal" c4f527e4… (no cap), voice nikstudio
+- [Schedule without review](feedback_schedule_without_review.md) — direct scheduling allowed only after the full QC checklist per video (trust, 2026-10-02)
+- [Music per account](feedback_music_per_account.md) — @florentgpt = Vivaldi „Summer“, never the Eminem/Fluffing-a-Duck beds of @florent_preusser
+- [FP-N opening zoom](feedback_fpn_opening_zoom.md) — opening push-in max ~130 %, whole face visible (2026-10-03); hard zooms only later
+- [HyperFrames hooks](project_hyperframes_hooks.md) — HyperFrames installed 2026-10-03; hook variant A "Marker" picked and built into the FP-N vision intro hook
+- [Trial reels](project_trial_reels.md) — 5 old 100k+ reels (Apr/May) downloaded for local recuts; IG 720p finals with burned-in captions, no raw footage; Pius uploads as trial himself
+- [ElevenLabs](project_elevenlabs.md) — Pro key in broll/.env since 2026-10-05, 1.12M credits/mo; IVC voice-changer test rejected, nothing further unless asked
+- [Pius twin](project_pius_twin.md) — own HeyGen twin "Pius" (group 969ecef4…, separate from Niklas), 2 extra slots 13 €/mo each since 2026-10-05
+- [HeyGen look source](feedback_heygen_look_source.md) — looks from untrimmed iPhone HDR = red skin + selfie pose; trim + SDR first, check preview frame before use
+- [GPT Gründer-Satire](project_gpt_gruender_satire.md) — since 2026-10-05 GPT-S scripts from gpt-gruender-satire, strictly separate from FP-S; v5 lost blind test 0:2 vs ZIP v4 (2026-10-12), not deployed
+- [Felix / boilr brand](project_felix_boilr_brand.md) — "Claude for Recruiters" tutorial reels from zero, all English, DM funnel → boilr demo; twin Felix 40b22473… + voice a4d894b7…
+- [GPT look name](feedback_gpt_look_name.md) — GPT-N = "Niklas gpt normal" c4f527e4 always; "neue Szene" ≠ Office 5
+- [Felix voice](feedback_felix_voice.md) — Felix twin must not sound monotone/rattled: test voice settings via create_speech before each render
+- [GPT-S skin grade](feedback_gpts_skin_grade.md) — cap look 57ae6dc3: desaturate reds + whiten teeth before edit
+- [gpt-themen v2](project_gpt_themen_v2.md) — new Kräfte-based topic skill since 2026-10-06; GPT-N now ChatGPT-first (click paths, B-roll, guides)
+- [Daily reel automation](project_gpt_daily.md) — old InstantDM GPT tasks gone; 2026-10-21 3-account Zernio run (FP 2, GPT 2, Moustache 1, start 10:00) + funnel-arm task = template
+- [Effekt-Satire GPT-S](project_gpt_effekt_satire.md) — since 2026-10-07 skill gpt-effekt-satire: dating story → English effect name → business example; pronunciation check; Fünf-Tische edit
+- [All comments funnel](feedback_all_comments_funnel.md) — since 2026-10-07 InstantDM Lead Gen on "All Comments" + fresh video-specific comment replies every time
+- [InstantDM all comments](feedback_instantdm_all_comments.md) — automations always on "All Comments" + custom comment replies per post (2026-10-07)
+- [Satire klar & menschlich](feedback_satire_klar_menschlich.md) — every viewer question answered in-script, one-step comparisons; blind test: scenes+dialogue beat long opinion sentences (2026-10-12)
+- [FP-N Opus-Stil](feedback_fpn_opus_stil.md) — copy edit of Arena + Google-Bewertung (2026-10-15) for all new FP videos
+- [Zernio](reference_zernio.md) — post scheduling API since 2026-10-16, scripts/zernio-schedule.mjs, @florent_preusser + @florentgpt connected
+- [GPT-S look turquoise](feedback_gpts_look_tuerkis.md) — since 2026-10-16 GPT-S satire uses c4f527e4 (turquoise), not the cap look; GreenReel cut
+- [Zernio automations](feedback_zernio_automations.md) — since 2026-10-17 comment-to-DM + PDF button via Zernio API (zernio-automation.mjs), not InstantDM dashboard
+- [Claude real UI](feedback_claude_real_ui.md) — Felix click paths = real claude.ai screenshots + motion, never green recreated panels (2026-10-20)
+- [InstantDM → Zernio](project_instantdm_to_zernio.md) — 2026-10-20 all funnels rebuilt in Zernio; old posts paused until InstantDM is off, then `zernio-funnel.mjs on --all`
+- [Moustache topics](feedback_moustache_topics.md) — @moustacherecruiter = recruiter-side tips for job seekers + Claude tutorial; agency BD signals only on request (2026-10-20)
+- [Felix eyebrow](feedback_felix_eyebrow.md) — Felix's image-right eyebrow washes out; run Vision brow fix (brow_video.py) before every edit (2026-10-20)
+- [Vision Schwarm](project_vision_schwarm.md) — company vision film 2026-10-20: v3 = real Philips CRT (CC BY 3.0) B&W Niklas, FP pixel style KI part, framed image film, calm ElevenLabs piano bed
+- [Real logos only](feedback_real_logos.md) — BrandLogo uses official SVGs in broll/public/logos; self-drawn Slack mark looked like a swastika (2026-10-20)
+- [Superkind Desk Agent](project_superkind_desk.md) — heyclicky-style split reel; v10 2026-10-21 (32 s): Claude-style Superkind chat UI, starts with agent line, Enter → clean rest; own footage
+- [Desk Agent style](feedback_desk_agent_style.md) — agent reels: Ava not Lisa, white/orange UI, captions on seam without logo, one key press then resting hands, premium SFX, lots of motion
+- [Outcome-First](feedback_outcome_first.md) — Superkind reels: result in frame 1, human ≤6 words, Teams/Outlook channels, ≤30–35 s; long version only for funnel (2026-10-21)
+- [OpenRouter video](reference_openrouter_video.md) — MiniMax Hailuo 3 Max via OpenRouter for specific motion B-roll; first_frame only, about $0.08/s, credits nearly used up
+- [Vision cinematic](feedback_vision_cinematic.md) — brand films: cinematic real shots > animation, no FP captions, Claude B-rolls only if needed; Hailuo 3 via OpenRouter as fallback
+- [Desk Agent skill](project_desk_agent_skill.md) — desk-agent-reel (SD) phased skill since 2026-10-20: hinge on seam, listen→act, one task at a time, Enter approvals; v4 rules in 04/06/07
+- [Superkraft test topics](feedback_superkraft_test_topics.md) — while superkraft-themen is unverified, exclude Pius’ example topics (Traumjob, Websites, Apps, Zertifikate …) from test runs
+- [Pixelwelt look](project_pixelwelt_look.md) — claudebyseb look; since 2026-10-21 reels = one continuous 3D world with camera flights (TrainerWorld3D.tsx), no 2D cut scenes
+- [Superkind Editor](project_superkind_editor.md) — CapCut-style editor at localhost:4747/editor since 2026-10-21; "bau die offenen B-Roll-Prompts" = fill placeholders in studio/data/editor/<id>/project.json
+- [Series Storybogen](feedback_series_storybogen.md) — vote-series reels: one thread, binary choice from story, second voice, varied rhythm; Teil-2 docking pattern (2026-10-21)
+- [Superkind pronunciation](feedback_superkind_pronunciation.md) — TTS: write "Superkeind" (= English Super-kaind), captions "Superkind"
+- [Superkind economy](project_superkind_economy.md) — money counter, shop ladder, sealed vote outcomes; votes Tag 1–4 always win, normal cycle from Tag 5
+- [Zernio funnel rebind](feedback_zernio_funnel_rebind.md) — funnels attached at scheduling are NOT remapped on publish; rebind to IG media id + catch up, verify before reporting
+- [FPQ qualifying funnel](project_fpq_qualifying_funnel.md) — 2026-10-22 solo/team/angestellt → own pitch + waitlist, privat → exit; sheet column Typ; test DM SKTEST, not live yet
+- [100 KI-Agenten series](project_100_agenten_series.md) — "KI übernimmt meine Firma" Tag x/100, town format, ONE thing per episode, everyday company topics for everyone (Tag 7 = offene Rechnungen + Taxameter), CTA comment → resident bot, real numbers; Tag 11 Lager 2026-11-01 = all 8 houses done
+- [Series look](feedback_series_look.md) — Firma-Serie im TrainerWorld3D-Raum-Look: Tischinseln, Sticker, Claude-Paper-Fenster (2026-10-22)
+- [Guide v3 value](feedback_guide_v3_value.md) — Superkind PDFs = console-look playbooks with verified GitHub skills/MCPs/prompts, quick win, Superkind vs Claude (2026-10-22)
+- [Full-frame + click paths](feedback_fullframe_theme_world.md) — FP-N B-rolls all light Superkind white/orange with real Claude click paths + pointer; no dark scenes, no knights, no stock icons (2026-10-22)
+- [TTS Betonung](feedback_tts_betonung.md) — from 2026-10-23 no stress errors in TTS: test risky words via create_speech before the final voice
+- [Every comment funnel](feedback_funnel_every_comment.md) — since 2026-10-23 every comment gets the DM, tap workflows cooldown 1 h, no reply delays
+- [Firma-Serie rules](feedback_firma_serie_hook.md) — fixed hook "KI baut ein Unternehmen von Null…Tag N", every episode standalone (goal → one question → example → takeaway → comment), slow money pace (2026-10-23)
+- [100-Tage neue Viewer](feedback_100_agenten_neue_viewer.md) — every episode standalone: viewer problem + result in frame 1, series frame in 1 sentence, residents only at the CTA (2026-10-26)
+- [Series bot colours](feedback_series_bot_colors.md) — residents in mixed palette colours, only the Geschäftsführer orange (2026-10-26)
+- [Superkind messaging](feedback_superkind_messaging.md) — pitch = simple platform, everything without skills/MCPs/setup; not "KI-Mitarbeiter" (2026-10-26)
+- [Notion to-dos](reference_notion_todos.md) — week to-dos in Notion DB "Wochenplan To-dos": ~8 tasks, priority, sorted by due date, onboarding per task
+- [Series greifbar](feedback_series_greifbar.md) — every sentence an everyday Mittelstand situation, real UI scene, mistake in 1 sentence, Schritt 1/2 (2026-10-26)
+- [Hook rotation](feedback_hook_rotation.md) — FP-N hooks rotate 5 mechanisms; "Du warst/hast … keinen Cent" victim opener banned (2026-10-26)
+- [No Superkind self-harm](feedback_no_superkind_self_harm.md) — GPT-S pointes never show Superkind running tricks (Rufschädigung); end on the observation (2026-10-26)
+- [Real platform UI 2.5D](feedback_real_platform_ui_25d.md) — platform B-rolls in real UI look (logo, font, Material) + 2.5D depth, never flat self-drawn; GMapsKit.tsx (2026-10-26)
+- [Firma skills](project_firma_skills.md) — since 2026-10-26 Firma-Serie made by firma-spy/autor/regie/design/pruefer + boss firma-chef, Prüfer loop until ≥8/10
+- [Rejected HeyGen render](feedback_heygen_rejected_render.md) — interrupted create_video can still render; check list_videos before saying "nicht gerendert"
+- [Reach diagnosis](project_reach_diagnosis.md) — Zernio analytics: shares/1k reach decide outliers (9.8 vs 2.2), not comments/watch time; winners = expert € vs Claude time; "Kommentiere X" GPT hooks stuck ~120
+- [fp3 voice funnel](project_fp3_voice_funnel.md) — live FP standard since 2026-10-26: real voice note since 10-30 (pius-v2-roh, uncut), guide links refreshed every 2 days, 100 € credits, name+firm+business mail+phone (no phone only after 3 refusals)
+- [firma-spy data](reference_firma_spy.md) — spy folder, 18 channels, Apify limit → logged-out browser fallback, ad filter (2026-10-26)
+- [Firma Neustart-Format](feedback_firma_neustart_format.md) — 2026-10-26/27: "Was passiert, wenn KI ein Unternehmen ganz alleine aufbaut", for aspiring founders without know-how; 1 founding step/episode, paper Claude UI fixed on screen, calm camera, CTA names concrete value; revenue ≥ Tag 14, no slop
+- [No re-render without asking](feedback_no_rerender_without_ask.md) — script tweaks after a render ≠ re-render; ask first, keep old render by default; FP-N scripts without Schritt/Trick (2026-10-27)
+- [GPT-S Gegenmittel](project_gpts_gegenmittel.md) — since 2026-10-27 GPT-S satire unchanged (topics + effect), then matching evergreen guide + outro + follow-gate funnel; gegenmittel.json + log per video; 5 followers at start
+- [Video path to copy](feedback_video_path_copy.md) — after every generated/revised video, post the full MP4 path in a code block to copy
+- [ROMA TikTok-Oma](project_roma_oma.md) — AI-Oma: ElevenLabs avatar ScT0oaMl… + voice p2Wol…, roma.py; reels cut in FP-N Opus style (RomaOpus.tsx), CTA "Zettel abfotografieren", never "Guide"; since 2026-10-28 Veo 3.1 via ElevenLabs + STS, Oma cut out over full-screen animation, never HeyGen; daily standard ~35 s = 6 Veo clips (~126k credits)
+- [Premium split look](feedback_premium_split_look.md) — FP-N split B-rolls via PremiumKit loved; objects now real three.js 3D (KlageCourt3D.tsx) since 2026-10-27, CSS objects = "flach"
+- [Claude UI DOM clone](reference_claude_ui_dom_clone.md) — no Chrome extension → T3 preview "Chrome" profile + DOM clone in headless Chrome = real claude.ai screenshots (2026-10-27)
+- [PTC Tagesbetrieb](project_ptc_tagesbetrieb.md) — @pickthecompany auto since 2026-10-28: 5 Folgen/day at 9/12/15/18/21, only the 9:00 one says "Tag N" (calendar day), revenue counter only once revenue > 0; standing OK when Prüfer ≥8
+- [Niklas Lifestyle](project_niklas_lifestyle.md) — private LARP/lifestyle IG (NL) since 2026-10-28: B-roll brain ~/Documents/niklas-lifestyle, skill lifestyle-reel-edit, scripts pending
+- [fp4 Guide gegen Mail](project_fp4_guide_gegen_mail.md) — test funnel 2026-10-28: guide only after business mail, role mail after 1 push, freemail → website; not live
+- [florentgpt satire only](feedback_florentgpt_satire_only.md) — since 2026-10-28 every @florentgpt video is GPT-S satire + Gegenmittel, no GPT-N unless asked
+- [NL content cuts](feedback_nl_content_cuts.md) — Niklas-Lifestyle reels 30-40 s, cut per sentence not per beat, labels.json for B-roll fit + no same location twice, v1 voice (v4+atempo), music burned in, B-rolls muted, word-by-word Remotion subs like IG reel DfC83cJIpXx (2026-10-28)
+- [PTC weniger Text](feedback_ptc_weniger_text.md) — Firma-Serie ab 2026-10-30: 85–100 Wörter, TTS 1,0 (120–135 wpm, nicht zu langsam), ein Textblock gleichzeitig, Karten ≤4 Wörter
+- [GPT-S no repeats](feedback_gpts_no_repeat_topics.md) — check effect + situation against runs/Desktop/logs before drafting; 3 repeats rejected 2026-10-29
+- [HeyGen MCP via CLI](reference_heygen_mcp_cli.md) — own OAuth client in ~/.config/heygen-mcp when the claude.ai connector is missing; voice via create_speech_without_player
+- [FP-N system framing](feedback_fpn_system_framing.md) — sell "mein komplettes System"/Regiesystem, never "die Prompts"; tool name ≠ hook; output in frame 1; follow line right after the hook (2026-10-31)
+- [HeyGen headless](reference_heygen_headless.md) — tools missing in session → `claude -p --allowedTools "mcp__heygen__*"` from Bash; auth local heygen MCP in a real terminal
+- [Was wäre wenn](project_was_wenn_dann.md) — @was.wenn.dann 3D what-if format; 4 episodes built 2026-10-29 (src/wwd, scripts/wwd), not posted; Zug v2 = Florent voice ≤45 s + ref music, others pending OK
+- [GPT-S topics from Reel-Auswahl](feedback_gpts_reel_auswahl_topics.md) — since 2026-10-30 GPT-S topics come from Pius' daily Reel-Auswahl HTML (Platz 1 first), copies in ~/.claude/florentgpt/satire/auswahl/

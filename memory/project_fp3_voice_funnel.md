@@ -1,0 +1,24 @@
+---
+name: project-fp3-voice-funnel
+description: "fp3 = live FP standard since 2026-10-26: voice note v17, 100 € Free Credits, yes-only pitch, lead = name+firm+business mail+phone"
+metadata:
+  node_type: memory
+  type: project
+  originSessionId: 3abf243c-b148-4bb9-ac70-0edfe77edd5f
+  modified: 2026-10-26T14:58:11.571Z
+---
+
+2026-10-26: After 17 voice-note rounds Pius picked `broll/funnel/voice/pitch-v17.m4a` (eleven_v3 via HeyGen create_speech, voice nikstudio, tags "[energetic, casual, natural conversation, confident]", name spelled "Florennt" for German pronunciation, "Liebe Grüße, Florent", ~19 s, pauses capped at 0.4 s, light phone-memo EQ).
+
+Config `broll/funnel/fp3-funnel.json` (fp2 texts → 100 € Free Credits, "Plattform" messaging, `voiceUrl`). `zernio-funnel.mjs` buildFp2 inserts the audio node (`messageType:"media", media:{url, mediaType:"audio"}`) between delay and pitch when `voiceUrl` is set. Test workflow "FP3 Test SKTEST" on DM SKTEST.
+
+Pitch has only the "Ja, eintragen" button (Pius: no easy dodge), reminder after 23 h 45 min (`remindMinutes` 1425): Pius wants 24 h, IG only allows sends within 24 h of the user's last message (HUMAN_AGENT tag is for real humans only), so stay just under.
+
+**Why:** the 200 € text pitch after the guide didn't hook people (fp2 ~9 % leads per funnel start).
+**Live since 2026-10-26 evening (Pius' OK):** all 34 FP post buttons migrated to fp3 (registry kind fp3, old fp2 workflows still active for in-flight runs, `rollback --all` goes back to fp2), Credits keyword = new workflow 6adf702a…, old one paused; `create` defaults to fp3. Lead capture `capture: "full"` (leadCaptureFull): name → company → personal business mail (freemail/role/fake always rejected, no website fallback) → phone required; only the 3rd reply without digits (refusal/complaint) lets them in without phone (Pius: "wenn sich jemand so 3 mal krass beschwert").
+**Known leads (2026-10-26, Pius):** contacts with tag superkind-lead or contact.fields.lead_email get the guide with `guideKnown` text only (no voice note, no pitch); "Credits" answers `creditsKnown`. InstantDM-era sheet leads have no Zernio contact/handle, so they are not recognised. Config changes go live with `zernio-funnel.mjs rebuild --credits <id> --test <id> --test-pdf-url <url>` (pause → PATCH graph → activate, same ids).
+**Late answers (2026-10-26):** workflow "FP Funnel Spaete Antworten" 6adf8c2a… (`zernio-funnel.mjs late [--update <id>]`) catches name/mail/yes DMs from guide receivers who are not leads and have no live run (old run expired), continues the fp3 capture, tags spaete-antwort; questions/small talk stay manual. Trigger: PowerBorgi sent her name 5 days after the old fp run ended. Run manual start: POST /workflows/{id}/executions {conversationId, text}.
+**List members (2026-10-26):** Zernio runs keep the contact snapshot from run start (tag set mid-run is NOT seen, tested), but patched graphs DO apply to waiting runs. So knownLead also matches the Instagram id via contact.handle; `rebuild [--fp2]` bakes in ids of all superkind-lead contacts and adds a check before the pitch reminder (fp3 + old fp2 workflows). Website/InstantDM list members have no handle: matched by name/domain and tagged superkind-lead + liste-abgleich (6 on 2026-10-26, e.g. emanuele.augugliaro.1). Full pass same day: scanned all 1053 Zernio chats for each row's mail/phone/name/username -> 33 ids blocked; ids without a Zernio contact (InstantDM era) live in broll/funnel/known-ids.json (merged by leadIds). Not findable (website sign-ups, no DM): Tino Brandt, RD Denkmann, Patrick Waltenberger, Sillo Wölki, Julian Kriemelmann. Uncertain: robin_van_david, fabi.don, macfinck17. Since 2026-10-27 automatic: scheduled task zernio-leads-to-waitlist (every 2 days) runs `zernio-leads-sync.mjs block funnel/sync/sheet.json` after the sheet append -> tags/known-ids + rebuild only when the id set changed (funnel/sync/baked-ids.json, chat cache chats.json; Zernio limit 600 req/min).
+**How to apply:** Voice-note taste: not lutschig/slimy, not AI-polished, confident founder, falling end, German "Florent". Related: [[feedback-superkind-messaging]], [[project-fpq-qualifying-funnel]], [[feedback-zernio-funnel-rebind]].
+
+**2026-10-30 (Pius):** voice note replaced by Florent's real recording `broll/funnel/voice/pius-v2-roh.m4a` (44 s, UNCUT, only loudnorm; Pius: "die Ähms und Doppler sind der Vibe, nur dann ist sie real" - never cut fillers from real voice notes). Zernio /temp/ media expire after ~7 days (47 guide links were 404 incl. Belege during the Pauschale banger): `zernio-funnel.mjs refresh-guides` re-uploads dead/old PDFs + voice, step 5b of the leads-sync task runs it every 2 days + rebuild. Every wait now ignores re-taps of earlier buttons ("Ja, schick rüber" etc., rule "retap" back to the wait); names reject button texts/ja/@/digits (notNameRegex); "max@" no longer a role mail.
