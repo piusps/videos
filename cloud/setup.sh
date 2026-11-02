@@ -38,4 +38,5 @@ missing=""
 for k in ELEVENLABS_API_KEY ZERNIO_API_KEY; do grep -q "^$k=." "$ENVF" || missing="$missing $k"; done
 [ -n "$missing" ] && echo "setup: fehlende Keys:$missing (als Umgebungsvariablen der Cloud-Umgebung setzen)"
 [ -f "/Users/pius/Downloads/GONE_GONE_THANK_YOU_KLICKAUD.mp3" ] || echo "setup: Serienmusik fehlt (FIRMA_MUSIC setzen, Datei nicht ins öffentliche Repo legen)"
+[ -f "$B/public/sirtoken/sfx-click.mp3" ] || echo "setup: Soundeffekte public/sirtoken/ fehlen"
 exit 0

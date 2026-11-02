@@ -10,6 +10,8 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FF = path.join(ROOT, "node_modules/ffmpeg-static/ffmpeg");
+// loudnorm-JSON aus stderr; ffmpeg 7 (Linux) schreibt danach noch Statuszeilen
+const loudJson = (s) => { const a = s.lastIndexOf("{"); return JSON.parse(s.slice(a, s.indexOf("}", a) + 1)); };
 export const MUSIC_SRC = process.env.FIRMA_MUSIC || "/Users/pius/Downloads/GONE_GONE_THANK_YOU_KLICKAUD.mp3"; // Cloud: FIRMA_MUSIC=<Pfad>
 // audio.musicMute (optional): [[a, b], ...] clip seconds where the music bed is silent (e.g. a sung explicit word), 80 ms ramps; default none
 const muteAf = (r) => (Array.isArray(r) ? r : []).map(([a, b]) => `,volume='if(between(t,${a},${b}),0,if(between(t,${a - 0.08},${a}),(${a}-t)/0.08,if(between(t,${b},${b + 0.08}),(t-${b})/0.08,1)))':eval=frame`).join("");
@@ -110,7 +112,7 @@ export const mixEpisode = async (tagDir, outWav) => {
   raw = path.join(work, "mix-raw.wav");
   execFileSync(FF, ["-y", "-loglevel", "error", ...inputs, "-filter_complex_script", filt, "-map", "[mix]", "-c:a", "pcm_s16le", raw], { maxBuffer: 1 << 26 });
   const r = spawnSync(FF, ["-hide_banner", "-i", raw, "-af", "loudnorm=I=-14:TP=-1:LRA=11:print_format=json", "-f", "null", "-"], { encoding: "utf8" });
-  j = JSON.parse(r.stderr.slice(r.stderr.lastIndexOf("{")));
+  j = loudJson(r.stderr);
   // stems with exactly the same chains as in the mix (voice / music after the duck curve)
   execFileSync(FF, ["-y", "-loglevel", "error", "-i", voice, "-af", `aresample=48000,aformat=channel_layouts=stereo,apad,atrim=0:${END}`, "-c:a", "pcm_s16le", vStem]);
   execFileSync(FF, ["-y", "-loglevel", "error", "-i", music, "-af", `aresample=48000,aformat=channel_layouts=stereo,atrim=0:${END},volume='${expr}':eval=frame,volume=0.5`, "-c:a", "pcm_f32le", mStem]);
@@ -128,7 +130,7 @@ export const mixEpisode = async (tagDir, outWav) => {
     "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", out]);
   // final check on the delivered file
   const fin = spawnSync(FF, ["-hide_banner", "-i", out, "-af", "loudnorm=I=-14:TP=-1:LRA=11:print_format=json", "-f", "null", "-"], { encoding: "utf8" });
-  const jf = JSON.parse(fin.stderr.slice(fin.stderr.lastIndexOf("{")));
+  const jf = loudJson(fin.stderr);
   const valid = gaps.filter((g) => g.gapDb !== null);
   const minGap = Math.min(...valid.map((g) => g.gapDb));
   const info = { musicStart: start, seconds: END, sfx: sfx.length, musicGain: +gain.toFixed(4), lufs: +jf.input_i, truePeak: +jf.input_tp, minGapDb: minGap, gapOk: minGap >= MIN_GAP, gateLufs: GATE, gapsPerAct: gaps, curve };

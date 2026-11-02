@@ -36,3 +36,21 @@ Tipp: denselben Befehl als Setup-Skript der Cloud-Umgebung eintragen, dann läuf
 
 - Echte claude.ai-Läufe (eingeloggtes Chrome-Profil) gehen nur auf dem Mac.
 - `zernio-golive-arm.mjs` lebt nur im Speicher; eine Cloud-Sitzung endet, der Arm dann auch.
+
+## Zernio-Konsole
+
+```bash
+cd broll
+node scripts/zernio-console.mjs                    # interaktiv, Prompt "zernio>"
+node scripts/zernio-console.mjs accounts           # alle verbundenen Accounts
+node scripts/zernio-console.mjs posts pickthecompany 5
+node scripts/zernio-console.mjs GET "/analytics?accountId=6ad902418ceebdfb359dd0f7"
+```
+
+Lesen geht sofort; POST/PUT/PATCH/DELETE fragen vorher nach „ja“. Key aus `ZERNIO_API_KEY` (Umgebung) oder `broll/.env`.
+
+## Stand Cloud-Test 2026-11-02
+
+- Style-Frames Folge 20: ok. Voll-Render: ok, aber ~50 min pro Folge (CPU, swangle).
+- Mix Folge 20 mit Serienmusik: ok (−14 LUFS). Serienmusik liegt nur in der Sitzung unter `/Users/pius/Downloads/` (nicht im Repo).
+- Fehlt noch: `broll/public/sirtoken/sfx-*.mp3` (Soundeffekte), werden im Mix sonst übersprungen.
