@@ -1,0 +1,26 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae5f6d7f08af9edaba04d0a",
+ "status": "published",
+ "scheduledFor": "2026-10-31 18:00 Europe/Berlin",
+ "folge": 16,
+ "serientag": 4,
+ "ersteFolgeDesTages": false,
+ "note_final": "8,0/10 (finale Prüfung Runde 2, pruefung/final-runde2.md; Runde 1: 6,5 K.-o. Maskottchen)",
+ "video": "runs/firma-tag16/firma-tag16-final.mp4",
+ "cover": "runs/firma-tag16/cover.jpg",
+ "guide": "runs/firma-tag16/serienbrief-guide.pdf",
+ "ig_media_id": "18120835111985583",
+ "url": "https://www.instagram.com/reel/DfKpjgFE3vT/",
+ "funnel": {
+  "name": "PTC Funnel Folge 16",
+  "kind": "ptc",
+  "workflowId": "6ae621cc68df265996738667",
+  "automationId": "6ae621cd002ef742d674bbc8",
+  "active": true,
+  "attachedTo": "IG media id 18120835111985583",
+  "created": "2026-10-31T17:13:47.743Z",
+  "by": "zernio-golive-arm"
+ }
+}

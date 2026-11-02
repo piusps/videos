@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma Tag 1: Produkt-Guide mit den drei Fragen per DM, Trigger-Wort im Video: Produkt)",
+ "commentReply": "Die drei Fragen liegen in deiner DM. Was würdest du gern selbst gründen?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hast du schon eine Idee im Kopf?",
+  "Der Guide ist unterwegs. Welche Branche reizt dich am meisten?",
+  "Angekommen, alles liegt in deiner DM. Lieber Produkt oder Dienstleistung?",
+  "Schick ich dir gerade. Hast du schon mal etwas Eigenes angefangen?",
+  "Liegt in deiner DM. Was hält dich bisher davon ab, loszulegen?"
+ ]
+}

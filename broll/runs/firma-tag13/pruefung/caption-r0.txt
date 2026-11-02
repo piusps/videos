@@ -1,0 +1,24 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt schreibt sie ihren ersten Werbebrief und klärt vorher: Mail, Anruf oder Brief?
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. Zuletzt hat sie 20 Betriebe in der Testregion Chemnitz gefunden.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ das letzte Ergebnis und das Logo anhängen.
+2. Fragen: Prüf mit der Websuche, wie ich diese Betriebe zum ersten Mal werblich ansprechen darf, per E-Mail, Anruf oder Brief, jeweils mit Quelle. Entscheide dich für einen Weg und begründe es. Schreib dann den ersten Werbebrief, so kurz, dass ein Dachdecker ihn in einer Minute liest, als Word-Datei. Sag mir, was du nicht prüfen kannst. Erfinde nichts.
+3. Die gelb markierten Platzhalter selbst ausfüllen.
+
+Ergebnis im echten Lauf (2 Minuten 25 Sekunden, 5 Websuchen, 11 Quellenlinks): Die KI nimmt den Brief. Gründe laut Claude: Werbe-E-Mail ohne Einwilligung ist auch an Firmen grundsätzlich unzulässig. Für einen Werbeanruf fehlt bei allen fünf Betrieben ein konkreter Grund. Ein Werbebrief ist ohne Einwilligung erlaubt, mit Hinweis auf das Widerspruchsrecht. Quellen: Suchtreffer, vor allem Kanzlei- und IHK-Seiten, keine geöffnet.
+
+Der Brief: eine Seite mit Logo, 109 Euro für 5 Shirts, 29,90 Euro fürs Nachbestellen, „Gestickt wird erst, wenn Sie bestellen.“ Nichts zur Waschtemperatur.
+
+Der Haken: Versandkosten und Lieferzeit kennt Claude nicht, im Brief steht ein Platzhalter. Auch Absender und Empfänger sind Platzhalter, 14 gelbe Stellen. Ob „brutto“ passt, hat Claude nicht geprüft.
+
+Kommentiere „Brief“, dann schick ich dir den Guide mit der Frage zum Kopieren, der Briefvorlage mit Platzhaltern und den drei Wegen im Vergleich.
+
+Offen bleibt: Wohin gehen die Briefe?
+
+Keine Rechtsberatung.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #kundengewinnung #firmenshirts

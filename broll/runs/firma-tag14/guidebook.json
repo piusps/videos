@@ -1,0 +1,420 @@
+{
+ "topic": "Empfängerliste",
+ "trigger_word": "Adresse",
+ "cover": {
+  "kicker": "KI baut eine Firma · Woher kommen die Adressen?",
+  "title": "Deine Empfängerliste. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie per Websuche die Postadressen für ihre ersten fünf Werbebriefe gesucht und daraus eine Excel-Empfängerliste für den Serienbrief gebaut hat. Mit beiden Varianten der Frage, der Tabellenvorlage mit den Status-Regeln, Claudes Quellen-Reihenfolge und der Liste, was Claude nicht prüfen konnte.",
+  "stat": {
+   "value": "2 min 40 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: 15 Websuchen, 4 Seiten gelesen, eine Excel-Datei mit 3 Blättern. Eindeutig belegt war am Ende nur eine von fünf Adressen."
+  },
+  "outcomes": [
+   "Die Frage zum Kopieren, mit Anhang und ohne Anhang",
+   "Die Tabellenvorlage: drei Blätter, alle Spalten",
+   "Die Status-Regeln: Belegt, Belegt prüfen, Widerspruch, Nicht belegt",
+   "Ehrlich ausgewiesen: was Claude nicht prüfen konnte"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Die Frage zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** und **„Upload or add files“** deinen Werbebrief (Word-Datei) und deine Liste mit den Firmen an, die du zuerst anschreibst. Dann füge diese Frage ein. Das ist die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante A: mit Anhang (Werbebrief + eigene Firmenliste)",
+     "text": "Im Anhang ist mein Werbebrief als Word-Datei und meine Liste mit [ANZAHL] Firmen, die ich zuerst anschreibe. Im Brief fehlen noch die Empfänger. Hol mit der Websuche die Postadressen dieser Firmen, aus dem Impressum oder anderen öffentlichen Quellen, jeweils mit Quelle. Bau daraus eine Empfängerliste für den Serienbrief als Excel-Datei. Markiere, welche Adresse belegt ist, welche nicht und wo sich Quellen widersprechen. Nimm nur Firmenangaben, keine privaten Daten und keine Ansprechpartner, die nicht im Impressum stehen. Sag mir, welche Quelle für Firmenadressen am verlässlichsten ist, mit zwei bis drei Gründen. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Claude hat in unserem Lauf rund 2 Minuten 40 Sekunden gearbeitet. Mit Anhängen und Lesen der Status-Spalte hast du nach etwa 10 Minuten eine Empfängerliste: Adressen mit Quelle, Status je Firma, Liste der offenen Punkte. Die unsicheren Zeilen selbst zu klären ist ein eigener Schritt."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Upload or add files“** → Werbebrief und Firmenliste wählen → Frage einfügen → senden. Research ist nicht nötig, in unserem Lauf blieb es aus."
+      },
+      {
+       "k": "Ergebnis",
+       "v": "Die Excel-Datei erscheint als Karte im Chat (**„Tabellenkalkulation · XLSX“**). Anklicken, herunterladen, die Spalte **Adressstatus** lesen."
+      },
+      {
+       "k": "Tipp",
+       "v": "Gedächtnis für diesen Chat ausschalten: im **„+“**-Menü das Häkchen bei **„Gedächtnis“** entfernen. So haben wir den Lauf gemacht."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: rund 2 Minuten 40 Sekunden, 15 Websuchen, 4 Seiten wirklich gelesen (2 weitere Abrufe fehlgeschlagen), 1 Excel-Datei mit 3 Blättern."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/02-empfaenger-tabelle-anonym.png",
+     "width": "24%",
+     "caption": "So sieht Claudes Antwort aus: echter Lauf vom 31.10.2026, Namen und Adressen von uns geschwärzt. 1 × Belegt, 3 × Prüfen, 1 × Widerspruch."
+    }
+   ]
+  },
+  {
+   "kicker": "Variante B",
+   "title": "Noch kein Brief, keine Liste als Datei?",
+   "intro": "Dann schreibst du die Firmen direkt in die Frage. Neuer Chat, nichts anhängen, Frage einfügen. Die Spalten gibst du selbst vor. Die Liste selbst machst du vorher, zum Beispiel mit der Frage aus einer früheren Folge der Serie. Keine Firma erfinden: Claude sucht nur Adressen zu den Namen, die du angibst.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante B: ohne Anhang (nicht getestet)",
+     "text": "Ich will diese Firmen per Brief anschreiben: [FIRMENNAME 1, ORT], [FIRMENNAME 2, ORT], [FIRMENNAME 3, ORT]. Hol mit der Websuche ihre Postadressen, aus dem Impressum oder anderen öffentlichen Quellen, jeweils mit Quelle. Bau daraus eine Empfängerliste für einen Serienbrief als Excel-Datei mit den Spalten Firmenname, Zusatz, Strasse, PLZ, Ort, Adressstatus, Quelle. Markiere, welche Adresse belegt ist, welche nicht und wo sich Quellen widersprechen. Nimm nur Firmenangaben, keine privaten Daten. Sag mir, welche Quelle am verlässlichsten ist, mit zwei bis drei Gründen, und was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Nicht getestet",
+     "text": "Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit beiden Anhängen (rund 2 min 40 s). Ohne den Brief als Anhang weiß Claude nicht, welche Felder dein Serienbrief erwartet. In unserem Lauf hat Claude den Brief zuerst gelesen, „welche Felder der Brief erwartet“."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Beispiel",
+      "Deine Firmenliste, zum Beispiel"
+     ],
+     "widths": [
+      "26%",
+      "74%"
+     ],
+     "rows": [
+      [
+       "Gebäudereiniger",
+       "Arztpraxen und Kanzleien im Erdgeschoss der eigenen Stadt"
+      ],
+      [
+       "Fotografin",
+       "Firmen mit 5–20 Leuten, die gerade Stellen ausschreiben"
+      ],
+      [
+       "Kaffeerösterin",
+       "Büros und Coworking-Spaces im Umkreis"
+      ],
+      [
+       "IT-Techniker",
+       "kleine Handwerksbetriebe ohne eigene IT"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Einstellungen",
+   "title": "Das muss in claude.ai an sein.",
+   "intro": "Drei Dinge braucht die Frage: Websuche, Dateierstellung und den Upload im Chat. Stand 30.10.2026, Menünamen können sich ändern.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Websuche",
+       "text": "In der aktuellen Oberfläche gibt es keinen eigenen Schalter, Claude sucht selbst. In unserem Lauf hat Claude ohne Schalter 15-mal gesucht. Bei Team und Enterprise muss der Owner die Websuche unter **Organization settings → Capabilities** freigeben. Quelle: [Claude Help Center: Web search](https://support.claude.com/en/articles/10684626-enable-and-use-web-search)"
+      },
+      {
+       "title": "Excel-Datei erstellen",
+       "text": "Unter **Settings → Capabilities** **„Create and edit files“** bzw. **„Code execution and file creation“** einschalten. Quelle: [Claude Help Center: Create and edit files](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)"
+      },
+      {
+       "title": "Anhänge",
+       "text": "Upload im Chat über **„+“**. Offiziell gelistet sind u. a. PDF, DOCX, CSV und TXT. Unsere Firmenliste war eine .md-Datei, sie wurde angenommen, steht aber nicht in der Liste. Im Zweifel die Liste als .txt, .csv oder .docx anhängen. Quelle: [Claude Help Center: Upload files](https://support.claude.com/en/articles/8241126-upload-files-to-claude)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Tabellenvorlage",
+   "title": "Drei Blätter, wie in Claudes Datei.",
+   "intro": "Das ist der Aufbau der Excel-Datei aus unserem Lauf, ohne die echten Zeilen. Die Beispielzeilen sind ausgedacht. Du kannst die Vorlage selbst anlegen oder Claude in der Frage genau diese Spalten vorgeben.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Blatt 1 „Empfaenger“** ist die Datenquelle für den Serienbrief. Claudes Hinweis dazu: „PLZ ist als Text gespeichert, damit die führende 0 bleibt.“"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Nr",
+      "Firmenname",
+      "Zusatz",
+      "Strasse",
+      "PLZ",
+      "Ort",
+      "Adressstatus",
+      "Quelle_im_Brief",
+      "Pruefhinweis"
+     ],
+     "widths": [
+      "4%",
+      "13%",
+      "9%",
+      "11%",
+      "7%",
+      "10%",
+      "13%",
+      "17%",
+      "16%"
+     ],
+     "rows": [
+      [
+       "1",
+       "Muster GmbH (Beispiel)",
+       "",
+       "Musterweg 1",
+       "01234",
+       "Musterort",
+       "Belegt",
+       "Ihrem Impressum auf [domain]",
+       "Impressum und eine weitere Quelle nennen dieselbe Anschrift."
+      ],
+      [
+       "2",
+       "Beispielfirma (Beispiel)",
+       "Inhaber: [Name]",
+       "Beispielweg 2",
+       "01234",
+       "Musterort",
+       "Belegt, prüfen",
+       "Ihrem Impressum auf [domain]",
+       "Nur eine Quelle."
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Die Spalte **Quelle_im_Brief** füllt den Satz aus dem Widerspruchshinweis des Werbebriefs: „Ihre Firmenanschrift stammt aus …“."
+    },
+    {
+     "type": "p",
+     "text": "**Blatt 2 „Belege“**: eine Zeile pro Quelle und Firma. In unserem Lauf 24 Zeilen für fünf Betriebe."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Betrieb",
+      "Quelle",
+      "Art der Quelle",
+      "Gefundene Anschrift",
+      "Stimmt mit Brief-Adresse überein?",
+      "Hinweis",
+      "URL"
+     ],
+     "widths": [
+      "13%",
+      "15%",
+      "13%",
+      "17%",
+      "14%",
+      "14%",
+      "14%"
+     ],
+     "rows": [
+      [
+       "Muster GmbH (Beispiel)",
+       "Impressum der eigenen Website",
+       "Eigenes Impressum",
+       "Musterweg 1, 01234 Musterort",
+       "Ja",
+       "",
+       "[Link]"
+      ],
+      [
+       "Muster GmbH (Beispiel)",
+       "Verzeichnis",
+       "Verzeichnis",
+       "andere Hausnummer",
+       "Nein",
+       "vermutlich veraltet",
+       "[Link]"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Blatt 3 „Legende und Offen“**: die Status-Regeln, wörtlich aus Claudes Datei, darunter die offenen Punkte."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Adressstatus",
+      "Bedeutung (wörtlich aus der Datei)"
+     ],
+     "widths": [
+      "22%",
+      "78%"
+     ],
+     "rows": [
+      [
+       "Belegt",
+       "Eigenes Impressum und mindestens eine unabhängige Quelle nennen dieselbe Anschrift."
+      ],
+      [
+       "Belegt, prüfen",
+       "Im Impressum belegt, aber eine Nebenquelle weicht ab, es gibt mehrere Anschriften oder nur eine Quelle."
+      ],
+      [
+       "Widerspruch",
+       "Impressum und Handelsregister (bzw. Verzeichnisse) nennen verschiedene Anschriften."
+      ],
+      [
+       "Nicht belegt",
+       "Keine Anschrift gefunden."
+      ]
+     ]
+    },
+    {
+     "type": "code",
+     "label": "Kopfzeilen zum Kopieren (eine Zeile pro Blatt, Semikolon getrennt)",
+     "text": "Empfaenger:\nNr;Firmenname;Zusatz;Strasse;PLZ;Ort;Adressstatus;Quelle_im_Brief;Pruefhinweis\n\nBelege:\nBetrieb;Quelle;Art der Quelle;Gefundene Anschrift;Stimmt mit Brief-Adresse überein?;Hinweis;URL\n\nLegende und Offen:\nAdressstatus;Bedeutung"
+    }
+   ]
+  },
+  {
+   "kicker": "Die Quelle",
+   "title": "Die KI nimmt das Impressum.",
+   "intro": "Claudes Entscheidung aus dem Lauf, wörtlich: **„Die verlässlichste Quelle ist für deine fünf Betriebe das Impressum auf der eigenen Website.“** Die Gründe, Betriebsnamen von uns ersetzt:",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "1",
+       "title": "Es ist Pflicht",
+       "text": "„Das Impressum ist Pflicht. Der Betrieb muss dort eine Anschrift angeben, unter der er erreichbar ist.“"
+      },
+      {
+       "num": "2",
+       "title": "Der Betrieb pflegt es selbst",
+       "text": "„Der Betrieb pflegt die Angabe selbst. Branchenverzeichnisse übernehmen dagegen oft alte Daten. Bei [zwei Betrieben] stehen dort noch frühere Adressen.“"
+      },
+      {
+       "num": "3",
+       "title": "Register nur für manche",
+       "text": "„Das Handelsregister ist bei Firmen wie GmbH oder KG zwar die amtlichere Quelle.“ Die anderen vier Betriebe sind laut Claude Einzelunternehmen und stehen „vermutlich nicht im Handelsregister“."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Das amtliche Register hat Claude nicht abgefragt",
+     "text": "Claude selbst: „Das amtliche Handelsregister (handelsregister.de) habe ich nicht selbst abgefragt.“ Die Registerangabe im Lauf stammt aus einer Abschrift bei einem Drittanbieter. Und: Nur 2 der 5 Impressen hat Claude wirklich geöffnet, 3 Adressen kamen aus Suchtreffern."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Quellenart im Lauf (Blatt „Belege“)",
+      "Wofür"
+     ],
+     "widths": [
+      "40%",
+      "60%"
+     ],
+     "rows": [
+      [
+       "Eigenes Impressum, eigene Website",
+       "Hauptquelle, Adresse im Brief"
+      ],
+      [
+       "Innungsliste",
+       "Gegenprobe (in einem Fall andere PLZ)"
+      ],
+      [
+       "Creditreform (Wirtschaftsauskunft)",
+       "Gegenprobe, Rechtsform"
+      ],
+      [
+       "Branchenverzeichnisse",
+       "Gegenprobe, teils frühere Adressen"
+      ],
+      [
+       "Handelsregister-Abschrift (Drittanbieter)",
+       "Gegenprobe bei GmbH & Co. KG"
+      ],
+      [
+       "Stellenanzeige (BA-Jobbörse)",
+       "Firmenname abgeglichen"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Nicht geprüft",
+   "title": "Was Claude nicht prüfen konnte.",
+   "intro": "Claudes Liste aus dem Lauf, Namen und Adressen von uns weggelassen. Die Liste ist so nicht versandfertig: Die gelben und roten Zeilen klärt ein Mensch.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Aktualität:** „Ob die Adressen heute noch stimmen. Keine Quelle sagt, wann sie zuletzt geprüft wurde.“ Ein Impressum trug den Vermerk Copyright 2010.",
+      "**Amtliches Register:** Das Handelsregister selbst hat Claude nicht abgefragt, die Angabe stammt von einem anderen Anbieter.",
+      "**Gleicher Betrieb?** Ob zwei verschiedene Firmennamen derselbe Betrieb sind: „Vieles spricht dafür, bewiesen ist es nicht.“",
+      "**Geschäftsraum oder Wohnung:** Bei einer Adresse offen, „bei Einzelunternehmen möglich“.",
+      "**Welche Adresse für Post:** Ein Betrieb nennt im Impressum zwei Anschriften. Welche er für Post bevorzugt, ist offen.",
+      "**Zustellbarkeit:** „Ob die Briefe zugestellt werden können.“ Keine Prüfung über die Post."
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken",
+     "text": "Claudes Kernsatz: „Für alle fünf Betriebe habe ich eine Adresse aus dem Impressum gefunden. Eindeutig belegt ist allerdings nur eine. Bei drei Betrieben solltest du noch etwas prüfen, bei einem widersprechen sich die Quellen.“ Claudes nächster Schritt: beim Widerspruch im Handelsregister nachsehen, bei zwei Betrieben „ginge auch ein kurzer Anruf, mit der Frage, an welche Adresse du Post schicken sollst“."
+    }
+   ]
+  },
+  {
+   "kicker": "Datenschutz",
+   "title": "Nur Firmenangaben.",
+   "intro": "Im Lauf stand im Impressum eines Betriebs eine zweite Adresse, die zur Person gehört, die für die Website verantwortlich ist. Claude dazu: „Diese Adresse habe ich nicht übernommen, weil es eine private Adresse sein könnte.“",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**„Keine privaten Daten“ in der Frage lassen:** Dann trennt Claude Firmen- und Personenadressen und sagt dir, was es weggelassen hat.",
+      "**Einzelunternehmen:** Bei 4 von 5 Betrieben im Lauf steckt der Name des Inhabers im Firmennamen. Die Liste enthält damit Personendaten, behandle sie so.",
+      "**Widerspruchshinweis im Brief:** Der gehört in jeden Brief, wie in der Briefvorlage aus der Folge „Werbebrief“. Die Spalte Quelle_im_Brief liefert den Satz „Ihre Firmenanschrift stammt aus …“.",
+      "Das ist eine Zusammenfassung aus einem Lauf, keine Rechtsberatung."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Ohne „jeweils mit Quelle“ fragen:** Dann siehst du nicht, woher eine Adresse stammt. Mit dem Satz bekommst du das Blatt „Belege“.",
+      "**„Markiere …“ weglassen:** Dann sehen alle Adressen gleich sicher aus. Die Status-Spalte zeigt, welche Zeilen du noch klären musst.",
+      "**Verzeichnissen blind glauben:** Im Lauf hatten Verzeichnisse bei zwei Betrieben frühere Adressen.",
+      "**PLZ als Zahl speichern:** Dann fällt die führende 0 weg. Die PLZ-Spalte als Text anlegen.",
+      "**Die Liste für fertig halten:** Nur „Belegt“ heißt Impressum plus mindestens eine unabhängige Quelle. Alles andere vor dem Versand klären."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes fragt die KI: Welche Adresse stimmt?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Frage, Entscheidung, Gründe, Status-Regeln und Nicht-prüfen-Liste aus einem echten claude.ai-Lauf vom 31.10.2026 (Websuche, 15 Suchen, 4 Seiten gelesen, Gedächtnis aus), wörtlich übernommen, Betriebsnamen und Adressen weggelassen oder neutral ersetzt. Beispielzeilen der Tabellenvorlage ausgedacht. Quellen nicht von uns geprüft. Menünamen können sich ändern."
+}

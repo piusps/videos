@@ -1,0 +1,19 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt baut sie ihre Website.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. Name: Kolonnenshirt (ungeprüft), Logo: ein dunkelblauer Block mit weißer Schrift. Preisvorschlag: 109 Euro brutto für fünf Shirts, 29,90 Euro für ein nachbestelltes Einzelshirt.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ das Logo anhängen, wenn vorhanden auch das letzte Ergebnis.
+2. Fragen: Bau mir eine einfache Startseite als Vorschau hier im Chat, mit meinem Logo, fürs Handy gedacht. Schreib nur, was belegt ist. Entscheide, welche drei Dinge ganz oben stehen, und begründe es. Sag mir, was noch fehlt, bevor die Seite online gehen darf. Erfinde nichts.
+
+Ergebnis im echten Lauf (2 Minuten 12 Sekunden, ohne Websuche): ein Handy-Entwurf mit Logo und beiden Preisen. Ganz oben stehen drei Dinge: was es ist und für wen, der Preis und der Bestell-Button. Die Gründe: Ein Betrieb, der prüft, will drei Fragen schnell beantwortet haben (Ist das für mich? Was kostet es? Wie bestelle ich?). Auf dem Handy passt nur das in den ersten Blick. Und der feste Preis ist das stärkste belegte Argument. Unbelegtes (Lieferzeit, Foto, Pflegehinweis) steht nur als Platzhalter da.
+
+Der Haken: Online darf die Seite noch nicht. Laut Claude fehlen unter anderem Impressum, Datenschutzerklärung, AGB und die Frage, ob nur an Firmen verkauft wird, dazu Versandkosten, Lieferzeit und der Umsatzsteuer-Status („ich bin kein Anwalt, bitte prüfen lassen“).
+
+Kommentiere „Website“, dann schick ich dir den Guide mit der Frage zum Kopieren, den drei Dingen für ganz oben, der Online-Checkliste (was bis online fehlt) und dem echten Entwurf als Bild. Damit steht in wenigen Minuten der eigene Startseiten-Entwurf.
+
+Offen bleibt: Was muss sie anmelden?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #website #firmenshirts

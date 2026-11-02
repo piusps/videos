@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Konkurrenz: Guide mit der Frage und der Preistabelle per DM, Trigger-Wort im Video: Konkurrenz)",
+ "commentReply": "Der Guide liegt in deiner DM. Was bestellt dein typischer Kunde bei dir?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hättest du mit rund 110 Euro für fünf Shirts gerechnet?",
+  "Schick ich dir gerade, mit der kompletten Preistabelle. Rechnest du deine Konkurrenz mit oder ohne Einrichtung?",
+  "Angekommen, alles liegt in deiner DM. Kennst du die Gesamtpreise deiner Konkurrenz schon?",
+  "Liegt in deiner DM. Für welches Angebot probierst du die Frage aus?",
+  "Der Guide ist unterwegs. Würdest du ein einzelnes Shirt nachbestellen wollen?"
+ ]
+}

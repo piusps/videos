@@ -1,0 +1,190 @@
+{
+ "topic": "Kunde",
+ "trigger_word": "Kunde",
+ "cover": {
+  "kicker": "KI baut eine Firma · Der erste Kunde",
+  "title": "Finde deine beste Kundenbranche mit Claude. In zehn Minuten.",
+  "subtitle": "Die drei Schritte, mit denen die KI aus der Serie ihren ersten Kunden gesucht hat. Mit der Frage zum Kopieren, dem echten Ergebnis unseres Laufs und der Begründung, warum sie das Handwerk gewählt hat.",
+  "stat": {
+   "value": "264 Quellen",
+   "label": "So viele Quellen hat Claude Research in unserem Lauf für diese eine Frage geprüft. Dauer: 7 Minuten."
+  },
+  "outcomes": [
+   "Die drei Branchen, die dein Produkt am ehesten brauchen, jede mit Grund und Quelle",
+   "Wie oft diese Kunden nachkaufen, also ob einer immer wieder bestellt",
+   "Eine klare Wahl mit Begründung statt Bauchgefühl"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Erst das Ergebnis. In zehn Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai), starte einen neuen Chat, tippe unten links auf **„+“** und schalte **„Research“** ein. Häng über **„+“ → „Upload or add files“** an, was du schon über dein Produkt weißt (Notizen, eine frühere Recherche). Dann füge diese Frage ein und ersetze die Teile in [Klammern].",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Schritt 3 · Die Frage (Research an, Datei angehängt)",
+     "text": "Im Anhang ist meine Recherche von gestern. Ich verkaufe [Firmenshirts mit Logo] an [Betriebe unter zehn Leuten], [gedruckt auf Bestellung bei einem Partner]. Recherchiere: Welche drei Branchen brauchen am häufigsten [Shirts mit Logo], und wie oft bestellen sie nach? Nenne für jede Branche den Grund und deine Quelle."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Nach ein paar Minuten hast du drei Branchen mit Grund und Quelle, dazu eine Einschätzung, wie oft sie nachkaufen. Öffne bei der besten Branche die Quelle und lies selbst nach. Genau so hat die KI in dieser Folge ihren ersten Kunden gewählt."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Plan",
+       "v": "Research gibt es in den bezahlten Plänen **Pro, Max, Team und Enterprise**. Quelle: [support.claude.com/en/articles/11088861](https://support.claude.com/en/articles/11088861-using-research-on-claude)"
+      },
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Research“** → **„+“ → „Upload or add files“** → Frage einfügen → senden"
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 7 Minuten, 264 Quellen. Du kannst währenddessen etwas anderes machen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Geschichte",
+   "title": "Ein Produkt, aber noch kein Kunde.",
+   "intro": "Eine KI soll hundert Tage lang ganz alleine ein Unternehmen führen. Im ersten Schritt hat sie ihr Produkt gefunden: Firmenshirts mit Logo, gedruckt auf Bestellung bei einem Partner. Offen war, wer sie kauft und wie oft.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Die Frage",
+       "text": "Welche drei Branchen brauchen am häufigsten Shirts mit Logo, und wie oft bestellen sie nach?"
+      },
+      {
+       "num": "02",
+       "title": "Der Kontext",
+       "text": "Der Bericht aus Schritt 1 hing als Datei dran. So fing Claude nicht bei null an."
+      },
+      {
+       "num": "03",
+       "title": "Die Wahl",
+       "text": "Das Bau- und Ausbauhandwerk. Die Gründe stehen unten, jeder mit Quelle aus dem Lauf."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Vorher einschalten",
+   "title": "Was du brauchst, bevor du startest.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Bezahlter Plan** (Pro, Max, Team oder Enterprise). Ohne ihn gibt es kein Research. [Quelle](https://support.claude.com/en/articles/11088861-using-research-on-claude)",
+      "**Websuche an.** In Team- und Enterprise-Konten gibt ein Besitzer sie frei unter Organisationseinstellungen → Funktionen. [Quelle](https://support.claude.com/de/articles/10684626-websuche-aktivieren-und-verwenden)",
+      "**Eine Datei mit deinem Stand.** Ein paar Zeilen reichen: was du verkaufst, an wen, was du schon weißt. Als .md, .txt, .pdf oder .docx über „+“ hochladen.",
+      "**Zehn Minuten Zeit:** zwei Minuten zum Einrichten, den Rest arbeitet Research alleine."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Was Claude in unserem Lauf gefunden hat.",
+   "break_before": true,
+   "intro": "Zitate aus dem echten Lauf vom 28.10.2026 (Research, 264 Quellen, 7 Minuten). Claude sagt selbst dazu: Eine direkte Statistik dazu gibt es für Deutschland nicht. Ranking und Bestellintervalle sind begründete Schätzungen.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "1",
+       "title": "Bau- und Ausbauhandwerk",
+       "text": "335.272 Betriebe mit weniger als 10 Beschäftigten (Destatis 2024). Wer beim Kunden vor Ort arbeitet, nutzt die Kleidung als sichtbarstes Markenzeichen."
+      },
+      {
+       "num": "2",
+       "title": "Gastronomie und Cafés",
+       "text": "192.119 Kleinstbetriebe. Eine EU-Verordnung schreibt saubere Arbeitskleidung vor. Die Fluktuation ist am höchsten: 62,1 % gegenüber 33,1 % im Bau (2023)."
+      },
+      {
+       "num": "3",
+       "title": "Friseursalons",
+       "text": "Im Schnitt rund 4 Personen je Betrieb. Einheitliche Shirts gehören zum Salon-Look."
+      }
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Handwerk, Friseure",
+       "v": "etwa ein- bis zweimal im Jahr nachbestellen. Ein Shirt hält im Berufsalltag ungefähr 1 bis 2 Jahre, üblich sind 3 bis 5 Shirts pro Person."
+      },
+      {
+       "k": "Gastronomie",
+       "v": "mehrmals im Jahr kleine Bestellungen, praktisch bei jeder Neueinstellung."
+      },
+      {
+       "k": "Platz 4",
+       "v": "Kfz-Werkstätten. Mit im Schnitt 12 bis 13 Personen meist keine Kleinstbetriebe."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Warum die KI das Handwerk nimmt: die meisten Kleinstbetriebe, das Shirt ist beim Kunden vor Ort die Werbung, und es wird regelmäßig nachbestellt. Das ist keine Kaufempfehlung. Es zeigt nur, wie man eine Kundengruppe mit Quellen begründet. Bei deinem Produkt kommt etwas anderes heraus."
+    }
+   ]
+  },
+  {
+   "kicker": "Prompt-Bibliothek",
+   "title": "Von der Liste zur Entscheidung.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Nachfrage 1 · Begründen lassen",
+     "text": "Nimm die drei Branchen aus deinem Bericht. Bewerte jede mit 1 bis 5 Punkten: Wie viele Betriebe gibt es, wie oft kaufen sie nach, und wie leicht erreiche ich sie? Begründe jede Zahl mit einer Quelle aus dem Bericht. Wo du keine hast, schreib „unklar“."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 2 · Gegenprobe",
+     "text": "Spiel den Kritiker: Was spricht gegen [Branche 1] als ersten Kunden? Nenne die drei stärksten Gründe mit Quelle."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 3 · Erster Kontakt",
+     "text": "Wo trifft man [Branche 1] in [deiner Stadt] am ehesten: Verbände, Innungen, Messen, Online-Gruppen? Nenne fünf konkrete Orte mit Link."
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Schätzung für Statistik halten.** Claude sagt selbst, wenn es keine Zahl gibt. Nimm das ernst und prüf es später mit echten Kunden.",
+      "**Ohne Anhang fragen.** Ohne deinen Stand fängt Claude bei null an und schlägt Kunden vor, die zu deinem Produkt nicht passen.",
+      "**Quellen nicht angeklickt.** Prüf jede Zahl, die du weiterverwendest, an der Quelle.",
+      "**Alles auf dem Handy.** In der mobilen App nutzt Research nur das Web, keine verbundenen Werkzeuge. [Quelle](https://support.claude.com/en/articles/11088861-using-research-on-claude)",
+      "**Interna hochgeladen.** Keine Kundendaten oder Geschäftsgeheimnisse, die du nicht teilen darfst."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes prüft die KI, was diese Betriebe beim Bestellen nervt.",
+  "text": "Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne Einrichtung willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Zitate aus einem echten claude.ai-Lauf vom 28.10.2026 (Research). Menünamen können sich ändern."
+}

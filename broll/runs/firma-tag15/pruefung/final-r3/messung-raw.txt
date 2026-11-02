@@ -1,0 +1,240 @@
+1110 37.000 eyetop=None firstNonFace=None gap=None keine Augen
+1111 37.033 eyetop=None firstNonFace=None gap=None keine Augen
+1112 37.067 eyetop=None firstNonFace=None gap=None keine Augen
+1113 37.100 eyetop=None firstNonFace=None gap=None keine Augen
+1114 37.133 eyetop=None firstNonFace=None gap=None keine Augen
+1115 37.167 eyetop=None firstNonFace=None gap=None keine Augen
+1116 37.200 eyetop=None firstNonFace=None gap=None keine Augen
+1117 37.233 eyetop=None firstNonFace=None gap=None keine Augen
+1118 37.267 eyetop=None firstNonFace=None gap=None keine Augen
+1119 37.300 eyetop=None firstNonFace=None gap=None keine Augen
+1120 37.333 eyetop=None firstNonFace=None gap=None keine Augen
+1121 37.367 eyetop=None firstNonFace=None gap=None keine Augen
+1122 37.400 eyetop=None firstNonFace=None gap=None keine Augen
+1123 37.433 eyetop=None firstNonFace=None gap=None keine Augen
+1124 37.467 eyetop=None firstNonFace=None gap=None keine Augen
+1125 37.500 eyetop=None firstNonFace=None gap=None keine Augen
+1126 37.533 eyetop=None firstNonFace=None gap=None keine Augen
+1127 37.567 eyetop=None firstNonFace=None gap=None keine Augen
+1128 37.600 eyetop=None firstNonFace=None gap=None keine Augen
+1129 37.633 eyetop=None firstNonFace=None gap=None keine Augen
+1130 37.667 eyetop=None firstNonFace=None gap=None keine Augen
+1131 37.700 eyetop=None firstNonFace=None gap=None keine Augen
+1132 37.733 eyetop=1326 firstNonFace=1325 gap=0 x292-787
+1133 37.767 eyetop=1350 firstNonFace=1349 gap=0 x284-794
+1134 37.800 eyetop=1379 firstNonFace=1378 gap=0 x276-802
+1135 37.833 eyetop=1412 firstNonFace=1411 gap=0 x275-804
+1136 37.867 eyetop=1450 firstNonFace=1449 gap=0 x272-809
+1137 37.900 eyetop=1480 firstNonFace=1479 gap=0 x258-823
+1138 37.933 eyetop=1492 firstNonFace=1491 gap=0 x248-827
+1139 37.967 eyetop=1480 firstNonFace=1479 gap=0 x257-821
+1140 38.000 eyetop=1474 firstNonFace=1473 gap=0 x262-817
+1141 38.033 eyetop=1476 firstNonFace=1475 gap=0 x262-817
+1142 38.067 eyetop=1477 firstNonFace=1476 gap=0 x262-815
+1143 38.100 eyetop=1477 firstNonFace=1476 gap=0 x262-817
+1144 38.133 eyetop=1478 firstNonFace=1477 gap=0 x262-817
+1145 38.167 eyetop=1477 firstNonFace=1476 gap=0 x262-819
+1146 38.200 eyetop=1477 firstNonFace=1476 gap=0 x262-817
+1147 38.233 eyetop=1477 firstNonFace=1476 gap=0 x264-815
+1148 38.267 eyetop=1477 firstNonFace=1476 gap=0 x262-815
+1149 38.300 eyetop=1476 firstNonFace=1475 gap=0 x262-815
+1150 38.333 eyetop=1476 firstNonFace=1475 gap=0 x262-818
+1151 38.367 eyetop=1476 firstNonFace=1475 gap=0 x264-818
+1152 38.400 eyetop=1475 firstNonFace=1474 gap=0 x263-816
+1153 38.433 eyetop=1475 firstNonFace=1474 gap=0 x264-817
+1154 38.467 eyetop=1475 firstNonFace=1474 gap=0 x264-815
+1155 38.500 eyetop=1474 firstNonFace=1473 gap=0 x264-815
+1156 38.533 eyetop=1474 firstNonFace=1473 gap=0 x264-813
+1157 38.567 eyetop=1474 firstNonFace=1473 gap=0 x265-816
+1158 38.600 eyetop=1473 firstNonFace=1472 gap=0 x265-663
+1159 38.633 eyetop=1472 firstNonFace=1471 gap=0 x266-662
+1160 38.667 eyetop=1472 firstNonFace=1471 gap=0 x266-661
+1161 38.700 eyetop=1472 firstNonFace=1471 gap=0 x266-661
+1162 38.733 eyetop=1471 firstNonFace=1470 gap=0 x266-662
+1163 38.767 eyetop=1470 firstNonFace=1469 gap=0 x266-662
+1164 38.800 eyetop=1470 firstNonFace=1469 gap=0 x266-661
+1165 38.833 eyetop=1469 firstNonFace=1468 gap=0 x266-661
+1166 38.867 eyetop=1469 firstNonFace=1468 gap=0 x266-661
+1167 38.900 eyetop=1469 firstNonFace=1468 gap=0 x266-662
+1168 38.933 eyetop=1468 firstNonFace=1467 gap=0 x266-662
+1169 38.967 eyetop=1468 firstNonFace=1467 gap=0 x266-661
+1170 39.000 eyetop=1468 firstNonFace=1467 gap=0 x270-661
+1171 39.033 eyetop=1468 firstNonFace=1467 gap=0 x270-661
+1172 39.067 eyetop=1467 firstNonFace=1466 gap=0 x268-661
+1173 39.100 eyetop=1467 firstNonFace=1466 gap=0 x268-661
+1174 39.133 eyetop=1467 firstNonFace=1466 gap=0 x268-661
+1175 39.167 eyetop=1467 firstNonFace=1466 gap=0 x267-661
+1176 39.200 eyetop=1467 firstNonFace=1466 gap=0 x266-661
+1177 39.233 eyetop=1467 firstNonFace=1466 gap=0 x270-661
+1178 39.267 eyetop=1467 firstNonFace=1466 gap=0 x266-661
+1179 39.300 eyetop=1468 firstNonFace=1467 gap=0 x267-661
+1180 39.333 eyetop=1468 firstNonFace=1467 gap=0 x272-661
+1181 39.367 eyetop=1468 firstNonFace=1467 gap=0 x268-661
+1182 39.400 eyetop=1468 firstNonFace=1467 gap=0 x268-661
+1183 39.433 eyetop=1469 firstNonFace=1468 gap=0 x271-661
+1184 39.467 eyetop=1469 firstNonFace=1468 gap=0 x271-661
+1185 39.500 eyetop=1470 firstNonFace=1469 gap=0 x267-661
+1186 39.533 eyetop=1470 firstNonFace=1469 gap=0 x271-662
+1187 39.567 eyetop=1471 firstNonFace=1470 gap=0 x269-661
+1188 39.600 eyetop=1472 firstNonFace=1471 gap=0 x272-661
+1189 39.633 eyetop=1472 firstNonFace=1471 gap=0 x417-661
+1190 39.667 eyetop=1473 firstNonFace=1472 gap=0 x417-661
+1191 39.700 eyetop=1474 firstNonFace=1473 gap=0 x270-661
+1192 39.733 eyetop=1475 firstNonFace=1474 gap=0 x417-662
+1193 39.767 eyetop=1475 firstNonFace=1474 gap=0 x417-662
+1194 39.800 eyetop=1476 firstNonFace=1475 gap=0 x417-662
+1195 39.833 eyetop=1477 firstNonFace=1476 gap=0 x416-663
+1196 39.867 eyetop=1478 firstNonFace=1477 gap=0 x416-663
+1197 39.900 eyetop=1479 firstNonFace=1478 gap=0 x416-663
+1198 39.933 eyetop=1480 firstNonFace=1479 gap=0 x416-663
+1199 39.967 eyetop=1480 firstNonFace=1479 gap=0 x416-663
+1200 40.000 eyetop=1482 firstNonFace=1481 gap=0 x416-663
+1201 40.033 eyetop=1482 firstNonFace=1481 gap=0 x416-663
+1202 40.067 eyetop=1483 firstNonFace=1482 gap=0 x416-663
+1203 40.100 eyetop=1484 firstNonFace=1483 gap=0 x268-663
+1204 40.133 eyetop=1484 firstNonFace=1483 gap=0 x415-664
+1205 40.167 eyetop=1486 firstNonFace=1485 gap=0 x416-663
+1206 40.200 eyetop=1486 firstNonFace=1485 gap=0 x268-663
+1207 40.233 eyetop=1487 firstNonFace=1486 gap=0 x266-663
+1208 40.267 eyetop=1488 firstNonFace=1487 gap=0 x416-664
+1209 40.300 eyetop=1488 firstNonFace=1487 gap=0 x416-664
+1210 40.333 eyetop=1488 firstNonFace=1487 gap=0 x415-664
+1211 40.367 eyetop=1489 firstNonFace=1488 gap=0 x266-664
+1212 40.400 eyetop=1490 firstNonFace=1489 gap=0 x265-664
+1213 40.433 eyetop=1490 firstNonFace=1489 gap=0 x262-664
+1214 40.467 eyetop=1491 firstNonFace=1490 gap=0 x261-665
+1215 40.500 eyetop=1491 firstNonFace=1490 gap=0 x261-665
+1216 40.533 eyetop=1491 firstNonFace=1490 gap=0 x261-665
+1217 40.567 eyetop=1492 firstNonFace=1491 gap=0 x261-665
+1218 40.600 eyetop=1492 firstNonFace=1491 gap=0 x261-665
+1219 40.633 eyetop=1492 firstNonFace=1491 gap=0 x262-665
+1220 40.667 eyetop=1511 firstNonFace=1510 gap=0 x262-665
+1221 40.700 eyetop=1511 firstNonFace=1510 gap=0 x414-665
+1222 40.733 eyetop=1492 firstNonFace=1491 gap=0 x258-665
+1223 40.767 eyetop=1492 firstNonFace=1491 gap=0 x262-665
+1224 40.800 eyetop=1492 firstNonFace=1491 gap=0 x264-665
+1225 40.833 eyetop=1492 firstNonFace=1491 gap=0 x260-665
+1226 40.867 eyetop=1492 firstNonFace=1491 gap=0 x260-665
+1227 40.900 eyetop=1492 firstNonFace=1491 gap=0 x262-665
+1228 40.933 eyetop=1492 firstNonFace=1491 gap=0 x260-665
+1229 40.967 eyetop=1492 firstNonFace=1491 gap=0 x260-665
+1230 41.000 eyetop=1492 firstNonFace=1491 gap=0 x262-665
+1231 41.033 eyetop=1492 firstNonFace=1491 gap=0 x261-665
+1232 41.067 eyetop=1492 firstNonFace=1491 gap=0 x257-665
+1233 41.100 eyetop=1492 firstNonFace=1491 gap=0 x259-664
+1234 41.133 eyetop=1492 firstNonFace=1491 gap=0 x258-664
+1235 41.167 eyetop=1492 firstNonFace=1491 gap=0 x258-664
+1236 41.200 eyetop=1491 firstNonFace=1490 gap=0 x260-664
+1237 41.233 eyetop=1491 firstNonFace=1490 gap=0 x260-664
+1238 41.267 eyetop=1491 firstNonFace=1490 gap=0 x258-664
+1239 41.300 eyetop=1491 firstNonFace=1490 gap=0 x259-664
+1240 41.333 eyetop=1492 firstNonFace=1491 gap=0 x264-664
+1241 41.367 eyetop=1492 firstNonFace=1491 gap=0 x260-664
+1242 41.400 eyetop=1492 firstNonFace=1491 gap=0 x264-664
+1243 41.433 eyetop=1437 firstNonFace=1436 gap=0 x260-664
+1244 41.467 eyetop=1448 firstNonFace=1447 gap=0 x260-664
+1245 41.500 eyetop=1460 firstNonFace=1459 gap=0 x259-664
+1246 41.533 eyetop=1466 firstNonFace=1465 gap=0 x260-665
+1247 41.567 eyetop=1474 firstNonFace=1473 gap=0 x260-665
+1248 41.600 eyetop=1480 firstNonFace=1479 gap=0 x260-665
+1249 41.633 eyetop=1486 firstNonFace=1485 gap=0 x259-665
+1250 41.667 eyetop=1492 firstNonFace=1491 gap=0 x259-665
+1251 41.700 eyetop=1437 firstNonFace=1436 gap=0 x261-665
+1252 41.733 eyetop=1434 firstNonFace=1433 gap=0 x260-665
+1253 41.767 eyetop=1435 firstNonFace=1434 gap=0 x258-665
+1254 41.800 eyetop=1435 firstNonFace=1434 gap=0 x257-665
+1255 41.833 eyetop=1436 firstNonFace=1435 gap=0 x257-665
+1256 41.867 eyetop=1394 firstNonFace=1393 gap=0 x257-665
+1257 41.900 eyetop=1389 firstNonFace=1388 gap=0 x260-665
+1258 41.933 eyetop=1390 firstNonFace=1389 gap=0 x258-665
+1259 41.967 eyetop=1391 firstNonFace=1390 gap=0 x256-665
+1260 42.000 eyetop=1391 firstNonFace=1390 gap=0 x256-665
+1261 42.033 eyetop=1397 firstNonFace=1396 gap=0 x257-666
+1262 42.067 eyetop=1397 firstNonFace=1396 gap=0 x253-665
+1263 42.100 eyetop=None firstNonFace=None gap=None keine Augen
+1264 42.133 eyetop=None firstNonFace=None gap=None keine Augen
+1265 42.167 eyetop=None firstNonFace=None gap=None keine Augen
+1266 42.200 eyetop=None firstNonFace=None gap=None keine Augen
+1267 42.233 eyetop=None firstNonFace=None gap=None keine Augen
+1268 42.267 eyetop=None firstNonFace=None gap=None keine Augen
+1269 42.300 eyetop=None firstNonFace=None gap=None keine Augen
+1270 42.333 eyetop=None firstNonFace=None gap=None keine Augen
+1271 42.367 eyetop=None firstNonFace=None gap=None keine Augen
+1272 42.400 eyetop=None firstNonFace=None gap=None keine Augen
+1273 42.433 eyetop=None firstNonFace=None gap=None keine Augen
+1274 42.467 eyetop=None firstNonFace=None gap=None keine Augen
+1275 42.500 eyetop=None firstNonFace=None gap=None keine Augen
+1276 42.533 eyetop=None firstNonFace=None gap=None keine Augen
+1277 42.567 eyetop=None firstNonFace=None gap=None keine Augen
+1278 42.600 eyetop=None firstNonFace=None gap=None keine Augen
+1279 42.633 eyetop=None firstNonFace=None gap=None keine Augen
+1280 42.667 eyetop=None firstNonFace=None gap=None keine Augen
+1281 42.700 eyetop=1156 firstNonFace=1155 gap=0 x374-699
+1282 42.733 eyetop=1156 firstNonFace=1155 gap=0 x357-731
+1283 42.767 eyetop=1156 firstNonFace=1155 gap=0 x371-707
+1284 42.800 eyetop=1156 firstNonFace=1155 gap=0 x372-707
+1285 42.833 eyetop=1156 firstNonFace=1155 gap=0 x374-703
+1286 42.867 eyetop=1157 firstNonFace=1156 gap=0 x376-703
+1287 42.900 eyetop=1157 firstNonFace=1156 gap=0 x378-699
+1288 42.933 eyetop=1158 firstNonFace=1157 gap=0 x380-697
+1289 42.967 eyetop=1158 firstNonFace=1157 gap=0 x382-695
+1290 43.000 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1291 43.033 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1292 43.067 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1293 43.100 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1294 43.133 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1295 43.167 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1296 43.200 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1297 43.233 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1298 43.267 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1299 43.300 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1300 43.333 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1301 43.367 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1302 43.400 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1303 43.433 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1304 43.467 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1305 43.500 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1306 43.533 eyetop=1156 firstNonFace=1155 gap=0 x384-695
+1307 43.567 eyetop=1156 firstNonFace=1155 gap=0 x371-708
+1308 43.600 eyetop=1156 firstNonFace=1155 gap=0 x371-708
+1309 43.633 eyetop=1156 firstNonFace=1155 gap=0 x371-708
+1310 43.667 eyetop=1156 firstNonFace=1155 gap=0 x371-708
+1311 43.700 eyetop=1156 firstNonFace=1155 gap=0 x371-717
+1312 43.733 eyetop=1156 firstNonFace=1155 gap=0 x372-728
+1313 43.767 eyetop=1156 firstNonFace=1155 gap=0 x371-721
+1314 43.800 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1315 43.833 eyetop=1156 firstNonFace=1155 gap=0 x371-721
+1316 43.867 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1317 43.900 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1318 43.933 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1319 43.967 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1320 44.000 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1321 44.033 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1322 44.067 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1323 44.100 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1324 44.133 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1325 44.167 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1326 44.200 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1327 44.233 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1328 44.267 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1329 44.300 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1330 44.333 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1331 44.367 eyetop=1156 firstNonFace=1155 gap=0 x371-721
+1332 44.400 eyetop=1156 firstNonFace=1155 gap=0 x371-721
+1333 44.433 eyetop=1156 firstNonFace=1155 gap=0 x369-721
+1334 44.467 eyetop=1156 firstNonFace=1155 gap=0 x362-721
+1335 44.500 eyetop=1156 firstNonFace=1155 gap=0 x367-721
+1336 44.533 eyetop=1156 firstNonFace=1155 gap=0 x371-721
+1337 44.567 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1338 44.600 eyetop=1156 firstNonFace=1155 gap=0 x373-721
+1339 44.633 eyetop=1156 firstNonFace=1155 gap=0 x374-721
+1340 44.667 eyetop=1156 firstNonFace=1155 gap=0 x375-721
+1341 44.700 eyetop=1156 firstNonFace=1155 gap=0 x376-721
+1342 44.733 eyetop=1156 firstNonFace=1155 gap=0 x376-721
+1343 44.767 eyetop=1156 firstNonFace=1155 gap=0 x375-721
+1344 44.800 eyetop=1156 firstNonFace=1155 gap=0 x373-721
+1345 44.833 eyetop=1156 firstNonFace=1155 gap=0 x372-721
+1346 44.867 eyetop=1156 firstNonFace=1155 gap=0 x371-721
+1347 44.900 eyetop=1156 firstNonFace=1155 gap=0 x370-721
+1348 44.933 eyetop=1156 firstNonFace=1155 gap=0 x368-721
+1349 44.967 eyetop=1156 firstNonFace=1155 gap=0 x359-721

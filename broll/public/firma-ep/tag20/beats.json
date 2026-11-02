@@ -1,0 +1,1396 @@
+{
+ "folge": 20,
+ "tag": 20,
+ "serientag": 5,
+ "ersteFolgeDesTages": false,
+ "date": "2026-11-01",
+ "slot": "2026-11-01 21:00",
+ "keyword": "Steuer",
+ "seconds": 44.6,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 152.6,
+  "musicMute": [],
+  "musicCurve": [
+   [
+    0,
+    0.05
+   ],
+   [
+    22.6,
+    0.05
+   ],
+   [
+    22.81,
+    0.03
+   ],
+   [
+    23.6,
+    0.03
+   ],
+   [
+    23.67,
+    0.06
+   ],
+   [
+    24.4,
+    0.04
+   ],
+   [
+    26.0,
+    0.04
+   ],
+   [
+    26.5,
+    0.032
+   ],
+   [
+    43.3,
+    0.032
+   ],
+   [
+    43.6,
+    0.05
+   ],
+   [
+    44.1,
+    0.05
+   ],
+   [
+    44.6,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 152,60 s am Stück (Stem regie/musik-abschnitt.mp3 45,30 s bis 197,90; Fenster Folge 20 = 152,0–199,95), nie geloopt. music-explicit-check 3× 0 explizite Wörter, kein musicMute. Details musik.txt"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Ziffern in words.json: hundert → 100, hundertneun → 109, siebzehn → 17, neunzehn → 19, fünf (Jahre) → 5, zehn → 10. Kollisionen: 'das' (1.58 / 5.41), 'ki' (2.0 / 6.74), 'ich' (4.95 / 39.41), 'der' (6.59 / 32.32), 'mit' (7.82 / 13.47 / 20.72 / 25.05), 'betriebe' (8.77 / 24.61), 'auf' (10.11 / 36.08), 'umsatzsteuer' (14.42 / 21.02), 'steuer' (28.12 / 38.61). In episode.json immer 'Wort@Zeit'.",
+ "textregel": "Neue Textblöcke (ohne Untertitel) je ≥ 1,2 s auseinander, ≤ 4 Wörter (+ kleine Unterzeile/Gegenwert), nie zwei gleichzeitig; aussagende Texte ≥ 58 px (Ziel ≥ 64). Screenshots: nie mehr als ~12 lesbare Wörter gleichzeitig.",
+ "verboten": [
+  "Betriebs-/Personennamen, Straßen, PLZ, Websites der Betriebe, Telefon",
+  "Marge/Gewinn in Euro (Einkaufspreis fehlt)",
+  "18,32 € / 17,02 € / 25,13 € groß",
+  "Formeln mit P groß",
+  "'das Finanzamt sagt' / Finanzamt als Quelle",
+  "'angemeldet' / 'Verzicht erklärt' / 'USt-ID beantragt' / Haken an GEWERBE",
+  "'Printful bestätigt 19 %' (nur Testbericht)",
+  "'alle Betriebe holen Steuer zurück' (nur mit Vorsteuerabzug)",
+  "Steuerrat an den Zuschauer ('du solltest …')",
+  "Shot 03 (Grenzen 25.000/100.000), Shot 06 (USt-ID/Erwerbsschwelle)",
+  "Grund 3 / § 14 Abs. 3 lesbar",
+  "'Marge sogar 19 % höher' (Shot 09) lesbar",
+  "Umsatz-Zähler",
+  "TAG-Slam / 'TAG 5'",
+  "'MIT USt-ID: 0 %' o. ä. (Lauf: USt-ID hilft dem Kleinunternehmer nicht)",
+  "irgendeine lesbare Zahl außer 100, 109 €, 91,60 €, 17,40 €, 19 %, 5 Jahre, 10 Min (auch nicht in Screenshots: 25,13 / 29,90 abgedeckt)",
+  "Haken an WERBEBRIEF + ADRESSEN",
+  "'gestern'",
+  "claude.ai-Sidebar",
+  "'Wieder am Start'-Kopf aus Shot 01",
+  "'boilr'",
+  "'Hamburg'",
+  "Maskottchen > 1/3 verdeckt oder Augen bedeckt (auch durch Untertitel/Panels/Bauchbinde/Endkarte)"
+ ],
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "sub": "· 12 SCHRITTE",
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE\nENTWURF",
+   "GEWERBE\nOFFEN",
+   "BETRIEBE",
+   "WERBEBRIEF\n+ ADRESSEN",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 7,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6
+  ],
+  "wip": [
+   4
+  ],
+  "notiz": "Wie Folge 19 (Stand danach). Rückblick: GEWERBE noch mit Badge 'UST ?' (Ende Folge 19). Erst in der CTA-Board-Ansicht (B15): GEWERBE Badge 'MIT UST' (Plakette im Stil von '5ER OFFEN', Feldtext bleibt 'GEWERBE OFFEN') (Entscheidung, KEIN Haken – Verzicht/USt-ID/Gewerbe sind Menschen-Schritte). WERBEBRIEF + ADRESSEN current ohne Haken, DRUCK + PREIS Haken + Badge '5ER OFFEN'. Kein neues Board-Feld (Autor-Vorschlag 'STEUER'-Schritt bewusst als Badge gelöst, Board bleibt wiedererkennbar). Kein Umsatz-Zähler."
+ },
+ "story_objekt": {
+  "name": "steuer_tafel",
+  "tafel": {
+   "name": "steuer_tafel",
+   "spalten": [
+    {
+     "kopf": "MIT USt",
+     "zeile": "91,60 €"
+    },
+    {
+     "kopf": "OHNE USt",
+     "unterkopf": "Kleinunternehmer",
+     "zeile": "109 €"
+    }
+   ],
+   "zeile_label": "Betrieb zahlt effektiv",
+   "zeile_unter": "mit Vorsteuerabzug",
+   "beleg": "Shot 08 Zeile 'effektiv zahlt' (91,60 € bzw. … | 109 € bzw. …)",
+   "hinweis": "Durchgehendes Story-Objekt ab Frame 0. Gewählt = MIT USt (oranger Rahmen + Haken-Icon ab Frame 0, Stempel-Text erst B11). OHNE USt grau, ab B11 durchgestrichen."
+  },
+  "plaetze": [
+   [
+    "0",
+    "hook: Tafel voll, MIT gerahmt"
+   ],
+   [
+    "Ich@4.5",
+    "off (Board)"
+   ],
+   [
+    "Preis@11.5",
+    "Preisschild PREIS OFFEN"
+   ],
+   [
+    "Heute@12.8",
+    "Tafel leer, Köpfe leuchten"
+   ],
+   [
+    "Claude@15.5+0.15",
+    "Paper-Fenster (01 → 07)"
+   ],
+   [
+    "Sie@19.8",
+    "Paper-Fenster Shot 02"
+   ],
+   [
+    "Umsatzsteuer@21",
+    "Tafel: Stempel MIT UMSATZSTEUER, OHNE durchgestrichen"
+   ],
+   [
+    "Warum",
+    "Tafel oben, Pfeil-Kette Betrieb → zurück → 17,40 €"
+   ],
+   [
+    "Ihr@29",
+    "Printful-Karton +19 %"
+   ],
+   [
+    "Der@32",
+    "Tafel mit Schloss, 5 JAHRE BINDUNG"
+   ],
+   [
+    "Als@34",
+    "Rechnungsblatt RECHNUNG?"
+   ],
+   [
+    "Kommentiere",
+    "Endkarte"
+   ]
+  ]
+ },
+ "shots": {
+  "01": {
+   "src": "design/lauf/01-prompt-mit-anhang.png",
+   "size": [
+    630,
+    825
+   ],
+   "bereiche": {
+    "anhang": {
+     "x": 40,
+     "y": 50,
+     "w": 182,
+     "h": 182,
+     "was": "Anhang-Karte 'Kolonnenshirt_Marge.md · 24 Zeilen · MD'"
+    },
+    "keine_beratung": {
+     "x": 40,
+     "y": 636,
+     "w": 330,
+     "h": 40,
+     "was": "letzte Promptzeile '… das keine Steuerberatung ist.' (Marker auf 'keine Steuerberatung')"
+    }
+   },
+   "hinweis": "Anhang-Karte scharf, Prompttext nur weiche Textur außer der Zeile 'keine Steuerberatung'. 109/29,90 im Prompt nicht vergrößern."
+  },
+  "07": {
+   "src": "design/lauf/07-schritte-zeile.png",
+   "size": [
+    735,
+    187
+   ],
+   "bereiche": {
+    "quellen": {
+     "x": 25,
+     "y": 45,
+     "w": 215,
+     "h": 36,
+     "was": "'(Gesetz, BMF, IHK)' – Marker auf 'Gesetz' und 'IHK'"
+    },
+    "web": {
+     "x": 20,
+     "y": 135,
+     "w": 430,
+     "h": 36,
+     "was": "graue Zeile 'Das Web durchsucht, 3 Seiten gelesen'"
+    }
+   },
+   "hinweis": "Zuerst 'web' auf 'Websuche', dann 'quellen' auf 'Gesetz'/'IHK' (gleiches Bild, nur Marker wandert)."
+  },
+  "02 (nur fetter Satz)": {
+   "src": "design/lauf/02-entscheidung.png",
+   "size": [
+    735,
+    153
+   ],
+   "crop": {
+    "x": 20,
+    "y": 14,
+    "w": 715,
+    "h": 70
+   },
+   "hinweis": "NUR fetter Satz 'Meine Entscheidung: Starte mit Umsatzsteuer, also mit Verzicht auf die Kleinunternehmerregelung.' (11 Wörter) hell, Marker auf 'Starte mit Umsatzsteuer'. Zeilen 3–4 abgedunkelt."
+  },
+  "08 (Bereiche)": {
+   "src": "design/lauf/08-rechnung-tabelle.png",
+   "size": [
+    735,
+    880
+   ],
+   "bereiche": {
+    "kopf": {
+     "x": 240,
+     "y": 145,
+     "w": 480,
+     "h": 95,
+     "was": "Spaltenköpfe 'Regelbesteuerung' / 'Kleinunternehmer'"
+    },
+    "effektiv": {
+     "x": 20,
+     "y": 725,
+     "w": 700,
+     "h": 130,
+     "was": "Zeile 'Was ein Handwerker mit Vorsteuerabzug effektiv zahlt' – lesbar NUR '91,60 €' und '109 €' (+ Marker 'mit Vorsteuerabzug'), Rest der Zeile weiche Textur",
+     "abdecken": [
+      "'bzw. 25,13 €' (x≈350–455, y≈730–760)",
+      "'bzw. 29,90 €' (x≈555–690, y≈730–760)"
+     ]
+    }
+   },
+   "hinweis": "R1-01: im Bereich 'effektiv' sind NUR 91,60 € und 109 € lesbar; 'bzw. 25,13 €' und 'bzw. 29,90 €' abgedeckt/abgedunkelt. Formeln mit P, Null-Marge, 18,32/17,02, Digitalisierung NIE lesbar (Marge in Euro unbelegt)."
+  },
+  "10 (Bereiche)": {
+   "src": "design/lauf/10-drei-gruende.png",
+   "size": [
+    735,
+    552
+   ],
+   "bereiche": {
+    "grund1": {
+     "x": 75,
+     "y": 55,
+     "w": 640,
+     "h": 60,
+     "was": "'Deine Kunden sind Betriebe. Wer vorsteuerabzugsberechtigt ist, …' (Zeile 1–2)"
+    },
+    "grund2": {
+     "x": 75,
+     "y": 185,
+     "w": 610,
+     "h": 62,
+     "was": "nur fetter Satz 'Printful wird für dich als Kleinunternehmer dauerhaft 19 % teurer.' (Zeile 1 + Anfang Zeile 2 bis 'teurer.') als WEICHE Textur, Marker auf '19 % teurer'; Rest Zeile 2 ('Das gilt ohne USt-ID und auch mit USt-ID, weil') abgedunkelt/abgedeckt (x≈185–685, y≈218–247)"
+    },
+    "preis": {
+     "x": 20,
+     "y": 478,
+     "w": 600,
+     "h": 36,
+     "was": "'Der Preis dafür: Du bist fünf Jahre gebunden …'"
+    }
+   },
+   "hinweis": "Je Beat nur EIN Bereich hell. Grund 3 (§ 14 Abs. 3) nie lesbar."
+  },
+  "04 (nur Verzicht-Zeile)": {
+   "src": "design/lauf/04-vorsteuer-verzicht-5-jahre.png",
+   "size": [
+    735,
+    270
+   ],
+   "crop": {
+    "x": 75,
+    "y": 142,
+    "w": 590,
+    "h": 38
+   },
+   "hinweis": "Zeile 'Verzicht: Der Verzicht bindet für mindestens fünf Jahre (IHK).' nur als WEICHE Textur, scharf/markiert NUR 'mindestens fünf Jahre' (R1-03)."
+  },
+  "09 (Reserve)": {
+   "src": "design/lauf/09-so-liest-sich.png",
+   "size": [
+    735,
+    524
+   ],
+   "crop": {
+    "x": 75,
+    "y": 150,
+    "w": 600,
+    "h": 60
+   },
+   "hinweis": "Reserve für Grund 1: nur '… Handwerker aber 17,40 € pro Paket teurer'. 'Marge sogar 19 % höher' NIE lesbar (Gegenseite nur Caption)."
+  },
+  "05": "frei als Reserve für B12 (Label 'laut Testbericht' sichtbar lassen), nicht eingeplant",
+  "11/12": "frei, nicht eingeplant",
+  "03": "NIE (Grenzen nicht gesprochen)",
+  "06": "NIE (Fachwort-Last)"
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 0.74,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Frame 1 = Ergebnis (M-002): Hook-Frage oben ab Frame 0 ('Wie viel Umsatz macht eine KI in 100 Tagen?'). Darunter die STEUER-TAFEL (TAFEL): zwei Spalten 'MIT USt' | 'OHNE USt', Zeile 'Betrieb zahlt effektiv' 91,60 € | 109 € (Unterzeile klein 'mit Vorsteuerabzug'). MIT USt orange gerahmt + Haken-Icon (kein Stempeltext). ≤ 12 lesbare Wörter außer der Hook-Frage. Kein Umsatz-Zähler, kein TAG.",
+   "kamera": "langsamer Push-in auf die MIT-Spalte; Drop-Punch +4 % auf 'Umsatz'",
+   "frage": "Warum nimmt die KI freiwillig die Steuer?",
+   "karten": [
+    {
+     "text": "Wie viel Umsatz macht / eine KI in 100 Tagen?",
+     "at": "0",
+     "t": 0.0
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.35
+    }
+   ],
+   "tafel": {
+    "name": "steuer_tafel",
+    "spalten": [
+     {
+      "kopf": "MIT USt",
+      "zeile": "91,60 €"
+     },
+     {
+      "kopf": "OHNE USt",
+      "unterkopf": "Kleinunternehmer",
+      "zeile": "109 €"
+     }
+    ],
+    "zeile_label": "Betrieb zahlt effektiv",
+    "zeile_unter": "mit Vorsteuerabzug",
+    "beleg": "Shot 08 Zeile 'effektiv zahlt' (91,60 € bzw. … | 109 € bzw. …)",
+    "hinweis": "Durchgehendes Story-Objekt ab Frame 0. Gewählt = MIT USt (oranger Rahmen + Haken-Icon ab Frame 0, Stempel-Text erst B11). OHNE USt grau, ab B11 durchgestrichen."
+   },
+   "events": [
+    0.0,
+    "Umsatz"
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 0.74,
+   "bis": 3.38,
+   "wort_start": {
+    "w": "macht",
+    "after": 0
+   },
+   "bild": "Nur Ereignisse, kein neuer Text: Haken der MIT-Spalte glänzt ('macht'), Betrag 91,60 € pulst ('Unternehmen'), OHNE-Spalte dimmt ('das@1.5'), Licht-Sweep ('KI@1.9'), fünf kleine Shirts unter der Tafel ('100'), Tick 'Tage', Kamera rutscht auf 'lang' zurück auf die Tafel.",
+   "kamera": "steht, atmet; Mini-Punch auf '100'",
+   "frage": "Was heißt 'effektiv'?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "macht",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "Unternehmen",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "das@1.5",
+     "f": "popHi",
+     "v": 0.16
+    },
+    {
+     "anker": "KI@1.9",
+     "f": "click",
+     "v": 0.16
+    },
+    {
+     "anker": "100",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Tage",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "lang",
+     "f": "wshort",
+     "v": 0.16
+    }
+   ],
+   "events": [
+    "macht",
+    "Unternehmen",
+    "das@1.5",
+    "KI@1.9",
+    "100",
+    "Tage",
+    "lang"
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.38,
+   "bis": 4.95,
+   "wort_start": {
+    "w": "ganz",
+    "after": 3
+   },
+   "bild": "Stempel 'GANZ ALLEINE.' oben auf 'alleine'; Punch-in auf 'führt?'; in der Pause danach pulst die MIT-Spalte einmal (kein neuer Text).",
+   "kamera": "Punch-in 4 % auf 'führt?'",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine",
+     "t": 3.66
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz@3-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    },
+    {
+     "anker": "führt",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "anker": "führt:end+0.1",
+     "f": "tick",
+     "v": 0.15
+    }
+   ],
+   "events": [
+    "ganz@3",
+    "alleine",
+    "führt",
+    "führt:end+0.1"
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 4.95,
+   "bis": 6.13,
+   "wort_start": {
+    "w": "Ich",
+    "after": 4.5
+   },
+   "bild": "Tafel fliegt raus (outAt 'Ich'), Gründungsplan blendet ein (planFrom 'Ich-0.05'), Maskottchen hüpft auf 'probier' (ganz im Bild, Augen frei). KEIN Tages-Slam. Hook-Objekt überlappt nie den Plan.",
+   "kamera": "Pull-back zum Board",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ich@4.5-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "probier",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "aus@5",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "ton": "Pause roh 'aus.' → 'Die' 0,30 s (Naht Eröffnung F12 → Rückblick)",
+   "events": [
+    "Ich@4.5",
+    "probier",
+    "aus@5",
+    "Die@6.0"
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "rueckblick",
+   "von": 6.13,
+   "bis": 9.5,
+   "wort_start": {
+    "w": "Die",
+    "after": 6.0
+   },
+   "bild": "Gründungsplan ganz im Bild (wie Folge 13–19): WERBEBRIEF + ADRESSEN gold (current). Produkt-Karte 'SHIRTS MIT LOGO' auf 'verkauft'; auf 'Logo@7.9' stickt sich ein Logo aufs Shirt (kein Text); auf 'kleine@8.3' kleine Handwerker-Silhouetten mit Shirt (kein Text).",
+   "kamera": "ruhig, Board voll",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "at": "verkauft",
+     "t": 7.05
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@6.0-0.08",
+     "f": "wqh",
+     "v": 0.18
+    },
+    {
+     "anker": "verkauft",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Logo@7.9",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "kleine@8.3",
+     "f": "popLo",
+     "v": 0.12
+    }
+   ],
+   "events": [
+    "Die@6.0",
+    "verkauft",
+    "Logo@7.9",
+    "kleine@8.3"
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "rueckblick",
+   "von": 9.5,
+   "bis": 10.83,
+   "wort_start": {
+    "w": "bestickt",
+    "after": 9.0
+   },
+   "bild": "Banner 'erst auf Bestellung bestickt' in der Produkt-Karte.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "erst auf Bestellung / bestickt",
+     "at": "bestickt",
+     "t": 9.5
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "rueckblick",
+   "von": 10.83,
+   "bis": 13.01,
+   "wort_start": {
+    "w": "Briefe",
+    "after": 10.5
+   },
+   "bild": "Am Feld WERBEBRIEF + ADRESSEN fächern auf 'Briefe@10.5' fünf Briefseiten heraus (Empfänger schwarz, kein Text lesbar), kurzer Glanz auf 'stehen' (= Folge 19 erledigt: Versandzeile korrigiert). Auf 'Preis@11.5' leeres Preisschild am Fünferpack mit Stempel 'PREIS OFFEN' (2,1 s nach dem Banner). Zuletzt erledigter Schritt leuchtet kurz, dann Fahrt zum offenen Schritt.",
+   "kamera": "leichter Push-in auf Briefe → Preisschild",
+   "frage": "Und was ist heute dran?",
+   "karten": [
+    {
+     "text": "PREIS OFFEN",
+     "at": "Preis@11.5",
+     "t": 11.63
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Briefe@10.5",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "stehen@11",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Preis@11.5",
+     "f": "stamp",
+     "v": 0.28
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "akt": "heute",
+   "von": 13.01,
+   "bis": 15.95,
+   "wort_start": {
+    "w": "Heute",
+    "after": 12.8
+   },
+   "bild": "Pill 'HEUTE: UMSATZSTEUER?' auf 'Heute'. Fahrt vom Preisschild zur STEUER-TAFEL, jetzt LEER (nur Köpfe 'MIT USt' | 'OHNE USt', keine Beträge, keine Markierung). 'Mit@13.4' linker Kopf leuchtet, 'ohne@14.1' rechter Kopf leuchtet (kein neuer Text).",
+   "kamera": "Fahrt vom Board zur Tafel, Halt",
+   "frage": "Was ist besser für sie?",
+   "karten": [
+    {
+     "text": "HEUTE: UMSATZSTEUER?",
+     "at": "Heute@12.8",
+     "t": 13.01
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute@12.8-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Heute@12.8+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "Mit@13.4",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "ohne@14.1",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Umsatzsteuer@14.4:end",
+     "f": "wshort",
+     "v": 0.14
+    }
+   ],
+   "ton": "Pause 'Umsatzsteuer?' → 'Claude:' 0,61 s, Bild bewegt sich (Fahrt ins Paper-Fenster ab 15,5)",
+   "tafel": {
+    "name": "steuer_tafel",
+    "spalten": [
+     {
+      "kopf": "MIT USt",
+      "zeile": "91,60 €"
+     },
+     {
+      "kopf": "OHNE USt",
+      "unterkopf": "Kleinunternehmer",
+      "zeile": "109 €"
+     }
+    ],
+    "zeile_label": "Betrieb zahlt effektiv",
+    "zeile_unter": "mit Vorsteuerabzug",
+    "beleg": "Shot 08 Zeile 'effektiv zahlt' (91,60 € bzw. … | 109 € bzw. …)",
+    "hinweis": "Durchgehendes Story-Objekt ab Frame 0. Gewählt = MIT USt (oranger Rahmen + Haken-Icon ab Frame 0, Stempel-Text erst B11). OHNE USt grau, ab B11 durchgestrichen."
+   },
+   "tafel_zustand": "leer"
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 15.95,
+   "bis": 20.12,
+   "wort_start": {
+    "w": "Claude",
+    "after": 15.5,
+    "offset": 0.15
+   },
+   "bild": "Echter Shot 01 im Paper-Fenster (SHOT01 Bereich 'anhang'), Einstieg 'Claude+0.15': Anhang-Karte 'Kolonnenshirt_Marge.md · MD'. Auf 'Marge@16.3' orange Rahmen + Zeiger tippt '+', Karte hüpft; 'angehängt' Klick; kurz Marker auf die Promptzeile 'keine Steuerberatung' (SHOT01 'keine_beratung', gleiches Bild). Auf 'Websuche' Wechsel IM SELBEN Fenster auf SHOT07 (Marker 'Das Web durchsucht, 3 Seiten gelesen'); auf 'Gesetz@18' und 'IHK' wandert der Marker auf '(Gesetz, BMF, IHK)' – erst 'Gesetz', dann 'IHK'.",
+   "kamera": "Push-in auf Anhang-Karte, dann ruhiger Scroll im Fenster (kein Ortswechsel)",
+   "frage": "Woher weiß sie das?",
+   "karten": [
+    {
+     "text": "Shot 01 Anhang-Karte MD (Screenshot, ≤ 4 lesbare Wörter)",
+     "at": "Claude@15.5+0.15",
+     "t": 15.95
+    },
+    {
+     "text": "Shot 07 'Das Web durchsucht, 3 Seiten gelesen' (Screenshot)",
+     "at": "Websuche",
+     "t": 17.32
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Claude@15.5",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "Marge@16.3",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "angehängt",
+     "f": "click",
+     "v": 0.22
+    },
+    {
+     "anker": "Websuche",
+     "f": "typing",
+     "v": 0.16
+    },
+    {
+     "anker": "Gesetz@18",
+     "f": "popLo",
+     "v": 0.18
+    },
+    {
+     "anker": "IHK",
+     "f": "tick",
+     "v": 0.16
+    }
+   ],
+   "ton": "Pausen: 'Claude:' → 'Marge' 0,12 s, 'angehängt,' → 'Websuche:' roh (kein 'Websearch'), 'IHK.' → 'Sie' 0,59 s",
+   "shot": {
+    "src": "design/lauf/01-prompt-mit-anhang.png",
+    "size": [
+     630,
+     825
+    ],
+    "bereiche": {
+     "anhang": {
+      "x": 40,
+      "y": 50,
+      "w": 182,
+      "h": 182,
+      "was": "Anhang-Karte 'Kolonnenshirt_Marge.md · 24 Zeilen · MD'"
+     },
+     "keine_beratung": {
+      "x": 40,
+      "y": 636,
+      "w": 330,
+      "h": 40,
+      "was": "letzte Promptzeile '… das keine Steuerberatung ist.' (Marker auf 'keine Steuerberatung')"
+     }
+    },
+    "hinweis": "Anhang-Karte scharf, Prompttext nur weiche Textur außer der Zeile 'keine Steuerberatung'. 109/29,90 im Prompt nicht vergrößern."
+   },
+   "shot2": {
+    "src": "design/lauf/07-schritte-zeile.png",
+    "size": [
+     735,
+     187
+    ],
+    "bereiche": {
+     "quellen": {
+      "x": 25,
+      "y": 45,
+      "w": 215,
+      "h": 36,
+      "was": "'(Gesetz, BMF, IHK)' – Marker auf 'Gesetz' und 'IHK'"
+     },
+     "web": {
+      "x": 20,
+      "y": 135,
+      "w": 430,
+      "h": 36,
+      "was": "graue Zeile 'Das Web durchsucht, 3 Seiten gelesen'"
+     }
+    },
+    "hinweis": "Zuerst 'web' auf 'Websuche', dann 'quellen' auf 'Gesetz'/'IHK' (gleiches Bild, nur Marker wandert)."
+   },
+   "einstieg": "Claude@15.5+0.15",
+   "events": [
+    "Claude@15.5+0.15",
+    "Marge@16.3",
+    "angehängt",
+    "Websuche",
+    "Gesetz@18",
+    "IHK"
+   ]
+  },
+  {
+   "id": "B10",
+   "akt": "entscheidung",
+   "von": 20.12,
+   "bis": 23.67,
+   "wort_start": {
+    "w": "Sie",
+    "after": 19.8
+   },
+   "bild": "Entscheidung: im selben Paper-Fenster SHOT02 (nur fetter Satz 'Meine Entscheidung: Starte mit Umsatzsteuer, also mit Verzicht auf die Kleinunternehmerregelung.', Marker auf 'Starte mit Umsatzsteuer'). Auf 'Umsatzsteuer@21' Fahrt zurück zur STEUER-TAFEL (einziger Ortswechsel im Satz), MIT-Spalte leuchtet orange. Auf 'nicht@21.8' Stempel 'MIT UMSATZSTEUER' auf die MIT-Spalte; auf 'Kleinunternehmer' OHNE-Spalte grau + Strich (kein neuer Text). In der Pause vor 'Warum?' steht das Bild (Musik-Mulde). Beträge noch nicht in der Tafel.",
+   "kamera": "Halt auf dem Satz → Pull-back zur Tafel, Push-in auf die Stempel-Spalte",
+   "frage": "Warum freiwillig Steuer zahlen?",
+   "karten": [
+    {
+     "text": "Shot 02 Entscheidungssatz (11 Wörter)",
+     "at": "Sie@19.8",
+     "t": 20.12
+    },
+    {
+     "text": "MIT UMSATZSTEUER",
+     "at": "nicht@21.8",
+     "t": 21.83
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Sie@19.8-0.1",
+     "f": "wq2",
+     "v": 0.18
+    },
+    {
+     "anker": "wählt",
+     "f": "page",
+     "v": 0.18
+    },
+    {
+     "anker": "Umsatzsteuer@21",
+     "f": "wshort",
+     "v": 0.14
+    },
+    {
+     "anker": "nicht@21.8",
+     "f": "stamp",
+     "v": 0.32
+    },
+    {
+     "anker": "Kleinunternehmer",
+     "f": "roll",
+     "v": 0.2
+    }
+   ],
+   "ton": "Musik: Mulde Clip 22,81–23,60 (Kurve 0,03), Akzent auf 'Warum?' (23,67; Kurve 0,06; Track-Schlag bei Clip ~23,5), danach 0,04 → ab 26,5 0,032",
+   "shot": {
+    "src": "design/lauf/02-entscheidung.png",
+    "size": [
+     735,
+     153
+    ],
+    "crop": {
+     "x": 20,
+     "y": 14,
+     "w": 715,
+     "h": 70
+    },
+    "hinweis": "NUR fetter Satz 'Meine Entscheidung: Starte mit Umsatzsteuer, also mit Verzicht auf die Kleinunternehmerregelung.' (11 Wörter) hell, Marker auf 'Starte mit Umsatzsteuer'. Zeilen 3–4 abgedunkelt."
+   },
+   "tafel": {
+    "name": "steuer_tafel",
+    "spalten": [
+     {
+      "kopf": "MIT USt",
+      "zeile": "91,60 €"
+     },
+     {
+      "kopf": "OHNE USt",
+      "unterkopf": "Kleinunternehmer",
+      "zeile": "109 €"
+     }
+    ],
+    "zeile_label": "Betrieb zahlt effektiv",
+    "zeile_unter": "mit Vorsteuerabzug",
+    "beleg": "Shot 08 Zeile 'effektiv zahlt' (91,60 € bzw. … | 109 € bzw. …)",
+    "hinweis": "Durchgehendes Story-Objekt ab Frame 0. Gewählt = MIT USt (oranger Rahmen + Haken-Icon ab Frame 0, Stempel-Text erst B11). OHNE USt grau, ab B11 durchgestrichen."
+   },
+   "tafel_zustand": "Stempel MIT, OHNE durchgestrichen",
+   "events": [
+    "Sie@19.8",
+    "wählt",
+    "Umsatzsteuer@21",
+    "nicht@21.8",
+    "Kleinunternehmer"
+   ]
+  },
+  {
+   "id": "B11",
+   "akt": "warum",
+   "von": 23.67,
+   "bis": 29.33,
+   "wort_start": {
+    "w": "Warum",
+    "after": 23.0
+   },
+   "bild": "Warum-Beat 1 (neuer Sachverhalt Vorsteuerabzug, 3 Stationen, je erst Bild, dann Label): Tafel (Köpfe + Stempel, Zeile leer) rückt ins obere Drittel und bleibt. Pill 'WARUM?' auf 'Warum?'. Station 1 auf 'Betriebe@24.5': Handwerker-Betrieb kauft Fünferpack, Schild OHNE Text. Auf 'Vorsteuerabzug' Beleg SHOT08 Bereich 'effektiv' (weich, lesbar nur 91,60 € / 109 € + Marker 'mit Vorsteuerabzug'); auf 'holen' fliegen diese zwei Beträge aus dem Screenshot in die Tafel-Zeile (91,60 € | 109 €) und der Screenshot blendet aus – die Beträge stehen damit immer nur EINMAL lesbar im Bild. Station 2 auf 'holen': Pfeil vom Betrieb zurück (Münzen fliegen zurück, kein Amt-Label). Station 3 auf '17': Karte '17,40 € ZURÜCK' OHNE Unterzeile und OHNE Gegenwert (die Tafel-Zeile trägt den Vergleich). Neue lesbare Wörter im Beat: WARUM? 1 + Shot-08-Marker 2 + Beträge 2 + Karte 3 = 8 (≤ 12).",
+   "kamera": "kurze Fahrt nach unten zur Pfeil-Kette, Halt",
+   "frage": "Warum ist das für den Betrieb billiger?",
+   "karten": [
+    {
+     "text": "WARUM?",
+     "at": "Warum",
+     "t": 23.67
+    },
+    {
+     "text": "Shot 08 Zeile 'effektiv zahlt' (weich; lesbar nur 91,60 € / 109 €, wandern auf 'holen' in die Tafel)",
+     "at": "Vorsteuerabzug",
+     "t": 25.23
+    },
+    {
+     "text": "17,40 € ZURÜCK",
+     "at": "17",
+     "t": 27.63
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.25
+    },
+    {
+     "anker": "Betriebe@24.5",
+     "f": "page",
+     "v": 0.16
+    },
+    {
+     "anker": "Vorsteuerabzug",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "holen",
+     "f": "wshort",
+     "v": 0.14
+    },
+    {
+     "anker": "109",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "17",
+     "f": "clack",
+     "v": 0.28
+    },
+    {
+     "anker": "zurück",
+     "f": "popLo",
+     "v": 0.18
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/08-rechnung-tabelle.png",
+    "size": [
+     735,
+     880
+    ],
+    "bereiche": {
+     "kopf": {
+      "x": 240,
+      "y": 145,
+      "w": 480,
+      "h": 95,
+      "was": "Spaltenköpfe 'Regelbesteuerung' / 'Kleinunternehmer'"
+     },
+     "effektiv": {
+      "x": 20,
+      "y": 725,
+      "w": 700,
+      "h": 130,
+      "was": "Zeile 'Was ein Handwerker mit Vorsteuerabzug effektiv zahlt' – lesbar NUR '91,60 €' und '109 €' (+ Marker 'mit Vorsteuerabzug'), Rest der Zeile weiche Textur",
+      "abdecken": [
+       "'bzw. 25,13 €' (x≈350–455, y≈730–760)",
+       "'bzw. 29,90 €' (x≈555–690, y≈730–760)"
+      ]
+     }
+    },
+    "hinweis": "R1-01: im Bereich 'effektiv' sind NUR 91,60 € und 109 € lesbar; 'bzw. 25,13 €' und 'bzw. 29,90 €' abgedeckt/abgedunkelt. Formeln mit P, Null-Marge, 18,32/17,02, Digitalisierung NIE lesbar (Marge in Euro unbelegt)."
+   },
+   "beleg_bereich": "effektiv",
+   "beleg_reserve": {
+    "src": "design/lauf/09-so-liest-sich.png",
+    "size": [
+     735,
+     524
+    ],
+    "crop": {
+     "x": 75,
+     "y": 150,
+     "w": 600,
+     "h": 60
+    },
+    "hinweis": "Reserve für Grund 1: nur '… Handwerker aber 17,40 € pro Paket teurer'. 'Marge sogar 19 % höher' NIE lesbar (Gegenseite nur Caption)."
+   },
+   "tafel_zustand": "Zeile füllt sich auf 'holen' mit 91,60 € | 109 € (aus Shot 08)",
+   "events": [
+    "Warum",
+    "Betriebe@24.5",
+    "Vorsteuerabzug",
+    "holen",
+    "109",
+    "17",
+    "zurück"
+   ]
+  },
+  {
+   "id": "B12",
+   "akt": "warum",
+   "von": 29.33,
+   "bis": 32.32,
+   "wort_start": {
+    "w": "Ihr",
+    "after": 29.0
+   },
+   "bild": "Warum-Beat 2: Printful-Karton (Einkauf) neben der OHNE-Spalte. Auf 'Ihr@29' Bauchbinde 'KEINE STEUERBERATUNG' unten (bleibt klein bis 'Bindung' stehen, nie über Augen/Untertitel). Auf '19': Karte '+19 % EINKAUF' mit kleiner Unterzeile 'als Kleinunternehmer' (KEIN Gegenwert), dahinter SHOT10 Bereich 'grund2' nur als weiche Textur mit Marker auf '19 % teurer' (Zeile 'Das gilt ohne USt-ID …' abgedunkelt); auf 'teurer' Pfeil am Karton nach oben. Neue lesbare Wörter: Bauchbinde 2 + Karte 3 + Unterzeile 2 + Marker 3 = 10 (≤ 12).",
+   "kamera": "Fahrt von der Pfeil-Kette zum Karton (ein Ortswechsel), Halt",
+   "frage": "Hat das einen Haken?",
+   "karten": [
+    {
+     "text": "KEINE STEUERBERATUNG",
+     "at": "Ihr@29",
+     "t": 29.33
+    },
+    {
+     "text": "+19 % EINKAUF",
+     "unter": "als Kleinunternehmer",
+     "at": "19",
+     "t": 30.61
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Ihr@29-0.05",
+     "f": "wshort",
+     "v": 0.14
+    },
+    {
+     "anker": "Einkauf@29.5",
+     "f": "page",
+     "v": 0.16
+    },
+    {
+     "anker": "19",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "teurer",
+     "f": "tick",
+     "v": 0.16
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/10-drei-gruende.png",
+    "size": [
+     735,
+     552
+    ],
+    "bereiche": {
+     "grund1": {
+      "x": 75,
+      "y": 55,
+      "w": 640,
+      "h": 60,
+      "was": "'Deine Kunden sind Betriebe. Wer vorsteuerabzugsberechtigt ist, …' (Zeile 1–2)"
+     },
+     "grund2": {
+      "x": 75,
+      "y": 185,
+      "w": 610,
+      "h": 62,
+      "was": "nur fetter Satz 'Printful wird für dich als Kleinunternehmer dauerhaft 19 % teurer.' (Zeile 1 + Anfang Zeile 2 bis 'teurer.') als WEICHE Textur, Marker auf '19 % teurer'; Rest Zeile 2 ('Das gilt ohne USt-ID und auch mit USt-ID, weil') abgedunkelt/abgedeckt (x≈185–685, y≈218–247)"
+     },
+     "preis": {
+      "x": 20,
+      "y": 478,
+      "w": 600,
+      "h": 36,
+      "was": "'Der Preis dafür: Du bist fünf Jahre gebunden …'"
+     }
+    },
+    "hinweis": "Je Beat nur EIN Bereich hell. Grund 3 (§ 14 Abs. 3) nie lesbar."
+   },
+   "beleg_bereich": "grund2",
+   "events": [
+    "Ihr@29",
+    "Einkauf@29.5",
+    "sonst",
+    "19",
+    "teurer"
+   ]
+  },
+  {
+   "id": "B13",
+   "akt": "haken",
+   "von": 32.32,
+   "bis": 34.54,
+   "wort_start": {
+    "w": "Der",
+    "after": 32.0
+   },
+   "bild": "Haken: auf der MIT-Spalte der Tafel legt sich ein Schloss/Kette; Karte '5 JAHRE BINDUNG' auf '5@32.9', dahinter SHOT04 nur als weiche Textur mit Marker auf 'mindestens fünf Jahre'. Neue lesbare Wörter: Karte 3 + Marker 3 = 6 (≤ 12). Nicht 'angemeldet', kein Finanzamt.",
+   "kamera": "Rückfahrt zur Tafel, Push-in aufs Schloss",
+   "frage": "Und was kommt danach?",
+   "karten": [
+    {
+     "text": "5 JAHRE BINDUNG",
+     "at": "5@32.9",
+     "t": 32.96
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Der@32-0.05",
+     "f": "wq2",
+     "v": 0.16
+    },
+    {
+     "anker": "Haken",
+     "f": "clack",
+     "v": 0.24
+    },
+    {
+     "anker": "5@32.9",
+     "f": "stamp",
+     "v": 0.28
+    },
+    {
+     "anker": "Bindung",
+     "f": "tick",
+     "v": 0.14
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/04-vorsteuer-verzicht-5-jahre.png",
+    "size": [
+     735,
+     270
+    ],
+    "crop": {
+     "x": 75,
+     "y": 142,
+     "w": 590,
+     "h": 38
+    },
+    "hinweis": "Zeile 'Verzicht: Der Verzicht bindet für mindestens fünf Jahre (IHK).' nur als WEICHE Textur, scharf/markiert NUR 'mindestens fünf Jahre' (R1-03)."
+   },
+   "beleg_reserve": {
+    "src": "design/lauf/10-drei-gruende.png",
+    "bereich": {
+     "x": 20,
+     "y": 478,
+     "w": 600,
+     "h": 36,
+     "was": "'Der Preis dafür: Du bist fünf Jahre gebunden …'"
+    }
+   },
+   "events": [
+    "Der@32",
+    "Haken",
+    "5@32.9",
+    "Bindung"
+   ]
+  },
+  {
+   "id": "B14",
+   "akt": "als_naechstes",
+   "von": 34.54,
+   "bis": 37.78,
+   "wort_start": {
+    "w": "Als",
+    "after": 34.0
+   },
+   "bild": "Pill 'ALS NÄCHSTES' auf 'Als'. Leeres Rechnungsblatt fliegt neben die Tafel (Zeilen nur als graue Striche, kein lesbarer Inhalt); auf 'Rechnung' Karte 'RECHNUNG?'. Kein Board im Bild (ein Ort je Satz); der Badge-Wechsel GEWERBE 'UST ?' → 'MIT UST' erscheint erst in der CTA-Board-Ansicht (B15).",
+   "kamera": "Push-in auf das Rechnungsblatt, Halt",
+   "frage": "Was gehört da drauf?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@34",
+     "t": 34.54
+    },
+    {
+     "text": "RECHNUNG?",
+     "at": "Rechnung",
+     "t": 36.46
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@34-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Als@34",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "anker": "Was@35.4",
+     "f": "page",
+     "v": 0.16
+    },
+    {
+     "anker": "Rechnung",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Rechnung:end+0.4",
+     "f": "popLo",
+     "v": 0.16
+    }
+   ],
+   "ton": "Pause 'Rechnung?' → 'Kommentiere' 0,96 s (Akt-Naht, Endkarte fährt ein – Bild bewegt sich)",
+   "events": [
+    "Als@34",
+    "Was@35.4",
+    "Rechnung",
+    "Rechnung:end+0.4"
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "cta",
+   "von": 37.78,
+   "bis": 44.6,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 37.0
+   },
+   "bild": "Endkarte wie Folge 9–19 (end-Akt, itemTag 'DM'): Keyword 'Steuer' tippt auf '„Steuer“' (Anker Steuer@38.5, NICHT 28,1), Haken, Flieger. EIN Block 'PROMPT' auf 'Prompt' (Mini-Prompt-Karte, lesbar nur 'Erfinde nichts.'). Ergebnis-Block '10 MIN: BEIDE WEGE' auf '10@41' (≥ 1,2 s nach PROMPT). CTA-Board zeigt Stand NACH der Folge: WERBEBRIEF + ADRESSEN gold (current, kein Haken), DRUCK + PREIS Badge '5ER OFFEN', GEWERBE offen mit Badge 'MIT UST' (kein Haken). Halt bis Ende (Endkarte ab 43,57), Bot-Hüpfer ~SEC-0,3.",
+   "kamera": "ruhiger Push-in, Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "Steuer (Keyword)",
+     "at": "Steuer@38.5",
+     "t": 38.61
+    },
+    {
+     "text": "PROMPT",
+     "at": "Prompt",
+     "t": 40.15
+    },
+    {
+     "text": "10 MIN: BEIDE WEGE",
+     "at": "10@41",
+     "t": 41.43
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "Steuer@38.5",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Steuer@38.5:end",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "ich@39",
+     "f": "wqh",
+     "v": 0.2
+    },
+    {
+     "anker": "Prompt",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "In@41",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "10@41",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "Wege",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "t": 43.57,
+     "f": "popLo",
+     "v": 0.14,
+     "was": "Endkarte-Halt: Ergebnis-Block rastet ein"
+    },
+    {
+     "t": 44.3,
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

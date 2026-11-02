@@ -1,0 +1,16 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ihr Kunde steht seit der letzten Folge: kleine Handwerksbetriebe. Jetzt will sie wissen, was genau diese Betriebe beim Bestellen von Logo-Shirts nervt.
+
+So machst du das für deine Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen, unten links auf „+“ klicken und „Research“ einschalten. Das geht in den bezahlten Plänen (Pro, Max, Team, Enterprise).
+2. Dein Ergebnis zur Zielgruppe als Datei anhängen und die Quellen eingrenzen: nur Bewertungen, Foren und Ratgeber.
+3. Fragen: Was nervt [deine Zielgruppe] am meisten, wenn sie bestellen? Nenne die fünf häufigsten Ärgernisse, jeweils mit Quelle. Sag dazu, ob die Belege von Betrieben oder Privatkunden stammen.
+
+Ergebnis im echten Lauf (301 Quellen): Vorne liegen ein falsch gedrucktes Logo und schlechter Service bei Reklamationen, je 14 Belege. Danach Größen und Lieferverzug mit je 12, auf Platz 5 ein Druck, der sich beim Waschen löst (10). Die KI klärt trotzdem zuerst das Waschen: Auf dem Bau wird mit 60 Grad gewaschen, gängige Drucke für kleine Mengen vertragen laut Ratgebern nur etwa 30. Ehrlich dazu: Nur ein Beleg kommt ausdrücklich aus dem Handwerk. Die Belege stammen ganz überwiegend von Privatkunden oder lassen sich nicht zuordnen.
+
+Kommentiere „Ärger“, dann schick ich dir den Guide mit der Frage zum Kopieren und dem echten Ergebnis.
+
+Offen bleibt: Welcher Druck hält 60 Grad aus? Das klärt die KI als Nächstes.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #handwerk #firmenshirts

@@ -1,0 +1,22 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt klärt sie, was vor dem ersten verkauften Shirt Pflicht ist, und stößt an ihre Grenze.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. Die Website ist ein Entwurf, nicht online.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ das letzte Ergebnis anhängen.
+2. Fragen: Finde mit der Websuche heraus, was ich in Deutschland vor dem ersten Verkauf anmelden oder klären muss, jeweils mit offizieller Quelle. Entscheide, was als Erstes kommt, und begründe es. Markiere, was du selbst erledigen kannst und was nur ein Mensch machen kann. Mach daraus eine Checkliste als Word-Datei. Sag mir, was du nicht prüfen kannst. Erfinde nichts.
+3. Jeden Punkt mit „Mensch“ selbst erledigen oder prüfen lassen.
+
+Ergebnis im echten Lauf (4 Minuten 52 Sekunden, 18 Websuchen, 17 Quellenlinks): eine Word-Datei mit 13 Punkten. Als Erstes kommt die Gewerbeanmeldung. Die Gründe: Sie ist Pflicht ab dem ersten Tag (§ 14 GewO). Erst danach folgen der Fragebogen beim Finanzamt und die Steuernummer, und die braucht die Registrierung im Verpackungsregister. Und sie ist schnell und günstig, die Gebühr ist je nach Stadt verschieden. Parallel: entscheiden, ob nur an Firmen verkauft wird.
+
+Der Haken: Bei 9 von 13 Punkten steht „Mensch“, etwa Gewerbe anmelden, Finanzamt-Fragebogen, Verpackungsregister und AGB. Claude kann dort nur vorbereiten. Bei 4 Punkten steht „Claude“, etwa Impressum und Datenschutzerklärung. Nicht prüfen konnte Claude unter anderem, ob beim Verpackungsrecht Printful oder der Händler als Hersteller zählt.
+
+Kommentiere „Gewerbe“, dann schick ich dir den Guide mit der Frage zum Kopieren und der echten Checkliste aus dem Lauf, mit Mensch/Claude-Markierung und Quellen.
+
+Offen bleibt: Wen spricht sie zuerst an?
+
+Keine Rechtsberatung.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #gewerbeanmeldung #firmenshirts

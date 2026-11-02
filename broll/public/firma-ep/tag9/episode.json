@@ -1,0 +1,402 @@
+{
+ "tag": 9,
+ "folge": 9,
+ "serientag": 3,
+ "ersteFolgeDesTages": true,
+ "date": "2026-10-30",
+ "keyword": "Logo",
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json"
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 6,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@5",
+   "aus": "aus@5.3",
+   "tagWord": "Tag@5.8",
+   "tagNum": "3@6",
+   "end": "Die@6.5-0.08"
+  },
+  "instant": true,
+  "keepHeadline": true,
+  "planFrom": "Ich-0.05"
+ },
+ "story": {
+  "name": "LOGO",
+  "sub": "KOLONNENSHIRT",
+  "label": {
+   "text": "3×"
+  },
+  "stamps": [
+   {
+    "text": "STICKBAR?",
+    "color": "orange"
+   }
+  ],
+  "fields": [
+   {
+    "text": "Lücken ≥ 6,35 mm",
+    "at": 0
+   },
+   {
+    "text": "Schrift ≥ 6,35 mm",
+    "at": 0
+   }
+  ],
+  "show": [
+   {
+    "at": 0,
+    "place": "hook"
+   },
+   {
+    "at": "Ich-0.05",
+    "place": "off"
+   }
+  ],
+  "beats": [
+   {
+    "at": "Umsatz",
+    "what": "label"
+   },
+   {
+    "at": "Unternehmen",
+    "what": "push"
+   },
+   {
+    "at": "das",
+    "what": "stamp"
+   },
+   {
+    "at": "100",
+    "what": "push"
+   },
+   {
+    "at": "ganz",
+    "what": "label"
+   },
+   {
+    "at": "führt?",
+    "what": "push"
+   }
+  ]
+ },
+ "claude": {
+  "moveUp": 99,
+  "steps": [
+   {
+    "label": "ANHANG",
+    "at": "Ergebnis-0.05"
+   },
+   {
+    "label": "STICKREGELN",
+    "at": "Stickregeln-0.05"
+   },
+   {
+    "label": "3 ENTWÜRFE",
+    "at": "3@18-0.05"
+   }
+  ],
+  "attach": {
+   "label": "Shirt-Firma Ergebnis Name.md",
+   "sub": "letztes Ergebnis",
+   "at": "Ergebnis+0.1"
+  },
+  "prompt": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe Firmenshirts mit gesticktem Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, gestickt erst auf Bestellung über Printful. Mein letztes Ergebnis: Der Firmenname ist Kolonnenshirt, noch ungeprüft. Jetzt brauche ich ein Logo, das sich als Brustlogo sticken lässt, etwa acht bis neun Zentimeter breit. Such mit der Websuche die Stick-Vorgaben von Printful, zum Beispiel Farbanzahl, kleinste Schrifthöhe und feine Linien, jeweils mit Quelle. Zeichne mir dann drei Logo-Entwürfe als SVG. Prüf jeden Entwurf gegen diese Vorgaben, entscheide dich für einen und begründe es mit zwei bis drei konkreten Gründen. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts.",
+  "typing": [
+   [
+    "Ergebnis-0.1",
+    ""
+   ]
+  ],
+  "send": "prüfen.:end",
+  "rehook": {
+   "lines": [
+    "Die Frage",
+    "zum Kopieren"
+   ],
+   "pill": "→ am Ende",
+   "from": "Stickregeln+0.3",
+   "to": "prüfen.:end"
+  }
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@6.5-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "verkauft"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt"
+   },
+   "last": {
+    "step": 5,
+    "label": "KOLONNENSHIRT",
+    "at": "Kolonnenshirt,"
+   },
+   "today": {
+    "step": 6,
+    "pill": "HEUTE: LOGO ZUM STICKEN",
+    "at": "Heute"
+   },
+   "bot": {
+    "dx": 0.55,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Stickregeln-0.1",
+   "src": "firma-ep/tag9/shots/01-prompt-mit-anhang.png",
+   "cam": [
+    [
+     "Stickregeln-0.1",
+     1.0,
+     500,
+     600
+    ],
+    [
+     "Stickregeln+0.3",
+     1.6,
+     500,
+     850
+    ],
+    [
+     "3@18",
+     1.6,
+     500,
+     1050
+    ]
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 780,
+     "w": 900,
+     "h": 110,
+     "at": "Stickregeln+0.3",
+     "color": "yellow"
+    },
+    {
+     "x": 50,
+     "y": 940,
+     "w": 900,
+     "h": 110,
+     "at": "3@18",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Sie@20.5-0.1",
+   "src": "firma-ep/tag9/shots/07-claude-pruefbilder.png",
+   "cam": [
+    [
+     "Sie@20.5-0.1",
+     1.0,
+     500,
+     560
+    ],
+    [
+     "C:",
+     1.12,
+     500,
+     860
+    ],
+    [
+     "Warum?-0.3",
+     1.12,
+     500,
+     860
+    ]
+   ],
+   "marks": [
+    {
+     "x": 15,
+     "y": 725,
+     "w": 950,
+     "h": 375,
+     "at": "C:",
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Warum?-0.12",
+   "src": "firma-ep/tag9/shots/03-entwuerfe-pruefung.png",
+   "cam": [
+    [
+     "Warum?-0.12",
+     1.35,
+     520,
+     420
+    ],
+    [
+     "Lücken",
+     1.8,
+     520,
+     480
+    ],
+    [
+     "füllt",
+     1.8,
+     880,
+     480
+    ],
+    [
+     "Anbieter.:end",
+     1.35,
+     700,
+     420
+    ]
+   ],
+   "marks": [
+    {
+     "x": 235,
+     "y": 440,
+     "w": 540,
+     "h": 100,
+     "at": "Lücken",
+     "color": "red"
+    },
+    {
+     "x": 785,
+     "y": 440,
+     "w": 215,
+     "h": 100,
+     "at": "füllt",
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "at": "Und@32.5-0.12",
+   "pill": "WARUM C?",
+   "lines": [
+    "Gleich auf",
+    "jeder Shirtfarbe"
+   ],
+   "pop": "Und@32.5",
+   "stamp": null,
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "question",
+   "at": "Haken:-0.12",
+   "pill": "HAKEN",
+   "lines": [
+    "Erst das Probeshirt",
+    "zeigt den Stick"
+   ],
+   "pop": "Haken:",
+   "stamp": null,
+   "bubble": "Probeshirt.",
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@38.5-0.12",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Was muss oben",
+    "auf die Website?"
+   ],
+   "pop": "Als@38.5-0.05",
+   "stamp": null,
+   "bubble": "Website?",
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "„Logo“:",
+   "plane": [
+    "„Logo“:+0.3",
+    "Damit+0.2"
+   ],
+   "itemsAt": "Damit",
+   "copyAt": "Damit",
+   "itemTag": "DM",
+   "items": [
+    {
+     "label": "Die Frage",
+     "snip": "„Such die Stick-Vorgaben … zeichne drei Logo-Entwürfe als SVG …“"
+    },
+    {
+     "label": "Die Prüfliste",
+     "snip": "Farben · Schrifthöhe · Linien · Lücken"
+    }
+   ],
+   "result": {
+    "at": "Damit-0.1",
+    "line1": "in 5 Minuten",
+    "line1At": "5",
+    "parts": [
+     {
+      "text": "3 geprüfte",
+      "at": "3@44"
+     },
+     {
+      "text": "Logo-Entwürfe",
+      "at": "geprüfte",
+      "hot": true
+     }
+    ]
+   }
+  }
+ ]
+}

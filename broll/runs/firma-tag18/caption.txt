@@ -1,0 +1,26 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Tag 5: Heute rechnet sie, was ihr von einem gestickten Shirt bleibt.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung über Printful. Angebot: 109 € für 5 Shirts, 29,90 € für ein Einzelshirt. Im Werbebrief steht der Versand extra. Was sie selbst für ein Shirt zahlt, war noch offen.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ den eigenen Angebotsbrief (Word) anhängen.
+2. Fragen: „Finde mit der Websuche heraus, was mich ein Stück bei [Anbieter] im Einkauf kostet, mit Quelle. Rechne mit dem Versand aus meinem Brief aus, was von meinem Paketpreis und vom Einzelpreis übrig bleibt. Sag mir, ob die Preise so bleiben können, und was du ohne Konto nicht sehen kannst. Erfinde nichts.“
+3. Den Einkaufspreis im eigenen Anbieter-Konto gegenchecken.
+
+Ergebnis im echten Lauf (knapp 2 Minuten): Claude findet, dass Printful den Stick in Standardgröße im Shirtpreis mitrechnet und das Logo einmal digitalisiert wird. Den Euro-Einkaufspreis des bestickten Shirts findet es ohne Printful-Konto nicht. Also rechnet es mit Platzhalter: Bei der ersten 5er-Bestellung ist bei rund 17 € netto Einkauf pro Shirt alles weg.
+
+Die Entscheidung: 29,90 € fürs Einzelshirt hält sie für tragfähig. Den Preis für 5 Shirts lässt sie offen, bis der echte Einkaufspreis feststeht.
+
+Warum?
+- Im 5er kostet ein Shirt 21,80 € statt 29,90 €.
+- Ab rund 17 € Einkauf pro Shirt bleibt beim ersten 5er nichts übrig.
+
+Der Haken: Den echten Preis zeigt nur ein Printful-Konto, und das kann nur ein Mensch anlegen. Außerdem nennt Claude die Versandzeile im Brief ein paar Cent zu knapp.
+
+Kommentiere „Marge“, und ich schick dir den Rechenweg samt Prompt. Damit weißt du in 10 Minuten, was dir pro Stück bleibt.
+
+Offen bleibt: Stimmt die Versandzeile im Brief?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #preiskalkulation #firmenshirts

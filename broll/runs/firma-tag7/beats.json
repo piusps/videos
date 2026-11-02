@@ -1,0 +1,1376 @@
+{
+ "folge": 7,
+ "tag": 7,
+ "serientag": 2,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-29",
+ "slot": "2026-10-29 18:00",
+ "keyword": "Preis",
+ "seconds": 47.85,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 327.63,
+  "musicCurve": [
+   [
+    0,
+    0.03
+   ],
+   [
+    16.85,
+    0.03
+   ],
+   [
+    17.0,
+    0.008
+   ],
+   [
+    18.1,
+    0.008
+   ],
+   [
+    18.2,
+    0.036
+   ],
+   [
+    18.9,
+    0.03
+   ],
+   [
+    35.4,
+    0.03
+   ],
+   [
+    35.5,
+    0.04
+   ],
+   [
+    36.3,
+    0.035
+   ],
+   [
+    37.2,
+    0.035
+   ],
+   [
+    38.0,
+    0.055
+   ],
+   [
+    46.85,
+    0.055
+   ],
+   [
+    47.85,
+    0
+   ]
+  ]
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json), Engine-norm entfernt Satz-/Sonderzeichen ('33,50 €.' = Anker '3350', '60-Grad-Wäsche' = '60GradWäsche'). Captions als Ziffern: 100, A61, 5, 151, 110., 69., 15., 109, 5., 33,50 €., 60-Grad-Wäsche, 10. Kollisionen immer mit @after: 'A61' (9.38 / 14.39 / 19.03 / 21.91), 'Printful' (15.52 / 18.18 / 26.41 / 36.54), 'Preis' (11.84 / 41.97 / 45.88), '5' (20.90 / 31.73), 'Die'/'die' (4.95 / 17.26 / 38.39 / 43.22 / 43.90), 'KI' (1.92 / 5.44 / 17.46), 'Firma' (5.09 / 38.52), 'Logo' (6.51 / 39.88), 'mit' (6.36 / 10.28 / 16.57), 'Frage' (13.39 / 43.33), 'kosten' (14.01 / 21.44), 'Euro' (24.16 / 31.23), 'kein' (39.65 / 40.20), 'und' (15.37 / 42.61 / 43.74).",
+ "tts_hinweis": "TTS-Text = script.txt (dort schon 'A einundsechzig'). Caption-Wort 'A61' über 'A einundsechzig', '33,50 €.' über 'dreiunddreißig Euro fünfzig.'.",
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "WERBUNG",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2,
+   4
+  ],
+  "wip": [],
+  "current": 3,
+  "notiz": "Wie Folge 5/6 (Bibel): PARTNER (Index 4) direkt nach PREIS. Folge 7: PARTNER erledigt (Haken, Label 'A61', Mini-Stempel 'MIT VORBEHALT') = zuletzt erledigter Schritt, leuchtet im Rückblick; PREIS (Index 3) ist heute 'current' (gold) – die Fahrt geht eine Zeile nach OBEN. Am Folgenende ist PREIS gerechnet (Vorschlag), Folge 8 hakt PREIS ab und setzt NAME (Index 5) auf current. Partnerwechsel auf Printful passiert erst in Akt 4; im Rückblick bleibt A61 (Ergebnis Folge 6)."
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 1.07,
+   "wort_start": {
+    "w": "Wie",
+    "after": 0
+   },
+   "anker": 0,
+   "bild": "Frame 1 = Ergebnis, nur Belegtes: Kalkulationsblatt im Excel-Look (Blatt 'Kalkulation'), eine Zeile hervorgehoben 'Rohertrag pro Auftrag (Vorschlag 109 €)': A61 −35,63 € (rot) | Printful +33,50 € (grün, groß). Darunter gut lesbar die Zeile 'gerechnet, nicht verdient'. Kleiner Stempel 'PRINTFUL STATT A61' über der Zeile. Text-Hook oben 'Wie viel Umsatz macht / eine KI in 100 Tagen?' (Zeile 2 orange) fällt auf 'Umsatz'. KEINE Umsatzanzeige, kein Zähler (0 €).",
+   "kamera": "langsamer Push-in auf die Ergebnis-Zeile",
+   "frage": "Plus 33,50 – aber warum steht A61 im Minus?",
+   "karten": [
+    {
+     "text": "Rohertrag pro Auftrag (Vorschlag 109 €)",
+     "at": 0
+    },
+    {
+     "text": "A61  −35,63 €",
+     "farbe": "rot",
+     "at": 0
+    },
+    {
+     "text": "Printful  +33,50 €",
+     "farbe": "grün",
+     "at": 0
+    },
+    {
+     "text": "gerechnet, nicht verdient",
+     "pflicht": true,
+     "at": 0
+    },
+    {
+     "text": "PRINTFUL STATT A61",
+     "stil": "Stempel klein",
+     "at": 0
+    }
+   ],
+   "werte": "Zelle Kalkulation!B23 = −35,6303, D23 = 33,4998 (LAUF.md, Datei Shirt-Firma_Preiskalkulation.xlsx); netto, Annahme Vorsteuerabzug",
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 1.07,
+   "bis": 2.93,
+   "wort_start": {
+    "w": "Unternehmen",
+    "after": 1.0
+   },
+   "anker": "Unternehmen",
+   "bild": "Blatt atmet; auf '100' pulsiert '+33,50 €' einmal grün, '−35,63 €' flackert rot. Keine neue Info.",
+   "kamera": "steht, leichtes Atmen",
+   "frage": "Wieso geht eine Spalte ins Minus?",
+   "karten": [
+    {
+     "text": "+33,50 € Puls",
+     "at": "100"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Unternehmen",
+     "f": "wshort",
+     "v": 0.22
+    },
+    {
+     "anker": "100",
+     "f": "tick",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 2.93,
+   "bis": 3.92,
+   "wort_start": {
+    "w": "ganz",
+    "after": 2.9
+   },
+   "anker": "ganz-0.06",
+   "bild": "Stempel 'GANZ ALLEINE.' auf 'alleine'.",
+   "kamera": "kurzer Punch-in 4 %",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 3.92,
+   "bis": 4.95,
+   "wort_start": {
+    "w": "Ich",
+    "after": 3.9
+   },
+   "anker": "Ich",
+   "bild": "Kein Tag-Slam (nicht die erste Folge des Tages). Pull-back vom Blatt, HUD-Badge 'TAG 2' klein (Engine). Keine Hand.",
+   "kamera": "Pull-back",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [
+    {
+     "text": "HUD TAG 2 (klein)",
+     "at": "Ich"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "probier",
+     "f": "click",
+     "v": 0.4
+    },
+    {
+     "anker": "aus@4.4",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "recap",
+   "von": 4.95,
+   "bis": 6.51,
+   "wort_start": {
+    "w": "Die",
+    "after": 4.9
+   },
+   "anker": "Die@4.9-0.08",
+   "bild": "Rückblick-Akt (gleicher Aufbau wie Folge 3–6): Gründungsplan ganz im Bild: 1 PRODUKT ✓ 2 KUNDE ✓ 3 DRUCK ✓ 4 PREIS (orange, offen) 5 PARTNER ✓ 6 NAME 7 LOGO … Auf 'Shirts' fliegt die Produkt-Karte UNTER das Board (deckt keine Spalte): Shirt + 'SHIRTS MIT LOGO'.",
+   "kamera": "steht ruhig, Board voll im Bild",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "icon": "shirt",
+     "at": "Shirts@6.0"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@4.9-0.06",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Shirts@6.0-0.2",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "recap",
+   "von": 6.51,
+   "bis": 8.93,
+   "wort_start": {
+    "w": "Logo",
+    "after": 6.4
+   },
+   "anker": "Logo@6.4",
+   "bild": "Logo erscheint als Stick auf dem Karten-Shirt (auf 'Logo'); oranges Banner 'erst auf Bestellung\\nbestickt' auf 'bestickt'.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "Logo-Stick auf Shirt",
+     "at": "Logo@6.4"
+    },
+    {
+     "text": "erst auf Bestellung\nbestickt",
+     "at": "bestickt@7.5"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Logo@6.4",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "bestickt@7.5",
+     "f": "page",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "recap",
+   "von": 8.93,
+   "bis": 10.98,
+   "wort_start": {
+    "w": "Partner",
+    "after": 8.9
+   },
+   "anker": "Partner@8.9",
+   "bild": "Zuletzt erledigter Schritt 5 PARTNER (Index 4) bekommt den Haken und leuchtet kurz auf, Label 'A61' (auf 'A61'), oranger Mini-Stempel 'MIT VORBEHALT' (auf 'mit'). PREIS (Index 3, eine Zeile darüber) bleibt orange offen.",
+   "kamera": "leichter Push-in auf Schritt 5",
+   "frage": "Partner steht – also fertig?",
+   "karten": [
+    {
+     "text": "PARTNER ✓ A61",
+     "step": 4,
+     "at": "A61@9.3"
+    },
+    {
+     "text": "MIT VORBEHALT",
+     "farbe": "orange",
+     "at": "mit@10.2"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Partner@8.9",
+     "f": "check",
+     "v": 0.3
+    },
+    {
+     "anker": "mit@10.2",
+     "f": "stamp",
+     "v": 0.28
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "akt": "recap",
+   "von": 10.98,
+   "bis": 12.39,
+   "wort_start": {
+    "w": "Heute",
+    "after": 10.9
+   },
+   "anker": "Heute",
+   "bild": "Fahrt zum heutigen Schritt 4 PREIS (eine Zeile ÜBER Partner, Board bleibt in voller Breite), Schritt leuchtet gold und poppt, Produkt-Karte fliegt raus, Pill unter dem Board 'HEUTE: PREIS RECHNEN'.",
+   "kamera": "Fahrt auf Zeile Schritt 4 (nach oben)",
+   "frage": "Was kostet ein Shirt eigentlich?",
+   "karten": [
+    {
+     "text": "HEUTE: PREIS RECHNEN",
+     "at": "Heute"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.15",
+     "f": "wq",
+     "v": 0.25
+    },
+    {
+     "anker": "Heute+0.1",
+     "f": "chime",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claudeShot",
+   "von": 12.39,
+   "bis": 13.39,
+   "wort_start": {
+    "w": "Ergebnis",
+    "after": 12.3
+   },
+   "anker": "Ergebnis-0.1",
+   "bild": "Echter Shot 01-prompt-mit-anhang.png (oben beschnitten: Begrüßung mit Nutzername NICHT zeigen). Zeiger auf den Anhang-Chip 'Shirt-Firma Ergebnis Partner.md · 65 lines', orange Rahmen auf 'anhängen'. Schritt-Chips ANHANG · FRAGE · EXCEL.",
+   "kamera": "Push-in auf den Anhang-Chip",
+   "frage": "Wo klicke ich?",
+   "karten": [
+    {
+     "text": "ANHANG",
+     "at": "Ergebnis-0.1"
+    }
+   ],
+   "marks": [
+    {
+     "find": "Shirt-Firma Ergebnis Partner.md",
+     "at": "anhängen",
+     "color": "orange",
+     "art": "Rahmen um Chip"
+    }
+   ],
+   "shot": "firma-ep/tag7/shots/01-prompt-mit-anhang.png",
+   "crop_hinweis": "Zeile 'Good evening, Henri/Jakob (SK)' wegschneiden",
+   "sfx": [
+    {
+     "anker": "Ergebnis-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "anhängen",
+     "f": "click",
+     "v": 0.45
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "akt": "claudeShot",
+   "von": 13.39,
+   "bis": 16.26,
+   "wort_start": {
+    "w": "Frage",
+    "after": 13.3
+   },
+   "anker": "Frage@13.3-0.1",
+   "bild": "Gleicher Shot 01, Kamera auf den Prompt. Markierungen nacheinander: gelb 'Was kostet mich ein Paket mit fünf Shirts' (auf 'Was'), orange 'A61' (auf 'A61'), grün 'zweite Wahl ist Printful' (auf 'Printful'). Gleichzeitig schieben rechts zwei Mini-Partner-Karten rein: A61 mit Stempel 'MIT VORBEHALT' (auf 'A61'), Printful 'ZWEITE WAHL' (auf 'Printful') – Printful ist damit vor der Kehrtwende eingeführt (Ticket autor-R1-1). Re-Hook-Pill 'Die Frage zum Kopieren → am Ende'.",
+   "kamera": "Push-in auf den Prompt, Pan zur Zeile mit A61/Printful",
+   "frage": "Zwei Partner – welcher ist billiger?",
+   "karten": [
+    {
+     "text": "FRAGE",
+     "at": "Frage@13.3-0.1"
+    },
+    {
+     "text": "Mini-Karte A61 · MIT VORBEHALT",
+     "at": "A61@14.3"
+    },
+    {
+     "text": "Mini-Karte Printful · ZWEITE WAHL",
+     "at": "Printful@15.4"
+    },
+    {
+     "text": "Die Frage zum Kopieren → am Ende",
+     "at": "Was@13.7"
+    }
+   ],
+   "marks": [
+    {
+     "find": "Was kostet mich ein Paket mit fünf Shirts",
+     "at": "Was@13.7",
+     "color": "yellow"
+    },
+    {
+     "find": "A61",
+     "at": "A61@14.3",
+     "color": "orange"
+    },
+    {
+     "find": "zweite Wahl ist Printful",
+     "at": "Printful@15.4",
+     "color": "green",
+     "fallback": "yellow"
+    }
+   ],
+   "shot": "firma-ep/tag7/shots/01-prompt-mit-anhang.png",
+   "sfx": [
+    {
+     "anker": "Frage@13.3-0.1",
+     "f": "tick",
+     "v": 0.25
+    },
+    {
+     "anker": "Was@13.7",
+     "f": "typing",
+     "v": 0.18
+    },
+    {
+     "anker": "A61@14.3",
+     "f": "popLo",
+     "v": 0.28
+    },
+    {
+     "anker": "Printful@15.4",
+     "f": "popHi",
+     "v": 0.28
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "akt": "claudeShot",
+   "von": 16.26,
+   "bis": 17.26,
+   "wort_start": {
+    "w": "Excel",
+    "after": 16.2
+   },
+   "anker": "Excel-0.05",
+   "bild": "Auf 'Excel': Markierung 'als Excel-Datei mit Formeln' im Prompt (0,3 s), Senden-Klick auf 'Formeln' (16,72), dann harter Schnitt auf echten Shot 02b-datei-karte.png: nur die Datei-Karte 'Shirt firma preiskalkulation · Spreadsheet · XLSX' (Text darüber wegschneiden), Chip am Objekt '2 Blätter · 75 Formeln'.",
+   "kamera": "Push-in auf die Datei-Karte",
+   "frage": "Hat sie wirklich gerechnet?",
+   "karten": [
+    {
+     "text": "EXCEL",
+     "at": "Excel-0.05"
+    },
+    {
+     "text": "2 Blätter · 75 Formeln",
+     "at": "Formeln+0.15"
+    }
+   ],
+   "marks": [
+    {
+     "find": "als Excel-Datei mit Formeln",
+     "at": "Excel",
+     "color": "yellow"
+    }
+   ],
+   "send": "Formeln",
+   "shot": "firma-ep/tag7/shots/02b-datei-karte.png",
+   "shot_at": "Formeln+0.12",
+   "quelle_werte": "LAUF.md: 2 Blätter (Kalkulation, Eingaben), 75 Formeln, recalc 0 Fehler",
+   "sfx": [
+    {
+     "anker": "Excel",
+     "f": "tick",
+     "v": 0.22
+    },
+    {
+     "anker": "Formeln",
+     "f": "clickHi",
+     "v": 0.45
+    },
+    {
+     "anker": "Formeln+0.15",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "akt": "winner",
+   "von": 17.26,
+   "bis": 18.57,
+   "wort_start": {
+    "w": "Die",
+    "after": 17.0
+   },
+   "anker": "Die@17.0-0.08",
+   "bild": "Story-Objekt ab hier = die Partner-Karten A61 + Printful (aus B10) und das Kalkulationsblatt. Beide Karten groß nebeneinander, A61 vorn mit Stempel 'MIT VORBEHALT'. Auf 'wechselt' rutscht der Stempel ab und A61 geht nach hinten/grau; auf 'Printful' schiebt die Printful-Karte nach vorn und leuchtet grün. Musik fast still 17,0–18,1, Akzent genau auf 'Printful'.",
+   "kamera": "Kamera schwenkt von A61 zu Printful",
+   "frage": "Warum wirft sie den Partner um?",
+   "karten": [
+    {
+     "text": "Stempel MIT VORBEHALT fällt ab",
+     "at": "wechselt"
+    },
+    {
+     "text": "Printful nach vorn",
+     "at": "Printful@18.0"
+    }
+   ],
+   "musik": "Kurve 17.0–18.1 auf 0.008, Akzent 0.036 auf 'Printful' (18.2)",
+   "sfx": [
+    {
+     "anker": "Die@17.0-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "wechselt",
+     "f": "page",
+     "v": 0.28
+    },
+    {
+     "anker": "Printful@18.0",
+     "f": "power",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B13",
+   "akt": "winner",
+   "von": 18.57,
+   "bis": 20.29,
+   "wort_start": {
+    "w": "statt",
+    "after": 18.5
+   },
+   "anker": "statt",
+   "bild": "Stempel 'PRINTFUL STATT A61' (orange, M-011) schlägt auf die Printful-Karte (auf 'statt'). Beweis-Kachel unten: echter Shot 02a-antwort-kopf.png, Satz 'Ich entscheide mich für Printful' orange markiert (auf 'A61').",
+   "kamera": "Mikro-Punch 3 % auf den Stempel, dann ruhig",
+   "frage": "Und das ist echt Claudes Entscheidung?",
+   "karten": [
+    {
+     "text": "PRINTFUL STATT A61",
+     "farbe": "orange",
+     "at": "statt"
+    },
+    {
+     "text": "Beweis Shot 02a",
+     "at": "A61@18.9"
+    }
+   ],
+   "marks": [
+    {
+     "find": "Ich entscheide mich für Printful",
+     "at": "A61@18.9+0.2",
+     "color": "orange"
+    }
+   ],
+   "proof": "firma-ep/tag7/shots/02a-antwort-kopf.png",
+   "sfx": [
+    {
+     "anker": "statt",
+     "f": "stamp",
+     "v": 0.4
+    },
+    {
+     "anker": "A61@18.9+0.2",
+     "f": "tick",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "akt": "why",
+   "von": 20.29,
+   "bis": 20.9,
+   "wort_start": {
+    "w": "Warum",
+    "after": 20.2
+   },
+   "anker": "Warum-0.12",
+   "bild": "Warum-Beat: Printful-Karte (mit Stempel) fährt klein nach oben links und bleibt dort; Pill 'WARUM PRINTFUL?'.",
+   "kamera": "0,3-s-Fahrt, dann ruhig",
+   "frage": "Warum?",
+   "karten": [
+    {
+     "text": "WARUM PRINTFUL?",
+     "at": "Warum"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.15",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "why",
+   "von": 20.9,
+   "bis": 26.21,
+   "wort_start": {
+    "w": "5",
+    "after": 20.8
+   },
+   "anker": "5@20.8-0.05",
+   "bild": "Grund-Karte 1 'EINKAUF 5 SHIRTS' (erscheint mit Inhalt auf '5'): 5 Shirt-Icons + Achse. Balken A61 wächst rot auf '151' und zeigt '151 €' (steht ab 23,29 bis Aktende = 6,6 s). Graue waagrechte Linie 'Konkurrenzpreis 110 €' zieht auf 'Konkurrenzpreis' durch, Wert '110 €' auf '110'. Der rote Balken ragt sichtbar über die Linie. Gegenwert: die Linie selbst (Konkurrenz verkauft für 110, A61 kostet im Einkauf schon 151).",
+   "kamera": "ruhig, leichter Push-in auf Balken + Linie",
+   "frage": "Teurer als die Konkurrenz verkauft?",
+   "karten": [
+    {
+     "titel": "EINKAUF 5 SHIRTS",
+     "at": "5@20.8-0.05"
+    },
+    {
+     "balken": "A61",
+     "wert": "151 €",
+     "farbe": "rot",
+     "at": "151",
+     "steht_s": 6.6
+    },
+    {
+     "linie": "Konkurrenzpreis",
+     "wert": "110 €",
+     "farbe": "grau",
+     "at": "Konkurrenzpreis",
+     "wert_at": "110"
+    }
+   ],
+   "werte": "Kalkulation!B10 = 151,40 € brutto (A61 HAKRO 293, 5 × 28,90 + 6,90); Eingaben!B7 = 110 €; Verhältnis 138 % (B33). Bild gerundet 151 € / 110 €.",
+   "pause_davor_s": 0.0,
+   "sfx": [
+    {
+     "anker": "5@20.8-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "151",
+     "f": "roll",
+     "v": 0.28
+    },
+    {
+     "anker": "Euro@24.0",
+     "f": "bump",
+     "v": 0.28
+    },
+    {
+     "anker": "Konkurrenzpreis",
+     "f": "tick",
+     "v": 0.22
+    },
+    {
+     "anker": "110",
+     "f": "popLo",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B16",
+   "akt": "why",
+   "von": 26.21,
+   "bis": 27.91,
+   "wort_start": {
+    "w": "Bei",
+    "after": 26.0
+   },
+   "anker": "Bei@26.0",
+   "bild": "Grund-Karte 2 = DIESELBE Karte 'EINKAUF 5 SHIRTS' (Prüfer H4: 69 nie als Verkaufspreis zeigen): zweiter Balken Printful wächst grün neben A61 auf 'Printful', Wert '69 €' auf '69', klar UNTER der 110-€-Linie. Pause davor 0,31 s. Karte bleibt danach links stehen, während Karte 3 kommt (69 € sichtbar 27,05 → 30,6 = 3,6 s).",
+   "kamera": "ruhig",
+   "frage": "Und Printful?",
+   "karten": [
+    {
+     "balken": "Printful",
+     "wert": "69 €",
+     "farbe": "grün",
+     "at": "Printful@26.3",
+     "wert_at": "69",
+     "gleiche_karte": "EINKAUF 5 SHIRTS"
+    }
+   ],
+   "werte": "Kalkulation!D10 = 69,1353 € brutto (Printful 5er inkl. Stickdatei + Versand, Kurs 0,8666). Bild '69 €'.",
+   "pause_davor_s": 0.31,
+   "sfx": [
+    {
+     "anker": "Bei@26.0-0.05",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "69",
+     "f": "check",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B17",
+   "akt": "why",
+   "von": 27.91,
+   "bis": 30.14,
+   "wort_start": {
+    "w": "Ein",
+    "after": 27.8
+   },
+   "anker": "Ein@27.8",
+   "bild": "Grund-Karte 3 'NACHBESTELLEN 1 SHIRT' (erscheint rechts neben der Einkaufskarte, Pause davor 0,29 s): ein Shirt-Icon, groß grün 'rund 15 €' (auf 'rund', Zahl auf '15'), klein 'Stickdatei bleibt'. Daneben grau, kleiner und durchgestrichen-gedämpft 'A61: 35,80 €' (Gegenwert, auf 'nachbestellt'). Steht bis 30,6 (1,6 s ab '15').",
+   "kamera": "ruhig, leichter Schwenk nach rechts",
+   "frage": "Und wenn ein Kunde später eins nachbestellt?",
+   "karten": [
+    {
+     "titel": "NACHBESTELLEN 1 SHIRT",
+     "at": "Ein@27.8"
+    },
+    {
+     "big": "rund 15 €",
+     "farbe": "grün",
+     "at": "rund",
+     "zahl_at": "15",
+     "small": "Stickdatei bleibt"
+    },
+    {
+     "vs": {
+      "big": "A61: 35,80 €",
+      "farbe": "grau",
+      "at": "nachbestellt+0.2"
+     }
+    }
+   ],
+   "werte": "Kalkulation!D18 = 15,4069 € brutto (Printful, Stickdatei-Wiederverwendung 0); B18 = 35,80 € (A61 28,90 + 6,90).",
+   "pause_davor_s": 0.29,
+   "sfx": [
+    {
+     "anker": "Ein@27.8-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "nachbestellt+0.2",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "15",
+     "f": "check",
+     "v": 0.28
+    }
+   ]
+  },
+  {
+   "id": "B18",
+   "akt": "result",
+   "von": 30.14,
+   "bis": 32.28,
+   "wort_start": {
+    "w": "Vorschlag",
+    "after": 30.0
+   },
+   "anker": "Vorschlag-0.1",
+   "bild": "Zurück zum Kalkulationsblatt aus Frame 1 (Story-Objekt schließt den Kreis), Warum-Karten dimmen erst auf '109' weg. Preisschild hängt sich an die Printful-Spalte: Kopf 'VORSCHLAG' (auf 'Vorschlag'), groß '109 €' (auf '109'), 'für 5 Shirts' (auf '5.').",
+   "kamera": "Pull-back aufs Blatt, dann Push-in auf das Preisschild",
+   "frage": "Wie viel bleibt dabei?",
+   "karten": [
+    {
+     "text": "VORSCHLAG",
+     "pflicht": true,
+     "at": "Vorschlag"
+    },
+    {
+     "text": "109 €",
+     "at": "109"
+    },
+    {
+     "text": "für 5 Shirts",
+     "at": "5@31.5"
+    }
+   ],
+   "werte": "Eingaben!B22 = 109 € brutto (Vorschlag von Claude, 'knapp unter 110')",
+   "sfx": [
+    {
+     "anker": "Vorschlag-0.12",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "109",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "5@31.5",
+     "f": "tick",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B19",
+   "akt": "result",
+   "von": 32.28,
+   "bis": 34.84,
+   "wort_start": {
+    "w": "Rohertrag",
+    "after": 32.2
+   },
+   "anker": "Rohertrag",
+   "bild": "Zeile 'Rohertrag pro Auftrag' leuchtet (auf 'Rohertrag'), Wert rollt auf '+33,50 €' grün (auf '33,50 €'); daneben klein grau 'A61: −35,63 €'. Darunter Pflicht-Etikett 'gerechnet, nicht verdient' (auf 'Euro'-Ende), kein Zähler, keine Kasse.",
+   "kamera": "Push-in auf die Zeile",
+   "frage": "Ist das schon Geld?",
+   "karten": [
+    {
+     "text": "Rohertrag pro Auftrag",
+     "at": "Rohertrag"
+    },
+    {
+     "text": "+33,50 €",
+     "farbe": "grün",
+     "at": "3350"
+    },
+    {
+     "text": "A61: −35,63 €",
+     "farbe": "grau",
+     "at": "3350+0.3"
+    },
+    {
+     "text": "gerechnet, nicht verdient",
+     "pflicht": true,
+     "at": "3350+0.6"
+    }
+   ],
+   "werte": "Kalkulation!D23 = 33,4998 (netto, Annahme Vorsteuerabzug), B23 = −35,6303",
+   "sfx": [
+    {
+     "anker": "Rohertrag",
+     "f": "page",
+     "v": 0.25
+    },
+    {
+     "anker": "3350",
+     "f": "roll",
+     "v": 0.28
+    },
+    {
+     "anker": "3350+0.6",
+     "f": "check",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B20",
+   "akt": "question",
+   "von": 34.84,
+   "bis": 37.44,
+   "wort_start": {
+    "w": "Haken",
+    "after": 34.7
+   },
+   "anker": "Haken-0.12",
+   "bild": "Pill 'HAKEN' (auf 'Haken'). Pflegeetikett mit Waschbottich '60 °C' erscheint an der Printful-Karte, wird auf '60-Grad-Wäsche' rot durchgestrichen (Musik-Wiedereinsatz genau hier), daneben Zitat-Zettel 'machine wash warm' (auf 'verspricht', Zitat aus dem Lauf). Kleine Zeile für Neue: 'Bau wäscht heiß' (Folge 3/4). Auf 'nicht' kurzer roter Puls auf dem Strich.",
+   "kamera": "ruhig, Push-in auf das Etikett",
+   "frage": "Und die Bau-Kunden waschen heiß?",
+   "karten": [
+    {
+     "text": "HAKEN",
+     "at": "Haken"
+    },
+    {
+     "text": "60 °C",
+     "stil": "durchgestrichen rot",
+     "at": "60GradWäsche"
+    },
+    {
+     "text": "machine wash warm",
+     "stil": "Zitat grau",
+     "at": "verspricht"
+    },
+    {
+     "text": "Bau wäscht heiß",
+     "klein": true,
+     "at": "verspricht+0.3"
+    }
+   ],
+   "musik": "natürliche Mulde im Stück 34.5–35.25, Wiedereinsatz 35.5 auf '60-Grad-Wäsche'",
+   "werte": "Lauf: 'Mit Printful kannst du laut Anhang keine 60-°C-Wäsche versprechen. Beim Gildan-Shirt steht nur „machine wash warm“.'",
+   "sfx": [
+    {
+     "anker": "Haken-0.12",
+     "f": "page",
+     "v": 0.3
+    },
+    {
+     "anker": "60GradWäsche+0.1",
+     "f": "clack",
+     "v": 0.32
+    },
+    {
+     "anker": "verspricht",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "nicht@36.8",
+     "f": "popLo",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B21",
+   "akt": "question",
+   "von": 37.44,
+   "bis": 41.48,
+   "wort_start": {
+    "w": "Als",
+    "after": 37.3
+   },
+   "anker": "Als@37.3-0.12",
+   "bild": "Pill 'ALS NÄCHSTES'. Board kommt klein zurück, Schritt 6 NAME leuchtet mit Namensschild 'Firma ???' (auf 'Firma'). Auf 'Logo', 'Muster', 'Werbung' werden drei graue Chips dahinter gesetzt (LOGO, MUSTER, WERBUNG) mit Schloss, je auf ihr Wort.",
+   "kamera": "ruhig, leichter Push-in auf NAME",
+   "frage": "Wie wird sie heißen?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@37.3"
+    },
+    {
+     "text": "Firma ???",
+     "at": "Firma@38.4"
+    },
+    {
+     "text": "LOGO (Schloss-Icon)",
+     "at": "Logo@39.8"
+    },
+    {
+     "text": "MUSTER",
+     "at": "Muster"
+    },
+    {
+     "text": "WERBUNG",
+     "at": "Werbung"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@37.3-0.12",
+     "f": "airy",
+     "v": 0.25
+    },
+    {
+     "anker": "Firma@38.4",
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Logo@39.8",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "Muster",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "Werbung",
+     "f": "popLo",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B22",
+   "akt": "end",
+   "von": 41.48,
+   "bis": 47.85,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 41.4
+   },
+   "anker": "Kommentiere-0.15",
+   "bild": "Endkarte: Keyword 'Preis' tippt sich ein (auf 'Preis@41.9'), Haken, Flieger auf 'und … schick'; 2 Items: 'Die Frage' (Prompt-Snippet aus Shot 01, ohne Begrüßungszeile) auf 'Frage@43.3', 'Die Kalkulationsvorlage' (Tabellen-Ausschnitt aus Shot 03, beschriftet 'Vorlage im PDF', KEIN xlsx-/Download-Symbol) auf 'Kalkulationsvorlage'. Ergebnis-Zeile 'deinen Preis' (auf 'Preis@45.8') + 'in 10 Minuten' (auf '10'). Bot-Hüpfer ~46,9, Halt bis 47,85 (Musik endet mit dem Stück).",
+   "kamera": "ruhiger Push-in, letzte Sekunde Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "KOMMENTIERE „PREIS“",
+     "at": "Preis@41.9"
+    },
+    {
+     "text": "Die Frage",
+     "at": "Frage@43.3"
+    },
+    {
+     "text": "Die Kalkulationsvorlage (Shot 03, PDF)",
+     "at": "Kalkulationsvorlage"
+    },
+    {
+     "text": "deinen Preis",
+     "at": "Preis@45.8"
+    },
+    {
+     "text": "in 10 Minuten",
+     "at": "10"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Preis@41.9-0.05",
+     "f": "typing",
+     "v": 0.25
+    },
+    {
+     "anker": "Preis@41.9+0.6",
+     "f": "check",
+     "v": 0.35
+    },
+    {
+     "anker": "und@42.6-0.05",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Frage@43.3",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "Kalkulationsvorlage",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "Damit-0.15",
+     "f": "chime",
+     "v": 0.3
+    },
+    {
+     "anker": "10",
+     "f": "pop",
+     "v": 0.3
+    }
+   ]
+  }
+ ],
+ "engine_akte": [
+  {
+   "type": "hook",
+   "at": 0,
+   "prop": "calcSheet",
+   "wunsch": "Hook-Objekt Kalkulationsblatt (Excel-Look, Blatt 'Kalkulation'), Ergebnis-Zeile 'Rohertrag pro Auftrag (Vorschlag 109 €)' A61 −35,63 € rot / Printful +33,50 € grün, Pflicht-Zeile 'gerechnet, nicht verdient', kleiner Stempel 'PRINTFUL STATT A61'. Neues Objekt in src/components/firma/, wiederverwendbar für B18–B19",
+   "noTagSlam": true,
+   "keinUmsatz": true
+  },
+  {
+   "type": "recap",
+   "at": "Die@4.9-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "Shirts@6.0"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt@7.5"
+   },
+   "last": {
+    "step": 4,
+    "label": "A61 · MIT VORBEHALT",
+    "at": "Partner@8.9"
+   },
+   "today": {
+    "step": 3,
+    "pill": "HEUTE: PREIS RECHNEN",
+    "at": "Heute"
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Ergebnis-0.1",
+   "src": "firma-ep/tag7/shots/01-prompt-mit-anhang.png",
+   "crop": "ohne Begrüßungszeile (Nutzername)"
+  },
+  {
+   "type": "claudeShot",
+   "at": "Formeln+0.12",
+   "src": "firma-ep/tag7/shots/02b-datei-karte.png",
+   "crop": "nur Datei-Karte"
+  },
+  {
+   "type": "winner",
+   "at": "Die@17.0-0.08",
+   "cards": [
+    "A61",
+    "Printful"
+   ],
+   "fly": "Printful@18.0",
+   "stampOff": "wechselt",
+   "stamp": "PRINTFUL STATT A61",
+   "stampAt": "statt",
+   "proof": "firma-ep/tag7/shots/02a-antwort-kopf.png",
+   "proofAt": "A61@18.9+0.2"
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "pill": "WARUM PRINTFUL?",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "shirt5x",
+     "big": "151 €",
+     "small": "Einkauf 5 Shirts · A61",
+     "at": "5@20.8-0.05",
+     "hot": true
+    },
+    {
+     "icon": "shirt5x",
+     "big": "69 €",
+     "small": "Printful · gleiche Karte",
+     "at": "Bei@26.0"
+    },
+    {
+     "icon": "shirt1x",
+     "big": "rund 15 €",
+     "small": "Nachbestellen 1 Shirt",
+     "at": "Ein@27.8"
+    }
+   ],
+   "vs_wunsch": [
+    {
+     "card": 0,
+     "big": "Konkurrenzpreis 110 €",
+     "small": "Linie",
+     "at": "Konkurrenzpreis",
+     "stil": "grau"
+    },
+    {
+     "card": 2,
+     "big": "A61: 35,80 €",
+     "small": "",
+     "at": "nachbestellt+0.2",
+     "stil": "grau"
+    }
+   ],
+   "bars_wunsch": {
+    "titel": "EINKAUF 5 SHIRTS",
+    "linie": {
+     "label": "Konkurrenzpreis",
+     "wert": 110,
+     "at": "Konkurrenzpreis"
+    },
+    "bars": [
+     {
+      "label": "A61",
+      "wert": 151,
+      "farbe": "rot",
+      "at": "151"
+     },
+     {
+      "label": "Printful",
+      "wert": 69,
+      "farbe": "grün",
+      "at": "Printful@26.3",
+      "wertAt": "69"
+     }
+    ]
+   }
+  },
+  {
+   "type": "result",
+   "at": "Vorschlag-0.1",
+   "prop": "calcSheet",
+   "tag": {
+    "kopf": "VORSCHLAG",
+    "big": "109 €",
+    "small": "für 5 Shirts",
+    "at": "Vorschlag",
+    "bigAt": "109",
+    "smallAt": "5@31.5"
+   },
+   "row": {
+    "label": "Rohertrag pro Auftrag",
+    "wert": "+33,50 €",
+    "at": "Rohertrag",
+    "wertAt": "3350",
+    "vs": "A61: −35,63 €",
+    "etikett": "gerechnet, nicht verdient",
+    "etikettAt": "3350+0.6"
+   }
+  },
+  {
+   "type": "question",
+   "at": "Haken-0.12",
+   "pill": "HAKEN",
+   "lines": [
+    "60 °C ✗",
+    "„machine wash warm“"
+   ],
+   "pop": "Haken",
+   "stamp": null,
+   "bubble": "verspricht",
+   "label_wunsch": {
+    "icon": "careLabel60",
+    "strike": "60GradWäsche",
+    "quote": {
+     "text": "machine wash warm",
+     "at": "verspricht"
+    },
+    "klein": {
+     "text": "Bau wäscht heiß",
+     "at": "verspricht+0.3"
+    }
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@37.3-0.12",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Wie heißt die Firma?",
+    "kein Logo · kein Muster · keine Werbung"
+   ],
+   "pop": "Als@37.3",
+   "stamp": null,
+   "bubble": "Firma@38.4",
+   "board_wunsch": {
+    "step": 5,
+    "nameTag": "Firma ???",
+    "locks": [
+     {
+      "text": "LOGO",
+      "at": "Logo@39.8"
+     },
+     {
+      "text": "MUSTER",
+      "at": "Muster"
+     },
+     {
+      "text": "WERBUNG",
+      "at": "Werbung"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Preis@41.9",
+   "plane": [
+    "und@42.6-0.05",
+    "schick+0.25"
+   ],
+   "itemsAt": "die@43.2",
+   "copyAt": "Damit",
+   "items_wunsch": [
+    {
+     "label": "Die Frage",
+     "src": "firma-ep/tag7/shots/01-prompt-mit-anhang.png",
+     "at": "Frage@43.3"
+    },
+    {
+     "label": "Die Kalkulationsvorlage",
+     "src": "firma-ep/tag7/shots/03-rechentabelle.png",
+     "at": "Kalkulationsvorlage",
+     "hinweis": "kommt als Tabelle im PDF, kein xlsx/Download zeigen"
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

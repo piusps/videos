@@ -1,0 +1,1473 @@
+{
+ "folge": 8,
+ "tag": 8,
+ "serientag": 2,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-29",
+ "slot": "2026-10-29 21:00",
+ "keyword": "Name",
+ "seconds": 45.16,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 154.8,
+  "musicCurve": [
+   [
+    0,
+    0.05
+   ],
+   [
+    19.9,
+    0.05
+   ],
+   [
+    20.15,
+    0.018
+   ],
+   [
+    21.3,
+    0.018
+   ],
+   [
+    21.4,
+    0.065
+   ],
+   [
+    22.0,
+    0.04
+   ],
+   [
+    44.16,
+    0.04
+   ],
+   [
+    45.16,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 154.80 s am Stück (bis 199.96), Abschnitt von Folge 2 (28.10.) wiederverwendet (Chef-Entscheid), nie geloopt; Details musik.txt"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Zahlen in words.json als Ziffern (100, 109, 5., 10, 7, 4, 2:). Kollisionen: 'Die' (4.91 / 20.67 / 28.54 / 30.82), 'Firma' (5.10 / 26.15), 'Firmennamen' (11.88 / 42.69), 'Frage' (13.62 / 40.49), 'Namen' (14.47 / 27.24), 'KI' (1.97 / 5.43 / 20.81 / 34.84), 'Logo' (6.45 / 36.90), 'nicht' (31.57 / 34.83), '10' (14.19 / 43.40), 'und' (33.60 / 39.55 / 40.51) -> immer mit @after.",
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "WERBUNG",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "wip": [],
+  "current": 5,
+  "notiz": "Anschluss Folge 7 (done 0,1,2,4; current 3 PREIS). Folge 8: PREIS (3) abgehakt = zuletzt erledigter Schritt, leuchtet auf 'Vorschlag' mit 'Vorschlag 109 € · 5 Shirts' (nicht grün); PARTNER (4) Label wechselt auf 'PRINTFUL' (auf 'Printful', Folge-7-Wechsel). Heute NAME (5) current, Fahrt eine Zeile nach unten. Folge 9 hakt NAME ab (Label 'Kolonnenshirt', Zusatz 'ungeprüft') und setzt LOGO (6) current."
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 1.11,
+   "wort_start": {
+    "w": "Wie",
+    "after": 0
+   },
+   "anker": "0",
+   "bild": "Frame 1 = Ergebnis, nur Belegtes: dunkles Arbeitsshirt (Brust groß), darauf gestickt 'Kolonnenshirt'. Rechts daneben Zettel mit durchgestrichenen Kandidaten aus dem Lauf: Kluftwerk · Teamkluft · Stichfest · Logostich · Meistershirt (Firmenkluft/Baukluft falls Platz), Zähler '7 von 10 gestrichen'. Unten klein gelb: 'Domain: nicht bestätigt · Marke: nicht geprüft'. Text-Hook oben 'Wie viel Umsatz macht / eine KI in 100 Tagen?' fällt auf 'Umsatz'. Kein Umsatz-Zähler (0 €).",
+   "kamera": "langsamer Push-in auf Shirt-Brust + Zettel",
+   "frage": "Warum gerade dieser Name?",
+   "karten": [
+    {
+     "text": "Kolonnenshirt (Stick auf Shirt-Brust)",
+     "at": "0"
+    },
+    {
+     "text": "Kluftwerk · Teamkluft · Stichfest · Logostich · Meistershirt (durchgestrichen)",
+     "at": "0"
+    },
+    {
+     "text": "7 von 10 gestrichen",
+     "at": "0"
+    },
+    {
+     "text": "Domain: nicht bestätigt · Marke: nicht geprüft",
+     "farbe": "gelb",
+     "at": "0"
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 1.11,
+   "bis": 2.98,
+   "wort_start": {
+    "w": "Unternehmen",
+    "after": 1.0
+   },
+   "anker": "Unternehmen",
+   "bild": "Ein Strich auf dem Zettel zuckt nach (auf '100'), gelbe Zeile pulsiert einmal. Keine neue Info, Bewegung am Objekt.",
+   "kamera": "steht, leichtes Atmen",
+   "frage": "Ist der Name überhaupt frei?",
+   "karten": [
+    {
+     "text": "gelbe Zeile Puls",
+     "at": "100"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Unternehmen",
+     "f": "wshort",
+     "v": 0.22
+    },
+    {
+     "anker": "100",
+     "f": "tick",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 2.98,
+   "bis": 3.93,
+   "wort_start": {
+    "w": "ganz",
+    "after": 2.9
+   },
+   "anker": "ganz-0.06",
+   "bild": "Stempel 'GANZ ALLEINE.' auf 'alleine'.",
+   "kamera": "kurzer Punch-in 4 %",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 3.93,
+   "bis": 4.88,
+   "wort_start": {
+    "w": "Ich",
+    "after": 3.9
+   },
+   "anker": "Ich",
+   "bild": "Kein Tag-Slam (Folge 8 ist nicht die erste des Tages). Pull-back auf Shirt + Zettel, kleines HUD-Badge 'TAG 2' (Engine). Keine Hand.",
+   "kamera": "Pull-back",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [
+    {
+     "text": "HUD TAG 2 (klein)",
+     "at": "Ich"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "probier",
+     "f": "click",
+     "v": 0.4
+    },
+    {
+     "anker": "aus@4.4",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "recap",
+   "von": 4.88,
+   "bis": 6.45,
+   "wort_start": {
+    "w": "Die",
+    "after": 4.8
+   },
+   "anker": "Die@4.8-0.08",
+   "bild": "Rückblick-Akt (gleicher Aufbau wie Folge 3–7): Gründungsplan ganz im Bild, Schritte 1–5 (PRODUKT, KUNDE, DRUCK, PREIS, PARTNER) mit grünem Haken, NAME offen. Auf 'Shirts' fliegt die Produkt-Karte UNTER das Board (deckt keine Spalte): Shirt + 'SHIRTS MIT LOGO'.",
+   "kamera": "steht ruhig, Board voll im Bild",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "icon": "shirt",
+     "at": "Shirts@6.0"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@4.8-0.06",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Shirts@6.0-0.2",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "recap",
+   "von": 6.45,
+   "bis": 8.65,
+   "wort_start": {
+    "w": "Logo",
+    "after": 6.4
+   },
+   "anker": "Logo@6.4",
+   "bild": "Logo-Fleck erscheint als Stick auf dem Shirt der Karte (auf 'Logo'); oranges Banner 'erst auf Bestellung\\nbestickt' auf 'bestickt'.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "Logo-Stick auf Shirt",
+     "at": "Logo@6.4"
+    },
+    {
+     "text": "erst auf Bestellung\nbestickt",
+     "at": "bestickt@7.4"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Logo@6.4",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "bestickt@7.4",
+     "f": "page",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "recap",
+   "von": 8.65,
+   "bis": 11.0,
+   "wort_start": {
+    "w": "Printful",
+    "after": 8.6
+   },
+   "anker": "Printful",
+   "bild": "Ergebnis Folge 7 auf dem Board: Schritt 5 PARTNER zeigt jetzt 'PRINTFUL' (Label wechselt von 'A61' auf 'Printful'), kurzes Aufleuchten. Auf 'Vorschlag' leuchtet der zuletzt erledigte Schritt 4 PREIS und zeigt die Karte 'Vorschlag 109 € · 5 Shirts' (neutral weiß/orange Rand, NICHT grün, kein €-Zähler); '109 €' poppt auf '109', '5 Shirts' auf '5'.",
+   "kamera": "leichter Push-in auf PREIS/PARTNER",
+   "frage": "Und wie heißt die Firma?",
+   "karten": [
+    {
+     "text": "PARTNER: PRINTFUL",
+     "step": 4,
+     "at": "Printful"
+    },
+    {
+     "text": "Vorschlag 109 € · 5 Shirts",
+     "step": 3,
+     "farbe": "neutral (nicht grün)",
+     "at": "Vorschlag"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Printful",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "Vorschlag",
+     "f": "popLo",
+     "v": 0.28
+    },
+    {
+     "anker": "109",
+     "f": "tick",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "akt": "recap",
+   "von": 11.0,
+   "bis": 12.62,
+   "wort_start": {
+    "w": "Heute",
+    "after": 10.9
+   },
+   "anker": "Heute",
+   "bild": "Fahrt zum heutigen Schritt 6 NAME (Board bleibt in voller Breite), Schritt leuchtet gold und poppt, Produkt-Karte fliegt raus, Pill unter dem Board 'HEUTE: FIRMENNAME'. Auf 'Firmennamen' bekommt das NAME-Feld ein '?'.",
+   "kamera": "Fahrt auf Zeile Schritt 6",
+   "frage": "Wie findet sie einen?",
+   "karten": [
+    {
+     "text": "HEUTE: FIRMENNAME",
+     "at": "Heute"
+    },
+    {
+     "text": "NAME: ?",
+     "step": 5,
+     "at": "Firmennamen@11.5"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.15",
+     "f": "wq",
+     "v": 0.25
+    },
+    {
+     "anker": "Heute+0.1",
+     "f": "chime",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claudeShot",
+   "von": 12.62,
+   "bis": 13.55,
+   "wort_start": {
+    "w": "Ergebnis",
+    "after": 12.5
+   },
+   "anker": "Ergebnis-0.1",
+   "bild": "Echter Screenshot 01-prompt-mit-anhang.png (Composer, Dark Mode, ohne Sidebar). Zeiger klickt '+' unten links (auf 'Ergebnis'), Datei-Chip 'Shirt-Firma Ergebnis Preis.md' wird orange gerahmt (auf 'anhängen'). Schritt-Chips ANHANG · FRAGE. Kein Research (im Lauf aus).",
+   "kamera": "Push-in auf den Datei-Chip",
+   "frage": "Wo klicke ich?",
+   "karten": [
+    {
+     "text": "ANHANG",
+     "at": "Ergebnis-0.1"
+    }
+   ],
+   "marks": [
+    {
+     "find": "Shirt-Firma Ergebnis Preis.md",
+     "at": "anhängen",
+     "color": "orange",
+     "hinweis": "Datei-Chip"
+    }
+   ],
+   "shot": "firma-ep/tag8/shots/01-prompt-mit-anhang.png",
+   "sfx": [
+    {
+     "anker": "Ergebnis",
+     "f": "click",
+     "v": 0.45
+    },
+    {
+     "anker": "anhängen",
+     "f": "popLo",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "akt": "claudeShot",
+   "von": 13.55,
+   "bis": 15.95,
+   "wort_start": {
+    "w": "Frage",
+    "after": 13.5
+   },
+   "anker": "Frage@13.5-0.1",
+   "bild": "Gleicher Shot 01, Kamera fährt in den Prompt: auf '10' Markierung 'Schlag mir zehn deutsche Namen vor', auf 'Websuche' Markierung 'Prüf für jeden mit der Websuche'. Re-Hook-Pill 'Die Frage zum Kopieren → am Ende' (auf 'Namen').",
+   "kamera": "Pan im Prompt von 'zehn Namen' zu 'Websuche'",
+   "frage": "Was genau frage ich?",
+   "karten": [
+    {
+     "text": "FRAGE",
+     "at": "Frage@13.5-0.1"
+    },
+    {
+     "text": "Die Frage zum Kopieren → am Ende",
+     "at": "Namen@14.3"
+    }
+   ],
+   "marks": [
+    {
+     "find": "Schlag mir zehn deutsche Namen vor",
+     "at": "10@14.0",
+     "color": "yellow"
+    },
+    {
+     "find": "Prüf für jeden mit der Websuche",
+     "at": "Websuche",
+     "color": "orange"
+    }
+   ],
+   "shot": "firma-ep/tag8/shots/01-prompt-mit-anhang.png",
+   "sfx": [
+    {
+     "anker": "Frage@13.5-0.1",
+     "f": "tick",
+     "v": 0.25
+    },
+    {
+     "anker": "10@14.0",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Websuche",
+     "f": "typing",
+     "v": 0.18
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "akt": "claudeShot",
+   "von": 15.95,
+   "bis": 16.75,
+   "wort_start": {
+    "w": "Schon",
+    "after": 15.9
+   },
+   "anker": "Schon",
+   "bild": "Shot 01: Markierung 'ob die .de-Domain offensichtlich belegt ist' (auf 'Schon'), Senden-Klick auf den orangen Pfeil (auf 'belegt?' Ende). Harter Wechsel auf echten Shot 02-antwort-tabelle.png, Zeile 'Read 20 pages, searched the web' kurz orange gerahmt (Beleg, dass wirklich gesucht wurde).",
+   "kamera": "Senden-Klick, dann Schnitt auf Shot 02 (Tabelle oben)",
+   "frage": "Und, was kommt raus?",
+   "karten": [
+    {
+     "text": "Shot 02 'Read 20 pages, searched the web'",
+     "at": "belegt+0.3"
+    }
+   ],
+   "marks": [
+    {
+     "find": ".de-Domain offensichtlich belegt",
+     "at": "Schon",
+     "color": "yellow"
+    },
+    {
+     "find": "Read 20 pages, searched the web",
+     "at": "belegt+0.4",
+     "color": "orange",
+     "shot": "02"
+    }
+   ],
+   "send": "belegt+0.25",
+   "shot": "firma-ep/tag8/shots/02-antwort-tabelle.png",
+   "sfx": [
+    {
+     "anker": "Schon",
+     "f": "tick",
+     "v": 0.22
+    },
+    {
+     "anker": "belegt+0.25",
+     "f": "clickHi",
+     "v": 0.45
+    },
+    {
+     "anker": "belegt+0.4",
+     "f": "wq2",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "akt": "wall",
+   "von": 16.75,
+   "bis": 17.7,
+   "wort_start": {
+    "w": "7",
+    "after": 16.7
+   },
+   "anker": "7-0.05",
+   "bild": "Die 10 Zeilen der echten Tabelle (Shot 02) lösen sich als 10 Namenskarten ab und bilden die Namenswand (2 × 5, Stagger 0,05 s, MIT Inhalt). Zähler oben '0 von 10 gestrichen'. Erste drei Striche nacheinander, jeweils mit Grund-Etikett nur aus dem Lauf (Tabelle Shot 02 / Streichungen Shot 03): STICHFEST 'Stickerei in Österreich' (auf 'fliegen'), LOGOSTICH 'Shop für bestickte Firmenkleidung' (auf 'raus'), MEISTERSHIRT 'Domain belegt · Fußball-Begriff' (auf 'raus'+0.25). Zähler 1 → 2 → 3.",
+   "kamera": "Pull-back auf die ganze Wand",
+   "frage": "Welche fliegen raus?",
+   "karten": [
+    {
+     "label": "KLUFTWERK",
+     "grund": "zu nah an Kluft",
+     "gestrichen": true
+    },
+    {
+     "label": "TEAMKLUFT",
+     "grund": "zu nah an Kluft",
+     "gestrichen": true
+    },
+    {
+     "label": "FIRMENKLUFT",
+     "grund": "zu nah an Kluft",
+     "gestrichen": true
+    },
+    {
+     "label": "BAUKLUFT",
+     "grund": "zu nah an Kluft",
+     "gestrichen": true
+    },
+    {
+     "label": "STICHFEST",
+     "grund": "Stickerei in Österreich",
+     "gestrichen": true
+    },
+    {
+     "label": "LOGOSTICH",
+     "grund": "Shop für bestickte Firmenkleidung",
+     "gestrichen": true
+    },
+    {
+     "label": "MEISTERSHIRT",
+     "grund": "Domain belegt · Fußball-Begriff",
+     "gestrichen": true
+    },
+    {
+     "label": "HANDWERKERHEMD",
+     "grund": null,
+     "gestrichen": false
+    },
+    {
+     "label": "BETRIEBSSHIRT",
+     "grund": null,
+     "gestrichen": false
+    },
+    {
+     "label": "KOLONNENSHIRT",
+     "grund": null,
+     "gestrichen": false
+    },
+    {
+     "text": "Strich STICHFEST",
+     "at": "fliegen"
+    },
+    {
+     "text": "Strich LOGOSTICH",
+     "at": "raus"
+    },
+    {
+     "text": "Strich MEISTERSHIRT",
+     "at": "raus+0.25"
+    }
+   ],
+   "quelle": "Shot 02 Tabelle Nr. 1–10 + Shot 03 'Was hinter den Streichungen steckt'; LAUF.md",
+   "sfx": [
+    {
+     "anker": "7-0.05",
+     "f": "page",
+     "v": 0.25
+    },
+    {
+     "anker": "fliegen",
+     "f": "clack",
+     "v": 0.3
+    },
+    {
+     "anker": "raus",
+     "f": "clack",
+     "v": 0.28
+    },
+    {
+     "anker": "raus+0.25",
+     "f": "clack",
+     "v": 0.26
+    }
+   ]
+  },
+  {
+   "id": "B13",
+   "akt": "wall",
+   "von": 17.7,
+   "bis": 19.0,
+   "wort_start": {
+    "w": "4",
+    "after": 17.6
+   },
+   "anker": "4",
+   "bild": "Die vier Kluft-Karten (KLUFTWERK, TEAMKLUFT, FIRMENKLUFT, BAUKLUFT) leuchten orange auf (auf '4'), der Wortteil 'KLUFT' in allen vier wird unterstrichen (auf 'nah').",
+   "kamera": "leichter Push-in auf die vier Karten",
+   "frage": "Was ist an denen falsch?",
+   "karten": [
+    {
+     "text": "4 Kluft-Karten orange",
+     "at": "4"
+    },
+    {
+     "text": "'KLUFT' unterstrichen",
+     "at": "nah"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "4",
+     "f": "popHi",
+     "v": 0.28
+    },
+    {
+     "anker": "nah",
+     "f": "tick",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "akt": "wall",
+   "von": 19.0,
+   "bis": 20.55,
+   "wort_start": {
+    "w": "Arbeitskleidungs-Shop",
+    "after": 18.9
+   },
+   "anker": "Arbeitskleidungs-Shop",
+   "bild": "Mini-Karte neben den vier: 'Kluft.de · Arbeitskleidung · dieselben Kunden' (auf 'Arbeitskleidungs-Shop'; Shot 03). Auf 'Kluft' vier Striche GLEICHZEITIG, jede Karte bekommt das Etikett 'zu nah an Kluft'. Zähler springt auf '7 von 10 gestrichen'. Beleg-Kachel klein: Shot 03 (Kluft-Absatz).",
+   "kamera": "steht, Mini-Karte vorn",
+   "frage": "Was bleibt übrig?",
+   "karten": [
+    {
+     "text": "Kluft.de · Arbeitskleidung · dieselben Kunden",
+     "at": "Arbeitskleidungs-Shop"
+    },
+    {
+     "text": "4× 'zu nah an Kluft' + Striche",
+     "at": "Kluft"
+    },
+    {
+     "text": "7 von 10 gestrichen",
+     "at": "Kluft+0.15"
+    }
+   ],
+   "proof": "firma-ep/tag8/shots/03-streichungen.png",
+   "sfx": [
+    {
+     "anker": "Arbeitskleidungs-Shop",
+     "f": "popLo",
+     "v": 0.3
+    },
+    {
+     "anker": "Kluft",
+     "f": "stamp",
+     "v": 0.4
+    },
+    {
+     "anker": "Kluft+0.15",
+     "f": "roll",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "winner",
+   "von": 20.55,
+   "bis": 21.4,
+   "wort_start": {
+    "w": "Die",
+    "after": 20.5
+   },
+   "anker": "Die@20.5-0.05",
+   "bild": "Die 7 gestrichenen Karten dimmen, die 3 übrigen (HANDWERKERHEMD, BETRIEBSSHIRT, KOLONNENSHIRT) bleiben hell (auf 'Die KI wählt'). Musik per Kurve fast still (Stille vor der Pointe).",
+   "kamera": "langsamer Push-in auf die drei",
+   "frage": "Welchen nimmt sie?",
+   "karten": [
+    {
+     "text": "3 übrig",
+     "at": "wählt"
+    }
+   ],
+   "musik": "Kurve 20.15–21.30 auf 0.018 (natürliche Mulde im Stück)",
+   "sfx": [
+    {
+     "anker": "wählt",
+     "f": "tick",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B16",
+   "akt": "winner",
+   "von": 21.4,
+   "bis": 22.35,
+   "wort_start": {
+    "w": "Kolonnenshirt",
+    "after": 21.3
+   },
+   "anker": "Kolonnenshirt-0.05",
+   "bild": "Ergebnis-Bild: KOLONNENSHIRT-Karte fliegt nach vorn auf die Shirt-Brust, der Name wird gestickt (Stichanimation, 0,5 s), Stempel 'EMPFEHLUNG' (orange, M-011). Musik-Schlag genau hier (Track 176.20 = Clip 21.40). Beleg klein: Shot 02 Zeile 10 'Empfehlung'.",
+   "kamera": "harter Push-in auf die Shirt-Brust",
+   "frage": "Warum gerade der?",
+   "karten": [
+    {
+     "text": "Kolonnenshirt (Stick)",
+     "at": "Kolonnenshirt"
+    },
+    {
+     "text": "EMPFEHLUNG",
+     "farbe": "orange",
+     "at": "Kolonnenshirt+0.45"
+    }
+   ],
+   "proof": "firma-ep/tag8/shots/02-antwort-tabelle.png",
+   "sfx": [
+    {
+     "anker": "Kolonnenshirt-0.12",
+     "f": "wqh",
+     "v": 0.25
+    },
+    {
+     "anker": "Kolonnenshirt",
+     "f": "power",
+     "v": 0.3
+    },
+    {
+     "anker": "Kolonnenshirt+0.45",
+     "f": "stamp",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B17",
+   "akt": "why",
+   "von": 22.35,
+   "bis": 23.0,
+   "wort_start": {
+    "w": "Warum",
+    "after": 22.3
+   },
+   "anker": "Warum-0.12",
+   "bild": "Warum-Beat: Shirt-Brust 'Kolonnenshirt' fährt nach oben und bleibt dort stehen, Pill 'WARUM KOLONNENSHIRT?' auf 'Warum' (Musik-Schlag Clip 22.40).",
+   "kamera": "0,3-s-Fahrt nach oben, dann ruhig",
+   "frage": "Warum?",
+   "karten": [
+    {
+     "text": "WARUM KOLONNENSHIRT?",
+     "at": "Warum"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.15",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B18",
+   "akt": "why",
+   "von": 23.0,
+   "bis": 26.1,
+   "wort_start": {
+    "w": "Kolonne",
+    "after": 23.0
+   },
+   "anker": "Kolonne",
+   "bild": "Grund-Karte 1 (erscheint MIT Inhalt auf 'Kolonne', steht bis zum Haken, 'Arbeitstrupp' 24.17 → Karte 2 erscheint 26.15 = 1,98 s): Bau-Szene mit fünf kleinen Arbeitern in einer Reihe, groß 'KOLONNE = ARBEITSTRUPP' ('ARBEITSTRUPP' poppt auf 'Arbeitstrupp'), klein 'Fünferpaket für den Trupp' (auf 'Fünferpaket'), winzig 'Quelle: LEO Wörterbuch'. Gegenwert grau: 'Elektriker: eher „Team“' (Lauf).",
+   "kamera": "ruhig",
+   "frage": "Und das versteht jeder?",
+   "karten": [
+    {
+     "icon": "crew5",
+     "big": "KOLONNE = ARBEITSTRUPP",
+     "small": "Fünferpaket für den Trupp",
+     "at": "Kolonne",
+     "pop": "Arbeitstrupp",
+     "smallAt": "Fünferpaket",
+     "vs": {
+      "big": "Elektriker: eher „Team“",
+      "small": "verstehen es aber auch",
+      "at": "Fünferpaket+0.3",
+      "farbe": "grau"
+     }
+    }
+   ],
+   "steht_s": 1.98,
+   "sfx": [
+    {
+     "anker": "Kolonne-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "Arbeitstrupp",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "Fünferpaket",
+     "f": "tick",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B19",
+   "akt": "why",
+   "von": 26.1,
+   "bis": 28.5,
+   "wort_start": {
+    "w": "Firma",
+    "after": 26.0
+   },
+   "anker": "Firma@26.0",
+   "bild": "Grund-Karte 2 (auf 'Firma', Pause davor 0,31 s; Karte 1 rückt klein nach links): Lupe über 'Kolonnenshirt', darunter zwei Zeilen MIT Inhalt 'Firma: keine gefunden' und 'Shop: keine gefunden' (Zeile 'Shop' poppt auf 'Shop'), auf 'keine gefunden' beide Zeilen orange markiert. Formulierung = Nicht-Fund, kein '0 Treffer'. Gegenwert grau: 'Kluft.de: gefunden · Logostich: gefunden'.",
+   "kamera": "ruhig",
+   "frage": "Ist der Name dann frei?",
+   "karten": [
+    {
+     "icon": "searchLens",
+     "big": "Firma: keine gefunden",
+     "big2": "Shop: keine gefunden",
+     "at": "Firma@26.0",
+     "big2At": "Shop",
+     "markAt": "keine",
+     "vs": {
+      "big": "Kluft.de: gefunden",
+      "small": "Logostich: gefunden",
+      "at": "keine+0.3",
+      "farbe": "grau"
+     }
+    }
+   ],
+   "steht_s": 2.39,
+   "sfx": [
+    {
+     "anker": "Firma@26.0-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "Shop",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "keine",
+     "f": "check",
+     "v": 0.28
+    }
+   ]
+  },
+  {
+   "id": "B20",
+   "akt": "why",
+   "von": 28.5,
+   "bis": 30.62,
+   "wort_start": {
+    "w": "Die",
+    "after": 28.4
+   },
+   "anker": "Die@28.4",
+   "bild": "Grund-Karte 3 (auf 'Die anderen', Pause davor 0,30 s): die zwei übrigen Namen HANDWERKERHEMD und BETRIEBSSHIRT als graue Kärtchen, die in einer Suchtrefferliste untergehen; Stempel 'ALLERWELTSWÖRTER' auf 'Allerweltswörter' (29.42 → Haken 30.68 = 1,26 s, Pause danach 0,55 s). Gegenwert grau: 'Handwerkerhemd = Produktart · Betriebsshirt = beschreibt nur die Ware' (Lauf).",
+   "kamera": "ruhig",
+   "frage": "Und die anderen zwei?",
+   "karten": [
+    {
+     "icon": "searchList",
+     "big": "ALLERWELTSWÖRTER",
+     "small": "Handwerkerhemd · Betriebsshirt",
+     "at": "Die@28.4",
+     "stamp_at": "Allerweltswörter",
+     "vs": {
+      "big": "Produktart",
+      "small": "beschreibt nur die Ware",
+      "at": "Allerweltswörter+0.3",
+      "farbe": "grau"
+     }
+    }
+   ],
+   "steht_s": 1.26,
+   "sfx": [
+    {
+     "anker": "Die@28.4-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "Allerweltswörter",
+     "f": "stamp",
+     "v": 0.32
+    }
+   ]
+  },
+  {
+   "id": "B21",
+   "akt": "question",
+   "von": 30.62,
+   "bis": 33.15,
+   "wort_start": {
+    "w": "Haken",
+    "after": 30.6
+   },
+   "anker": "Haken-0.12",
+   "bild": "Haken als Prüf-Felder am Story-Objekt (Shirt-Brust bleibt oben, Warum-Karten fliegen raus): Pill 'HAKEN' (auf 'Haken', Aussage-Melodie), darunter Feld 1 Adresszeile 'kolonnenshirt.de' (auf 'Domain') mit gelbem '?' und Text 'nicht bestätigt' (auf 'bestätigt'). Klein darunter grau: 'DENIC-Abfrage brach ab' (Lauf, 7 von 10).",
+   "kamera": "Push-in auf die Felder",
+   "frage": "Ist die Domain frei?",
+   "karten": [
+    {
+     "text": "HAKEN",
+     "at": "Haken"
+    },
+    {
+     "text": "Domain: kolonnenshirt.de ?",
+     "farbe": "gelb",
+     "at": "Domain"
+    },
+    {
+     "text": "nicht bestätigt",
+     "farbe": "gelb",
+     "at": "bestätigt"
+    },
+    {
+     "text": "DENIC-Abfrage brach ab",
+     "farbe": "grau klein",
+     "at": "bestätigt+0.4"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Haken-0.12",
+     "f": "page",
+     "v": 0.3
+    },
+    {
+     "anker": "Domain",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "bestätigt",
+     "f": "ping",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B22",
+   "akt": "question",
+   "von": 33.15,
+   "bis": 35.95,
+   "wort_start": {
+    "w": "Markenregister",
+    "after": 33.1
+   },
+   "anker": "Markenregister-0.1",
+   "bild": "Feld 2 'Markenregister' (auf 'Markenregister') und Feld 3 'Handelsregister' (auf 'Handelsregister') erscheinen grau mit leerem Stempelfeld; auf 'nicht geprüft' schlagen in beide graue Stempel 'NICHT GEPRÜFT'. Keine Hand, keine Menschen-Handlung, kein angekündigter Schritt. Beleg klein: Shot 04 unterer Teil 'Was ich nicht prüfen konnte'.",
+   "kamera": "ruhig, leichter Push-in",
+   "frage": "Und wenn es den Namen schon gibt?",
+   "karten": [
+    {
+     "text": "Markenregister: nicht geprüft",
+     "farbe": "grau",
+     "at": "Markenregister"
+    },
+    {
+     "text": "Handelsregister: nicht geprüft",
+     "farbe": "grau",
+     "at": "Handelsregister"
+    },
+    {
+     "text": "Stempel NICHT GEPRÜFT ×2",
+     "at": "nicht@34.9"
+    }
+   ],
+   "proof": "firma-ep/tag8/shots/04-entscheidung.png",
+   "sfx": [
+    {
+     "anker": "Markenregister",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Handelsregister",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "nicht@34.9",
+     "f": "stamp",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B23",
+   "akt": "question",
+   "von": 35.95,
+   "bis": 38.7,
+   "wort_start": {
+    "w": "Als",
+    "after": 35.9
+   },
+   "anker": "Als-0.12",
+   "bild": "Offene Frage: Pill 'ALS NÄCHSTES', Karte 'Wie sieht ein Logo aus, / das sich sticken lässt?' (auf 'Wie'), Marker auf 'sticken'. Auf der Shirt-Brust (klein oben) erscheint neben 'Kolonnenshirt' ein gestrichelter Kreis 'Logo?'; im Board-Mini leuchtet Schritt 7 LOGO. Kein Canva, kein Ergebnis versprochen.",
+   "kamera": "ruhig, leichter Push-in",
+   "frage": "Wie wird das Logo?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als"
+    },
+    {
+     "text": "Wie sieht ein Logo aus,\ndas sich sticken lässt?",
+     "at": "Wie@36.5"
+    },
+    {
+     "text": "Logo? (gestrichelt auf der Brust)",
+     "at": "Logo@36.8"
+    },
+    {
+     "text": "Marker sticken",
+     "at": "sticken"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als-0.12",
+     "f": "airy",
+     "v": 0.25
+    },
+    {
+     "anker": "Als",
+     "f": "pop",
+     "v": 0.35
+    },
+    {
+     "anker": "Logo@36.8",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "sticken",
+     "f": "popLo",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B24",
+   "akt": "end",
+   "von": 38.7,
+   "bis": 45.16,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 38.6
+   },
+   "anker": "Kommentiere-0.15",
+   "bild": "Endkarte: Keyword 'Name' tippt sich ein (auf 'Name'), Haken, Flieger auf 'und … schick', 2 Items: 'Die Frage' (Prompt-Snippet aus Shot 01) auf 'Frage@40.4', 'Die Prüfliste' (Domain · DPMA · EUIPO · Handelsregister · Social) auf 'Prüfliste'. Zeile 'deinen Firmennamen prüfen' (auf 'Firmennamen@42.5') + 'in 10 Minuten' (auf '10@43.3'), Bot-Hüpfer ~44.3, Halt bis 45.16.",
+   "kamera": "ruhiger Push-in, letzte Sekunde Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "KOMMENTIERE „NAME“",
+     "at": "Name"
+    },
+    {
+     "text": "Die Frage (Shot 01)",
+     "at": "Frage@40.4"
+    },
+    {
+     "text": "Die Prüfliste",
+     "at": "Prüfliste"
+    },
+    {
+     "text": "deinen Firmennamen prüfen",
+     "at": "Firmennamen@42.5"
+    },
+    {
+     "text": "in 10 Minuten",
+     "at": "10@43.3"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Name-0.05",
+     "f": "typing",
+     "v": 0.25
+    },
+    {
+     "anker": "Name+0.6",
+     "f": "check",
+     "v": 0.35
+    },
+    {
+     "anker": "und@39.8-0.05",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Frage@40.4",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "Prüfliste",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "Damit-0.15",
+     "f": "chime",
+     "v": 0.3
+    },
+    {
+     "anker": "10@43.3",
+     "f": "pop",
+     "v": 0.3
+    }
+   ]
+  }
+ ],
+ "engine_akte": [
+  {
+   "type": "hook",
+   "at": "0",
+   "prop": "nameShirt",
+   "wunsch": "Hook-Objekt Shirt-Brust mit gesticktem 'Kolonnenshirt' + Zettel mit durchgestrichenen Kandidaten + Zähler '7 von 10 gestrichen' + gelbe Zeile 'Domain: nicht bestätigt · Marke: nicht geprüft'. Neues Objekt in src/components/firma/, wiederverwendbar für B16–B23 (Shirt-Brust) und B12–B15 (Namenswand)",
+   "noTagSlam": true,
+   "keinUmsatz": true
+  },
+  {
+   "type": "recap",
+   "at": "Die@4.8-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "Shirts@6.0"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt@7.4"
+   },
+   "relabel": {
+    "step": 4,
+    "label": "PRINTFUL",
+    "at": "Printful"
+   },
+   "last": {
+    "step": 3,
+    "label": "Vorschlag 109 € · 5 Shirts",
+    "status": "done",
+    "farbe": "neutral",
+    "at": "Vorschlag"
+   },
+   "today": {
+    "step": 5,
+    "pill": "HEUTE: FIRMENNAME",
+    "at": "Heute"
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Ergebnis-0.1",
+   "src": "firma-ep/tag8/shots/01-prompt-mit-anhang.png",
+   "plusClickAt": "Ergebnis"
+  },
+  {
+   "type": "claudeShot",
+   "at": "Frage@13.5-0.1",
+   "src": "firma-ep/tag8/shots/01-prompt-mit-anhang.png"
+  },
+  {
+   "type": "claudeShot",
+   "at": "belegt+0.3",
+   "src": "firma-ep/tag8/shots/02-antwort-tabelle.png"
+  },
+  {
+   "type": "wall",
+   "at": "7-0.05",
+   "cards": [
+    "KLUFTWERK",
+    "TEAMKLUFT",
+    "FIRMENKLUFT",
+    "BAUKLUFT",
+    "STICHFEST",
+    "LOGOSTICH",
+    "MEISTERSHIRT",
+    "HANDWERKERHEMD",
+    "BETRIEBSSHIRT",
+    "KOLONNENSHIRT"
+   ],
+   "fromShot": "02",
+   "strikes": [
+    {
+     "card": 4,
+     "at": "fliegen",
+     "grund": "Stickerei in Österreich"
+    },
+    {
+     "card": 5,
+     "at": "raus",
+     "grund": "Shop für bestickte Firmenkleidung"
+    },
+    {
+     "card": 6,
+     "at": "raus+0.25",
+     "grund": "Domain belegt · Fußball-Begriff"
+    },
+    {
+     "card": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "highlightAt": "4",
+     "at": "Kluft",
+     "grund": "zu nah an Kluft"
+    }
+   ],
+   "counter": {
+    "label": "von 10 gestrichen",
+    "steps": [
+     [
+      16.7,
+      0
+     ],
+     [
+      "fliegen",
+      1
+     ],
+     [
+      "raus",
+      2
+     ],
+     [
+      "raus+0.25",
+      3
+     ],
+     [
+      "Kluft+0.15",
+      7
+     ]
+    ]
+   },
+   "miniCard": {
+    "text": "Kluft.de · Arbeitskleidung · dieselben Kunden",
+    "at": "Arbeitskleidungs-Shop"
+   },
+   "proof": "firma-ep/tag8/shots/03-streichungen.png"
+  },
+  {
+   "type": "winner",
+   "at": "Die@20.5-0.05",
+   "card": 9,
+   "dimAt": "wählt",
+   "fly": "Kolonnenshirt",
+   "embroider": "Kolonnenshirt",
+   "stamp": "EMPFEHLUNG",
+   "stampAt": "Kolonnenshirt+0.45",
+   "hold": "nameShirt",
+   "proof": "firma-ep/tag8/shots/02-antwort-tabelle.png"
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "card": 9,
+   "pill": "WARUM KOLONNENSHIRT?",
+   "pillAt": "Warum",
+   "stack": true,
+   "cards": [
+    {
+     "icon": "crew5",
+     "big": "KOLONNE = ARBEITSTRUPP",
+     "small": "Fünferpaket für den Trupp",
+     "at": "Kolonne"
+    },
+    {
+     "icon": "searchLens",
+     "big": "Firma: keine gefunden",
+     "small": "Shop: keine gefunden",
+     "at": "Firma@26.0"
+    },
+    {
+     "icon": "searchList",
+     "big": "ALLERWELTSWÖRTER",
+     "small": "Handwerkerhemd · Betriebsshirt",
+     "at": "Die@28.4"
+    }
+   ],
+   "vs_wunsch": [
+    {
+     "card": 0,
+     "big": "Elektriker: eher „Team“",
+     "small": "verstehen es aber auch",
+     "at": "Fünferpaket+0.3",
+     "stil": "grau"
+    },
+    {
+     "card": 1,
+     "big": "Kluft.de: gefunden",
+     "small": "Logostich: gefunden",
+     "at": "keine+0.3",
+     "stil": "grau"
+    },
+    {
+     "card": 2,
+     "big": "Produktart",
+     "small": "beschreibt nur die Ware",
+     "at": "Allerweltswörter+0.3",
+     "stil": "grau"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "at": "Haken-0.12",
+   "pill": "HAKEN",
+   "lines": [
+    "Domain: nicht bestätigt",
+    "Markenregister: nicht geprüft",
+    "Handelsregister: nicht geprüft"
+   ],
+   "pop": "Haken",
+   "stamp": null,
+   "bubble": "Haken+0.3",
+   "fields_wunsch": {
+    "card": "nameShirt",
+    "fields": [
+     {
+      "text": "kolonnenshirt.de",
+      "status": "nicht bestätigt",
+      "farbe": "gelb",
+      "at": "Domain",
+      "statusAt": "bestätigt"
+     },
+     {
+      "text": "Markenregister",
+      "status": "nicht geprüft",
+      "farbe": "grau",
+      "at": "Markenregister",
+      "statusAt": "nicht@34.9"
+     },
+     {
+      "text": "Handelsregister",
+      "status": "nicht geprüft",
+      "farbe": "grau",
+      "at": "Handelsregister",
+      "statusAt": "nicht@34.9"
+     }
+    ]
+   },
+   "proof": "firma-ep/tag8/shots/04-entscheidung.png"
+  },
+  {
+   "type": "question",
+   "at": "Als-0.12",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Wie sieht ein Logo aus,",
+    "das sich sticken lässt?"
+   ],
+   "pop": "Als",
+   "stamp": null,
+   "bubble": "Als+0.3"
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Name",
+   "plane": [
+    "und@39.8-0.05",
+    "schick+0.25"
+   ],
+   "itemsAt": "Frage@40.4",
+   "copyAt": "Damit",
+   "items_wunsch": [
+    {
+     "label": "Die Frage",
+     "src": "firma-ep/tag8/shots/01-prompt-mit-anhang.png",
+     "at": "Frage@40.4"
+    },
+    {
+     "label": "Die Prüfliste",
+     "lines": [
+      "Domain",
+      "DPMA",
+      "EUIPO",
+      "Handelsregister",
+      "Social-Namen"
+     ],
+     "at": "Prüfliste"
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

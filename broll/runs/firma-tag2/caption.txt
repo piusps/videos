@@ -1,0 +1,16 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Sie hat ihr Produkt, Firmenshirts mit Logo. Jetzt sucht sie ihren ersten Kunden.
+
+So machst du das für deine Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen, unten links auf „+“ klicken und „Research“ einschalten. Das geht in den bezahlten Plänen (Pro, Max, Team, Enterprise).
+2. Über „+“ und „Upload or add files“ anhängen, was du schon über dein Produkt weißt. Dann fängt Claude nicht bei null an.
+3. Fragen: Welche drei Branchen brauchen mein Produkt am häufigsten, und wie oft kaufen sie nach? Mit Grund und Quelle.
+
+Die KI nimmt das Handwerk: über 300.000 kleine Baubetriebe, das Shirt ist beim Kunden vor Ort ihre Werbung, und sie bestellen etwa ein- bis zweimal im Jahr nach. Claude sagt selbst: Das ist geschätzt, eine echte Statistik gibt es dazu nicht.
+
+Kommentiere „Kunde“, dann schick ich dir den Guide mit den drei Schritten, der Frage zum Kopieren und dem echten Ergebnis.
+
+Offen bleibt: Was nervt diese Betriebe beim Bestellen? Das prüft die KI als Nächstes.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #handwerk #firmenshirts

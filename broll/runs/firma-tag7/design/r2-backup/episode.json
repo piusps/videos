@@ -1,0 +1,999 @@
+{
+ "tag": 7,
+ "folge": 7,
+ "serientag": 2,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-29",
+ "seconds": 47.85,
+ "keyword": "Preis",
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 327.63,
+  "musicGain": 3.0,
+  "musicCurve": [
+   [
+    0,
+    0.03
+   ],
+   [
+    16.85,
+    0.03
+   ],
+   [
+    17.0,
+    0.008
+   ],
+   [
+    18.1,
+    0.008
+   ],
+   [
+    18.2,
+    0.036
+   ],
+   [
+    18.9,
+    0.03
+   ],
+   [
+    35.4,
+    0.03
+   ],
+   [
+    35.5,
+    0.04
+   ],
+   [
+    36.3,
+    0.035
+   ],
+   [
+    37.2,
+    0.035
+   ],
+   [
+    38.0,
+    0.055
+   ],
+   [
+    46.85,
+    0.055
+   ],
+   [
+    47.85,
+    0
+   ]
+  ]
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 3,
+  "done": [
+   0,
+   1,
+   2,
+   4
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "result": {
+   "kind": "calcSheet",
+   "sheet": {
+    "title": "Kalkulation",
+    "cols": [
+     "A61",
+     "Printful"
+    ],
+    "hotCol": 1,
+    "rows": [
+     {
+      "label": "Einkauf 5 Shirts",
+      "vals": [
+       "151,40 €",
+       "69,14 €"
+      ]
+     },
+     {
+      "label": "Verkaufspreis",
+      "vals": [
+       "109 €",
+       "109 €"
+      ]
+     },
+     {
+      "label": "Rohertrag pro Auftrag",
+      "vals": [
+       "−35,63 €",
+       "+33,50 €"
+      ],
+      "tone": [
+       "bad",
+       "good"
+      ],
+      "hot": true
+     }
+    ],
+    "note": {
+     "text": "gerechnet, nicht verdient"
+    },
+    "stamp": {
+     "text": "PRINTFUL STATT A61"
+    }
+   },
+   "beats": [
+    {
+     "at": "Umsatz",
+     "what": "push"
+    },
+    {
+     "at": "macht",
+     "what": "bad"
+    },
+    {
+     "at": "Unternehmen",
+     "what": "good"
+    },
+    {
+     "at": "das",
+     "what": "sweep"
+    },
+    {
+     "at": "KI",
+     "what": "push"
+    },
+    {
+     "at": "100",
+     "what": "stamp"
+    },
+    {
+     "at": "Tage",
+     "what": "note"
+    },
+    {
+     "at": "lang",
+     "what": "push"
+    },
+    {
+     "at": "führt",
+     "what": "good"
+    }
+   ],
+   "outAt": "Ich-0.02",
+   "y": 660
+  },
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Ich-0.04",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@4.2",
+   "aus": "aus@4.4",
+   "end": "Die@4.9-0.08"
+  },
+  "instant": true,
+  "planFrom": "Ich-0.05"
+ },
+ "claude": {
+  "at": "Ergebnis-0.1",
+  "steps": [],
+  "prompt": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe Firmenshirts mit gesticktem Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten. Mein letztes Ergebnis: Als Partner kommt A61 infrage, weil er als einziger ein besticktes Shirt mit 60 Grad Wäsche ab einem Stück hat, zweite Wahl ist Printful. Die Konkurrenz verlangt für fünf bestickte Shirts ab etwa 110 Euro brutto. Rechne jetzt meinen Preis, als Excel-Datei mit Formeln: Was kostet mich ein Paket mit fünf Shirts und ein einzeln nachbestelltes Shirt bei beiden Partnern, mit Shirt, Stick, Stickdatei, Versand und Mehrwertsteuer? Nimm nur Zahlen aus dem Anhang, und wenn du einen Wert schätzen oder umrechnen musst, schreib dazu, woher er kommt. Schlag mir dann einen Verkaufspreis für das Fünferpaket und für ein Einzelshirt vor, zeig den Rohertrag pro Auftrag, entscheide dich und begründe es mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts.",
+  "typing": [
+   [
+    "Ergebnis-0.1",
+    "*"
+   ]
+  ],
+  "send": "mit@16.5-0.05",
+  "rehook": {
+   "lines": [
+    "Die Frage",
+    "zum Kopieren"
+   ],
+   "pill": "→ am Ende",
+   "from": "Frage+0.2",
+   "to": "mit@16.5-0.1"
+  }
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@4.9-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "Shirts@6"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt"
+   },
+   "last": {
+    "step": 4,
+    "label": "A61 · MIT VORBEHALT",
+    "at": "Partner@8.9"
+   },
+   "today": {
+    "step": 3,
+    "pill": "HEUTE: PREIS RECHNEN",
+    "at": "Heute"
+   },
+   "bot": {
+    "dx": 0.55,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Ergebnis-0.1",
+   "src": "firma-ep/tag7/shots/01-prompt-mit-anhang.png",
+   "title": "ANHANG · FRAGE",
+   "crop": [
+    118,
+    830
+   ],
+   "cam": [
+    [
+     "Ergebnis-0.1",
+     1.0,
+     500,
+     420
+    ],
+    [
+     "anhängen-0.2",
+     1.7,
+     260,
+     240
+    ],
+    [
+     "Was@13.7",
+     2.0,
+     300,
+     485
+    ],
+    [
+     "A61@14.3",
+     2.0,
+     300,
+     410
+    ],
+    [
+     "Printful@15.4",
+     2.0,
+     300,
+     440
+    ],
+    [
+     "Excel",
+     2.0,
+     640,
+     470
+    ]
+   ],
+   "marks": [
+    {
+     "x": 49,
+     "y": 143,
+     "w": 170,
+     "h": 168,
+     "at": "anhängen",
+     "color": "orange"
+    },
+    {
+     "x": 785,
+     "y": 453,
+     "w": 160,
+     "h": 32,
+     "at": "Was@13.7",
+     "color": "yellow"
+    },
+    {
+     "x": 50,
+     "y": 482,
+     "w": 305,
+     "h": 32,
+     "at": "Was@13.7+0.25",
+     "color": "yellow"
+    },
+    {
+     "x": 108,
+     "y": 395,
+     "w": 50,
+     "h": 32,
+     "at": "A61@14.3",
+     "color": "orange"
+    },
+    {
+     "x": 140,
+     "y": 423,
+     "w": 240,
+     "h": 32,
+     "at": "Printful@15.4",
+     "color": "orange"
+    },
+    {
+     "x": 500,
+     "y": 453,
+     "w": 280,
+     "h": 32,
+     "at": "Excel",
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "mit@16.5",
+   "src": "firma-ep/tag7/shots/02b-datei-karte.png",
+   "title": "EXCEL · 75 FORMELN",
+   "crop": [
+    216,
+    302
+   ],
+   "cam": [
+    [
+     "mit@16.5",
+     1.45,
+     367,
+     257
+    ]
+   ],
+   "marks": [
+    {
+     "x": 37,
+     "y": 217,
+     "w": 660,
+     "h": 80,
+     "at": "mit@16.5+0.15",
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "type": "winner",
+   "at": "Die@17.0-0.08",
+   "bare": true,
+   "label": "PRINTFUL",
+   "icon": "shirt",
+   "fly": "Printful@18",
+   "dimAt": "wechselt",
+   "stampAt": "statt",
+   "hold": "shirt",
+   "bot": {
+    "dx": -1.5,
+    "dz": -2.2,
+    "s": 0.72
+   }
+  },
+  {
+   "type": "why",
+   "bot": {
+    "dx": -1.5,
+    "dz": -2.2,
+    "s": 0.72
+   },
+   "at": "Warum-0.12",
+   "bare": true,
+   "label": "PRINTFUL",
+   "icon": "shirt",
+   "pill": "WARUM PRINTFUL?",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "euro",
+     "small": "A61",
+     "at": "5@20.8"
+    },
+    {
+     "icon": "euro",
+     "small": "Printful",
+     "at": "Bei@26"
+    },
+    {
+     "icon": "shirt1x",
+     "small": "nachbestellt",
+     "at": "Ein@27.8"
+    }
+   ]
+  },
+  {
+   "type": "result",
+   "at": "Vorschlag-0.1",
+   "sheet": {
+    "title": "Kalkulation",
+    "cols": [
+     "A61",
+     "Printful"
+    ],
+    "hotCol": 1,
+    "rows": [
+     {
+      "label": "Einkauf 5 Shirts",
+      "vals": [
+       "151,40 €",
+       "69,14 €"
+      ],
+      "tone": [
+       "dim",
+       ""
+      ]
+     },
+     {
+      "label": "Verkaufspreis",
+      "vals": [
+       "109 €",
+       "109 €"
+      ],
+      "tone": [
+       "dim",
+       ""
+      ],
+      "at": "109@30.5",
+      "valAt": [
+       "109@30.5+0.15",
+       "109@30.5"
+      ]
+     },
+     {
+      "label": "Rohertrag pro Auftrag",
+      "vals": [
+       "−35,63 €",
+       "+33,50 €"
+      ],
+      "tone": [
+       "dim",
+       "good"
+      ],
+      "hot": true,
+      "at": "Rohertrag",
+      "valAt": [
+       "3350+0.35",
+       "3350"
+      ]
+     }
+    ],
+    "note": {
+     "text": "gerechnet, nicht verdient",
+     "at": "3350+0.6"
+    },
+    "tag": {
+     "head": "VORSCHLAG",
+     "big": "109 €",
+     "small": "für 5 Shirts",
+     "at": "Vorschlag",
+     "bigAt": "109@30.5",
+     "smallAt": "für@31.4"
+    }
+   },
+   "hl": {
+    "row": 2,
+    "at": "Rohertrag"
+   },
+   "bot": {
+    "dx": -1.4,
+    "dz": -1.8,
+    "s": 0.72
+   }
+  },
+  {
+   "type": "question",
+   "at": "Haken-0.12",
+   "lines": [],
+   "card": false,
+   "stamp": null,
+   "pop": "Haken",
+   "bubble": "Haken+0.3",
+   "bot": {
+    "dx": 1.3,
+    "dz": -2.0,
+    "s": 0.8
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@37.3-0.12",
+   "lines": [],
+   "card": false,
+   "stamp": null,
+   "pop": "Als@37.3",
+   "bubble": "Als@37.3+0.3",
+   "bot": {
+    "dx": 1.3,
+    "dz": -2.0,
+    "s": 0.8
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Preis@41.9",
+   "plane": [
+    "und@42.6-0.05",
+    "schick+0.25"
+   ],
+   "itemsAt": "die@43.2",
+   "copyAt": "Damit",
+   "items": [
+    {
+     "label": "Die Frage",
+     "snip": "Rechne jetzt meinen Preis, als Excel-Datei mit Formeln: Was kostet mich ein Paket mit fünf Shirts …"
+    },
+    {
+     "label": "Die Kalkulationsvorlage",
+     "snip": "",
+     "table": [
+      [
+       "Einkauf",
+       "Verkaufspreis",
+       "Rohertrag"
+      ],
+      [
+       "dein Wert",
+       "dein Wert",
+       "= Formel"
+      ]
+     ]
+    }
+   ],
+   "result": {
+    "at": "Damit",
+    "line1": "in 10 Minuten",
+    "line1At": "10",
+    "parts": [
+     {
+      "text": "deinen Preis",
+      "at": "Preis@45.8",
+      "hot": true
+     }
+    ]
+   },
+   "hopAt": "Preis@45.8+1.0",
+   "itemTag": "DM",
+   "dimBoard": true
+  }
+ ],
+ "overlays": [
+  {
+   "kind": "partners",
+   "from": "A61@14.3",
+   "to": "Als@37.3-0.12",
+   "keys": [
+    {
+     "at": "A61@14.3",
+     "place": "mini"
+    },
+    {
+     "at": "mit@16.5",
+     "place": "off"
+    },
+    {
+     "at": "Die@17.0-0.08",
+     "place": "duel"
+    },
+    {
+     "at": "Printful@18",
+     "place": "swap"
+    },
+    {
+     "at": "Warum-0.12",
+     "place": "top"
+    },
+    {
+     "at": "Vorschlag-0.1",
+     "place": "off"
+    },
+    {
+     "at": "Haken-0.12",
+     "place": "haken"
+    }
+   ],
+   "cards": [
+    {
+     "name": "A61",
+     "sub": "PARTNER",
+     "stamp": {
+      "text": "MIT VORBEHALT"
+     },
+     "at": "A61@14.3"
+    },
+    {
+     "name": "Printful",
+     "sub": "2. WAHL",
+     "at": "Printful@15.4"
+    }
+   ],
+   "win": 1,
+   "stampOff": "wechselt",
+   "swap": "Printful@18",
+   "bigStamp": {
+    "text": "PRINTFUL STATT A61",
+    "at": "statt+0.2",
+    "until": "Warum-0.15"
+   },
+   "proof": {
+    "src": "firma-ep/tag7/shots/02a-antwort-kopf.png",
+    "srcW": 1180,
+    "sx": 624,
+    "sy": 254,
+    "sw": 338,
+    "sh": 40,
+    "w": 900,
+    "y": 1060,
+    "at": "A61@18.9+0.2",
+    "to": "Warum-0.2",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "pill",
+   "text": "WARUM PRINTFUL?",
+   "from": "Warum-0.05",
+   "to": "Vorschlag-0.15",
+   "y": 450
+  },
+  {
+   "kind": "bars",
+   "from": "5@20.8",
+   "to": "Vorschlag-0.15",
+   "title": "Einkauf 5 Shirts",
+   "icons": 5,
+   "max": 160,
+   "y": 540,
+   "h": 620,
+   "bars": [
+    {
+     "label": "A61",
+     "value": 151,
+     "color": "red",
+     "at": "Einkauf",
+     "valueAt": "151",
+     "labelAt": "A61@21.5"
+    },
+    {
+     "label": "Printful",
+     "value": 69,
+     "color": "green",
+     "at": "Printful@26",
+     "valueAt": "69@26.8",
+     "labelAt": "Printful@26",
+     "inside": true
+    }
+   ],
+   "line": {
+    "label": "Konkurrenzpreis",
+    "value": 110,
+    "at": "Konkurrenzpreis",
+    "valueAt": "110"
+   },
+   "pulses": [
+    "151",
+    "110",
+    "69@26.8"
+   ]
+  },
+  {
+   "kind": "card",
+   "from": "Ein@27.8",
+   "to": "Vorschlag-0.15",
+   "title": "1 Shirt nachbestellt",
+   "iconText": "1×",
+   "y": 1180,
+   "h": 210,
+   "main": {
+    "pre": "rund",
+    "preAt": "rund",
+    "big": "15 €",
+    "at": "15@29"
+   },
+   "vs": {
+    "label": "A61",
+    "big": "35,80 €",
+    "at": "nachbestellt+0.2"
+   }
+  },
+  {
+   "kind": "pill",
+   "text": "HAKEN",
+   "from": "Haken-0.1",
+   "to": "Als@37.3-0.15",
+   "y": 240
+  },
+  {
+   "kind": "careTag",
+   "from": "Haken@34.8+0.15",
+   "to": "Als@37.3-0.15",
+   "temp": "60 °C",
+   "strikeAt": "60GradWäsche",
+   "y": 660,
+   "quote": {
+    "text": "machine wash warm",
+    "label": "Printful · Gildan-Shirt",
+    "at": "verspricht"
+   },
+   "chip": {
+    "text": "60 °C nicht zugesagt",
+    "at": "Printful@36.5"
+   },
+   "pulse": "nicht@36.8"
+  },
+  {
+   "kind": "pill",
+   "text": "ALS NÄCHSTES",
+   "from": "Als@37.3",
+   "to": "Kommentiere-0.2",
+   "y": 240,
+   "color": "gold"
+  },
+  {
+   "kind": "nameSign",
+   "from": "Firma@38.4",
+   "to": "Kommentiere-0.2",
+   "text": "Firma ???",
+   "head": "WIE HEISST DIE FIRMA?",
+   "at": "Firma@38.4",
+   "wiggle": [
+    "Namen@39"
+   ],
+   "y": 430,
+   "chain": [
+    {
+     "n": 6,
+     "label": "NAME",
+     "current": true,
+     "at": "Ohne@39"
+    },
+    {
+     "n": 7,
+     "label": "LOGO",
+     "at": "kein@39.6",
+     "lockAt": "Logo@39.8",
+     "arrowPulse": "Logo@39.8"
+    },
+    {
+     "n": 8,
+     "label": "WEBSITE",
+     "at": "kein@40.1",
+     "lockAt": "Werbung",
+     "arrowPulse": "Werbung"
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "t": "Umsatz-0.04",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "macht",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Unternehmen",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "das",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "KI-0.04",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "100",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Tage",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "lang-0.04",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "führt",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "A61@14.3",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Printful@15.4",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "wechselt",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "wechselt+0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "A61@18.9+0.2",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Warum-0.05",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Einkauf",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "151",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Konkurrenzpreis",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "110",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Printful@26",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "69@26.8",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Ein@27.8",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "nachbestellt+0.2",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "15@29",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Vorschlag",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "109@30.5",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "für@31.4",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Rohertrag",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "3350",
+   "f": "sfx/heygen/extra/counter-roll.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "3350+0.7",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "3350+0.6",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Haken-0.1",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "60GradWäsche",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "verspricht",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Printful@36.5",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "nicht@36.8",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Als@37.3",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Firma@38.4",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Firma@38.4+0.3",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Namen@39",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Logo@39.8",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.26
+  },
+  {
+   "t": "Werbung",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.26
+  },
+  {
+   "t": "Muster",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.25
+  }
+ ]
+}

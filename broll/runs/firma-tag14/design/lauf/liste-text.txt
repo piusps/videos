@@ -1,0 +1,47 @@
+== SHEET Empfaenger A1:I6
+Nr | Firmenname | Zusatz | Strasse | PLZ | Ort | Adressstatus | Quelle_im_Brief | Pruefhinweis
+1 | Zimmerei Jens Knauth |  | Kieselhausenstraße 26a | 09117 | Chemnitz | Belegt | Ihrem Impressum auf knauth-zimmerei.de | Impressum, Kontaktseite, Carport-Website und Creditreform nennen dieselbe Anschrift.
+2 | Jan Metzler Elektro Metzler |  | Augustusburger Straße 149 | 09126 | Chemnitz | Belegt, prüfen | Ihrem Impressum auf elektrometzler.de | Impressum, Kontaktseite und Creditreform: 09126. Die Mitgliederliste der Elektro-Innung nennt dieselbe Straße mit PLZ 09127. Ältere Verzeichnisse nennen eine andere Hausnummer (09127); diese steht im Impressum nur bei der redaktionell verantwortlichen Person und wird hier nicht verwendet.
+3 | Malermeister Andreas Demeter |  | Falkenauer Wiesenstraße 13 | 09557 | Flöha | Belegt, prüfen | Ihrem Impressum auf maler-demeter.de | Impressum nennt zwei Anschriften: Sitz in Flöha (hier eingetragen) und eine neue Betriebsstätte Annaberger Straße 351a, 09125 Chemnitz. Ältere Verzeichnisse (Gelbe Seiten, auskunft.de) nennen eine dritte, vermutlich veraltete Chemnitzer Anschrift. Flöha liegt außerhalb der Stadt, aber im Umland.
+4 | M3 Raumbau | Inhaber: Fabrice Müller | Elisenstraße 25 | 09111 | Chemnitz | Belegt, prüfen | Ihrem Impressum auf m3-raumbau.de | Nur eine Quelle (Impressum). Name weicht ab: In der BA-Jobbörse heißt der Betrieb „Fabrice Müller Malerbetrieb“. Sehr wahrscheinlich derselbe Betrieb (Malermeister Fabrice Müller, Chemnitz, selbstständig seit 2021, gleiche Leistungen), aber nicht bewiesen.
+5 | Dachdeckerei Tillmann GmbH & Co. KG |  | Ziegeleistraße 7 | 09114 | Chemnitz | Widerspruch | Ihrem Impressum auf dachdeckerei-tillmann.de | Impressum, Kontaktseite und mehrere Verzeichnisse: Ziegeleistraße 7. Eine Abschrift der Handelsregister-Bekanntmachung (HRA 7974) nennt als Geschäftsanschrift Ammernstraße 27, 09114 Chemnitz; 11880 führt beide Anschriften. Das Impressum trägt den Vermerk Copyright 2010. Vor dem Versand im amtlichen Handelsregister prüfen.
+== SHEET Belege A1:G25
+Betrieb | Quelle | Art der Quelle | Gefundene Anschrift | Stimmt mit Brief-Adresse überein? | Hinweis | URL
+Knauth | Impressum knauth-zimmerei.de | Eigenes Impressum | Kieselhausenstraße 26a, 09117 Chemnitz | Ja | Inhaber Jens Knauth, USt-ID angegeben | https://www.knauth-zimmerei.de/impressum
+Knauth | Kontaktseite knauth-zimmerei.de | Eigene Website | Kieselhausenstraße 26a, 09117 Chemnitz | Ja |  | https://www.knauth-zimmerei.de/kontakt
+Knauth | carport-chemnitz.de | Eigene Website (Carports) | Kieselhausenstraße 26a, 09117 Chemnitz | Ja |  | https://www.carport-chemnitz.de/
+Knauth | Creditreform Firmeneintrag | Wirtschaftsauskunft | Kieselhausenstr. 26 a, 09117 Chemnitz | Ja | Rechtsform Gewerbebetrieb, 1 Inhaber | https://firmeneintrag.creditreform.de/09117/3030086987/JENS_KNAUTH_ZIMMEREI
+Metzler | Impressum elektrometzler.de | Eigenes Impressum | Augustusburger Straße 149, 09126 Chemnitz | Ja | Andere Anschrift nur bei „redaktionell verantwortlich“ (Person) – nicht übernommen | https://www.elektrometzler.de/impressum
+Metzler | Kontaktseite elektrometzler.de | Eigene Website | Augustusburger Str. 149, 09126 Chemnitz | Ja |  | https://www.elektrometzler.de/kontakt
+Metzler | Creditreform Firmeneintrag | Wirtschaftsauskunft | Augustusburger Str. 149, 09126 Chemnitz | Ja | Gewerbebetrieb, 1 Inhaber | https://firmeneintrag.creditreform.de/09126/3030321402/JAN_METZLER_ELEKTRO_METZLER
+Metzler | Elektro-Innung Südsachsen, Innungsbetriebe | Innung | Augustusburger Straße 149, 09127 Chemnitz | Teilweise (PLZ weicht ab) | Liste ohne Datum | https://www.elektro-innung-suedsachsen.de/mitgliederinfo/innungsbetriebe.html
+Metzler | elektriker.org, werkenntdenbesten.de, wohnung.net | Branchenverzeichnisse | Andere Hausnummer, PLZ 09127 | Nein | Teils unter dem Namen Joachim Metzler; vermutlich veraltet | https://www.elektriker.org/chemnitz/joachim-metzler-elektro-metzler-aULtdf
+Metzler | Cosuno | Bauverzeichnis | Platzhalter-Straße, 09126 Chemnitz | Nur PLZ | Keine echte Straße | https://directory.cosuno.com/en/germany/companies/elektrometzler-143906
+Demeter | Impressum maler-demeter.de | Eigenes Impressum | Falkenauer Wiesenstraße 13, 09557 Flöha; neue Betriebsstätte Annaberger Straße 351a, 09125 Chemnitz | Ja (Sitz) | Zwei Anschriften im Impressum | https://www.maler-demeter.de/farben-impressum.html
+Demeter | Startseite maler-demeter.de | Eigene Website | Sitz Flöha/OT Falkenau, Betriebsstätte Annaberger Straße 351a Chemnitz | Ja | Nennt 8 Mitarbeiter | https://www.maler-demeter.de/
+Demeter | 11880 | Branchenverzeichnis | Falkenauer Wiesenstr. 13, Flöha | Ja |  | https://www.11880.com/branchenbuch/floeha/060693517B102200271/andreas-demeter-maler-und-lackierer.html
+Demeter | Gelbe Seiten; auskunft.de | Branchenverzeichnisse | Dr.-Salvador-Allende-Str. 186, 09119 Chemnitz | Nein | Vermutlich veraltet | https://www.gelbeseiten.de/gsbiz/19d561ea-9aa6-4f41-863c-2ac0145d474d
+Demeter | maler-pasztor.de | Website eines weiteren Betriebs | Falkenauer Wiesenstraße 13, 09557 Flöha | Ja (gleiche Anschrift) | „Malerbetrieb Pasztor Inh. Andreas Demeter“ – zweiter Firmenname unter derselben Adresse | https://www.maler-pasztor.de/
+Fabrice Müller | Impressum m3-raumbau.de | Eigenes Impressum | Elisenstraße 25, 09111 Chemnitz | Ja | M3 Raumbau, Inhaber Fabrice Müller | https://www.m3-raumbau.de/impressum-datenschutz.htm
+Fabrice Müller | Startseite m3-raumbau.de | Eigene Website | Nur „Sitz: Chemnitz“ | – | Malermeister, selbstständig seit 2021 | https://www.m3-raumbau.de/
+Fabrice Müller | BA-Jobbörse | Stellenanzeige | Nur „Chemnitz“ | – | Name „Fabrice Müller Malerbetrieb“, Gründung 2021, 3 Personen | https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002436033-S
+Tillmann | Impressum dachdeckerei-tillmann.de | Eigenes Impressum | Ziegeleistraße 7, 09114 Chemnitz | Ja | Copyright 2010; HRA 7974 | https://www.dachdeckerei-tillmann.de/impressum-dachdecker-chemnitz-dachdeckerei-tillmann/
+Tillmann | Kontaktseite dachdeckerei-tillmann.de | Eigene Website | Ziegeleistraße 7, 09114 Chemnitz | Ja |  | https://www.dachdeckerei-tillmann.de/kontakt-anfahrt-dachdecker-chemnitz/
+Tillmann | webvalid.de (Abschrift Registerbekanntmachung) | Handelsregister (Drittanbieter) | Geschäftsanschrift Ammernstraße 27, 09114 Chemnitz | Nein | Nicht im amtlichen Register selbst geprüft | https://www.webvalid.de/company/Dachdeckerei+Tillmann+GmbH+&+Co.KG,+Chemnitz/HRA+7974
+Tillmann | implisense | Firmendatenbank | Ziegeleistraße 7, 09114 Chemnitz | Ja | Gründung der KG 2014, HRA 7974 | https://app.implisense.com/en/companies/dachdeckerei-tillmann-gmbh-co-kg-chemnitz--DEORO53RZI54
+Tillmann | 11880 (zwei Einträge) | Branchenverzeichnis | Ammernstr. 27 und Ziegeleistr. 7 | Teilweise | Zwei Einträge, beide 2026 aktualisiert | https://www.11880.com/branchenbuch/chemnitz-sachsen/132381074B26694820/dachdeckerei-tillmann-gmbh-co-kg.html
+Tillmann | GoYellow, dachbau.biz | Branchenverzeichnisse | Ziegeleistr. 7, 09114 Chemnitz | Ja |  | https://www.goyellow.de/home/dachdecker-dachdeckerei-tillmann-gmbh-co-kg-chemnitz.html
+== SHEET Legende und Offen A1:B15
+Adressstatus | Bedeutung
+Belegt | Eigenes Impressum und mindestens eine unabhängige Quelle nennen dieselbe Anschrift.
+Belegt, prüfen | Im Impressum belegt, aber eine Nebenquelle weicht ab, es gibt mehrere Anschriften oder nur eine Quelle.
+Widerspruch | Impressum und Handelsregister (bzw. Verzeichnisse) nennen verschiedene Anschriften.
+Nicht belegt | Keine Anschrift gefunden (derzeit kein Fall).
+Für den Serienbrief | Blatt „Empfaenger“ als Datenquelle wählen. Felder: Firmenname, Zusatz, Strasse, PLZ, Ort, Quelle_im_Brief (für den Satz „Ihre Firmenanschrift stammt aus …“). PLZ ist als Text gespeichert, damit die führende 0 bleibt.
+Nicht geprüft | 
+1 | Ob die Anschriften heute noch stimmen: Keine Quelle nennt ein Prüfdatum; das Tillmann-Impressum stammt laut Vermerk von 2010.
+2 | Das amtliche Handelsregister (handelsregister.de) habe ich nicht selbst abgefragt; der Tillmann-Eintrag stammt von einem Drittanbieter. Die vier anderen Betriebe sind laut Creditreform bzw. eigener Angabe Einzelunternehmen und stehen vermutlich nicht im Handelsregister.
+3 | Ob „M3 Raumbau“ und „Fabrice Müller Malerbetrieb“ derselbe Betrieb sind.
+4 | Ob unter Elisenstraße 25 ein Geschäftsraum ist oder ob es sich um eine Wohnanschrift handelt (bei Einzelunternehmen möglich).
+5 | Welche der beiden Demeter-Anschriften der Betrieb für Post bevorzugt.
+6 | Ob Briefe zustellbar sind (keine Prüfung über die Post).

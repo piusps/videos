@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Website: Guide mit der Frage, den drei Dingen für ganz oben, der Online-Checkliste und dem Entwurf als Bild per DM, Trigger-Wort im Video: Website)",
+ "commentReply": "Der Guide liegt in deiner DM. Hast du schon eine Website für deine Firma?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Was steht bei dir ganz oben auf der Startseite?",
+  "Schick ich dir gerade, mit der Online-Checkliste. Hast du dein Impressum schon?",
+  "Angekommen, alles liegt in deiner DM. Steht dein Preis bei dir schon auf der Seite?",
+  "Liegt in deiner DM, mit dem Entwurf als Bild. Hättest du auch den Preis nach oben gestellt?",
+  "Der Guide ist unterwegs. Verkaufst du nur an Firmen oder auch an Privatleute?"
+ ]
+}

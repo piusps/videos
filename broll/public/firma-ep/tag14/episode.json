@@ -1,0 +1,1726 @@
+{
+ "tag": 14,
+ "folge": 14,
+ "serientag": 4,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-31",
+ "keyword": "Adresse",
+ "seconds": 45.7,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 106.65,
+  "musicMute": [
+   [
+    0.0,
+    0.75
+   ]
+  ],
+  "musicCurve": [
+   [
+    0,
+    0.035
+   ],
+   [
+    23.0,
+    0.035
+   ],
+   [
+    23.2,
+    0.022
+   ],
+   [
+    23.9,
+    0.022
+   ],
+   [
+    23.97,
+    0.05
+   ],
+   [
+    24.7,
+    0.035
+   ],
+   [
+    44.4,
+    0.035
+   ],
+   [
+    44.75,
+    0.06
+   ],
+   [
+    45.3,
+    0.06
+   ],
+   [
+    45.7,
+    0
+   ]
+  ]
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "sub": "· 12 SCHRITTE",
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE\nENTWURF",
+   "GEWERBE\nMENSCH",
+   "BETRIEBE",
+   "BRIEF\n+ ADRESSEN",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 7,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6
+  ],
+  "wip": [
+   4
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@5",
+   "aus": "aus@5.3",
+   "end": "Die@6-0.08"
+  },
+  "instant": true,
+  "keepHeadline": true,
+  "planFrom": "Ich-0.05"
+ },
+ "claude": {
+  "at": "Claude+0.18",
+  "moveUp": 99,
+  "steps": [],
+  "prompt": "Im Anhang ist mein letztes Ergebnis: der erste Werbebrief als Word-Datei. Dazu mein Ergebnis davor: zwanzig Betriebe in der Testregion Chemnitz, fünf davon spreche ich zuerst an. Im Brief fehlen noch die Empfänger. Hol mit der Websuche die Postadressen dieser fünf Betriebe, aus dem Impressum oder anderen öffentlichen Quellen, jeweils mit Quelle. Bau daraus eine Empfängerliste für den Serienbrief als Excel-Datei. Markiere, welche Adresse belegt ist, welche nicht und wo sich Quellen widersprechen. Nimm nur Firmenangaben, keine privaten Daten und keine Ansprechpartner, die nicht im Impressum stehen. Sag mir, welche Quelle für Firmenadressen am verlässlichsten ist, mit zwei bis drei Gründen. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts.",
+  "typing": [
+   [
+    "Claude+0.18",
+    ""
+   ]
+  ],
+  "send": "Claude+0.19"
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@6-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "verkauft"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt"
+   },
+   "last": {
+    "step": 7,
+    "at": "Werbebrief"
+   },
+   "today": {
+    "step": 7,
+    "pill": "HEUTE: ADRESSEN",
+    "at": "Heute"
+   },
+   "bot": {
+    "dx": 0.55,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Claude+0.18",
+   "src": "firma-ep/tag14/shots/weg-A.png",
+   "cam": [
+    [
+     "Claude+0.18",
+     1.0,
+     500,
+     470
+    ],
+    [
+     "Brief@16.4",
+     1.03,
+     520,
+     455
+    ],
+    [
+     "angehängt",
+     1.0,
+     500,
+     525
+    ]
+   ],
+   "marks": [
+    {
+     "x": 478,
+     "y": 34,
+     "w": 426,
+     "h": 426,
+     "at": "Brief@16.4",
+     "color": "orange"
+    },
+    {
+     "x": 8,
+     "y": 936,
+     "w": 110,
+     "h": 112,
+     "at": "angehängt",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "angehängt:end+0.08",
+   "src": "firma-ep/tag14/shots/weg-B.png",
+   "cam": [
+    [
+     "angehängt:end+0.08",
+     1.0,
+     500,
+     420
+    ],
+    [
+     "Websuche",
+     1.04,
+     500,
+     400
+    ]
+   ],
+   "marks": [
+    {
+     "x": 12,
+     "y": 304,
+     "w": 747,
+     "h": 157,
+     "at": "Websuche",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Websuche:end+0.22",
+   "src": "firma-ep/tag14/shots/weg-C.png",
+   "cam": [
+    [
+     "Websuche:end+0.22",
+     1.0,
+     500,
+     560
+    ],
+    [
+     "Excel-Datei",
+     1.05,
+     500,
+     600
+    ]
+   ],
+   "marks": [
+    {
+     "x": 34,
+     "y": 530,
+     "w": 940,
+     "h": 152,
+     "at": "Excel-Datei",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "at": "Sie@20-0.06",
+   "lines": [
+    " "
+   ],
+   "card": false,
+   "stamp": null,
+   "bot": {
+    "dx": 1.6,
+    "dz": -1.8,
+    "s": 0.55
+   }
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "bare": true,
+   "label": "IMPRESSUM",
+   "icon": "web",
+   "pill": " ",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "check",
+     "small": "Pflicht",
+     "at": "Pflicht"
+    },
+    {
+     "icon": "check",
+     "small": "pflegt selbst",
+     "at": "pflegt"
+    },
+    {
+     "icon": "warn",
+     "small": "frühere Adressen",
+     "at": "Verzeichnisse@28"
+    }
+   ],
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@35-0.15",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Welche Adresse",
+    "stimmt?"
+   ],
+   "pop": "Als@35-0.15",
+   "stamp": null,
+   "bubble": "stimmt@36",
+   "bot": {
+    "dx": 1.6,
+    "dz": -1.8,
+    "s": 0.55
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Adresse@38.5",
+   "plane": [
+    "Adresse@38.5:end",
+    "Damit+0.2"
+   ],
+   "itemsAt": "Frage",
+   "copyAt": "Damit",
+   "itemTag": "DM",
+   "dimBoard": true,
+   "items": [
+    {
+     "label": "Frage + Tabellenvorlage",
+     "snip": "„… Erfinde nichts.“ · 3 Blätter"
+    }
+   ],
+   "result": {
+    "at": "Damit-0.1",
+    "line1": "in 10 Minuten",
+    "line1At": "10@43",
+    "parts": [
+     {
+      "text": "deine",
+      "at": "deine"
+     },
+     {
+      "text": "Empfängerliste",
+      "at": "Empfängerliste",
+      "hot": true
+     }
+    ]
+   }
+  }
+ ],
+ "overlays": [
+  {
+   "kind": "partners",
+   "from": 0,
+   "to": "Umsatz",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": -1,
+    "to": "Umsatz"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Umsatz",
+   "to": "macht",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": "Umsatz-0.60",
+    "to": "macht"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "macht",
+   "to": "Unternehmen",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": "macht-0.60",
+    "to": "Unternehmen"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Unternehmen",
+   "to": "das@1.5",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": "Unternehmen-0.60",
+    "to": "das@1.5"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "das@1.5",
+   "to": "KI@1.9",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": "das@1.5-0.60",
+    "to": "KI@1.9"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "KI@1.9",
+   "to": "Tage",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": "KI@1.9-0.60",
+    "to": "Tage"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Tage",
+   "to": "lang",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-6.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": "Tage-0.60",
+    "to": "lang"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "lang",
+   "to": "führt:end+0.2",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-7.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": "lang-0.60",
+    "to": "führt:end+0.2"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "führt:end+0.2",
+   "to": "Ich-0.45",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hook-8.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 760,
+    "y": 560,
+    "at": "führt:end-0.40",
+    "to": "Ich+8.95"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Heute-0.05",
+   "to": "Heute+0.25",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/heute-leer.png",
+    "srcW": 1200,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1200,
+    "sh": 1420,
+    "w": 1100,
+    "y": 40,
+    "at": "Heute-0.05",
+    "to": "Heute+0.25"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Heute+0.25",
+   "to": "Adressen@13.5",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/heute-leer.png",
+    "srcW": 1200,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1200,
+    "sh": 1420,
+    "w": 1100,
+    "y": 40,
+    "at": "Heute-0.35",
+    "to": "Adressen@13.5"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Adressen@13.5",
+   "to": "5@14",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/heute-pulse.png",
+    "srcW": 1200,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1200,
+    "sh": 1420,
+    "w": 1100,
+    "y": 40,
+    "at": "Adressen@13.5-0.60",
+    "to": "5@14"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "5@14",
+   "to": "Claude-0.20",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/heute-fan.png",
+    "srcW": 1200,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1200,
+    "sh": 1420,
+    "w": 1100,
+    "y": 40,
+    "at": "5@14-0.60",
+    "to": "Claude+9.20"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "Heute+0.12",
+   "to": "Claude-0.1",
+   "text": "HEUTE: ADRESSEN",
+   "y": 1180
+  },
+  {
+   "kind": "partners",
+   "from": "Sie@20-0.06",
+   "to": "Impressum",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/ent-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 640,
+    "w": 960,
+    "y": 520,
+    "at": "Sie@20-0.66",
+    "to": "Impressum"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Impressum",
+   "to": "Impressum:end",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/ent-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 640,
+    "w": 960,
+    "y": 520,
+    "at": "Impressum-0.60",
+    "to": "Impressum:end"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Impressum:end",
+   "to": "Verzeichnisse@22",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/ent-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 640,
+    "w": 960,
+    "y": 520,
+    "at": "Impressum:end-0.60",
+    "to": "Verzeichnisse@22"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Verzeichnisse@22",
+   "to": "Warum-0.55",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/ent-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 640,
+    "w": 960,
+    "y": 520,
+    "at": "Verzeichnisse@22-0.60",
+    "to": "Warum+8.85"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "Warum",
+   "to": "Der@31.5-0.5",
+   "text": "WARUM?",
+   "y": 240
+  },
+  {
+   "kind": "partners",
+   "from": "Warum-0.15",
+   "to": "Pflicht",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/why-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 350,
+    "at": "Warum-0.75",
+    "to": "Pflicht"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Pflicht",
+   "to": "pflegt",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/why-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 350,
+    "at": "Pflicht-0.60",
+    "to": "pflegt"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "pflegt",
+   "to": "selbst",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/why-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 350,
+    "at": "pflegt-0.60",
+    "to": "selbst"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "selbst",
+   "to": "Verzeichnisse@28",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/why-2b.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 350,
+    "at": "selbst-0.60",
+    "to": "Verzeichnisse@28"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Verzeichnisse@28",
+   "to": "2@29",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/why-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 350,
+    "at": "Verzeichnisse@28-0.60",
+    "to": "2@29"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "2@29",
+   "to": "frühere",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/why-3b.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 350,
+    "at": "2@29-0.60",
+    "to": "frühere"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "frühere",
+   "to": "Der@31.5-0.2",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/why-3c.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 350,
+    "at": "frühere-0.60",
+    "to": "Der@31.5-0.2"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Der@31.5-0.2",
+   "to": "Haken",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hak-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 760,
+    "w": 900,
+    "y": 330,
+    "at": "Der@31.5-0.80",
+    "to": "Haken"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Haken",
+   "to": "Haken+0.2",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hak-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 760,
+    "w": 900,
+    "y": 330,
+    "at": "Haken-0.60",
+    "to": "Haken+0.2"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Haken+0.2",
+   "to": "Haken+0.4",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hak-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 760,
+    "w": 900,
+    "y": 330,
+    "at": "Haken-0.40",
+    "to": "Haken+0.4"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Haken+0.4",
+   "to": "Eindeutig",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hak-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 760,
+    "w": 900,
+    "y": 330,
+    "at": "Haken-0.20",
+    "to": "Eindeutig"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Eindeutig",
+   "to": "belegt@33",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hak-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 760,
+    "w": 900,
+    "y": 330,
+    "at": "Eindeutig-0.60",
+    "to": "belegt@33"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "belegt@33",
+   "to": "Als@35-0.35",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/hak-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 760,
+    "w": 900,
+    "y": 330,
+    "at": "belegt@33-0.60",
+    "to": "Als@35+9.05"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Adresse@36",
+   "to": "stimmt@36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/next-0.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 330,
+    "w": 640,
+    "y": 170,
+    "at": "Adresse@36",
+    "to": "stimmt@36"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "stimmt@36",
+   "to": "Kommentiere-0.55",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag14/shots/next-1.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 330,
+    "w": 640,
+    "y": 170,
+    "at": "stimmt@36-0.60",
+    "to": "Kommentiere+8.85"
+   }
+  }
+ ],
+ "bot": {
+  "hops": [
+   [
+    "Unternehmen",
+    0.4
+   ],
+   [
+    "das@1.5",
+    0.5
+   ],
+   [
+    "KI@1.9",
+    0.4
+   ],
+   [
+    "100",
+    0.45
+   ],
+   [
+    "Tage",
+    0.5
+   ],
+   [
+    "lang",
+    0.4
+   ],
+   [
+    "führt?+0.5",
+    0.35
+   ],
+   [
+    "Empfängerliste:end+0.5",
+    0.35
+   ]
+  ]
+ },
+ "sfx": [
+  {
+   "t": 0.03,
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Umsatz-0.22",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Umsatz",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Umsatz+0.04",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.35
+  },
+  {
+   "t": "macht",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Unternehmen",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "das@1.5",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "KI@1.9",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "100",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Tage",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "lang",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "ganz@3-0.06",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "alleine",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.42
+  },
+  {
+   "t": "führt",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.3
+  },
+  {
+   "t": 4.5,
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.15
+  },
+  {
+   "t": "Ich@4.5-0.05",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "probier",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "aus@5",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Die@6.0-0.08",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "verkauft",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Betriebe@9",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "bestickt",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Werbebrief",
+   "f": "public/sirtoken/sfx-powerup.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "steht",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "steht:end+0.1",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Heute-0.1",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Heute+0.05",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Adressen@13.5",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "5@14",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Claude",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Brief@16.4",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "angehängt",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "angehängt:end+0.08",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Websuche",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Excel-Datei",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Excel-Datei:end",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Sie@20.0-0.1",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Impressum",
+   "f": "public/sirtoken/sfx-powerup.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Impressum:end",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.38
+  },
+  {
+   "t": "Verzeichnisse@22",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Warum-0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Warum",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Pflicht",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "pflegt",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "selbst",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Verzeichnisse@28",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.24
+  },
+  {
+   "t": "2@29",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "frühere",
+   "f": "sfx/heygen/extra/counter-roll.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Der@31.5-0.1",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Haken",
+   "f": "sfx/heygen/extra/counter-roll.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Eindeutig",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "belegt@33",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.38
+  },
+  {
+   "t": "Als@34.8-0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Als@34.8",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Welche",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Adresse@36.3",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "stimmt",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Kommentiere-0.15",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Adresse@38.5",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Adresse@38.5:end",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "ich@39.5",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Frage",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Damit+0.05",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "10@43",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "Empfängerliste",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.2
+  },
+  {
+   "t": 45.2,
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  }
+ ]
+}

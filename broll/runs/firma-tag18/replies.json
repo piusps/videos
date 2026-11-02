@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge 18 Was zahlt sie für das gestickte Shirt: Marge-Rechenweg mit Prompt per DM, Trigger-Wort im Video: Marge)",
+ "commentReply": "Der Rechenweg liegt in deiner DM. Weißt du schon, was dich ein Stück im Einkauf kostet?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Verkaufst du eher einzeln oder im Paket?",
+  "Schick ich dir gerade, der Prompt ist dabei. Was willst du als Erstes durchrechnen?",
+  "Liegt in deiner DM. Über welchen Anbieter lässt du herstellen?",
+  "Angekommen, mit Rechenweg und Prompt. Gibst du bei Paketen gerade Rabatt?",
+  "Der Rechenweg ist unterwegs. Rechnest du bisher mit oder ohne Versand?"
+ ]
+}

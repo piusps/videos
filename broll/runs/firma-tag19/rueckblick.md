@@ -1,0 +1,10 @@
+# Rückblick Folge 19 „Stimmt die Versandzeile?“ (Produktionsagent, 2026-11-01)
+Eingeplant 2026-11-01 18:00 (Chef-Umplanung, ursprünglich 12:00), Zernio 6ae746a6529b22960fe5e3d2, finale Note 8,5 in Runde 1. Funnel: zernio-golive-arm läuft (Log golive-arm.log), Guide beleg-guide.pdf.
+- **Lauf:** 31.10. (Chat 0c969b98, 1 min 48 s). Für 11,20/5,20 € kein Beleg → Beträge gestrichen, neue Zeile „Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.“; Lieferzeit nie gezeigt (Quellen widersprechen sich). Übergabe Folge 20: „Mit oder ohne Umsatzsteuer?“.
+- **Autor:** 2 Runden (am 31.10.).
+- **Regie:** 3 Runden (8,3 → 8,8 → 9,5). Ursache: Frame-0-Wortzahl nicht im Beat festgelegt, ein Beat ohne Wort-Anker, Lücken > 1,5 s nur für einzelne Beats statt per Skript über die ganze Folge gerechnet (R2 fand zwei weitere Lücken, die R1 übersehen hatte). → Regel in firma-regie.
+- **Design:** 2 Runden (Stills 7,0 mit 2 Maskottchen-K.-o. im Hook → Voll-Render 8,3). Ursache: Maskottchen fiel im Hook von oben hinter Frage/Panel, Wort-Pill „Unternehmen“ über den Augen; zwei Karten gleichzeitig (EINKAUF ?/STEUER ?); CTA-Badges verdeckten Feldtitel. → Regel in firma-design.
+- **Final:** 8,5, nur Backlog-Tickets (leere Panel-Flächen, Doppelstrich 11,20, Platzhalterbalken DM-Karte, Pill auf Kopfoberseite, leeres Cover-Pill).
+- **Betrieb:** Ein zweiter Agent arbeitete zeitweise parallel in tag19 (Guide, Shots); geklärt durch den Koordinator, dessen Guide nach Prüfung übernommen. API-Limit (bis 14:50) unterbrach alle Agenten ~2 h; Prüfer-Agent per SendMessage fortgesetzt statt neu gestartet. Festplatte lief gegen 15:30 voll (ENOSPC): Prüfbericht konnte der Prüfer nicht schreiben, vom Chef wörtlich übernommen; Belege lagen schon vorher. → Lehren in firma-chef.
+- **Engine (rückwärtskompatibel, optionale Felder):** proof.x, proof.bare, end.planeTo, end.sentIcon (schema.ts, objects.tsx, overlays.tsx; dokumentiert in episode-schema.md).
+- **Offen:** Bibel-Zeile 19 nennt noch Slot 12:00 (Bibel liegt außerhalb meines Schreibbereichs). Echter Stickpreis nur im Printful-Konto (Pius).

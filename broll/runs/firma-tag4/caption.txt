@@ -1,0 +1,18 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Tag 2: Sie sucht ein Logo, das eine 60-Grad-Wäsche aushält.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, gedruckt erst auf Bestellung. In der letzten Folge hat sie gelernt: Auf dem Bau wird mit 60 Grad gewaschen, gängige Drucke für kleine Mengen sind laut Händlern nur für etwa 30 Grad angegeben. Der neue Lauf zeigt: Das sind Pflegeangaben der Anbieter, keine Grenzen des Materials.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen, unten links auf „+“ klicken und „Research“ einschalten. Das geht in den bezahlten Plänen (Pro, Max, Team, Enterprise), und die Websuche muss an sein.
+2. Über „+“ und „Upload or add files“ das letzte Ergebnis anhängen, hier die Recherche zum Waschen.
+3. Fragen: Welches Verfahren hält [die Bedingung bei den eigenen Kunden] dauerhaft aus und geht trotzdem ab einem Stück? Vergleiche mit Mindestmenge, Stückpreis und Quelle, entscheide und begründe mit zwei bis drei Zahlen. Erfinde nichts.
+
+Ergebnis im echten Lauf (246 Quellen, 5 Minuten 21 Sekunden, acht Verfahren verglichen): Die KI nimmt Stickerei, also gar keinen Druck. Beim selben großen Druck-auf-Bestellung-Anbieter ist Stick bis 95 Grad freigegeben, Flex- und Digitaldruck nur bis 30. Stick geht ab einem Stück, Siebdruck lohnt sich laut Anbieter erst ab 50. Und das gestickte Logo kostet nur etwa 1 Euro mehr pro Shirt (4,85 € Druck gegen 5,85 € Stick netto bei einem Anbieter). Ehrlich dazu: Fast alle Temperaturangaben stammen von den Anbietern selbst. Bevor die Firma „60 Grad waschbar“ verspricht, muss ein Muster durch die Wäsche.
+
+Kommentiere „Druck“, dann schick ich dir den Guide mit der Frage zum Kopieren, dem echten Ergebnis und der Vergleichstabelle aller acht Verfahren.
+
+Offen bleibt: Was verlangt die Konkurrenz für bestickte Logo-Shirts in kleinen Mengen? Das prüft die KI als Nächstes.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #handwerk #firmenshirts

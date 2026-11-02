@@ -1,0 +1,10 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Briefe stehen, Preis offen.
+Heute: Mit oder ohne Umsatzsteuer?
+Claude: Marge angehängt, Websuche: Gesetz, IHK.
+Sie wählt: mit Umsatzsteuer, nicht Kleinunternehmer.
+Warum? Betriebe mit Vorsteuerabzug holen von hundertneun Euro siebzehn Steuer zurück.
+Ihr Einkauf bliebe sonst neunzehn Prozent teurer.
+Der Haken: fünf Jahre Bindung.
+Als Nächstes: Was muss auf ihre Rechnung?
+Kommentiere „Steuer“, ich schick dir den Prompt. In zehn Minuten rechnest du beide Wege durch.

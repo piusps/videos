@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Partner: Guide mit der Frage und der Partnertabelle per DM, Trigger-Wort im Video: Partner)",
+ "commentReply": "Der Guide liegt in deiner DM. Was lässt du heute schon von einem Partner herstellen?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hättest du auch A61 genommen oder lieber Printful?",
+  "Schick ich dir gerade, mit allen sieben Partnern. Welches Merkmal muss dein Partner unbedingt belegen?",
+  "Angekommen, alles liegt in deiner DM. Was meinst du, bleibt pro Shirt am Ende etwas übrig?",
+  "Liegt in deiner DM. Für welches Produkt suchst du gerade einen Partner?",
+  "Der Guide ist unterwegs. Was würdest du Claude als Nächstes fragen?"
+ ]
+}

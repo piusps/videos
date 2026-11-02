@@ -1,0 +1,5 @@
+Tag4 (Folge 4) music: /Users/pius/Downloads/GONE_GONE_THANK_YOU_KLICKAUD.mp3 ab 57.26 s, 41.5 s am Stück (bis 98.8 s), nie geloopt. Belegt: Tag 1 = 276.36, Folge 2 = 150.5, Folge 3 = 312.0 -> 57.26 überschneidet sich mit keiner Vorfolge.
+Struktur im Clip: ruhigere erste Hälfte (Track 57-77 s), Pause Track 76.8-77.4 s = Clip 19.5-20.1 (vor "Die KI nimmt"), Stab Track 78.25 = Clip 20.99 genau auf "Stickerei", voller Drop Track 79.0 = Clip 21.74 auf "Warum?". Zweite Hälfte ca. 4-5 dB lauter -> Duck-Kurve ab 21.63 auf 0.036.
+Gesang: das Stück hat fast überall Gesang (STT des Originals: regie/stt-music-full.json), wie in Folge 2/3; liegt unter der Stimme >= 18 dB.
+Kurve (Faktor vor Mix, wie beats.json audio.musicCurve): [0,0.06] [19.33,0.05] [20.08,0.02] [20.33,0.06] [20.99,0.075] [21.63,0.036] [40.5,0.036] [41.5,0].
+Messung regie/gap.py (RMS 400 ms, sprachgegatet, vor Loudnorm): Hook 21.3 · Rückblick 19.4 · Heute+Claude 18.3 · Research 23.6 · Gewinner 18.9 · Warum 18.8 · Haken 20.0 · Als Nächstes 19.3 · CTA 19.4 dB -> jeder Akt >= 15 dB. firma-mix.mjs misst nach dem Render noch einmal (EBU-R128).

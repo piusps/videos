@@ -1,0 +1,399 @@
+### S.1
+Superkind
+> KI BAUT EINE FIRMA · IST MEIN NAME SCHON VERGEBEN?
+Prüf deinen Firmennamen. In
+zehn Minuten.
+Die Frage, mit der die KI aus der Serie zehn Namen für ihre Shirt-Firma per
+Websuche geprüft hat. Mit Klickpfad, der kompletten Namenstabelle aus
+unserem Lauf, allen Quellen und einer Prüfliste für deinen eigenen
+Firmennamen: Websuche, DENIC, DPMAregister, EUIPO eSearch,
+Handelsregister, Social-Media-Namen.
+19 Websuchen
+So oft hat Claude in unserem Lauf
+gesucht, dazu 20 Seitenabrufe,
+davon 10 Abfragen bei der DENIC.
+Dauer: 1 Minute 54 Sekunden.
+Zehn Namen geprüft, sieben
+gestrichen.
+superkind — zsh
+$ superkind guide "Name"
+✓ 6 Prompts, fertig zum Kopieren
+→ geladen. Los geht's.
+DAS HAST DU AM ENDE
+✓
+Zehn Namensvorschläge, jeder per Websuche auf ähnliche Firmen und die .de-Domain
+geprüft, mit Quelle
+✓
+Eine Prüfliste mit sechs Stellen, an denen du selbst nachsiehst, mit Links
+✓
+Ehrlich ausgewiesen: was Claude nicht prüfen konnte
+Ein Guide von Florent Preusser × Superkind
+Trigger-Wort: Name
+
+### S.2
+2
+Superkind · Name-Guide
+01
+//  QUICK WIN
+Erst die Namen. In zwei Minuten.
+Öffne claude.ai und starte einen neuen Chat. Häng über „+“ und „Upload or add files“ dein
+letztes Ergebnis als Datei an, zum Beispiel dein Angebot oder deine Preise. Dann füge diese
+Frage ein. Das ist wörtlich die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch
+deine eigenen.
+Die Frage zum Kopieren (letztes Ergebnis angehängt)
+KOPIEREN ⧉
+claude › Im Anhang ist mein letztes Ergebnis. Ich verkaufe [Firmenshirts mit gesticktem Logo] an 
+[kleine Handwerks- und Baubetriebe unter zehn Leuten], [gestickt erst auf Bestellung]. Mein 
+letztes Ergebnis: [Partner ist Printful, das Fünferpaket kostet 109 Euro brutto, ein 
+nachbestelltes Einzelshirt 29,90 Euro; sechzig Grad Wäsche kann ich damit noch nicht 
+versprechen.] Jetzt brauche ich einen Firmennamen, sonst gibt es kein Logo, kein [Muster-Shirt] 
+und keine Werbung. Schlag mir zehn deutsche Namen vor, die [ein Dachdecker oder Elektriker] 
+sofort versteht. Prüf für jeden mit der Websuche, ob es schon eine Firma mit diesem oder einem 
+sehr ähnlichen Namen im Bereich [Textil, Arbeitskleidung oder Stickerei] gibt und ob die .de-
+Domain offensichtlich belegt ist, jeweils mit Quelle. Streich alle belegten Namen, entscheide 
+dich für einen und begründe es mit zwei bis drei konkreten Gründen. Sag mir auch, was du nicht 
+prüfen kannst, zum Beispiel das Markenregister. Erfinde nichts.
+WEBSUCHE
+In der neuen Claude-Oberfläche gibt es
+keinen eigenen Websuche-Schalter, Claude
+sucht selbst, wenn es hilft. In Team- und
+Enterprise-Konten muss ein Owner die
+Websuche erst freigeben. Quelle:
+support.claude.com/en/articles/10684626
+KLICKPFAD
+Neuer Chat → unten links „+“ → „Upload or
+add files“ → Datei wählen → Frage einfügen
+→ senden. Research ist nicht nötig, in
+unserem Lauf blieb es aus.
+DAUER
+Unser Lauf: 1 Minute 54 Sekunden, 19
+Websuchen, 20 Seitenabrufe (davon 10
+DENIC-Abfragen), 10 Quellenlinks in der
+Antwort.
+RÜCKFRAGEN
+Keine. Kein Login, keine Verbindung, keine
+Freigabe-Abfrage.
+⚡ Quick Win · 10 Minuten
+Nach etwa zwei Minuten hast du zehn Namen, eine Tabelle mit Streichungen und Quellen und eine
+begründete Empfehlung. In den übrigen Minuten gehst du die Prüfliste weiter hinten durch: Domain,
+Markenregister, Handelsregister, Social-Media-Namen. Genau das hat Claude in unserem Lauf nicht
+geprüft.
+
+### S.3
+3
+Superkind · Name-Guide
+02
+//  DIE GESCHICHTE
+Ohne Namen kein Logo.
+Eine KI soll hundert Tage lang ganz alleine ein Unternehmen führen. Ihr Produkt: Firmenshirts
+mit gesticktem Logo, bestickt erst auf Bestellung, für kleine Handwerks- und Baubetriebe.
+Angebot, Konkurrenzpreis, Partner und Preis stehen: Partner ist Printful, der Vorschlag liegt bei
+109 € brutto für fünf Shirts. Ohne Namen gibt es aber kein Logo, kein Muster-Shirt und keine
+Werbung. Also sucht sie einen.
+01
+Ergebnis anhängen
+Das Ergebnis der letzten Folge
+als Datei dazu, hier die
+Preiskalkulation.
+02
+Zehn Namen
+Deutsche Namen, die ein
+Dachdecker oder Elektriker
+sofort versteht.
+03
+Per Websuche prüfen
+Ähnliche Firma in der Branche?
+.de-Domain belegt? Jeweils mit
+Quelle. Belegte Namen
+streichen, einen wählen,
+begründen. Und: Erfinde
+nichts.
+Echter Lauf vom 28.10.2026: „Ich empfehle Kolonnenshirt.“ Darüber der Arbeitsblock: 20 Seiten gelesen, 2 Befehle, einer davon
+fehlgeschlagen.
+
+### S.4
+4
+Superkind · Name-Guide
+03
+//  DAS ERGEBNIS
+Die KI wählt Kolonnenshirt. Ungeprüft.
+Aus dem echten Lauf vom 28.10.2026. Claudes Empfehlung: „Ich empfehle Kolonnenshirt. Von
+den zehn Namen sind drei übrig geblieben.“ Die Gründe stehen hier so, wie Claude sie im Lauf
+genannt hat.
+Bau
+Das Wort vom Bau
+„Kolonne“ heißt laut
+Wörterbuch (LEO) auch gang
+oder crew, also ein Trupp von
+Arbeitern. Das passt zum
+Fünferpaket für die ganze
+Truppe.
+2 Suchen
+Nichts gefunden
+Zwei Suchen, auch eine
+gründlichere, brachten keine
+Firma, keinen Shop und keine
+Produktbezeichnung mit
+diesem Namen. Ein Nicht-Fund,
+kein Beweis.
+2 übrig
+Die anderen sind zu
+allgemein
+„Handwerkerhemd“ ist eine
+Produktart, „Betriebsshirt“
+beschreibt nur die Ware. Mit
+beiden ginge man in den
+Suchergebnissen unter.
+Der Haken: Domain nicht bestätigt, Register nicht geprüft
+Domain: Ob kolonnenshirt.de frei ist, ist nicht bestätigt. Bei sieben der zehn Domains brach die DENIC-
+Abfrage mit einem Fehler ab. Laut Claude typisch für freie Domains, „aber bestätigt ist es nicht“. Sicher
+belegt sind nur meistershirt.de, logostich.de und stichfest.de. Register: Markenregister (DPMA, EUIPO),
+Handelsregister und Unternehmensregister hat Claude nicht geprüft. Ebenfalls offen: kleine Betriebe ohne
+Website und Social-Media-Namen wie @kolonnenshirt.
+Echter Lauf: „Was ich nicht prüfen konnte“.
+Wichtig ist der Weg, nicht das Ergebnis: Bei deiner Branche kommen andere Namen heraus. Namen per Websuche
+prüfen lassen, streichen, entscheiden, dann ehrlich festhalten, was noch offen ist, und das selbst nachsehen.
+
+### S.5
+5
+Superkind · Name-Guide
+04
+//  DIE NAMENSTABELLE
+Alle zehn Namen, 1:1 aus der Antwort.
+So hat Claude die Tabelle in der Antwort geliefert, Wort für Wort. „Ungeklärt“ heißt: Die DENIC-
+Abfrage brach ab, die Domain ist weder als frei noch als belegt bestätigt. Stand 28.10.2026.
+#
+NAME
+FIRMA IM BEREICH
+TEXTIL/ARBEITSKLEIDUNG/STICKEREI?
+.DE-DOMAIN
+ERGEBNIS
+1
+Kluftwerk
+Sehr ähnlich: Kluft.de, Onlineshop für Arbeitskleidung
+Ungeklärt
+gestrichen
+2
+Teamkluft
+Gleiches Problem wie Nr. 1
+Ungeklärt
+gestrichen
+3
+Firmenkluft
+Gleiches Problem wie Nr. 1
+Ungeklärt
+gestrichen
+4
+Baukluft
+Gleiches Problem wie Nr. 1
+Ungeklärt
+gestrichen
+5
+Stichfest
+Ja, Stickerei in Österreich
+belegt
+gestrichen
+6
+Logostich
+Ja, aktiver Shop für bestickte Firmenkleidung
+belegt
+gestrichen
+7
+Meistershirt
+Keine Firma gefunden, aber Standardbegriff für Fußball-
+Meistershirts
+belegt
+gestrichen
+8
+Handwerkerhemd
+Keine Firma, aber verbreiteter Produktname
+Ungeklärt
+übrig
+9
+Betriebsshirt
+Nichts gefunden
+Ungeklärt
+übrig
+10
+Kolonnenshirt
+Nichts gefunden
+Ungeklärt
+Empfehlung
+DIE VIER „KLUFT“-NAMEN
+Laut Claude verkaufen unter Kluft.de zwei
+Brüder Arbeitskleidung, laut derselben Quelle
+(Händlerbund) mit Sitz in Hohenlockstedt
+und Leipzig und 16 Angestellten. „Sie
+verkauft Arbeitskleidung an dieselben
+Kunden wie du, deshalb habe ich alle vier
+gestrichen. Ob das rechtlich ein Problem
+wäre, kann ich nicht beurteilen.“
+„Firmenkluft“ ist außerdem ein ganz
+normales Wort.
+STICHFEST
+In Tirol gibt es „STICHFEST – Stickerei-
+Textilien-Grafik“ (Wattens). Laut Herold
+bietet die Firma Berufsbekleidung an, mit
+Schwerpunkt Grafikdesign und Computer-
+Stickerei. stichfest.de ist laut DENIC-
+Registereintrag aktiv.
+LOGOSTICH
+Unter logostich.de läuft laut Claude ein
+Shopify-Shop für bestickte Kleidung für
+Firmen und Teams, mit Rabatt ab fünf Stück.
+„Er wirkt noch unfertig, die Domain ist aber
+registriert. Das ist fast genau dein Angebot.“
+MEISTERSHIRT
+Keine Firma gefunden. Die Domain ist laut
+DENIC-Eintrag aktiv, außerdem denkt bei
+dem Wort jeder an Fußball, etwa an die
+Meistershirts vom FC Bayern München.
+
+### S.6
+6
+Superkind · Name-Guide
+05
+//  QUELLEN
+Alle Quellen aus der Antwort.
+So in der Antwort des Laufs verlinkt (28.10.2026). Insgesamt 19 Websuchen und 20
+Seitenabrufe.
+1. Händlerbund, Kundengeschichte Kluft.de: haendlerbund.de/…/referenzen/kluft
+2. Herold, STICHFEST – Stickerei-Textilien-Grafik, Wattens: herold.at/…/stichfest-stickerei-textilien-grafik
+3. logostich.de
+4. DENIC-Registereintrag meistershirt.de: rdap.denic.de/domain/meistershirt.de
+5. DENIC-Registereintrag logostich.de: rdap.denic.de/domain/logostich.de
+6. DENIC-Registereintrag stichfest.de: rdap.denic.de/domain/stichfest.de
+7. ZDF/funk, Wer näht die Meistershirts vom FC Bayern?: zdf.de/…/funk-wer-naeht-eigentlich-die-meistershirts…
+8. LEO Wörterbuch, Kolonne: dict.leo.org/german-english/Kolonne
+9. Angebot „Altdeutsches Handwerkerhemd“: bestenhemdenhosenjeanshosen.blogspot.com/…
+10. Facebook, Beitrag mit dem Wort „Firmenkluft“: facebook.com/profile.php?id=100089144265549
+
+### S.7
+7
+Superkind · Name-Guide
+06
+//  DIE PRÜFLISTE
+Prüf deinen eigenen Namen. Sechs Stellen.
+Claudes Antwort ist der Anfang, nicht das Ende. Diese sechs Stellen siehst du danach selbst
+nach, alle kostenlos. Gib jeweils deinen Namen ein, dazu ähnliche Schreibweisen (mit und ohne
+Bindestrich, Einzahl und Mehrzahl). Erst wenn überall nichts Passendes auftaucht, sicherst du
+Domain und Social-Media-Namen.
+1
+Websuche: Claudes Tabelle lesen
+Ähnlicher Name bei denselben Kunden? Streichen. Ein „Nichts gefunden“ ist kein Beweis, dass es den
+Namen nicht gibt: Kleine Betriebe ohne Website findet die Websuche nicht. Zusätzlich selbst bei einer
+Suchmaschine den Namen in Anführungszeichen suchen, auch mit deiner Stadt.
+2
+Domain: DENIC
+Steht in Claudes Tabelle „ungeklärt“, selbst nachsehen: denic.de/services/whois-service → Domain
+eingeben → „Verfügbarkeit prüfen“. Auch die .com-Adresse beim Anbieter deiner Wahl eintippen.
+3
+Marke Deutschland: DPMAregister
+register.dpma.de/DPMAregister/marke/basis → Basisrecherche → Name ins Feld „Marke“ → Recherche
+starten. Ähnliche Schreibweisen gleich mit prüfen.
+4
+Marke EU: EUIPO eSearch
+euipo.europa.eu/eSearch → Name eingeben. Achte auf die Klassen deiner Ware (Bekleidung steht z. B.
+in Klasse 25). Für Marken aus vielen Ländern auf einmal: TMview.
+5
+Handelsregister
+handelsregister.de → „Normale Suche“ → Name eingeben. Zeigt eingetragene Firmen, also zum
+Beispiel GmbH, UG oder eingetragene Kaufleute.
+6
+Social-Media-Namen
+Direkt aufrufen: instagram.com/[name], tiktok.com/@[name], in der Facebook-App nach dem Namen
+suchen. Gibt es das Profil schon, ist der Name dort vergeben.
+Aussprechtest: Name einmal laut am Telefon sagen. Muss man ihn buchstabieren?
+Erst wenn 2 bis 6 frei sind: Domain und Social-Media-Namen sichern, dann das Logo.
+Alles notieren: Datum, wo du gesucht hast, was du gefunden hast. Register ändern sich.
+Keine Rechtsberatung
+Diese Prüfliste und Claudes Antwort ersetzen keine Rechtsberatung. Auch ein Name, den du nirgends
+findest, kann mit einer älteren Marke kollidieren, zum Beispiel wenn er nur ähnlich klingt. Rein
+beschreibende Begriffe gelten laut Claude meist als schwer schützbar. Wenn du den Namen als Marke
+anmelden willst oder im Zweifel bist: Patent- oder Fachanwalt für Markenrecht fragen.
+
+### S.8
+8
+Superkind · Name-Guide
+07
+//  FÜR DEINEN BETRIEB
+So findest du deinen Namen.
+Die Frage funktioniert für jede Branche. Du brauchst nur drei Dinge: was du an wen verkaufst,
+wer dein typischer Kunde ist und in welcher Branche Claude nach ähnlichen Firmen suchen
+soll.
+Vorlage für deinen Firmennamen
+KOPIEREN ⧉
+claude › Im Anhang ist mein letztes Ergebnis. Ich verkaufe [PRODUKT] an [ZIELGRUPPE]. Mein 
+letztes Ergebnis: [PARTNER/PREIS/ANGEBOT IN EINEM SATZ]. Jetzt brauche ich einen Firmennamen, 
+sonst gibt es kein Logo, kein Muster und keine Werbung. Schlag mir zehn deutsche Namen vor, die 
+[TYPISCHER KUNDE] sofort versteht. Prüf für jeden mit der Websuche, ob es schon eine Firma mit 
+diesem oder einem sehr ähnlichen Namen im Bereich [BRANCHE] gibt und ob die .de-Domain 
+offensichtlich belegt ist, jeweils mit Quelle. Streich alle belegten Namen, entscheide dich für 
+einen und begründe es mit zwei bis drei konkreten Gründen. Sag mir auch, was du nicht prüfen 
+kannst, zum Beispiel das Markenregister. Erfinde nichts.
+HUNDEFRISEURIN
+[Hundepflege im Salon] an [Hundehalter im
+Stadtteil], Kunde [Hundehalterin], Branche
+[Tierpflege, Hundesalon].
+FLIESENLEGER
+[Badsanierung] an [Eigentümer von
+Altbauwohnungen], Kunde [Hausbesitzer],
+Branche [Fliesen, Bad, Sanierung].
+KAFFEERÖSTERIN
+[Kaffee mit eigenem Etikett] an [Büros],
+Kunde [Büroleiterin], Branche [Kaffee,
+Rösterei, Bürobedarf].
+GRAFIKERIN
+[Logos und Visitenkarten] an [Gründer],
+Kunde [Kleinunternehmer], Branche
+[Grafikdesign, Werbeagentur].
+08
+//  T YPISCHE FEHLER
+Woran es meistens scheitert.
+„Nichts gefunden“ für „frei“ halten. Grund 2 für Kolonnenshirt ist ein Nicht-Fund. Eine eingetragene
+Marke oder ein Betrieb ohne Website taucht in der Websuche nicht auf.
+„Ungeklärt“ überlesen. Bei sieben von zehn Domains brach die DENIC-Abfrage ab, auch beim gewählten
+Namen. Ungeklärt ist nicht frei.
+Nur auf den genauen Namen schauen. Die vier „Kluft“-Namen flogen nicht wegen eines gleichen
+Namens raus, sondern weil sie Kluft.de zu ähnlich sind, bei denselben Kunden.
+Allerweltswort wählen. „Betriebsshirt“ hatte keinen Treffer, beschreibt aber nur die Ware. Damit geht man
+in den Suchergebnissen unter.
+Logo vor der Prüfung bestellen. Erst Domain, Marke, Register und Social-Media-Namen prüfen, dann das
+Logo in Auftrag geben.
+Nur die .de-Domain ansehen. Andere Endungen und Social-Media-Namen gehören zum Namen dazu.
+
+### S.9
+9
+Superkind · Name-Guide
+09
+//  PROMPT-BIBLIOTHEK
+Von der Namensliste zur Entscheidung.
+Nachfrage 1 · Was ist offen
+KOPIEREN ⧉
+claude › Geh deine Namenstabelle Zeile für Zeile durch. Trenne für jeden Namen: Was hast du mit 
+Quelle belegt, was ist ein Nicht-Fund, und was ist ungeklärt? Welche Namen kann ich mit dem, was 
+du gefunden hast, wirklich weiterverfolgen?
+Nachfrage 2 · Ähnliche Schreibweisen
+KOPIEREN ⧉
+claude › Nimm deine Empfehlung [NAME]. Schreib mir fünf ähnliche Schreibweisen auf, die ein Kunde 
+am Telefon verwechseln könnte, und prüf jede mit der Websuche auf Firmen im Bereich [BRANCHE], 
+jeweils mit Quelle. Erfinde nichts.
+Nachfrage 3 · Meine Prüfliste
+KOPIEREN ⧉
+claude › Mach mir aus allem, was du nicht prüfen konntest, eine Prüfliste zum Abhaken: welche 
+Seite ich öffne, was ich dort eingebe und woran ich erkenne, dass der Name belegt ist. Sag dazu, 
+wofür ich einen Anwalt brauche. Erfinde keine Seiten.
+Nachfrage 4 · Plan B
+KOPIEREN ⧉
+claude › Angenommen, [NAME] ist im Markenregister schon belegt. Welcher der übrigen Namen aus 
+deiner Tabelle wäre dann die beste Wahl, und warum? Wenn keiner passt, schlag drei neue vor und 
+prüf sie genauso wie vorher, jeweils mit Quelle.
+Experiment, keine Geschäfts- oder Rechtsberatung. Tabelle, Gründe und Zitate aus einem echten claude.ai-Lauf vom 28.10.2026
+(Websuche, 19 Suchen, 20 Seitenabrufe). Angaben zu Firmen und Domains sind Ergebnisse von Claude mit den genannten Quellen und nicht
+von uns geprüft. Register, Domains und Menünamen können sich ändern.
+Als Nächstes fragt die KI: Wie sieht ein Logo aus, das sich
+sticken lässt?
+Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne
+eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.
+Folg @pickthecompany für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort
+aus dem Video kommentieren.

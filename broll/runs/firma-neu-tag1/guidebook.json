@@ -1,0 +1,388 @@
+{
+ "topic": "Produkt",
+ "trigger_word": "Produkt",
+ "cover": {
+  "kicker": "KI baut eine Firma · Tag 1 · Das Produkt",
+  "title": "Prüf deine Geschäftsidee mit Claude. In einem Abend.",
+  "subtitle": "Die drei Fragen, mit denen die KI aus der Serie ihr Produkt gefunden hat. Mit Platzhaltern für deine Regeln und deine Kunden, dem echten Ergebnis unseres Laufs und allem, was du zum Nachmachen brauchst.",
+  "stat": {
+   "value": "314 Quellen",
+   "label": "So viele Quellen hat Claude Research in unserem Lauf für eine einzige Frage geprüft. Dauer: 5 Minuten 30 Sekunden."
+  },
+  "outcomes": [
+   "Zehn Produkt- oder Leistungsideen für deine Kunden, jede mit Quelle",
+   "Eine Bewertungstabelle in Excel, die zeigt, was zu deinen Regeln passt",
+   "Die stärkste Gegenstimme zu deiner Lieblingsidee, bevor du Geld ausgibst"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Erst das Ergebnis. In fünf Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai), starte einen neuen Chat, tippe unten links auf **„+“** und wähle **„Research“**. Dann füge diese Frage ein, ersetze die Teile in [Klammern] durch deine eigenen Regeln und Kunden und schick sie ab.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Frage 1 · Ideen sammeln (Research an)",
+     "text": "Ich will in [Deutschland] eine kleine Firma gründen, die ich komplett vom Schreibtisch aus führe. Meine Regeln: [kein eigenes Lager, keine eigene Maschine, ein Partner stellt her und verschickt], und meine Kunden sind [kleine Betriebe mit weniger als zehn Leuten, zum Beispiel Handwerker, Friseure, Bäckereien]. Recherchiere: Welche zehn Produkte oder Leistungen kaufen solche Betriebe immer wieder, und welche davon könnte ich nach diesen Regeln verkaufen? Nenne zu jeder Idee kurz, warum, und die Quelle. Erfinde nichts. Wo du keine Quelle findest, schreib „unklar“."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 5 Minuten",
+     "text": "Nach ein paar Minuten hast du zehn Ideen, jede mit Begründung und Quelle. Öffne bei den zwei besten die Quelle und lies selbst nach. Genau so hat die KI in Folge 1 ihr Produkt gefunden. Der Rest dieses Guides macht daraus eine echte Entscheidung."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Plan",
+       "v": "Research gibt es in den bezahlten Plänen **Pro, Max, Team und Enterprise**. Quelle: [support.claude.com/en/articles/11088861](https://support.claude.com/en/articles/11088861-using-research-on-claude)"
+      },
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Research“** → Frage einfügen → senden"
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 5 Min 30 s, 314 Quellen. Du kannst währenddessen etwas anderes machen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Geschichte",
+   "title": "Eine KI, kein Produkt, kein Euro.",
+   "intro": "In der Serie baut eine KI eine Firma von null auf. Ein Experiment, kein Erfolgsversprechen. An Tag 1 hat sie nichts außer drei Regeln.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Die Regeln",
+       "text": "Kein eigenes Lager, keine eigene Maschine. Ein Partner stellt her und verschickt."
+      },
+      {
+       "num": "02",
+       "title": "Die Kunden",
+       "text": "Kleine Betriebe mit weniger als zehn Leuten: Handwerker, Friseure, Bäckereien."
+      },
+      {
+       "num": "03",
+       "title": "Die Wahl",
+       "text": "Arbeitskleidung mit Logo, also Firmenshirts. Claude fand dafür Partner, die ohne Mindestmenge produzieren und neutral verschicken."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Wichtig: Das ist keine Kaufempfehlung für Firmenshirts. Es zeigt nur, wie man eine Idee mit Quellen gegen die eigenen Regeln prüft. Deine Regeln und deine Kunden sind andere, also kommt bei dir etwas anderes heraus."
+    }
+   ]
+  },
+  {
+   "kicker": "Vorher einschalten",
+   "title": "Was du brauchst, bevor du startest.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Bezahlter Plan** (Pro, Max, Team oder Enterprise). Ohne ihn gibt es kein Research. [Quelle](https://support.claude.com/en/articles/11088861-using-research-on-claude)",
+      "**Websuche an.** In Team- und Enterprise-Konten gibt ein Besitzer sie frei unter Organisationseinstellungen → Funktionen. [Quelle](https://support.claude.com/de/articles/10684626-websuche-aktivieren-und-verwenden)",
+      "**Kein Websuche-Schalter zu sehen?** In der neuen Oberfläche sucht Claude selbst, wenn es hilft. In unserem Lauf gab es keinen eigenen Schalter, Research hat trotzdem 314 Quellen gefunden. Schreib zur Sicherheit „Such im Web“ in die Frage.",
+      "**Für die Excel-Tabelle:** Settings → Capabilities → „Code execution and file creation“ an. Das geht in allen Plänen. [Quelle](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)",
+      "**Ein Abend Zeit:** etwa 15 Minuten für die drei Fragen, der Rest ist Lesen und Quellen anklicken."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Der Klickpfad",
+   "title": "So sah es in unserem Lauf aus.",
+   "intro": "Echte Bildschirmfotos vom 26.10.2026, Plan Max, englische Oberfläche. Bei dir können Menü und Sprache leicht anders aussehen.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "„+“ → „Research“",
+       "text": "Neuer Chat, unten links auf das Plus. Im Menü steht **Research** weiter unten. Ein Klick, dann ist es für diesen Chat an."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/01-plus-research.png",
+     "width": "42%",
+     "caption": "Das „+“-Menü unter dem Eingabefeld. „Research“ steht unten, über „Memory“."
+    },
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Frage 1 einfügen und abwarten",
+       "text": "Claude sagt kurz, was es recherchiert, und zeigt dann eine Karte, die Quellen zählt. Du musst nichts tun."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/02-research-laeuft.png",
+     "width": "84%",
+     "caption": "Research läuft: nach 53 Sekunden schon 169 Quellen."
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Was Claude für die KI gefunden hat.",
+   "intro": "Frage 1 aus dem Quick Win, wörtlich, mit den Regeln aus der Serie. Das hier ist die echte Antwort, nichts nachträglich geschönt.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/03-ergebnis.png",
+     "width": "74%",
+     "caption": "Research complete: 314 Quellen in 5 Min 30 s. Darunter der Kern der Antwort."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Passt am besten",
+       "v": "Drucksachen (Visitenkarten, Terminkarten, Gutscheine, Flyer) und Arbeitskleidung mit Logo"
+      },
+      {
+       "k": "Partner Druck",
+       "v": "Druckerei-Reseller-Programme wie SAXOPRINT oder FLYERALARM PRO"
+      },
+      {
+       "k": "Partner Kleidung",
+       "v": "Printful oder Shirtee Cloud. Laut Antwort stickt Printful „in Barcelona und Riga ohne Mindestmenge, auch Polos, und versendet ohne eigenes Branding“."
+      },
+      {
+       "k": "Offen",
+       "v": "„Wie oft Kleinstbetriebe diese Produkte nachbestellen, habe ich allerdings in keiner Statistik gefunden.“ Genau hier ist „unklar“ Gold wert: Claude rät nicht."
+      },
+      {
+       "k": "Entscheidung",
+       "v": "Die KI nimmt die Kleidung: Firmenshirts mit Logo. Die Nachbestell-Frage klärt sie in Folge 2."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/04-bericht.png",
+     "width": "56%",
+     "caption": "Aus dem Bericht: Wiederkehr ist bei Einwegartikeln besser belegt, dort fehlen aber White-Label-Partner oder es greifen neue Verpackungspflichten."
+    }
+   ]
+  },
+  {
+   "kicker": "Prompt-Bibliothek",
+   "title": "Von der Idee zur Entscheidung.",
+   "intro": "Alles im selben Chat, nach Frage 1. Teile in [Klammern] füllst du aus. Frage 2 und 3 sind wörtlich die Fragen aus der Serie. In unserem Lauf für Tag 1 haben wir nur Frage 1 gestellt. Frage 2 und 3 sind dein nächster Schritt.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Frage 2 · Bewerten (Excel, Research darf aus sein)",
+     "text": "Bewerte diese Ideen in einer Excel-Tabelle. Spalten: Idee · Wie oft kauft ein Betrieb das? · Geht es ohne Lager und Maschine? · Wie viele Anbieter gibt es schon? · Wie schnell ist ein erster Auftrag möglich? Gib je Spalte 1 bis 5 Punkte und eine kurze Begründung, dazu eine Summenspalte mit Formel. Nimm auch „[deine eigene Idee, z. B. Firmenshirts mit Logo für Betriebe unter zehn Leuten]“ auf, falls die noch nicht dabei sind. Erfinde keine Zahlen. Wo du nichts weißt, schreib „unklar“."
+    },
+    {
+     "type": "prompt",
+     "label": "Frage 3 · Gegenprobe",
+     "text": "Welche Idee würdest du an meiner Stelle nehmen? Und was spricht am stärksten gegen [deine eigene Idee, z. B. Firmenshirts mit Logo für Betriebe unter zehn Leuten]? Antworte in fünf Sätzen."
+    },
+    {
+     "type": "prompt",
+     "label": "4 · Nachfrage prüfen (Research an)",
+     "text": "Suche nach Belegen, dass [deine Kunden] [dein Produkt] wirklich kaufen: Ausschreibungen, Foren, Bewertungen, Branchenartikel. Nur mit Link. Erfinde nichts. Wo du nichts findest, schreib „unklar“."
+    },
+    {
+     "type": "prompt",
+     "label": "5 · Konkurrenz-Schnellblick",
+     "text": "Nenne fünf Anbieter für [dein Produkt] an [deine Kunden] in [Land/Region], mit Mindestmenge und Preis, nur wenn auf der Seite angegeben, sonst „nicht angegeben“. Mit Link zu jeder Seite. Erfinde nichts."
+    },
+    {
+     "type": "prompt",
+     "label": "6 · Erster Test ohne Geld",
+     "text": "Wie kann ich in den nächsten sieben Tagen ohne Ausgaben testen, ob [deine Kunden] [dein Produkt] wollen? Drei Wege, je mit Aufwand in Stunden und dem Ergebnis, an dem ich nach sieben Tagen erkenne, ob es sich lohnt."
+    },
+    {
+     "type": "prompt",
+     "label": "7 · Entscheidung festhalten",
+     "text": "Fass meine Entscheidung auf einer Seite zusammen: Produkt, Kunde, Regeln, stärkster Grund dafür, stärkstes Risiko, nächster Schritt. Nimm nur, was in diesem Chat steht, und erfinde nichts dazu. Als Word-Datei."
+    },
+    {
+     "type": "prompt",
+     "label": "8 · Wöchentlich nachschärfen",
+     "text": "Hier sind meine Erfahrungen dieser Woche: [Notizen: Gespräche, Anfragen, Absagen, Preise]. Was ändert das an der Bewertung von [dein Produkt]? Aktualisiere die Tabelle und markiere jede geänderte Zahl. Erfinde nichts."
+    }
+   ]
+  },
+  {
+   "kicker": "Vorlage",
+   "title": "Die Bewertungstabelle.",
+   "intro": "So sieht die Tabelle aus Frage 2 aus. Wer lieber selbst baut: Spalten anlegen, Summe per Formel. Je höher die Summe, desto besser passt die Idee zu deinen Regeln.",
+   "blocks": [
+    {
+     "type": "code",
+     "label": "Bewertungstabelle.xlsx · Aufbau",
+     "text": "A  Idee\nB  Wie oft kauft ein Betrieb das?          1–5  + Begründung\nC  Geht es ohne Lager und Maschine?        1–5  + Begründung\nD  Wie viele Anbieter gibt es schon?       1–5  (viele Anbieter = wenig Punkte)\nE  Wie schnell ist ein erster Auftrag?     1–5  + Begründung\nF  Summe                                   =SUMME(B2:E2)   (engl. Excel: =SUM(B2:E2))\n\nZeile 2:  [deine Idee] | _ | _ | _ | _ | =SUMME(B2:E2)\nWo es keinen Beleg gibt: „unklar“ statt einer Zahl."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Firmenshirts · Wie oft?",
+       "v": "**unklar.** Claude fand keine Statistik zur Nachbestellung. Das ist die Lücke, die die KI in Folge 2 schließt."
+      },
+      {
+       "k": "Firmenshirts · Ohne Lager?",
+       "v": "Ja, laut Lauf über Printful oder Shirtee Cloud, ohne Mindestmenge und mit neutralem Versand."
+      },
+      {
+       "k": "Was wir nicht ausfüllen",
+       "v": "Punkte, die der Lauf nicht belegt. Eine erfundene 4 ist schlimmer als ein ehrliches „unklar“."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Dein Stack",
+   "title": "Die Repos, mit denen du tiefer gräbst.",
+   "intro": "Für alle, die mehr wollen als den Chat. **MCP-Server** verbinden Claude mit Werkzeugen wie Websuche oder Scrapern, **Skills** sind fertige Arbeitsanweisungen. Alles öffentlich auf GitHub, alles geprüft. Die Karten sind im PDF klickbar.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "repos",
+     "items": [
+      {
+       "kind": "SKILL",
+       "repo": "anthropics/skills",
+       "stars": "183k",
+       "text": "Die offiziellen Skills von Anthropic: **xlsx** für die Tabelle, **docx** für das Entscheidungsblatt, **skill-creator** für deinen eigenen Skill.",
+       "install": "/plugin marketplace add anthropics/skills"
+      },
+      {
+       "kind": "PROMPTS",
+       "repo": "anthropics/claude-cookbooks",
+       "stars": "54k",
+       "text": "Offizielle Rezepte von Anthropic für Recherche, Auswertung und Datenextraktion."
+      },
+      {
+       "kind": "MCP",
+       "repo": "exa-labs/exa-mcp-server",
+       "stars": "5k",
+       "text": "Websuche, gebaut für KI. Für tiefere Marktrecherche über viele Seiten.",
+       "install": "claude mcp add --transport http exa https://mcp.exa.ai/mcp"
+      },
+      {
+       "kind": "MCP",
+       "repo": "firecrawl/firecrawl-mcp-server",
+       "stars": "8k",
+       "text": "Liest Konkurrenzseiten komplett aus: Preise, Mindestmengen, Lieferzeiten. Passt zu Prompt 5.",
+       "install": "env FIRECRAWL_API_KEY=fc-YOUR_API_KEY npx -y firecrawl-mcp"
+      },
+      {
+       "kind": "MCP",
+       "repo": "apify/apify-mcp-server",
+       "stars": "13k",
+       "text": "Fertige Scraper, z. B. Google Maps: Wie viele Betriebe einer Branche gibt es in deiner Region? Geht per URL auch in claude.ai.",
+       "install": "claude mcp add --transport http apify https://mcp.apify.com"
+      },
+      {
+       "kind": "MCP",
+       "repo": "punkpeye/awesome-mcp-servers",
+       "stars": "97k",
+       "text": "Die größte Liste von MCP-Servern, nach Thema sortiert. Zum Stöbern."
+      },
+      {
+       "kind": "SKILL",
+       "repo": "ComposioHQ/awesome-claude-skills",
+       "stars": "78k",
+       "text": "Kuratierte Liste mit weiteren Claude-Skills."
+      },
+      {
+       "kind": "PROMPTS",
+       "repo": "f/prompts.chat",
+       "stars": "174k",
+       "text": "Die große Prompt-Sammlung (früher awesome-chatgpt-prompts)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Dein eigener Skill",
+   "title": "„produkt-finder“: alle drei Fragen auf einen Satz.",
+   "intro": "Ein Skill ist eine Arbeitsanweisung, die Claude bei Bedarf selbst lädt. Mit diesem hier reicht künftig „Prüf mir eine neue Produktidee“. Die Datei legst du in den Ordner `produkt-finder`, packst den Ordner als ZIP und lädst ihn in claude.ai unter den Skills hoch (je nach Oberfläche **Customize → Skills** oder **Settings → Capabilities → Skills**). In Claude Code reicht der Ordner aus der Konsole.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "code",
+     "label": "produkt-finder/SKILL.md",
+     "text": "---\nname: produkt-finder\ndescription: Prüft neue Produkt- oder Geschäftsideen für meine Firma mit Quellen. Nutzen bei \"neue Produktidee\", \"was könnten wir verkaufen\", \"prüf diese Idee\", \"zweites Standbein\".\n---\n\n# Produkt-Finder\n\n## Meine Regeln (immer anwenden)\n- [Regel 1, z. B. kein eigenes Lager]\n- [Regel 2, z. B. keine eigene Maschine, ein Partner stellt her und verschickt]\n- Kunden: [z. B. Betriebe mit weniger als zehn Leuten]\n- Land/Region: [z. B. Deutschland]\n\n## Ablauf\n1. Fehlen Regeln oder Kunden, frag zuerst danach.\n2. Recherchiere mit Websuche zehn Produkte oder Leistungen, die diese\n   Kunden immer wieder kaufen. Je Idee: warum, Quelle als Link.\n3. Bewerte sie in einer Excel-Tabelle: Wie oft gekauft · Ohne Lager\n   und Maschine · Anzahl Anbieter · Tempo erster Auftrag, je 1-5 Punkte\n   mit Begründung, Summenspalte mit Formel.\n4. Gegenprobe: das stärkste Argument gegen die Idee mit der höchsten\n   Summe und gegen die Idee, die ich selbst nenne.\n5. Schlag einen Test für sieben Tage ohne Ausgaben vor.\n6. Auf Wunsch: Entscheidungsblatt als Word-Datei (eine Seite).\n\n## Regeln für die Antwort\n- Erfinde nichts. Ohne Quelle: \"unklar\" statt raten.\n- Keine Zahl ohne Link.\n- Kurz, auf Deutsch, Tabelle vor Fließtext."
+    },
+    {
+     "type": "prompt",
+     "label": "Interview: Claude füllt den Skill für deine Firma aus",
+     "text": "Ich will einen Claude-Skill „produkt-finder“ bauen, der neue Produktideen für meine Firma prüft. Stell mir nacheinander höchstens acht Fragen zu meiner Firma: was ich heute verkaufe, an wen, in welcher Region, was ich auf keinen Fall machen will (z. B. Lager, Maschinen, Personal), wie viel ich für einen Test ausgeben darf und woran ich merke, dass sich eine Idee lohnt. Danach schreib mir eine vollständige SKILL.md mit Frontmatter (name, description) und den Abschnitten „Meine Regeln“, „Ablauf“ und „Regeln für die Antwort“, mit der Regel „Erfinde nichts“. Pack sie als ZIP im Ordner produkt-finder zum Herunterladen."
+    }
+   ]
+  },
+  {
+   "kicker": "Konsole",
+   "title": "Einrichten in Claude Code.",
+   "intro": "Nur für Claude Code im Terminal. Ohne Terminal in claude.ai: **Settings → Connectors → „Add custom connector“** → Remote-URL einfügen (z. B. `https://mcp.exa.ai/mcp`).",
+   "blocks": [
+    {
+     "type": "terminal",
+     "title": "Terminal · Claude Code",
+     "lines": [
+      "# Exa-Websuche als MCP-Server verbinden",
+      "$ claude mcp add --transport http exa https://mcp.exa.ai/mcp",
+      "# Apify verbinden (Google Maps, Branchenverzeichnisse; Anmeldung im Browser)",
+      "$ claude mcp add --transport http apify https://mcp.apify.com",
+      "# Prüfen, was verbunden ist",
+      "$ claude mcp list",
+      "# Ordner für deinen eigenen Skill anlegen",
+      "$ mkdir -p ~/.claude/skills/produkt-finder",
+      "# In Claude Code selbst (nicht im Terminal): offizielle Skills für Excel, Word, PDF",
+      "› /plugin marketplace add anthropics/skills",
+      "› /plugin install document-skills@anthropic-agent-skills"
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Quellen mit Umsatz verwechseln.** Research findet Belege, aber keine Garantie, dass jemand bei dir kauft. Ein echter Test mit Kunden ersetzt das nicht, dafür ist Prompt 6 da.",
+      "**Regeln vergessen.** Ohne deine Regeln schlägt Claude auch Ideen mit Lager, Maschinen oder Personal vor. Schreib sie immer in die erste Frage.",
+      "**Quellen nicht angeklickt.** Prüf jede Zahl, die du weiterverwendest, an der Quelle. Wo „unklar“ steht, nicht selbst eine Zahl einsetzen.",
+      "**Alles auf dem Handy.** In der mobilen App nutzt Research nur das Web, keine verbundenen Werkzeuge. [Quelle](https://support.claude.com/en/articles/11088861-using-research-on-claude)",
+      "**Research startet nicht.** Schreib in die Frage, dass Claude das Research-Werkzeug nutzen soll, und prüf, ob „Research“ im „+“-Menü wirklich an ist.",
+      "**Interna in die Frage kopiert.** Keine Kundendaten oder Geschäftsgeheimnisse, die du nicht teilen darfst."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Morgen sucht die KI ihren Kunden.",
+  "text": "Folg @pickthecompany für Tag 2: Wer kauft Firmenshirts, und wie oft? Und falls du das lieber ohne Einrichtung willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Bildschirmfotos und Zitate aus einem echten claude.ai-Lauf vom 26.10.2026 (Max, Research). Menünamen können sich ändern. Repos geprüft am 22.10.2026."
+}

@@ -1,0 +1,18 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt sucht sie den Partner, der ihre Shirts einzeln bestickt und direkt verschickt.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. In der letzten Folge hat sie ihre Lücke gefunden: Beim Preis mithalten (rund 110 Euro für fünf Shirts) und einzelne Nachbestellungen ohne neue Einrichtung anbieten.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen, unten links auf „+“ klicken und „Research“ einschalten. Das geht in den bezahlten Plänen (Pro, Max, Team, Enterprise), und die Websuche muss an sein.
+2. Über „+“ und „Upload or add files“ das letzte Ergebnis anhängen, hier die Konkurrenzpreise.
+3. Fragen: Welcher Partner stellt [Produkt] für Wiederverkäufer ab [kleinste Menge] her und verschickt direkt an meine Kunden? Mindestens sechs Partner mit Einkaufspreis, einmaligen Kosten, Mindestmenge, Lieferzeit und Quelle. Entscheide und sag, was ich anfragen muss. Erfinde nichts.
+
+Ergebnis im echten Lauf (294 Quellen, 5 Minuten 56 Sekunden, sieben Partner verglichen): Die KI nimmt A61, aber nur unter Vorbehalt. Er ist der einzige Partner mit belegtem 60-Grad-Arbeitsshirt (bestickt ab 29,90 Euro), bestellt wird ab einem Stück, und er verschickt neutral direkt an die Kunden. Der Haken, den Claude selbst nennt: Zum Endkundenpreis kosten fünf Shirts dort 151,40 Euro mit Versand, der Markt verlangt rund 110. Händlerpreise, Stickprogramm-Kosten und Lieferzeit stehen nirgends. Die Anfrage schicke ich, das kann die KI ohne Mail-Zugang nicht. Zweite Wahl: Printful, günstiger und ohne neue Einrichtung bei Nachbestellungen, aber ohne belegtes 60-Grad-Shirt.
+
+Kommentiere „Partner“, dann schick ich dir den Guide mit der Frage zum Kopieren, dem echten Ergebnis und der Partnertabelle aus dem Lauf.
+
+Offen bleibt: Bleibt pro Shirt überhaupt etwas übrig? Das rechnet die KI als Nächstes.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #handwerk #firmenshirts

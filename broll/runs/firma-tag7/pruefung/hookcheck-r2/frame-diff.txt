@@ -1,0 +1,13 @@
+Frame-Diff je 0,5-s-Fenster, video-v3 (Objektregion y 520–1200 px, Pill-Region y 1200–1600 px), Graustufe 270x480
+0.0-0.5s  objekt max  30.6  mittel 11.4  start→ende  60.3 | pills max 35.6
+0.5-1.0s  objekt max  21.7  mittel 14.4  start→ende  47.6 | pills max 24.9
+1.0-1.5s  objekt max  16.3  mittel 13.4  start→ende  31.5 | pills max 11.3
+1.5-2.0s  objekt max  14.2  mittel 10.0  start→ende  46.6 | pills max 21.5
+2.0-2.5s  objekt max  16.1  mittel 11.1  start→ende  50.5 | pills max 16.4
+2.5-3.0s  objekt max  14.0  mittel 13.0  start→ende  39.8 | pills max 24.4
+3.0-3.5s  objekt max  63.6  mittel 18.2  start→ende  49.0 | pills max 60.1
+3.5-4.0s  objekt max  70.6  mittel 10.0  start→ende  97.7 | pills max 89.0
+4.0-4.5s  objekt max  10.1  mittel  3.5  start→ende  34.5 | pills max 17.7
+4.5-5.0s  objekt max  61.5  mittel  8.4  start→ende  60.6 | pills max 55.3
+5.0-5.5s  objekt max  15.8  mittel 11.6  start→ende  25.3 | pills max 13.2
+5.5-6.0s  objekt max  22.6  mittel 11.3  start→ende  44.5 | pills max 17.4

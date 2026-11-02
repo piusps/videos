@@ -1,0 +1,9 @@
+1 Hook           voice  -18.1 music  -42.6 gap  24.4 min400ms  11.1
+2 Rückblick      voice  -18.0 music  -42.3 gap  24.3 min400ms  10.7
+3 Claude-Lauf    voice  -18.7 music  -43.1 gap  24.5 min400ms  13.7
+4 Entscheidung   voice  -18.9 music  -45.8 gap  26.9 min400ms  15.5
+5 Warum          voice  -18.3 music  -42.1 gap  23.8 min400ms  13.6
+6 Haken          voice  -19.7 music  -41.4 gap  21.6 min400ms   9.3
+7 Als Nächstes   voice  -19.2 music  -41.6 gap  22.4 min400ms  16.8
+8 CTA            voice  -18.4 music  -41.2 gap  22.8 min400ms   9.6
+Musik ohne Stimme (Ende 44.79-45.79): -46.6

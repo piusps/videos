@@ -71,7 +71,7 @@
 - [Superkind economy](project_superkind_economy.md) — money counter, shop ladder, sealed vote outcomes; votes Tag 1–4 always win, normal cycle from Tag 5
 - [Zernio funnel rebind](feedback_zernio_funnel_rebind.md) — funnels attached at scheduling are NOT remapped on publish; rebind to IG media id + catch up, verify before reporting
 - [FPQ qualifying funnel](project_fpq_qualifying_funnel.md) — 2026-10-22 solo/team/angestellt → own pitch + waitlist, privat → exit; sheet column Typ; test DM SKTEST, not live yet
-- [100 KI-Agenten series](project_100_agenten_series.md) — "KI übernimmt meine Firma" Tag x/100, town format, ONE thing per episode, everyday company topics for everyone (Tag 7 = offene Rechnungen + Taxameter), CTA comment → resident bot, real numbers; Tag 11 Lager 2026-11-01 = all 8 houses done
+- [100 KI-Agenten series](project_100_agenten_series.md) — "KI übernimmt meine Firma" Tag x/100, town format, ONE thing per episode, everyday company topics for everyone (Tag 7 = offene Rechnungen + Taxameter), CTA comment → resident bot, real numbers; Tag 11 Lager = all 8 houses done; Tag 12 Stundensatz 2026-11-02 = "heute prüft die KI …" arc
 - [Series look](feedback_series_look.md) — Firma-Serie im TrainerWorld3D-Raum-Look: Tischinseln, Sticker, Claude-Paper-Fenster (2026-10-22)
 - [Guide v3 value](feedback_guide_v3_value.md) — Superkind PDFs = console-look playbooks with verified GitHub skills/MCPs/prompts, quick win, Superkind vs Claude (2026-10-22)
 - [Full-frame + click paths](feedback_fullframe_theme_world.md) — FP-N B-rolls all light Superkind white/orange with real Claude click paths + pointer; no dark scenes, no knights, no stock icons (2026-10-22)
@@ -110,3 +110,4 @@
 - [HeyGen headless](reference_heygen_headless.md) — tools missing in session → `claude -p --allowedTools "mcp__heygen__*"` from Bash; auth local heygen MCP in a real terminal
 - [Was wäre wenn](project_was_wenn_dann.md) — @was.wenn.dann 3D what-if format; 4 episodes built 2026-10-29 (src/wwd, scripts/wwd), not posted; Zug v2 = Florent voice ≤45 s + ref music, others pending OK
 - [GPT-S topics from Reel-Auswahl](feedback_gpts_reel_auswahl_topics.md) — since 2026-10-30 GPT-S topics come from Pius' daily Reel-Auswahl HTML (Platz 1 first), copies in ~/.claude/florentgpt/satire/auswahl/
+- [opusjake input 11-03](project_opusjake_input_2026-11-03.md) — input for 2026-11-03 videos: @opusjake top-10 transcripts + patterns (X killed Y, 11 skills + craziest part, problem hook, repost)

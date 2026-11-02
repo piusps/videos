@@ -1,0 +1,10 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Fünf Briefe, Adressen geprüft.
+Heute kommen die Adressen in den Brief.
+Claude: Brief und Liste angehängt.
+Nach einer Minute: fünf Briefe.
+Aber sie füllt nur vier Felder.
+Warum? Nur die stehen in der Liste.
+Absender, Datum, Versandkosten fehlen in beiden Dateien.
+Als Nächstes: Was kostet der Versand der Shirts?
+Kommentiere „Serienbrief“, ich schick dir die Anleitung. Damit hast du in zehn Minuten eigene Serienbriefe.

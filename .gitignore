@@ -1,0 +1,10 @@
+node_modules/
+.env
+*.mp4
+*.mov
+*.wav
+broll/music/*.mp3
+broll/runs/firma-ep/*/render/
+broll/runs/firma-ep/*/style-frames/
+broll/runs/firma-ep/*/*.jpg
+broll/out/

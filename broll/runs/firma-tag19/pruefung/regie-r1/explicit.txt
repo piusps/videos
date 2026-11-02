@@ -1,0 +1,2 @@
+musik-abschnitt.mp3 eng | 10.9:Thank 11.1:you 11.3:for 11.7:the 11.9:love. 14.0:Thank 14.3:you 14.4:for 14.8:the 15.0:joy. 17.2:But 17.5:I 17.9:don't 17.9:ever 18.1:wanna 19.7:fall 20.1:in 20.5:love 21.1:again. 23.4:So 23.4:thank 23.7:you 23.8:for 24.2:the 24.4:time. 26.4:Thank 26.7:you 27.0:for 27.4:your 27.6:mind. 28.9:'Cause 30.1:I 30.6:don't 30.7:ever 31.5:wanna 32.3:fall 32.9:in 33.1:love 33.7:again
+exit 0

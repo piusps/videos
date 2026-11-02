@@ -1,0 +1,22 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt sucht sie die ersten zwanzig Betriebe.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. Das Gewerbe kann nur ein Mensch anmelden.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ das letzte Ergebnis anhängen (ohne Datei geht es auch).
+2. Fragen: Wähl eine Testregion in Deutschland und begründe sie. Finde dort mit der Websuche zwanzig echte Betriebe aus meiner Zielgruppe, mit Quelle für jeden. Nimm nur Firmenangaben, keine Privatpersonen. Entscheide, welche fünf du zuerst ansprechen würdest, und begründe es. Mach daraus eine Excel-Tabelle. Sag mir, was du nicht prüfen kannst. Erfinde nichts.
+3. Jeden Betrieb selbst prüfen, etwa im Impressum.
+
+Ergebnis im echten Lauf (5 Minuten 20 Sekunden, 26 Websuchen): 20 Betriebe als Excel-Datei, jeder mit Quelle. Testregion: Chemnitz mit Umland, denn Sachsen hat rund 50 Handwerksbetriebe je 10.000 Einwohner, der Bundesschnitt 38,4. Zuerst ansprechen würde die KI zwei Maler, einen Dachdecker, eine Zimmerei und einen Elektrobetrieb. Gründe: Das Shirt ist beim Kunden sichtbar. Ein Maler sucht gerade Leute, und wer einstellt, braucht Kleidung für neue Leute.
+
+Der Haken: Bei 17 von 20 Betrieben stammt die Teamgröße nur aus einem Verzeichnis, genauer belegt ist sie bei 3. Ungefragt kam der Hinweis: Werbe-Mails ohne vorherige Einwilligung sind nach § 7 UWG grundsätzlich unzulässig, auch an Firmen.
+
+Kommentiere „Kunden“ für Frage und Listenvorlage. Damit hast du in zehn Minuten Wunschkunden für dein eigenes Business. Im Guide: die Frage (mit und ohne Anhang), die Listenvorlage und Prüfpunkte für jeden Betrieb. Betriebe aus dem Lauf stehen nicht drin.
+
+Offen bleibt: Was schreibt sie den fünf?
+
+Keine Rechtsberatung.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #kundengewinnung #firmenshirts

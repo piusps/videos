@@ -1,0 +1,315 @@
+{
+ "tag": 3,
+ "folge": 6,
+ "serientag": 2,
+ "ersteFolgeDesTages": true,
+ "date": "2026-10-28",
+ "seconds": 47.8,
+ "keyword": "Ärger",
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 312.0
+ },
+ "anchors": {
+  "send": "Claude-0.45"
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "PREIS",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "WERBUNG",
+   "AKQUISE",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 1,
+  "done": [
+   0,
+   1
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@4.5",
+   "aus": "aus@4.7",
+   "end": "Logo-Shirts-0.1",
+   "tagWord": "Ihre",
+   "tagNum": "Firma"
+  }
+ },
+ "claude": {
+  "at": "Shirt-Bestellen+0.4",
+  "logo": "Shirt-Bestellen+0.65",
+  "cursorFrom": "Plus-0.5",
+  "moveUp": "Nur-0.25",
+  "steps": [
+   {
+    "label": "RESEARCH",
+    "at": "Plus-0.5"
+   },
+   {
+    "label": "QUELLEN",
+    "at": "Nur-0.15"
+   },
+   {
+    "label": "FRAGE",
+    "at": "5-0.1"
+   }
+  ],
+  "feature": {
+   "label": "Research",
+   "icon": "research",
+   "plus": "Plus",
+   "pick": "Research",
+   "on": "an@14.9"
+  },
+  "prompt": "Ich verkaufe Firmenshirts mit Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, gedruckt auf Bestellung bei einem Partner. Recherchiere nur in Bewertungen, Foren und Ratgebern: Was nervt kleine Handwerks- und Baubetriebe am meisten, wenn sie Shirts mit ihrem Logo bestellen? Nenne die fünf häufigsten Ärgernisse, jeweils mit Quelle. Sag dazu, ob die Belege von Betrieben oder von Privatkunden stammen. Erfinde nichts.",
+  "typing": [
+   [
+    "dran-0.1",
+    ""
+   ],
+   [
+    "Nur+0.3",
+    "Baubetriebe unter zehn Leuten,"
+   ],
+   [
+    "Ratgeber+0.25",
+    "Ratgebern:"
+   ],
+   [
+    "5-0.05",
+    "Logo bestellen?"
+   ],
+   [
+    "Ärgernisse-0.15",
+    "fünf häufigsten Ärgernisse"
+   ],
+   [
+    "$send-0.18",
+    "*"
+   ]
+  ],
+  "marks": [
+   {
+    "find": "Bewertungen, Foren und Ratgebern",
+    "at": "Ratgeber+0.3",
+    "color": "yellow"
+   },
+   {
+    "find": "fünf häufigsten Ärgernisse",
+    "at": "Ärgernisse",
+    "color": "orange"
+   }
+  ],
+  "send": "$send",
+  "rehook": {
+   "lines": [
+    "Die Frage",
+    "zum Kopieren"
+   ],
+   "pill": "→ am Ende",
+   "from": "Nur+0.3",
+   "to": "$send-0.1"
+  }
+ },
+ "wall": {
+  "cards": [
+   {
+    "label": "LOGO FALSCH",
+    "icon": "flyer"
+   },
+   {
+    "label": "SERVICE",
+    "icon": "phone"
+   },
+   {
+    "label": "GRÖSSE · LIEFERUNG",
+    "icon": "box"
+   },
+   {
+    "label": "DRUCK LÖST SICH",
+    "icon": "shirt"
+   }
+  ],
+  "fill": {
+   "at": "Claude+0.15",
+   "step": 0.22
+  },
+  "counter": {
+   "label": "QUELLEN",
+   "at": "Claude-0.1",
+   "keys": [
+    [
+     "Claude-0.1",
+     301,
+     1.1
+    ]
+   ],
+   "pulse": "Quellen"
+  },
+  "hl": [
+   {
+    "i": 0,
+    "at": "Logo@22",
+    "until": "Druck@25"
+   },
+   {
+    "i": 1,
+    "at": "Service",
+    "until": "Druck@25"
+   },
+   {
+    "i": 2,
+    "at": "Platz",
+    "until": "Druck@25"
+   },
+   {
+    "i": 3,
+    "at": "Druck@25"
+   }
+  ],
+  "dim": [
+   {
+    "i": 0,
+    "at": "klärt"
+   },
+   {
+    "i": 1,
+    "at": "klärt"
+   },
+   {
+    "i": 2,
+    "at": "klärt"
+   }
+  ]
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Logo-Shirts-0.1",
+   "product": {
+    "label": "LOGO-SHIRTS",
+    "at": "Logo-Shirts+0.1"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\ngedruckt",
+    "at": "gedruckt"
+   },
+   "last": {
+    "step": 1,
+    "label": "HANDWERK",
+    "at": "Kunden@9"
+   },
+   "today": {
+    "step": 1,
+    "pill": "HEUTE: WAS NERVT DIE?",
+    "at": "Heute"
+   }
+  },
+  {
+   "type": "wall",
+   "at": "$send+0.3",
+   "thinkUntil": "301"
+  },
+  {
+   "type": "winner",
+   "at": "Die@27-0.12",
+   "card": 3,
+   "fly": "Waschen@28.8",
+   "dimAt": "klärt",
+   "stamp": "→ ERST WASCHEN",
+   "hold": "shirt"
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "card": 3,
+   "pill": "WARUM ERST WASCHEN?",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "thermoHot",
+     "big": "60 °C",
+     "small": "Wäsche auf dem Bau",
+     "at": "Auf@30"
+    },
+    {
+     "icon": "thermoCold",
+     "big": "30 °C",
+     "small": "vertragen gängige Drucke",
+     "at": "Gängige"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "at": "Haken-0.12",
+   "pill": "HAKEN",
+   "lines": [
+    "Nur 1 Beleg",
+    "aus dem Handwerk"
+   ],
+   "pop": "Haken",
+   "stamp": "MEIST PRIVATKUNDEN",
+   "stampAt": "Privatkunden",
+   "bubble": "Haken+0.3"
+  },
+  {
+   "type": "question",
+   "at": "Offen-0.12",
+   "pill": "NOCH OFFEN",
+   "lines": [
+    "Welcher Druck",
+    "hält 60 Grad?"
+   ],
+   "pop": "Offen",
+   "stamp": null,
+   "bubble": "Offen+0.3"
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Ärger@42",
+   "plane": [
+    "und@43-0.05",
+    "schick+0.25"
+   ],
+   "itemsAt": "die@43.8",
+   "copyAt": "damit",
+   "items": [
+    {
+     "label": "Research an",
+     "snip": "Unten auf „+“, dann „Research“ einschalten"
+    },
+    {
+     "label": "Ergebnis anhängen",
+     "snip": "Deine Zielgruppe als Datei dazu, dann nur Bewertungen, Foren, Ratgeber"
+    },
+    {
+     "label": "Frage stellen",
+     "snip": "„Was nervt [Zielgruppe] am meisten? Fünf häufigste Ärgernisse, mit Quelle.“"
+    }
+   ]
+  }
+ ]
+}

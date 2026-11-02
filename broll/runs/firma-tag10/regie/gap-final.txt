@@ -1,0 +1,9 @@
+1 Hook           voice  -17.9 music  -41.2 gap  23.3 min400ms  12.0
+2 Rückblick      voice  -17.7 music  -38.2 gap  20.4 min400ms  10.5
+3 Auftrag        voice  -18.8 music  -38.0 gap  19.2 min400ms   8.5
+4 Entscheidung   voice  -19.1 music  -40.5 gap  21.3 min400ms   8.4
+5 Warum          voice  -18.9 music  -37.8 gap  18.8 min400ms   7.4
+6 Haken          voice  -18.1 music  -37.3 gap  19.1 min400ms  11.1
+7 Als Nächstes   voice  -18.8 music  -37.9 gap  19.1 min400ms   9.4
+8 CTA            voice  -19.2 music  -40.4 gap  21.2 min400ms  10.8
+Musik ohne Stimme (Ende 45.16-46.16): -45.5

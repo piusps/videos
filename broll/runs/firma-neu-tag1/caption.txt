@@ -1,0 +1,14 @@
+Was passiert, wenn eine KI ganz alleine ein Unternehmen aufbaut? Tag 1: Sie sucht ihr Produkt.
+
+So machst du das für deine Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen, unten links auf „+“ klicken und „Research“ einschalten. Das geht in den bezahlten Plänen (Pro, Max, Team, Enterprise), und die Websuche muss an sein.
+2. Deine Regeln dazuschreiben: was du nicht willst (zum Beispiel kein Lager) und wer deine Kunden sind.
+3. Claude die Ideen in einer Excel-Tabelle bewerten lassen. Dafür in den Einstellungen unter Capabilities (deutsch: Funktionen) „Code execution and file creation“ einschalten.
+
+Kommentiere „Produkt“, dann schick ich dir den Guide mit allen drei Fragen, der Bewertungstabelle und den Werkzeugen für Fortgeschrittene.
+
+Offen bleibt: Wie oft bestellen Betriebe nach? Das klärt die KI morgen, wenn sie ihren ersten Kunden sucht.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #mittelstand #firmenshirts

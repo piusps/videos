@@ -1,0 +1,309 @@
+{
+ "topic": "Serienbrief",
+ "trigger_word": "Serienbrief",
+ "cover": {
+  "kicker": "KI baut eine Firma · Wie kommen die Adressen in den Brief?",
+  "title": "Eigene Serienbriefe. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie aus ihrem Werbebrief und ihrer Empfängerliste fünf Briefe gemacht hat, einen pro Betrieb, als Word-Datei. Mit beiden Varianten der Frage, der Regel, welche Felder Claude füllt, dem Weg, den Rest in einem Rutsch selbst zu füllen, und der Liste, was Claude nicht prüft.",
+  "stat": {
+   "value": "ca. 1 min",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: 0 Websuchen, eine Word-Datei mit 5 Briefen, einer pro Seite. Gefüllt: 4 von 14 Platzhaltern je Brief, der Rest blieb gelb markiert."
+  },
+  "outcomes": [
+   "Die Serienbrief-Frage zum Kopieren, mit zwei Anhängen und mit einem",
+   "Die Regel: Claude füllt nur, was in Brief oder Liste steht",
+   "Den Rest selbst füllen: Suchen und Ersetzen in allen Briefen auf einmal",
+   "Ehrlich ausgewiesen: was Claude nicht prüft"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Die Serienbrief-Frage zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** zwei Dateien an: deinen Brief als Word-Datei mit Platzhaltern in eckigen Klammern und deine Empfängerliste als Excel-Datei. Dann füge diese Frage ein. Das ist die Frage aus unserem Lauf, nur der erste Satz ist für deine eigenen Dateien verallgemeinert.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante A: zwei Anhänge (Brief als Word + Liste als Excel)",
+     "text": "Im Anhang sind mein Werbebrief als Word-Datei mit Platzhaltern und meine Empfängerliste als Excel-Datei. Mach daraus fertige Serienbriefe, einen pro Firma. Nimm nur die Firmen, die laut Liste rausgehen können. Füll nur die Platzhalter, für die es in Brief oder Liste einen Beleg gibt. Sag mir, welche Platzhalter offen bleiben, zum Beispiel Absender oder Versandkosten. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts. Gib mir die Briefe als Word-Datei zurück."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Claude hat in unserem Lauf rund eine Minute gearbeitet. Mit Anhängen, Lesen der Antwort und Suchen und Ersetzen für die offenen Felder hast du nach etwa 10 Minuten deine eigenen Serienbriefe in einer Word-Datei. Drucken, Porto und Einwerfen bleiben deine Schritte."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Dateien hochladen oder hinzufügen“** → Brief (Word) und Liste (Excel) anhängen → Frage einfügen → senden. Research und Websuche sind nicht nötig, in unserem Lauf hat Claude kein einziges Mal gesucht."
+      },
+      {
+       "k": "Ergebnis",
+       "v": "Die fertige Datei erscheint als Karte im Chat (**„Dokument · DOCX“**). Anklicken, herunterladen, in Word öffnen: ein Brief pro Seite, Logo und Layout aus deinem Brief übernommen."
+      },
+      {
+       "k": "Tipp",
+       "v": "Gedächtnis für diesen Chat ausschalten: im **„+“**-Menü das Häkchen bei **„Gedächtnis“** entfernen. So haben wir den Lauf gemacht."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf am 31.10.2026: rund 1 Minute. Claude hat Brief und Liste gelesen, die Briefe als Word-Datei gebaut und die Datei geprüft."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "So sieht es aus",
+   "title": "Ein Brief aus dem Lauf.",
+   "intro": "Seite 1 von 5 aus Claudes Datei. Schwarz: Empfänger und Website, von uns geschwärzt. Diese vier Felder hat Claude aus der Liste gefüllt. Gelb: alles, was weder im Brief noch in der Liste stand. Claude hat es offen gelassen statt es zu erfinden.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/brief-seite-geschwaerzt.png",
+     "width": "78%",
+     "caption": "Echter Lauf vom 31.10.2026, Seite 1 von 5. Empfängerblock und Website im Datenschutzsatz von uns geschwärzt."
+    }
+   ]
+  },
+  {
+   "kicker": "Variante B",
+   "title": "Brief noch nicht als Word-Datei?",
+   "intro": "Dann hängst du nur die Liste an und schreibst den Brieftext direkt in die Frage. Platzhalter in eckigen Klammern, zum Beispiel [Firmenname] oder [Datum].",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante B: ein Anhang (nur die Liste, nicht getestet)",
+     "text": "Im Anhang ist meine Empfängerliste als Excel-Datei. Hier ist mein Brief, Platzhalter in eckigen Klammern: [BRIEFTEXT EINFÜGEN]. Mach daraus Serienbriefe als Word-Datei, einen pro Firma und eine Seite pro Brief. Füll nur Platzhalter, die in der Liste stehen, und markier die übrigen gelb. Sag mir, welche offen bleiben und was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Nicht getestet",
+     "text": "Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit zwei Anhängen (rund 1 Minute)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Beispiel",
+      "Wofür der Serienbrief passt"
+     ],
+     "widths": [
+      "26%",
+      "74%"
+     ],
+     "rows": [
+      [
+       "Gebäudereiniger",
+       "Angebotsbrief an zwanzig Arztpraxen, je Praxis Name und Anschrift"
+      ],
+      [
+       "Fotografin",
+       "Brief an Kitas für den Fototag, Ansprechpartner aus der Liste"
+      ],
+      [
+       "Kaffeerösterin",
+       "Probenbrief an Büros, Lieferadresse je Büro"
+      ],
+      [
+       "IT-Techniker",
+       "Wartungsangebot an Steuerkanzleien, Kanzleiname und Ort aus der Liste"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Einstellungen",
+   "title": "Das muss in claude.ai an sein.",
+   "intro": "Zwei Dinge braucht die Frage: Dateierstellung und den Upload im Chat. Geprüft am 30.10.2026, Menünamen können sich ändern.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Word-Datei erstellen",
+       "text": "Die Dateierstellung muss an sein, sonst kommt keine Word-Datei zurück. Quelle: [Claude Help Center: Create and edit files](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)"
+      },
+      {
+       "title": "Anhänge",
+       "text": "Upload im Chat über **„+“**. Quelle: [Claude Help Center: Upload files](https://support.claude.com/en/articles/8241126-upload-files-to-claude)"
+      },
+      {
+       "title": "Keine Websuche nötig",
+       "text": "Claude füllt nur aus deinen zwei Dateien. In unserem Lauf: 0 Websuchen, kein Research, keine Verbindung zu anderen Programmen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Regel",
+   "title": "Gefüllt wird nur, was belegt ist.",
+   "intro": "Claude füllt nur Felder, die in deiner Liste oder deinem Brief stehen. Im Lauf waren das 4 von 14 Platzhaltern je Brief. Alles andere blieb gelb markiert.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Gefüllt (aus der Liste)",
+      "Offen (weiter gelb)"
+     ],
+     "widths": [
+      "44%",
+      "56%"
+     ],
+     "rows": [
+      [
+       "Firmenname (bei einem Betrieb plus Zeile aus der Spalte Zusatz)",
+       "Absenderzeile: [Dein Name], [Straße, PLZ Ort], [Telefon], [E-Mail]"
+      ],
+      [
+       "Straße",
+       "[Ort, Datum]"
+      ],
+      [
+       "PLZ und Ort",
+       "Versand: [Versandkosten und Lieferzeit ergänzen]"
+      ],
+      [
+       "Quelle der Anschrift im Datenschutzsatz",
+       "Kontakt im Text, Gruß [Dein Name], Datenschutz: [Link oder Hinweis zur Datenschutzerklärung]"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Claude wörtlich",
+     "text": "„Weder Brief noch Liste nennen ein Versanddatum oder deinen Ort. Das Prüfdatum 31.10.2026 habe ich bewusst nicht als Briefdatum genommen.“ Genau dafür steht **„Erfinde nichts“** in der Frage."
+    }
+   ]
+  },
+  {
+   "kicker": "Den Rest füllen",
+   "title": "Suchen und Ersetzen, alle Briefe auf einmal.",
+   "intro": "Die offenen Felder stehen in jedem Brief gleich. Claudes Tipp aus dem Lauf: „In Word kannst du sie am schnellsten mit Suchen und Ersetzen in allen fünf Briefen auf einmal füllen.“",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/04-offen-platzhalter.png",
+     "width": "88%",
+     "caption": "Claudes Liste der offenen Platzhalter, echter Lauf vom 31.10.2026."
+    },
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Datei in Word öffnen",
+       "text": "Die Word-Datei aus der Karte im Chat herunterladen und öffnen. Alle Briefe stehen in einer Datei, einer pro Seite."
+      },
+      {
+       "title": "Suchen und Ersetzen öffnen",
+       "text": "In Word **„Suchen und Ersetzen“** öffnen (unter Windows: Strg + H)."
+      },
+      {
+       "title": "Platzhalter für Platzhalter",
+       "text": "Bei **„Suchen“** den Platzhalter mit Klammern eintragen, zum Beispiel **[Dein Name]**, bei **„Ersetzen“** deinen Namen. **„Alle ersetzen“** füllt ihn in allen Briefen."
+      },
+      {
+       "title": "Gelbe Markierung prüfen",
+       "text": "Zum Schluss jede Seite durchblättern: Steht noch etwas Gelbes da, ist ein Feld offen. Die gelbe Markierung vor dem Druck entfernen."
+      }
+     ]
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "**Absender:** Name, Straße, PLZ und Ort, Telefon, E-Mail",
+      "**Ort und Datum** des Briefs, nicht das Prüfdatum der Liste",
+      "**Versandkosten und Lieferzeit** deines Produkts",
+      "**Kontakt im Text** und **Gruß** mit deinem Namen",
+      "**Link oder Hinweis zur Datenschutzerklärung**"
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Tipp Empfängerliste",
+   "title": "Eine Spalte entscheidet, wer einen Brief bekommt.",
+   "intro": "Unsere Liste hatte eine Spalte **Versand** mit Ja, Ja mit Vorbehalt oder Nein. Darum steht in der Frage: „Nimm nur die Firmen, die laut Liste rausgehen können.“",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Versand",
+      "Was Claude im Lauf gemacht hat"
+     ],
+     "widths": [
+      "26%",
+      "74%"
+     ],
+     "rows": [
+      [
+       "Ja",
+       "Brief gebaut. 4 Betriebe im Lauf."
+      ],
+      [
+       "Ja mit Vorbehalt",
+       "Brief trotzdem gebaut, mit Hinweis: „Brief kann raus, aber vor dem Druck die PLZ prüfen. Deshalb ist der Brief drin. Wenn du ihn erst nach der Prüfung willst, nimm Seite 2 heraus.“"
+      ],
+      [
+       "Nein",
+       "Kam im Lauf nicht vor. Willst du solche Zeilen sicher draußen haben, schreib es ausdrücklich in die Frage."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Nicht geprüft",
+   "title": "Was Claude nicht prüft.",
+   "intro": "Claudes Liste aus dem Lauf, Namen und Adressen von uns geschwärzt. Die Briefe sind danach nicht versandfertig: Absender, Kontakt, Datum, Versandkosten und Datenschutz-Link fehlen, bis du sie einträgst.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/05-nicht-pruefen-anonym.png",
+     "width": "88%",
+     "caption": "Echter Lauf vom 31.10.2026, Namen und Orte von uns geschwärzt."
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "**Zustellbarkeit:** ob die Briefe an den Anschriften wirklich ankommen.",
+      "**Inhalt des Briefs:** ob Preise, Angaben im Text und die Widerspruchs- und Datenschutzhinweise rechtlich reichen. Claude hat sie unverändert übernommen.",
+      "**Widersprüche:** ob eine Firma Werbung von dir schon abgelehnt hat oder auf einer Sperrliste steht. Dazu stand nichts in der Liste.",
+      "**Geschäft oder Wohnung:** ob eine Anschrift Geschäftsraum oder Wohnanschrift ist.",
+      "**Postleitzahl:** ein Detail mit Vorbehalt, vor dem Druck selbst in der PLZ-Suche der Deutschen Post prüfen."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Datenschutz und Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Namen sind Personendaten:** In unserem Lauf steckte bei den Betrieben der Name des Inhabers im Firmennamen. Die Briefe enthalten volle Anschriften. Behandle die Datei so.",
+      "**Widerspruchshinweis im Brief lassen:** Unser Brief nennt ihn und sagt, woher die Anschrift stammt. Claude prüft nicht, ob dein Text rechtlich reicht.",
+      "**„Erfinde nichts“ weglassen:** Dann riskierst du ausgedachte Daten oder Kontaktangaben im Brief.",
+      "**Gelbes übersehen:** Ein Brief mit [Telefon] oder [Ort, Datum] darf nicht in den Druck.",
+      "**„Ja mit Vorbehalt“ überlesen:** Claude nimmt den Brief mit auf und sagt dir, welche Seite du herausnehmen kannst.",
+      "Das ist eine Zusammenfassung aus einem Lauf, keine Rechtsberatung."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes: Was kostet der Versand der Shirts?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Frage, Regel, Liste der offenen Felder und Nicht-prüfen-Liste aus einem echten claude.ai-Lauf vom 31.10.2026 (rund 1 Minute, 0 Websuchen, Gedächtnis aus), wörtlich übernommen oder verallgemeinert, Betriebsnamen, Anschriften und Websites weggelassen oder geschwärzt. Variante B und Beispiele nach Beruf nicht getestet. Menünamen können sich ändern."
+}

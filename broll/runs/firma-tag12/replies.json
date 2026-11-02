@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Betriebe: Guide mit der Frage mit und ohne Anhang, der Listenvorlage und den Prüfpunkten je Betrieb per DM, Trigger-Wort im Video: Kunden)",
+ "commentReply": "Der Guide liegt in deiner DM. An welche Betriebe verkaufst du?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Suchst du deine Kunden eher in deiner Gegend oder überall?",
+  "Schick ich dir gerade, mit Frage und Listenvorlage. Hättest du auch mit den Malern angefangen?",
+  "Angekommen, alles liegt in deiner DM. Wie findest du neue Kunden bisher?",
+  "Liegt in deiner DM, mit den Prüfpunkten für jeden Betrieb. Brief oder Besuch, was wäre dein erster Schritt?",
+  "Der Guide ist unterwegs in deine DM. Wie groß sind die Betriebe, die du ansprechen willst?"
+ ]
+}

@@ -1,0 +1,1259 @@
+{
+ "folge": 19,
+ "tag": 19,
+ "serientag": 5,
+ "ersteFolgeDesTages": false,
+ "date": "2026-11-01",
+ "slot": "2026-11-01 18:00",
+ "keyword": "Beleg",
+ "seconds": 45.27,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 276.95,
+  "musicMute": [],
+  "musicCurve": [
+   [
+    0,
+    0.05
+   ],
+   [
+    13.6,
+    0.05
+   ],
+   [
+    14.0,
+    0.03
+   ],
+   [
+    22.55,
+    0.03
+   ],
+   [
+    22.7,
+    0.018
+   ],
+   [
+    23.38,
+    0.018
+   ],
+   [
+    23.46,
+    0.045
+   ],
+   [
+    24.2,
+    0.03
+   ],
+   [
+    44.1,
+    0.03
+   ],
+   [
+    44.27,
+    0.05
+   ],
+   [
+    44.85,
+    0.05
+   ],
+   [
+    45.27,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 276,95 s am Stück (Stem 45,97 s bis 322,92; Fenster Folge 19 = 276,0–323,0), nie geloopt. Abschnitt 2 von 5 des Serientags 5 (Liste tagesbriefing-2026-11-01.md 'Musik'). music-explicit-check 3× 0 explizite Wörter, kein musicMute. Details musik.txt"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Ziffern in words.json: hundert → 100, Fünf (Briefe) → 5, Hundertneun → 109, fünf (Shirts) → 5, zehn → 10. Kollisionen: 'das' (1.58 / 5.41), 'ki' (2.0 / 6.73), 'ich' (4.95 / 40.1), 'die' (6.17 / 22.02), 'shirts' (7.52 / 30.02), 'mit' (7.81 / 36.08), '5' (10.6 / 29.81), 'briefe' (10.89 / 16.06), 'einkaufspreis' (11.45 / 32.3), 'sie' (13.65 / 21.5), 'versandzeile' (13.97 / 43.28), 'printful' (17.91 / 24.37), 'beleg' (20.59 / 39.32), 'ihr' (25.0 / 31.8). In episode.json immer 'Wort@Zeit'.",
+ "textregel": "Neue Textblöcke (ohne Untertitel) je ≥ 1,2 s auseinander, ≤ 4 Wörter (+ kleine Unterzeile/Gegenwert), nie zwei gleichzeitig; aussagende Texte ≥ 58 px (Ziel ≥ 64). Screenshots: nie mehr als ~12 lesbare Wörter gleichzeitig.",
+ "verboten": [
+  "Betriebs-/Personennamen, Straßen, PLZ, Websites der Betriebe, Telefon, Orte außer Chemnitz",
+  "Lieferzeit in jeder Form (2–5 / 5–20 / 4–10 Werktage, Shot 04)",
+  "'Printful hat keine Euro-Preise' / 'Printful: nur Dollar' ohne Lauf-Bezug",
+  "'Versand extra' als Beschriftung der neuen Zeile",
+  "Shot 06 'Ein offener Punkt …'",
+  "4,49 € (Testbericht)",
+  "18,32 € ohne 'mit USt'",
+  "Steuerrat/Empfehlung Kleinunternehmer",
+  "Umsatz-Zähler",
+  "TAG-Slam / 'TAG 5'",
+  "Haken an GEWERBE",
+  "WEBSITE grün",
+  "Haken an WERBEBRIEF + ADRESSEN",
+  "'gestern'",
+  "claude.ai-Sidebar",
+  "'Wieder am Start'-Kopf aus Shot 01",
+  "'boilr'",
+  "'Hamburg'",
+  "Maskottchen > 1/3 verdeckt oder Augen bedeckt (auch durch Untertitel/Panels/Endkarte)"
+ ],
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "sub": "· 12 SCHRITTE",
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE\nENTWURF",
+   "GEWERBE\nOFFEN",
+   "BETRIEBE",
+   "WERBEBRIEF\n+ ADRESSEN",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 7,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6
+  ],
+  "wip": [
+   4
+  ],
+  "notiz": "Wie Folge 18 (public/firma-ep/tag18). WERBEBRIEF + ADRESSEN bleibt current, kein Haken (Versandzeile ohne Betrag, Briefe noch mit Platzhaltern). DRUCK + PREIS behält Haken + Badge '5ER OFFEN'. GEWERBE offen, ab B15/CTA Badge 'UST ?'. Kein Umsatz-Zähler."
+ },
+ "story_objekt": {
+  "name": "briefseite_versandzeile",
+  "plaetze": [
+   [
+    "0",
+    "hook: Briefseite alt durchgestrichen → neu"
+   ],
+   [
+    "Ich@4.5",
+    "off (Board)"
+   ],
+   [
+    "5@10.5",
+    "fünf Briefseiten + Stempel EINKAUF FEHLT"
+   ],
+   [
+    "Heute",
+    "eine Briefseite, Marker alte Zeile"
+   ],
+   [
+    "Claude+0.15",
+    "Paper-Fenster"
+   ],
+   [
+    "Versandpreise",
+    "Paper-Fenster + Mini-Brief, Stempel KEIN BELEG"
+   ],
+   [
+    "Sie@21.3",
+    "Briefseite: Strich, neue Zeile"
+   ],
+   [
+    "Warum",
+    "Briefzeile oben, Gründe darunter"
+   ],
+   [
+    "109",
+    "Fünferpack mit Verkaufs-Schild"
+   ],
+   [
+    "Als@35.0",
+    "Frage-Karte MIT ODER OHNE?"
+   ],
+   [
+    "Kommentiere",
+    "Endkarte"
+   ]
+  ]
+ },
+ "shots": {
+  "01": {
+   "src": "design/lauf/01-prompt-mit-anhang.png",
+   "size": [
+    1020,
+    540
+   ],
+   "crop": {
+    "x": 30,
+    "y": 118,
+    "w": 186,
+    "h": 186
+   },
+   "hinweis": "Nur die Anhang-Karte 'Kolonnenshirt_Serienbriefe.docx · DOCX' lesbar (≤ 4 Wörter); Prompttext höchstens weiche Textur; Kopf 'Wieder am Start' nie."
+  },
+  "07": {
+   "src": "design/lauf/07-schritte-zeile.png",
+   "size": [
+    975,
+    145
+   ],
+   "crop": {
+    "x": 20,
+    "y": 108,
+    "w": 670,
+    "h": 36
+   },
+   "hinweis": "Nur graue Schritte-Zeile 'Eine Datei geteilt, das Web durchsucht und 5 weitere Schritte' (10 Wörter); Marker auf 'das Web durchsucht' auf 'Websuche'."
+  },
+  "03 (Bereiche)": {
+   "src": "design/lauf/03-versandpreise-kein-beleg.png",
+   "size": [
+    975,
+    348
+   ],
+   "bereiche": {
+    "kein_beleg": {
+     "x": 70,
+     "y": 58,
+     "w": 780,
+     "h": 34,
+     "was": "'Versandpreise: Für die 11,20 € und 5,20 € habe ich keinen Beleg gefunden.' (12 Wörter, Marker auf 'keinen Beleg gefunden')"
+    },
+    "nur_dollar": {
+     "x": 70,
+     "y": 92,
+     "w": 700,
+     "h": 34,
+     "was": "Zeile 2 '… nennt für Shirts nach Europa nur' + Anfang Zeile 3 'Dollarbeträge' (Marker auf 'nur Dollarbeträge'); Dollarbeträge $4.99/$1.45 nicht vergrößert"
+    },
+    "kurs": {
+     "x": 70,
+     "y": 250,
+     "w": 790,
+     "h": 64,
+     "was": "'… ich rechne Dollar nicht mit einem angenommenen Kurs um.' (Marker auf 'nicht mit einem angenommenen Kurs')"
+    }
+   },
+   "hinweis": "Je Beat nur EIN Bereich hell/markiert (≤ 12 Wörter), Rest abgedunkelt. NIE lesbar: Testbericht-Satz '4,49 € …' (Zeilen 6–7), 'Schau in deinem Printful-Konto'."
+  },
+  "02 (nur Satz 1)": {
+   "src": "design/lauf/02-neue-versandzeile.png",
+   "size": [
+    975,
+    198
+   ],
+   "crop": {
+    "x": 20,
+    "y": 98,
+    "w": 650,
+    "h": 34
+   },
+   "hinweis": "NUR '„Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.' (Zeile 3 bis 'Bestellung.'). Lieferzeit-Teil ('Gestickt wird … 2 bis 5 Werktage') NIE lesbar (Ticket autor-R1-04): abschneiden/abdecken."
+  },
+  "05 (Kopf)": {
+   "src": "design/lauf/05-109-nicht-entscheiden.png",
+   "size": [
+    975,
+    240
+   ],
+   "crop": {
+    "x": 20,
+    "y": 8,
+    "w": 900,
+    "h": 90
+   },
+   "hinweis": "Kopf 'Können die 109 € bleiben?' + 'Das kann ich ohne deinen Einkaufspreis nicht entscheiden.' – 'Was dir bleibt'/18,32 € nie lesbar (gilt nur mit Umsatzsteuer)."
+  },
+  "09": {
+   "src": "design/lauf/09-steuer-angebot-rechnen.png",
+   "size": [
+    975,
+    153
+   ],
+   "crop": {
+    "x": 20,
+    "y": 48,
+    "w": 940,
+    "h": 70
+   },
+   "hinweis": "Nur 'Wenn du mir deinen Printful-Preis … und deinen Umsatzsteuerstatus nennst' als Textur, Marker auf 'Printful-Preis' und 'Umsatzsteuerstatus'. Satz 1 'Ich bin kein Steuer- oder Finanzberater' darf mit."
+  },
+  "06 (nur Achtung-Absatz)": {
+   "src": "design/lauf/06-kosten-umsatzsteuer.png",
+   "size": [
+    975,
+    459
+   ],
+   "crop": {
+    "x": 70,
+    "y": 250,
+    "w": 830,
+    "h": 92
+   },
+   "hinweis": "NUR Absatz 'Achtung Umsatzsteuer: … 19 % …' als Textur, Marker auf 'Achtung Umsatzsteuer' + '19 %'. NIE lesbar: 'Ein offener Punkt: … dass der Versand extra kostet' (falsch zitiert, Zeile sagt 'nenne ich Ihnen'), '$10,79', Digitalisierung."
+  },
+  "04": "NIE (Lieferzeit)",
+  "08/10": "frei, nicht eingeplant"
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 0.74,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Frame 1 = Ergebnis (hooks.md, M-002/M-011): Hook-Frage oben ab Frame 0 ('Wie viel Umsatz macht eine KI in 100 Tagen?'). Darunter die Briefseite (Empfänger schwarz) mit der ALTEN Versandzeile schon rot durchgestrichen: lesbar NUR die durchgestrichenen Beträge '11,20 € · 5,20 €' (Rest der alten Zeile weiche Textur, Blur/gedimmt), darunter die NEUE Zeile 'Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.' (9 Wörter, scharf). Außer der Hook-Frage höchstens ~12 lesbare Wörter in Frame 0. Stempel 'KEIN BELEG' erst ab B10. Kein Umsatz-Zähler, kein TAG.",
+   "kamera": "langsamer Push-in auf die durchgestrichene Zeile; Drop-Punch +4 % auf 'Umsatz'",
+   "frage": "Warum streicht die KI ihre eigenen Zahlen?",
+   "karten": [
+    {
+     "text": "Wie viel Umsatz macht / eine KI in 100 Tagen?",
+     "at": "0",
+     "t": 0.0
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.35
+    }
+   ],
+   "brief": {
+    "src": "design/lauf/Anhang_Kolonnenshirt_Serienbriefe_Lauf17.docx (alt) + design/lauf/Kolonnenshirt_Serienbriefe.docx (neu), lokale Briefansicht (noch zu bauen, Design)",
+    "alt": "Versand: zzgl. 11,20 Euro brutto bei 5 Shirts, zzgl. 5,20 Euro brutto bei einem Einzelshirt. […Lieferzeit-Satz abgedeckt]",
+    "neu": "Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung. […Lieferzeit-Teil abgedeckt]",
+    "hinweis": "Empfängerblock, Absender-Platzhalter und Website schwarz. Nie Namen/Straßen/PLZ/Orte außer Chemnitz. Lieferzeit (alt 4–10, neu 2–5 Werktage) in keinem Zustand lesbar. Neue Zeile nie als 'Versand extra' beschriften. Frame 0/Hook: von der alten Zeile nur die Beträge '11,20 € · 5,20 €' scharf (durchgestrichen), Rest weich; neue Zeile bis 'Bestellung.' scharf; zusammen ≤ 12 lesbare Wörter außer Hook-Frage (Ticket regie-R1-01)."
+   },
+   "events": [
+    0.0,
+    "Umsatz"
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 0.74,
+   "bis": 3.38,
+   "wort_start": {
+    "w": "macht",
+    "after": 0
+   },
+   "bild": "Nur Ereignisse, kein neuer Text: Strich-Linie zieht nach ('macht'), Beträge '11,20'/'5,20' wackeln ('Unternehmen'), Marker-Glanz über der neuen Zeile ('das@1.5'), Licht-Sweep ('KI@1.9'), vier weitere Briefseiten fächern dahinter auf (fünf Briefe, '100'), Tick auf 'Tage', Kamera rutscht auf 'lang' zurück auf die Zeile.",
+   "kamera": "steht, atmet; Mini-Punch auf '100'",
+   "frage": "Was stand da vorher?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "macht",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "Unternehmen",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "das@1.5",
+     "f": "popHi",
+     "v": 0.16
+    },
+    {
+     "anker": "KI@1.9",
+     "f": "click",
+     "v": 0.16
+    },
+    {
+     "anker": "100",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Tage",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "lang",
+     "f": "wshort",
+     "v": 0.16
+    }
+   ],
+   "events": [
+    "macht",
+    "Unternehmen",
+    "das@1.5",
+    "KI@1.9",
+    "100",
+    "Tage",
+    "lang"
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.38,
+   "bis": 4.95,
+   "wort_start": {
+    "w": "ganz",
+    "after": 3
+   },
+   "bild": "Stempel 'GANZ ALLEINE.' oben auf 'alleine'; Punch-in auf 'führt?'; in der Pause danach (4,6) pulst die durchgestrichene Zeile einmal (kein neuer Text).",
+   "kamera": "Punch-in 4 % auf 'führt?'",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine",
+     "t": 3.66
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz@3-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    },
+    {
+     "anker": "führt",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "t": 4.6,
+     "f": "tick",
+     "v": 0.15
+    }
+   ],
+   "events": [
+    "ganz@3",
+    "alleine",
+    "führt",
+    4.6
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 4.95,
+   "bis": 6.17,
+   "wort_start": {
+    "w": "Ich",
+    "after": 4.5
+   },
+   "bild": "Brief fliegt raus (outAt 'Ich'), Gründungsplan blendet ein (planFrom 'Ich-0.05'), Maskottchen hüpft auf 'probier' (ganz im Bild, Augen frei). KEIN Tages-Slam (nicht erste Folge). Hook-Objekt überlappt nie den Plan.",
+   "kamera": "Pull-back zum Board",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ich@4.5-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "probier",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "aus@5",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "ton": "Pause roh 'aus.' → 'Die' 0,34 s (Stille-Messung)",
+   "events": [
+    "Ich@4.5",
+    "probier",
+    "aus@5",
+    "Die@6.0"
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "rueckblick",
+   "von": 6.17,
+   "bis": 9.25,
+   "wort_start": {
+    "w": "Die",
+    "after": 6.0
+   },
+   "bild": "Gründungsplan ganz im Bild (wie Folge 13–18): WERBEBRIEF + ADRESSEN gold (current). Produkt-Karte 'SHIRTS MIT LOGO' auf 'verkauft'; auf 'Betriebe@8.6' kleine Handwerker-Silhouetten mit Shirt (kein Text).",
+   "kamera": "ruhig, Board voll",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "at": "verkauft",
+     "t": 7.09
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@6.0-0.08",
+     "f": "wqh",
+     "v": 0.18
+    },
+    {
+     "anker": "verkauft",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Betriebe@8.6",
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "rueckblick",
+   "von": 9.25,
+   "bis": 10.6,
+   "wort_start": {
+    "w": "bestickt",
+    "after": 9.0
+   },
+   "bild": "Banner 'erst auf Bestellung bestickt' in der Produkt-Karte.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "erst auf Bestellung / bestickt",
+     "at": "bestickt",
+     "t": 9.25
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "rueckblick",
+   "von": 10.6,
+   "bis": 13.1,
+   "wort_start": {
+    "w": "5",
+    "after": 10.5
+   },
+   "bild": "Am Feld WERBEBRIEF + ADRESSEN: auf '5@10.5' fächern FÜNF Briefseiten heraus (Empfänger schwarz, kein Text lesbar); auf 'Einkaufspreis@11.4' Stempel 'EINKAUF FEHLT' (Stand Folge 18, ≤ 4 Wörter, 2,2 s nach dem Banner) an einem leeren Preisschild neben den Briefen.",
+   "kamera": "leichter Push-in auf die Briefe",
+   "frage": "Und was ist heute dran?",
+   "karten": [
+    {
+     "text": "EINKAUF FEHLT",
+     "at": "Einkaufspreis@11.4",
+     "t": 11.45
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "5@10.5",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Briefe@10.8",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Einkaufspreis@11.4",
+     "f": "stamp",
+     "v": 0.28
+    }
+   ],
+   "brief": {
+    "src": "design/lauf/Anhang_Kolonnenshirt_Serienbriefe_Lauf17.docx (alt) + design/lauf/Kolonnenshirt_Serienbriefe.docx (neu), lokale Briefansicht (noch zu bauen, Design)",
+    "alt": "Versand: zzgl. 11,20 Euro brutto bei 5 Shirts, zzgl. 5,20 Euro brutto bei einem Einzelshirt. […Lieferzeit-Satz abgedeckt]",
+    "neu": "Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung. […Lieferzeit-Teil abgedeckt]",
+    "hinweis": "Empfängerblock, Absender-Platzhalter und Website schwarz. Nie Namen/Straßen/PLZ/Orte außer Chemnitz. Lieferzeit (alt 4–10, neu 2–5 Werktage) in keinem Zustand lesbar. Neue Zeile nie als 'Versand extra' beschriften."
+   }
+  },
+  {
+   "id": "B08",
+   "akt": "heute",
+   "von": 13.1,
+   "bis": 15.41,
+   "wort_start": {
+    "w": "Heute",
+    "after": 13.0
+   },
+   "bild": "Pill 'HEUTE: VERSANDZEILE' auf 'Heute'. Kamera fährt in EINE Briefseite; auf 'Versandzeile@13.9' Marker über die alte Zeile 'Versand: zzgl. 11,20 … 5,20 …' (Beträge normal klein, Lieferzeit-Satz abgedeckt).",
+   "kamera": "Fahrt vom Board in die Briefseite, Halt auf der Zeile",
+   "frage": "Was stimmt an der Zeile nicht?",
+   "karten": [
+    {
+     "text": "HEUTE: VERSANDZEILE",
+     "at": "Heute",
+     "t": 13.1
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Heute+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "Versandzeile@13.9",
+     "f": "wshort",
+     "v": 0.14
+    },
+    {
+     "anker": "Versandzeile@13.9:end",
+     "f": "tick",
+     "v": 0.14
+    }
+   ],
+   "brief": {
+    "src": "design/lauf/Anhang_Kolonnenshirt_Serienbriefe_Lauf17.docx (alt) + design/lauf/Kolonnenshirt_Serienbriefe.docx (neu), lokale Briefansicht (noch zu bauen, Design)",
+    "alt": "Versand: zzgl. 11,20 Euro brutto bei 5 Shirts, zzgl. 5,20 Euro brutto bei einem Einzelshirt. […Lieferzeit-Satz abgedeckt]",
+    "neu": "Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung. […Lieferzeit-Teil abgedeckt]",
+    "hinweis": "Empfängerblock, Absender-Platzhalter und Website schwarz. Nie Namen/Straßen/PLZ/Orte außer Chemnitz. Lieferzeit (alt 4–10, neu 2–5 Werktage) in keinem Zustand lesbar. Neue Zeile nie als 'Versand extra' beschriften."
+   }
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 15.41,
+   "bis": 19.05,
+   "wort_start": {
+    "w": "Claude",
+    "after": 15.0
+   },
+   "bild": "Echter Shot 01 im Paper-Fenster (SHOT01), Einstieg 'Claude+0.15': nur die Anhang-Karte DOCX. Auf 'Briefe@16.0' orange Rahmen + Zeiger tippt '+', Karte hüpft; 'angehängt' Klick. Auf 'Websuche' Wechsel IM SELBEN Fenster auf SHOT07 (Marker 'das Web durchsucht'); auf 'Printful@17.9' Printful-Wort im Screenshot markiert (kein selbstgemaltes Logo).",
+   "kamera": "Push-in auf Anhang-Karte, dann ruhiger Scroll im Fenster (kein Ortswechsel)",
+   "frage": "Was findet Claude?",
+   "karten": [
+    {
+     "text": "Shot 01 Anhang-Karte DOCX (Screenshot, ≤ 4 lesbare Wörter)",
+     "at": "Claude+0.15",
+     "t": 15.41
+    },
+    {
+     "text": "Shot 07 Schritte-Zeile (Screenshot, 10 Wörter)",
+     "at": "Websuche",
+     "t": 17.13
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Claude",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "Briefe@16.0",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "angehängt",
+     "f": "click",
+     "v": 0.22
+    },
+    {
+     "anker": "Websuche",
+     "f": "typing",
+     "v": 0.16
+    },
+    {
+     "anker": "Printful@17.9",
+     "f": "popLo",
+     "v": 0.18
+    }
+   ],
+   "ton": "Pausen: 'Versandzeile.' → 'Claude:' 0,57 s; 'Claude:' → 'Briefe' roh 0,43 s (STT 'Briefe'); 'angehängt,' → 'Websuche' 0,15 s (STT 'Websuche', kein 'Websearch'); 'Printful.' → 'Versandpreise' 0,60 s",
+   "shot": {
+    "src": "design/lauf/01-prompt-mit-anhang.png",
+    "size": [
+     1020,
+     540
+    ],
+    "crop": {
+     "x": 30,
+     "y": 118,
+     "w": 186,
+     "h": 186
+    },
+    "hinweis": "Nur die Anhang-Karte 'Kolonnenshirt_Serienbriefe.docx · DOCX' lesbar (≤ 4 Wörter); Prompttext höchstens weiche Textur; Kopf 'Wieder am Start' nie."
+   },
+   "shot2": {
+    "src": "design/lauf/07-schritte-zeile.png",
+    "size": [
+     975,
+     145
+    ],
+    "crop": {
+     "x": 20,
+     "y": 108,
+     "w": 670,
+     "h": 36
+    },
+    "hinweis": "Nur graue Schritte-Zeile 'Eine Datei geteilt, das Web durchsucht und 5 weitere Schritte' (10 Wörter); Marker auf 'das Web durchsucht' auf 'Websuche'."
+   },
+   "einstieg": "Claude+0.15"
+  },
+  {
+   "id": "B10",
+   "akt": "ergebnis",
+   "von": 19.05,
+   "bis": 21.5,
+   "wort_start": {
+    "w": "Versandpreise",
+    "after": 18.9
+   },
+   "bild": "Ergebnis im selben Paper-Fenster: SHOT03 Bereich 'kein_beleg' ('Für die 11,20 € und 5,20 € habe ich keinen Beleg gefunden.', Marker auf 'keinen Beleg gefunden'). Auf 'Brief' Mini-Briefseite mit der alten Zeile rechts daneben (Beträge markiert). Auf 'Beleg@20.5' Stempel 'KEIN BELEG' (Lauf-Wort) auf den Beträgen der Briefzeile.",
+   "kamera": "Halt auf dem Kernsatz, kleiner Push-in auf 'keinen Beleg'",
+   "frage": "Und jetzt? Andere Zahl rein?",
+   "karten": [
+    {
+     "text": "Shot 03 Satz 'keinen Beleg gefunden' (≤ 12 Wörter)",
+     "at": "Versandpreise",
+     "t": 19.05
+    },
+    {
+     "text": "KEIN BELEG",
+     "at": "Beleg@20.5",
+     "t": 20.59
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Versandpreise",
+     "f": "wshort",
+     "v": 0.16
+    },
+    {
+     "anker": "Brief@19.8",
+     "f": "page",
+     "v": 0.18
+    },
+    {
+     "anker": "kein@20.3",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Beleg@20.5",
+     "f": "stamp",
+     "v": 0.32
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/03-versandpreise-kein-beleg.png",
+    "size": [
+     975,
+     348
+    ],
+    "bereiche": {
+     "kein_beleg": {
+      "x": 70,
+      "y": 58,
+      "w": 780,
+      "h": 34,
+      "was": "'Versandpreise: Für die 11,20 € und 5,20 € habe ich keinen Beleg gefunden.' (12 Wörter, Marker auf 'keinen Beleg gefunden')"
+     },
+     "nur_dollar": {
+      "x": 70,
+      "y": 92,
+      "w": 700,
+      "h": 34,
+      "was": "Zeile 2 '… nennt für Shirts nach Europa nur' + Anfang Zeile 3 'Dollarbeträge' (Marker auf 'nur Dollarbeträge'); Dollarbeträge $4.99/$1.45 nicht vergrößert"
+     },
+     "kurs": {
+      "x": 70,
+      "y": 250,
+      "w": 790,
+      "h": 64,
+      "was": "'… ich rechne Dollar nicht mit einem angenommenen Kurs um.' (Marker auf 'nicht mit einem angenommenen Kurs')"
+     }
+    },
+    "hinweis": "Je Beat nur EIN Bereich hell/markiert (≤ 12 Wörter), Rest abgedunkelt. NIE lesbar: Testbericht-Satz '4,49 € …' (Zeilen 6–7), 'Schau in deinem Printful-Konto'."
+   },
+   "shot_bereich": "kein_beleg",
+   "brief": {
+    "src": "design/lauf/Anhang_Kolonnenshirt_Serienbriefe_Lauf17.docx (alt) + design/lauf/Kolonnenshirt_Serienbriefe.docx (neu), lokale Briefansicht (noch zu bauen, Design)",
+    "alt": "Versand: zzgl. 11,20 Euro brutto bei 5 Shirts, zzgl. 5,20 Euro brutto bei einem Einzelshirt. […Lieferzeit-Satz abgedeckt]",
+    "neu": "Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung. […Lieferzeit-Teil abgedeckt]",
+    "hinweis": "Empfängerblock, Absender-Platzhalter und Website schwarz. Nie Namen/Straßen/PLZ/Orte außer Chemnitz. Lieferzeit (alt 4–10, neu 2–5 Werktage) in keinem Zustand lesbar. Neue Zeile nie als 'Versand extra' beschriften."
+   }
+  },
+  {
+   "id": "B11",
+   "akt": "entscheidung",
+   "von": 21.5,
+   "bis": 23.46,
+   "wort_start": {
+    "w": "Sie",
+    "after": 21.3
+   },
+   "bild": "Entscheidung auf der Briefseite (Story-Objekt): auf 'streicht' zieht ein roter Strich über die Beträge der alten Zeile (= Frame-1-Bild); auf 'Beträge' blendet darunter die NEUE Zeile ein (SHOT02 bzw. lokale Briefansicht, NUR 'Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.'), kleines Häkchen 'in allen 5 Briefen' als Icon (5 Mini-Seiten blinken, kein Text). In der Pause vor 'Warum?' steht das Bild (Musik-Mulde).",
+   "kamera": "Pull-back, Halt auf alt (durchgestrichen) → neu",
+   "frage": "Warum nicht einfach umrechnen?",
+   "karten": [
+    {
+     "text": "neue Zeile (Screenshot/Brief, 9 Wörter)",
+     "at": "Beträge",
+     "t": 22.13
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Sie@21.3-0.1",
+     "f": "wq2",
+     "v": 0.18
+    },
+    {
+     "anker": "streicht",
+     "f": "roll",
+     "v": 0.22
+    },
+    {
+     "anker": "Beträge",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Beträge:end",
+     "f": "tick",
+     "v": 0.14
+    }
+   ],
+   "ton": "Musik: Mulde Clip 22,55–23,38 (Kurve 0,018), Akzent auf 'Warum?' (23,46; Kurve 0,045), danach 0,03",
+   "shot": {
+    "src": "design/lauf/02-neue-versandzeile.png",
+    "size": [
+     975,
+     198
+    ],
+    "crop": {
+     "x": 20,
+     "y": 98,
+     "w": 650,
+     "h": 34
+    },
+    "hinweis": "NUR '„Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.' (Zeile 3 bis 'Bestellung.'). Lieferzeit-Teil ('Gestickt wird … 2 bis 5 Werktage') NIE lesbar (Ticket autor-R1-04): abschneiden/abdecken."
+   },
+   "brief": {
+    "src": "design/lauf/Anhang_Kolonnenshirt_Serienbriefe_Lauf17.docx (alt) + design/lauf/Kolonnenshirt_Serienbriefe.docx (neu), lokale Briefansicht (noch zu bauen, Design)",
+    "alt": "Versand: zzgl. 11,20 Euro brutto bei 5 Shirts, zzgl. 5,20 Euro brutto bei einem Einzelshirt. […Lieferzeit-Satz abgedeckt]",
+    "neu": "Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung. […Lieferzeit-Teil abgedeckt]",
+    "hinweis": "Empfängerblock, Absender-Platzhalter und Website schwarz. Nie Namen/Straßen/PLZ/Orte außer Chemnitz. Lieferzeit (alt 4–10, neu 2–5 Werktage) in keinem Zustand lesbar. Neue Zeile nie als 'Versand extra' beschriften."
+   }
+  },
+  {
+   "id": "B12",
+   "akt": "warum",
+   "von": 23.46,
+   "bis": 27.93,
+   "wort_start": {
+    "w": "Warum",
+    "after": 23.0
+   },
+   "bild": "Alt→neu-Briefzeile rückt ins obere Drittel und bleibt. Pill 'WARUM?' auf 'Warum?'. Grund 1 auf 'Dollar': Karte 'NUR DOLLAR' mit Unterzeile 'im Lauf: Versandseite' (nie verallgemeinern); Beleg SHOT03 Bereich 'nur_dollar' nur als weiche Textur mit Marker auf 'nur Dollarbeträge'; Briefzeile oben abgedunkelt; neue lesbare Wörter auf 'Dollar' ≤ 12. Grund 2 auf 'geraten': Karte 'UMRECHNEN = GERATEN', Unterzeile 'kein angenommener Kurs'; Beleg SHOT03 Bereich 'kurs'. Je Grund ≥ 1,2 s; ~0,3 s Pause 'Dollar.' → 'Umrechnen'.",
+   "kamera": "kurze Fahrt nach unten zu den Karten, Halt",
+   "frage": "Wie viel kostet der Versand dann?",
+   "karten": [
+    {
+     "text": "WARUM?",
+     "at": "Warum",
+     "t": 23.46
+    },
+    {
+     "text": "NUR DOLLAR",
+     "unter": "im Lauf: Versandseite",
+     "at": "Dollar",
+     "t": 25.3
+    },
+    {
+     "text": "UMRECHNEN = GERATEN",
+     "unter": "kein angenommener Kurs",
+     "vs": "Kurs ✗",
+     "at": "geraten",
+     "t": 26.81
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.25
+    },
+    {
+     "anker": "Printful@24.0",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "Dollar",
+     "f": "popLo",
+     "v": 0.22
+    },
+    {
+     "anker": "Umrechnen",
+     "f": "wshort",
+     "v": 0.14
+    },
+    {
+     "anker": "geraten",
+     "f": "clack",
+     "v": 0.28
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/03-versandpreise-kein-beleg.png",
+    "size": [
+     975,
+     348
+    ],
+    "bereiche": {
+     "kein_beleg": {
+      "x": 70,
+      "y": 58,
+      "w": 780,
+      "h": 34,
+      "was": "'Versandpreise: Für die 11,20 € und 5,20 € habe ich keinen Beleg gefunden.' (12 Wörter, Marker auf 'keinen Beleg gefunden')"
+     },
+     "nur_dollar": {
+      "x": 70,
+      "y": 92,
+      "w": 700,
+      "h": 34,
+      "was": "Zeile 2 '… nennt für Shirts nach Europa nur' + Anfang Zeile 3 'Dollarbeträge' (Marker auf 'nur Dollarbeträge'); Dollarbeträge $4.99/$1.45 nicht vergrößert"
+     },
+     "kurs": {
+      "x": 70,
+      "y": 250,
+      "w": 790,
+      "h": 64,
+      "was": "'… ich rechne Dollar nicht mit einem angenommenen Kurs um.' (Marker auf 'nicht mit einem angenommenen Kurs')"
+     }
+    },
+    "hinweis": "Je Beat nur EIN Bereich hell/markiert (≤ 12 Wörter), Rest abgedunkelt. NIE lesbar: Testbericht-Satz '4,49 € …' (Zeilen 6–7), 'Schau in deinem Printful-Konto'."
+   },
+   "beleg_bereiche": [
+    "nur_dollar",
+    "kurs"
+   ]
+  },
+  {
+   "id": "B13",
+   "akt": "offen",
+   "von": 27.93,
+   "bis": 31.8,
+   "wort_start": {
+    "w": "109",
+    "after": 27.5
+   },
+   "bild": "Fünf Logo-Shirts als Fünferpack mit IHREM Verkaufs-Preisschild (Kunden-Seite: Pfeil Kunde → Firma, nicht Printful). Schild fliegt auf '109' ein (noch ohne Text), Karte 'VERKAUF: 109 € / 5' auf 'Verkaufspreis'. Auf 'offen' Stempel 'OFFEN' aufs Schild. Beleg-Textur SHOT05 (Kopf 'Können die 109 € bleiben?' + 'nicht entscheiden'). 18,32 € NIE.",
+   "kamera": "Fahrt von der Briefzeile zum Fünferpack (einziger Ortswechsel im Satz), Halt",
+   "frage": "Reicht der Preis überhaupt?",
+   "karten": [
+    {
+     "text": "VERKAUF: 109 € / 5",
+     "at": "Verkaufspreis",
+     "t": 29.0
+    },
+    {
+     "text": "OFFEN",
+     "at": "offen",
+     "t": 30.97
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "109",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Verkaufspreis",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Shirts@30",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "offen",
+     "f": "stamp",
+     "v": 0.3
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/05-109-nicht-entscheiden.png",
+    "size": [
+     975,
+     240
+    ],
+    "crop": {
+     "x": 20,
+     "y": 8,
+     "w": 900,
+     "h": 90
+    },
+    "hinweis": "Kopf 'Können die 109 € bleiben?' + 'Das kann ich ohne deinen Einkaufspreis nicht entscheiden.' – 'Was dir bleibt'/18,32 € nie lesbar (gilt nur mit Umsatzsteuer)."
+   }
+  },
+  {
+   "id": "B14",
+   "akt": "offen",
+   "von": 31.8,
+   "bis": 35.15,
+   "wort_start": {
+    "w": "Ihr",
+    "after": 31.5
+   },
+   "bild": "Neben dem Fünferpack zwei leere Felder: Karte 'EINKAUF ? · STEUER ?' auf 'Einkaufspreis@32' (≥ 1,2 s nach OFFEN); auf 'Umsatzsteuer-Status' pulst das Feld 'STEUER ?' (kein neuer Text). Beleg-Textur SHOT09 (Marker 'Printful-Preis' + 'Umsatzsteuerstatus'). Auf 'Umsatzsteuer-Status+0.85' (~34,2 s) blinkt am Board-Feld GEWERBE der Badge 'UST ?' (kein neuer Text, Ticket regie-R1-02).",
+   "kamera": "steht, kleiner Push-in auf die zwei Felder",
+   "frage": "Was heißt Umsatzsteuer-Status?",
+   "karten": [
+    {
+     "text": "EINKAUF ? · STEUER ?",
+     "at": "Einkaufspreis@32",
+     "t": 32.3
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Ihr@31.5",
+     "f": "wshort",
+     "v": 0.14
+    },
+    {
+     "anker": "Einkaufspreis@32",
+     "f": "popLo",
+     "v": 0.2
+    },
+    {
+     "anker": "Umsatzsteuer-Status",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "Umsatzsteuer-Status+0.85",
+     "f": "tick",
+     "v": 0.12
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/09-steuer-angebot-rechnen.png",
+    "size": [
+     975,
+     153
+    ],
+    "crop": {
+     "x": 20,
+     "y": 48,
+     "w": 940,
+     "h": 70
+    },
+    "hinweis": "Nur 'Wenn du mir deinen Printful-Preis … und deinen Umsatzsteuerstatus nennst' als Textur, Marker auf 'Printful-Preis' und 'Umsatzsteuerstatus'. Satz 1 'Ich bin kein Steuer- oder Finanzberater' darf mit."
+   },
+   "events": [
+    "Umsatzsteuer-Status+0.85"
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "als_naechstes",
+   "von": 35.15,
+   "bis": 38.53,
+   "wort_start": {
+    "w": "Als",
+    "after": 35.0
+   },
+   "bild": "Pill 'ALS NÄCHSTES' auf 'Als'. Feld 'STEUER ?' wächst zur Frage-Karte 'MIT ODER OHNE?' auf 'Umsatzsteuer@36.8'; Beleg-Textur SHOT06 nur Absatz 'Achtung Umsatzsteuer … 19 %' (Marker). Auf 'Umsatzsteuer@36.8+0.7' (~37,6 s) pulst am Board GEWERBE mit Badge 'UST ?' (kein neuer Text, Ticket regie-R1-02). Kein Steuerrat.",
+   "kamera": "Push-in auf die Frage-Karte, Halt",
+   "frage": "Was ist besser?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@35.0",
+     "t": 35.15
+    },
+    {
+     "text": "MIT ODER OHNE?",
+     "at": "Umsatzsteuer@36.8",
+     "t": 36.88
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@35.0-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Als@35.0",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "anker": "Mit@36",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Umsatzsteuer@36.8",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Umsatzsteuer@36.8+0.7",
+     "f": "popLo",
+     "v": 0.14
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/06-kosten-umsatzsteuer.png",
+    "size": [
+     975,
+     459
+    ],
+    "crop": {
+     "x": 70,
+     "y": 250,
+     "w": 830,
+     "h": 92
+    },
+    "hinweis": "NUR Absatz 'Achtung Umsatzsteuer: … 19 % …' als Textur, Marker auf 'Achtung Umsatzsteuer' + '19 %'. NIE lesbar: 'Ein offener Punkt: … dass der Versand extra kostet' (falsch zitiert, Zeile sagt 'nenne ich Ihnen'), '$10,79', Digitalisierung."
+   },
+   "events": [
+    "Umsatzsteuer@36.8+0.7"
+   ]
+  },
+  {
+   "id": "B16",
+   "akt": "cta",
+   "von": 38.53,
+   "bis": 45.27,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 38.0
+   },
+   "bild": "Endkarte wie Folge 9–18 (end-Akt, itemTag 'DM'): Keyword 'Beleg' tippt auf '„Beleg“', Haken, Flieger. EIN Block 'PRÜF-PROMPT' auf 'Prompt' (Snip: Mini-Prompt-Karte ohne lesbaren Text außer 'Erfinde nichts.'). Ergebnis-Block '10 MIN: VERSANDZEILE GEPRÜFT' auf '10@41.9' (≥ 1,2 s nach PRÜF-PROMPT). CTA-Board zeigt Stand NACH der Folge: WERBEBRIEF + ADRESSEN gold (current, kein Haken: Briefe noch nicht versandfertig), DRUCK + PREIS Badge '5ER OFFEN', GEWERBE Badge 'UST ?'. Halt bis Ende (Endkarte ab 43,95), Bot-Hüpfer ~SEC-0,3.",
+   "kamera": "ruhiger Push-in, Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "Beleg (Keyword)",
+     "at": "Beleg@39",
+     "t": 39.32
+    },
+    {
+     "text": "PRÜF-PROMPT",
+     "at": "Prompt",
+     "t": 40.8
+    },
+    {
+     "text": "10 MIN: VERSANDZEILE GEPRÜFT",
+     "at": "10@41.9",
+     "t": 42.03
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "Beleg@39",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Beleg@39:end",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "ich@40",
+     "f": "wqh",
+     "v": 0.2
+    },
+    {
+     "anker": "Prompt",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "In@41.7",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "10@41.9",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "Versandzeile@43",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "t": 44.97,
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

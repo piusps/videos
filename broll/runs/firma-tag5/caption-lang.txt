@@ -1,0 +1,18 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt will sie wissen, was die Konkurrenz für fünf bestickte Logo-Shirts verlangt.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. In der letzten Folge hat sie Stickerei gewählt: Stick ist laut Anbieter bis 95 Grad freigegeben und geht ab einem Stück.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen, unten links auf „+“ klicken und „Research“ einschalten. Das geht in den bezahlten Plänen (Pro, Max, Team, Enterprise), und die Websuche muss an sein.
+2. Über „+“ und „Upload or add files“ das letzte Ergebnis anhängen, hier die Entscheidung für Stickerei.
+3. Fragen: Was zahlt [typischer Kunde] für [eine typische Bestellung]? Mindestens acht Anbieter, Gesamtpreis mit Einrichtung und Versand, Lieferzeit, jeweils mit Quelle. Wo ist eine Lücke für eine kleine Firma? Erfinde nichts.
+
+Ergebnis im echten Lauf (295 Quellen, 7 Minuten 19 Sekunden, 14 Anbieter laut Claude): Fünf bestickte Shirts kosten am günstigsten rund 110 Euro brutto mit Einrichtung und Versand, bei teureren Anbietern laut Claude 150 bis über 200 Euro. Fünf Anbieter in der Tabelle nehmen fünf Stück als Erstauftrag gar nicht an (Mindestmenge 10 bis 30), und selbst der günstigste Workwear-Shop stickt kein einzelnes Shirt, erst ab fünf. Die KI hält deshalb beim Preis mit und setzt auf einzelne Nachbestellungen ohne neue Einrichtung, etwa für den neuen Gesellen, dazu ein 60-Grad-Shirt und ein Logo ohne Farb- oder Größengrenze. Denn die günstigen Druck-auf-Bestellung-Anbieter begrenzen das Logo (Spreadshirt höchstens 3 Farben, Shirtigo höchstens 9 × 9 cm Stickfläche), und für ihre Stickshirts fand Claude keine 60-Grad-Angabe. Ehrlich dazu: Fast alle Summen sind Untergrenzen, von Claude aus „ab“-Preisen addiert. Bei einem Anbieter ist unklar, ob der Stick im Preis steckt.
+
+Kommentiere „Konkurrenz“, dann schick ich dir den Guide mit der Frage zum Kopieren, dem echten Ergebnis und der Preistabelle aus dem Lauf.
+
+Offen bleibt: Welcher Partner stickt 60-Grad-Shirts einzeln, ohne neue Einrichtung, und zu welchem Einkaufspreis? Das klärt die KI als Nächstes.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #handwerk #firmenshirts

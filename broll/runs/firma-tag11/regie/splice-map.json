@@ -1,0 +1,292 @@
+{
+ "mapping": [
+  [
+   0.0,
+   4.46,
+   0.0,
+   4.46
+  ],
+  [
+   4.46,
+   6.055,
+   4.640000000000001,
+   6.235011337868482
+  ],
+  [
+   6.055,
+   10.95,
+   6.265011337868481,
+   11.16
+  ],
+  [
+   10.95,
+   12.64,
+   11.16,
+   12.85
+  ],
+  [
+   12.64,
+   13.535,
+   12.969999999999999,
+   13.865011337868479
+  ],
+  [
+   13.535,
+   14.975,
+   13.94501133786848,
+   15.38501133786848
+  ],
+  [
+   14.975,
+   16.630000000000003,
+   15.65501133786848,
+   17.31
+  ],
+  [
+   16.630000000000003,
+   17.455000000000002,
+   17.54,
+   18.36501133786848
+  ],
+  [
+   17.455000000000002,
+   20.08,
+   18.43501133786848,
+   21.060000000000002
+  ],
+  [
+   20.08,
+   21.205,
+   21.5,
+   22.624988662131518
+  ],
+  [
+   21.205,
+   22.240000000000002,
+   22.72498866213152,
+   23.759999999999998
+  ],
+  [
+   22.240000000000002,
+   23.04,
+   24.52,
+   25.32
+  ],
+  [
+   23.04,
+   24.71,
+   25.54,
+   27.21
+  ],
+  [
+   24.71,
+   26.73,
+   27.529999999999998,
+   29.549999999999997
+  ],
+  [
+   26.73,
+   27.410000000000004,
+   29.95,
+   30.63
+  ],
+  [
+   27.410000000000004,
+   28.755000000000003,
+   30.98,
+   32.32501133786848
+  ],
+  [
+   28.755000000000003,
+   29.905,
+   32.65501133786848,
+   33.80498866213152
+  ],
+  [
+   29.905,
+   31.875,
+   33.864988662131516,
+   35.83501133786848
+  ],
+  [
+   31.875,
+   33.5,
+   36.08501133786848,
+   37.71
+  ],
+  [
+   33.5,
+   36.2,
+   37.989999999999995,
+   40.69
+  ],
+  [
+   36.2,
+   39.97965986394558,
+   41.01,
+   44.78965986394557
+  ]
+ ],
+ "pausen": [
+  {
+   "nach": 14,
+   "wort": "führt?",
+   "vor": "Ich",
+   "roh": 0.52,
+   "neu": 0.7,
+   "grund": "führt? -> Ich"
+  },
+  {
+   "nach": 18,
+   "wort": "aus.",
+   "vor": "Die",
+   "roh": 0.67,
+   "neu": 0.7,
+   "grund": "aus. -> Die (Rückblick beginnt)"
+  },
+  {
+   "nach": 33,
+   "wort": "Bestellung.",
+   "vor": "Website-Entwurf,",
+   "roh": 0.18,
+   "neu": 0.18,
+   "grund": "Rückblick Satz 1 -> 2 (Autor-Vorgabe <= 0,25 s)"
+  },
+  {
+   "nach": 35,
+   "wort": "offline.",
+   "vor": "Heute:",
+   "roh": 0.58,
+   "neu": 0.7,
+   "grund": "offline. -> Heute (Rückblick endet, Fahrt zu GEWERBE)"
+  },
+  {
+   "nach": 36,
+   "wort": "Heute:",
+   "vor": "Was",
+   "roh": 0.47,
+   "neu": 0.55,
+   "grund": "Heute: -> Was (Doppelpunkt)"
+  },
+  {
+   "nach": 40,
+   "wort": "anmelden?",
+   "vor": "Letztes",
+   "roh": 0.43,
+   "neu": 0.7,
+   "grund": "anmelden? -> Weg-Satz (neuer Akt)"
+  },
+  {
+   "nach": 43,
+   "wort": "angehängt,",
+   "vor": "Websuche:",
+   "roh": 0.12,
+   "neu": 0.35,
+   "grund": "angehängt, -> Websuche (Aufzählung, Shot-Wechsel)"
+  },
+  {
+   "nach": 44,
+   "wort": "Websuche:",
+   "vor": "dreizehn",
+   "roh": 0.43,
+   "neu": 0.5,
+   "grund": "Websuche: -> dreizehn (Doppelpunkt, Shot-Wechsel)"
+  },
+  {
+   "nach": 48,
+   "wort": "Word-Checkliste.",
+   "vor": "Als",
+   "roh": 0.26,
+   "neu": 0.7,
+   "grund": "Word-Checkliste. -> Als Erstes (Entscheidung)"
+  },
+  {
+   "nach": 50,
+   "wort": "Erstes:",
+   "vor": "das",
+   "roh": 0.45,
+   "neu": 0.55,
+   "grund": "Erstes: -> das Gewerbe (Doppelpunkt-Spannung)"
+  },
+  {
+   "nach": 52,
+   "wort": "Gewerbe.",
+   "vor": "Warum?",
+   "roh": 0.14,
+   "neu": 0.9,
+   "grund": "Gewerbe. -> Warum (vor dem Warum bis 0,9)"
+  },
+  {
+   "nach": 53,
+   "wort": "Warum?",
+   "vor": "Pflicht",
+   "roh": 0.48,
+   "neu": 0.7,
+   "grund": "Warum? -> Grund 1"
+  },
+  {
+   "nach": 58,
+   "wort": "Tag.",
+   "vor": "Die",
+   "roh": 0.38,
+   "neu": 0.7,
+   "grund": "Grund 1 -> Grund 2 (Karten je >= 1,2 s)"
+  },
+  {
+   "nach": 64,
+   "wort": "auf.",
+   "vor": "Haken:",
+   "roh": 0.3,
+   "neu": 0.7,
+   "grund": "Grund 2 -> Haken (Pfeilkette steht)"
+  },
+  {
+   "nach": 65,
+   "wort": "Haken:",
+   "vor": "Das",
+   "roh": 0.2,
+   "neu": 0.55,
+   "grund": "Haken: -> Das"
+  },
+  {
+   "nach": 70,
+   "wort": "Mensch.",
+   "vor": "Als",
+   "roh": 0.37,
+   "neu": 0.7,
+   "grund": "Mensch. -> Als Nächstes (Zähler 9 VON 13 steht)"
+  },
+  {
+   "nach": 72,
+   "wort": "Nächstes:",
+   "vor": "Wen",
+   "roh": 0.49,
+   "neu": 0.55,
+   "grund": "Nächstes: -> Wen"
+  },
+  {
+   "nach": 77,
+   "wort": "an?",
+   "vor": "Kommentiere",
+   "roh": 0.45,
+   "neu": 0.7,
+   "grund": "an? -> CTA"
+  },
+  {
+   "nach": 79,
+   "wort": "„Gewerbe“,",
+   "vor": "und",
+   "roh": 0.12,
+   "neu": 0.4,
+   "grund": "„Gewerbe“, -> und (Keyword setzt sich)"
+  },
+  {
+   "nach": 87,
+   "wort": "Checkliste.",
+   "vor": "Damit",
+   "roh": 0.38,
+   "neu": 0.7,
+   "grund": "Checkliste. -> Damit"
+  }
+ ]
+}

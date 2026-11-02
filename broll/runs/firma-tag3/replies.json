@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Ärger: Guide mit der Frage per DM, Trigger-Wort im Video: Ärger)",
+ "commentReply": "Der Guide liegt in deiner DM. Was nervt deine Kunden am meisten?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Welches Ärgernis kennst du selbst vom Bestellen?",
+  "Schick ich dir gerade. Hättest du auch zuerst das Waschen geklärt?",
+  "Angekommen, alles liegt in deiner DM. Liest du vor dem Bestellen Bewertungen?",
+  "Liegt in deiner DM. Was würdest du Claude als Nächstes fragen?",
+  "Der Guide ist unterwegs. Für welches Produkt probierst du die Frage aus?"
+ ]
+}

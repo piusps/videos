@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Logo: Guide mit der Frage, der Stick-Prüfliste und den drei Entwürfen per DM, Trigger-Wort im Video: Logo)",
+ "commentReply": "Der Guide liegt in deiner DM. Hast du schon ein Logo für deine Firma?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hättest du auch Entwurf C genommen?",
+  "Schick ich dir gerade, mit allen drei Entwürfen. Welcher gefällt dir am besten?",
+  "Angekommen, alles liegt in deiner DM. Wird dein Logo gestickt oder gedruckt?",
+  "Liegt in deiner DM, mit der Prüfliste. Wie breit soll dein Logo auf der Brust werden?",
+  "Der Guide ist unterwegs. Hast du schon mal ein Probeshirt bestellt?"
+ ]
+}

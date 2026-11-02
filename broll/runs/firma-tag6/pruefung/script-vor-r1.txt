@@ -1,0 +1,11 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Ihre Lücke: Shirts einzeln nachbestellen.
+Heute sucht sie einen Partner dafür.
+Plus, Research an, Ergebnis anhängen. Frage: Wer stickt einzeln und verschickt direkt?
+Claude prüft zweihundertvierundneunzig Quellen. Die KI nimmt A einundsechzig, unter Vorbehalt.
+Warum? Nur dieser Partner hat ein besticktes Sechzig-Grad-Arbeitsshirt belegt.
+Und bestellt wird dort ab einem Stück.
+Haken: Zum Ladenpreis kosten fünf Shirts dort hunderteinundfünfzig Euro, am Markt hundertzehn.
+Die Händlerpreise frage ich an.
+Als Nächstes rechnet sie: Bleibt pro Shirt überhaupt etwas übrig?
+Kommentiere „Partner“, und ich schick dir die Frage und die Partnertabelle. Damit hast du in zehn Minuten mögliche Partner im Vergleich.

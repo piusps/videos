@@ -1,0 +1,11 @@
+final vs mix.wav: corr 0.9999, Laenge mix 47.85s final 47.87s
+Akt            Stimme(aktiv) Musik  Abstand(Median je 100ms-Fenster mit Stimme)
+Hook            -20.4  -45.0   19.9 dB  (min   0.4, n=47)
+Rueckblick      -20.3  -38.6   18.0 dB  (min   2.8, n=70)
+Claude          -20.2  -40.9   18.8 dB  (min   7.2, n=44)
+Wechsel         -20.1  -37.1   16.8 dB  (min  -2.8, n=26)
+Warum           -21.0  -40.6   18.7 dB  (min   0.9, n=84)
+Vorschlag       -20.7  -41.5   20.4 dB  (min   2.2, n=42)
+Haken           -21.5  -41.5   18.0 dB  (min   3.7, n=24)
+Als Naechstes   -20.1  -44.6   22.2 dB  (min   7.6, n=35)
+CTA             -21.3  -40.4   19.4 dB  (min   4.6, n=50)

@@ -1,0 +1,22 @@
+KI baut eine Firma von Null. Tag 1. Ziel: 100 Kunden.
+
+Kunde 1: ein Malermeister. Er verliert Aufträge, und zwar nicht am Preis. Die Anfragen kommen per Mail, seine Angebote erst am Sonntag. Bis dahin hat ein anderer den Auftrag.
+
+So schreibt Claude dir die Angebote selbst:
+1. Gmail und Google Drive verbinden: Customize → Connectors → + → Gmail → Connect, danach dasselbe für Google Drive. Im Chat dann unten links auf + → Connectors → Gmail und Google Drive einschalten.
+2. Deine Preisliste als Google-Dokument in Google Drive ablegen.
+3. Claude fragen: „Schreib zu jeder Anfrage in meinem Gmail ein Angebot nach meiner Preisliste, als Entwurf.“
+
+Claude legt die Angebote als Mail-Entwürfe an. Du prüfst und drückst Senden, noch am selben Abend. Standardmäßig fragt Claude außerdem, bevor es selbst etwas sendet.
+
+Wichtig: Das funktioniert, wenn deine Anfragen in Gmail ankommen. Anhänge liest Claude in Gmail nicht, die Anfrage muss im Mailtext stehen.
+
+Der Malermeister will nichts davon selbst einrichten. Das übernimmt die KI-Firma der Serie für ihn, zum Serienpreis von 49 € im Monat.
+
+Schreib deinen Beruf in die Kommentare. Ich schick dir den Prompt, du setzt nur deinen Beruf und deine Leistungen ein.
+
+Wer so etwas ohne Einrichtung nutzen will: Dafür gibt es Superkind.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #handwerk #selbstständig #angebot #ki #mittelstand

@@ -1,0 +1,1251 @@
+{
+ "folge": 6,
+ "tag": 6,
+ "serientag": 2,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-29",
+ "slot": "2026-10-29 15:00",
+ "keyword": "Partner",
+ "seconds": 46.75,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 100.16,
+  "musicCurve": [
+   [
+    0,
+    0.03
+   ],
+   [
+    6.6,
+    0.03
+   ],
+   [
+    6.7,
+    0.006
+   ],
+   [
+    7.4,
+    0.006
+   ],
+   [
+    7.5,
+    0.03
+   ],
+   [
+    19.2,
+    0.03
+   ],
+   [
+    19.45,
+    0.01
+   ],
+   [
+    20.55,
+    0.01
+   ],
+   [
+    20.64,
+    0.04
+   ],
+   [
+    21.3,
+    0.026
+   ],
+   [
+    45.75,
+    0.026
+   ],
+   [
+    46.75,
+    0
+   ]
+  ]
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Zahlen in words.json als Ziffern (100, 294, 151, 110., 10); 'A einundsechzig' steht als ein Caption-Wort 'A61,'. Engine-Schreibweise in 'anker' (Wort@after±x). Kollisionen: 'Partner' (11.76 / 23.45 / 40.09 / 44.65), 'Die' (5.01 / 19.87), 'Frage' (14.66 / 41.48), 'Shirts' (6.21 / 9.44 / 29.92), 'einzeln' (9.81 / 15.92), 'Claude' (17.74 / 35.20), 'Und'/'und' (26.24 / 16.36 / 33.78 / 40.75 / 41.90) -> immer mit @after.",
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "WERBUNG",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2
+  ],
+  "inArbeit": [
+   3
+  ],
+  "current": 4,
+  "notiz": "Bibel Folge 5: DRUCK erledigt, PREIS current bis Folge 7. Daher bleibt PREIS (Index 3) in Arbeit (orange, kein Haken) und zeigt das Folge-5-Ergebnis; PARTNER wird als neuer Schritt direkt dahinter (Index 4) eingefügt, Indizes 0-3 bleiben wie in Folge 4/5. 10 Schritte (Folge 4 nannte das als Alternative); falls die Engine nur 9 zeigt: WERBUNG raus. Folge 7 setzt PARTNER (unter Vorbehalt) auf erledigt und schließt PREIS ab. Chef/firma-design gleichen mit dem Board von Folge 5 ab."
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 1.0,
+   "wort_start": {
+    "w": "Wie",
+    "after": 0
+   },
+   "anker": "0",
+   "bild": "Frame 1 = Ergebnis, nur Belegtes: Partner-Wand (7 Karten, Namen klein/unscharf), vorne die A61-Karte groß mit grünem Pflegeetikett '60 °C' und Stempel 'AB 1 STÜCK'; darunter rot die Rechnung '5 Shirts: 151 €' gegen grau 'Markt: 110 €'. Text-Hook oben 'Wie viel Umsatz macht / eine KI in 100 Tagen?' (Zeile 2 orange) fällt auf 'Umsatz'. Kein Umsatz-Zähler (0 €).",
+   "kamera": "langsamer Push-in auf Karte + Rechnung",
+   "frage": "Warum ist der grüne Partner zu teuer?",
+   "karten": [
+    {
+     "text": "60 °C",
+     "farbe": "grün",
+     "at": "0"
+    },
+    {
+     "text": "AB 1 STÜCK",
+     "at": "0"
+    },
+    {
+     "text": "5 Shirts: 151 €",
+     "farbe": "rot",
+     "at": "0"
+    },
+    {
+     "text": "Markt: 110 €",
+     "farbe": "grau",
+     "at": "0"
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 1.0,
+   "bis": 3.0,
+   "wort_start": {
+    "w": "Unternehmen",
+    "after": 0.9
+   },
+   "anker": "Unternehmen",
+   "bild": "Rechnung: '151 €' pulsiert rot einmal (auf '100'), Rest der Wand atmet. Keine neue Info, nur Bewegung am Objekt.",
+   "kamera": "steht, leichtes Atmen",
+   "frage": "Lohnt sich das?",
+   "karten": [
+    {
+     "text": "151 € Puls",
+     "at": "100"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Unternehmen",
+     "f": "wshort",
+     "v": 0.22
+    },
+    {
+     "anker": "100",
+     "f": "tick",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.0,
+   "bis": 3.98,
+   "wort_start": {
+    "w": "ganz",
+    "after": 2.9
+   },
+   "anker": "ganz-0.06",
+   "bild": "Stempel 'GANZ ALLEINE.' auf 'alleine'.",
+   "kamera": "kurzer Punch-in 4 %",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 3.98,
+   "bis": 4.95,
+   "wort_start": {
+    "w": "Ich",
+    "after": 3.9
+   },
+   "anker": "Ich",
+   "bild": "Kein Tag-Slam (Folge 6 ist nicht die erste des Tages). Kamera zieht von der Rechnung zurück auf die ganze Wand; kleines HUD-Badge 'TAG 2' (Engine) blendet ein. Keine Hand, kein Umschlag.",
+   "kamera": "Pull-back",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [
+    {
+     "text": "HUD TAG 2 (klein)",
+     "at": "Ich"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "probier",
+     "f": "click",
+     "v": 0.4
+    },
+    {
+     "anker": "aus@4.5",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "recap",
+   "von": 4.95,
+   "bis": 6.68,
+   "wort_start": {
+    "w": "Die",
+    "after": 4.9
+   },
+   "anker": "Die@4.9-0.08",
+   "bild": "Rückblick-Akt (gleicher Aufbau wie Folge 3–5): Gründungsplan ganz im Bild, Schritte 1–3 (PRODUKT, KUNDE, DRUCK) mit grünem Haken, Schritt 4 PREIS orange 'in Arbeit' (seit Folge 5, wird in Folge 7 fertig). Auf 'Shirts' fliegt die Produkt-Karte UNTER das Board (x 40–680, y 1046–1340, deckt keine Spalte): Shirt + 'SHIRTS MIT LOGO'.",
+   "kamera": "steht ruhig, Board voll im Bild",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "icon": "shirt",
+     "at": "Shirts@6.1"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@4.9-0.06",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Shirts@6.1-0.2",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "recap",
+   "von": 6.68,
+   "bis": 8.9,
+   "wort_start": {
+    "w": "Logo",
+    "after": 6.6
+   },
+   "anker": "Logo@6.6",
+   "bild": "Logo-Fleck erscheint als Stick auf dem Shirt der Karte (auf 'Logo'); oranges Banner 'erst auf Bestellung\\nbestickt' auf 'bestickt'.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "Logo-Stick auf Shirt",
+     "at": "Logo@6.6"
+    },
+    {
+     "text": "erst auf Bestellung\nbestickt",
+     "at": "bestickt@7.7"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Logo@6.6",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "bestickt@7.7",
+     "f": "page",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "recap",
+   "von": 8.9,
+   "bis": 10.8,
+   "wort_start": {
+    "w": "Ihre",
+    "after": 8.8
+   },
+   "anker": "Ihre",
+   "bild": "Zuletzt bearbeiteter Schritt 4 PREIS leuchtet (orange, in Arbeit), hüpft und zeigt das Ergebnis der Vorfolge: klein 'PREIS · MARKT 110 €', groß 'LÜCKE: EINZELN NACHBESTELLEN'. Auf 'einzeln' springt ein einzelnes Shirt-Icon neben das Label.",
+   "kamera": "leichter Push-in auf Schritt 4 PREIS",
+   "frage": "Und wer macht das?",
+   "karten": [
+    {
+     "text": "LÜCKE: EINZELN NACHBESTELLEN",
+     "step": 3,
+     "at": "Ihre"
+    },
+    {
+     "text": "1-Shirt-Icon",
+     "at": "einzeln@9.7"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Ihre",
+     "f": "check",
+     "v": 0.3
+    },
+    {
+     "anker": "einzeln@9.7",
+     "f": "popLo",
+     "v": 0.28
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "akt": "recap",
+   "von": 10.8,
+   "bis": 12.04,
+   "wort_start": {
+    "w": "Heute",
+    "after": 10.7
+   },
+   "anker": "Heute",
+   "bild": "Fahrt zum heutigen Schritt 5 PARTNER (Board bleibt in voller Breite), Schritt leuchtet gold und poppt, Produkt-Karte fliegt raus, Pill unter dem Board 'HEUTE: PARTNER FÜR EINZELSTÜCKE'.",
+   "kamera": "Fahrt auf Zeile Schritt 5",
+   "frage": "Wie findet sie den?",
+   "karten": [
+    {
+     "text": "HEUTE: PARTNER FÜR EINZELSTÜCKE",
+     "at": "Heute"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.15",
+     "f": "wq",
+     "v": 0.25
+    },
+    {
+     "anker": "Heute+0.1",
+     "f": "chime",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 12.04,
+   "bis": 14.56,
+   "wort_start": {
+    "w": "Plus",
+    "after": 12.4
+   },
+   "anker": "Plus-0.5",
+   "bild": "Paper-Claude-Akt nach echtem Shot 01a: Zeiger auf '+' (Klick auf 'Plus'), Plus-Menü wie im Shot ('Upload or add files' … 'Research' mit Haken), 'Research' anklicken, blaue Research-Pill an ('an'), auf 'Ergebnis' fliegt der Datei-Chip 'Shirt-Firma Ergebnis Konkurrenz.md' in den Composer. Schritt-Chips RESEARCH · ANHANG · FRAGE.",
+   "kamera": "Paper vorn, Welt unscharf; Zoom aufs Plus-Menü, dann auf den Chip",
+   "frage": "Wo klicke ich?",
+   "karten": [
+    {
+     "text": "RESEARCH",
+     "at": "Plus-0.5"
+    },
+    {
+     "text": "ANHANG",
+     "at": "Ergebnis-0.15"
+    }
+   ],
+   "shot": "firma-ep/tag6/shots/01a-plus-menu-research.png",
+   "sfx": [
+    {
+     "anker": "Plus",
+     "f": "click",
+     "v": 0.45
+    },
+    {
+     "anker": "Research+0.08",
+     "f": "click",
+     "v": 0.45
+    },
+    {
+     "anker": "an@13.3",
+     "f": "check",
+     "v": 0.35
+    },
+    {
+     "anker": "Ergebnis",
+     "f": "popLo",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "akt": "claudeShot",
+   "von": 14.56,
+   "bis": 17.64,
+   "wort_start": {
+    "w": "Frage",
+    "after": 14.5
+   },
+   "anker": "Frage@14.5-0.1",
+   "bild": "Echter Screenshot 01b-prompt-mit-anhang.png (Composer mit Anhang-Chip, echtem Prompt, aktiver Research-Pill). H3: zuerst kurz grün markiert '60 Grad Wäsche aushalten' (auf 'Frage', bleibt stehen, damit Grund 1 später verständlich ist), dann orange 'ab einem Stück' auf 'einzeln', gelb 'Versand direkt an meine Kunden' auf 'direkt'. Re-Hook-Pill 'Die Frage zum Kopieren → am Ende'. Senden-Klick auf 'direkt?' Ende.",
+   "kamera": "Push-in auf '60 Grad Wäsche', Pan zu 'ab einem Stück', dann 'Versand direkt'",
+   "frage": "Was genau frage ich?",
+   "karten": [
+    {
+     "text": "FRAGE",
+     "at": "Frage@14.5-0.1"
+    },
+    {
+     "text": "Die Frage zum Kopieren → am Ende",
+     "at": "Wer"
+    }
+   ],
+   "marks": [
+    {
+     "find": "60 Grad Wäsche aushalten",
+     "at": "Frage@14.5+0.25",
+     "color": "green",
+     "fallback": "yellow",
+     "hinweis": "H3 Prüfer: 60 Grad hervorheben"
+    },
+    {
+     "find": "ab einem Stück",
+     "at": "einzeln@15.8",
+     "occurrence": 2,
+     "color": "orange",
+     "hinweis": "die Stelle 'bestickt, ab einem Stück' (zweites Vorkommen im Prompt)"
+    },
+    {
+     "find": "Versand direkt an meine Kunden",
+     "at": "direkt",
+     "color": "yellow"
+    }
+   ],
+   "send": "direkt+0.5",
+   "shot": "firma-ep/tag6/shots/01b-prompt-mit-anhang.png",
+   "sfx": [
+    {
+     "anker": "Frage@14.5-0.1",
+     "f": "tick",
+     "v": 0.25
+    },
+    {
+     "anker": "Frage@14.5+0.25",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Wer",
+     "f": "typing",
+     "v": 0.18
+    },
+    {
+     "anker": "einzeln@15.8",
+     "f": "tick",
+     "v": 0.22
+    },
+    {
+     "anker": "direkt+0.5",
+     "f": "clickHi",
+     "v": 0.45
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "akt": "claudeShot",
+   "von": 17.64,
+   "bis": 19.25,
+   "wort_start": {
+    "w": "Claude",
+    "after": 17.6
+   },
+   "anker": "Claude@17.6-0.1",
+   "bild": "Echter Screenshot 02-research-fertig.png: 'Research complete • 294 sources • 5m 56s'. Orange Rahmen + Zähler am Objekt rollt 0 → 294 genau auf '294'.",
+   "kamera": "Push-in auf die Quellenzeile",
+   "frage": "So viele Quellen?",
+   "karten": [
+    {
+     "text": "294 QUELLEN",
+     "at": "294"
+    }
+   ],
+   "marks": [
+    {
+     "find": "294 sources",
+     "at": "294",
+     "color": "orange"
+    }
+   ],
+   "shot": "firma-ep/tag6/shots/02-research-fertig.png",
+   "sfx": [
+    {
+     "anker": "Claude@17.6-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Claude@17.6",
+     "f": "roll",
+     "v": 0.3
+    },
+    {
+     "anker": "294+0.7",
+     "f": "ping",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "akt": "wall",
+   "von": 19.25,
+   "bis": 20.6,
+   "wort_start": {
+    "w": "Quellen",
+    "after": 19.2
+   },
+   "anker": "Quellen@19.2",
+   "bild": "Partner-Wand aus der echten Tabelle (Shot 03), 7 Karten erscheinen MIT Inhalt, Stagger 0,06 s, je Name + Pflegeetikett: A61 '60 °C' grün · Printful '60 °C ?' · Shirtigo '60 °C ?' · Gelato '60 °C ?' · Spreadconnect '60 °C ?' · Customwear '60 °C ?' · Printify '60 °C ?' (grau). Zähler QUELLEN 294 bleibt oben. Auf 'nimmt' dimmen die 6 grauen Karten. Musik: per Kurve fast still 19.45–20.55 (Stille vor der Pointe).",
+   "kamera": "Pull-back auf die ganze Wand",
+   "frage": "Welchen nimmt sie?",
+   "karten": [
+    {
+     "label": "A61",
+     "etikett": "60 °C",
+     "farbe": "grün",
+     "icon": "shirt"
+    },
+    {
+     "label": "PRINTFUL",
+     "etikett": "60 °C ?",
+     "farbe": "grau"
+    },
+    {
+     "label": "SHIRTIGO",
+     "etikett": "60 °C ?",
+     "farbe": "grau"
+    },
+    {
+     "label": "GELATO",
+     "etikett": "60 °C ?",
+     "farbe": "grau"
+    },
+    {
+     "label": "SPREADCONNECT",
+     "etikett": "60 °C ?",
+     "farbe": "grau"
+    },
+    {
+     "label": "CUSTOMWEAR",
+     "etikett": "60 °C ?",
+     "farbe": "grau"
+    },
+    {
+     "label": "PRINTIFY",
+     "etikett": "60 °C ?",
+     "farbe": "grau"
+    }
+   ],
+   "quelle_werte": "LAUF.md Vergleichstabelle Spalte '60-°C-Shirt laut Etikett': nur A61 'Ja' (HAKRO MIKRALINAR No. 281 'Wäsche 60°C'), alle anderen n. g. bzw. 30 °C (Shirtigo/Stanley-Stella) -> grau '60 °C ?'",
+   "sfx": [
+    {
+     "anker": "Quellen@19.2",
+     "f": "page",
+     "v": 0.25
+    },
+    {
+     "anker": "Quellen@19.2+0.1",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "Quellen@19.2+0.3",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "nimmt",
+     "f": "tick",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B13",
+   "akt": "winner",
+   "von": 20.6,
+   "bis": 21.6,
+   "wort_start": {
+    "w": "A61",
+    "after": 20.5
+   },
+   "anker": "A61-0.1",
+   "bild": "Ergebnis-Bild: Auf 'A61' fliegt die A61-Karte nach vorne (Musik setzt genau hier wieder voll ein), grünes '60 °C' leuchtet, die anderen bleiben gedimmt hinten mit '60 °C ?'. Optional unten klein Beleg-Kachel Shot 04 'Partner: A61 … mit Vorbehalt'.",
+   "kamera": "harter Push-in auf die A61-Karte",
+   "frage": "Warum gerade A61?",
+   "karten": [
+    {
+     "text": "→ A61",
+     "at": "A61"
+    }
+   ],
+   "musik": "Kurve 19.45–20.55 auf 0.01, Refrain-Einsatz Track 120.80 = Clip 20.64 genau auf 'A61' (Akzent 0.04, danach 0.026)",
+   "sfx": [
+    {
+     "anker": "A61-0.12",
+     "f": "wqh",
+     "v": 0.25
+    },
+    {
+     "anker": "A61",
+     "f": "power",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "akt": "winner",
+   "von": 21.6,
+   "bis": 22.45,
+   "wort_start": {
+    "w": "unter",
+    "after": 21.5
+   },
+   "anker": "unter",
+   "bild": "Entscheidung: Stempel 'UNTER VORBEHALT' (orange, M-011) schlägt schräg auf die A61-Karte, auf 'unter'; Karte bleibt vorn.",
+   "kamera": "Mikro-Punch 3 % auf den Stempel",
+   "frage": "Wieso nur unter Vorbehalt?",
+   "karten": [
+    {
+     "text": "UNTER VORBEHALT",
+     "farbe": "orange",
+     "at": "unter"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "unter",
+     "f": "stamp",
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "why",
+   "von": 22.45,
+   "bis": 23.0,
+   "wort_start": {
+    "w": "Warum",
+    "after": 22.4
+   },
+   "anker": "Warum-0.12",
+   "bild": "Warum-Beat: A61-Karte (mit Stempel) fährt nach oben und bleibt dort stehen, Pill 'WARUM A61?' auf 'Warum'.",
+   "kamera": "0,3-s-Fahrt nach oben, dann ruhig",
+   "frage": "Warum?",
+   "karten": [
+    {
+     "text": "WARUM A61?",
+     "at": "Warum"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.15",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B16",
+   "akt": "why",
+   "von": 23.0,
+   "bis": 26.2,
+   "wort_start": {
+    "w": "Nur",
+    "after": 22.9
+   },
+   "anker": "Nur",
+   "bild": "Grund-Karte 1 (auf 'Nur', steht 3,2 s): besticktes Arbeitsshirt mit Pflegeetikett, groß grün '60 °C' (Etikett poppt auf 'Sechzig-Grad'), klein 'nur hier belegt' (auf 'belegt'). Gegenwert-Feld rechts daneben grau: '60 °C ?', klein '6 andere Partner'.",
+   "kamera": "ruhig",
+   "frage": "Und die anderen?",
+   "karten": [
+    {
+     "icon": "careLabel60",
+     "big": "60 °C",
+     "small": "nur hier belegt",
+     "at": "Nur",
+     "hot": true,
+     "vs": {
+      "big": "60 °C ?",
+      "small": "6 andere Partner",
+      "at": "Sechzig-Grad-Arbeitsshirt+0.3",
+      "farbe": "grau"
+     }
+    }
+   ],
+   "steht_s": 3.22,
+   "sfx": [
+    {
+     "anker": "Nur-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "Sechzig-Grad-Arbeitsshirt",
+     "f": "roll",
+     "v": 0.2
+    },
+    {
+     "anker": "belegt",
+     "f": "check",
+     "v": 0.28
+    }
+   ]
+  },
+  {
+   "id": "B17",
+   "akt": "why",
+   "von": 26.2,
+   "bis": 27.98,
+   "wort_start": {
+    "w": "Und",
+    "after": 26.1
+   },
+   "anker": "Und@26.1",
+   "bild": "Grund-Karte 2 (auf 'Und', steht 1,78 s; Pause davor 0,30 s): ein einzelnes Shirt auf der Karte, Stempel 'AB 1 STÜCK' schlägt auf 'einem'. Gegenwert-Feld grau: Shirt-Stapel 'ab 10', klein 'Lohnstickereien' (Bericht: Lohnstickereien meist ab 10 Stück).",
+   "kamera": "ruhig",
+   "frage": "Und kleine Bestellungen?",
+   "karten": [
+    {
+     "icon": "shirt1x",
+     "big": "AB 1 STÜCK",
+     "small": "A61",
+     "at": "Und@26.1",
+     "stamp_at": "einem@27.3",
+     "vs": {
+      "big": "ab 10",
+      "small": "Lohnstickereien",
+      "at": "einem@27.3+0.2",
+      "farbe": "grau"
+     }
+    }
+   ],
+   "steht_s": 1.78,
+   "sfx": [
+    {
+     "anker": "Und@26.1-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "einem@27.3",
+     "f": "stamp",
+     "v": 0.32
+    }
+   ]
+  },
+  {
+   "id": "B18",
+   "akt": "question",
+   "von": 27.98,
+   "bis": 32.98,
+   "wort_start": {
+    "w": "Haken",
+    "after": 27.9
+   },
+   "anker": "Haken-0.12",
+   "bild": "Haken als rote Rechnung am Story-Objekt (A61-Karte bleibt oben): Pill 'HAKEN' (auf 'Haken'), darunter Kassenzettel 'Zum Ladenpreis', Zeile '5 Shirts: 151 €' rot (Zähler rollt auf '151'), dann Zeile grau 'Markt: 110 €' (auf '110'), Differenz '−41 €' blinkt kurz (auf '110' Ende). Optional klein Claude-Zitat 'Schon die Endkundenpreise liegen über dem Marktpreis.' (Shot 02).",
+   "kamera": "Push-in auf den Kassenzettel",
+   "frage": "Wie kann der Beste zu teuer sein?",
+   "karten": [
+    {
+     "text": "HAKEN",
+     "at": "Haken"
+    },
+    {
+     "text": "Zum Ladenpreis",
+     "at": "Ladenpreis"
+    },
+    {
+     "text": "5 Shirts: 151 €",
+     "farbe": "rot",
+     "at": "151"
+    },
+    {
+     "text": "Markt: 110 €",
+     "farbe": "grau",
+     "at": "110"
+    },
+    {
+     "text": "−41 €",
+     "farbe": "rot blinkt",
+     "at": "110+0.6"
+    }
+   ],
+   "werte": "151 = 5 × 28,90 + 6,90 Versand = 151,40 € brutto (Endkundenpreis A61, Bericht Beispielrechnung); Markt ca. 110 € brutto (Folge 5); Differenz −41,40 € (Bericht 'Rohmarge negativ (−41,40 € brutto)'). Im Bild gerundet 151 € / 110 € / −41 €.",
+   "sfx": [
+    {
+     "anker": "Haken-0.12",
+     "f": "page",
+     "v": 0.3
+    },
+    {
+     "anker": "151",
+     "f": "roll",
+     "v": 0.28
+    },
+    {
+     "anker": "Euro",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "anker": "110",
+     "f": "tick",
+     "v": 0.25
+    },
+    {
+     "anker": "110+0.6",
+     "f": "popLo",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B19",
+   "akt": "question",
+   "von": 32.98,
+   "bis": 36.07,
+   "wort_start": {
+    "w": "Händlerpreise",
+    "after": 32.9
+   },
+   "anker": "Händlerpreise-0.1",
+   "bild": "Grenze als Befund an der A61-Karte: zwei graue Felder erscheinen auf der Karte, 'Händlerpreis: ?' (auf 'Händlerpreise') und 'Einrichtung: ?' (auf 'Einrichtungskosten'); auf 'findet' kleiner Chip 'nicht gefunden' mit Claude-Lupe unter den Feldern, auf 'nicht' leuchten beide Fragezeichen kurz orange auf. Keine Hand, kein Umschlag, keine Menschen-Handlung (H5).",
+   "kamera": "ruhig, leichter Push-in auf die Felder",
+   "frage": "Woher kommt dann der echte Preis?",
+   "karten": [
+    {
+     "text": "Händlerpreis: ?",
+     "farbe": "grau",
+     "at": "Händlerpreise"
+    },
+    {
+     "text": "Einrichtung: ?",
+     "farbe": "grau",
+     "at": "Einrichtungskosten"
+    },
+    {
+     "text": "Chip 'nicht gefunden' (Claude-Lupe)",
+     "at": "findet"
+    },
+    {
+     "text": "? leuchtet",
+     "at": "nicht"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Händlerpreise",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Einrichtungskosten",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "nicht",
+     "f": "ping",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B20",
+   "akt": "question",
+   "von": 36.07,
+   "bis": 39.42,
+   "wort_start": {
+    "w": "Als",
+    "after": 36.0
+   },
+   "anker": "Als-0.12",
+   "bild": "Offene Frage: Pill 'ALS NÄCHSTES', Karte 'Bleibt pro Shirt / überhaupt etwas übrig?' (auf 'Bleibt'), Marker auf 'übrig'. A61-Karte mit den beiden '?'-Feldern bleibt klein oben (Story-Objekt).",
+   "kamera": "ruhig, leichter Push-in",
+   "frage": "Verdient sie überhaupt was?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als"
+    },
+    {
+     "text": "Bleibt pro Shirt\nüberhaupt etwas übrig?",
+     "at": "Bleibt"
+    },
+    {
+     "text": "Marker übrig",
+     "at": "übrig"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als-0.12",
+     "f": "airy",
+     "v": 0.25
+    },
+    {
+     "anker": "Als",
+     "f": "pop",
+     "v": 0.35
+    },
+    {
+     "anker": "übrig",
+     "f": "popLo",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B21",
+   "akt": "end",
+   "von": 39.42,
+   "bis": 46.75,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 39.4
+   },
+   "anker": "Kommentiere-0.15",
+   "bild": "Endkarte: Keyword 'Partner' tippt sich ein (auf 'Partner@40'), Haken, Flieger auf 'und … schick', 2 Items: 'Die Frage' (Prompt-Snippet aus Shot 01b) auf 'Frage@41.4', 'Die Partnertabelle' mit Ausschnitt aus echtem Shot 03 auf 'Partnertabelle'. Ergebnis-Zeile 'in 10 Minuten' (auf '10') + 'mögliche Partner im Vergleich' (auf 'mögliche'), Bot-Hüpfer ~45.9, Halt bis 46.75.",
+   "kamera": "ruhiger Push-in, letzte Sekunde Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "KOMMENTIERE „PARTNER“",
+     "at": "Partner@40"
+    },
+    {
+     "text": "Die Frage",
+     "at": "Frage@41.4"
+    },
+    {
+     "text": "Die Partnertabelle (Shot 03)",
+     "at": "Partnertabelle"
+    },
+    {
+     "text": "in 10 Minuten",
+     "at": "10"
+    },
+    {
+     "text": "mögliche Partner im Vergleich",
+     "at": "mögliche"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Partner@40-0.05",
+     "f": "typing",
+     "v": 0.25
+    },
+    {
+     "anker": "Partner@40+0.6",
+     "f": "check",
+     "v": 0.35
+    },
+    {
+     "anker": "und@40.7-0.05",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Frage@41.4",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "Partnertabelle",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "Damit-0.15",
+     "f": "chime",
+     "v": 0.3
+    },
+    {
+     "anker": "mögliche",
+     "f": "pop",
+     "v": 0.3
+    }
+   ]
+  }
+ ],
+ "engine_akte": [
+  {
+   "type": "hook",
+   "at": "0",
+   "prop": "partnerWall",
+   "wunsch": "Hook-Objekt Partner-Wand + A61-Karte mit grünem 60-°C-Etikett, Stempel AB 1 STÜCK und roter Rechnung 151 € / grau 110 € (neues Objekt in src/components/firma/, wiederverwendbar für B12–B20)",
+   "noTagSlam": true
+  },
+  {
+   "type": "recap",
+   "at": "Die@4.9-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "Shirts@6.1"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt@7.7"
+   },
+   "last": {
+    "step": 3,
+    "label": "LÜCKE: EINZELN NACHBESTELLEN",
+    "small": "PREIS · MARKT 110 €",
+    "status": "inArbeit",
+    "at": "Ihre"
+   },
+   "today": {
+    "step": 4,
+    "pill": "HEUTE: PARTNER FÜR EINZELSTÜCKE",
+    "at": "Heute"
+   }
+  },
+  {
+   "type": "claude",
+   "at": "Plus-0.5",
+   "ref": "firma-ep/tag6/shots/01a-plus-menu-research.png",
+   "attach": "Shirt-Firma Ergebnis Konkurrenz.md",
+   "attachAt": "Ergebnis-0.15"
+  },
+  {
+   "type": "claudeShot",
+   "at": "Frage@14.5-0.1",
+   "src": "firma-ep/tag6/shots/01b-prompt-mit-anhang.png"
+  },
+  {
+   "type": "claudeShot",
+   "at": "Claude@17.6-0.1",
+   "src": "firma-ep/tag6/shots/02-research-fertig.png"
+  },
+  {
+   "type": "wall",
+   "at": "Quellen@19.2",
+   "thinkUntil": "Quellen@19.2+0.5"
+  },
+  {
+   "type": "winner",
+   "at": "A61-0.12",
+   "card": 0,
+   "fly": "A61",
+   "dimAt": "nimmt",
+   "stamp": "UNTER VORBEHALT",
+   "stampAt": "unter",
+   "hold": "shirt",
+   "proof": "firma-ep/tag6/shots/04-entscheidung.png"
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "card": 0,
+   "pill": "WARUM A61?",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "careLabel60",
+     "big": "60 °C",
+     "small": "nur hier belegt",
+     "at": "Nur",
+     "hot": true
+    },
+    {
+     "icon": "shirt1x",
+     "big": "AB 1 STÜCK",
+     "small": "A61",
+     "at": "Und@26.1"
+    }
+   ],
+   "vs_wunsch": [
+    {
+     "card": 0,
+     "big": "60 °C ?",
+     "small": "6 andere Partner",
+     "at": "Sechzig-Grad-Arbeitsshirt+0.3",
+     "stil": "grau"
+    },
+    {
+     "card": 1,
+     "big": "ab 10",
+     "small": "Lohnstickereien",
+     "at": "einem@27.3+0.2",
+     "stil": "grau"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "at": "Haken-0.12",
+   "pill": "HAKEN",
+   "lines": [
+    "5 Shirts: 151 €",
+    "Markt: 110 €"
+   ],
+   "pop": "Haken",
+   "stamp": "−41 €",
+   "stampAt": "110+0.6",
+   "bubble": "Haken+0.3",
+   "bill_wunsch": {
+    "rows": [
+     {
+      "text": "5 Shirts: 151 €",
+      "farbe": "rot",
+      "at": "151"
+     },
+     {
+      "text": "Markt: 110 €",
+      "farbe": "grau",
+      "at": "110"
+     }
+    ],
+    "diff": {
+     "text": "−41 €",
+     "at": "110+0.6"
+    },
+    "titel": "Zum Ladenpreis",
+    "titelAt": "Ladenpreis"
+   }
+  },
+  {
+   "type": "question",
+   "at": "Händlerpreise-0.1",
+   "pill": "NICHT GEFUNDEN",
+   "lines": [
+    "Händlerpreis: ?",
+    "Einrichtung: ?"
+   ],
+   "pop": "Händlerpreise",
+   "stamp": null,
+   "bubble": "Einrichtungskosten",
+   "fields_wunsch": {
+    "card": "A61",
+    "fields": [
+     {
+      "text": "Händlerpreis: ?",
+      "at": "Händlerpreise"
+     },
+     {
+      "text": "Einrichtung: ?",
+      "at": "Einrichtungskosten"
+     }
+    ],
+    "glowAt": "nicht"
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als-0.12",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Bleibt pro Shirt",
+    "überhaupt etwas übrig?"
+   ],
+   "pop": "Als",
+   "stamp": null,
+   "bubble": "Als+0.3"
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Partner@40",
+   "plane": [
+    "und@40.7-0.05",
+    "schick+0.25"
+   ],
+   "itemsAt": "die@41.3",
+   "copyAt": "Damit"
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

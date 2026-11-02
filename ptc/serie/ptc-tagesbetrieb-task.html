@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>@pickthecompany – Tagesbetrieb als geplante Task</title>
+<style>
+  :root { --ink:#1d1b18; --muted:#6b665e; --line:#e7e2d9; --bg:#faf8f4; --card:#fff; --accent:#d9772b; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.55 -apple-system, "Inter", "Helvetica Neue", sans-serif; color:var(--ink); background:var(--bg); }
+  main { max-width:980px; margin:0 auto; padding:40px 28px 80px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:19px; margin:40px 0 10px; padding-top:18px; border-top:1px solid var(--line); }
+  h3 { font-size:15px; margin:20px 0 6px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin:8px 0; }
+  th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { background:#f3efe7; font-weight:600; font-size:13px; }
+  tr:last-child td { border-bottom:0; }
+  code { font:12.5px/1.4 "SF Mono", Menlo, monospace; background:#f1ede5; padding:1px 4px; border-radius:4px; }
+  pre { background:#1f1d1a; color:#f4efe6; padding:16px 18px; border-radius:8px; overflow:auto; font:12.5px/1.5 "SF Mono", Menlo, monospace; white-space:pre-wrap; }
+  .box { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:6px; padding:12px 16px; margin:12px 0; }
+  .warn { border-left-color:#c0392b; }
+  button { font:inherit; font-size:13px; padding:6px 12px; border-radius:6px; border:1px solid var(--line); background:var(--card); cursor:pointer; }
+  button:hover { border-color:var(--accent); }
+  ul { padding-left:20px; } li { margin:3px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>@pickthecompany – Tagesbetrieb als geplante Task</h1>
+<p class="sub">Serie „Superkind baut eine Firma“ · Stand 2026-10-30 · alles, was eine automatische Task braucht: Prompt, Skills, Skripte, Pfade, Regeln, Lehren.</p>
+
+<div class="box warn">
+<strong>Es gibt die Task schon.</strong> „pickthecompany Tagesbetrieb (5 Folgen)“ läuft täglich um 10:00, und „pickthecompany Abendbericht“ läuft täglich um 21:45. Der Lauf heute (2026-10-30) ist <em>vor dem Start</em> gescheitert: „Workspace preparation failed during provision worktree“. Das Projekt ist kein Git-Repo, deshalb kann T3 keinen Worktree anlegen.
+<ul>
+<li><strong>Fix:</strong> Die Task ohne Worktree laufen lassen, im Projekt-Root <code>/Users/pius/LinkedIn Generator</code>.</li>
+<li><strong>Prompt ersetzen:</strong> den alten Prompt durch den unten.</li>
+<li><strong>Nicht doppelt anlegen:</strong> Mit einer zweiten Task neben der alten laufen zwei Produktionen gegeneinander.</li>
+</ul>
+</div>
+
+<div class="box">
+<strong>„Jede Nacht“ und der Mac:</strong> Der Mac ist nachts aus, deshalb läuft die Task seit dem 2026-10-29 um 10:00. Läuft der Mac nachts durch, kann sie wieder auf 00:30 gehen. Dann sind alle 5 Folgen vor 9:00 fertig.
+<ul>
+<li><strong>Prozess fürs Binden:</strong> Pro Post wartet ein lokaler Prozess (<code>zernio-golive-arm.mjs</code>) auf den Live-Gang und bindet dann den Funnel. Ist der Mac aus, bindet er nicht, und es braucht Schritt 0 (Funnel nachholen).</li>
+<li><strong>Bei Start um 10:00:</strong> Die 9-Uhr-Folge muss am Vortag fertig und eingeplant sein. Das ist Schritt 6 im Prompt.</li>
+</ul>
+</div>
+
+<h2>1. Ablauf eines Tages</h2>
+<table>
+<tr><th>Zeit</th><th>Was</th></tr>
+<tr><td>Vortag, nach der 21-Uhr-Folge</td><td>Die 9-Uhr-Folge für morgen ist fertig und eingeplant (sagt „Tag N+1“).</td></tr>
+<tr><td>10:00</td><td>Task startet: <code>caffeinate</code>, Funnels nachholen, Slots lesen, Folgen für 12/15/18/21 produzieren, nacheinander einplanen.</td></tr>
+<tr><td>12 / 15 / 18 / 21 Uhr</td><td>Posts gehen live. Pro Post bindet golive-arm den Funnel an die IG-Media-ID und schreibt nach 20 Minuten eine SUMMARY.</td></tr>
+<tr><td>nach dem letzten Slot</td><td>Die 9-Uhr-Folge für morgen produzieren und einplanen.</td></tr>
+<tr><td>21:45</td><td>Task „Abendbericht“: Zahlen, Funnel-Check, Lehren.</td></tr>
+</table>
+
+<h2>2. Prompt für die geplante Task <button onclick="navigator.clipboard.writeText(document.getElementById('prompt').innerText).then(()=>{this.textContent='Kopiert'})">Prompt kopieren</button></h2>
+<pre id="prompt">Produziere die Folgen der Serie „Superkind baut eine Firma“ für @pickthecompany für HEUTE und plane sie ein, danach die 9-Uhr-Folge für MORGEN. Lade den Skill firma-chef und arbeite strikt nach dessen Abschnitt „Tagesbetrieb“. Projekt: /Users/pius/LinkedIn Generator/broll (kein Git-Repo, kein Worktree, direkt im Projekt arbeiten).
+
+Zu Beginn `caffeinate -dimsu -t 50400 &` starten und die Uhrzeit mit `date` lesen.
+
+SCHRITT 0 – Funnel nachholen
+- Prüfe alle runs/firma-tag*/publish.json mit Slot gestern oder heute.
+- Läuft für einen schon live gegangenen Post kein zernio-golive-arm-Prozess (`ps aux | grep zernio-golive-arm`), oder fehlt in runs/firma-tag&lt;N&gt;/golive-arm.log bzw. golive.log die Zeile SUMMARY, dann neu starten:
+  nohup caffeinate -i node scripts/zernio-golive-arm.mjs --post-id &lt;zernio_post_id&gt; --run runs/firma-tag&lt;N&gt; --kind ptc --account pickthecompany --name "PTC Funnel Folge &lt;N&gt;" --replies runs/firma-tag&lt;N&gt;/replies.json --pdf &lt;guide.pdf&gt; --watch 20 &gt; runs/firma-tag&lt;N&gt;/golive-arm.log 2&gt;&amp;1 &amp;
+  Das bindet den Funnel an die IG-Media-ID und holt verpasste Kommentierende nach. Es ist durch Pius' stehendes OK gedeckt (Memory project-ptc-tagesbetrieb).
+- Für Posts, die heute noch kommen und schon eingeplant sind (z. B. die 9-Uhr-Folge vom Vortag): Läuft golive-arm nicht, starte es jetzt.
+
+SCHRITT 1 – Stand lesen
+- Slots heute: 09:00, 12:00, 15:00, 18:00, 21:00 (Europe/Berlin).
+- Prüfe mit `node scripts/zernio-schedule.mjs list` und den publish.json-Dateien, welche Slots auf @pickthecompany belegt sind.
+- Höchste geplante oder gepostete Folge N = höchster runs/firma-tag&lt;N&gt;/ mit publish.json.
+- Serientag = Kalendertag seit 2026-10-28 (2026-10-28 = Tag 1).
+- Lies das neueste Tagesbriefing (runs/firma-tag*/tagesbriefing-&lt;Datum&gt;.md), die briefing.md der nächsten Folgen (besonders den Abschnitt „Stand … abends“), den neuesten rueckblick.md und die Serien-Bibel ~/Desktop/Superkind Videos/_Serie Superkind baut Firma/wirtschaftsbuch-v2.md.
+- Vorarbeit weiterverwenden: Gibt es runs/firma-tag&lt;N&gt;/ schon (thema.md, script.txt, design/lauf/LAUF.md, voice.mp3, Prüfberichte), dort weiterarbeiten statt neu anfangen.
+- Schreibe das Tagesbriefing für heute (runs/firma-tag&lt;erste Folge&gt;/tagesbriefing-&lt;Datum&gt;.md): Slots mit Folgennummer, Kette, Board-Stand, Lehren von gestern.
+
+SCHRITT 2 – Produzieren, nach Slot-Zeit priorisiert
+- Für jeden freien Slot, der noch mindestens 75 Minuten in der Zukunft liegt, eine Folge produzieren. Starte bei N+1 und halte die Reihenfolge ein.
+- Pro Folge ein Koordinator-Agent (general-purpose), der die Stufen als eigene Agenten mit den Skills firma-autor → echter claude.ai-Lauf (falls noch keiner da ist) → firma-regie → firma-design → video-guidebook (--brand superkind) → firma-pruefer fährt.
+- HÖCHSTENS 2 Koordinatoren gleichzeitig (am 2026-10-30 haben 4 parallele Koordinatoren das 5-Stunden-Limit gesprengt, ein Slot fiel aus). Der Koordinator für den frühesten offenen Slot hat Vorrang. Der nächste startet, sobald einer fertig ist.
+- Design: neue Folge = public/firma-ep/tag&lt;N&gt;/episode.json, abgeleitet aus der ZULETZT BESTANDENEN Folge (nicht aus einer älteren), kein neuer Code. Render: node scripts/firma-episode-render.mjs public/firma-ep/tag&lt;N&gt; (erst --stills).
+- Board-Nummerierung der Vorfolge übernehmen (die Engine kann höchstens 9 Kacheln, erledigte Schritte paarweise zusammengefasst).
+- Musik vor dem Mix: node scripts/music-explicit-check.mjs .env &lt;abschnitt.mp3&gt;, explizite Wörter auf 0. Kein Abschnitt doppelt am selben Tag; sind die Abschnitte knapp, einen vom Vortag nehmen.
+- Pro Folge außerdem: Guide-PDF, replies.json (6 Antworten, Florent-Ton, keine Emojis, jede endet mit einer leichten Frage), Cover, format.json = { "format": "PTC" }.
+
+SCHRITT 3 – Finale Prüfung und Einplanen
+- Finale Prüfung durch einen FRISCHEN firma-pruefer-Agenten, Frame für Frame (Gemini fällt aus). Nur ≥ 8/10 geht weiter, höchstens 3 Runden. Unter 8: Slot auslassen, nie Füllmaterial.
+- Einplanen, sobald bestanden, nicht auf alle warten. Spätestens 10 Minuten vor dem Slot:
+  node scripts/zernio-schedule.mjs --video … --cover … --caption-file … --at "&lt;JJJJ-MM-TT&gt; &lt;HH:MM&gt;" --account pickthecompany --no-funnel
+  Danach golive-arm wie in Schritt 0 im Hintergrund starten.
+- Wird ein Slot verpasst: Die Folge rückt auf den nächsten freien Slot, alle folgenden rücken mit. Nie zwei Folgen in denselben Slot, nie die Reihenfolge tauschen.
+- Danach publish.json (Format wie runs/firma-tag9/publish.json: account, via, zernio_post_id, status, scheduledFor, folge, serientag, note_final) und den Desktop-Ordner ~/Desktop/Superkind Videos/&lt;JJJJ-MM-TT&gt; Superkind baut Firma Folge &lt;N&gt;/ füllen (Versionen, Rohmaterial, Cover, caption.txt, prompt-fuer-kommentare.md, pruefbericht.md, Guide, replies.json). Rohmaterial ohne private Daten weitergeben.
+
+SCHRITT 4 – Tageszählung
+- Nur die 09:00-Folge sagt und zeigt „Tag &lt;Serientag&gt;“ („… Ich probier das aus. Tag &lt;N&gt;.“ und „TAG N“ im Hook). Die Folgen um 12, 15, 18 und 21 Uhr erzählen weiter, ohne Tag.
+- Der Umsatz-Zähler erscheint erst ab echtem Umsatz &gt; 0. Erster Umsatz frühestens ab Folge 14.
+
+SCHRITT 5 – Text- und Bildregeln (stehen in den Skills, K.-o.)
+- 85–100 Wörter inkl. Eröffnung und Rückblick. Sätze ≤ 12 Wörter.
+- TTS_SPEED=1.0, 120–135 wpm über die ganze Folge (über Pausen an Satzgrenzen, nie über mehr Wörter oder ein langsameres Tempo). Länge 40–48 s. Rückblick ≤ 6,5 s, „Heute …“ spätestens bei 14,5 s.
+- Höchstens ein neuer Textblock gleichzeitig, Karten ≤ 4 Wörter, jeder Text ≥ 1,2 s lesbar.
+- Frame 0 zeigt die ganze Frage und das Ergebnis-Objekt. 0–6 s in jedem 0,5-s-Fenster ein sichtbares Ereignis.
+- Jede KI-Entscheidung mit „Warum“ (2–3 konkrete Gründe aus dem Lauf). Jede Folge startet beim Ergebnis der Vorfolge und macht genau den nächsten Gründerschritt.
+- CTA: „Kommentiere „&lt;Wort&gt;“ …“ nennt den konkreten, lieferbaren Wert und „Damit hast du in &lt;Zeit&gt; &lt;Ergebnis&gt;“. Kein [BERUF]-Platzhalter ohne Gegenstück, Fallback ohne Anhang im Guide.
+- Caption ≤ 2100 Zeichen. Sie endet mit „(Fiktives Experiment, keine echten Umsätze.)“, danach nur Hashtags.
+
+SCHRITT 6 – 9-Uhr-Folge für MORGEN
+- Nach dem Einplanen der heutigen Folgen die nächste Folge als 9-Uhr-Folge für morgen produzieren (mit „Tag &lt;Serientag+1&gt;“), final prüfen (≥ 8) und für morgen 09:00 einplanen, golive-arm starten.
+- Dazu die echten claude.ai-Läufe für die nächsten 2–4 Folgen vorziehen, damit morgen Vorarbeit liegt. Stand in deren briefing.md unter „Stand &lt;Datum&gt; abends“ festhalten.
+
+FREIGABE
+- Pius' stehendes OK gilt nur für @pickthecompany und nur bei finaler Prüfung ≥ 8/10 durch einen frischen firma-pruefer.
+- Gedeckt sind: Einplanen (zernio-schedule.mjs --account pickthecompany --no-funnel, Sandbox aus), der echte claude.ai-Lauf im eingeloggten T3-Preview-Profil „Chrome“ (Pius' Pro-Org, Websuche an, Gedächtnis im Chat aus) und der Funnel über golive-arm.
+
+GRENZEN
+- Keine Emojis, keine erfundenen Zahlen, Läufe oder Kommentare. Nicht bei Instagram einloggen.
+- Keine claude.ai-Sidebar, keine privaten Chats, Namen, Mailadressen, Ortsnamen aus Pius' Standort (z. B. Hamburg) oder echte Betriebsnamen zeigen (nur *-anonym.png).
+- Menschen-Schritte (Gewerbe anmelden, Domain kaufen, Muster bezahlen, Canva/Stripe/Gmail verbinden) nie als erledigt erzählen. Braucht eine Folge so etwas, eine andere vorziehen und Pius im Bericht einen Tag vorher darum bitten.
+- Andere Accounts nicht anfassen, Agents100Day3/sk100d3 nicht anfassen.
+- ffmpeg nur aus broll/node_modules.
+
+ENDE
+- Kurzer Bericht in diesen Thread: pro Folge Thema, Note, Slot, Zernio-Post-ID und Videopfad als Codeblock. Dazu ausgelassene Slots mit Grund, der Funnel-Status und was Pius tun muss.
+- Pro Folge runs/firma-tag&lt;N&gt;/rueckblick.md schreiben. Die Lehren als Regel in den ZUSTÄNDIGEN firma-Skill eintragen (nicht in firma-chef, außer sie betreffen die Koordination).</pre>
+
+<h2>3. Skills (in <code>~/.claude/skills/</code>)</h2>
+<table>
+<tr><th>Skill</th><th>Rolle</th><th>Ausgabe in <code>broll/runs/firma-tag&lt;N&gt;/</code></th><th>Referenzen</th></tr>
+<tr><td><code>firma-chef</code></td><td>Orchestriert alle Stufen: Briefing, Delegation, Übergaben, Prüfer prüfen, Lehren. Abschnitt 6 „Tagesbetrieb“ ist die Grundlage der Task.</td><td><code>briefing.md</code>, <code>tagesbriefing-&lt;Datum&gt;.md</code>, <code>rueckblick.md</code></td><td>–</td></tr>
+<tr><td><code>firma-spy</code></td><td>Ausreißer-Reels von 18 Kanälen zerlegen, Musterbibliothek pflegen. Läuft nur, wenn <code>muster.md</code> älter als 7 Tage ist.</td><td><code>SPY/muster.md</code>, <code>SPY/analysen/</code></td><td><code>zerlegung-vorlage.md</code></td></tr>
+<tr><td><code>firma-autor</code></td><td>Thema, Hooks, Skript (85–100 Wörter), Kommentar-Mechanik und Caption. Prüft jede Tool-Behauptung gegen den Lauf und gegen Quellen.</td><td><code>thema.md</code>, <code>hooks.md</code>, <code>script.txt</code>, <code>prompt-fuer-kommentare.md</code>, <code>caption.txt</code></td><td>–</td></tr>
+<tr><td><code>firma-regie</code></td><td>Stimme (TTS 1,0, Betonungstest, STT-Abgleich), Beat-Plan, Musik und Sound, Storyline und Bibel.</td><td><code>voice.mp3</code>, <code>words.json</code>, <code>regieplan.md</code>, <code>beats.json</code>, <code>musik.txt</code></td><td>–</td></tr>
+<tr><td><code>firma-design</code></td><td>Design-System, <code>episode.json</code> für die Engine <code>FirmaEpisode</code>, Style-Frames, Render, Mix und Cover.</td><td><code>design/</code>, <code>firma-tag&lt;N&gt;-final.mp4</code>, <code>cover.jpg</code></td><td><code>design-system.md</code>, <code>episode-schema.md</code>, <code>design-backlog.md</code></td></tr>
+<tr><td><code>firma-pruefer</code></td><td>Note 1–10 je Kriterium nach jeder Stufe, Korrektur-Tickets, finale Prüfung Frame für Frame. Bestanden ab 8.</td><td><code>pruefung/</code></td><td><code>bewertung.md</code></td></tr>
+<tr><td><code>video-guidebook</code></td><td>Guide-PDF zum Folgen-Inhalt (<code>--brand superkind</code>, Konsolen-Look), wird per DM geliefert.</td><td><code>&lt;thema&gt;-guide.pdf</code>, <code>guidebook.json</code></td><td>Generator in <code>assets/</code></td></tr>
+</table>
+
+<h2>4. Skripte (in <code>broll/scripts/</code>)</h2>
+<table>
+<tr><th>Skript</th><th>Wofür</th></tr>
+<tr><td><code>firma-episode-render.mjs public/firma-ep/tag&lt;N&gt; [--stills]</code></td><td>Serien-Engine: Bundle, Style-Frames, Render, Kontaktbogen, Mix (‑14 LUFS), Handy-Version, Kopie auf den Desktop. Dauert ca. 2 Minuten.</td></tr>
+<tr><td><code>firma-mix.mjs</code>, <code>firma-ep-frames.mjs</code>, <code>firma-compare.sh</code></td><td>Mix, Einzelframes, Seite-an-Seite-Vergleich mit Referenzen</td></tr>
+<tr><td><code>music-explicit-check.mjs .env &lt;mp3&gt;</code></td><td>Musikabschnitt auf explizite Wörter prüfen (Pflicht vor dem Mix)</td></tr>
+<tr><td><code>zernio-schedule.mjs</code> (<code>list</code> / <code>--video --cover --caption-file --at --account pickthecompany --no-funnel</code>)</td><td>Posts einplanen und auflisten</td></tr>
+<tr><td><code>zernio-golive-arm.mjs --post-id … --run … --kind ptc …</code></td><td>Wartet auf den Live-Gang und bindet den Funnel an die IG-Media-ID. Holt Kommentierende nach und schreibt nach <code>--watch</code> Minuten eine SUMMARY.</td></tr>
+<tr><td><code>zernio-comments.mjs</code>, <code>zernio-funnel.mjs</code>, <code>zernio-automation.mjs</code></td><td>Kommentare lesen, Funnels verwalten (Texte in <code>broll/funnel/ptc-funnel.json</code>)</td></tr>
+</table>
+
+<h2>5. Wichtige Pfade</h2>
+<table>
+<tr><th>Was</th><th>Pfad</th></tr>
+<tr><td>Projekt</td><td><code>/Users/pius/LinkedIn Generator/broll</code></td></tr>
+<tr><td>Folgen-Arbeitsordner</td><td><code>broll/runs/firma-tag&lt;N&gt;/</code> (N = Folgennummer, nicht Serientag)</td></tr>
+<tr><td>Echter claude.ai-Lauf</td><td><code>runs/firma-tag&lt;N&gt;/design/lauf/</code> (<code>LAUF.md</code>, Screenshots, Dateien, <code>*-anonym.png</code>)</td></tr>
+<tr><td>Engine-Daten pro Folge</td><td><code>broll/public/firma-ep/tag&lt;N&gt;/episode.json</code> + <code>voice.mp3</code> + <code>words.json</code></td></tr>
+<tr><td>Render-Ausgabe</td><td><code>broll/runs/firma-ep/tag&lt;N&gt;/render/</code></td></tr>
+<tr><td>Serien-Konzept</td><td><code>broll/runs/firma-neu-tag1/konzept.md</code></td></tr>
+<tr><td>Serien-Bibel</td><td><code>~/Desktop/Superkind Videos/_Serie Superkind baut Firma/wirtschaftsbuch-v2.md</code></td></tr>
+<tr><td>Musterbibliothek</td><td><code>~/Desktop/Superkind Videos/_Serie Superkind baut Firma/spy/muster.md</code></td></tr>
+<tr><td>Qualitätsmaßstab</td><td>Folgen 4–8 vom 2026-10-29 („heute sah sehr gut aus“), Tag 1 v7</td></tr>
+<tr><td>Abgabe</td><td><code>~/Desktop/Superkind Videos/&lt;JJJJ-MM-TT&gt; Superkind baut Firma Folge &lt;N&gt;/</code></td></tr>
+<tr><td>Zernio-Account</td><td>pickthecompany (6ad902418ceebdfb359dd0f7)</td></tr>
+</table>
+
+<h2>6. Stand der Serie (2026-10-30, 15:45)</h2>
+<table>
+<tr><th>Folge</th><th>Thema</th><th>Slot</th><th>Note</th><th>Status</th></tr>
+<tr><td>9</td><td>Logo</td><td>30.10. 09:00 (Tag 3)</td><td>ohne Endprüfung (Pius)</td><td>live, Funnel gebunden</td></tr>
+<tr><td>10</td><td>Website</td><td>30.10. 12:00</td><td>8/10</td><td>live, Funnel gebunden</td></tr>
+<tr><td>–</td><td>–</td><td>30.10. 15:00</td><td>–</td><td>ausgelassen (Rate-Limit)</td></tr>
+<tr><td>11</td><td>Gewerbe-Checkliste</td><td>30.10. 18:00</td><td>9/10</td><td>eingeplant</td></tr>
+<tr><td>12</td><td>Erste 20 Betriebe (Chemnitz)</td><td>30.10. 21:00</td><td>8/10</td><td>eingeplant</td></tr>
+<tr><td>13</td><td>Werbebrief</td><td>31.10. 09:00 (Tag 4)</td><td>in Arbeit</td><td>wird heute fertig und eingeplant</td></tr>
+<tr><td>14</td><td>„Wohin gehen die Briefe?“</td><td>31.10. ab 12:00</td><td>–</td><td>offen. Lauf: Impressums-Adressen der 5 Betriebe</td></tr>
+</table>
+<p>Firma: <strong>Kolonnenshirt</strong> (Name ungeprüft). Sie verkauft bestickte Shirts an Bau- und Ausbaubetriebe mit weniger als 10 Leuten, über den Partner Printful. Geplant sind 109 € brutto für 5 Shirts und 29,90 € für ein einzelnes. Die Kasse steht bei 0 €.</p>
+<p>Für Pius offen (Login oder Geld): Muster-Shirt in Canva, Muster bestellen und bei 60 °C waschen, Bezahlen über Stripe, Domain kaufen, DPMA/EUIPO-Prüfung.</p>
+
+<h2>7. Lehren, die die Task beachten muss</h2>
+<ul>
+<li><strong>Kein Worktree:</strong> Das Projekt ist kein Git-Repo. Mit Worktree scheitert die Task vor dem Start (Lauf 2026-10-30).</li>
+<li><strong>Höchstens 2 Koordinatoren parallel:</strong> Mit 4 parallelen Koordinatoren war das 5-Stunden-Limit um ca. 11:45 erreicht, und erst um 15:00 ging es weiter. Der 15-Uhr-Slot fiel aus.</li>
+<li><strong>Zeitbedarf:</strong> Eine Folge mit fertigem Lauf und Skript braucht bis zum Einplanen ca. 50–60 min (Folge 10: 10:50 → 11:30). Ohne Lauf und Skript eher 2 h.</li>
+<li><strong>9-Uhr-Folge am Vortag fertigstellen:</strong> Die Task startet erst um 10:00.</li>
+<li><strong>golive-arm läuft nur, wenn der Mac an ist:</strong> Schritt 0 holt das nach. Bei den Folgen 2–10 sind alle Funnels gebunden.</li>
+<li><strong>Design aus der zuletzt bestandenen Folge ableiten:</strong> Folge 11 wiederholte drei Fehler, die Folge 10 am selben Tag schon gelöst hatte.</li>
+<li><strong>Bekannte Fehlerbilder des Autors:</strong> gesprochener Weg-Satz fehlt, CTA nennt nur „die Frage“, „Pflicht-Checkliste“ verspricht Vollständigkeit, [BERUF]-Platzhalter ohne Gegenstück, kein Fallback ohne Anhang.</li>
+<li><strong>Musikabschnitte:</strong> Am 30.10. war kein freier Abschnitt ≥ 45,6 s mehr übrig. Abschnitte vom Vortag sind erlaubt, wenn sie nicht direkt an die Vorfolge grenzen.</li>
+<li><strong>Hamburg:</strong> Läufe nennen „Hamburg“ (Standort von claude.ai). Die Stadt steht nie in Video, Caption oder Guide. Quellen mit Hamburg im Titel fallen weg.</li>
+<li><strong>Kein Ersatz für die Endprüfung:</strong> Gemini/OpenRouter hat kein Guthaben, deshalb prüft der finale Prüfer manuell Frame für Frame.</li>
+<li><strong>Offene Engine-Wünsche</strong> (Design-Backlog, nur mit Pius' OK): Logo-Bild in der LOGO-Kachel, Offline-Symbol bei WEBSITE, leere orange Pille auf dem Cover, Screenshots ins Claude-Fenster einpassen, ein roter Rahmen blitzt für 1–2 Frames auf.</li>
+</ul>
+
+<h2>8. Einrichten</h2>
+<ol>
+<li>In T3 die Task „pickthecompany Tagesbetrieb (5 Folgen)“ öffnen und den Prompt durch den aus Abschnitt 2 ersetzen (Knopf „Prompt kopieren“).</li>
+<li>Workspace auf Projekt-Root stellen, nicht „neuer Worktree“.</li>
+<li>Uhrzeit: 10:00, solange der Mac nachts aus ist. Läuft er nachts durch, 00:30.</li>
+<li>Die Task „pickthecompany Abendbericht“ (21:45) bleibt wie sie ist.</li>
+</ol>
+</main>
+</body>
+</html>

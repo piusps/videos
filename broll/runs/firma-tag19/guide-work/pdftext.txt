@@ -1,0 +1,198 @@
+Superkind
+> KI BAUT EINE FIRMA · STIMMT DIE VERSANDZEILE?
+Deine Versandzeile prüfen. In
+zehn Minuten.
+Der Prompt, mit dem die KI aus der Serie die Versandzeile in ihren
+Werbebriefen geprüft hat: Websuche nach Belegen beim Anbieter, alles ohne
+Beleg raus, korrigierte Word-Datei zurück. Mit der Regel aus dem Lauf, dem
+Gegencheck im eigenen Konto und der Liste, was Claude nicht entscheiden
+kann.
+1 min 48 s
+So lange hat Claude in unserem Lauf gebraucht:
+6 Websuchen, 2 Seitenabrufe, die neue
+Versandzeile in allen 5 Briefen. Ergebnis: Beträge
+ohne Beleg gestrichen.
+superkind — zsh
+$ superkind guide "Beleg"
+✓ 2 Prompts, fertig zum Kopieren
+→ geladen. Los geht's.
+DAS HAST DU AM ENDE
+✓
+Der Prüf-Prompt zum Kopieren, mit Anhang und ohne
+✓
+Vorher und nachher: die Zeile aus dem echten Lauf
+✓
+Die Regel: In die Zeile kommt nur, was der Anbieter belegt
+✓
+Gegencheck in 3 Punkten und was Claude nicht entscheiden kann
+Ein Guide von @pickthecompany × Superkind
+Trigger-Wort: Beleg
+2
+Superkind · Beleg-Guide
+01
+//  QUICK WIN
+Der Prüf-Prompt zum Kopieren.
+Öffne claude.ai und starte einen neuen Chat. Häng über „+“ dein Angebot oder deinen Brief als
+Word-Datei an, in dem die Versandzeile steht. Dann füge diesen Prompt ein und ersetze die
+Teile in eckigen Klammern. Das ist der Prompt aus unserem Lauf, verallgemeinert für dein
+eigenes Angebot.
+Variante A: mit Anhang (dein Angebot als Word-Datei)
+KOPIEREN
+claude › Im Anhang ist mein Angebot mit der Versandzeile. Mein Angebot: [PREIS] brutto für 
+[MENGE] [PRODUKT], [PREIS] für ein einzelnes Stück, hergestellt auf Bestellung über [ANBIETER], 
+Kunden in Deutschland. Prüf die Versandzeile mit der Websuche gegen die aktuellen Versandpreise 
+und Lieferzeiten von [ANBIETER] nach Deutschland, in Euro, jeweils mit Quelle. Korrigier die 
+Zeile so, dass nur Belegtes drinsteht, und trag sie überall im Dokument ein. Sag mir, ob mein 
+Paketpreis so bleiben kann, oder was du ohne meinen Einkaufspreis nicht entscheiden kannst. 
+Erfinde nichts. Gib mir die korrigierte Word-Datei zurück.
+KLICKPFAD
+Neuer Chat → unten links „+“ → Häkchen bei
+„Gedächtnis“ entfernen → „Dateien
+hochladen oder hinzufügen“ → Angebot
+anhängen → Prompt einfügen → senden.
+WEBSUCHE
+Muss an sein, Claude sucht die Belege
+selbst. In unserem Lauf: 6 Websuchen und 2
+Seitenabrufe, Research aus.
+ERGEBNIS
+Die korrigierte Datei erscheint als Karte im
+Chat („Dokument · DOCX“). Darüber steht
+Claudes Begründung mit Quellen.
+DAUER
+Unser Lauf am 31.10.2026: 1 Minute 48
+Sekunden.
+Quick Win · 10 Minuten
+Claude hat in unserem Lauf 1 Minute 48 Sekunden gearbeitet. Mit Anhängen, Lesen der Antwort und dem
+Gegencheck im eigenen Anbieter-Konto hast du nach etwa 10 Minuten eine Versandzeile, in der nur
+Belegtes steht.
+3
+Superkind · Beleg-Guide
+02
+//  VORHER / NACHHER
+Die Zeile im Brief.
+Seite 1 von 5 aus unserem Lauf. Durchgestrichen: die alte Zeile mit den Beträgen. Darunter der
+erste Satz der neuen Zeile. Für die alten Beträge hat Claude keinen Beleg gefunden, also stehen
+keine Beträge mehr drin.
+VERSANDZEILE IM BRIEF
+Vorher
+Versand: zzgl. 11,20 Euro brutto bei 5 Shirts, zzgl. 5,20 Euro brutto bei einem Einzelshirt.
+Nachher
+Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.
+Echter Lauf vom 31.10.2026, Seite 1 von 5, alte Zeile durchgestrichen, darunter die neue. Empfängerblock und Website von uns
+geschwärzt.
+Hinweis zur Lieferzeit
+Hinter den neuen Satz hat Claude im Lauf noch eine Lieferzeit gesetzt. Die ist im Lauf von Claude
+eingesetzt, die Quellen widersprechen sich (2–5 vs. 5–20 Werktage) – nicht übernehmen. Eine Lieferzeit
+gehört nur in die Zeile, wenn dein Anbieter sie für dein Konto nennt, und auch dann nie als festes Datum.
+4
+Superkind · Beleg-Guide
+03
+//  VARIANTE B
+Kein Dokument zur Hand? Dann ohne Anhang.
+Du willst nur eine einzelne Zeile prüfen, zum Beispiel aus deinem Shop oder einer Mail? Dann
+kopier sie direkt in den Prompt.
+Variante B: ohne Anhang (nicht getestet)
+KOPIEREN
+claude › Ich bin [DEIN BERUF] und verkaufe [PRODUKT], hergestellt über [ANBIETER], an Kunden in 
+Deutschland. In meinem Angebot steht diese Versandzeile: „[ZEILE]“. Prüf sie mit der Websuche 
+gegen die aktuellen Versandpreise und Lieferzeiten von [ANBIETER] nach Deutschland, in Euro, mit 
+Quelle. Schreib mir eine korrigierte Zeile, in der nur Belegtes steht, und sag mir, was du nicht 
+prüfen kannst. Erfinde nichts.
+Nicht getestet
+Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit Anhang (1
+Minute 48 Sekunden).
+BEISPIEL
+WOFÜR DIE PRÜFUNG PASST
+Kaffeerösterin
+Versandbetrag und Lieferversprechen im Abo-Angebot gegen den Paketdienst prüfen
+Grafikerin mit Postern
+Versand- und Lieferzeile im Shop gegen die Seite des Druckanbieters prüfen
+Schreiner mit Schneidebrettern
+Paket- oder Speditionspreis im Angebot gegen die Preisliste prüfen
+Fotograf mit Fotobüchern
+Lieferzeit-Zusage im Angebot gegen die Druckerei prüfen
+5
+Superkind · Beleg-Guide
+04
+//  DIE REGEL
+In die Zeile kommt nur, was belegt ist.
+Claude hat im Lauf nach vier Regeln entschieden. Die gleichen Regeln kannst du auf jede
+Versandzeile anwenden, mit oder ohne Claude.
+1
+Nur Anbieterquellen zählen
+Ein Betrag bleibt nur stehen, wenn eine Seite deines Anbieters ihn nennt. Claude fand im Lauf einen
+Euro-Betrag in einem Testbericht und hat ihn trotzdem nicht übernommen: „Das ist aber keine Printful-
+Quelle.“
+2
+Nicht mit geschätztem Kurs umrechnen
+Die Versandseite zeigte Claude in diesem Lauf nur Dollar. Umrechnen mit einem angenommenen Kurs
+wäre geraten. Claude: „Ich rechne Dollar nicht mit einem angenommenen Kurs um.“
+3
+Kein Beleg, kein Betrag
+Lässt sich der Betrag nicht belegen, fliegt er raus. Statt einer falschen Zahl steht dann: „Versand: Die
+Versandkosten nenne ich Ihnen vor Ihrer Bestellung.“
+4
+Lieferzeit nie fest zusagen
+Widersprechen sich die Quellen, kommt keine Lieferzeit als Zusage in die Zeile. Claude: „Ein festes
+Lieferdatum solltest du nicht zusagen.“
+Claude wörtlich
+„Für die 11,20 € und 5,20 € habe ich keinen Beleg gefunden. … Deshalb steht in der Zeile jetzt kein Betrag
+mehr. Schau in deinem Printful-Konto nach, was dir in Euro berechnet wird.“
+Echter Lauf vom 31.10.2026: Claude liest zuerst die Briefe, dann sucht es im Web.
+6
+Superkind · Beleg-Guide
+05
+//  GEGENCHECK
+Drei Punkte, bevor die Zeile rausgeht.
+Claudes Antwort ist ein Anfang, kein Beleg für dein Konto. Prüf diese drei Punkte selbst, bevor
+du den Brief verschickst oder den Shop änderst.
+Zahl im eigenen Konto ansehen: Checkout oder Versandrechner deines Anbieter-Kontos. Nur diese Zahl
+gilt für dich.
+Steuer-Aufschlag des Anbieters prüfen: Im Lauf sagte Claude, Printful schlägt ohne geprüfte USt-ID
+19 % deutsche Umsatzsteuer auf. Ob das für dich gilt, siehst du in deinem Konto.
+Widersprüchliche Lieferzeiten nie als Zusage schreiben: Im Lauf nannten die Quellen 2–5 und 5–20
+Werktage. Dann lieber keine Zeitangabe als eine falsche.
+Unsere Gegenprüfung
+Die Versandseite zeigte Claude in diesem Lauf nur Dollar. Als wir dieselbe Seite nach dem Lauf selbst
+abgerufen haben (printful.com/shipping, 31.10.2026), zeigte sie uns Euro. Was eine Seite anzeigt, hängt
+also vom Abruf ab. Verbindlich ist nur der Checkout in deinem eigenen Konto.
+Echter Lauf vom 31.10.2026: Claude gibt die korrigierte Datei als Karte zurück. Geändert hat es nur die Versandzeile.
+06
+//  NICHT ENTSCHIEDEN
+Was Claude ohne dich nicht entscheiden kann.
+Die zweite Frage im Prompt war, ob der Paketpreis bleiben kann. Claude: „Das kann ich ohne
+deinen Einkaufspreis nicht entscheiden.“ Für dein Angebot heißt das:
+Dein Einkaufspreis: Ohne ihn lässt sich nicht sagen, ob dein Paketpreis trägt. Im Lauf fehlte der Preis für
+das gestickte Shirt.
+Dein Umsatzsteuerstatus: mit oder ohne Umsatzsteuer-Ausweis. Davon hängt ab, was dir vom Preis
+bleibt. Das klärst du mit deiner Steuerberatung, nicht mit Claude.
+Versand im Preis oder separat: Nennt deine Zeile keinen Betrag, musst du vor der Bestellung selbst
+entscheiden, wie du den Versand berechnest.
+Rechtliche Preisangaben: ob deine Zeile alle Pflichtangaben erfüllt, prüft Claude nicht.
+Echter Lauf vom 31.10.2026: Claudes letzter Absatz.
+7
+Superkind · Beleg-Guide
+07
+//  FEHLER
+Woran es meistens scheitert.
+Einen Betrag aus einem Testbericht übernehmen: Testberichte sind keine Anbieterquelle. Claude hat ihn
+im Lauf deshalb weggelassen.
+Selbst umrechnen: Ein geschätzter Kurs macht aus einem Dollarbetrag keinen belegten Euro-Preis.
+Die Lieferzeit aus Claudes neuer Zeile kopieren: Im Lauf widersprachen sich die Quellen. Nur
+übernehmen, was dein Anbieter für dein Konto nennt.
+„Erfinde nichts“ weglassen: Dann riskierst du ausgedachte Tarife ohne Quelle.
+Nur eine Stelle ändern: Steht die Zeile in mehreren Briefen oder Seiten, muss sie überall gleich sein. Im
+Lauf hat Claude sie in alle 5 Briefe eingetragen.
+Brief für fertig halten: Claude ändert nur die Versandzeile. Im Lauf blieben die gelben Platzhalter für
+Absender, Kontakt und Datum offen.
+Das ist eine Zusammenfassung aus einem Lauf, keine Steuer- oder Rechtsberatung.
+Experiment, keine Geschäfts-, Steuer- oder Rechtsberatung. Prompt, Begründung und Entscheidung aus einem echten claude.ai-Lauf vom
+31.10.2026 (1 min 48 s, 6 Websuchen, 2 Seitenabrufe, Gedächtnis aus), wörtlich übernommen oder verallgemeinert. Die Versandseite zeigte
+Claude in diesem Lauf nur Dollar; unsere Gegenprüfung derselben Seite am 31.10.2026 zeigte Euro. Verbindlich ist nur der Checkout im
+eigenen Konto. Betriebsnamen, Anschriften und Websites weggelassen oder geschwärzt. Variante B und Beispiele nach Beruf nicht getestet.
+Menünamen können sich ändern.
+Als Nächstes: Mit oder ohne Umsatzsteuer?
+Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt
+in Slack und Teams.
+Folg @pickthecompany für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort
+aus dem Video kommentieren.

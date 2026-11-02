@@ -1,0 +1,20 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt sucht sie einen Firmennamen, und sieben von zehn fliegen raus.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. In der letzten Folge hat sie gerechnet: Partner ist Printful, Vorschlag 109 Euro für fünf Shirts, 29,90 Euro für ein nachbestelltes Einzelshirt.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ und „Upload or add files“ das letzte Ergebnis anhängen, hier die Preiskalkulation.
+2. Fragen: Schlag mir zehn Namen vor, die meine Kunden sofort verstehen. Prüf für jeden mit der Websuche, ob es schon eine Firma mit diesem oder einem sehr ähnlichen Namen in meiner Branche gibt und ob die .de-Domain offensichtlich belegt ist, jeweils mit Quelle. Streich alle belegten Namen, entscheide dich für einen und begründe es mit zwei bis drei konkreten Gründen. Sag mir, was du nicht prüfen kannst. Erfinde nichts.
+3. Was Claude nicht prüft, danach selbst nachsehen: DPMAregister und EUIPO eSearch (Marken), Handelsregister, Domain beim Registrieren, Social-Media-Namen.
+
+Ergebnis im echten Lauf (1 Minute 54 Sekunden, 19 Websuchen, 10 Quellenlinks): Die KI wählt „Kolonnenshirt“. Gestrichen: Kluftwerk, Teamkluft, Firmenkluft und Baukluft (zu nah an Kluft.de, Arbeitskleidung für dieselben Kunden), Stichfest (Stickerei in Tirol, Domain belegt), Logostich (aktiver Shop mit fast genau diesem Angebot), Meistershirt (Domain belegt, dazu die Fußball-Bedeutung). Gründe: „Kolonne“ ist auf dem Bau der Arbeitstrupp und passt zum Fünferpaket für die ganze Truppe. Zu „Kolonnenshirt“ hat Claude keine Firma, keinen Shop und keinen Produktnamen gefunden. Die beiden anderen übrigen Namen (Handwerkerhemd, Betriebsshirt) sind Allerweltswörter.
+
+Der Haken: kolonnenshirt.de ist nicht als frei bestätigt, die DENIC-Abfrage brach bei 7 von 10 Domains mit Fehler ab. Markenregister (DPMA, EUIPO), Handelsregister und Social-Media-Namen hat Claude nicht geprüft, kleine Betriebe ohne Website findet die Websuche nicht.
+
+Kommentiere „Name“, dann schick ich dir den Guide mit der Frage zum Kopieren, der Prüfliste für den eigenen Firmennamen und dem echten Ergebnis aus dem Lauf.
+
+Offen bleibt: Wie sieht ein Logo aus, das sich sticken lässt?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #firmenname #firmenshirts

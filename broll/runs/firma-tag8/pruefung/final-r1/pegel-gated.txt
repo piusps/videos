@@ -1,0 +1,13 @@
+Stems runs/firma-ep/tag8/render, 400-ms-Fenster, nur Fenster mit Stimme > -35 dBFS
+hook    0.00- 4.83  Stimme  -21.5  Musik  -41.9  Abstand  20.3 dB  kleinstes Fenster  11.2 dB
+recap   4.83-11.00  Stimme  -21.2  Musik  -40.1  Abstand  18.8 dB  kleinstes Fenster  13.9 dB
+heute  11.00-12.62  Stimme  -20.4  Musik  -42.4  Abstand  22.0 dB  kleinstes Fenster  18.1 dB
+lauf   12.62-22.31  Stimme  -21.5  Musik  -42.2  Abstand  20.7 dB  kleinstes Fenster   7.0 dB
+warum  22.31-30.56  Stimme  -21.1  Musik  -38.1  Abstand  17.0 dB  kleinstes Fenster   3.7 dB
+haken  30.56-35.89  Stimme  -21.2  Musik  -36.9  Abstand  15.7 dB  kleinstes Fenster  10.8 dB
+next   35.89-38.61  Stimme  -21.1  Musik  -36.1  Abstand  14.9 dB  kleinstes Fenster  10.9 dB
+cta    38.61-45.16  Stimme  -21.8  Musik  -36.4  Abstand  14.6 dB  kleinstes Fenster   2.9 dB
+LUFS warum: Stimme -18.4 Musik -36.7
+LUFS haken: Stimme -18.5 Musik -35.5
+LUFS next: Stimme -18.0 Musik -35.1
+LUFS cta: Stimme -19.1 Musik -35.3

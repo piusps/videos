@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Was kostet der Versand der Shirts: Versand-Anleitung mit Prompt und Rechenweg per DM, Trigger-Wort im Video: Versand)",
+ "commentReply": "Die Anleitung liegt in deiner DM. Packst du den Versand bisher in den Preis oder nennst du ihn extra?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Was verschickst du gerade am meisten?",
+  "Schick ich dir gerade, mit Prompt und Rechenweg. Weißt du schon, was dich ein Teil im Einkauf kostet?",
+  "Liegt in deiner DM. Über welchen Anbieter verschickst du?",
+  "Angekommen, der Prompt ist dabei. Verkaufst du eher einzeln oder im Paket?",
+  "Die Anleitung ist unterwegs. Welchen Preis willst du als Erstes durchrechnen?"
+ ]
+}

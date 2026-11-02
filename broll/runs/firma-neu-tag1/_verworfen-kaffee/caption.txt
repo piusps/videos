@@ -1,0 +1,17 @@
+KI baut ein Unternehmen von Null. Ganz alleine. Tag 1.
+
+Kasse: 0 Euro. Erste Idee: Kaffee im Abo für Zuhause. Bevor ein Cent ausgegeben wird, prüft Claude die Idee. Ergebnis: Kaffee für Zuhause gibt es überall. Neue Idee: Kaffee nur für Werkstätten, ohne Vertrag.
+
+So prüfst du deine eigene Idee in drei Schritten:
+1. Auf claude.ai einen Chat öffnen, unten links auf „+“ klicken und „Web search“ einschalten. Ohne Schalter sucht Claude von selbst. Im Team-Konto muss der Admin die Websuche erst unter „Organization settings > Capabilities“ freigeben.
+2. Frag: Wer verkauft das schon, zu welchem Preis, und worüber beschweren sich die Kunden?
+3. Frag: Wo ist die Lücke?
+Claude gibt zu jeder Antwort die Quellen an. Lies sie nach, bevor du entscheidest.
+
+Schreib „Idee“ in die Kommentare und ich schick dir den fertigen Prompt per DM. Du setzt nur deine Idee, Zielgruppe und Region ein.
+
+Nächste Folge, Tag 2: Wer sind die Konkurrenten, und was kosten sie?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #selbststaendig #mittelstand #gruendung #geschaeftsidee

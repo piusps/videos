@@ -1,0 +1,306 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Deine Versandzeile prüfen. In zehn Minuten.</title><style>
+@font-face { font-family: Inter; font-weight: 400; src: url('guide-fonts/Inter-Regular.ttf'); }
+@font-face { font-family: Inter; font-weight: 500; src: url('guide-fonts/Inter-Medium.ttf'); }
+@font-face { font-family: Inter; font-weight: 600; src: url('guide-fonts/Inter-SemiBold.ttf'); }
+@font-face { font-family: Inter; font-weight: 700; src: url('guide-fonts/Inter-Bold.ttf'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 100 900; src: url('guide-fonts/InterTight-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter Tight'; font-weight: 100 900; src: url('guide-fonts/InterTight-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+:root { --accent:#FF6B35; --ink:#111111; --dark:#0A0A0A; --muted:#6B7280; --surface:#F4F4F5; --rule:#E5E5E5; }
+@page { size: A4; margin: 16mm 17mm 17mm 17mm;
+  @bottom-left { content: "Superkind · Beleg-Guide"; font: 500 7.5pt -apple-system, Helvetica, Arial, sans-serif; color: #9CA3AF; }
+  @bottom-right { content: counter(page); font: 600 7.5pt -apple-system, Helvetica, Arial, sans-serif; color: #9CA3AF; } }
+@page cover { margin: 0; @bottom-left { content: none; } @bottom-right { content: none; } }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html, body { margin: 0; padding: 0; }
+body { font-family: Inter, sans-serif; color: var(--ink); font-size: 9.2pt; line-height: 1.5; }
+strong { font-weight: 600; }
+code { font-family: Menlo, 'SF Mono', monospace; font-size: 0.88em; background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 0.5px 4px; }
+
+/* Cover */
+.cover { page: cover; width: 210mm; height: 297mm; background: var(--dark); color: #fff; position: relative; overflow: hidden; padding: 22mm 20mm; display: flex; flex-direction: column; break-after: page; }
+.glow { position: absolute; border-radius: 50%; filter: blur(60px); }
+.g1 { width: 150mm; height: 150mm; right: -50mm; top: -40mm; background: radial-gradient(circle, rgba(255,107,53,.55), rgba(255,107,53,0) 65%); }
+.g2 { width: 120mm; height: 120mm; left: -45mm; bottom: 10mm; background: radial-gradient(circle, rgba(255,140,60,.32), rgba(255,140,60,0) 65%); }
+.cover > *:not(.glow) { position: relative; }
+.brand { display: flex; align-items: center; gap: 3mm; font-weight: 700; font-size: 13pt; }
+.brand .logo { width: 7.5mm; height: 7.5mm; color: #fff; }
+.cover-kicker { margin-top: 38mm; font-weight: 600; font-size: 9pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.cover-title { font-weight: 700; font-size: 38pt; line-height: 1.04; letter-spacing: -.025em; margin: 5mm 0 0; max-width: 160mm; }
+.cover-sub { font-size: 12pt; line-height: 1.5; color: rgba(255,255,255,.72); margin-top: 7mm; max-width: 145mm; }
+.stat { margin-top: 14mm; display: flex; align-items: center; gap: 7mm; padding: 7mm 8mm; border-radius: 5mm; background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.03)); border: 1px solid rgba(255,255,255,.14); max-width: 160mm; }
+.stat-v { font-weight: 700; font-size: 40pt; letter-spacing: -.03em; color: var(--accent); white-space: nowrap; line-height: 1; }
+.stat-v.long { font-size: 25pt; }  /* long values like "bis 50 % · bis 12 Monate" */
+.stat-l { font-size: 10.5pt; line-height: 1.45; color: rgba(255,255,255,.8); }
+.outcomes { margin-top: 12mm; }
+.outcomes-h { font-weight: 600; font-size: 9pt; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 3mm; }
+.outcome { display: flex; gap: 3.5mm; align-items: flex-start; font-size: 11pt; margin: 2.6mm 0; color: rgba(255,255,255,.9); }
+.tick { flex: none; width: 5.5mm; height: 5.5mm; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 8pt; display: grid; place-items: center; margin-top: .3mm; }
+.cover-foot { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; font-size: 9pt; color: rgba(255,255,255,.55); }
+.cover-foot strong { color: #fff; }
+.trigger-pill { border: 1px solid rgba(255,107,53,.6); color: #fff; border-radius: 99px; padding: 1.8mm 4mm; font-weight: 600; }
+
+/* Sections */
+section { margin-bottom: 7mm; }
+.sec-top { break-inside: avoid; }
+.sec-top.more { break-after: avoid; }  /* only when blocks follow; on a one-block section it pushed the whole section a page too far */
+section.break { break-before: page; }
+.sec-head { display: flex; align-items: baseline; gap: 4mm; margin-bottom: 1mm; }
+.sec-kicker { font-weight: 600; font-size: 8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+h2 { font-weight: 700; font-size: 18pt; line-height: 1.15; letter-spacing: -.02em; margin: 1mm 0 2.5mm; break-after: avoid; }
+.sec-intro { font-size: 10pt; line-height: 1.5; color: #374151; margin: 0 0 4mm; max-width: 160mm; }
+.body { margin: 0 0 3.5mm; }
+
+.cards { display: grid; gap: 4mm; margin: 2mm 0 5mm; break-inside: avoid; }
+.cols-2 { grid-template-columns: 1fr 1fr; } .cols-3 { grid-template-columns: 1fr 1fr 1fr; } .cols-4 { grid-template-columns: 1fr 1fr; }
+.card { border: 1px solid var(--rule); border-radius: 4mm; padding: 4mm; background: linear-gradient(180deg, #fff, #FAFAFA); }
+.card-num { font-weight: 700; font-size: 18pt; color: var(--accent); letter-spacing: -.02em; line-height: 1; }
+.card-title { font-weight: 700; font-size: 11pt; margin: 3mm 0 1.5mm; }
+.card-text { font-size: 9pt; line-height: 1.5; color: #4B5563; }
+
+.steps { margin: 1mm 0 5mm; }
+.step { display: flex; gap: 4.5mm; padding: 2.8mm 0; border-bottom: 1px solid var(--rule); break-inside: avoid; }
+.step:last-child { border-bottom: none; }
+.step-num { flex: none; width: 8mm; height: 8mm; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 700; font-size: 9.5pt; display: grid; place-items: center; }
+.step-title { font-weight: 700; font-size: 10.8pt; margin: .8mm 0 1mm; }
+.step-text { font-size: 9.4pt; color: #374151; line-height: 1.55; }
+
+.code { background: var(--dark); border-radius: 4mm; margin: 2mm 0 5mm; overflow: hidden; break-inside: avoid; }
+.code-bar { display: flex; align-items: center; gap: 1.6mm; padding: 3mm 4.5mm; border-bottom: 1px solid rgba(255,255,255,.08); }
+.dot { width: 2.4mm; height: 2.4mm; border-radius: 50%; background: rgba(255,255,255,.18); }
+.dot:first-child { background: var(--accent); }
+.code-label { margin-left: 2.5mm; font-family: Menlo, monospace; font-size: 8pt; color: rgba(255,255,255,.6); }
+.code pre { margin: 0; padding: 3.5mm 5mm 4mm; font-family: Menlo, 'SF Mono', monospace; font-size: 7.2pt; line-height: 1.5; color: rgba(255,255,255,.86); white-space: pre-wrap; word-break: break-word; }
+.c-h { color: #fff; font-weight: 700; } .c-k { color: var(--accent); } .c-m { color: rgba(255,255,255,.4); }
+
+.prompt { border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 3mm; padding: 4mm 5mm; margin: 2mm 0 4mm; background: #FFFBF8; break-inside: avoid; }
+.prompt-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 2mm; }
+.chip { font-weight: 700; font-size: 7pt; letter-spacing: .1em; text-transform: uppercase; background: var(--accent); color: #fff; border-radius: 99px; padding: .8mm 2.6mm; }
+.prompt-label { font-weight: 700; font-size: 10pt; }
+.prompt-text { font-size: 9pt; line-height: 1.6; color: #1F2937; }
+
+.shot { margin: 2mm 0 5mm; break-inside: avoid; text-align: center; }
+.shot img { display: block; margin: 0 auto; border-radius: 3mm; border: 1px solid var(--rule); }
+.shot figcaption { font-size: 8pt; color: var(--muted); margin-top: 1.6mm; }
+.callout { border-radius: 3.5mm; padding: 4mm 5mm; margin: 2mm 0 5mm; break-inside: avoid; }
+.callout.tip { background: var(--surface); }
+.callout.warn { background: #FFF4EE; border: 1px solid rgba(255,107,53,.35); }
+.callout-title { font-weight: 700; font-size: 10pt; margin-bottom: 1mm; }
+.callout.warn .callout-title { color: #C2410C; }
+.callout-text { font-size: 9.2pt; color: #374151; }
+
+.checklist { list-style: none; padding: 0; margin: 1mm 0 5mm; }
+.checklist li { display: flex; gap: 3mm; align-items: flex-start; margin: 2mm 0; font-size: 9.6pt; break-inside: avoid; }
+.box { flex: none; width: 4mm; height: 4mm; border: 1.5px solid var(--accent); border-radius: 1.2mm; margin-top: .6mm; }
+
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 2mm 0 5mm; break-inside: avoid; }
+.fact { background: var(--surface); border-radius: 3mm; padding: 3.5mm 4.5mm; }
+.fact-k { font-weight: 600; font-size: 7.6pt; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.fact-v { font-weight: 600; font-size: 10pt; margin-top: 1mm; }
+.tbl { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 2mm 0 2mm; font-size: 7.6pt; line-height: 1.38; }
+.tbl th { background: var(--dark); color: #fff; text-align: left; font-weight: 600; font-size: 7pt; letter-spacing: .06em; text-transform: uppercase; padding: 2mm 2.2mm; }
+.tbl td { border-bottom: 1px solid var(--rule); padding: 2mm 2.2mm; vertical-align: top; word-wrap: break-word; overflow-wrap: anywhere; }
+.tbl tr { break-inside: avoid; }
+.tbl tbody tr:nth-child(even) td { background: var(--surface); }
+.tbl td:first-child { font-weight: 700; }
+.tbl-cap { font-size: 7.5pt; color: var(--muted); margin: 0 0 5mm; }
+
+.cta { background: var(--dark); color: #fff; border-radius: 5mm; padding: 7mm 8mm; position: relative; overflow: hidden; break-inside: avoid; margin-top: 6mm; }
+.cta .glow { width: 90mm; height: 90mm; right: -30mm; top: -40mm; background: radial-gradient(circle, rgba(255,107,53,.5), rgba(255,107,53,0) 65%); }
+.cta > *:not(.glow) { position: relative; }
+.cta-title { font-weight: 700; font-size: 16pt; letter-spacing: -.01em; }
+.cta-text { font-size: 10pt; color: rgba(255,255,255,.72); margin: 2.5mm 0 5mm; max-width: 135mm; }
+.cta-btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; font-size: 10pt; border-radius: 99px; padding: 3mm 6mm; text-decoration: none; }
+.cta-foot { margin-top: 6mm; font-size: 9pt; color: rgba(255,255,255,.6); }
+.fineprint { margin-top: 4mm; font-size: 7.5pt; color: var(--muted); }
+.cta-foot strong { color: #fff; } .cta-foot .acc { color: var(--accent); font-weight: 700; }
+
+/* ---------- v3 (2026-10-22): consoles, repos, paths, value console ---------- */
+a.lnk { color: var(--accent); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(255,107,53,.35); }
+.term { background: #0B0B0D; border-radius: 4mm; margin: 2mm 0 5mm; overflow: hidden; break-inside: avoid; border: 1px solid #1F1F23;
+  box-shadow: 0 2mm 6mm rgba(0,0,0,.12); }
+.term .code-bar { background: #141417; }
+.term-body { padding: 3.6mm 5mm 4.2mm; font-family: Menlo, 'SF Mono', monospace; font-size: 7.6pt; line-height: 1.62; color: rgba(255,255,255,.88); white-space: pre-wrap; word-break: break-word; }
+.tl { min-height: 1em; }
+.t-ps { color: var(--accent); font-weight: 700; }
+.t-cmd { color: #fff; font-weight: 600; }
+.t-com { color: rgba(255,255,255,.4); }
+.t-out { color: rgba(255,255,255,.72); }
+.t-ok { color: #4ADE80; font-weight: 700; margin-right: .2em; }
+.t-acc { color: var(--accent); font-weight: 700; }
+.copy { margin-left: auto; font-family: Inter, sans-serif; font-weight: 700; font-size: 6.6pt; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent); border: 1px solid rgba(255,107,53,.5); border-radius: 99px; padding: .6mm 2.4mm; }
+.prompt-term .term-body { font-size: 8pt; line-height: 1.62; }
+.prompt-term .p-body { color: rgba(255,255,255,.92); }
+.prompt-term .p-body code { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.15); color: #fff; }
+.prompt-term .p-body strong { color: var(--accent); }
+
+.repos { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; margin: 2mm 0 5mm; }
+.repo { display: block; text-decoration: none; color: var(--ink); border: 1px solid var(--rule); border-radius: 3.5mm; padding: 3.6mm 4mm;
+  background: linear-gradient(180deg, #fff, #FAFAFA); break-inside: avoid; position: relative; overflow: hidden; }
+.repo::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1.1mm; background: var(--accent); }
+.repo-top { display: flex; align-items: center; justify-content: space-between; }
+.kind { font-weight: 800; font-size: 6.4pt; letter-spacing: .12em; border-radius: 99px; padding: .6mm 2.2mm; background: var(--dark); color: #fff; }
+.kind.k-mcp { background: var(--accent); } .kind.k-skill { background: #111; color: var(--accent); border: 1px solid var(--accent); }
+.kind.k-prompts { background: #FFE9DF; color: #C2410C; } .kind.k-plugin { background: #F4F4F5; color: #111; border: 1px solid #D4D4D8; }
+.repo-stars { font-size: 7.4pt; font-weight: 600; color: var(--muted); }
+.repo-name { display: flex; align-items: center; gap: 1.6mm; margin: 2.4mm 0 1.2mm; font-family: Menlo, monospace; font-size: 8.4pt; font-weight: 700; word-break: break-all; }
+.gh { width: 3.6mm; height: 3.6mm; flex: none; }
+.repo-text { font-size: 8.4pt; line-height: 1.45; color: #4B5563; }
+.repo-inst { margin-top: 2.4mm; background: #0B0B0D; color: #fff; border-radius: 2mm; padding: 1.6mm 2.6mm; font-family: Menlo, monospace; font-size: 6.6pt; line-height: 1.4; word-break: break-all; }
+
+.paths { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin: 2mm 0 5mm; break-inside: avoid; }
+.path { border-radius: 4mm; padding: 4.5mm 5mm; border: 1px solid var(--rule); background: #fff; }
+.path.p0 { background: var(--dark); color: #fff; border-color: var(--dark); }
+.path-badge { display: inline-block; font-weight: 800; font-size: 6.8pt; letter-spacing: .12em; text-transform: uppercase; border-radius: 99px; padding: .8mm 2.6mm; background: var(--accent); color: #fff; }
+.path.p1 .path-badge { background: #F4F4F5; color: #111; border: 1px solid #D4D4D8; }
+.path-title { font-weight: 700; font-size: 11pt; margin: 2.6mm 0 2mm; line-height: 1.25; }
+.path ol { list-style: none; padding: 0; margin: 0; }
+.path li { display: flex; gap: 2.4mm; font-size: 8.8pt; line-height: 1.45; margin: 1.8mm 0; }
+.path.p0 li { color: rgba(255,255,255,.85); }
+.path.p0 code { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.18); color: #fff; }
+.pn { flex: none; width: 4.4mm; height: 4.4mm; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 7pt; display: grid; place-items: center; margin-top: .3mm; }
+.path.p1 .pn { background: #111; }
+
+.callout.win { background: linear-gradient(135deg, #FFF1EA, #FFFFFF 70%); border: 1.5px solid var(--accent); position: relative; }
+.callout.win .callout-title { color: var(--accent); font-size: 10.5pt; }
+.callout.win .callout-title::before { content: ''; }
+
+/* Superkind cover: grid + value console */
+.cover.sk { background-color: #0A0A0A;
+  background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 9mm 9mm; }
+.cover.sk .cover-kicker { margin-top: 16mm; font-family: Menlo, monospace; letter-spacing: .06em; }
+.cover.sk .cover-kicker::before { content: '> '; }
+.cover.sk > * { flex-shrink: 0; }
+.cover.sk { padding-top: 18mm; }
+.cover.sk .cover-title { font-family: 'Inter Tight', Inter, sans-serif; font-weight: 800; font-size: 33pt; line-height: 1.05; }
+.cover.sk .cover-sub { font-size: 11pt; margin-top: 5mm; }
+.cover.sk .stat { padding: 5mm 7mm; }
+.cover.sk .stat-v { font-size: 32pt; }
+.cover.sk .stat { margin-top: 9mm; }
+.cover-term { margin: 6mm 0 0; max-width: 160mm; border-color: rgba(255,107,53,.35); box-shadow: 0 0 12mm rgba(255,107,53,.18); }
+.cover-term .term-body { font-size: 8.6pt; }
+.cover.sk .outcomes { margin-top: 6mm; }
+.cover.sk .outcome { font-size: 10.5pt; margin: 2mm 0; }
+
+/* Superkind section heads */
+.sec-num { font-family: Menlo, monospace; font-weight: 700; color: #fff; background: var(--accent); border-radius: 1.4mm; padding: .3mm 1.6mm; margin-right: 2mm; letter-spacing: 0; }
+.sec-slash { font-family: Menlo, monospace; color: var(--accent); margin-right: .4mm; }
+</style></head><body>
+<div class="cover sk"><div class="glow g1"></div><div class="glow g2"></div>
+  <div class="brand"><span class="logo"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 1008 1024" enable-background="new 0 0 1008 1024" xml:space="preserve">
+<path fill="currentColor" opacity="1.000000" stroke="none" 
+	d="
+M1.000000,515.468628 
+	C3.508816,505.193634 5.823678,495.332825 8.557916,485.589722 
+	C26.339729,422.226501 54.944508,364.074310 93.325027,310.705322 
+	C133.714630,254.542648 181.932785,206.039261 237.264221,164.588547 
+	C275.414612,136.008774 315.807251,111.246918 360.346039,93.794342 
+	C397.102905,79.391136 435.045807,70.011963 474.492767,66.508324 
+	C548.200439,59.961704 618.734436,72.441536 686.803040,100.624641 
+	C754.373535,128.601532 812.601562,170.068283 862.538757,223.222900 
+	C905.706482,269.171936 939.744629,321.247437 965.054321,379.020142 
+	C981.615051,416.822235 993.844360,455.979828 1001.890808,496.434631 
+	C1004.905090,511.589508 1007.045166,526.898438 1008.859985,542.632507 
+	C1009.000000,575.687561 1009.000000,608.375122 1008.867798,641.905273 
+	C1006.935730,659.598816 1004.216309,676.279907 1000.533630,692.842041 
+	C978.862915,790.299805 930.727356,872.110718 855.283569,937.497925 
+	C810.490356,976.320312 759.514282,1004.044250 702.099548,1019.623596 
+	C695.727234,1021.352722 688.993408,1021.908447 683.000000,1025.000000 
+	C589.979126,1025.000000 496.958221,1025.000000 403.144440,1024.812256 
+	C401.068604,1024.266724 399.806976,1023.754333 398.499542,1023.574585 
+	C375.883759,1020.465515 353.725037,1015.196167 331.707520,1009.318420 
+	C271.114075,993.142578 213.783447,969.518250 161.479553,934.465820 
+	C84.442673,882.837952 32.562191,812.743225 6.430833,723.654785 
+	C4.515768,717.125854 3.766401,710.283447 1.000000,704.000000 
+	C1.000000,641.312439 1.000000,578.624878 1.000000,515.468628 
+M174.430832,280.908661 
+	C132.360031,326.000977 98.061424,376.253601 73.343391,432.896454 
+	C51.863277,482.119415 37.715244,533.244141 34.530327,586.992126 
+	C32.574276,620.002075 34.731972,652.912781 41.631405,685.320618 
+	C55.699825,751.402649 86.383385,808.600891 134.366776,856.313049 
+	C173.031891,894.759644 219.122833,921.764160 269.108032,942.451782 
+	C342.053436,972.642090 418.677856,986.264771 496.995026,991.525818 
+	C525.906799,993.468079 554.889404,994.015869 583.894958,992.867126 
+	C609.215332,991.864380 634.345215,989.558105 659.249634,984.780762 
+	C743.325989,968.652588 811.599792,925.797852 866.911926,861.434753 
+	C897.255676,826.125610 920.417236,786.412720 936.993408,742.842468 
+	C952.570435,701.898682 961.157654,659.478577 963.505188,615.866455 
+	C965.335815,581.857178 962.766235,548.021606 956.679077,514.466736 
+	C946.607056,458.946381 928.453613,406.241730 900.782349,357.058380 
+	C848.720642,264.523193 775.598022,194.419083 678.239502,150.695053 
+	C634.311829,130.967010 588.450989,118.435249 540.226685,114.974648 
+	C492.520752,111.551239 445.841827,116.544464 400.119202,130.667542 
+	C354.460815,144.770752 312.867432,166.815216 273.992523,194.362305 
+	C238.119522,219.782211 204.980972,248.309341 174.430832,280.908661 
+z"/>
+<path fill="currentColor" opacity="1.000000" stroke="none" 
+	d="
+M312.716034,733.301758 
+	C340.877350,767.426331 375.921936,789.679565 419.240021,798.031799 
+	C452.645630,804.472900 484.874512,799.989685 515.784058,786.018250 
+	C556.463501,767.630798 587.204407,738.881470 606.636963,698.398499 
+	C610.725159,689.881714 618.247070,685.387207 626.533875,686.001709 
+	C635.832703,686.691223 643.376038,692.156494 645.668640,700.339966 
+	C647.488403,706.835449 646.582275,713.166199 643.577698,719.253357 
+	C635.199158,736.227295 625.074463,752.047241 612.417419,766.151978 
+	C583.569397,798.299622 548.888000,821.788574 506.930084,832.586548 
+	C419.165558,855.173035 346.421631,829.000366 287.581604,761.722412 
+	C266.645935,737.784485 252.814896,709.774658 245.551773,678.705322 
+	C242.979233,667.700806 248.420929,659.237671 259.363770,656.582092 
+	C269.274231,654.177063 278.028168,659.565247 280.909088,670.050781 
+	C287.255432,693.149292 297.375519,714.334473 312.716034,733.301758 
+z"/>
+<path fill="currentColor" opacity="1.000000" stroke="none" 
+	d="
+M767.009033,552.742004 
+	C764.351318,561.432800 761.451355,569.568787 756.665283,576.908508 
+	C749.110657,588.493713 737.259033,591.277039 725.000854,584.291321 
+	C714.015625,578.031006 710.612427,565.942139 717.051025,554.098450 
+	C722.123230,544.768127 725.658142,535.096436 727.152954,524.547302 
+	C728.311646,516.369934 726.882263,508.520996 724.608459,500.921570 
+	C716.524963,473.906067 700.660278,454.112976 671.789001,448.001495 
+	C657.004150,444.871796 642.964417,448.917694 629.916931,455.925232 
+	C607.714600,467.849670 592.979736,485.551941 588.785278,511.003510 
+	C588.436035,513.123169 588.341370,515.301453 588.315247,517.454834 
+	C588.159180,530.304626 580.023621,539.163452 568.423950,539.045105 
+	C556.475647,538.923157 547.326233,529.315002 547.854004,516.629639 
+	C548.389343,503.762054 550.872437,491.125885 555.983826,479.271606 
+	C573.427002,438.817322 604.571106,414.691650 647.559570,408.137756 
+	C692.165527,401.337311 727.131104,419.135315 751.252197,456.991547 
+	C769.930298,486.305511 774.853699,518.395874 767.009033,552.742004 
+z"/>
+<path fill="currentColor" opacity="1.000000" stroke="none" 
+	d="
+M404.035095,494.222168 
+	C404.340546,503.378540 403.383942,511.989716 402.105957,520.541077 
+	C400.441345,531.679443 390.369293,539.347961 380.084412,537.684937 
+	C368.483398,535.809021 361.577484,526.213013 363.370667,514.625183 
+	C368.266144,482.989960 357.995697,456.717926 334.173065,435.974609 
+	C306.913574,412.238678 268.753143,413.667053 240.952866,438.912140 
+	C222.750595,455.441406 212.166183,475.591888 211.926849,500.727325 
+	C211.795181,514.554443 201.475769,522.663513 189.223862,519.266113 
+	C182.351318,517.360352 177.247971,510.854553 176.687958,503.465729 
+	C172.345551,446.171722 215.734238,394.509247 269.975952,383.754181 
+	C315.271393,374.772949 358.294678,394.317719 384.535828,434.670563 
+	C396.259460,452.698822 402.455231,472.431610 404.035095,494.222168 
+z"/>
+</svg></span>Superkind</div>
+  <div class="cover-kicker">KI baut eine Firma · Stimmt die Versandzeile?</div>
+  <h1 class="cover-title">Deine Versandzeile prüfen. In zehn Minuten.</h1>
+  <div class="cover-sub">Der Prompt, mit dem die KI aus der Serie die Versandzeile in ihren Werbebriefen geprüft hat: Websuche nach Belegen beim Anbieter, alles ohne Beleg raus, korrigierte Word-Datei zurück. Mit der Regel aus dem Lauf, dem Gegencheck im eigenen Konto und der Liste, was Claude nicht entscheiden kann.</div>
+  <div class="stat"><div class="stat-v">1 min 48 s</div><div class="stat-l">So lange hat Claude in unserem Lauf gebraucht: 6 Websuchen, 2 Seitenabrufe, die neue Versandzeile in allen 5 Briefen. Ergebnis: Beträge ohne Beleg gestrichen.</div></div>
+  <div class="term cover-term"><div class="code-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="code-label">superkind — zsh</span></div><div class="term-body"><div class="tl"><span class="t-ps">$</span> <span class="t-cmd">superkind guide &quot;Beleg&quot;</span></div><div class="tl"><span class="t-ok">✓</span> 2 Prompts, fertig zum Kopieren</div><div class="tl t-acc">→ geladen. Los geht&#x27;s.</div></div></div>
+  <div class="outcomes"><div class="outcomes-h">Das hast du am Ende</div><div class="outcome"><span class="tick">✓</span><span>Der Prüf-Prompt zum Kopieren, mit Anhang und ohne</span></div><div class="outcome"><span class="tick">✓</span><span>Vorher und nachher: die Zeile aus dem echten Lauf</span></div><div class="outcome"><span class="tick">✓</span><span>Die Regel: In die Zeile kommt nur, was der Anbieter belegt</span></div><div class="outcome"><span class="tick">✓</span><span>Gegencheck in 3 Punkten und was Claude nicht entscheiden kann</span></div></div>
+  <div class="cover-foot"><div>Ein Guide von <strong>@pickthecompany</strong> × Superkind</div>
+    <div class="trigger-pill">Trigger-Wort: <b>Beleg</b></div></div>
+</div><section class=""><div class="sec-top more"><div class="sec-head"><span class="sec-kicker"><span class="sec-num">01</span><span class="sec-slash">//</span> Quick Win</span></div><h2>Der Prüf-Prompt zum Kopieren.</h2><p class="sec-intro">Öffne <a class="lnk" href="https://claude.ai">claude.ai</a> und starte einen neuen Chat. Häng über <strong>„+“</strong> dein Angebot oder deinen Brief als Word-Datei an, in dem die Versandzeile steht. Dann füge diesen Prompt ein und ersetze die Teile in eckigen Klammern. Das ist der Prompt aus unserem Lauf, verallgemeinert für dein eigenes Angebot.</p><div class="term prompt-term"><div class="code-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="code-label">Variante A: mit Anhang (dein Angebot als Word-Datei)</span><span class="copy">Kopieren</span></div><div class="term-body"><span class="t-ps">claude ›</span> <span class="p-body">Im Anhang ist mein Angebot mit der Versandzeile. Mein Angebot: [PREIS] brutto für [MENGE] [PRODUKT], [PREIS] für ein einzelnes Stück, hergestellt auf Bestellung über [ANBIETER], Kunden in Deutschland. Prüf die Versandzeile mit der Websuche gegen die aktuellen Versandpreise und Lieferzeiten von [ANBIETER] nach Deutschland, in Euro, jeweils mit Quelle. Korrigier die Zeile so, dass nur Belegtes drinsteht, und trag sie überall im Dokument ein. Sag mir, ob mein Paketpreis so bleiben kann, oder was du ohne meinen Einkaufspreis nicht entscheiden kannst. Erfinde nichts. Gib mir die korrigierte Word-Datei zurück.</span></div></div></div><div class="callout win"><div class="callout-title">Quick Win · 10 Minuten</div><div class="callout-text">Claude hat in unserem Lauf 1 Minute 48 Sekunden gearbeitet. Mit Anhängen, Lesen der Antwort und dem Gegencheck im eigenen Anbieter-Konto hast du nach etwa 10 Minuten eine Versandzeile, in der nur Belegtes steht.</div></div><div class="facts"><div class="fact"><div class="fact-k">Klickpfad</div><div class="fact-v">Neuer Chat → unten links <strong>„+“</strong> → Häkchen bei <strong>„Gedächtnis“</strong> entfernen → <strong>„Dateien hochladen oder hinzufügen“</strong> → Angebot anhängen → Prompt einfügen → senden.</div></div><div class="fact"><div class="fact-k">Websuche</div><div class="fact-v">Muss an sein, Claude sucht die Belege selbst. In unserem Lauf: 6 Websuchen und 2 Seitenabrufe, Research aus.</div></div><div class="fact"><div class="fact-k">Ergebnis</div><div class="fact-v">Die korrigierte Datei erscheint als Karte im Chat (<strong>„Dokument · DOCX“</strong>). Darüber steht Claudes Begründung mit Quellen.</div></div><div class="fact"><div class="fact-k">Dauer</div><div class="fact-v">Unser Lauf am 31.10.2026: 1 Minute 48 Sekunden.</div></div></div></section><section class=""><div class="sec-top more"><div class="sec-head"><span class="sec-kicker"><span class="sec-num">02</span><span class="sec-slash">//</span> Vorher / Nachher</span></div><h2>Die Zeile im Brief.</h2><p class="sec-intro">Seite 1 von 5 aus unserem Lauf. Durchgestrichen: die alte Zeile mit den Beträgen. Darunter der erste Satz der neuen Zeile. Für die alten Beträge hat Claude keinen Beleg gefunden, also stehen keine Beträge mehr drin.</p><table class="tbl"><colgroup><col style="width:18%"><col style="width:82%"></colgroup><thead><tr><th></th><th>Versandzeile im Brief</th></tr></thead><tbody><tr><td><strong>Vorher</strong></td><td>Versand: zzgl. 11,20 Euro brutto bei 5 Shirts, zzgl. 5,20 Euro brutto bei einem Einzelshirt.</td></tr><tr><td><strong>Nachher</strong></td><td>Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.</td></tr></tbody></table></div><figure class="shot"><img src="guide-img/brief-versandzeile.png" style="width:70%"><figcaption>Echter Lauf vom 31.10.2026, Seite 1 von 5, alte Zeile durchgestrichen, darunter die neue. Empfängerblock und Website von uns geschwärzt.</figcaption></figure><div class="callout warn"><div class="callout-title">Hinweis zur Lieferzeit</div><div class="callout-text">Hinter den neuen Satz hat Claude im Lauf noch eine Lieferzeit gesetzt. Die ist im Lauf von Claude eingesetzt, die Quellen widersprechen sich (2–5 vs. 5–20 Werktage) – nicht übernehmen. Eine Lieferzeit gehört nur in die Zeile, wenn dein Anbieter sie für dein Konto nennt, und auch dann nie als festes Datum.</div></div></section><section class=""><div class="sec-top more"><div class="sec-head"><span class="sec-kicker"><span class="sec-num">03</span><span class="sec-slash">//</span> Variante B</span></div><h2>Kein Dokument zur Hand? Dann ohne Anhang.</h2><p class="sec-intro">Du willst nur eine einzelne Zeile prüfen, zum Beispiel aus deinem Shop oder einer Mail? Dann kopier sie direkt in den Prompt.</p><div class="term prompt-term"><div class="code-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="code-label">Variante B: ohne Anhang (nicht getestet)</span><span class="copy">Kopieren</span></div><div class="term-body"><span class="t-ps">claude ›</span> <span class="p-body">Ich bin [DEIN BERUF] und verkaufe [PRODUKT], hergestellt über [ANBIETER], an Kunden in Deutschland. In meinem Angebot steht diese Versandzeile: „[ZEILE]“. Prüf sie mit der Websuche gegen die aktuellen Versandpreise und Lieferzeiten von [ANBIETER] nach Deutschland, in Euro, mit Quelle. Schreib mir eine korrigierte Zeile, in der nur Belegtes steht, und sag mir, was du nicht prüfen kannst. Erfinde nichts.</span></div></div></div><div class="callout warn"><div class="callout-title">Nicht getestet</div><div class="callout-text">Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit Anhang (1 Minute 48 Sekunden).</div></div><table class="tbl"><colgroup><col style="width:30%"><col style="width:70%"></colgroup><thead><tr><th>Beispiel</th><th>Wofür die Prüfung passt</th></tr></thead><tbody><tr><td>Kaffeerösterin</td><td>Versandbetrag und Lieferversprechen im Abo-Angebot gegen den Paketdienst prüfen</td></tr><tr><td>Grafikerin mit Postern</td><td>Versand- und Lieferzeile im Shop gegen die Seite des Druckanbieters prüfen</td></tr><tr><td>Schreiner mit Schneidebrettern</td><td>Paket- oder Speditionspreis im Angebot gegen die Preisliste prüfen</td></tr><tr><td>Fotograf mit Fotobüchern</td><td>Lieferzeit-Zusage im Angebot gegen die Druckerei prüfen</td></tr></tbody></table></section><section class="break"><div class="sec-top more"><div class="sec-head"><span class="sec-kicker"><span class="sec-num">04</span><span class="sec-slash">//</span> Die Regel</span></div><h2>In die Zeile kommt nur, was belegt ist.</h2><p class="sec-intro">Claude hat im Lauf nach vier Regeln entschieden. Die gleichen Regeln kannst du auf jede Versandzeile anwenden, mit oder ohne Claude.</p><div class="steps"><div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">Nur Anbieterquellen zählen</div><div class="step-text">Ein Betrag bleibt nur stehen, wenn eine Seite deines Anbieters ihn nennt. Claude fand im Lauf einen Euro-Betrag in einem Testbericht und hat ihn trotzdem nicht übernommen: <strong>„Das ist aber keine Printful-Quelle.“</strong></div></div></div><div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">Nicht mit geschätztem Kurs umrechnen</div><div class="step-text">Die Versandseite zeigte Claude in diesem Lauf nur Dollar. Umrechnen mit einem angenommenen Kurs wäre geraten. Claude: <strong>„Ich rechne Dollar nicht mit einem angenommenen Kurs um.“</strong></div></div></div><div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">Kein Beleg, kein Betrag</div><div class="step-text">Lässt sich der Betrag nicht belegen, fliegt er raus. Statt einer falschen Zahl steht dann: <strong>„Versand: Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.“</strong></div></div></div><div class="step"><div class="step-num">4</div><div class="step-body"><div class="step-title">Lieferzeit nie fest zusagen</div><div class="step-text">Widersprechen sich die Quellen, kommt keine Lieferzeit als Zusage in die Zeile. Claude: <strong>„Ein festes Lieferdatum solltest du nicht zusagen.“</strong></div></div></div></div></div><div class="callout tip"><div class="callout-title">Claude wörtlich</div><div class="callout-text">„Für die 11,20 € und 5,20 € habe ich keinen Beleg gefunden. … Deshalb steht in der Zeile jetzt kein Betrag mehr. Schau in deinem Printful-Konto nach, was dir in Euro berechnet wird.“</div></div><figure class="shot"><img src="guide-img/07-schritte-zeile.png" style="width:70%"><figcaption>Echter Lauf vom 31.10.2026: Claude liest zuerst die Briefe, dann sucht es im Web.</figcaption></figure></section><section class=""><div class="sec-top more"><div class="sec-head"><span class="sec-kicker"><span class="sec-num">05</span><span class="sec-slash">//</span> Gegencheck</span></div><h2>Drei Punkte, bevor die Zeile rausgeht.</h2><p class="sec-intro">Claudes Antwort ist ein Anfang, kein Beleg für dein Konto. Prüf diese drei Punkte selbst, bevor du den Brief verschickst oder den Shop änderst.</p><ul class="checklist"><li><span class="box"></span><span><strong>Zahl im eigenen Konto ansehen:</strong> Checkout oder Versandrechner deines Anbieter-Kontos. Nur diese Zahl gilt für dich.</span></li><li><span class="box"></span><span><strong>Steuer-Aufschlag des Anbieters prüfen:</strong> Im Lauf sagte Claude, Printful schlägt ohne geprüfte USt-ID 19 % deutsche Umsatzsteuer auf. Ob das für dich gilt, siehst du in deinem Konto.</span></li><li><span class="box"></span><span><strong>Widersprüchliche Lieferzeiten nie als Zusage schreiben:</strong> Im Lauf nannten die Quellen 2–5 und 5–20 Werktage. Dann lieber keine Zeitangabe als eine falsche.</span></li></ul></div><div class="callout warn"><div class="callout-title">Unsere Gegenprüfung</div><div class="callout-text">Die Versandseite zeigte Claude in diesem Lauf nur Dollar. Als wir dieselbe Seite nach dem Lauf selbst abgerufen haben (<a class="lnk" href="https://www.printful.com/shipping">printful.com/shipping</a>, 31.10.2026), zeigte sie uns Euro. Was eine Seite anzeigt, hängt also vom Abruf ab. Verbindlich ist nur der Checkout in deinem eigenen Konto.</div></div><figure class="shot"><img src="guide-img/10-datei-karte.png" style="width:50%"><figcaption>Echter Lauf vom 31.10.2026: Claude gibt die korrigierte Datei als Karte zurück. Geändert hat es nur die Versandzeile.</figcaption></figure></section><section class=""><div class="sec-top more"><div class="sec-head"><span class="sec-kicker"><span class="sec-num">06</span><span class="sec-slash">//</span> Nicht entschieden</span></div><h2>Was Claude ohne dich nicht entscheiden kann.</h2><p class="sec-intro">Die zweite Frage im Prompt war, ob der Paketpreis bleiben kann. Claude: <strong>„Das kann ich ohne deinen Einkaufspreis nicht entscheiden.“</strong> Für dein Angebot heißt das:</p><ul class="checklist"><li><span class="box"></span><span><strong>Dein Einkaufspreis:</strong> Ohne ihn lässt sich nicht sagen, ob dein Paketpreis trägt. Im Lauf fehlte der Preis für das gestickte Shirt.</span></li><li><span class="box"></span><span><strong>Dein Umsatzsteuerstatus:</strong> mit oder ohne Umsatzsteuer-Ausweis. Davon hängt ab, was dir vom Preis bleibt. Das klärst du mit deiner Steuerberatung, nicht mit Claude.</span></li><li><span class="box"></span><span><strong>Versand im Preis oder separat:</strong> Nennt deine Zeile keinen Betrag, musst du vor der Bestellung selbst entscheiden, wie du den Versand berechnest.</span></li><li><span class="box"></span><span><strong>Rechtliche Preisangaben:</strong> ob deine Zeile alle Pflichtangaben erfüllt, prüft Claude nicht.</span></li></ul></div><figure class="shot"><img src="guide-img/09-steuer-angebot-rechnen.png" style="width:78%"><figcaption>Echter Lauf vom 31.10.2026: Claudes letzter Absatz.</figcaption></figure></section><section class=""><div class="sec-top"><div class="sec-head"><span class="sec-kicker"><span class="sec-num">07</span><span class="sec-slash">//</span> Fehler</span></div><h2>Woran es meistens scheitert.</h2><ul class="checklist"><li><span class="box"></span><span><strong>Einen Betrag aus einem Testbericht übernehmen:</strong> Testberichte sind keine Anbieterquelle. Claude hat ihn im Lauf deshalb weggelassen.</span></li><li><span class="box"></span><span><strong>Selbst umrechnen:</strong> Ein geschätzter Kurs macht aus einem Dollarbetrag keinen belegten Euro-Preis.</span></li><li><span class="box"></span><span><strong>Die Lieferzeit aus Claudes neuer Zeile kopieren:</strong> Im Lauf widersprachen sich die Quellen. Nur übernehmen, was dein Anbieter für dein Konto nennt.</span></li><li><span class="box"></span><span><strong>„Erfinde nichts“ weglassen:</strong> Dann riskierst du ausgedachte Tarife ohne Quelle.</span></li><li><span class="box"></span><span><strong>Nur eine Stelle ändern:</strong> Steht die Zeile in mehreren Briefen oder Seiten, muss sie überall gleich sein. Im Lauf hat Claude sie in alle 5 Briefe eingetragen.</span></li><li><span class="box"></span><span><strong>Brief für fertig halten:</strong> Claude ändert nur die Versandzeile. Im Lauf blieben die gelben Platzhalter für Absender, Kontakt und Datum offen.</span></li><li><span class="box"></span><span>Das ist eine Zusammenfassung aus einem Lauf, keine Steuer- oder Rechtsberatung.</span></li></ul></div></section>
+<div class="cta"><div class="glow"></div>
+  <div class="cta-title">Als Nächstes: Mit oder ohne Umsatzsteuer?</div>
+  <div class="cta-text">Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.</div>
+  
+  <div class="cta-foot">Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.</div>
+</div><p class="fineprint">Experiment, keine Geschäfts-, Steuer- oder Rechtsberatung. Prompt, Begründung und Entscheidung aus einem echten claude.ai-Lauf vom 31.10.2026 (1 min 48 s, 6 Websuchen, 2 Seitenabrufe, Gedächtnis aus), wörtlich übernommen oder verallgemeinert. Die Versandseite zeigte Claude in diesem Lauf nur Dollar; unsere Gegenprüfung derselben Seite am 31.10.2026 zeigte Euro. Verbindlich ist nur der Checkout im eigenen Konto. Betriebsnamen, Anschriften und Websites weggelassen oder geschwärzt. Variante B und Beispiele nach Beruf nicht getestet. Menünamen können sich ändern.</p></body></html>

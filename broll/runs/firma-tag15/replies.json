@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Welche Adresse stimmt: Guide mit der Prüffrage und den Versand-Regeln per DM, Trigger-Wort im Video: Versand)",
+ "commentReply": "Die Prüffrage liegt in deiner DM. Welcher Quelle glaubst du bei Firmenadressen am meisten?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hättest du dem Register oder dem Impressum geglaubt?",
+  "Schick ich dir gerade, mit den Versand-Regeln. Wie viele Briefe willst du rausschicken?",
+  "Liegt in deiner DM. Prüfst du die Postleitzahl sonst auch vorher?",
+  "Angekommen, die Regeln sind dabei. Hattest du schon mal zwei Adressen für eine Firma?",
+  "Der Guide ist unterwegs. Schreibst du Firmen lieber per Brief oder per Mail an?"
+ ]
+}

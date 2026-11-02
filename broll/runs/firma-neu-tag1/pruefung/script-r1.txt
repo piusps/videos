@@ -1,0 +1,10 @@
+KI baut ein Unternehmen von Null. Ganz alleine. Tag eins.
+Kasse: null Euro. Idee: Firmenshirts mit Logo für kleine Betriebe.
+Erster Plan: eine eigene Druckmaschine.
+Zum Glück prüft sie vorher mit Claude. Das geht mit jeder Idee.
+Schritt eins: Im Chat aufs Plus, Websuche an.
+Schritt zwei, frag: Wer macht das schon, ab wie viel Stück?
+Claude sucht im Netz und antwortet mit Quellen.
+Schritt drei, frag: Was fehlt Betrieben unter zehn Leuten?
+Ihre Entscheidung: keine Maschine. Ein Druckpartner druckt, sie macht den Rest.
+Schreib „Idee“, ich schick dir den Prompt zum Ausfüllen.

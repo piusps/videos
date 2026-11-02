@@ -1,0 +1,10 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus. Tag fünf.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Werbebrief: Versand extra.
+Heute rechnet sie ihre Marge.
+Claude: Brief angehängt, Websuche bei Printful.
+Den Einkaufspreis findet sie ohne Printful-Konto nicht.
+Den Fünferpreis lässt sie offen.
+Warum? Im Fünferpack ist ein Shirt acht Euro billiger.
+Zahlt sie siebzehn Euro pro Shirt, bleibt nichts.
+Als Nächstes: Stimmt die Versandzeile?
+Kommentiere „Marge“, ich schick dir den Rechenweg. Damit weißt du in zehn Minuten, was dir bleibt.

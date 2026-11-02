@@ -1,0 +1,38 @@
+Probleme: ['B09 wort_start null']
+  3.99 ->   4.53  0.54  B03 ev führt:end+0.2  <-- Hook-Lücke >0,5
+  6.13 ->   7.05  0.92  B05 Karte SHIRTS MIT LOGO  <-- Hook-Lücke >0,5
+  7.05 ->   8.77  1.72  B05 sfx tick  <-- Hook-Lücke >0,5
+  8.77 ->   9.50  0.73  B06 Karte erst auf Bestellung / bes  <-- Hook-Lücke >0,5
+  9.50 ->  10.83  1.33  B07 start  <-- Hook-Lücke >0,5
+ 11.63 ->  12.91  1.28  B08 sfx wq2  <-- Hook-Lücke >0,5
+ 13.47 ->  14.15  0.67  B08 sfx tick
+ 14.15 ->  15.19  1.04  B08 sfx wshort
+ 15.19 ->  15.80  0.61  B09 sfx page
+ 16.72 ->  17.32  0.60  B09 Karte Shot 07 'Das Web durchsuc
+ 17.32 ->  18.14  0.81  B09 ev Gesetz@18
+ 18.14 ->  18.88  0.74  B09 ev IHK
+ 18.88 ->  20.02  1.15  B10 sfx wq2
+ 20.31 ->  21.02  0.71  B10 ev Umsatzsteuer@21
+ 21.02 ->  21.83  0.81  B10 Karte MIT UMSATZSTEUER
+ 22.09 ->  23.57  1.48  B11 sfx airy
+ 23.67 ->  24.61  0.94  B11 ev Betriebe@24.5
+ 24.61 ->  25.23  0.61  B11 ev Vorsteuerabzug
+ 25.23 ->  26.09  0.86  B11 ev holen
+ 26.56 ->  27.63  1.07  B11 Karte 17,40 € ZURÜCK
+ 27.63 ->  28.50  0.87  B11 ev zurück
+ 28.50 ->  29.28  0.78  B12 sfx wshort
+ 29.57 ->  30.31  0.74  B12 ev sonst
+ 30.61 ->  31.39  0.78  B12 ev teurer
+ 31.39 ->  32.27  0.88  B13 sfx wq2
+ 32.96 ->  33.52  0.56  B13 ev Bindung
+ 33.52 ->  34.44  0.92  B14 sfx airy
+ 34.54 ->  35.59  1.05  B14 ev Was@35.4
+ 35.59 ->  36.46  0.87  B14 ev Rechnung
+ 36.46 ->  37.22  0.76  B14 ev Rechnung:end+0.4
+ 37.78 ->  38.61  0.83  B15 Karte Steuer (Keyword)
+ 38.61 ->  39.24  0.63  B15 sfx check
+ 39.41 ->  40.15  0.73  B15 sfx popHi
+ 40.15 ->  41.21  1.06  B15 sfx chime
+ 41.43 ->  42.73  1.30  B15 sfx pop
+ 42.73 ->  44.30  1.57  B15 sfx tick  <-- Lücke >1,5
+letztes (44.3, 'B15 sfx tick') Ende 44.6

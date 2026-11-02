@@ -1,0 +1,11 @@
+1 Hook           voice  -18.3 music  -39.6 gap  21.3 min400ms  10.1
+2 Rückblick      voice  -17.9 music  -42.3 gap  24.4 min400ms  16.0
+3 Claude-Lauf    voice  -19.3 music  -39.8 gap  20.6 min400ms  12.1
+4 Partner-Wand   voice  -18.1 music  -41.9 gap  23.9 min400ms  14.4
+5 Vorbehalt      voice  -17.7 music  -36.4 gap  18.7 min400ms  15.5
+6 Warum          voice  -17.9 music  -38.8 gap  20.9 min400ms  11.3
+7 Haken          voice  -17.7 music  -38.7 gap  21.1 min400ms  10.9
+8 Grenze         voice  -17.6 music  -38.3 gap  20.7 min400ms  16.2
+9 Als Nächstes   voice  -18.6 music  -39.0 gap  20.4 min400ms  14.9
+10 CTA           voice  -18.5 music  -38.3 gap  19.8 min400ms   9.3
+Musik ohne Stimme (Ende 45.75-46.75): -41.1

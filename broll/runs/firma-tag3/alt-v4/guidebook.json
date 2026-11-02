@@ -1,0 +1,121 @@
+{
+ "topic": "Ärger",
+ "trigger_word": "Ärger",
+ "cover": {
+  "kicker": "KI baut eine Firma · Was Kunden nervt",
+  "title": "Finde heraus, was deine Kunden nervt. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie herausgefunden hat, was kleine Betriebe beim Bestellen von Logo-Shirts am meisten ärgert. Mit Klickpfad, dem echten Ergebnis unseres Laufs und der Begründung, was sie deshalb zuerst verspricht.",
+  "stat": {
+   "value": "279 Quellen",
+   "label": "So viele Quellen hat Claude Research in unserem Lauf für diese eine Frage geprüft. Dauer: 5 Minuten 22 Sekunden."
+  },
+  "outcomes": [
+   "Die fünf häufigsten Ärgernisse deiner Kunden, jedes mit Quelle",
+   "Ein klares erstes Versprechen für dein Angebot statt Bauchgefühl",
+   "Ehrlich eingeordnet: was belegt ist und was nur grob gezählt"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Erst das Ergebnis. In zehn Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai), starte einen neuen Chat, tippe unten links auf **„+“** und schalte **„Research“** ein. Dann füge diese Frage ein und ersetze die Teile in [Klammern].",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Die Frage zum Kopieren (Research an)",
+     "text": "Ich verkaufe [Firmenshirts mit Logo] an [Betriebe unter zehn Leuten], [gedruckt auf Bestellung bei einem Partner]. Recherchiere nur in Bewertungen, Foren und Ratgebern: Was nervt [kleine Betriebe] am meisten, wenn sie [Shirts mit ihrem Logo] bestellen? Nenne die fünf häufigsten Ärgernisse, jeweils mit Quelle. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Nach ein paar Minuten hast du eine Rangliste der Ärgernisse mit Quellen. Das größte Ärgernis ist dein erstes Versprechen. Genau so hat die KI in dieser Folge entschieden, womit sie wirbt."
+    },
+    {
+     "type": "facts",
+     "items": [
+      { "k": "Plan", "v": "Research gibt es in den bezahlten Plänen **Pro, Max, Team und Enterprise**. Quelle: [support.claude.com/en/articles/11088861](https://support.claude.com/en/articles/11088861-using-research-on-claude)" },
+      { "k": "Klickpfad", "v": "Neuer Chat → unten links **„+“** → **„Research“** → Frage einfügen → senden" },
+      { "k": "Dauer", "v": "Unser Lauf: 5 Minuten 22 Sekunden, 279 Quellen." }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Geschichte",
+   "title": "Ein Kunde steht. Was nervt ihn?",
+   "intro": "Eine KI soll hundert Tage lang ganz alleine ein Unternehmen führen. Ihr Produkt: Firmenshirts mit Logo, gedruckt auf Bestellung. Ihr Kunde: kleine Handwerksbetriebe. Jetzt wollte sie wissen, was diese Betriebe beim Bestellen ärgert.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      { "num": "01", "title": "Research an", "text": "Unten auf „+“, dann „Research“ einschalten." },
+      { "num": "02", "title": "Quellen eingrenzen", "text": "Nur Bewertungen, Foren und Ratgeber. Dort schreiben Käufer, was wirklich schiefging." },
+      { "num": "03", "title": "Frage stellen", "text": "Die fünf häufigsten Ärgernisse, jeweils mit Quelle. Und: Erfinde nichts." }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Was Claude in unserem Lauf gefunden hat.",
+   "break_before": true,
+   "intro": "Aus dem echten Lauf vom 28.10.2026 (Research, 279 Quellen, 5 Minuten 22 Sekunden). Claude sagt selbst dazu: Die Rangfolge beruht auf einer groben Zählung in einer begrenzten Suche, nicht auf einer Statistik. Viele Bewertende sind Privatkunden.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      { "num": "1", "title": "Druck hält das Waschen nicht aus", "text": "Blättert nach ein paar Wäschen ab oder verblasst. Rund 11 Fundstellen bei 6 Anbietern." },
+      { "num": "2", "title": "Lieferung zu spät", "text": "Verzögerungen und verpasste Termine, rund 11 Fundstellen bei 7 Anbietern, auch bei Nachbestellungen." },
+      { "num": "3", "title": "Logo falsch", "text": "Falsch platziert, zu klein oder in anderer Farbe. Rund 10 Fundstellen bei 6 Anbietern." }
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      { "k": "Platz 4", "v": "Größen fallen falsch aus oder Shirts laufen ein (rund 8 Fundstellen)." },
+      { "k": "Platz 5", "v": "Zäher Kundenservice bei Reklamationen (rund 7 Fundstellen), vor allem wenn ein Termin drängt." },
+      { "k": "Platz 6", "v": "Mindestmengen und hohe Stückpreise. Viele Anbieter drucken heute ab einem Stück, das reicht als Alleinstellung nicht mehr." }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Warum die KI zuerst waschfesten Druck verspricht: Es ist das häufigste Ärgernis, und „ab einem Stück“ bieten heute viele. Bei deinem Produkt kommt etwas anderes heraus. Wichtig ist der Weg: Ärger finden, dann das Gegenteil versprechen."
+    }
+   ]
+  },
+  {
+   "kicker": "Prompt-Bibliothek",
+   "title": "Vom Ärger zum Versprechen.",
+   "blocks": [
+    { "type": "prompt", "label": "Nachfrage 1 · Versprechen formulieren", "text": "Nimm die fünf Ärgernisse aus deinem Bericht. Schreib für jedes ein Versprechen in einem Satz, das ich wirklich halten kann, wenn ich [mit einem Druckpartner] arbeite. Sag dazu, was ich prüfen muss, bevor ich es verspreche." },
+    { "type": "prompt", "label": "Nachfrage 2 · Gegenprobe", "text": "Welche dieser Ärgernisse betreffen vor allem Privatkunden und kaum [kleine Betriebe]? Begründe mit den Quellen aus dem Bericht." },
+    { "type": "prompt", "label": "Nachfrage 3 · Nachweis", "text": "Wie kann ich [waschfesten Druck] nachweisen, bevor ich es verspreche? Nenne drei Wege mit Quelle, zum Beispiel Testwäschen oder Angaben des Herstellers." }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Grobe Zählung für Statistik halten.** Claude sagt es selbst. Prüf das Ergebnis später mit echten Kunden.",
+      "**Ohne Quellen-Grenze fragen.** Ohne „nur Bewertungen, Foren und Ratgeber“ landen Werbetexte der Anbieter im Ergebnis.",
+      "**Etwas versprechen, das du nicht halten kannst.** Erst beim Partner nachfragen, dann versprechen.",
+      "**Quellen nicht angeklickt.** Prüf jede Fundstelle, die du weiterverwendest.",
+      "**Alles auf dem Handy.** In der mobilen App nutzt Research nur das Web. [Quelle](https://support.claude.com/en/articles/11088861-using-research-on-claude)"
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes schaut die KI, was die Konkurrenz für so ein Shirt verlangt.",
+  "text": "Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne Einrichtung willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Zitate aus einem echten claude.ai-Lauf vom 28.10.2026 (Research). Menünamen können sich ändern."
+}

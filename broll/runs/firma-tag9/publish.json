@@ -1,0 +1,22 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae3b5ff28e18fc94a536598",
+ "status": "published",
+ "scheduledFor": "2026-10-30 09:00 Europe/Berlin",
+ "folge": 9,
+ "serientag": 3,
+ "note_final": "ohne Prüfer-Endrunde, auf Pius' Anweisung 2026-10-29 22:00 direkt eingeplant",
+ "funnel": {
+  "name": "PTC Funnel Folge 9",
+  "kind": "ptc",
+  "workflowId": "6ae45b54300ccd43735bce20",
+  "automationId": "6ae45b54ace4f92d971efad6",
+  "active": true,
+  "attachedTo": "IG media id 18083361461529718",
+  "created": "2026-10-30T08:54:43.015Z",
+  "by": "zernio-golive-arm"
+ },
+ "ig_media_id": "18083361461529718",
+ "url": "https://www.instagram.com/reel/DfHG2SrDX8Y/"
+}

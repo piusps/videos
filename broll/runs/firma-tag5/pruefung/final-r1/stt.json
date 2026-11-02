@@ -1,0 +1,252 @@
+{
+	"systeminfo": "AVX = 0 | AVX2 = 0 | AVX512 = 0 | FMA = 0 | NEON = 0 | ARM_FMA = 1 | F16C = 0 | FP16_VA = 1 | WASM_SIMD = 0 | SSE3 = 0 | SSSE3 = 0 | VSX = 0 | COREML = 0 | OPENVINO = 0 | ",
+	"model": {
+		"type": "medium",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 1024,
+			"head": 16,
+			"layer": 24
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1024,
+			"head": 16,
+			"layer": 24
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/pius/LinkedIn Generator/broll/whisper.cpp/ggml-medium.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,760"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3760
+			},
+			"text": " Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,760",
+				"to": "00:00:04,840"
+			},
+			"offsets": {
+				"from": 3760,
+				"to": 4840
+			},
+			"text": " Ich probiere das aus."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,840",
+				"to": "00:00:08,640"
+			},
+			"offsets": {
+				"from": 4840,
+				"to": 8640
+			},
+			"text": " Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,640",
+				"to": "00:00:10,880"
+			},
+			"offsets": {
+				"from": 8640,
+				"to": 10880
+			},
+			"text": " Zuletzt nahmen sie Stick bis 95 Grad."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,880",
+				"to": "00:00:12,560"
+			},
+			"offsets": {
+				"from": 10880,
+				"to": 12560
+			},
+			"text": " Heute vergleicht sie Konkurrenzpreise."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,560",
+				"to": "00:00:14,520"
+			},
+			"offsets": {
+				"from": 12560,
+				"to": 14520
+			},
+			"text": " Plus Research an Ergebnis anhängen."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,520",
+				"to": "00:00:16,800"
+			},
+			"offsets": {
+				"from": 14520,
+				"to": 16800
+			},
+			"text": " Frage, was kosten fünf bestickte Shirts?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,800",
+				"to": "00:00:18,800"
+			},
+			"offsets": {
+				"from": 16800,
+				"to": 18800
+			},
+			"text": " Claude prüft 295 Quellen."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,800",
+				"to": "00:00:20,840"
+			},
+			"offsets": {
+				"from": 18800,
+				"to": 20840
+			},
+			"text": " Am günstigsten rund 110 Euro."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,840",
+				"to": "00:00:24,760"
+			},
+			"offsets": {
+				"from": 20840,
+				"to": 24760
+			},
+			"text": " Die KI hält beim Preis mit und setzt auf einzelne Nachbestellungen ohne neue Einrichtungen."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,760",
+				"to": "00:00:25,400"
+			},
+			"offsets": {
+				"from": 24760,
+				"to": 25400
+			},
+			"text": " Warum?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,400",
+				"to": "00:00:27,280"
+			},
+			"offsets": {
+				"from": 25400,
+				"to": 27280
+			},
+			"text": " Fünf Anbieter nehmen fünf Stück nicht an."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,280",
+				"to": "00:00:30,920"
+			},
+			"offsets": {
+				"from": 27280,
+				"to": 30920
+			},
+			"text": " Selbst der günstigste Workwear-Shop stickt kein einzelnes Shirt, erst ab fünf."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,920",
+				"to": "00:00:31,480"
+			},
+			"offsets": {
+				"from": 30920,
+				"to": 31480
+			},
+			"text": " Haken."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,480",
+				"to": "00:00:32,920"
+			},
+			"offsets": {
+				"from": 31480,
+				"to": 32920
+			},
+			"text": " Fast alle Summen sind unter Grenzen."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,920",
+				"to": "00:00:33,880"
+			},
+			"offsets": {
+				"from": 32920,
+				"to": 33880
+			},
+			"text": " Von Claude addiert."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,880",
+				"to": "00:00:38,000"
+			},
+			"offsets": {
+				"from": 33880,
+				"to": 38000
+			},
+			"text": " Als nächstes, welcher Partner stickt 60 Grad Shirts einzeln ohne Neueinrichtung?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,000",
+				"to": "00:00:39,320"
+			},
+			"offsets": {
+				"from": 38000,
+				"to": 39320
+			},
+			"text": " Kommentiere Konkurrenz."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,320",
+				"to": "00:00:41,400"
+			},
+			"offsets": {
+				"from": 39320,
+				"to": 41400
+			},
+			"text": " Und ich schicke dir die Frage und die Preistabelle."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,400",
+				"to": "00:00:44,040"
+			},
+			"offsets": {
+				"from": 41400,
+				"to": 44040
+			},
+			"text": " Damit hast du in zehn Minuten deine Konkurrenzpreise."
+		}
+	]
+}

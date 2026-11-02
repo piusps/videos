@@ -1,0 +1,432 @@
+[
+  {
+    "text": "Dein",
+    "startMs": 80,
+    "endMs": 220
+  },
+  {
+    "text": "Kumpel",
+    "startMs": 220,
+    "endMs": 550
+  },
+  {
+    "text": "hat",
+    "startMs": 550,
+    "endMs": 720
+  },
+  {
+    "text": "jetzt",
+    "startMs": 720,
+    "endMs": 1010
+  },
+  {
+    "text": "eine",
+    "startMs": 1010,
+    "endMs": 1220
+  },
+  {
+    "text": "KI",
+    "startMs": 1220,
+    "endMs": 1880
+  },
+  {
+    "text": "Freundin.",
+    "startMs": 1880,
+    "endMs": 1960
+  },
+  {
+    "text": "Sie",
+    "startMs": 1880,
+    "endMs": 2040
+  },
+  {
+    "text": "ist",
+    "startMs": 2040,
+    "endMs": 2250
+  },
+  {
+    "text": "die",
+    "startMs": 2250,
+    "endMs": 2330
+  },
+  {
+    "text": "Erste,",
+    "startMs": 2330,
+    "endMs": 2680
+  },
+  {
+    "text": "die",
+    "startMs": 2680,
+    "endMs": 2830
+  },
+  {
+    "text": "ihn",
+    "startMs": 2830,
+    "endMs": 2980
+  },
+  {
+    "text": "ausreden",
+    "startMs": 2980,
+    "endMs": 3380
+  },
+  {
+    "text": "lässt.",
+    "startMs": 3380,
+    "endMs": 3920
+  },
+  {
+    "text": "Sie",
+    "startMs": 3920,
+    "endMs": 4160
+  },
+  {
+    "text": "fragt",
+    "startMs": 4160,
+    "endMs": 4430
+  },
+  {
+    "text": "jeden",
+    "startMs": 4430,
+    "endMs": 4750
+  },
+  {
+    "text": "Abend,",
+    "startMs": 4750,
+    "endMs": 5200
+  },
+  {
+    "text": "wie",
+    "startMs": 5200,
+    "endMs": 5390
+  },
+  {
+    "text": "sein",
+    "startMs": 5390,
+    "endMs": 5650
+  },
+  {
+    "text": "Tag",
+    "startMs": 5650,
+    "endMs": 5840
+  },
+  {
+    "text": "war.",
+    "startMs": 5840,
+    "endMs": 6120
+  },
+  {
+    "text": "Und",
+    "startMs": 6120,
+    "endMs": 6270
+  },
+  {
+    "text": "will",
+    "startMs": 6270,
+    "endMs": 6470
+  },
+  {
+    "text": "die",
+    "startMs": 6470,
+    "endMs": 6620
+  },
+  {
+    "text": "ganze",
+    "startMs": 6620,
+    "endMs": 6870
+  },
+  {
+    "text": "Antwort",
+    "startMs": 6870,
+    "endMs": 7220
+  },
+  {
+    "text": "hören.",
+    "startMs": 7220,
+    "endMs": 7720
+  },
+  {
+    "text": "Sie",
+    "startMs": 7720,
+    "endMs": 7870
+  },
+  {
+    "text": "lacht",
+    "startMs": 7870,
+    "endMs": 8130
+  },
+  {
+    "text": "über",
+    "startMs": 8130,
+    "endMs": 8360
+  },
+  {
+    "text": "jeden",
+    "startMs": 8360,
+    "endMs": 8600
+  },
+  {
+    "text": "seiner",
+    "startMs": 8600,
+    "endMs": 8890
+  },
+  {
+    "text": "Witze.",
+    "startMs": 8890,
+    "endMs": 9320
+  },
+  {
+    "text": "Auch",
+    "startMs": 9320,
+    "endMs": 9510
+  },
+  {
+    "text": "über",
+    "startMs": 9510,
+    "endMs": 9740
+  },
+  {
+    "text": "den",
+    "startMs": 9740,
+    "endMs": 9880
+  },
+  {
+    "text": "mit",
+    "startMs": 9880,
+    "endMs": 10020
+  },
+  {
+    "text": "dem",
+    "startMs": 10020,
+    "endMs": 10160
+  },
+  {
+    "text": "Fahrradhelm.",
+    "startMs": 10160,
+    "endMs": 10840
+  },
+  {
+    "text": "Beim",
+    "startMs": 10840,
+    "endMs": 11050
+  },
+  {
+    "text": "Essen",
+    "startMs": 11050,
+    "endMs": 11310
+  },
+  {
+    "text": "liest",
+    "startMs": 11310,
+    "endMs": 11640
+  },
+  {
+    "text": "er",
+    "startMs": 11640,
+    "endMs": 11660
+  },
+  {
+    "text": "euch",
+    "startMs": 11660,
+    "endMs": 11890
+  },
+  {
+    "text": "ihre",
+    "startMs": 11890,
+    "endMs": 12080
+  },
+  {
+    "text": "Nachrichten",
+    "startMs": 12080,
+    "endMs": 12650
+  },
+  {
+    "text": "vor.",
+    "startMs": 12650,
+    "endMs": 13000
+  },
+  {
+    "text": "Sie",
+    "startMs": 13000,
+    "endMs": 13140
+  },
+  {
+    "text": "hat",
+    "startMs": 13140,
+    "endMs": 13280
+  },
+  {
+    "text": "sich",
+    "startMs": 13280,
+    "endMs": 13460
+  },
+  {
+    "text": "gemerkt,",
+    "startMs": 13460,
+    "endMs": 13870
+  },
+  {
+    "text": "wie",
+    "startMs": 13870,
+    "endMs": 14010
+  },
+  {
+    "text": "sein",
+    "startMs": 14010,
+    "endMs": 14190
+  },
+  {
+    "text": "Chef",
+    "startMs": 14190,
+    "endMs": 14370
+  },
+  {
+    "text": "heißt.",
+    "startMs": 14370,
+    "endMs": 14840
+  },
+  {
+    "text": "Du",
+    "startMs": 14840,
+    "endMs": 14980
+  },
+  {
+    "text": "nicht.",
+    "startMs": 14980,
+    "endMs": 15560
+  },
+  {
+    "text": "Sein",
+    "startMs": 15560,
+    "endMs": 15810
+  },
+  {
+    "text": "Date",
+    "startMs": 15810,
+    "endMs": 16050
+  },
+  {
+    "text": "am",
+    "startMs": 16050,
+    "endMs": 16160
+  },
+  {
+    "text": "Samstag",
+    "startMs": 16160,
+    "endMs": 16700
+  },
+  {
+    "text": "hat",
+    "startMs": 16700,
+    "endMs": 16790
+  },
+  {
+    "text": "er",
+    "startMs": 16790,
+    "endMs": 16840
+  },
+  {
+    "text": "nach",
+    "startMs": 16840,
+    "endMs": 17060
+  },
+  {
+    "text": "zwanzig",
+    "startMs": 17060,
+    "endMs": 17340
+  },
+  {
+    "text": "Minuten",
+    "startMs": 17340,
+    "endMs": 17700
+  },
+  {
+    "text": "abgebrochen.",
+    "startMs": 17700,
+    "endMs": 18440
+  },
+  {
+    "text": "Sie",
+    "startMs": 18440,
+    "endMs": 18600
+  },
+  {
+    "text": "hat",
+    "startMs": 18600,
+    "endMs": 18760
+  },
+  {
+    "text": "zu",
+    "startMs": 18760,
+    "endMs": 18940
+  },
+  {
+    "text": "viel",
+    "startMs": 18940,
+    "endMs": 19070
+  },
+  {
+    "text": "von",
+    "startMs": 19070,
+    "endMs": 19230
+  },
+  {
+    "text": "sich",
+    "startMs": 19230,
+    "endMs": 19440
+  },
+  {
+    "text": "erzählt.",
+    "startMs": 19440,
+    "endMs": 20040
+  },
+  {
+    "text": "Gestern",
+    "startMs": 20040,
+    "endMs": 20420
+  },
+  {
+    "text": "hat",
+    "startMs": 20420,
+    "endMs": 20570
+  },
+  {
+    "text": "die",
+    "startMs": 20570,
+    "endMs": 20740
+  },
+  {
+    "text": "KI",
+    "startMs": 20740,
+    "endMs": 20850
+  },
+  {
+    "text": "Schluss",
+    "startMs": 20850,
+    "endMs": 21260
+  },
+  {
+    "text": "gemacht.",
+    "startMs": 21260,
+    "endMs": 21800
+  },
+  {
+    "text": "Sein",
+    "startMs": 21800,
+    "endMs": 22020
+  },
+  {
+    "text": "Abo",
+    "startMs": 22020,
+    "endMs": 22180
+  },
+  {
+    "text": "ist",
+    "startMs": 22180,
+    "endMs": 22360
+  },
+  {
+    "text": "abgelaufen.",
+    "startMs": 22360,
+    "endMs": 23080
+  }
+]

@@ -1,0 +1,26 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Heute prüft sie die Adressen für ihre ersten 5 Werbebriefe nach.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. Von 5 Briefadressen war nur 1 eindeutig belegt. Bei einem Betrieb nannten Impressum und eine Register-Abschrift bei einem Drittanbieter verschiedene Adressen.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ die Empfängerliste als Excel-Datei anhängen.
+2. Fragen: „Klär mit der Websuche über öffentliche, möglichst amtliche Quellen, welche Adresse je Firma stimmt. Markiere, welche Briefe sicher rausgehen können und welche nicht. Nenn je Adresse die Quelle. Keine privaten Daten. Sag mir, was du nicht prüfen kannst. Erfinde nichts. Gib mir die aktualisierte Excel-Datei zurück.“
+3. Die neue Spalte „Versand“ lesen und die Zeilen mit Vorbehalt selbst prüfen.
+
+Ergebnis im echten Lauf (etwa 3 Minuten): 4 Briefe können raus, 1 erst, wenn die Postleitzahl geprüft ist. Die Excel-Datei hat jetzt die Spalten Versand, Quelle und Prüfdatum.
+
+Warum das Impressum und nicht die Register-Abschrift?
+- Die Abschrift zeigte nur die Adresse der ersten Eintragung von 2014.
+- Ein späterer Registereintrag von 2015, gelesen bei einem Datendienst, nennt die Adresse aus dem Impressum. Seitdem keine Änderung.
+
+Der Haken: Das amtliche Handelsregister konnte Claude nicht selbst bedienen, die Suche dort ist ein Formular. Den Eintrag hat Claude bei einem Datendienst gelesen. Wer es amtlich will, ruft den Abdruck selbst ab. Drucken und Porto zahlen kann nur ein Mensch.
+
+Namen und Adressen zeige ich nicht.
+
+Kommentiere „Versand“, und ich schick dir die Prüffrage zum Kopieren und die Versand-Regeln. Damit hast du in 10 Minuten sichere Adressen für deine eigenen Briefe.
+
+Offen bleibt: Wie kommen die Adressen in den Brief?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #kundengewinnung #firmenshirts

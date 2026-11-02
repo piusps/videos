@@ -1,0 +1,1451 @@
+{
+ "folge": 14,
+ "tag": 14,
+ "serientag": 4,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-31",
+ "slot": "2026-10-31 so früh wie möglich (eigentlich 12:00)",
+ "keyword": "Adresse",
+ "seconds": 45.7,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 106.65,
+  "musicMute": [
+   [
+    0.0,
+    0.75
+   ]
+  ],
+  "musicCurve": [
+   [
+    0,
+    0.035
+   ],
+   [
+    23.0,
+    0.035
+   ],
+   [
+    23.2,
+    0.022
+   ],
+   [
+    23.9,
+    0.022
+   ],
+   [
+    23.97,
+    0.05
+   ],
+   [
+    24.7,
+    0.035
+   ],
+   [
+    44.4,
+    0.035
+   ],
+   [
+    44.75,
+    0.06
+   ],
+   [
+    45.3,
+    0.06
+   ],
+   [
+    45.7,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 106,65 s am Stück bis 152,35 (45,7 s), nie geloopt; frei gegenüber Folgen 9–13 (F13 0,10–45,10 · F10 57,325–103,755 · F11 153,15–198,94 · F9 276,36–322,9 · F12 328,0–373,58), grenzt nicht an Folge 13. 'some shit' (Track 106,92–107,28) per musicMute Clip 0,0–0,75 auf 0 (gemessen −91 dB im Stem), Musik setzt bei 0,75 mit 80-ms-Rampe ein. music-explicit-check 2× 0 explizite Wörter. Details musik.txt"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Ziffern in words.json: hundert → 100, fünf → 5, zwei → 2, zehn → 10. Kollisionen: 'das' (1.58 / 5.41 / 20.93), 'eine' (1.78 / 34.11), 'ki' (2.0 / 6.87), 'ich' (4.95 / 39.66), 'der' (6.71 / 11.15 / 26.22 / 31.86), 'sie' (13.68 / 20.55), 'adressen' (13.81 / 30.71), 'verzeichnisse' (22.4 / 28.28), 'es' (24.92 / 27.12), 'ist' (25.15 / 33.72), 'adresse' (36.48 / 38.79). In episode.json immer 'Wort@Zeit'.",
+ "textregel": "Neue Textblöcke (ohne Untertitel) je ≥ 1,2 s auseinander, ≤ 4 Wörter (+ kleine Unterzeile), nie zwei gleichzeitig. Screenshots: nie mehr als ~12 lesbare Wörter gleichzeitig. Status-Chips = Bild-Objekt (je 1 Wort).",
+ "verboten": [
+  "'Hamburg' in irgendeinem Frame",
+  "Betriebs-/Personennamen, Straßen, PLZ, Telefon, Orte außer Chemnitz",
+  "alle Bilder ohne '-anonym' außer 01, 06, 07",
+  "Anhang-Inhalt (MD-Datei), liste-text.txt",
+  "Umsatz-Zähler",
+  "Haken an GEWERBE",
+  "WEBSITE grün",
+  "'TAG 4'-Slam / 'gestern'",
+  "claude.ai-Sidebar",
+  "'geprüft', 'amtlich', 'bestätigt', 'Handelsregister' groß im Bild",
+  "Zahl der Suchen (15)",
+  "Kuvert/Briefmarke/Briefkasten/Hand (Abschicken wird nicht erzählt)",
+  "'boilr'"
+ ],
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE\nENTWURF",
+   "GEWERBE\nOFFEN",
+   "BETRIEBE",
+   "WERBEBRIEF",
+   "ADRESSEN",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6,
+   7
+  ],
+  "wip": [
+   4
+  ],
+  "current": 8,
+  "notiz": "Anschluss Folge 13 (public/firma-ep/tag13/episode.json: done [0,1,2,3,6], wip [4], current 7). Indizes 0–7 bleiben, neues Feld ADRESSEN = 8, ERSTER UMSATZ rückt auf 9 (Vorschlag; falls das Board bei 9 Feldern bleiben muss: WERBEBRIEF bleibt current mit Unterzeile 'ADRESSEN' – Entscheidung Chef/Design). WERBEBRIEF wird im Rückblick auf 'steht.' abgehakt. GEWERBE bleibt offen mit MENSCH, WEBSITE bleibt 'ENTWURF'. Kein Umsatz-Zähler."
+ },
+ "story_objekt": {
+  "name": "empfaengerliste",
+  "quellen": {
+   "tabelle": {
+    "src": "design/lauf/02-empfaenger-tabelle-anonym.png",
+    "size": [
+     730,
+     1110
+    ],
+    "bereiche": {
+     "kopf": {
+      "x": 40,
+      "y": 0,
+      "w": 690,
+      "h": 130,
+      "text": "Für alle fünf Betriebe … Eindeutig belegt ist allerdings nur eine. …"
+     },
+     "kernsatz": {
+      "x": 40,
+      "y": 40,
+      "w": 640,
+      "h": 36,
+      "text": "Impressum gefunden. Eindeutig belegt ist allerdings nur eine."
+     },
+     "status_spalte": {
+      "x": 486,
+      "y": 160,
+      "w": 232,
+      "h": 940
+     },
+     "zeilen": {
+      "belegt": {
+       "y": 205,
+       "h": 115
+      },
+      "pruefen1": {
+       "y": 322,
+       "h": 118
+      },
+      "pruefen2": {
+       "y": 442,
+       "h": 178
+      },
+      "pruefen3": {
+       "y": 622,
+       "h": 210
+      },
+      "widerspruch": {
+       "y": 834,
+       "h": 270
+      }
+     }
+    },
+    "hinweis": "Story-Objekt. Namen/Adressen sind schwarze Balken (so lassen). Lesbar nur die fetten Status-Wörter 'Belegt.' 'Prüfen.' 'Widerspruch.' (als farbige Chips: grün/gelb/rot), Fließtext der Status-Spalte nur Textur. Frame 1 alternativ aus der echten xlsx gerendert (hooks.md): Spalten Firmenname/Straße/PLZ/Ort schwarz, Spalte Adressstatus lesbar."
+   },
+   "xlsx": {
+    "src": "design/lauf/Kolonnenshirt_Empfaenger_Serienbrief.xlsx",
+    "blatt": "Empfaenger",
+    "hinweis": "Nur für Frame 1 / Endkarte lokal rendern: Namen, Straßen, PLZ schwarz; Ort nur 'Chemnitz' zulässig; Status 1× Belegt, 3× Belegt-prüfen, 1× Widerspruch."
+   }
+  },
+  "plaetze": [
+   [
+    "0",
+    "hook: Liste groß, Status-Chips, Brief klein daneben"
+   ],
+   [
+    "Ich@4.5",
+    "off"
+   ],
+   [
+    "Heute",
+    "Brief mit leerem Empfängerfeld ×5"
+   ],
+   [
+    "Claude+0.2",
+    "off (Claude-Weg)"
+   ],
+   [
+    "Sie@20.0",
+    "Liste klein links neben den Quellen-Karten"
+   ],
+   [
+    "Warum",
+    "off (Impressum-Karte oben)"
+   ],
+   [
+    "Der@31.5",
+    "Liste groß, Status-Spalte"
+   ],
+   [
+    "Als@34.8",
+    "Widerspruch-Zeile"
+   ],
+   [
+    "Kommentiere",
+    "Tabellen-Miniatur in der Endkarte"
+   ]
+  ]
+ },
+ "shots": {
+  "01": {
+   "src": "design/lauf/01-prompt-mit-anhang.png",
+   "size": [
+    560,
+    930
+   ],
+   "crop": {
+    "x": 20,
+    "y": 18,
+    "w": 400,
+    "h": 195
+   },
+   "marks": [
+    {
+     "x": 218,
+     "y": 24,
+     "w": 180,
+     "h": 180,
+     "farbe": "orange",
+     "at": "Brief@16.4",
+     "was": "Anhang-Karte 'Kolonnenshirt_Werbebrief.docx · DOCX'"
+    },
+    {
+     "x": 26,
+     "y": 812,
+     "w": 36,
+     "h": 36,
+     "at": "angehängt",
+     "was": "Zeiger tippt auf '+'"
+    }
+   ],
+   "hinweis": "Lesbar nur die DOCX-Karte (die MD-Karte daneben darf als zweite Karte sichtbar sein, nicht markiert – gesprochen wird nur der Brief). Prompt nur weiche Textur, Fußzeile 'Projekt/Opus/Manuell' nicht zeigen. Keine Sidebar."
+  },
+  "07": {
+   "src": "design/lauf/07-schritte-zeile.png",
+   "size": [
+    730,
+    225
+   ],
+   "crop": {
+    "x": 30,
+    "y": 170,
+    "w": 690,
+    "h": 50
+   },
+   "marks": [
+    {
+     "x": 40,
+     "y": 180,
+     "w": 320,
+     "h": 36,
+     "farbe": "orange",
+     "at": "Websuche",
+     "was": "'das Web durchsucht' in der Zeile 'Eine Datei geteilt, das Web durchsucht und 9 weitere Schri…'"
+    }
+   ],
+   "hinweis": "Nur die untere Schritte-Zeile (≤ 10 Wörter). Englische Titelzeile 'Listing five businesses…' und den Absatz in der Mitte nicht zeigen."
+  },
+  "06": {
+   "src": "design/lauf/06-datei-karte.png",
+   "size": [
+    730,
+    120
+   ],
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 730,
+    "h": 120
+   },
+   "marks": [
+    {
+     "x": 10,
+     "y": 10,
+     "w": 710,
+     "h": 100,
+     "farbe": "orange",
+     "at": "Excel-Datei",
+     "was": "Datei-Karte 'XLSX' (Empfängerliste)"
+    }
+   ]
+  },
+  "03": {
+   "src": "design/lauf/03-quelle-gruende-anonym.png",
+   "size": [
+    730,
+    500
+   ],
+   "bereiche": {
+    "kopf": {
+     "x": 40,
+     "y": 8,
+     "w": 680,
+     "h": 60,
+     "text": "Die verlässlichste Quelle ist … das Impressum auf der eigenen Website."
+    },
+    "grund1": {
+     "x": 55,
+     "y": 88,
+     "w": 660,
+     "h": 58
+    },
+    "grund2": {
+     "x": 55,
+     "y": 150,
+     "w": 660,
+     "h": 125
+    }
+   },
+   "hinweis": "Optional als Beleg: Kopfzeile klein unter dem Stempel IMPRESSUM bzw. Gründe 1–2 als unlesbare Textur hinter den Warum-Karten. Grund 3 (Handelsregister) nie zeigen (nicht gesprochen, nicht amtlich geprüft)."
+  },
+  "02": {
+   "src": "design/lauf/02-empfaenger-tabelle-anonym.png",
+   "size": [
+    730,
+    1110
+   ],
+   "bereiche": {
+    "kopf": {
+     "x": 40,
+     "y": 0,
+     "w": 690,
+     "h": 130,
+     "text": "Für alle fünf Betriebe … Eindeutig belegt ist allerdings nur eine. …"
+    },
+    "kernsatz": {
+     "x": 40,
+     "y": 40,
+     "w": 640,
+     "h": 36,
+     "text": "Impressum gefunden. Eindeutig belegt ist allerdings nur eine."
+    },
+    "status_spalte": {
+     "x": 486,
+     "y": 160,
+     "w": 232,
+     "h": 940
+    },
+    "zeilen": {
+     "belegt": {
+      "y": 205,
+      "h": 115
+     },
+     "pruefen1": {
+      "y": 322,
+      "h": 118
+     },
+     "pruefen2": {
+      "y": 442,
+      "h": 178
+     },
+     "pruefen3": {
+      "y": 622,
+      "h": 210
+     },
+     "widerspruch": {
+      "y": 834,
+      "h": 270
+     }
+    }
+   },
+   "hinweis": "Story-Objekt. Namen/Adressen sind schwarze Balken (so lassen). Lesbar nur die fetten Status-Wörter 'Belegt.' 'Prüfen.' 'Widerspruch.' (als farbige Chips: grün/gelb/rot), Fließtext der Status-Spalte nur Textur. Frame 1 alternativ aus der echten xlsx gerendert (hooks.md): Spalten Firmenname/Straße/PLZ/Ort schwarz, Spalte Adressstatus lesbar."
+  },
+  "04/05/08": "in dieser Folge nicht geplant; nur als -anonym"
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 0.74,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Frame 1 = Ergebnis (hooks.md): Hook-Frage oben ab Frame 0 komplett ('Wie viel Umsatz macht eine KI in 100 Tagen?'). Darunter die echte Empfängerliste (XLSX bzw. TABELLE): 5 Zeilen, Namen/Adressen schwarze Balken, Status-Chips Belegt (grün) 1× · Prüfen (gelb) 3× · Widerspruch (rot) 1×. Daneben klein der Werbebrief aus Folge 13 (../firma-tag13/design/lauf/04-brief-word.png) mit leerem gelbem Empfängerfeld. Auf 'Umsatz' Textmarker-Wisch über die eine grüne Zeile. Kein HUD 'TAG', kein Umsatz-Zähler.",
+   "kamera": "langsamer Push-in auf die Liste; Drop-Punch +4 % auf 'Umsatz'",
+   "frage": "Was ist das für eine Liste – und warum nur eine grün?",
+   "karten": [
+    {
+     "text": "Wie viel Umsatz macht / eine KI in 100 Tagen?",
+     "at": "0",
+     "t": 0.0
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.35
+    }
+   ],
+   "tabelle": {
+    "src": "design/lauf/02-empfaenger-tabelle-anonym.png",
+    "size": [
+     730,
+     1110
+    ],
+    "bereiche": {
+     "kopf": {
+      "x": 40,
+      "y": 0,
+      "w": 690,
+      "h": 130,
+      "text": "Für alle fünf Betriebe … Eindeutig belegt ist allerdings nur eine. …"
+     },
+     "kernsatz": {
+      "x": 40,
+      "y": 40,
+      "w": 640,
+      "h": 36,
+      "text": "Impressum gefunden. Eindeutig belegt ist allerdings nur eine."
+     },
+     "status_spalte": {
+      "x": 486,
+      "y": 160,
+      "w": 232,
+      "h": 940
+     },
+     "zeilen": {
+      "belegt": {
+       "y": 205,
+       "h": 115
+      },
+      "pruefen1": {
+       "y": 322,
+       "h": 118
+      },
+      "pruefen2": {
+       "y": 442,
+       "h": 178
+      },
+      "pruefen3": {
+       "y": 622,
+       "h": 210
+      },
+      "widerspruch": {
+       "y": 834,
+       "h": 270
+      }
+     }
+    },
+    "hinweis": "Story-Objekt. Namen/Adressen sind schwarze Balken (so lassen). Lesbar nur die fetten Status-Wörter 'Belegt.' 'Prüfen.' 'Widerspruch.' (als farbige Chips: grün/gelb/rot), Fließtext der Status-Spalte nur Textur. Frame 1 alternativ aus der echten xlsx gerendert (hooks.md): Spalten Firmenname/Straße/PLZ/Ort schwarz, Spalte Adressstatus lesbar."
+   },
+   "xlsx": {
+    "src": "design/lauf/Kolonnenshirt_Empfaenger_Serienbrief.xlsx",
+    "blatt": "Empfaenger",
+    "hinweis": "Nur für Frame 1 / Endkarte lokal rendern: Namen, Straßen, PLZ schwarz; Ort nur 'Chemnitz' zulässig; Status 1× Belegt, 3× Belegt-prüfen, 1× Widerspruch."
+   },
+   "events": [
+    0.0,
+    "Umsatz"
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 0.74,
+   "bis": 3.38,
+   "wort_start": {
+    "w": "macht",
+    "after": 0
+   },
+   "bild": "Nur Ereignisse, kein neuer Text: 'macht' grüner Chip pulst; 'Unternehmen' die drei gelben Chips blinken nacheinander; 'das@1.5' roter Chip wackelt kurz; 'KI@1.9' Empfängerfeld im Brief blinkt gelb; '100' Mini-Punch auf '100' in der Frage; 'Tage' Licht-Sweep über die Liste; 'lang' Kamera rutscht auf die Status-Spalte.",
+   "kamera": "steht, atmet; Mini-Punch auf '100'",
+   "frage": "Warum ist nur eine Adresse grün?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "macht",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "Unternehmen",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "das@1.5",
+     "f": "popHi",
+     "v": 0.16
+    },
+    {
+     "anker": "KI@1.9",
+     "f": "click",
+     "v": 0.16
+    },
+    {
+     "anker": "100",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Tage",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "lang",
+     "f": "wshort",
+     "v": 0.16
+    }
+   ],
+   "events": [
+    "macht",
+    "Unternehmen",
+    "das@1.5",
+    "KI@1.9",
+    "100",
+    "Tage",
+    "lang"
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.38,
+   "bis": 4.95,
+   "wort_start": {
+    "w": "ganz",
+    "after": 3
+   },
+   "bild": "Stempel 'GANZ ALLEINE.' oben auf 'alleine'; Punch-in auf 'führt?'; in der Pause nach 'führt?' (4,33–4,95) pulst die grüne Zeile einmal (kein neuer Text).",
+   "kamera": "Punch-in 4 % auf 'führt?'",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine",
+     "t": 3.66
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz@3-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    },
+    {
+     "anker": "führt",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "t": 4.5,
+     "f": "tick",
+     "v": 0.15
+    }
+   ],
+   "events": [
+    "ganz@3",
+    "alleine",
+    "führt",
+    4.5
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 4.95,
+   "bis": 6.25,
+   "wort_start": {
+    "w": "Ich",
+    "after": 4.5
+   },
+   "bild": "Liste + Brief fliegen raus (outAt 'Ich'), Gründungsplan blendet ein (planFrom 'Ich-0.05'), Maskottchen hüpft auf 'probier' (ganz im Bild). NICHT erste Folge des Tages: kein Tages-Slam, kein 'TAG 4' (HUD-Badge klein wie Folge 10 erlaubt). Hook-Objekt überlappt nie den Plan.",
+   "kamera": "Pull-back zum Board",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ich@4.5-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "probier",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "aus@5",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "events": [
+    "Ich@4.5",
+    "probier",
+    "aus@5"
+   ],
+   "hook_at": {
+    "end": "Die@6.0-0.08"
+   }
+  },
+  {
+   "id": "B05",
+   "akt": "rueckblick",
+   "von": 6.25,
+   "bis": 9.69,
+   "wort_start": {
+    "w": "Die",
+    "after": 6.0
+   },
+   "bild": "Gründungsplan ganz im Bild (Layout tag13, plan_vorschlag): PRODUKT+KUNDE … LOGO, BETRIEBE grün; WEBSITE 'ENTWURF' (nie grün); GEWERBE offen mit MENSCH-Marke (kein Haken); WERBEBRIEF noch gold wie Ende Folge 13. Produkt-Karte 'SHIRTS MIT LOGO' auf 'verkauft' (rechts, verdeckt keine Board-Spalte); auf 'Betriebe@9' kleine Handwerker-Silhouetten mit Shirt in der Karte (kein Text).",
+   "kamera": "ruhig, Board voll",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "at": "verkauft",
+     "t": 7.2
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@6.0-0.08",
+     "f": "wqh",
+     "v": 0.18
+    },
+    {
+     "anker": "verkauft",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Betriebe@9",
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "rueckblick",
+   "von": 9.69,
+   "bis": 11.4,
+   "wort_start": {
+    "w": "bestickt",
+    "after": 9.0
+   },
+   "bild": "Banner 'erst auf Bestellung bestickt' in der Produkt-Karte.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "erst auf Bestellung / bestickt",
+     "at": "bestickt",
+     "t": 9.69
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "rueckblick",
+   "von": 11.4,
+   "bis": 13.14,
+   "wort_start": {
+    "w": "Werbebrief",
+    "after": 11.0
+   },
+   "bild": "Zuletzt erledigter Schritt WERBEBRIEF (Ergebnis Folge 13) leuchtet auf 'Werbebrief' und bekommt auf 'steht.' den grünen Haken; daran klein die Brief-Miniatur (../firma-tag13/design/lauf/04-brief-word.png, Text unlesbar, gelbe Platzhalter sichtbar) – kein neuer Text. In der 0,70-s-Pause ab Ende 'steht.' (12,44): Kamera fährt ein Feld weiter zum neuen Feld ADRESSEN (gold = current).",
+   "kamera": "leichter Push-in auf WERBEBRIEF, dann Fahrt zu ADRESSEN",
+   "frage": "Brief fertig – und wer bekommt ihn?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Werbebrief",
+     "f": "power",
+     "v": 0.18
+    },
+    {
+     "anker": "steht",
+     "f": "check",
+     "v": 0.25
+    },
+    {
+     "anker": "steht:end+0.1",
+     "f": "wq2",
+     "v": 0.18
+    }
+   ],
+   "brief_miniatur": "../firma-tag13/design/lauf/04-brief-word.png (nur Textur)"
+  },
+  {
+   "id": "B08",
+   "akt": "heute",
+   "von": 13.14,
+   "bis": 16.0,
+   "wort_start": {
+    "w": "Heute",
+    "after": 12.8
+   },
+   "bild": "Pill 'HEUTE: ADRESSEN' auf 'Heute'. Feld ADRESSEN (gold) öffnet sich; der Brief (Miniatur) kommt nach vorn, das gelbe Empfängerfeld pulst auf 'Adressen'; auf '5' fächern sich 5 gleiche Brief-Kopien auf, je mit leerem Empfängerfeld (kein Text, Ziffer kommt aus den Untertiteln). Steht bis Shot 01.",
+   "kamera": "Fahrt durch ADRESSEN auf den Brief, dann ruhig",
+   "frage": "Woher bekommt sie die Adressen – und stimmen die?",
+   "karten": [
+    {
+     "text": "HEUTE: ADRESSEN",
+     "at": "Heute",
+     "t": 13.14
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Heute+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "Adressen@13.5",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "5@14",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 16.0,
+   "bis": 17.66,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Echter Shot 01 im Paper-Fenster (SHOT01), Einstieg 'Claude+0.2'. 'Brief@16.4' orange Rahmen um die DOCX-Karte 'Kolonnenshirt_Werbebrief.docx'; 'angehängt' Zeiger tippt auf '+', Karte hüpft. Prompt nur Textur.",
+   "kamera": "Push-in auf die DOCX-Karte",
+   "frage": "Womit fängt sie an?",
+   "karten": [
+    {
+     "text": "Shot 01 Anhang-Karten (Screenshot, ≤ 8 lesbare Wörter)",
+     "at": "Claude+0.2",
+     "t": 16.0
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Claude",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "Brief@16.4",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "angehängt",
+     "f": "click",
+     "v": 0.22
+    }
+   ],
+   "ton": "Pause 'Claude:' → 'Brief' roh gelassen (0,24 s; Lehre Folge 12, sonst kippt die Aussprache)",
+   "shot": {
+    "src": "design/lauf/01-prompt-mit-anhang.png",
+    "size": [
+     560,
+     930
+    ],
+    "crop": {
+     "x": 20,
+     "y": 18,
+     "w": 400,
+     "h": 195
+    },
+    "marks": [
+     {
+      "x": 218,
+      "y": 24,
+      "w": 180,
+      "h": 180,
+      "farbe": "orange",
+      "at": "Brief@16.4",
+      "was": "Anhang-Karte 'Kolonnenshirt_Werbebrief.docx · DOCX'"
+     },
+     {
+      "x": 26,
+      "y": 812,
+      "w": 36,
+      "h": 36,
+      "at": "angehängt",
+      "was": "Zeiger tippt auf '+'"
+     }
+    ],
+    "hinweis": "Lesbar nur die DOCX-Karte (die MD-Karte daneben darf als zweite Karte sichtbar sein, nicht markiert – gesprochen wird nur der Brief). Prompt nur weiche Textur, Fußzeile 'Projekt/Opus/Manuell' nicht zeigen. Keine Sidebar."
+   },
+   "einstieg": "Claude+0.2"
+  },
+  {
+   "id": "B10",
+   "akt": "claude",
+   "von": 17.66,
+   "bis": 18.91,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Schnitt (in der 0,35-s-Pause nach 'angehängt,') auf echten Shot 07: NUR die Zeile 'Eine Datei geteilt, das Web durchsucht und 9 weitere Schri…'. Auf 'Websuche' Glanz/Unterstrich über 'das Web durchsucht', kleine Lupe tippt (kein Text). Zahl der Suchen (15) nicht zeigen.",
+   "kamera": "leichter Push-in auf die Zeile",
+   "frage": "Wo sucht sie?",
+   "karten": [
+    {
+     "text": "Shot 07 Schritte-Zeile (Screenshot, ≤ 10 Wörter)",
+     "at": "angehängt:end+0.08",
+     "t": 17.66
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "angehängt:end+0.08",
+     "f": "wshort",
+     "v": 0.18
+    },
+    {
+     "anker": "Websuche",
+     "f": "typing",
+     "v": 0.14
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/07-schritte-zeile.png",
+    "size": [
+     730,
+     225
+    ],
+    "crop": {
+     "x": 30,
+     "y": 170,
+     "w": 690,
+     "h": 50
+    },
+    "marks": [
+     {
+      "x": 40,
+      "y": 180,
+      "w": 320,
+      "h": 36,
+      "farbe": "orange",
+      "at": "Websuche",
+      "was": "'das Web durchsucht' in der Zeile 'Eine Datei geteilt, das Web durchsucht und 9 weitere Schri…'"
+     }
+    ],
+    "hinweis": "Nur die untere Schritte-Zeile (≤ 10 Wörter). Englische Titelzeile 'Listing five businesses…' und den Absatz in der Mitte nicht zeigen."
+   }
+  },
+  {
+   "id": "B11",
+   "akt": "claude",
+   "von": 18.91,
+   "bis": 20.55,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Schnitt (in der 0,35-s-Pause nach 'Websuche,') auf echten Shot 06: Datei-Karte XLSX, orange Rahmen auf 'Excel-Datei', Zeiger klickt. In der 0,65-s-Pause steht das Bild.",
+   "kamera": "Push-in auf die Datei-Karte, Halt",
+   "frage": "Und woher nimmt sie die Adressen?",
+   "karten": [
+    {
+     "text": "Shot 06 Datei-Karte XLSX (Screenshot)",
+     "at": "Websuche:end+0.22",
+     "t": 18.91
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Excel-Datei",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Excel-Datei:end",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/06-datei-karte.png",
+    "size": [
+     730,
+     120
+    ],
+    "crop": {
+     "x": 0,
+     "y": 0,
+     "w": 730,
+     "h": 120
+    },
+    "marks": [
+     {
+      "x": 10,
+      "y": 10,
+      "w": 710,
+      "h": 100,
+      "farbe": "orange",
+      "at": "Excel-Datei",
+      "was": "Datei-Karte 'XLSX' (Empfängerliste)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "B12",
+   "akt": "entscheidung",
+   "von": 20.55,
+   "bis": 23.97,
+   "wort_start": {
+    "w": "Sie",
+    "after": 20.0
+   },
+   "bild": "Datei-Karte klappt zur Empfängerliste auf (Story-Objekt, klein links). Rechts EIN Block aus zwei Quellen-Karten auf 'Sie': Website-Seite 'IMPRESSUM' (Bild: Browser-Seite mit Fußzeilen-Link) und Buch/Liste 'VERZEICHNISSE'. 'Impressum' Karte hebt sich + leuchtet, Stempel 'IMPRESSUM' (Lauf-Wort) auf 'Impressum:end'; 'Verzeichnisse' Karte wird durchgestrichen (roter Strich). In der 0,75-s-Pause vor 'Warum?': steht, Musik-Mulde (Kurve 0,022).",
+   "kamera": "Push-in auf die Impressum-Karte, Halt",
+   "frage": "Warum ausgerechnet das Impressum?",
+   "karten": [
+    {
+     "text": "IMPRESSUM · VERZEICHNISSE",
+     "at": "Sie@20.0",
+     "t": 20.55
+    },
+    {
+     "text": "IMPRESSUM (Stempel)",
+     "at": "Impressum:end",
+     "t": 21.91
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Sie@20.0-0.1",
+     "f": "wq2",
+     "v": 0.18
+    },
+    {
+     "anker": "Impressum",
+     "f": "power",
+     "v": 0.2
+    },
+    {
+     "anker": "Impressum:end",
+     "f": "clack",
+     "v": 0.38
+    },
+    {
+     "anker": "Verzeichnisse@22",
+     "f": "tick",
+     "v": 0.18
+    }
+   ],
+   "ton": "Musik-Mulde Clip 23,2–23,9 (Kurve 0,022) = Stille vor dem Warum, Akzent im Stück auf 'Warum?' (23,97; Kurve 0,05)",
+   "proof_optional": {
+    "src": "design/lauf/03-quelle-gruende-anonym.png",
+    "size": [
+     730,
+     500
+    ],
+    "bereiche": {
+     "kopf": {
+      "x": 40,
+      "y": 8,
+      "w": 680,
+      "h": 60,
+      "text": "Die verlässlichste Quelle ist … das Impressum auf der eigenen Website."
+     },
+     "grund1": {
+      "x": 55,
+      "y": 88,
+      "w": 660,
+      "h": 58
+     },
+     "grund2": {
+      "x": 55,
+      "y": 150,
+      "w": 660,
+      "h": 125
+     }
+    },
+    "hinweis": "Optional als Beleg: Kopfzeile klein unter dem Stempel IMPRESSUM bzw. Gründe 1–2 als unlesbare Textur hinter den Warum-Karten. Grund 3 (Handelsregister) nie zeigen (nicht gesprochen, nicht amtlich geprüft)."
+   }
+  },
+  {
+   "id": "B13",
+   "akt": "warum",
+   "von": 23.97,
+   "bis": 26.77,
+   "wort_start": {
+    "w": "Warum",
+    "after": 23.5
+   },
+   "bild": "Impressum-Karte (gewähltes Objekt) rückt klein ins obere Drittel und bleibt. Pill 'WARUM?' auf 'Warum?'. Karte 1 'IMPRESSUM IST PFLICHT' auf 'Pflicht' (1,33 s nach der Pill), klein 'Anschrift muss rein' (Lauf Grund 1) (kein Gegenwert: der Lauf nennt für Grund 1 keinen belegten Vergleich – nichts erfinden).",
+   "kamera": "kurze Fahrt nach unten zu den Karten, dann ruhig",
+   "frage": "Und warum stimmt das eher?",
+   "karten": [
+    {
+     "text": "WARUM?",
+     "at": "Warum",
+     "t": 23.97
+    },
+    {
+     "text": "IMPRESSUM IST PFLICHT",
+     "unter": "Anschrift muss rein",
+     "vs": null,
+     "at": "Pflicht",
+     "t": 25.29
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.25
+    },
+    {
+     "anker": "Pflicht",
+     "f": "popLo",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "akt": "warum",
+   "von": 26.77,
+   "bis": 28.28,
+   "wort_start": {
+    "w": "pflegt",
+    "after": 26.5
+   },
+   "bild": "Karte 2 'PFLEGT ER SELBST' auf 'pflegt' (Lauf Grund 2: 'Der Betrieb pflegt die Angabe selbst'), klein 'der Betrieb', Gegenwert grau 'Verzeichnis übernimmt ✗'. Auf 'selbst' kleiner Stift-Haken an der Impressum-Karte oben. Karte 1 gedimmt.",
+   "kamera": "leichter Push-in auf Karte 2",
+   "frage": "Und die Verzeichnisse?",
+   "karten": [
+    {
+     "text": "PFLEGT ER SELBST",
+     "unter": "der Betrieb",
+     "vs": "Verzeichnis übernimmt ✗",
+     "at": "pflegt",
+     "t": 26.77
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "pflegt",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "selbst",
+     "f": "check",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "warum",
+   "von": 28.28,
+   "bis": 31.86,
+   "wort_start": {
+    "w": "Verzeichnisse",
+    "after": 28.0
+   },
+   "bild": "Befund: Karte 3 'VERZEICHNIS: FRÜHERE ADRESSEN' auf 'Verzeichnisse@28' (Lauf: 'Bei [zwei] stehen dort noch frühere Adressen'), klein 'bei 2 von 5'. Auf '2' heben sich 2 von 5 kleinen Betriebs-Punkten (Icons, kein Text, keine Namen); auf 'frühere' bekommen die zwei ein altes, graues Adress-Etikett (durchgestrichen, unlesbar). Steht allein bis 'Der Haken' (Pause 0,58 s). Karten 1–2 gedimmt.",
+   "kamera": "leichter Push-in auf Karte 3, Halt",
+   "frage": "Und sind die Impressums-Adressen dann alle sicher?",
+   "karten": [
+    {
+     "text": "VERZEICHNIS: FRÜHERE ADRESSEN",
+     "unter": "bei 2 von 5",
+     "at": "Verzeichnisse@28",
+     "t": 28.28
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Verzeichnisse@28",
+     "f": "popLo",
+     "v": 0.24
+    },
+    {
+     "anker": "2@29",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "frühere",
+     "f": "roll",
+     "v": 0.16
+    }
+   ]
+  },
+  {
+   "id": "B16",
+   "akt": "haken",
+   "von": 31.86,
+   "bis": 35.09,
+   "wort_start": {
+    "w": "Der",
+    "after": 31.5
+   },
+   "bild": "Warum-Karten raus (0,2 s vor 'Der'). Die Empfängerliste (Story-Objekt, TABELLE) kommt groß zurück, Kamera auf die Status-Spalte: auf 'Haken' leuchten die Chips nacheinander auf (Belegt grün → 3× Prüfen gelb → Widerspruch rot, je ~0,2 s, kein neuer Textblock außer den Chip-Wörtern). Auf 'Eindeutig' Textmarker über die eine grüne Zeile. Stempel 'NUR EINE BELEGT' auf 'belegt' (1,23 s nach den Chips, 1,78 s vor ALS NÄCHSTES; Lauf-Wort: 'Eindeutig belegt ist allerdings nur eine'). Nie 'geprüft', 'amtlich', 'bestätigt'.",
+   "kamera": "Push-in auf die Status-Spalte, Halt in der 0,58-s-Pause",
+   "frage": "Und welche stimmt bei den anderen?",
+   "karten": [
+    {
+     "text": "Status-Chips Belegt/Prüfen/Widerspruch (Bild-Objekt)",
+     "at": "Haken",
+     "t": 32.08
+    },
+    {
+     "text": "NUR EINE BELEGT",
+     "at": "belegt@33",
+     "t": 33.31
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Der@31.5-0.1",
+     "f": "wq2",
+     "v": 0.18
+    },
+    {
+     "anker": "Haken",
+     "f": "roll",
+     "v": 0.16
+    },
+    {
+     "anker": "Eindeutig",
+     "f": "page",
+     "v": 0.18
+    },
+    {
+     "anker": "belegt@33",
+     "f": "clack",
+     "v": 0.38
+    }
+   ],
+   "tabelle": {
+    "src": "design/lauf/02-empfaenger-tabelle-anonym.png",
+    "size": [
+     730,
+     1110
+    ],
+    "bereiche": {
+     "kopf": {
+      "x": 40,
+      "y": 0,
+      "w": 690,
+      "h": 130,
+      "text": "Für alle fünf Betriebe … Eindeutig belegt ist allerdings nur eine. …"
+     },
+     "kernsatz": {
+      "x": 40,
+      "y": 40,
+      "w": 640,
+      "h": 36,
+      "text": "Impressum gefunden. Eindeutig belegt ist allerdings nur eine."
+     },
+     "status_spalte": {
+      "x": 486,
+      "y": 160,
+      "w": 232,
+      "h": 940
+     },
+     "zeilen": {
+      "belegt": {
+       "y": 205,
+       "h": 115
+      },
+      "pruefen1": {
+       "y": 322,
+       "h": 118
+      },
+      "pruefen2": {
+       "y": 442,
+       "h": 178
+      },
+      "pruefen3": {
+       "y": 622,
+       "h": 210
+      },
+      "widerspruch": {
+       "y": 834,
+       "h": 270
+      }
+     }
+    },
+    "hinweis": "Story-Objekt. Namen/Adressen sind schwarze Balken (so lassen). Lesbar nur die fetten Status-Wörter 'Belegt.' 'Prüfen.' 'Widerspruch.' (als farbige Chips: grün/gelb/rot), Fließtext der Status-Spalte nur Textur. Frame 1 alternativ aus der echten xlsx gerendert (hooks.md): Spalten Firmenname/Straße/PLZ/Ort schwarz, Spalte Adressstatus lesbar."
+   },
+   "lesbar": "status_spalte (nur fette Status-Wörter als Chips)"
+  },
+  {
+   "id": "B17",
+   "akt": "als_naechstes",
+   "von": 35.09,
+   "bis": 38.06,
+   "wort_start": {
+    "w": "Als",
+    "after": 34.8
+   },
+   "bild": "Pill 'ALS NÄCHSTES' auf 'Als'. Kamera auf die rote Widerspruch-Zeile der Liste (Story-Objekt): zwei unlesbare Adress-Etiketten (Balken) nebeneinander, dazwischen ein großes '?'. Frage-Karte 'WELCHE ADRESSE STIMMT?' auf 'Adresse@36.3' (1,38 s nach der Pill). Keine Namen, kein Handelsregister-Logo, kein Telefon.",
+   "kamera": "Push-in auf die Widerspruch-Zeile, Halt",
+   "frage": "Impressum oder die andere?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@34.8",
+     "t": 35.09
+    },
+    {
+     "text": "WELCHE ADRESSE STIMMT?",
+     "at": "Adresse@36.3",
+     "t": 36.48
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@34.8-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Als@34.8",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "anker": "Welche",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "Adresse@36.3",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "stimmt",
+     "f": "popLo",
+     "v": 0.18
+    }
+   ],
+   "tabelle": {
+    "src": "design/lauf/02-empfaenger-tabelle-anonym.png",
+    "size": [
+     730,
+     1110
+    ],
+    "bereiche": {
+     "kopf": {
+      "x": 40,
+      "y": 0,
+      "w": 690,
+      "h": 130,
+      "text": "Für alle fünf Betriebe … Eindeutig belegt ist allerdings nur eine. …"
+     },
+     "kernsatz": {
+      "x": 40,
+      "y": 40,
+      "w": 640,
+      "h": 36,
+      "text": "Impressum gefunden. Eindeutig belegt ist allerdings nur eine."
+     },
+     "status_spalte": {
+      "x": 486,
+      "y": 160,
+      "w": 232,
+      "h": 940
+     },
+     "zeilen": {
+      "belegt": {
+       "y": 205,
+       "h": 115
+      },
+      "pruefen1": {
+       "y": 322,
+       "h": 118
+      },
+      "pruefen2": {
+       "y": 442,
+       "h": 178
+      },
+      "pruefen3": {
+       "y": 622,
+       "h": 210
+      },
+      "widerspruch": {
+       "y": 834,
+       "h": 270
+      }
+     }
+    },
+    "hinweis": "Story-Objekt. Namen/Adressen sind schwarze Balken (so lassen). Lesbar nur die fetten Status-Wörter 'Belegt.' 'Prüfen.' 'Widerspruch.' (als farbige Chips: grün/gelb/rot), Fließtext der Status-Spalte nur Textur. Frame 1 alternativ aus der echten xlsx gerendert (hooks.md): Spalten Firmenname/Straße/PLZ/Ort schwarz, Spalte Adressstatus lesbar."
+   },
+   "lesbar": "nur Chip 'Widerspruch'"
+  },
+  {
+   "id": "B18",
+   "akt": "cta",
+   "von": 38.06,
+   "bis": 45.7,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 37.8
+   },
+   "bild": "Endkarte wie Folge 9–13 (end-Akt, itemTag 'DM'): Keyword 'Adresse' tippt auf '„Adresse“', Haken, Flieger. EIN Block 'FRAGE + TABELLENVORLAGE' auf 'Frage' (Snip: DOCX-Karte aus Shot 01 + Miniatur einer leeren Tabelle mit farbigen Status-Chips, Text unlesbar). Ergebnis als EIN Block 'EMPFÄNGERLISTE IN 10 MINUTEN' auf 'Damit+0.05', Puls auf 'Empfängerliste'. Halt bis Ende (Endkarte 1,0 s nach Stimmende 44,71), Bot-Hüpfer ~45,2 gegen Stillstand.",
+   "kamera": "ruhiger Push-in, Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "Adresse (Keyword)",
+     "at": "Adresse@38.5",
+     "t": 38.79
+    },
+    {
+     "text": "FRAGE + TABELLENVORLAGE",
+     "at": "Frage",
+     "t": 40.26
+    },
+    {
+     "text": "EMPFÄNGERLISTE IN 10 MINUTEN",
+     "at": "Damit+0.05",
+     "t": 42.47
+    },
+    {
+     "text": "Puls auf EMPFÄNGERLISTE (kein neuer Text)",
+     "at": "Empfängerliste"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "Adresse@38.5",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Adresse@38.5:end",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "ich@39.5",
+     "f": "wqh",
+     "v": 0.2
+    },
+    {
+     "anker": "Frage",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Damit+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "10@43",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "Empfängerliste",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "t": 45.2,
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

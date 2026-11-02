@@ -1,0 +1,26 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Heute prüft sie, ob die Versandzeile in ihrem Werbebrief stimmt.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung über Printful. Angebot: 109 € für 5 Shirts, 29,90 € für ein Einzelshirt. Fünf Werbebriefe stehen. Darin stand bisher: Versand zzgl. 11,20 € bei 5 Shirts, 5,20 € bei einem. Der Einkaufspreis pro Shirt fehlt noch.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ das eigene Angebot (Word) anhängen.
+2. Fragen: „Prüf die Versandzeile mit der Websuche gegen die aktuellen Versandpreise und Lieferzeiten von [Anbieter], in Euro, mit Quelle. Korrigier die Zeile so, dass nur Belegtes drinsteht. Sag mir, was du ohne meinen Einkaufspreis nicht entscheiden kannst. Erfinde nichts. Gib mir die korrigierte Word-Datei zurück.“
+3. Den Versandpreis im eigenen Anbieter-Konto gegenchecken.
+
+Ergebnis im echten Lauf (knapp 2 Minuten): Für 11,20 € und 5,20 € findet Claude keinen Beleg. Die Versandseite zeigt ihm nur Dollar, und mit einem geschätzten Kurs rechnet es nicht um. Neue Zeile in allen fünf Briefen: „Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung.“ Die Lieferzeit steht nur noch mit „in der Regel“ drin.
+
+Die Entscheidung: Beträge raus, bis ein Beleg da ist.
+
+Warum?
+- Kein Beleg für die alten Beträge.
+- Umrechnen mit geschätztem Kurs wäre geraten.
+
+Und die 109 € für 5 Shirts? Bleiben offen. Mit Umsatzsteuer sind das netto 18,32 € pro Shirt, aber ohne Einkaufspreis und Umsatzsteuer-Status kann Claude nicht sagen, ob es reicht. Wichtig dabei: Ohne geprüfte USt-ID schlägt Printful laut Claude 19 % Umsatzsteuer auf.
+
+Kommentiere „Beleg“, und ich schick dir den Prompt. Damit prüfst du in 10 Minuten die Versandzeile in deinem Angebot.
+
+Offen bleibt: Startet die Firma mit oder ohne Umsatzsteuer?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #versandkosten #firmenshirts

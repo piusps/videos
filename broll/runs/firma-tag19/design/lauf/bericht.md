@@ -1,0 +1,10 @@
+# Bericht Lauf 19 (Stimmt die Versandzeile?), 2026-10-31 16:28:14–16:30:02 (MEZ)
+
+- Chat: https://claude.ai/chat/0c969b98-17ed-414b-a3e6-8accc983cec3, Pius' Pro-Org, Opus 5.5 Mittel, Gedächtnis aus (chat_memory_mode disabled), kein Research, Websuche an, /api/account vorher = nachher (byte-identisch), kein Konnektor-Aufruf, kein Kauf/Login/Versand, kein Printful-Konto. Tab nach dem Lauf geschlossen, lokaler Server beendet.
+- Anhang: Serienbriefe aus Lauf 17 (unverändert). Prompt: prompt.txt.
+- Dauer 1 min 48 s. 6 Websuchen, 2 Seitenabrufe (1 abgelehnt), 1 Read, 2 Bash, 1 Datei geteilt.
+- Ergebnis: Für 11,20 € / 5,20 € kein Beleg (Printful-Seite im Lauf nur in Dollar, kein angenommener Kurs) → Beträge gestrichen; neue Zeile in allen fünf Briefen: „Die Versandkosten nenne ich Ihnen vor Ihrer Bestellung. Gestickt wird in der Regel innerhalb von 2 bis 5 Werktagen, der Versand nach Deutschland dauert danach in der Regel 2 bis 5 Werktage.“ Word-Datei zurück (nur diese Zeile geändert).
+- 109 € für fünf: ohne Einkaufspreis nicht entscheidbar. Netto 18,32 € pro Shirt im Fünferpack. Ohne USt-ID schlägt Printful 19 % auf (auch für Kleinunternehmer). Für die Marge braucht Claude Einkaufspreis + Umsatzsteuerstatus.
+- Gegenprüfung: printful.com/shipping zeigte mir Euro (4,49 € + 1,25 €) → Dollar-Aussage gilt nur für Claudes Abruf. Deutsche Seite „2 bis 5 Werktage nach Abschluss der Produktion“ bestätigt; Europa-Standard laut englischer Seite 5–20 Werktage → Lieferzeit nicht sprechen. Digitalisierung gratis ab 25 Stück bestätigt.
+- **Für Pius / Chef:** Einkaufspreis nur im Printful-Konto (Login = Pius). Übergabe-Vorschlag Folge 20 ohne Login: „Als Nächstes: Mit oder ohne Umsatzsteuer?“ (Kleinunternehmer vs. Regelbesteuerung recherchieren und empfehlen; Claude betont „kein Steuerberater“ → Lauf 20 muss als Recherche mit Quellen + „das entscheidet ein Mensch/Steuerberater“ laufen; Anmeldung selbst = Menschen-Schritt).
+- Screenshots: 01–10 in diesem Ordner, keine Namen/Adressen im Chat, keine -anonym-Fassungen nötig.

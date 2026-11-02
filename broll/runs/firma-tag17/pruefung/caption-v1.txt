@@ -1,0 +1,26 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Heute klärt sie, was der Versand ihrer Shirts kostet.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung über Printful. Angebot: 109 € für 5 Shirts, 29,90 € für ein Einzelshirt. 5 Werbebriefe stehen als Word-Datei, nur die Versandkosten fehlten noch.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ den eigenen Brief oder das Angebot (Word) anhängen.
+2. Fragen: „Finde mit der Websuche heraus, was der Versand bei [Anbieter] nach Deutschland für [Menge] und für ein einzelnes Teil kostet, mit Quelle. Rechne aus, ob der Versand in meinem Preis noch drin ist oder ob ich ihn extra nennen muss. Trag das Ergebnis in den Brief ein. Sag mir, was du nicht prüfen kannst. Erfinde nichts.“
+3. Den Betrag im eigenen Konto beim Anbieter gegenchecken.
+
+Ergebnis im echten Lauf (knapp 2 Minuten): Claude findet Printfuls Versandtarif und schreibt in alle 5 Briefe „Versand: zzgl. 11,20 Euro brutto bei 5 Shirts, zzgl. 5,20 Euro brutto bei einem Einzelshirt“. Die Beträge hat Claude selbst aufgerundet.
+
+Warum extra und nicht inklusive?
+- Ob der Versand in 109 € passt, kann Claude nicht sagen: Der Einkaufspreis des gestickten Shirts fehlt.
+- Beim Einzelshirt frisst der Versand etwa 17 % des Nettopreises.
+
+Der Haken: Ob der Tarif fürs eigene Konto gilt, in Euro oder Dollar abgerechnet wird und wie lange Stickerei dauert, kann Claude nicht prüfen. Den verbindlichen Preis zeigt erst der Checkout beim Anbieter. Versandfertig sind die Briefe noch nicht: Absender, Datum und Kontakt fehlen weiter.
+
+Namen und Adressen zeige ich nicht.
+
+Kommentiere „Versand“, und ich schick dir die Anleitung mit dem Prompt und dem Rechenweg. Damit rechnest du in 10 Minuten durch, ob dein Preis den Versand trägt.
+
+Offen bleibt: Was zahlt die Firma für das gestickte Shirt?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #preiskalkulation #firmenshirts

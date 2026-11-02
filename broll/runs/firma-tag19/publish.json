@@ -1,0 +1,26 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae746a6529b22960fe5e3d2",
+ "status": "published",
+ "scheduledFor": "2026-11-01 18:00 Europe/Berlin",
+ "folge": 19,
+ "serientag": 5,
+ "ersteFolgeDesTages": false,
+ "note_final": "8,5/10 (finale Prüfung Runde 1, pruefung/final-runde1.md; Bericht wegen voller Platte vom Chef aus der Prüfer-Antwort übernommen)",
+ "video": "runs/firma-tag19/firma-tag19-final.mp4",
+ "cover": "runs/firma-tag19/cover.jpg",
+ "guide": "runs/firma-tag19/beleg-guide.pdf",
+ "ig_media_id": "18088213079315442",
+ "url": "https://www.instagram.com/reel/DfNOMZWjJ-1/",
+ "funnel": {
+  "name": "PTC Funnel Folge 19",
+  "kind": "ptc",
+  "workflowId": "6ae770b628d5c103e7b412f4",
+  "automationId": "6ae770b727fe083de7c8a323",
+  "active": true,
+  "attachedTo": "IG media id 18088213079315442",
+  "created": "2026-11-01T17:02:45.745Z",
+  "by": "zernio-golive-arm"
+ }
+}

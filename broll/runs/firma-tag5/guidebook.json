@@ -1,0 +1,514 @@
+{
+ "topic": "Konkurrenz",
+ "trigger_word": "Konkurrenz",
+ "cover": {
+  "kicker": "KI baut eine Firma · Was verlangt die Konkurrenz",
+  "title": "Finde heraus, was deine Konkurrenz wirklich verlangt. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie herausgefunden hat, was ein kleiner Handwerksbetrieb für fünf bestickte Logo-Shirts zahlt, inklusive Einrichtung und Versand. Mit Klickpfad, der kompletten Preistabelle aus unserem Lauf, allen Quellen und einer Anleitung für deinen eigenen Betrieb.",
+  "stat": {
+   "value": "295 Quellen",
+   "label": "So viele Quellen hat Claude Research in unserem Lauf für diese eine Frage geprüft. Dauer: 7 Minuten 19 Sekunden. 14 Anbieter verglichen (laut Claude)."
+  },
+  "outcomes": [
+   "Die Gesamtpreise deiner Konkurrenz im Vergleich, jeder mit Quelle",
+   "Ehrlich eingeordnet: welche Summen veröffentlicht sind und welche Claude selbst addiert hat",
+   "Eine Lücke, die eine kleine Firma nutzen kann, begründet mit Zahlen"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Erst das Ergebnis. In zehn Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai), starte einen neuen Chat, tippe unten links auf **„+“** und schalte **„Research“** ein. Häng über **„+“** und **„Upload or add files“** dein letztes Ergebnis als Datei an. Dann füge diese Frage ein. Das ist wörtlich die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Die Frage zum Kopieren (Research an, letztes Ergebnis angehängt)",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [Firmenshirts mit Logo] an [kleine Handwerks- und Baubetriebe unter zehn Leuten], [hergestellt auf Bestellung bei einem Partner]. Mein letztes Ergebnis: [Ich nehme Stickerei, weil das Garn bis 95 Grad Wäsche aushält und Stick schon ab einem Stück geht.] Recherchiere jetzt die Konkurrenz: Was zahlt [ein kleiner Handwerksbetrieb in Deutschland], wenn er [fünf T-Shirts mit seinem Logo als Stick auf der Brust] bestellt? Vergleiche mindestens acht Anbieter mit dem Gesamtpreis für [fünf Stück] inklusive Einrichtung und Versand, der Lieferzeit und dem, was im Preis enthalten ist, jeweils mit Quelle. Sag am Ende, wo eine Lücke ist, die eine kleine Firma wie meine nutzen kann, und begründe das mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Nach ein paar Minuten hast du eine Preistabelle mit Quellen und eine begründete Lücke. Dann prüfst du, welche Summen Claude selbst zusammengerechnet hat. Genau so ist die KI in dieser Folge vorgegangen."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Plan",
+       "v": "Research gibt es in den bezahlten Plänen **Pro, Max, Team und Enterprise**, die Websuche muss an sein. Quelle: [support.claude.com/en/articles/11088861](https://support.claude.com/en/articles/11088861-using-research-on-claude)"
+      },
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Research“** → **„+“** → **„Upload or add files“** → Frage einfügen → senden"
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 7 Minuten 19 Sekunden, 295 Quellen, 29 davon im Bericht verlinkt."
+      },
+      {
+       "k": "Rückfragen",
+       "v": "Keine. Claude hat direkt mit der Recherche begonnen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Geschichte",
+   "title": "Fünf bestickte Shirts. Was zahlt ein Betrieb dafür?",
+   "intro": "Eine KI soll hundert Tage lang ganz alleine ein Unternehmen führen. Ihr Produkt: Firmenshirts mit Logo, bestickt erst auf Bestellung, für kleine Handwerks- und Baubetriebe. In der letzten Folge hat sie Stickerei gewählt: Stick ist laut Anbieter bis 95 °C freigegeben und geht ab einem Stück. Jetzt will sie wissen, was die Konkurrenz für eine typische Bestellung verlangt: fünf T-Shirts mit Logo auf der Brust.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Research an",
+       "text": "Unten auf „+“, dann „Research“ einschalten."
+      },
+      {
+       "num": "02",
+       "title": "Ergebnis anhängen",
+       "text": "Das Ergebnis der letzten Folge als Datei dazu, hier die Entscheidung für Stickerei."
+      },
+      {
+       "num": "03",
+       "title": "Frage stellen",
+       "text": "Mindestens acht Anbieter, Gesamtpreis mit Einrichtung und Versand, Lieferzeit, was enthalten ist, jeweils mit Quelle. Am Ende die Lücke mit Zahlen. Und: Erfinde nichts."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/research-fertig.png",
+     "width": "88%",
+     "caption": "Echter Lauf vom 28.10.2026: „Research complete • 295 sources • 7m 19s“."
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Beim Preis mithalten, bei Nachbestellungen gewinnen.",
+   "break_before": true,
+   "intro": "Aus dem echten Lauf vom 28.10.2026. Claudes Fazit im Bericht: **Die Lücke liegt nicht beim niedrigsten Preis**, sondern bei Nachbestellungen ab einem Stück ohne neue Einrichtung, einem 60-°C-Arbeitsshirt und einem Logo ohne Einschränkungen. Die Gründe stehen hier so, wie Claude sie belegt hat, mit Herkunft der Zahl.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "≈ 110 €",
+       "title": "Der Marktpreis",
+       "text": "Fünf bestickte Shirts inkl. Einrichtung und Versand: Spreadshirt 109,95 € brutto, workwear one 110,85 € brutto. Beides von Claude addiert. Teurere Anbieter: 150 bis über 200 € (Stick-Manufaktur 208,55 € zzgl. Versand)."
+      },
+      {
+       "num": "ab 5",
+       "title": "Kein einzelnes Shirt",
+       "text": "workwear one stickt „Mit Logo ab 5 Stück“. Fünf Anbieter in der Tabelle nehmen fünf Stück als Erstauftrag gar nicht an (Mindestmenge 10 bis 30)."
+      },
+      {
+       "num": "3 Farben",
+       "title": "Logo begrenzt",
+       "text": "Spreadshirt erlaubt „maximal 3 Farben“, Shirtigo höchstens 90 × 90 mm Stickfläche. Für die Stickshirts beider Anbieter fand Claude keine 60-°C-Pflegeangabe."
+      }
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Einrichtung",
+       "v": "Von 0 € (Spreadshirt) bis 99,80 € netto (Engelbert Strauss: 89,90 € Logo-Erstellung + 9,90 € Rüstkosten), dort laut Claude rund 70 % der Kosten für Stick und Einrichtung, das Shirt noch nicht eingerechnet."
+      },
+      {
+       "k": "Ein Shirt nachbestellen",
+       "v": "Bei ShirtStore laut Claude mindestens 58,59 € netto plus Textil, weil das Stickprogramm (44 €) bei jeder Nachbestellung neu berechnet wird. Einschränkung: Die Polo-Seite desselben Anbieters nennt „35 € einmalig pro Logo“."
+      },
+      {
+       "k": "Lieferzeit",
+       "v": "Meist 10–15 Werktage, bei Engelbert Strauss ca. 2–3 Wochen. Laut Claude wären unter 10 Werktage ein messbarer Vorteil."
+      },
+      {
+       "k": "Empfehlung",
+       "v": "Paket für 5 Shirts unter ca. 110 € brutto inkl. Stickdatei und Versand, dazu Nachbestellung ab 1 Stück ohne neue Einrichtung, 60-°C-Textil und Mockup vor der Produktion (abgeleitet von Claude aus den Zahlen)."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken: fast alle Summen sind Untergrenzen",
+     "text": "Claude schreibt selbst: Fast alle Shop-Preise gelten für die günstigste Farbe oder Größe, „die Summen sind deshalb Untergrenzen“. Auch die beiden günstigsten Summen hat Claude selbst addiert. Den Spreadshirt-Preis (21,99 € je Shirt) hat Claude aus unserer Vorrecherche übernommen, ob der Stick darin steckt, hat es nicht gefunden. Für VistaPrint gab es nur österreichische Preise. Und Claude spricht von sechs Anbietern, die fünf Stück nicht annehmen, in der Tabelle sind es fünf; beim möglichen sechsten (Stick-Manufaktur) widersprechen sich die Angaben."
+    },
+    {
+     "type": "p",
+     "text": "Wichtig ist der Weg, nicht das Ergebnis: Bei deinem Produkt kommt etwas anderes heraus. Typische Bestellung festlegen, Gesamtpreise mit Quelle vergleichen, Lücke benennen, dann prüfen, welche Summe veröffentlicht und welche nur zusammengerechnet ist."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Preistabelle",
+   "title": "Alle Anbieter, 1:1 aus dem Bericht.",
+   "break_before": true,
+   "intro": "So hat Claude die Tabelle im Bericht geliefert (5 T-Shirts, Brustlogo-Stick ca. 8–10 cm), Wort für Wort. Wegen der Breite hier in zwei Teilen. Legende: **„Berechnung“** = von Claude selbst addiert aus den belegten Einzelwerten. MwSt. 19 % (DE). **„n. g.“** = nicht gefunden. Alle Zahlen Stand 28.10.2026, Preise können sich ändern.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Anbieter",
+      "Gesamtpreis 5 Stk. inkl. Einrichtung & Versand",
+      "Aufschlüsselung",
+      "Mindestmenge"
+     ],
+     "widths": [
+      "15%",
+      "25%",
+      "42%",
+      "18%"
+     ],
+     "rows": [
+      [
+       "**workwear one** (B2B-Workwear-Shop, Bremen)",
+       "**93,15 € netto / 110,85 € brutto** (Berechnung); ohne HAKRO-Aktion 97,15 € netto / 115,61 € brutto",
+       "HAKRO 292 T-Shirt Classic 7,20 € (Aktion „HAKRO10“, regulär 8,00 €) × 5 = 36,00 € + Stick Brust links 5,85 € (Staffel 1–10 Stk.) × 5 = 29,25 € + Einrichtung 20,00 € + Versand DE 7,90 € netto",
+       "Logo ab 5 Stück (über Artikel kombinierbar)"
+      ],
+      [
+       "**Spreadshirt** (POD)",
+       "**109,95 € brutto / 92,39 € netto** (Berechnung, Basis „ab“-Preis)",
+       "Shirt mit Stickoption ab 21,99 € × 5 = 109,95 €; Stickdatei 0 €; Versand 0 € („Kostenlose Lieferung ab 95,00 €“). Ob der Stick im Grundpreis von 15,99 € (Männer Premium Bio T-Shirt mit Stickfilter) steckt, ist n. g.",
+       "keine"
+      ],
+      [
+       "**a61** (Online-Stickerei, Grefrath)",
+       "**126,40 € brutto / 106,22 € netto** (B&C E220) bis **150,90 € brutto / 126,81 € netto** (HAKRO 597, 60 °C) (Berechnung)",
+       "B&C E220 T-Shirt bestickt ab 23,90 € × 5 = 119,50 € bzw. HAKRO 597 Heavy-Mikralinar ECO bestickt ab 28,80 € × 5 = 144,00 € + Versand ab 6,90 €. Staffel nur 1/10/25 Stk., für 5 Stk. gilt also der 1-Stück-Preis. Separates Stickprogramm n. g.",
+       "ab 1 Stück"
+      ],
+      [
+       "**ShirtStore** (Berlin)",
+       "**≥ 116,95 € netto / ≥ 139,17 € brutto ohne Textil** (Berechnung); Textilpreis n. g.",
+       "Stick Brustlogo 8 × 8 cm 14,59 € (1–9 Stk.) × 5 = 72,95 € + Stickprogramm 44,00 € (bei jedem Auftrag) + Textil n. g.; Rabatt 3 % auf die Ware ab 3 Stück; Versand frei ab 100 €",
+       "keine („ab dem ersten Stück“)"
+      ],
+      [
+       "**Engelbert Strauss** (Logoservice)",
+       "**≥ 141,55 € netto / ≥ 168,44 € brutto ohne Textil und Versand** (Berechnung, Logo bis 45 cm²); bei 46–80 cm² ≥ 187,30 € netto",
+       "Direkteinstickung Firmenlogo ab 4 Stk.: bis 45 cm² 8,35 € netto × 5 = 41,75 € (46–80 cm²: 11,50 € × 5 = 57,50 €) + Rüstkosten 9,90 € netto/Auftrag + Erstellung Firmenlogo einmalig 89,90 € netto / 106,98 € brutto (bis 45 cm²) bzw. 119,90 € netto / 142,68 € brutto (46–80 cm²) laut Strauss-Logoservice-PDF mit 19 % MwSt. + T-Shirt-Preis n. g. + Versand n. g.",
+       "Firmenlogo ab 4 Stück"
+      ],
+      [
+       "**Stick-Manufaktur**",
+       "**208,55 € brutto / 175,25 € netto zzgl. Versand** (Anbieterangabe bzw. Netto berechnet)",
+       "Organic T-Shirt „with stick“: 5 Stück 208,55 € (41,71 €/Stk.) inkl. MwSt., „Textile+embroidery/print incl.“, Versand extra (Höhe n. g.)",
+       "widersprüchlich: Kopfzeile „Starting at 15 pieces“, Preistabelle ab 1 Stück"
+      ],
+      [
+       "**Stickerei Jochems**",
+       "**41,20–76,20 € ohne Textil und Versand** (Berechnung; netto/brutto n. g.)",
+       "Logo bis 6.000 Stiche ab 5 Stk. 5,24 € × 5 = 26,20 € + Stickprogramm 15–50 € („sehr selten auch bis 100 €“) + Textil n. g. + Versand n. g.",
+       "ab 1 Stück (Staffel „ab 1 Stk“)"
+      ],
+      [
+       "**Kansas Workwear Shop**",
+       "**≥ 104,50 € netto ohne Textil und Versand** (Berechnung)",
+       "Direkteinstickung Firmenlogo ab 4 Stk. bis 45 cm² 8,90 € × 5 = 44,50 € + Erstellung Firmenlogo einmalig 60 € + Textil n. g.",
+       "ab 4 Stück"
+      ],
+      [
+       "**Shirtigo** (POD/Dropshipping)",
+       "**n. g.** (fix: 7,50 € netto Stickdatei + Versand max. 9,50 € netto = 17,00 € netto + 5 × Stückpreis n. g.)",
+       "Stickdatei 7,50 € netto pro Motivgröße und Material; Versand-Deckel DE 9,50 € netto (Datum der Meldung n. g.); Stück-Stickpreis n. g.",
+       "keine"
+      ],
+      [
+       "**VistaPrint**",
+       "**n. g. für DE**; nur Indikation über die AT-Seite: 21,99–32,99 €/Stk. inkl. (österr.) MwSt. → 5 Stk. ca. 109,95–164,95 € (Berechnung, nicht auf DE übertragbar)",
+       "CottoVer-Unisex-T-Shirt bestickt; Stückpreis bei Menge 5 nur im Konfigurator; Versand DE: Economy gratis (8–10 WT), Standard 4,49 € (6 WT)",
+       "keine"
+      ],
+      [
+       "**Flyeralarm**",
+       "**n. g.**",
+       "Stick „ab 1 Stück“, „gratis Versand“; Basic T-Shirt Herren (Fruit of the Loom) Preisangabe 13,20 € (ob inkl. Stick: n. g.); Arbeits-T-Shirt „Solid“ „bei 60° C waschbar“",
+       "ab 1 Stück"
+      ],
+      [
+       "**Shirtinator**",
+       "**n. g.**",
+       "Stick-Angebot für T-Shirts in DE n. g. (Stick nur für Polos belegt, auf der CH-Seite)",
+       "n. g."
+      ],
+      [
+       "**Printerado**",
+       "**n. g.** (in dieser Recherche nicht geprüft)",
+       "n. g.",
+       "n. g."
+      ],
+      [
+       "**Workline**",
+       "**nicht möglich** (Mindestabnahme 20 Stk.)",
+       "Logostick S (bis 50 cm²) ab 6,90 €/Stk. + Stickprogramm 75 € (größere Stufe 95 €) + Rüstkosten 9,90 €/Auftrag, netto",
+       "20 Stück"
+      ],
+      [
+       "**stickbetrieb.de (Tyburski)**",
+       "**nicht möglich beim Erstauftrag** (ab 10 Stk.; Nachbestellungen auch darunter)",
+       "Stick 7,82 € (10 Stk.) + Stickprogramm 30 € einmalig, netto",
+       "10 Stück"
+      ],
+      [
+       "**Stickerei Stoiber / Shirtlabor / CUVIO**",
+       "**nicht möglich**",
+       "Stoiber: Stickprogramm kostenlos ab 15 Stk.; Shirtlabor: Versand 8,90 €; CUVIO: ab 10 Teilen",
+       "15 / 30 / 10 Stück"
+      ]
+     ],
+     "caption": "Teil 1 von 2: Gesamtpreis, Aufschlüsselung, Mindestmenge."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Preistabelle",
+   "title": "Lieferzeit, Leistung, Quellen.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Anbieter",
+      "Lieferzeit",
+      "Im Preis enthalten",
+      "Quelle"
+     ],
+     "widths": [
+      "15%",
+      "22%",
+      "41%",
+      "22%"
+     ],
+     "rows": [
+      [
+       "**workwear one** (B2B-Workwear-Shop, Bremen)",
+       "10–15 Werktage mit Logo",
+       "Logoaufbereitung und Stickdatei kostenlos („Stickdatei anlegen … digitalisiert von unserer Stickerei in Bremen“), Mockup mit Auftragsbestätigung, bis 12 Stickfarben, Textilien laut Anbieter „bis auf eine Ausnahme – bedenkenlos bei 60° waschbar“, Nachbestellung ohne Einrichtung, frachtfrei ab 350 € netto",
+       "workwear-one.de/Arbeitskleidung-mit-Logo; workwear-one.de/faq"
+      ],
+      [
+       "**Spreadshirt** (POD)",
+       "n. g.; Spreadshirt: „für bestickte Firmenkleidung ausschließlich Standard-Versand“, Produktion „in Legnica, Polen, oder in Krupka, Tschechien“; Punchfile „kann unter Umständen ein paar Tage dauern“",
+       "Kostenlose Optimierung der Stickdatei, max. 3 Farben (Auswahl aus 19), Motiv max. 209 × 209 mm. Mengenrabatt laut Spreadshirt-FAQ (Pullover-Seite): „Ab 5 Artikeln erhältst Du automatisch 10% Mengenrabatt“, rechnerisch ca. 98,96 € brutto statt 109,95 € (Berechnung; ein Gutscheinportal nennt abweichend 5 %, im Warenkorb prüfen). Waschtemperatur des Stickshirts n. g.",
+       "spreadshirt.de/gestalten/kleidung/besticken; spreadshirt.de/pro/gestalten/firmenbekleidung; spreadshirt.de/gestalten/pullover"
+      ],
+      [
+       "**a61** (Online-Stickerei, Grefrath)",
+       "n. g.",
+       "„Stückpreis inklusive Stick“, Shop-Filter „All inclusive … Produkt incl. Veredelung“, Grammatur angegeben (B&C 220 g/m², HAKRO 190 g/m²), Filter „Waschen 60°“ für 6 Modelle. Stichzahl-/Größenlimit n. g.",
+       "a61.de/de/t-shirts-besticken.html; a61.de/de/preise-und-versand.html"
+      ],
+      [
+       "**ShirtStore** (Berlin)",
+       "8–12 Werktage Produktion zzgl. Versand",
+       "Stick „kochfest waschbar bis 95 °C“, Stickdatei wird aufbewahrt, Stickprogramm aber „bei jedem Stickauftrag berechnet, auch bei Nachbestellungen“ (27,50–88,00 € je nach Fläche)",
+       "shirtstore.de/textildruck/arbeitskleidung-bedrucken/"
+      ],
+      [
+       "**Engelbert Strauss** (Logoservice)",
+       "ca. 2–3 Wochen",
+       "Über 300 Garnfarben, Motiv bis 390 cm², Polyestergarn; Erstellung einmalig",
+       "strauss.com/de/en/Service/Embroidery_Print/Textembroidery; cdn.strauss.com (Logoservice-PDF)"
+      ],
+      [
+       "**Stick-Manufaktur**",
+       "n. g.",
+       "Ob das Stickprogramm enthalten ist: n. g.",
+       "stick-manufaktur.de/en/polo-shirts-t-shirts-embroidery/have-t-shirts-embroidered/"
+      ],
+      [
+       "**Stickerei Jochems**",
+       "n. g.",
+       "Stickprogramm nur beim ersten Auftrag; Endpreis „über ein Angebot“",
+       "stickerei-jochems.de/preisliste-für-logos/; stickerei-jochems.de/preise-für-stickerei/"
+      ],
+      [
+       "**Kansas Workwear Shop**",
+       "n. g.",
+       "Logo-Erstellung einmalig",
+       "kansasworkwear.shop/c/produktveredelung/direkteinstickung-firmenlogo"
+      ],
+      [
+       "**Shirtigo** (POD/Dropshipping)",
+       "1–5 Werktage Produktion + 2–3 Werktage für die erste Stickdatei, zzgl. Versand",
+       "Garn aus recyceltem Polyester, 15 Garnfarben, max. 6 pro Design, Stickfläche max. 90 × 90 mm, Motiv max. 60 cm², vergünstigte Musterbestellung",
+       "cockpit.shirtigo.com/en/embroidery-on-demand; helpcenter.shirtigo.de"
+      ],
+      [
+       "**VistaPrint**",
+       "„Druck und Lieferung … mindestens 10 Werktage“",
+       "Bis zu 14 Garnfarben, Stick linke Brust, CottoVer 160 g/m² Fairtrade-Biobaumwolle, „Maschinenwäsche bei 60 °“; Stickgröße n. g.; Einrichtung n. g.",
+       "vistaprint.de/kleidung-taschen/t-shirts; vistaprint.at/kleidung-taschen/t-shirts/bestickte-t-shirts; vistaprint.de/lieferung"
+      ],
+      [
+       "**Flyeralarm**",
+       "n. g. (Express möglich)",
+       "Versand gratis",
+       "flyeralarm.com/de/c/kleidung-textilien/t-shirts/t-shirts-besticken/"
+      ],
+      [
+       "**Shirtinator**",
+       "Druckprodukte 2–3 Werktage (Stick n. g.)",
+       "n. g.",
+       "shirtinator.de/ratgeber/shirtinator-vs-spreadshirt/"
+      ],
+      [
+       "**Printerado**",
+       "n. g.",
+       "n. g.",
+       "–"
+      ],
+      [
+       "**Workline**",
+       "n. g. (Angebot am selben Werktag)",
+       "Stickprogramm nur beim Erstauftrag, Probeeinstickung",
+       "workline-image.de/logostick-preise/"
+      ],
+      [
+       "**stickbetrieb.de (Tyburski)**",
+       "10 Werktage ab Freigabe",
+       "Stickprogramm entfällt bei Nachbestellung",
+       "stickbetrieb.de/t-shirts-besticken-lassen/"
+      ],
+      [
+       "**Stickerei Stoiber / Shirtlabor / CUVIO**",
+       "Shirtlabor 2–3 Wochen",
+       "Stoiber: Versand und Einzelverpackung inklusive; Shirtlabor: kostenlose Stickfreigabe als PDF",
+       "stickerei-stoiber.de; shirtlabor.de; cuv.io/arbeitskleidung-besticken"
+      ]
+     ],
+     "caption": "Teil 2 von 2: Lieferzeit, was im Preis enthalten ist, Quelle. „n. g.“ heißt: Claude hat dazu keine Angabe gefunden, nicht dass es keine gibt. Alle Links stehen direkt darunter."
+    }
+   ]
+  },
+  {
+   "kicker": "Quellen",
+   "title": "Alle 29 Quellen aus dem Bericht.",
+   "intro": "So im Bericht des Laufs verlinkt (28.10.2026). Insgesamt hat Claude 295 Quellen geprüft.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "1. [https://workwear-one.de/Arbeitskleidung-mit-Logo](https://workwear-one.de/Arbeitskleidung-mit-Logo)\n2. [https://www.spreadshirt.de/gestalten/kleidung/besticken](https://www.spreadshirt.de/gestalten/kleidung/besticken)\n3. [https://cockpit.shirtigo.com/en/embroidery-on-demand](https://cockpit.shirtigo.com/en/embroidery-on-demand)\n4. [https://shirtstore.de/textildruck/arbeitskleidung-bedrucken/](https://shirtstore.de/textildruck/arbeitskleidung-bedrucken/)\n5. [https://www.vistaprint.ch/kleidung-taschen/bestseller](https://www.vistaprint.ch/kleidung-taschen/bestseller)\n6. [https://www.vistaprint.de/kleidung-taschen/bestseller](https://www.vistaprint.de/kleidung-taschen/bestseller)\n7. [https://workwear-one.de/faq](https://workwear-one.de/faq)\n8. [https://www.a61.de/de/t-shirts-besticken.html](https://www.a61.de/de/t-shirts-besticken.html)\n9. [https://www.a61.de/de/preise-und-versand.html](https://www.a61.de/de/preise-und-versand.html)\n10. [https://www.strauss.com/de/en/Service/Embroidery_Print/Textembroidery](https://www.strauss.com/de/en/Service/Embroidery_Print/Textembroidery)\n11. [https://www.stick-manufaktur.de/en/polo-shirts-t-shirts-embroidery/have-t-shirts-embroidered/](https://www.stick-manufaktur.de/en/polo-shirts-t-shirts-embroidery/have-t-shirts-embroidered/)\n12. [https://www.stickerei-jochems.de/preisliste-f%C3%BCr-logos/](https://www.stickerei-jochems.de/preisliste-f%C3%BCr-logos/)\n13. [https://www.stickerei-jochems.de/preise-f%C3%BCr-stickerei/](https://www.stickerei-jochems.de/preise-f%C3%BCr-stickerei/)\n14. [https://www.kansasworkwear.shop/c/produktveredelung/direkteinstickung-firmenlogo](https://www.kansasworkwear.shop/c/produktveredelung/direkteinstickung-firmenlogo)\n15. [https://helpcenter.shirtigo.de/feed/anpassung-der-versandkosten/](https://helpcenter.shirtigo.de/feed/anpassung-der-versandkosten/)\n16. [https://www.vistaprint.at/kleidung-taschen/t-shirts/bestickte-t-shirts](https://www.vistaprint.at/kleidung-taschen/t-shirts/bestickte-t-shirts)\n17. [https://www.vistaprint.at/kleidung-taschen/t-shirts?GP=10%2F17%2F2020+18%3A18%3A05&GPS=5798588549&GNF=0](https://www.vistaprint.at/kleidung-taschen/t-shirts?GP=10%2F17%2F2020+18%3A18%3A05&GPS=5798588549&GNF=0)\n18. [https://www.vistaprint.de/lieferung](https://www.vistaprint.de/lieferung)\n19. [https://www.vistaprint.de/kleidung-taschen/t-shirts](https://www.vistaprint.de/kleidung-taschen/t-shirts)\n20. [https://www.vistaprint.at/kleidung-taschen/t-shirts/gots-zertifiziertes-t-shirt-mit-rundhalsausschnitt-von-cottover-r](https://www.vistaprint.at/kleidung-taschen/t-shirts/gots-zertifiziertes-t-shirt-mit-rundhalsausschnitt-von-cottover-r)\n21. [https://www.flyeralarm.com/de/c/kleidung-textilien/t-shirts/t-shirts-besticken/](https://www.flyeralarm.com/de/c/kleidung-textilien/t-shirts/t-shirts-besticken/)\n22. [https://www.schweiztipps.ch/shop/shirtinator-ch/](https://www.schweiztipps.ch/shop/shirtinator-ch/)\n23. [https://www.shirtinator.de/ratgeber/shirtinator-vs-spreadshirt/](https://www.shirtinator.de/ratgeber/shirtinator-vs-spreadshirt/)\n24. [https://www.workline-image.de/logostick-preise/](https://www.workline-image.de/logostick-preise/)\n25. [https://stickbetrieb.de/t-shirts-besticken-lassen/](https://stickbetrieb.de/t-shirts-besticken-lassen/)\n26. [https://www.shirtlabor.de/gestalten/bestickung/t-shirts-besticken/](https://www.shirtlabor.de/gestalten/bestickung/t-shirts-besticken/)\n27. [https://www.stickerei-stoiber.de/t-shirts-individuell-besticken-bedrucken.html](https://www.stickerei-stoiber.de/t-shirts-individuell-besticken-bedrucken.html)\n28. [https://www.sparwelt.de/gutscheine/spreadshirt](https://www.sparwelt.de/gutscheine/spreadshirt)\n29. [https://shirtstore.de/textildruck/poloshirts-bedrucken-besticken/](https://shirtstore.de/textildruck/poloshirts-bedrucken-besticken/)"
+    }
+   ]
+  },
+  {
+   "kicker": "Für deinen Betrieb",
+   "title": "So machst du das mit deinem Angebot.",
+   "break_before": true,
+   "intro": "Die Frage funktioniert für alles, was du an andere Betriebe oder Privatkunden verkaufst. Du brauchst nur zwei Dinge: deinen typischen Kunden und seine typische Bestellung.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Typische Bestellung festlegen",
+       "text": "Was bestellt dein typischer Kunde wirklich? Eine konkrete Menge oder ein konkreter Umfang, nicht „ab 1 Stück“."
+      },
+      {
+       "title": "Gesamtpreis verlangen",
+       "text": "Nicht den Stückpreis, sondern alles zusammen: Einrichtung, Versand, Pauschalen. Genau dort unterscheiden sich die Anbieter am stärksten."
+      },
+      {
+       "title": "Was enthalten ist",
+       "text": "Lieferzeit, Mindestmenge und Leistung gehören in die Tabelle. Oft liegt die Lücke dort, nicht beim Preis."
+      },
+      {
+       "title": "Research laufen lassen",
+       "text": "Neuer Chat, „+“, „Research“, Datei anhängen, die Vorlage unten einfügen, senden. Rechne mit fünf bis zehn Minuten."
+      },
+      {
+       "title": "Summen prüfen",
+       "text": "Markier, welche Summen Claude selbst addiert hat und welche „ab“-Preise sind. Bevor du deinen Preis festlegst: zwei, drei Anbieter selbst im Warenkorb durchrechnen."
+      }
+     ]
+    },
+    {
+     "type": "prompt",
+     "label": "Vorlage für dein Angebot",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [PRODUKT] an [ZIELGRUPPE], [WIE GELIEFERT]. Recherchiere die Konkurrenz: Was zahlt [TYPISCHER KUNDE] in [LAND/REGION], wenn er [TYPISCHE BESTELLUNG, z. B. Menge] bestellt? Vergleiche mindestens acht Anbieter mit dem Gesamtpreis inklusive Einrichtung und Versand, der Lieferzeit und dem, was im Preis enthalten ist, jeweils mit Quelle. Kennzeichne, welche Summen du selbst zusammengerechnet hast. Sag am Ende, wo eine Lücke ist, die eine kleine Firma wie meine nutzen kann, und begründe das mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Fotografin",
+       "v": "Bewerbungsfotos an Berufseinsteiger, im Studio. Typische Bestellung: ein Shooting mit fünf bearbeiteten Bildern."
+      },
+      {
+       "k": "Gebäudereinigung",
+       "v": "Praxisreinigung an Arztpraxen unter zehn Leuten, zweimal pro Woche. Typische Bestellung: ein Monat für 120 m²."
+      },
+      {
+       "k": "Grafikdesigner",
+       "v": "Logo-Paket an Handwerksbetriebe, als Festpreis online. Typische Bestellung: Logo, Visitenkarte und Briefkopf."
+      },
+      {
+       "k": "Catering",
+       "v": "Mittagessen an Büros mit zehn Leuten, geliefert. Typische Bestellung: eine Woche, fünf Tage."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**„Ab“-Preise für Endpreise halten.** In unserem Lauf waren fast alle Summen Untergrenzen: günstigste Farbe, kleinste Größe, teils Aktionspreise.",
+      "**Nur den Stückpreis vergleichen.** Die Einrichtung schwankte zwischen 0 € und 99,80 € netto. Bei fünf Stück entscheidet sie oft über den Preis.",
+      "**Netto und brutto mischen.** Workwear-Shops nennen oft netto, Online-Shops brutto. Lass Claude beides ausweisen.",
+      "**Mindestmengen übersehen.** Fünf Anbieter in unserer Tabelle nehmen fünf Stück gar nicht an. Die gehören nicht in deinen Preisvergleich, aber in deine Lücke.",
+      "**Widersprüche nicht klären.** Ein Anbieter nannte auf zwei Seiten zwei verschiedene Einrichtungskosten, ein anderer zwei Mindestmengen. Frag nach, bevor du damit rechnest.",
+      "**Quellen nicht angeklickt.** Prüf jede Fundstelle, die du weiterverwendest. Preise ändern sich."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Prompt-Bibliothek",
+   "title": "Von der Preistabelle zum eigenen Preis.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Nachfrage 1 · Belegt oder gerechnet",
+     "text": "Geh die Preistabelle aus deinem Bericht Zeile für Zeile durch. Markier jede Summe als veröffentlichten Endpreis, als „ab“-Preis oder als von dir zusammengerechnet und nenne dazu die Quelle. Welche Anbieter bleiben übrig, wenn ich nur vollständig veröffentlichte Endpreise gelten lasse?"
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 2 · Widersprüche klären",
+     "text": "Liste alle Stellen aus deinem Bericht auf, an denen sich ein Anbieter selbst widerspricht oder eine Angabe fehlt. Schreib mir zu jeder Stelle eine Frage, die ich dem Anbieter stellen kann, höchstens ein Satz pro Frage, Sie-Form."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 3 · Mein Preis gegen den Markt",
+     "text": "Mein Angebot für [fünf bestickte Shirts] soll [PREIS] brutto inklusive Einrichtung und Versand kosten. Stell es neben die drei günstigsten vollständig berechenbaren Anbieter aus deinem Bericht: Gesamtpreis, Mindestmenge, Nachbestellung, Lieferzeit. Wo liege ich vorne, wo hinten? Nutze nur Zahlen aus dem Bericht. Erfinde nichts."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 4 · Den passenden Partner finden",
+     "text": "Recherchiere einen Produktionspartner in [Deutschland oder der EU], der für Wiederverkäufer [Shirts auf Bestellung bestickt], ab [einem Stück], möglichst mit Versand direkt an meine Kunden. Vergleiche Einkaufspreis, einmalige Kosten, Mindestmenge und Lieferzeit, jeweils mit Quelle. Erfinde nichts."
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes sucht die KI den Partner, der 60-Grad-Shirts einzeln stickt, ohne neue Einrichtung.",
+  "text": "Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Tabelle, Zahlen und Zitate aus einem echten claude.ai-Lauf vom 28.10.2026 (Research, 295 Quellen). Anbieterangaben und von Claude addierte Summen sind als solche gekennzeichnet und nicht von uns geprüft. Preise können sich ändern, Menünamen auch."
+}

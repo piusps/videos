@@ -1,0 +1,443 @@
+{
+  "tag": 4,
+  "folge": 4,
+  "serientag": 2,
+  "ersteFolgeDesTages": true,
+  "date": "2026-10-29",
+  "seconds": 41.5,
+  "keyword": "Druck",
+  "audio": {
+    "voice": "voice.mp3",
+    "words": "words.json",
+    "musicStart": 57.26
+  },
+  "plan": {
+    "title": "GRÜNDUNGSPLAN",
+    "steps": [
+      "PRODUKT",
+      "KUNDE",
+      "DRUCK",
+      "PREIS",
+      "NAME",
+      "LOGO",
+      "WEBSITE",
+      "WERBUNG",
+      "ERSTER\nUMSATZ"
+    ],
+    "current": 2,
+    "done": [
+      0,
+      1
+    ]
+  },
+  "hook": {
+    "headline": [
+      "Wie viel Umsatz macht",
+      "eine KI in 100 Tagen?"
+    ],
+    "hot": 1,
+    "stamp": "GANZ ALLEINE.",
+    "result": {
+      "kind": "washer",
+      "temp": "60 °C",
+      "fillAt": "100",
+      "spinAt": "Unternehmen",
+      "labels": [
+        {
+          "temp": "95",
+          "text": "STICK",
+          "ok": true
+        },
+        {
+          "temp": "30",
+          "text": "DIGITALDRUCK",
+          "ok": false
+        }
+      ],
+      "roll": {
+        "from": 20,
+        "at": "Unternehmen"
+      },
+      "stamps": [
+        {
+          "label": 1,
+          "text": "ZU HEISS",
+          "at": "100"
+        },
+        {
+          "label": 0,
+          "text": "HÄLT",
+          "at": "Tage"
+        }
+      ],
+      "pushAt": "Tage",
+      "outAt": "lang"
+    },
+    "at": {
+      "ki": "KI",
+      "ein": "ganz+0.2",
+      "unt": "ganz+0.25",
+      "aufbaut": "führt",
+      "ganz": "das",
+      "alleine": "alleine",
+      "ich": "Ich",
+      "probier": "probier",
+      "das": "das@4.2",
+      "aus": "aus@4.4",
+      "tagWord": "Tag@4.8",
+      "tagNum": "2@5",
+      "end": "Die@5.6-0.08"
+    },
+    "instant": true,
+    "planFrom": "ganz+0.18"
+  },
+  "claude": {
+    "cursorFrom": "Plus-0.45",
+    "moveUp": 99,
+    "steps": [
+      {
+        "label": "RESEARCH",
+        "at": "Plus-0.4"
+      },
+      {
+        "label": "ANHANG",
+        "at": "Ergebnis-0.15"
+      },
+      {
+        "label": "FRAGE",
+        "at": "anhängen+0.05"
+      }
+    ],
+    "feature": {
+      "label": "Research",
+      "icon": "research",
+      "plus": "Plus",
+      "pick": "Research",
+      "on": "an@14.9"
+    },
+    "attach": {
+      "label": "Shirt-Firma Ergebnis Ärger.md",
+      "sub": "Ergebnis von gestern",
+      "at": "Ergebnis"
+    },
+    "prompt": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe Firmenshirts mit Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, gedruckt auf Bestellung bei einem Partner. Ergebnis der letzten Recherche: Auf dem Bau werden Arbeitsshirts mit 60 Grad gewaschen, die gängigen Drucke für kleine Mengen vertragen nur etwa 30 Grad. Recherchiere: Welches Druck- oder Veredelungsverfahren hält 60 Grad Wäsche dauerhaft aus und geht trotzdem schon ab einem Stück? Vergleiche die Verfahren mit Waschtemperatur, Mindestmenge und ungefährem Stückpreis, jeweils mit Quelle. Entscheide dich am Ende für ein Verfahren und begründe es mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts.",
+    "typing": [
+      [
+        "anhängen-0.1",
+        ""
+      ],
+      [
+        "Frage-0.12",
+        "Im Anhang ist mein letztes Ergebnis."
+      ]
+    ],
+    "send": "Stück:end",
+    "rehook": {
+      "lines": [
+        "Die Frage",
+        "zum Kopieren"
+      ],
+      "pill": "→ am Ende",
+      "from": "Frage+0.3",
+      "to": "Stück:end"
+    }
+  },
+  "wall": {
+    "cards": [
+      {
+        "label": "STICK\n95 °C",
+        "icon": "shirt"
+      },
+      {
+        "label": "DTF\n30–60 °C ?",
+        "icon": "flyer"
+      },
+      {
+        "label": "DTG\n30–40 °C",
+        "icon": "flyer"
+      },
+      {
+        "label": "FLEX\n30 °C",
+        "icon": "flyer"
+      },
+      {
+        "label": "SIEBDRUCK\nab 25–50 Stk.",
+        "icon": "box"
+      },
+      {
+        "label": "TRANSFER\nab 10 Stk.",
+        "icon": "box"
+      },
+      {
+        "label": "SUBLIMATION\nnur Polyester",
+        "icon": "flyer"
+      },
+      {
+        "label": "PATCHES\n30/60 °C ?",
+        "icon": "soap"
+      }
+    ],
+    "fill": {
+      "at": "246+0.6",
+      "step": 0.06
+    },
+    "counter": {
+      "label": "QUELLEN",
+      "at": "246",
+      "keys": [
+        [
+          "246",
+          246,
+          0.8
+        ]
+      ],
+      "pulse": "Quellen@19.5"
+    },
+    "dim": [
+      {
+        "i": 1,
+        "at": "nimmt"
+      },
+      {
+        "i": 2,
+        "at": "nimmt"
+      },
+      {
+        "i": 3,
+        "at": "nimmt"
+      },
+      {
+        "i": 4,
+        "at": "nimmt"
+      },
+      {
+        "i": 5,
+        "at": "nimmt"
+      },
+      {
+        "i": 6,
+        "at": "nimmt"
+      },
+      {
+        "i": 7,
+        "at": "nimmt"
+      }
+    ]
+  },
+  "acts": [
+    {
+      "type": "recap",
+      "at": "Die@5.6-0.08",
+      "product": {
+        "label": "SHIRTS MIT LOGO",
+        "at": "Shirts"
+      },
+      "banner": {
+        "text": "erst auf Bestellung\ngedruckt",
+        "at": "Shirts+0.25"
+      },
+      "last": {
+        "step": 1,
+        "label": "BAU WÄSCHT\n60 °C",
+        "at": "Gestern"
+      },
+      "today": {
+        "step": 2,
+        "pill": "HEUTE: LOGO FÜR 60 °C",
+        "at": "Heute"
+      },
+      "bot": {
+        "dx": 1.6,
+        "s": 0.6
+      }
+    },
+    {
+      "type": "claudeShot",
+      "at": "Frage-0.1",
+      "src": "firma-ep/tag4/shots/01-composer.png",
+      "cam": [
+        [
+          "Frage-0.1",
+          1.3,
+          560,
+          345
+        ],
+        [
+          "60@16.8-0.1",
+          1.75,
+          700,
+          360
+        ],
+        [
+          "Stück@17.7-0.2",
+          1.75,
+          420,
+          385
+        ]
+      ],
+      "marks": [
+        {
+          "x": 668,
+          "y": 340,
+          "w": 284,
+          "h": 42,
+          "at": "60@16.8",
+          "color": "yellow"
+        },
+        {
+          "x": 252,
+          "y": 370,
+          "w": 252,
+          "h": 40,
+          "at": "Stück@17.7",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "type": "claudeShot",
+      "at": "Claude-0.1",
+      "src": "firma-ep/tag4/shots/02-research-fertig.png",
+      "cam": [
+        [
+          "Claude-0.1",
+          1.0,
+          500,
+          354
+        ],
+        [
+          "prüft",
+          2.3,
+          255,
+          228
+        ]
+      ],
+      "marks": [
+        {
+          "x": 270,
+          "y": 210,
+          "w": 112,
+          "h": 36,
+          "at": "246",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "type": "wall",
+      "at": "246+0.6",
+      "thinkUntil": "Quellen@19.5+0.2"
+    },
+    {
+      "type": "winner",
+      "at": "Die@20.3-0.12",
+      "card": 0,
+      "fly": "Stickerei",
+      "dimAt": "nimmt",
+      "stamp": "→ STICK",
+      "stampAt": "Stickerei",
+      "hold": "shirt"
+    },
+    {
+      "type": "why",
+      "at": "Warum-0.12",
+      "card": 0,
+      "pill": "WARUM STICK?",
+      "pillAt": "Warum",
+      "chip": {
+        "text": "beim selben Anbieter",
+        "at": "Beim@22.2"
+      },
+      "cards": [
+        {
+          "icon": "thermoHot",
+          "big": "95 °C",
+          "small": "Stick",
+          "at": "Stick@23",
+          "hot": true,
+          "vs": {
+            "big": "30 °C",
+            "small": "Digitaldruck",
+            "at": "Digitaldruck",
+            "bad": true
+          }
+        },
+        {
+          "icon": "shirt1x",
+          "big": "ab 1 Stück",
+          "small": "Stick",
+          "at": "Stick@25.9",
+          "vs": {
+            "big": "ab 50",
+            "small": "Siebdruck lohnt",
+            "at": "Siebdruck"
+          }
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "at": "Haken-0.12",
+      "pill": "HAKEN",
+      "lines": [
+        "Fast alle Gradzahlen",
+        "kommen von Anbietern"
+      ],
+      "pop": "Haken",
+      "stamp": "ANBIETERANGABEN",
+      "stampAt": "Anbieterangaben",
+      "bubble": "Haken+0.3"
+    },
+    {
+      "type": "question",
+      "at": "Als@31.5-0.12",
+      "pill": "ALS NÄCHSTES",
+      "lines": [
+        "Was verlangt die Konkurrenz",
+        "für bestickte Shirts?"
+      ],
+      "pop": "Als@31.5",
+      "stamp": null,
+      "bubble": "Als@31.5+0.3"
+    },
+    {
+      "type": "end",
+      "at": "Kommentiere-0.15",
+      "keywordAt": "Druck@35",
+      "plane": [
+        "und@35.6-0.05",
+        "schick+0.25"
+      ],
+      "itemsAt": "die@36.2",
+      "copyAt": "Damit",
+      "itemTag": "DM",
+      "items": [
+        {
+          "label": "Die Frage",
+          "snip": "„Welches Verfahren hält 60 Grad Wäsche aus und geht ab einem Stück?“"
+        },
+        {
+          "label": "Die Vergleichstabelle",
+          "snip": "8 Verfahren: Waschtemperatur, Mindestmenge, Preis, Quelle"
+        }
+      ],
+      "result": {
+        "at": "Damit-0.1",
+        "line1": "in 10 Minuten",
+        "line1At": "10",
+        "parts": [
+          {
+            "text": "passende Verfahren",
+            "at": "Verfahren"
+          },
+          {
+            "text": "mit Quellen",
+            "at": "Quellen@39.8",
+            "hot": true
+          }
+        ]
+      },
+      "dimBoard": true
+    }
+  ]
+}

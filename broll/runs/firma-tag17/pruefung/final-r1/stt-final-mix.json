@@ -1,0 +1,1416 @@
+{
+ "language_code": "deu",
+ "language_probability": 1,
+ "text": "Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probiere das aus. Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Fünf Briefe, Versandpreis fehlt. Heute klärt sie den Shirtversand. Claude: Briefe angehängt, Web-Suche bei Printful. Nach knapp zwei Minuten im Brief: Versand extra. Warum? Ohne Einkaufspreis weiß sie nicht, ob er in den Preis passt. Er frisst siebzehn Prozent vom Einzelshirtpreis. Als Nächstes: Was zahlt sie für das gestickte Shirt? Kommentiere: Versand. Ich schicke dir die Anleitung. Damit rechnest du in zehn Minuten deinen Preis durch. [Klingelton]",
+ "words": [
+  {
+   "text": "Wie",
+   "start": 0.1,
+   "end": 0.2,
+   "type": "word",
+   "logprob": -0.04314926266670227
+  },
+  {
+   "text": " ",
+   "start": 0.2,
+   "end": 0.22,
+   "type": "spacing",
+   "logprob": -0.000056980417866725475
+  },
+  {
+   "text": "viel",
+   "start": 0.22,
+   "end": 0.34,
+   "type": "word",
+   "logprob": -0.000056980417866725475
+  },
+  {
+   "text": " ",
+   "start": 0.34,
+   "end": 0.4,
+   "type": "spacing",
+   "logprob": -0.0000032186455882765586
+  },
+  {
+   "text": "Umsatz",
+   "start": 0.4,
+   "end": 0.72,
+   "type": "word",
+   "logprob": -0.0000032186455882765586
+  },
+  {
+   "text": " ",
+   "start": 0.72,
+   "end": 0.76,
+   "type": "spacing",
+   "logprob": -0.000003576272320060525
+  },
+  {
+   "text": "macht",
+   "start": 0.76,
+   "end": 0.92,
+   "type": "word",
+   "logprob": -0.000003576272320060525
+  },
+  {
+   "text": " ",
+   "start": 0.92,
+   "end": 0.94,
+   "type": "spacing",
+   "logprob": -3.576278118089249e-7
+  },
+  {
+   "text": "ein",
+   "start": 0.94,
+   "end": 1.06,
+   "type": "word",
+   "logprob": -3.576278118089249e-7
+  },
+  {
+   "text": " ",
+   "start": 1.06,
+   "end": 1.1,
+   "type": "spacing",
+   "logprob": -0.0006463822210207582
+  },
+  {
+   "text": "Unternehmen,",
+   "start": 1.1,
+   "end": 1.52,
+   "type": "word",
+   "logprob": -0.0005928448608377342
+  },
+  {
+   "text": " ",
+   "start": 1.52,
+   "end": 1.6,
+   "type": "spacing",
+   "logprob": -0.000060794889577664435
+  },
+  {
+   "text": "das",
+   "start": 1.6,
+   "end": 1.74,
+   "type": "word",
+   "logprob": -0.000060794889577664435
+  },
+  {
+   "text": " ",
+   "start": 1.74,
+   "end": 1.8,
+   "type": "spacing",
+   "logprob": -0.000003814689989667386
+  },
+  {
+   "text": "eine",
+   "start": 1.8,
+   "end": 1.98,
+   "type": "word",
+   "logprob": -0.000003814689989667386
+  },
+  {
+   "text": " ",
+   "start": 1.98,
+   "end": 2.02,
+   "type": "spacing",
+   "logprob": -0.0001255195093108341
+  },
+  {
+   "text": "KI",
+   "start": 2.02,
+   "end": 2.38,
+   "type": "word",
+   "logprob": -0.0001255195093108341
+  },
+  {
+   "text": " ",
+   "start": 2.38,
+   "end": 2.46,
+   "type": "spacing",
+   "logprob": -0.0022230453323572874
+  },
+  {
+   "text": "hundert",
+   "start": 2.46,
+   "end": 2.82,
+   "type": "word",
+   "logprob": -0.0022230453323572874
+  },
+  {
+   "text": " ",
+   "start": 2.82,
+   "end": 2.86,
+   "type": "spacing",
+   "logprob": -0.000005960446742392378
+  },
+  {
+   "text": "Tage",
+   "start": 2.86,
+   "end": 3.08,
+   "type": "word",
+   "logprob": -0.000005960446742392378
+  },
+  {
+   "text": " ",
+   "start": 3.08,
+   "end": 3.16,
+   "type": "spacing",
+   "logprob": -0.000022053474822314456
+  },
+  {
+   "text": "lang",
+   "start": 3.16,
+   "end": 3.36,
+   "type": "word",
+   "logprob": -0.000022053474822314456
+  },
+  {
+   "text": " ",
+   "start": 3.36,
+   "end": 3.4,
+   "type": "spacing",
+   "logprob": -0.000007748573807475623
+  },
+  {
+   "text": "ganz",
+   "start": 3.4,
+   "end": 3.62,
+   "type": "word",
+   "logprob": -0.000007748573807475623
+  },
+  {
+   "text": " ",
+   "start": 3.62,
+   "end": 3.68,
+   "type": "spacing",
+   "logprob": -0.00005113947918289341
+  },
+  {
+   "text": "alleine",
+   "start": 3.68,
+   "end": 3.98,
+   "type": "word",
+   "logprob": -0.00005113947918289341
+  },
+  {
+   "text": " ",
+   "start": 3.98,
+   "end": 4.019,
+   "type": "spacing",
+   "logprob": -0.00007748303323751315
+  },
+  {
+   "text": "führt?",
+   "start": 4.019,
+   "end": 4.24,
+   "type": "word",
+   "logprob": -0.0000645691943645943
+  },
+  {
+   "text": " ",
+   "start": 4.24,
+   "end": 4.24,
+   "type": "spacing",
+   "logprob": -0.000059960475482512265
+  },
+  {
+   "text": "Ich",
+   "start": 5.02,
+   "end": 5.1,
+   "type": "word",
+   "logprob": -0.000059960475482512265
+  },
+  {
+   "text": " ",
+   "start": 5.1,
+   "end": 5.14,
+   "type": "spacing",
+   "logprob": -0.00009035655966727063
+  },
+  {
+   "text": "probiere",
+   "start": 5.14,
+   "end": 5.38,
+   "type": "word",
+   "logprob": -0.17432370577807887
+  },
+  {
+   "text": " ",
+   "start": 5.38,
+   "end": 5.42,
+   "type": "spacing",
+   "logprob": -3.576278118089249e-7
+  },
+  {
+   "text": "das",
+   "start": 5.42,
+   "end": 5.54,
+   "type": "word",
+   "logprob": -3.576278118089249e-7
+  },
+  {
+   "text": " ",
+   "start": 5.54,
+   "end": 5.62,
+   "type": "spacing",
+   "logprob": -0.0000046491513785440475
+  },
+  {
+   "text": "aus.",
+   "start": 5.62,
+   "end": 5.78,
+   "type": "word",
+   "logprob": -0.0000036656774113907886
+  },
+  {
+   "text": " ",
+   "start": 5.78,
+   "end": 6.34,
+   "type": "spacing",
+   "logprob": -0.003679649904370308
+  },
+  {
+   "text": "Die",
+   "start": 6.34,
+   "end": 6.42,
+   "type": "word",
+   "logprob": -0.003679649904370308
+  },
+  {
+   "text": " ",
+   "start": 6.42,
+   "end": 6.44,
+   "type": "spacing",
+   "logprob": -0.00031323294388130307
+  },
+  {
+   "text": "Firma",
+   "start": 6.44,
+   "end": 6.66,
+   "type": "word",
+   "logprob": -0.00031323294388130307
+  },
+  {
+   "text": " ",
+   "start": 6.66,
+   "end": 6.7,
+   "type": "spacing",
+   "logprob": -0.0000011920922133867862
+  },
+  {
+   "text": "der",
+   "start": 6.7,
+   "end": 6.8,
+   "type": "word",
+   "logprob": -0.0000011920922133867862
+  },
+  {
+   "text": " ",
+   "start": 6.8,
+   "end": 6.84,
+   "type": "spacing",
+   "logprob": -0.0001438752660760656
+  },
+  {
+   "text": "KI",
+   "start": 6.84,
+   "end": 7.08,
+   "type": "word",
+   "logprob": -0.0001438752660760656
+  },
+  {
+   "text": " ",
+   "start": 7.08,
+   "end": 7.14,
+   "type": "spacing",
+   "logprob": -0.000015258672647178173
+  },
+  {
+   "text": "verkauft",
+   "start": 7.14,
+   "end": 7.52,
+   "type": "word",
+   "logprob": -0.000015258672647178173
+  },
+  {
+   "text": " ",
+   "start": 7.52,
+   "end": 7.56,
+   "type": "spacing",
+   "logprob": -0.0009056995622813702
+  },
+  {
+   "text": "Shirts",
+   "start": 7.56,
+   "end": 7.84,
+   "type": "word",
+   "logprob": -0.0009056995622813702
+  },
+  {
+   "text": " ",
+   "start": 7.84,
+   "end": 7.88,
+   "type": "spacing",
+   "logprob": -7.152555099310121e-7
+  },
+  {
+   "text": "mit",
+   "start": 7.88,
+   "end": 8.02,
+   "type": "word",
+   "logprob": -7.152555099310121e-7
+  },
+  {
+   "text": " ",
+   "start": 8.02,
+   "end": 8.06,
+   "type": "spacing",
+   "logprob": -0.0000792710343375802
+  },
+  {
+   "text": "Logo",
+   "start": 8.06,
+   "end": 8.34,
+   "type": "word",
+   "logprob": -0.0000792710343375802
+  },
+  {
+   "text": " ",
+   "start": 8.34,
+   "end": 8.4,
+   "type": "spacing",
+   "logprob": 0
+  },
+  {
+   "text": "an",
+   "start": 8.4,
+   "end": 8.52,
+   "type": "word",
+   "logprob": 0
+  },
+  {
+   "text": " ",
+   "start": 8.52,
+   "end": 8.58,
+   "type": "spacing",
+   "logprob": -0.000019073304429184645
+  },
+  {
+   "text": "kleine",
+   "start": 8.58,
+   "end": 8.82,
+   "type": "word",
+   "logprob": -0.000019073304429184645
+  },
+  {
+   "text": " ",
+   "start": 8.82,
+   "end": 8.86,
+   "type": "spacing",
+   "logprob": -0.000003814689989667386
+  },
+  {
+   "text": "Betriebe,",
+   "start": 8.86,
+   "end": 9.22,
+   "type": "word",
+   "logprob": -0.00003797173768463027
+  },
+  {
+   "text": " ",
+   "start": 9.22,
+   "end": 9.36,
+   "type": "spacing",
+   "logprob": -0.00042906138696707785
+  },
+  {
+   "text": "bestickt",
+   "start": 9.36,
+   "end": 9.68,
+   "type": "word",
+   "logprob": -0.0003692404134199023
+  },
+  {
+   "text": " ",
+   "start": 9.68,
+   "end": 9.72,
+   "type": "spacing",
+   "logprob": -0.000005483612312673358
+  },
+  {
+   "text": "erst",
+   "start": 9.72,
+   "end": 9.88,
+   "type": "word",
+   "logprob": -0.000005483612312673358
+  },
+  {
+   "text": " ",
+   "start": 9.88,
+   "end": 9.92,
+   "type": "spacing",
+   "logprob": -0.0000066756979322235566
+  },
+  {
+   "text": "auf",
+   "start": 9.92,
+   "end": 10.04,
+   "type": "word",
+   "logprob": -0.0000066756979322235566
+  },
+  {
+   "text": " ",
+   "start": 10.04,
+   "end": 10.08,
+   "type": "spacing",
+   "logprob": -0.000025510462364763953
+  },
+  {
+   "text": "Bestellung.",
+   "start": 10.08,
+   "end": 10.52,
+   "type": "word",
+   "logprob": -0.00002419918415729295
+  },
+  {
+   "text": " ",
+   "start": 10.52,
+   "end": 10.76,
+   "type": "spacing",
+   "logprob": -0.00011288482346571982
+  },
+  {
+   "text": "Fünf",
+   "start": 10.76,
+   "end": 10.94,
+   "type": "word",
+   "logprob": -0.0001341870374744758
+  },
+  {
+   "text": " ",
+   "start": 10.94,
+   "end": 11,
+   "type": "spacing",
+   "logprob": -0.0002087136817863211
+  },
+  {
+   "text": "Briefe,",
+   "start": 11,
+   "end": 11.32,
+   "type": "word",
+   "logprob": -0.0001718653885680916
+  },
+  {
+   "text": " ",
+   "start": 11.32,
+   "end": 11.68,
+   "type": "spacing",
+   "logprob": -0.0001805857609724626
+  },
+  {
+   "text": "Versandpreis",
+   "start": 11.68,
+   "end": 12.28,
+   "type": "word",
+   "logprob": -0.0002088422394687465
+  },
+  {
+   "text": " ",
+   "start": 12.28,
+   "end": 12.32,
+   "type": "spacing",
+   "logprob": -0.00003099393507000059
+  },
+  {
+   "text": "fehlt.",
+   "start": 12.32,
+   "end": 12.6,
+   "type": "word",
+   "logprob": -0.0000258680156501138
+  },
+  {
+   "text": " ",
+   "start": 12.6,
+   "end": 12.6,
+   "type": "spacing",
+   "logprob": -0.0005378468777053058
+  },
+  {
+   "text": "Heute",
+   "start": 13.86,
+   "end": 14.1,
+   "type": "word",
+   "logprob": -0.0005378468777053058
+  },
+  {
+   "text": " ",
+   "start": 14.1,
+   "end": 14.22,
+   "type": "spacing",
+   "logprob": -0.0000641325386823155
+  },
+  {
+   "text": "klärt",
+   "start": 14.22,
+   "end": 14.44,
+   "type": "word",
+   "logprob": -0.00007164219568949193
+  },
+  {
+   "text": " ",
+   "start": 14.44,
+   "end": 14.48,
+   "type": "spacing",
+   "logprob": -0.0000029802276912960224
+  },
+  {
+   "text": "sie",
+   "start": 14.48,
+   "end": 14.56,
+   "type": "word",
+   "logprob": -0.0000029802276912960224
+  },
+  {
+   "text": " ",
+   "start": 14.56,
+   "end": 14.6,
+   "type": "spacing",
+   "logprob": 0
+  },
+  {
+   "text": "den",
+   "start": 14.6,
+   "end": 14.78,
+   "type": "word",
+   "logprob": 0
+  },
+  {
+   "text": " ",
+   "start": 14.78,
+   "end": 14.84,
+   "type": "spacing",
+   "logprob": -0.0019833433907479048
+  },
+  {
+   "text": "Shirtversand.",
+   "start": 14.84,
+   "end": 15.56,
+   "type": "word",
+   "logprob": -0.0374267899059165
+  },
+  {
+   "text": " ",
+   "start": 15.56,
+   "end": 15.56,
+   "type": "spacing",
+   "logprob": -0.0013849677052348852
+  },
+  {
+   "text": "Claude:",
+   "start": 16.52,
+   "end": 16.8,
+   "type": "word",
+   "logprob": -0.0013807500779096568
+  },
+  {
+   "text": " ",
+   "start": 16.8,
+   "end": 17.34,
+   "type": "spacing",
+   "logprob": -0.0004117832868359983
+  },
+  {
+   "text": "Briefe",
+   "start": 17.34,
+   "end": 17.6,
+   "type": "word",
+   "logprob": -0.0003432520800762025
+  },
+  {
+   "text": " ",
+   "start": 17.6,
+   "end": 17.64,
+   "type": "spacing",
+   "logprob": -0.0005809764843434095
+  },
+  {
+   "text": "angehängt,",
+   "start": 17.64,
+   "end": 18.12,
+   "type": "word",
+   "logprob": -0.00024454976210108725
+  },
+  {
+   "text": " ",
+   "start": 18.12,
+   "end": 18.68,
+   "type": "spacing",
+   "logprob": -0.2815861999988556
+  },
+  {
+   "text": "Web-Suche",
+   "start": 18.68,
+   "end": 19.2,
+   "type": "word",
+   "logprob": -0.12546452093402471
+  },
+  {
+   "text": " ",
+   "start": 19.2,
+   "end": 19.26,
+   "type": "spacing",
+   "logprob": -0.0000027418097943154862
+  },
+  {
+   "text": "bei",
+   "start": 19.26,
+   "end": 19.36,
+   "type": "word",
+   "logprob": -0.0000027418097943154862
+  },
+  {
+   "text": " ",
+   "start": 19.36,
+   "end": 19.46,
+   "type": "spacing",
+   "logprob": -0.00001490105023549404
+  },
+  {
+   "text": "Printful.",
+   "start": 19.46,
+   "end": 20,
+   "type": "word",
+   "logprob": -0.00004225129394954921
+  },
+  {
+   "text": " ",
+   "start": 20,
+   "end": 20.72,
+   "type": "spacing",
+   "logprob": -0.000016331539882230572
+  },
+  {
+   "text": "Nach",
+   "start": 20.72,
+   "end": 20.88,
+   "type": "word",
+   "logprob": -0.000016331539882230572
+  },
+  {
+   "text": " ",
+   "start": 20.88,
+   "end": 20.92,
+   "type": "spacing",
+   "logprob": -0.0000014305104514278355
+  },
+  {
+   "text": "knapp",
+   "start": 20.92,
+   "end": 21.16,
+   "type": "word",
+   "logprob": -0.0000014305104514278355
+  },
+  {
+   "text": " ",
+   "start": 21.16,
+   "end": 21.26,
+   "type": "spacing",
+   "logprob": -0.000009775113539944869
+  },
+  {
+   "text": "zwei",
+   "start": 21.26,
+   "end": 21.4,
+   "type": "word",
+   "logprob": -0.000009775113539944869
+  },
+  {
+   "text": " ",
+   "start": 21.4,
+   "end": 21.44,
+   "type": "spacing",
+   "logprob": -0.00001645074735279195
+  },
+  {
+   "text": "Minuten",
+   "start": 21.44,
+   "end": 21.8,
+   "type": "word",
+   "logprob": -0.00001645074735279195
+  },
+  {
+   "text": " ",
+   "start": 21.8,
+   "end": 21.84,
+   "type": "spacing",
+   "logprob": -7.152555099310121e-7
+  },
+  {
+   "text": "im",
+   "start": 21.84,
+   "end": 21.9,
+   "type": "word",
+   "logprob": -7.152555099310121e-7
+  },
+  {
+   "text": " ",
+   "start": 21.9,
+   "end": 21.94,
+   "type": "spacing",
+   "logprob": -0.000007390948667307384
+  },
+  {
+   "text": "Brief:",
+   "start": 21.94,
+   "end": 22.24,
+   "type": "word",
+   "logprob": -0.000006715432997831765
+  },
+  {
+   "text": " ",
+   "start": 22.24,
+   "end": 22.98,
+   "type": "spacing",
+   "logprob": -0.00009262132516596466
+  },
+  {
+   "text": "Versand",
+   "start": 22.98,
+   "end": 23.46,
+   "type": "word",
+   "logprob": -0.00009262132516596466
+  },
+  {
+   "text": " ",
+   "start": 23.46,
+   "end": 23.54,
+   "type": "spacing",
+   "logprob": -0.00015031162183731794
+  },
+  {
+   "text": "extra.",
+   "start": 23.54,
+   "end": 24.02,
+   "type": "word",
+   "logprob": -0.0001252795530781725
+  },
+  {
+   "text": " ",
+   "start": 24.02,
+   "end": 24.02,
+   "type": "spacing",
+   "logprob": -0.00008451581379631534
+  },
+  {
+   "text": "Warum?",
+   "start": 24.94,
+   "end": 25.32,
+   "type": "word",
+   "logprob": -0.00007044971304400367
+  },
+  {
+   "text": " ",
+   "start": 25.32,
+   "end": 25.32,
+   "type": "spacing",
+   "logprob": -0.00005519237674889155
+  },
+  {
+   "text": "Ohne",
+   "start": 26.06,
+   "end": 26.22,
+   "type": "word",
+   "logprob": -0.000027596188374445774
+  },
+  {
+   "text": " ",
+   "start": 26.22,
+   "end": 26.3,
+   "type": "spacing",
+   "logprob": -0.0003305127320345491
+  },
+  {
+   "text": "Einkaufspreis",
+   "start": 26.3,
+   "end": 27.08,
+   "type": "word",
+   "logprob": -0.0002849813877569082
+  },
+  {
+   "text": " ",
+   "start": 27.08,
+   "end": 27.16,
+   "type": "spacing",
+   "logprob": -0.00000965590606938349
+  },
+  {
+   "text": "weiß",
+   "start": 27.16,
+   "end": 27.32,
+   "type": "word",
+   "logprob": -0.00000965590606938349
+  },
+  {
+   "text": " ",
+   "start": 27.32,
+   "end": 27.34,
+   "type": "spacing",
+   "logprob": -0.00001156323378381785
+  },
+  {
+   "text": "sie",
+   "start": 27.34,
+   "end": 27.42,
+   "type": "word",
+   "logprob": -0.00001156323378381785
+  },
+  {
+   "text": " ",
+   "start": 27.42,
+   "end": 27.46,
+   "type": "spacing",
+   "logprob": -0.000012040065485052764
+  },
+  {
+   "text": "nicht,",
+   "start": 27.46,
+   "end": 27.66,
+   "type": "word",
+   "logprob": -0.000010212201743797777
+  },
+  {
+   "text": " ",
+   "start": 27.66,
+   "end": 28.02,
+   "type": "spacing",
+   "logprob": -5.960462772236497e-7
+  },
+  {
+   "text": "ob",
+   "start": 28.02,
+   "end": 28.12,
+   "type": "word",
+   "logprob": -5.960462772236497e-7
+  },
+  {
+   "text": " ",
+   "start": 28.12,
+   "end": 28.16,
+   "type": "spacing",
+   "logprob": -0.000004768360213347478
+  },
+  {
+   "text": "er",
+   "start": 28.16,
+   "end": 28.24,
+   "type": "word",
+   "logprob": -0.000004768360213347478
+  },
+  {
+   "text": " ",
+   "start": 28.24,
+   "end": 28.28,
+   "type": "spacing",
+   "logprob": -3.576278118089249e-7
+  },
+  {
+   "text": "in",
+   "start": 28.28,
+   "end": 28.34,
+   "type": "word",
+   "logprob": -3.576278118089249e-7
+  },
+  {
+   "text": " ",
+   "start": 28.34,
+   "end": 28.38,
+   "type": "spacing",
+   "logprob": 0
+  },
+  {
+   "text": "den",
+   "start": 28.38,
+   "end": 28.54,
+   "type": "word",
+   "logprob": 0
+  },
+  {
+   "text": " ",
+   "start": 28.54,
+   "end": 28.58,
+   "type": "spacing",
+   "logprob": -0.000010371154530730564
+  },
+  {
+   "text": "Preis",
+   "start": 28.58,
+   "end": 28.84,
+   "type": "word",
+   "logprob": -0.000010371154530730564
+  },
+  {
+   "text": " ",
+   "start": 28.84,
+   "end": 28.9,
+   "type": "spacing",
+   "logprob": -0.00012790338951162994
+  },
+  {
+   "text": "passt.",
+   "start": 28.9,
+   "end": 29.26,
+   "type": "word",
+   "logprob": -0.00010658615792635828
+  },
+  {
+   "text": " ",
+   "start": 29.26,
+   "end": 29.94,
+   "type": "spacing",
+   "logprob": -0.000007152531907195225
+  },
+  {
+   "text": "Er",
+   "start": 29.94,
+   "end": 30.04,
+   "type": "word",
+   "logprob": -0.000007152531907195225
+  },
+  {
+   "text": " ",
+   "start": 30.04,
+   "end": 30.08,
+   "type": "spacing",
+   "logprob": -0.000593962671700865
+  },
+  {
+   "text": "frisst",
+   "start": 30.08,
+   "end": 30.38,
+   "type": "word",
+   "logprob": -0.00039601485089472516
+  },
+  {
+   "text": " ",
+   "start": 30.38,
+   "end": 30.44,
+   "type": "spacing",
+   "logprob": -0.013445889577269554
+  },
+  {
+   "text": "siebzehn",
+   "start": 30.44,
+   "end": 30.8,
+   "type": "word",
+   "logprob": -0.00507715041976553
+  },
+  {
+   "text": " ",
+   "start": 30.8,
+   "end": 30.84,
+   "type": "spacing",
+   "logprob": -0.0009423820883966982
+  },
+  {
+   "text": "Prozent",
+   "start": 30.84,
+   "end": 31.28,
+   "type": "word",
+   "logprob": -0.0009423820883966982
+  },
+  {
+   "text": " ",
+   "start": 31.28,
+   "end": 31.34,
+   "type": "spacing",
+   "logprob": -0.000031470757676288486
+  },
+  {
+   "text": "vom",
+   "start": 31.34,
+   "end": 31.48,
+   "type": "word",
+   "logprob": -0.000031470757676288486
+  },
+  {
+   "text": " ",
+   "start": 31.48,
+   "end": 31.54,
+   "type": "spacing",
+   "logprob": -0.002094933995977044
+  },
+  {
+   "text": "Einzelshirtpreis.",
+   "start": 31.54,
+   "end": 32.4,
+   "type": "word",
+   "logprob": -0.0024834865004826705
+  },
+  {
+   "text": " ",
+   "start": 32.4,
+   "end": 33.22,
+   "type": "spacing",
+   "logprob": -0.00015448330668732524
+  },
+  {
+   "text": "Als",
+   "start": 33.22,
+   "end": 33.38,
+   "type": "word",
+   "logprob": -0.00015448330668732524
+  },
+  {
+   "text": " ",
+   "start": 33.38,
+   "end": 33.44,
+   "type": "spacing",
+   "logprob": -0.002692409558221698
+  },
+  {
+   "text": "Nächstes:",
+   "start": 33.44,
+   "end": 33.84,
+   "type": "word",
+   "logprob": -0.0004289206795091458
+  },
+  {
+   "text": " ",
+   "start": 33.84,
+   "end": 34.58,
+   "type": "spacing",
+   "logprob": -0.0000023841830625315197
+  },
+  {
+   "text": "Was",
+   "start": 34.58,
+   "end": 34.82,
+   "type": "word",
+   "logprob": -0.0000023841830625315197
+  },
+  {
+   "text": " ",
+   "start": 34.82,
+   "end": 34.9,
+   "type": "spacing",
+   "logprob": -0.00005829164365422912
+  },
+  {
+   "text": "zahlt",
+   "start": 34.9,
+   "end": 35.1,
+   "type": "word",
+   "logprob": -0.00003497498619253747
+  },
+  {
+   "text": " ",
+   "start": 35.1,
+   "end": 35.14,
+   "type": "spacing",
+   "logprob": -0.000006079655122448457
+  },
+  {
+   "text": "sie",
+   "start": 35.14,
+   "end": 35.22,
+   "type": "word",
+   "logprob": -0.000006079655122448457
+  },
+  {
+   "text": " ",
+   "start": 35.22,
+   "end": 35.26,
+   "type": "spacing",
+   "logprob": -0.0000015497195136049413
+  },
+  {
+   "text": "für",
+   "start": 35.26,
+   "end": 35.34,
+   "type": "word",
+   "logprob": -0.0000015497195136049413
+  },
+  {
+   "text": " ",
+   "start": 35.34,
+   "end": 35.38,
+   "type": "spacing",
+   "logprob": -5.960462772236497e-7
+  },
+  {
+   "text": "das",
+   "start": 35.38,
+   "end": 35.5,
+   "type": "word",
+   "logprob": -5.960462772236497e-7
+  },
+  {
+   "text": " ",
+   "start": 35.5,
+   "end": 35.54,
+   "type": "spacing",
+   "logprob": -0.00978341419249773
+  },
+  {
+   "text": "gestickte",
+   "start": 35.54,
+   "end": 35.94,
+   "type": "word",
+   "logprob": -0.004403439639846043
+  },
+  {
+   "text": " ",
+   "start": 35.94,
+   "end": 35.98,
+   "type": "spacing",
+   "logprob": -0.00028772983932867646
+  },
+  {
+   "text": "Shirt?",
+   "start": 35.98,
+   "end": 36.28,
+   "type": "word",
+   "logprob": -0.0002399338117508402
+  },
+  {
+   "text": " ",
+   "start": 36.28,
+   "end": 36.28,
+   "type": "spacing",
+   "logprob": -0.0005757343024015427
+  },
+  {
+   "text": "Kommentiere:",
+   "start": 37.32,
+   "end": 37.86,
+   "type": "word",
+   "logprob": -0.0004160764972311881
+  },
+  {
+   "text": " ",
+   "start": 37.86,
+   "end": 38.26,
+   "type": "spacing",
+   "logprob": -0.001013480476103723
+  },
+  {
+   "text": "Versand.",
+   "start": 38.26,
+   "end": 38.8,
+   "type": "word",
+   "logprob": -0.0008869593292502032
+  },
+  {
+   "text": " ",
+   "start": 38.8,
+   "end": 39.44,
+   "type": "spacing",
+   "logprob": -0.0003003622987307608
+  },
+  {
+   "text": "Ich",
+   "start": 39.44,
+   "end": 39.54,
+   "type": "word",
+   "logprob": -0.0003003622987307608
+  },
+  {
+   "text": " ",
+   "start": 39.54,
+   "end": 39.58,
+   "type": "spacing",
+   "logprob": -0.000005364403477869928
+  },
+  {
+   "text": "schicke",
+   "start": 39.58,
+   "end": 39.74,
+   "type": "word",
+   "logprob": -0.07267689704271366
+  },
+  {
+   "text": " ",
+   "start": 39.74,
+   "end": 39.78,
+   "type": "spacing",
+   "logprob": -3.576278118089249e-7
+  },
+  {
+   "text": "dir",
+   "start": 39.78,
+   "end": 39.88,
+   "type": "word",
+   "logprob": -3.576278118089249e-7
+  },
+  {
+   "text": " ",
+   "start": 39.88,
+   "end": 39.9,
+   "type": "spacing",
+   "logprob": 0
+  },
+  {
+   "text": "die",
+   "start": 39.9,
+   "end": 39.98,
+   "type": "word",
+   "logprob": 0
+  },
+  {
+   "text": " ",
+   "start": 39.98,
+   "end": 40.02,
+   "type": "spacing",
+   "logprob": -0.000009059865078597795
+  },
+  {
+   "text": "Anleitung.",
+   "start": 40.04,
+   "end": 40.5,
+   "type": "word",
+   "logprob": -0.000008189641351918909
+  },
+  {
+   "text": " ",
+   "start": 40.5,
+   "end": 41.32,
+   "type": "spacing",
+   "logprob": -0.00017796363681554794
+  },
+  {
+   "text": "Damit",
+   "start": 41.32,
+   "end": 41.54,
+   "type": "word",
+   "logprob": -0.00017796363681554794
+  },
+  {
+   "text": " ",
+   "start": 41.54,
+   "end": 41.58,
+   "type": "spacing",
+   "logprob": -0.0018650771817192435
+  },
+  {
+   "text": "rechnest",
+   "start": 41.58,
+   "end": 41.86,
+   "type": "word",
+   "logprob": -0.0005014940518321964
+  },
+  {
+   "text": " ",
+   "start": 41.86,
+   "end": 41.9,
+   "type": "spacing",
+   "logprob": -0.000025987286790041253
+  },
+  {
+   "text": "du",
+   "start": 41.9,
+   "end": 42,
+   "type": "word",
+   "logprob": -0.000025987286790041253
+  },
+  {
+   "text": " ",
+   "start": 42,
+   "end": 42.04,
+   "type": "spacing",
+   "logprob": -0.00000250339189733495
+  },
+  {
+   "text": "in",
+   "start": 42.04,
+   "end": 42.14,
+   "type": "word",
+   "logprob": -0.00000250339189733495
+  },
+  {
+   "text": " ",
+   "start": 42.14,
+   "end": 42.2,
+   "type": "spacing",
+   "logprob": -0.000003814689989667386
+  },
+  {
+   "text": "zehn",
+   "start": 42.2,
+   "end": 42.34,
+   "type": "word",
+   "logprob": -0.000003814689989667386
+  },
+  {
+   "text": " ",
+   "start": 42.34,
+   "end": 42.38,
+   "type": "spacing",
+   "logprob": -0.000007033323527139146
+  },
+  {
+   "text": "Minuten",
+   "start": 42.38,
+   "end": 42.68,
+   "type": "word",
+   "logprob": -0.000007033323527139146
+  },
+  {
+   "text": " ",
+   "start": 42.68,
+   "end": 42.72,
+   "type": "spacing",
+   "logprob": -0.000008106198947643861
+  },
+  {
+   "text": "deinen",
+   "start": 42.72,
+   "end": 42.96,
+   "type": "word",
+   "logprob": -0.000008106198947643861
+  },
+  {
+   "text": " ",
+   "start": 42.96,
+   "end": 43,
+   "type": "spacing",
+   "logprob": -0.000019192511899746023
+  },
+  {
+   "text": "Preis",
+   "start": 43,
+   "end": 43.26,
+   "type": "word",
+   "logprob": -0.000019192511899746023
+  },
+  {
+   "text": " ",
+   "start": 43.26,
+   "end": 43.3,
+   "type": "spacing",
+   "logprob": -0.000004172316494077677
+  },
+  {
+   "text": "durch.",
+   "start": 43.3,
+   "end": 43.54,
+   "type": "word",
+   "logprob": -0.00001382794903292961
+  },
+  {
+   "text": " ",
+   "start": 43.54,
+   "end": 43.82,
+   "type": "spacing",
+   "logprob": -0.0022657455410808325
+  },
+  {
+   "text": "[Klingelton]",
+   "start": 43.82,
+   "end": 44.5,
+   "type": "audio_event",
+   "logprob": -0.029934127658066245
+  }
+ ],
+ "transcription_id": "sUmypcS3L5nToX8ZP59U",
+ "audio_duration_secs": 44.566
+}

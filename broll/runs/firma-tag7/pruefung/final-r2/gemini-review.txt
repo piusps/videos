@@ -1,0 +1,1 @@
+OpenRouter 402 https://openrouter.ai/api/v1/chat/completions: {"error":{"message":"This request requires at least $1.00 in balance for video","code":402,"metadata":{"limit_source":"openrouter_credits","remedy_hint":"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance."}}}

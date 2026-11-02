@@ -1,0 +1,588 @@
+{
+  "tag": 6,
+  "folge": 6,
+  "serientag": 2,
+  "ersteFolgeDesTages": false,
+  "date": "2026-10-29",
+  "seconds": 46.75,
+  "keyword": "Partner",
+  "audio": {
+    "voice": "voice.mp3",
+    "words": "words.json",
+    "musicStart": 100.16,
+    "dips": [
+      [
+        6.72,
+        7.32,
+        0.0
+      ]
+    ]
+  },
+  "plan": {
+    "title": "GRÜNDUNGSPLAN",
+    "steps": [
+      "PRODUKT",
+      "KUNDE",
+      "DRUCK",
+      "PREIS",
+      "PARTNER",
+      "NAME",
+      "LOGO",
+      "WEBSITE",
+      "ERSTER\nUMSATZ"
+    ],
+    "current": 4,
+    "done": [
+      0,
+      1,
+      2
+    ],
+    "wip": [
+      3
+    ]
+  },
+  "hook": {
+    "headline": [
+      "Wie viel Umsatz macht",
+      "eine KI in 100 Tagen?"
+    ],
+    "hot": 1,
+    "stamp": "GANZ ALLEINE.",
+    "at": {
+      "ki": "Umsatz",
+      "ein": "ganz+0.2",
+      "unt": "ganz+0.25",
+      "aufbaut": "100",
+      "ganz": "ganz",
+      "alleine": "alleine",
+      "ich": "Ich",
+      "probier": "probier",
+      "das": "das@4.2",
+      "aus": "aus@4.4",
+      "end": "Die@4.9-0.08",
+      "kein": "Firma",
+      "missing": "KI@5.5"
+    },
+    "instant": true,
+    "planFrom": "Ich-0.05"
+  },
+  "story": {
+    "name": "A61",
+    "sub": "PARTNER",
+    "label": {
+      "text": "60 °C"
+    },
+    "stamps": [
+      {
+        "text": "AB 1 STÜCK",
+        "color": "green"
+      },
+      {
+        "text": "UNTER VORBEHALT",
+        "at": "Warum-0.1",
+        "color": "orange"
+      }
+    ],
+    "fields": [
+      {
+        "text": "Händlerpreis: ?",
+        "at": "Händlerpreise"
+      },
+      {
+        "text": "Einrichtung: ?",
+        "at": "Einrichtungskosten"
+      }
+    ],
+    "glowAt": "nicht",
+    "chip": {
+      "text": "nicht gefunden",
+      "at": "findet"
+    },
+    "bill": {
+      "title": "ZUM LADENPREIS",
+      "pulse": [],
+      "rows": [
+        {
+          "label": "5 Shirts",
+          "value": 151,
+          "at": "fünf",
+          "bad": true
+        },
+        {
+          "label": "Markt",
+          "value": 110,
+          "at": "Markt"
+        }
+      ],
+      "diff": {
+        "text": "−41 €",
+        "at": "110."
+      }
+    },
+    "show": [
+      {
+        "at": 0,
+        "place": "hook",
+        "bill": true
+      },
+      {
+        "at": "Ich-0.05",
+        "place": "off"
+      },
+      {
+        "at": "Warum-0.12",
+        "place": "top"
+      },
+      {
+        "at": "Haken-0.12",
+        "place": "top",
+        "pill": "HAKEN"
+      },
+      {
+        "at": "Zum-0.1",
+        "place": "top",
+        "bill": true,
+        "pill": "HAKEN"
+      },
+      {
+        "at": "Händlerpreise-0.1",
+        "place": "top"
+      },
+      {
+        "at": "Als-0.12",
+        "place": "small"
+      },
+      {
+        "at": "Kommentiere-0.15",
+        "place": "off"
+      }
+    ],
+    "beats": [
+      {
+        "at": "Umsatz",
+        "what": "label"
+      },
+      {
+        "at": "Unternehmen",
+        "what": "push"
+      },
+      {
+        "at": "das",
+        "what": "stamp"
+      },
+      {
+        "at": "KI",
+        "what": "bill0"
+      },
+      {
+        "at": "100",
+        "what": "push"
+      },
+      {
+        "at": "Tage",
+        "what": "bill1"
+      },
+      {
+        "at": "lang",
+        "what": "diff"
+      },
+      {
+        "at": "führt?",
+        "what": "label"
+      }
+    ]
+  },
+  "claude": {
+    "at": "Plus-0.5",
+    "cursorFrom": "Plus-0.45",
+    "moveUp": 99,
+    "steps": [
+      {
+        "label": "RESEARCH",
+        "at": "Plus-0.4"
+      },
+      {
+        "label": "ANHANG",
+        "at": "Ergebnis-0.15"
+      },
+      {
+        "label": "FRAGE",
+        "at": "anhängen+0.05"
+      }
+    ],
+    "feature": {
+      "label": "Research",
+      "icon": "research",
+      "plus": "Plus",
+      "pick": "Research",
+      "on": "an@13.3"
+    },
+    "attach": {
+      "label": "Shirt-Firma Ergebnis Konkurrenz.md",
+      "sub": "letztes Ergebnis",
+      "at": "Ergebnis"
+    },
+    "prompt": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe Firmenshirts mit gesticktem Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, hergestellt auf Bestellung bei einem Partner. Mein letztes Ergebnis: Fünf bestickte Shirts kosten bei der Konkurrenz ab etwa 110 Euro. Die Lücke ist nicht der Preis, sondern Nachbestellen ab einem Stück ohne neue Einrichtung, Shirts, die 60 Grad Wäsche aushalten, und ein Logo ohne Einschränkungen. Recherchiere jetzt einen Produktionspartner in Deutschland oder der EU, der für Wiederverkäufer Shirts auf Bestellung bestickt, ab einem Stück, ohne eigenes Lager, möglichst mit Versand direkt an meine Kunden. Vergleiche mindestens sechs Partner mit Einkaufspreis für ein besticktes Shirt, einmaligen Kosten für die Stickdatei, Mindestmenge, Lieferzeit und ob es Shirts gibt, die laut Etikett 60 Grad vertragen, jeweils mit Quelle. Entscheide dich am Ende für einen Partner und begründe das mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts.",
+    "typing": [
+      [
+        "anhängen-0.1",
+        ""
+      ],
+      [
+        "Frage-0.12",
+        "Im Anhang ist mein letztes Ergebnis."
+      ]
+    ],
+    "send": "direkt?:end",
+    "rehook": {
+      "lines": [
+        "Die Frage",
+        "zum Kopieren"
+      ],
+      "pill": "→ am Ende",
+      "from": "Frage+0.3",
+      "to": "direkt?:end"
+    }
+  },
+  "wall": {
+    "cards": [
+      {
+        "label": "A61\n60 °C",
+        "icon": "shirt"
+      },
+      {
+        "label": "PRINTFUL\n60 °C ?",
+        "icon": "shirt"
+      },
+      {
+        "label": "SHIRTIGO\n60 °C ?",
+        "icon": "shirt"
+      },
+      {
+        "label": "GELATO\n60 °C ?",
+        "icon": "shirt"
+      },
+      {
+        "label": "SPREADCONNECT\n60 °C ?",
+        "icon": "shirt"
+      },
+      {
+        "label": "CUSTOMWEAR\n60 °C ?",
+        "icon": "shirt"
+      },
+      {
+        "label": "PRINTIFY\n60 °C ?",
+        "icon": "shirt"
+      }
+    ],
+    "fill": {
+      "at": "Quellen@19.2",
+      "step": 0.06
+    },
+    "counter": {
+      "label": "QUELLEN",
+      "at": "Quellen@19.2-0.05",
+      "keys": [
+        [
+          "Quellen@19.2-0.05",
+          294,
+          0.5
+        ]
+      ],
+      "pulse": "Quellen@19.2+0.3"
+    },
+    "hl": [
+      {
+        "i": 0,
+        "at": "Quellen@19.2+0.5"
+      }
+    ],
+    "dim": [
+      {
+        "i": 1,
+        "at": "nimmt"
+      },
+      {
+        "i": 2,
+        "at": "nimmt"
+      },
+      {
+        "i": 3,
+        "at": "nimmt"
+      },
+      {
+        "i": 4,
+        "at": "nimmt"
+      },
+      {
+        "i": 5,
+        "at": "nimmt"
+      },
+      {
+        "i": 6,
+        "at": "nimmt"
+      }
+    ],
+    "bot": {
+      "dx": -0.9,
+      "dz": 0.35,
+      "s": 0.5,
+      "whyOnly": true
+    }
+  },
+  "acts": [
+    {
+      "type": "recap",
+      "at": "Die@4.9-0.08",
+      "product": {
+        "label": "SHIRTS MIT LOGO",
+        "at": "verkauft"
+      },
+      "banner": {
+        "text": "erst auf Bestellung\nbestickt",
+        "at": "bestickt@7.7"
+      },
+      "last": {
+        "step": 3,
+        "label": "LÜCKE:\nEINZELSTÜCK",
+        "at": "Ihre",
+        "obj": {
+          "kind": "shirt",
+          "text": "EINZELN",
+          "at": "einzeln@9.7"
+        }
+      },
+      "today": {
+        "step": 4,
+        "pill": "HEUTE: PARTNER FÜR EINZELSTÜCKE",
+        "at": "Heute"
+      },
+      "bot": {
+        "dx": 0.55,
+        "s": 0.7
+      }
+    },
+    {
+      "type": "claudeShot",
+      "at": "Frage@14.5-0.1",
+      "src": "firma-ep/tag6/shots/01b-composer.png",
+      "cam": [
+        [
+          "Frage@14.5-0.1",
+          1.0,
+          500,
+          330
+        ],
+        [
+          "Frage@14.5+0.25",
+          1.75,
+          465,
+          363
+        ],
+        [
+          "einzeln@15.8-0.1",
+          1.75,
+          700,
+          422
+        ],
+        [
+          "direkt?-0.1",
+          1.75,
+          420,
+          452
+        ]
+      ],
+      "marks": [
+        {
+          "x": 330,
+          "y": 343,
+          "w": 270,
+          "h": 40,
+          "at": "Frage@14.5+0.25",
+          "color": "green"
+        },
+        {
+          "x": 633,
+          "y": 402,
+          "w": 162,
+          "h": 40,
+          "at": "einzeln@15.8",
+          "color": "orange"
+        },
+        {
+          "x": 251,
+          "y": 432,
+          "w": 330,
+          "h": 40,
+          "at": "direkt?",
+          "color": "yellow"
+        }
+      ]
+    },
+    {
+      "type": "claudeShot",
+      "at": "Claude@17.6-0.1",
+      "src": "firma-ep/tag6/shots/02-research-fertig.png",
+      "cam": [
+        [
+          "Claude@17.6-0.1",
+          1.0,
+          500,
+          340
+        ],
+        [
+          "prüft",
+          2.3,
+          290,
+          165
+        ]
+      ],
+      "marks": [
+        {
+          "x": 276,
+          "y": 140,
+          "w": 116,
+          "h": 40,
+          "at": "294",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "type": "wall",
+      "at": "Quellen@19.2-0.05",
+      "thinkUntil": "nimmt"
+    },
+    {
+      "type": "winner",
+      "at": "A61-0.12",
+      "card": 0,
+      "fly": "A61",
+      "dimAt": "nimmt",
+      "stamp": "UNTER VORBEHALT",
+      "stampAt": "unter",
+      "hold": "shirt"
+    },
+    {
+      "type": "why",
+      "at": "Warum-0.12",
+      "card": 0,
+      "pill": "WARUM A61?",
+      "pillAt": "Warum",
+      "cards": [
+        {
+          "icon": "careLabel",
+          "big": "60 °C",
+          "small": "nur hier belegt",
+          "at": "Nur",
+          "hot": true,
+          "vs": {
+            "big": "60 °C ?",
+            "small": "6 andere Partner",
+            "at": "Sechzig-Grad-Arbeitsshirt+0.3"
+          }
+        },
+        {
+          "icon": "shirt1x",
+          "big": "ab 1 Stück",
+          "small": "A61",
+          "at": "Und@26.1",
+          "vs": {
+            "big": "ab 10",
+            "small": "Lohnstickereien",
+            "at": "einem@27.3+0.2"
+          }
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "at": "Haken-0.12",
+      "pill": "HAKEN",
+      "lines": [
+        ""
+      ],
+      "card": false,
+      "stamp": null,
+      "pop": "Haken",
+      "bubble": "Haken+0.3",
+      "bot": {
+        "dx": 1.25,
+        "dz": -0.9,
+        "s": 0.62
+      }
+    },
+    {
+      "type": "question",
+      "at": "Händlerpreise-0.1",
+      "pill": "NICHT GEFUNDEN",
+      "lines": [
+        ""
+      ],
+      "card": false,
+      "stamp": null,
+      "pop": "Händlerpreise",
+      "bubble": "Einrichtungskosten",
+      "bot": {
+        "dx": 1.25,
+        "dz": -0.9,
+        "s": 0.62
+      }
+    },
+    {
+      "type": "question",
+      "at": "Als-0.12",
+      "pill": "ALS NÄCHSTES",
+      "lines": [
+        "Bleibt pro Shirt",
+        "überhaupt etwas übrig?"
+      ],
+      "pop": "Als",
+      "stamp": null,
+      "bubble": "Als+0.3",
+      "bot": {
+        "dx": 1.25,
+        "dz": -0.9,
+        "s": 0.62
+      }
+    },
+    {
+      "type": "end",
+      "at": "Kommentiere-0.15",
+      "keywordAt": "Partner@40",
+      "plane": [
+        "und@40.7-0.05",
+        "schick+0.25"
+      ],
+      "itemsAt": "die@41.3",
+      "copyAt": "Damit",
+      "itemTag": "DM",
+      "items": [
+        {
+          "label": "Die Frage",
+          "snip": "„Welcher Partner bestickt ab einem Stück und verschickt direkt?“"
+        },
+        {
+          "label": "Die Partnertabelle",
+          "snip": "7 Partner: Preis, Stickdatei, Mindestmenge, 60 °C, Quelle"
+        }
+      ],
+      "result": {
+        "at": "Damit-0.1",
+        "line1": "in 10 Minuten",
+        "line1At": "10",
+        "parts": [
+          {
+            "text": "mögliche Partner",
+            "at": "mögliche"
+          },
+          {
+            "text": "im Vergleich",
+            "at": "Vergleich",
+            "hot": true
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Hook             voice  -18.5 music  -44.8 gap  26.3 min400ms  13.0
+Rueckblick       voice  -18.5 music  -41.6 gap  23.1 min400ms  12.2
+Heute            voice  -19.2 music  -38.2 gap  19.0 min400ms   7.4
+Claude-Weg       voice  -19.3 music  -39.4 gap  20.1 min400ms  11.3
+Ergebnis         voice  -19.3 music  -38.0 gap  18.6 min400ms  10.6
+Warum            voice  -18.8 music  -39.2 gap  20.4 min400ms   8.7
+Offen            voice  -19.2 music  -39.6 gap  20.4 min400ms   7.6
+Als Naechstes    voice  -19.3 music  -42.2 gap  22.8 min400ms  19.2
+CTA              voice  -19.1 music  -38.8 gap  19.7 min400ms   9.8
+Musik Endkarte: -43.9 Musik Hook: -41.0

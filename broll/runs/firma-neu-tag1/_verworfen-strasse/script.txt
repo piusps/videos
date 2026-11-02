@@ -1,0 +1,10 @@
+KI baut eine Firma von Null. Tag eins.
+Ein Malermeister verliert Aufträge. Nicht am Preis.
+Anfragen kommen per Mail, seine Angebote erst Sonntag.
+So schreibt Claude dir die Angebote selbst.
+Schritt eins: Gmail und Google Drive einschalten.
+Schritt zwei: Deine Preisliste als Google-Dokument in Drive.
+Schritt drei, frag Claude: Schreib zu jeder Anfrage in meinem Gmail ein Angebot nach meiner Preisliste, als Entwurf.
+Du prüfst, drückst Senden, noch am selben Abend.
+Er will nichts einrichten. Das macht die KI-Firma, für neunundvierzig Euro im Monat.
+Kommentier deinen Beruf, ich schick dir den Prompt zum Ausfüllen.

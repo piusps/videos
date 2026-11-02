@@ -1,0 +1,334 @@
+{
+ "mapping": [
+  [
+   0.0,
+   4.83,
+   0.0,
+   4.83
+  ],
+  [
+   4.83,
+   6.210000000000001,
+   5.090000000000001,
+   6.470000000000001
+  ],
+  [
+   6.210000000000001,
+   9.805,
+   6.550000000000001,
+   10.14498866213152
+  ],
+  [
+   9.915,
+   11.285,
+   10.14498866213152,
+   11.514988662131522
+  ],
+  [
+   11.285,
+   11.83,
+   11.624988662131521,
+   12.170000000000002
+  ],
+  [
+   11.88,
+   13.075,
+   12.170000000000002,
+   13.365011337868482
+  ],
+  [
+   13.075,
+   14.985,
+   13.575011337868482,
+   15.48498866213152
+  ],
+  [
+   14.985,
+   15.97,
+   15.774988662131522,
+   16.76
+  ],
+  [
+   15.97,
+   16.325,
+   17.220000000000002,
+   17.57498866213152
+  ],
+  [
+   16.325,
+   17.535,
+   17.74498866213152,
+   18.95501133786848
+  ],
+  [
+   17.535,
+   18.955,
+   19.18501133786848,
+   20.604988662131518
+  ],
+  [
+   18.955,
+   20.6,
+   20.774988662131516,
+   22.419999999999998
+  ],
+  [
+   20.6,
+   21.105,
+   22.549999999999997,
+   23.054988662131517
+  ],
+  [
+   21.105,
+   21.985,
+   23.214988662131514,
+   24.094988662131513
+  ],
+  [
+   21.985,
+   22.685000000000002,
+   24.80498866213151,
+   25.50501133786847
+  ],
+  [
+   22.685000000000002,
+   24.35,
+   25.875011337868468,
+   27.53999999999999
+  ],
+  [
+   24.35,
+   26.27,
+   27.99999999999999,
+   29.919999999999987
+  ],
+  [
+   26.27,
+   26.96,
+   30.299999999999986,
+   30.989999999999988
+  ],
+  [
+   26.96,
+   30.095,
+   31.199999999999985,
+   34.335011337868465
+  ],
+  [
+   30.095,
+   30.945,
+   34.625011337868465,
+   35.4749886621315
+  ],
+  [
+   30.945,
+   32.28,
+   35.8949886621315,
+   37.22999999999998
+  ],
+  [
+   32.28,
+   34.12,
+   37.58999999999998,
+   39.429999999999986
+  ],
+  [
+   34.13999999999999,
+   36.900000000000006,
+   39.429999999999986,
+   42.18999999999998
+  ],
+  [
+   36.900000000000006,
+   40.119886621315196,
+   42.429999999999986,
+   45.649886621315176
+  ]
+ ],
+ "pausen": [
+  {
+   "nach": 14,
+   "wort": "führt?",
+   "vor": "Ich",
+   "roh": 0.44,
+   "neu": 0.7,
+   "grund": "führt? -> Ich"
+  },
+  {
+   "nach": 18,
+   "wort": "aus.",
+   "vor": "Die",
+   "roh": 0.62,
+   "neu": 0.7,
+   "grund": "aus. -> Die (Rückblick beginnt)"
+  },
+  {
+   "nach": 29,
+   "wort": "Betriebe,",
+   "vor": "bestickt",
+   "roh": 0.26,
+   "neu": 0.15,
+   "grund": "Rückblick (Komma)"
+  },
+  {
+   "nach": 33,
+   "wort": "Bestellung.",
+   "vor": "Logo:",
+   "roh": 0.09,
+   "neu": 0.2,
+   "grund": "Rückblick (Satz 1 -> 2, kurz wegen <= 6,5 s)"
+  },
+  {
+   "nach": 34,
+   "wort": "Logo:",
+   "vor": "dunkelblauer",
+   "roh": 0.17,
+   "neu": 0.12,
+   "grund": "Rückblick (Doppelpunkt)"
+  },
+  {
+   "nach": 36,
+   "wort": "Block.",
+   "vor": "Heute",
+   "roh": 0.49,
+   "neu": 0.7,
+   "grund": "Block. -> Heute"
+  },
+  {
+   "nach": 41,
+   "wort": "Website.",
+   "vor": "Logo",
+   "roh": 0.41,
+   "neu": 0.7,
+   "grund": "Website. -> Logo anhängen (neuer Akt)"
+  },
+  {
+   "nach": 43,
+   "wort": "anhängen.",
+   "vor": "Bitte:",
+   "roh": 0.04,
+   "neu": 0.5,
+   "grund": "anhängen. -> Bitte: (Satzgrenze)"
+  },
+  {
+   "nach": 44,
+   "wort": "Bitte:",
+   "vor": "Startseite",
+   "roh": 0.03,
+   "neu": 0.2,
+   "grund": "Bitte: -> Startseite (kurz)"
+  },
+  {
+   "nach": 47,
+   "wort": "Handy.",
+   "vor": "Ganz",
+   "roh": 0.47,
+   "neu": 0.7,
+   "grund": "Handy. -> Ganz oben (Entscheidung)"
+  },
+  {
+   "nach": 51,
+   "wort": "sie:",
+   "vor": "Firmenshirts",
+   "roh": 0.33,
+   "neu": 0.5,
+   "grund": "sie: -> Firmenshirts (Doppelpunkt)"
+  },
+  {
+   "nach": 54,
+   "wort": "Betriebe,",
+   "vor": "Preis,",
+   "roh": 0.12,
+   "neu": 0.25,
+   "grund": "Liste ~0,25 s"
+  },
+  {
+   "nach": 55,
+   "wort": "Preis,",
+   "vor": "Bestellknopf.",
+   "roh": 0.09,
+   "neu": 0.25,
+   "grund": "Liste ~0,25 s"
+  },
+  {
+   "nach": 56,
+   "wort": "Bestellknopf.",
+   "vor": "Warum?",
+   "roh": 0.19,
+   "neu": 0.9,
+   "grund": "Bestellknopf. -> Warum (Entscheidung setzt sich, vor dem Warum bis 0,9)"
+  },
+  {
+   "nach": 57,
+   "wort": "Warum?",
+   "vor": "Das",
+   "roh": 0.33,
+   "neu": 0.7,
+   "grund": "Warum? -> Grund 1"
+  },
+  {
+   "nach": 62,
+   "wort": "wissen.",
+   "vor": "Mehr",
+   "roh": 0.24,
+   "neu": 0.7,
+   "grund": "Grund 1 -> Grund 2 (3 Fragekarten je >= 1,2 s)"
+  },
+  {
+   "nach": 69,
+   "wort": "Blick.",
+   "vor": "Haken:",
+   "roh": 0.32,
+   "neu": 0.7,
+   "grund": "Grund 2 -> Haken (Karte ERSTER BLICK steht)"
+  },
+  {
+   "nach": 70,
+   "wort": "Haken:",
+   "vor": "Ohne",
+   "roh": 0.24,
+   "neu": 0.45,
+   "grund": "Haken: -> Ohne"
+  },
+  {
+   "nach": 76,
+   "wort": "online.",
+   "vor": "Als",
+   "roh": 0.41,
+   "neu": 0.7,
+   "grund": "online. -> Als Nächstes"
+  },
+  {
+   "nach": 78,
+   "wort": "Nächstes:",
+   "vor": "Was",
+   "roh": 0.03,
+   "neu": 0.45,
+   "grund": "Nächstes: -> Was"
+  },
+  {
+   "nach": 82,
+   "wort": "anmelden?",
+   "vor": "Kommentiere",
+   "roh": 0.34,
+   "neu": 0.7,
+   "grund": "anmelden? -> CTA"
+  },
+  {
+   "nach": 84,
+   "wort": "„Website“,",
+   "vor": "und",
+   "roh": 0.32,
+   "neu": 0.3,
+   "grund": "„Website“, -> und (Keyword setzt sich)"
+  },
+  {
+   "nach": 91,
+   "wort": "Online-Checkliste.",
+   "vor": "Damit",
+   "roh": 0.46,
+   "neu": 0.7,
+   "grund": "Online-Checkliste. -> Damit"
+  }
+ ]
+}

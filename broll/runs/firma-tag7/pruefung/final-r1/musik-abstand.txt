@@ -1,0 +1,10 @@
+47.85 47.8290625
+Hook           median gap  21.0 dB  min  12.2  (voice -17.3 music -37.9)
+Rueckblick     median gap  17.5 dB  min  12.3  (voice -17.4 music -35.1)
+Claude         median gap  19.2 dB  min  13.5  (voice -17.2 music -37.2)
+Wechsel        median gap  16.2 dB  min  13.9  (voice -17.0 music -34.1)
+Warum          median gap  18.4 dB  min  10.1  (voice -18.2 music -37.4)
+Vorschlag      median gap  20.7 dB  min   2.7  (voice -17.9 music -38.5)
+Haken          median gap  17.6 dB  min  12.3  (voice -17.7 music -36.7)
+Als Naechstes  median gap  23.2 dB  min   2.9  (voice -17.7 music -40.3)
+CTA            median gap  19.0 dB  min  12.6  (voice -18.2 music -37.2)

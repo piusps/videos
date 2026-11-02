@@ -1,0 +1,671 @@
+{
+ "tag": 8,
+ "folge": 8,
+ "serientag": 2,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-29",
+ "seconds": 45.16,
+ "keyword": "Name",
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 154.8,
+  "dips": [
+   [
+    20.15,
+    21.3,
+    0.35
+   ]
+  ]
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 5,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@4.2",
+   "aus": "aus@4.4",
+   "end": "Die@4.8-0.08"
+  },
+  "instant": true,
+  "keepHeadline": true,
+  "planFrom": "Ich+0.065"
+ },
+ "claude": {
+  "at": "Ergebnis-0.1",
+  "steps": [
+   {
+    "label": "ANHANG",
+    "at": "Ergebnis-0.05"
+   },
+   {
+    "label": "FRAGE",
+    "at": "Frage-0.1"
+   }
+  ],
+  "attach": {
+   "label": "Shirt-Firma Ergebnis Preis.md",
+   "sub": "letztes Ergebnis",
+   "at": "Ergebnis+0.1"
+  },
+  "prompt": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe Firmenshirts mit gesticktem Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, gestickt erst auf Bestellung. Mein letztes Ergebnis: Partner ist Printful, das Fünferpaket kostet 109 Euro brutto, ein nachbestelltes Einzelshirt 29,90 Euro; sechzig Grad Wäsche kann ich damit noch nicht versprechen. Jetzt brauche ich einen Firmennamen, sonst gibt es kein Logo, kein Muster-Shirt und keine Werbung. Schlag mir zehn deutsche Namen vor, die ein Dachdecker oder Elektriker sofort versteht. Prüf für jeden mit der Websuche, ob es schon eine Firma mit diesem oder einem sehr ähnlichen Namen im Bereich Textil, Arbeitskleidung oder Stickerei gibt und ob die .de-Domain offensichtlich belegt ist, jeweils mit Quelle. Streich alle belegten Namen, entscheide dich für einen und begründe es mit zwei bis drei konkreten Gründen. Sag mir auch, was du nicht prüfen kannst, zum Beispiel das Markenregister. Erfinde nichts.",
+  "typing": [
+   [
+    "Ergebnis-0.1",
+    ""
+   ]
+  ],
+  "send": "belegt+0.1",
+  "rehook": {
+   "lines": [
+    "Die Frage",
+    "zum Kopieren"
+   ],
+   "pill": "→ am Ende",
+   "from": "Namen@14.3",
+   "to": "belegt:end"
+  }
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@4.8-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "Firma@5.0"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt"
+   },
+   "last": {
+    "step": 4,
+    "label": "PRINTFUL",
+    "at": "Printful"
+   },
+   "today": {
+    "step": 5,
+    "pill": "HEUTE: FIRMENNAME",
+    "at": "Heute"
+   },
+   "bot": {
+    "dx": 0.55,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Frage@13.5-0.1",
+   "src": "firma-ep/tag8/shots/01b-composer.png",
+   "crop": [
+    0,
+    755
+   ],
+   "cam": [
+    [
+     "Frage@13.5-0.1",
+     1,
+     500,
+     360
+    ],
+    [
+     "10@14.0-0.1",
+     1.7,
+     490,
+     388
+    ],
+    [
+     "Websuche-0.15",
+     1.7,
+     466,
+     419
+    ],
+    [
+     "Schon-0.1",
+     1.7,
+     368,
+     477
+    ]
+   ],
+   "marks": [
+    {
+     "x": 308,
+     "y": 372,
+     "w": 366,
+     "h": 32,
+     "at": "10@14.0",
+     "color": "yellow"
+    },
+    {
+     "x": 310,
+     "y": 403,
+     "w": 312,
+     "h": 32,
+     "at": "Websuche",
+     "color": "orange"
+    },
+    {
+     "x": 200,
+     "y": 461,
+     "w": 336,
+     "h": 32,
+     "at": "Schon",
+     "color": "yellow"
+    }
+   ]
+  },
+  {
+   "type": "wall",
+   "at": "belegt-0.02"
+  },
+  {
+   "type": "question",
+   "at": "Warum-0.12",
+   "card": false,
+   "pill": "WARUM",
+   "lines": [
+    ""
+   ],
+   "stamp": null,
+   "pop": "Warum",
+   "bot": {
+    "dx": 1.55,
+    "dz": -2.4,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "question",
+   "at": "Haken-0.12",
+   "card": false,
+   "pill": "HAKEN",
+   "lines": [
+    ""
+   ],
+   "stamp": null,
+   "pop": "Haken",
+   "bot": {
+    "dx": 1.55,
+    "dz": -2.4,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@35.5-0.12",
+   "card": false,
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    ""
+   ],
+   "stamp": null,
+   "pop": "Als@35.5",
+   "bot": {
+    "dx": 1.55,
+    "dz": -2.4,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Name",
+   "plane": [
+    "und@39.8-0.05",
+    "schick+0.25"
+   ],
+   "itemsAt": "Frage@40.4",
+   "copyAt": "Damit",
+   "itemTag": "DM",
+   "dimBoard": true,
+   "items": [
+    {
+     "label": "Die Frage",
+     "snip": "Schlag mir zehn deutsche Namen vor … prüf jeden mit der Websuche …"
+    },
+    {
+     "label": "Die Prüfliste",
+     "snip": "Domain · DPMA · EUIPO · Handelsregister · Social"
+    }
+   ],
+   "result": {
+    "at": "Damit-0.1",
+    "line1": "in 10 Minuten",
+    "line1At": "10@43",
+    "parts": [
+     {
+      "text": "deinen Firmennamen prüfen",
+      "at": "Firmennamen@42.5",
+      "hot": true
+     }
+    ]
+   }
+  }
+ ],
+ "nameCheck": {
+  "name": "Kolonnenshirt",
+  "hook": {
+   "note": {
+    "title": "GESTRICHEN",
+    "struck": [
+     "Kluftwerk",
+     "Teamkluft",
+     "Stichfest",
+     "Logostich",
+     "Meistershirt"
+    ],
+    "count": 7,
+    "total": 10,
+    "label": "gestrichen"
+   },
+   "status": [
+    "Domain: nicht bestätigt",
+    "Marke: nicht geprüft"
+   ],
+   "out": "Ich-0.05",
+   "beats": [
+    {
+     "at": "Umsatz",
+     "what": "push"
+    },
+    {
+     "at": "macht",
+     "what": "counter"
+    },
+    {
+     "at": "Unternehmen",
+     "what": "stitch"
+    },
+    {
+     "at": "das",
+     "what": "status"
+    },
+    {
+     "at": "KI",
+     "what": "q"
+    },
+    {
+     "at": "100",
+     "what": "push"
+    },
+    {
+     "at": "Tage",
+     "what": "note"
+    },
+    {
+     "at": "ganz",
+     "what": "stitch"
+    },
+    {
+     "at": "alleine",
+     "what": "counter"
+    },
+    {
+     "at": "führt",
+     "what": "status"
+    }
+   ],
+   "strong": true,
+   "outDur": 0.2
+  },
+  "recapPatch": {
+   "at": "verkauft",
+   "pulse": "bestickt",
+   "out": "Heute"
+  },
+  "recapCard": {
+   "top": "PREIS · VORSCHLAG",
+   "big": "109 €",
+   "small": "für 5 Shirts",
+   "at": "Vorschlag",
+   "bigAt": "109",
+   "smallAt": "5@10.5",
+   "out": "Heute"
+  },
+  "wall": {
+   "at": "belegt-0.02",
+   "title": "10 NAMEN",
+   "sub": "per Websuche geprüft",
+   "label": "von 10 gestrichen",
+   "cards": [
+    "Kluftwerk",
+    "Teamkluft",
+    "Firmenkluft",
+    "Baukluft",
+    "Stichfest",
+    "Logostich",
+    "Meistershirt",
+    "Handwerkerhemd",
+    "Betriebsshirt",
+    "Kolonnenshirt"
+   ],
+   "hot": "kluft",
+   "strikes": [
+    {
+     "cards": [
+      4
+     ],
+     "at": "7",
+     "why": "Stickerei in Tirol"
+    },
+    {
+     "cards": [
+      5
+     ],
+     "at": "fliegen",
+     "why": "Shop für bestickte Firmenkleidung"
+    },
+    {
+     "cards": [
+      6
+     ],
+     "at": "raus",
+     "why": "Domain belegt + Fußball"
+    },
+    {
+     "cards": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "at": "Kluft",
+     "why": "zu nah an Kluft.de",
+     "hlAt": "4",
+     "markAt": "nah"
+    }
+   ],
+   "pushAt": "davon",
+   "mini": {
+    "big": "Kluft.de",
+    "small": "Arbeitskleidung · dieselben Kunden",
+    "at": "Arbeitskleidungs-Shop"
+   }
+  },
+  "winner": {
+   "card": 9,
+   "dimAt": "wählt",
+   "fly": "Kolonnenshirt",
+   "stamp": "EMPFEHLUNG",
+   "stampAt": "Kolonnenshirt+0.55"
+  },
+  "why": {
+   "at": "Warum-0.12",
+   "pill": "WARUM KOLONNENSHIRT?",
+   "pillAt": "Warum+0.32",
+   "cards": [
+    {
+     "icon": "crew5",
+     "lines": [
+      "Kolonne = Arbeitstrupp"
+     ],
+     "small": "passt zum Fünferpaket",
+     "at": "Kolonne",
+     "smallAt": "Fünferpaket",
+     "hot": "Arbeitstrupp",
+     "hotAt": "Arbeitstrupp"
+    },
+    {
+     "icon": "searchLens",
+     "lines": [
+      "Firma: keine gefunden",
+      "Shop: keine gefunden"
+     ],
+     "at": "Firma@26",
+     "hot": "keine gefunden",
+     "hotAt": "keine"
+    },
+    {
+     "icon": "searchList",
+     "lines": [
+      "Allerweltswörter"
+     ],
+     "small": "Handwerkerhemd · Betriebsshirt",
+     "at": "Die@28.5",
+     "stampAt": "Allerweltswörter"
+    }
+   ]
+  },
+  "fields": {
+   "at": "Haken-0.12",
+   "pill": "HAKEN",
+   "pillAt": "Haken",
+   "items": [
+    {
+     "label": "Domain",
+     "status": "nicht bestätigt",
+     "tone": "yellow",
+     "at": "Domain",
+     "statusAt": "bestätigt",
+     "note": "DENIC-Abfrage brach ab"
+    },
+    {
+     "label": "Markenregister",
+     "status": "nicht geprüft",
+     "tone": "grey",
+     "at": "Markenregister",
+     "statusAt": "nicht@34.9"
+    },
+    {
+     "label": "Handelsregister",
+     "status": "nicht geprüft",
+     "tone": "grey",
+     "at": "Handelsregister",
+     "statusAt": "nicht@34.9"
+    }
+   ]
+  },
+  "next": {
+   "at": "Als@35.5-0.12",
+   "pill": "ALS NÄCHSTES",
+   "pillAt": "Als@35.5",
+   "lines": [
+    "Wie sieht ein Logo aus,",
+    "das sich sticken lässt?"
+   ],
+   "linesAt": "Wie@36.5",
+   "logoAt": "Logo@37",
+   "mark": {
+    "word": "sticken",
+    "at": "sticken"
+   },
+   "cut": true
+  },
+  "end": "Kommentiere-0.15",
+  "stage": {
+   "why": {
+    "y": 350,
+    "s": 0.56
+   },
+   "fields": {
+    "y": 370,
+    "s": 0.58
+   },
+   "shirtOnTop": true,
+   "stampTop": 470,
+   "stampFrom": 1.5,
+   "whyOutLead": 0.4
+  }
+ },
+ "sfx": [
+  {
+   "t": "macht",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Unternehmen",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "das",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "KI",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Tage",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "alleine",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Logo",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Vorschlag",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "109",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "belegt-0.02",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "7",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "fliegen",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "raus",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "4",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Arbeitskleidungs-Shop",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Kluft",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.32
+  },
+  {
+   "t": "Kolonnenshirt-0.03",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Kolonnenshirt+0.6",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Kolonnenshirt+0.65",
+   "f": "public/sirtoken/sfx-powerup.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Kolonne",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Firma@26",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Die@28.5",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Allerweltswörter",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Domain",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Markenregister",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Handelsregister",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "nicht@34.9",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Logo@37",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.28
+  }
+ ],
+ "botHide": [
+  [
+   "Kolonnenshirt-0.05",
+   "Warum-0.12"
+  ]
+ ]
+}

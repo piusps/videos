@@ -1,0 +1,27 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae5faf30ae2929addcf322b",
+ "status": "published",
+ "scheduledFor": "2026-10-31 16:30 Europe/Berlin",
+ "folge": 15,
+ "serientag": 4,
+ "ersteFolgeDesTages": false,
+ "note_final": "8,5/10 (finale Prüfung Runde 3, pruefung/final-runde3.md; R1 7,0, R2 7,5)",
+ "video": "runs/firma-tag15/firma-tag15-final.mp4",
+ "cover": "runs/firma-tag15/cover.jpg",
+ "guide": "runs/firma-tag15/versand-guide.pdf",
+ "hinweis": "außerhalb der festen Slots (16:30), damit alle vier Folgen heute laufen",
+ "ig_media_id": "18026024240865945",
+ "url": "https://www.instagram.com/reel/DfKe9SVDbsM/",
+ "funnel": {
+  "name": "PTC Funnel Folge 15",
+  "kind": "ptc",
+  "workflowId": "6ae609dddd39c810cd78e4cf",
+  "automationId": "6ae609dd0c41fcbc830f034b",
+  "active": true,
+  "attachedTo": "IG media id 18026024240865945",
+  "created": "2026-10-31T15:31:40.442Z",
+  "by": "zernio-golive-arm"
+ }
+}

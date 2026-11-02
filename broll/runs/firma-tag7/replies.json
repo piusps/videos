@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Preis: Guide mit der Frage und der Kalkulationsvorlage per DM, Trigger-Wort im Video: Preis)",
+ "commentReply": "Der Guide liegt in deiner DM. Was verkaufst du gerade, bei dem du den Preis noch nie sauber durchgerechnet hast?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hättest du auch zu Printful gewechselt oder auf das Angebot von A61 gewartet?",
+  "Schick ich dir gerade, mit allen Formeln. Rechnest du mit Vorsteuerabzug oder als Kleinunternehmer?",
+  "Liegt in deiner DM. Was ist bei dir der größte Kostenposten pro Auftrag?",
+  "Angekommen, alles liegt in deiner DM. Wärst du bei 109 Euro für fünf Shirts mitgegangen?",
+  "Der Guide ist unterwegs. Wie würdest du die Firma nennen?"
+ ]
+}

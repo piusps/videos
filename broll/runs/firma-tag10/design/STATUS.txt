@@ -1,0 +1,4 @@
+FINAL fertig 11:12 (v1, Musik leise: min. Abstand 22,3 dB; v2 mit etwas lauterer Musik folgt in ~3 min)
+FINAL fertig 11:13 (v2: Musik musicGain 1,5, Abstand 18,8-25,1 dB, -14,08 LUFS, TP -1,29) runs/firma-tag10/firma-tag10-final.mp4 + -handy.mp4
+FINAL fertig 11:16 (v3: Hook mit Zonen-Lupen alle <=0,5 s, GANZ ALLEINE frei; Musik musicGain 1,5, -14,1 LUFS) runs/firma-tag10/firma-tag10-final.mp4 + -handy.mp4
+FINAL v4 fertig 11:28 runs/firma-tag10/firma-tag10-final.mp4 + -handy.mp4 (Tickets R1-01/02/03 + optional roter Rahmen entfernt)

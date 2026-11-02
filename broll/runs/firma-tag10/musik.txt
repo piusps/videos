@@ -1,0 +1,7 @@
+Folge 10 music: /Users/pius/Downloads/GONE_GONE_THANK_YOU_KLICKAUD.mp3 ab 57.325 s (v2; v1 57.50), 46.43 s am Stück (bis 103.755 s), nie geloopt.
+Heute belegt: Folge 9 = 276.36-~322.8 (keine Überschneidung). Vortag: Folge 4 = 57.26-98.76 (Wiederverwendung wie Folge 8). Tabu 200-276, explizit ~20.2 und ~107 -> ausserhalb.
+Auswahl regie/musik_suche.py: natürliche Mulde Clip 19.2-19.95 unter "Ganz oben stellt sie:", Schlag Clip 20.8 (Track 78.3) auf "Firmenshirts" (20.88), ab 21.5 lauter.
+Explizit-Check: node scripts/music-explicit-check.mjs .env runs/firma-tag10/regie/musik-abschnitt.mp3 (2 Läufe) -> 0 explizite Wörter.
+Kurve: [0,0.05] [18.9,0.05] [19.15,0.018] [20.75,0.018] [20.85,0.06] [21.6,0.035] [45.16,0.035] [46.16,0].
+Gap (regie/gap-final.txt): Hook 23.3 · Rückblick 20.4 · Auftrag 19.2 · Entscheidung 21.3 · Warum 18.8 · Haken 19.1 · Als Nächstes 19.1 · CTA 21.2 dB.
+Hinweis Folgen 11-13 heute: 57.5-103.66 ist ab jetzt belegt.

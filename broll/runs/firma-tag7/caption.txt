@@ -1,0 +1,21 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt rechnet sie ihren Preis, und die Rechnung kippt ihre Wahl.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. Zuletzt hat sie A61 als Partner gewählt, mit Vorbehalt: einziges belegtes 60-Grad-Arbeitsshirt, aber teurer als der Markt. Zweite Wahl war Printful.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai unter Settings > Capabilities „Code execution and file creation“ einschalten, damit Claude Excel-Dateien baut.
+2. Neuen Chat öffnen, über „+“ das letzte Ergebnis anhängen.
+3. Fragen: Rechne als Excel mit Formeln, was ein Auftrag mit [Menge] bei jedem Partner kostet, mit Material, Veredelung, Einrichtung, Versand und Mehrwertsteuer. Nur Zahlen aus dem Anhang, Schätzungen markieren. Schlag einen Verkaufspreis vor, zeig den Rohertrag und entscheide dich mit Gründen. Erfinde nichts.
+4. Bei „Permission request: Terminal“ einmal „Allow once“ klicken.
+
+Ergebnis im echten Lauf (3 Minuten, Excel mit 75 Formeln, eine Websuche nur für den Dollarkurs): Die KI wechselt zu Printful. Fünf bestickte Shirts kosten im Einkauf bei A61 151,40 Euro brutto, bei Printful 69,14 Euro, die Konkurrenz verkauft für rund 110 Euro. Vorschlag: 109 Euro für fünf Shirts, 29,90 Euro für ein Einzelshirt. Rohertrag (netto, geplant, nicht verdient): +33,50 Euro beim Fünferpaket, bei A61 wären es −35,63 Euro.
+
+Der Haken: Mit Printful gibt es kein 60-Grad-Versprechen, beim Gildan-Shirt steht nur „machine wash warm“. Dollarkurs angenommen, Stickprogramm bei A61 mit 0 Euro angesetzt (nicht gefunden), Rohertrag mit Vorsteuerabzug gerechnet (als Kleinunternehmer blieben 39,86 Euro).
+
+Kommentiere „Preis“, dann schick ich dir die Frage und die Kalkulationsvorlage mit allen Formeln. Damit rechnest du deinen Preis in zehn Minuten.
+
+Offen bleibt: Wie heißt die Firma? Ohne Namen gibt es kein Logo, kein Muster und keine Werbung.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #kalkulation #firmenshirts

@@ -1,0 +1,30 @@
+# Folge „Werbebrief“: Frage + Briefvorlage + drei Wege (Lieferung für Kommentare „Brief“)
+
+Was der Guide liefern muss (genau das verspricht das Skript: „die Briefvorlage … in zehn Minuten deinen Werbebrief-Entwurf“; Caption zusätzlich: Frage zum Kopieren, Briefvorlage mit Platzhaltern, die drei Wege im Vergleich):
+1. **Die Frage zum Kopieren** (unten, mit [BERUF]-Platzhaltern).
+2. **Die Briefvorlage** = Claudes Brief aus dem Lauf 1:1 mit allen Platzhaltern in eckigen Klammern (Kolonnenshirt-Angaben als Beispiel markiert), inkl. Betreff „Werbung: …“ und abgetrenntem Widerspruchshinweis.
+3. **Die drei Wege im Vergleich** (E-Mail / Anruf / Brief) mit Claudes Begründung und Quellenart (Kanzlei, IHK, Fachpresse, Verbraucherzentrale; alles Suchtreffer, keine Seite geöffnet). Nie als amtlich oder rechtssicher darstellen.
+4. **„Was Claude nicht prüfen konnte“** 1:1 (Versandkosten/Lieferzeit, „brutto“ bei Kleinunternehmer-Regel, Datenschutz-Informationspflichten, Pflichtangaben nach Rechtsform, Betriebe aktiv?, Urteile = Einzelfälle).
+**Keine Rechtsberatung** (Claude: „Ich bin kein Anwalt; das ist eine Zusammenfassung der Quellen, keine Rechtsberatung.“). Nichts versenden, nicht erzählen, dass ein Brief abgeschickt wurde. Keine Betriebsnamen, kein Personenname aus dem Lauf.
+
+Weg: claude.ai → neuer Chat → „+“ → letztes Ergebnis (z. B. Kundenliste) und Logo anhängen → Frage einfügen → senden. Websuche läuft ohne eigenen Schalter (Lauf 29.10.2026: 5 Suchen), Research nicht nötig. Die Word-Datei erscheint als Karte im Chat („Dokument · DOCX“). Dauer im Lauf: 2 min 25 s; mit Anhängen, Lesen und eigenen Daten in die gelben Felder ≈ 10 Minuten (Empfängeradressen kommen dazu). Tipp aus dem Lauf: Gedächtnis für den Chat ausschalten (Plus-Menü, Häkchen „Gedächtnis“). Ohne Logo: einfach nur die Liste anhängen, der Brief kommt dann ohne Logo. Ohne Liste: „diese Betriebe“ durch [ZIELKUNDEN, z. B. kleine Arztpraxen in meiner Stadt] ersetzen.
+
+> Im Anhang sind mein letztes Ergebnis und mein Logo. Ich bin [BERUF] und verkaufe [PRODUKT] an [ZIELKUNDEN], unter dem Namen [FIRMENNAME]. Mein Angebot: [PREIS UND MENGE]. [WAS ICH NOCH NICHT VERSPRECHEN KANN]. Mein letztes Ergebnis: [STAND IN EINEM SATZ, z. B. zwanzig passende Firmen, fünf davon spreche ich zuerst an]. Prüf mit der Websuche, wie ich diese Firmen zum ersten Mal werblich ansprechen darf, per E-Mail, Anruf oder Brief, jeweils mit Quelle. Entscheide dich für einen Weg und begründe es mit zwei bis drei konkreten Gründen. Schreib dann den ersten Werbebrief, so kurz, dass [TYPISCHER KUNDE] ihn in einer Minute liest, als Word-Datei. Schreib nur, was belegt ist. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts.
+
+(Original im Lauf: „Ich verkaufe Firmenshirts mit gesticktem Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, gestickt erst auf Bestellung über Printful, unter dem Namen Kolonnenshirt. Mein Angebot: 109 Euro brutto für fünf Shirts, 29,90 Euro für ein nachbestelltes Einzelshirt. Sechzig Grad Wäsche kann ich noch nicht versprechen. Mein letztes Ergebnis: zwanzig Betriebe in der Testregion Chemnitz, fünf davon spreche ich zuerst an.“)
+
+## Beispiele für [BERUF] (fett = Beruf)
+- **Gebäudereiniger:** [Glasreinigung im Monatsabo] an [Arztpraxen und Kanzleien im Erdgeschoss], Angebot [ab 49 Euro im Monat für bis zu 20 Fenster], nicht versprechen [Termine am Wochenende], Kunde [Praxismanagerin].
+- **Fotografin:** [Team- und Bewerbungsfotos vor Ort] an [Firmen mit 5–20 Leuten], Angebot [Teamtermin zum Festpreis], nicht versprechen [Lieferung am selben Tag], Kunde [Geschäftsführer].
+- **Kaffeerösterin:** [Kaffee mit eigenem Etikett] an [Büros], Angebot [Probepaket 3 Sorten], nicht versprechen [Bio-Siegel], Kunde [Büroleiterin].
+- **IT-Techniker:** [PC- und WLAN-Betreuung] an [kleine Handwerksbetriebe], Angebot [Monatspauschale je Arbeitsplatz], nicht versprechen [24-Stunden-Notdienst], Kunde [Meisterin im eigenen Betrieb].
+(Preise in den Beispielen sind Platzhalter des Zuschauers, keine Lauf-Zahlen.)
+
+## Echter Lauf (29.10.2026, Chat b0fbcaf2…, 2 min 25 s, Opus 5.5 Mittel, Gedächtnis aus, kein Research, 5 Websuchen, 0 Seiten geöffnet, 11 Quellenlinks, 1 Word-Datei)
+- **Entscheidung (Claude):** „Meine Entscheidung: der Brief.“
+- **E-Mail:** ohne vorherige ausdrückliche Einwilligung nach § 7 UWG belästigend, grundsätzlich unzulässig; UWG unterscheidet nicht zwischen B2C und B2B; Einwilligung darf man auch nicht per E-Mail erfragen → „fällt ganz weg“.
+- **Anruf:** bei Gewerbetreibenden reicht mutmaßliche Einwilligung nur mit konkretem Grund aus dem Interessenbereich des Angerufenen (BGH laut Betriebs-Berater/IHK-Merkblatt); „Firmenshirts sind nützlich“ reicht nicht; Risiko trägt der Anrufer; bei keinem der fünf Betriebe ein solcher Grund.
+- **Brief:** in § 7 UWG nicht geregelt → grundsätzlich zulässig; OLG Stuttgart 2024 (2 U 63/22, nur über zwei Kanzlei-Seiten belegt): personalisierte Briefwerbung ohne Einwilligung zulässig, erst ein Widerspruch macht weitere unzulässig; Pflicht: Hinweis auf Widerspruchsrecht spätestens bei der ersten Kommunikation, getrennt (Art. 21 DSGVO, Text über Jusline); „Keine Werbung“-Aufkleber stoppt adressierte Briefe nicht (Verbraucherzentrale).
+- **Brief (Datei):** 1 Seite, Logo oben rechts, Betreff „Werbung: Firmenshirts mit Ihrem gestickten Logo“, „5 Shirts mit Ihrem Logo: 109 Euro brutto“, „Ein Shirt nachbestellen: 29,90 Euro brutto“ („brutto“ hier von Claude ergänzt), „Gestickt wird erst, wenn Sie bestellen.“, „Versand: [Versandkosten und Lieferzeit ergänzen]“, Widerspruchshinweis unter einer Linie; 14 gelbe Platzhalter; kein 60 °C, kein Printful, keine Lieferzeit.
+- **Nicht prüfen konnte Claude:** Versandkosten/Lieferzeit, „brutto“ bei § 19 UStG, Art.-14-DSGVO-Informationen, Pflichtangaben im Geschäftsbrief (Rechtsform), ob die Betriebe aktiv sind/Firmenkleidung haben + ihre Impressums-Adressen, Urteile = Einzelfälle.
+- **Claudes Angebot am Ende:** „Als Nächstes kann ich die Impressums-Adressen der fünf Betriebe heraussuchen, damit du die Empfängerfelder füllen kannst.“

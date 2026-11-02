@@ -1,0 +1,567 @@
+import React from "react";
+import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { loadFont as loadInstrumentSerif } from "@remotion/google-fonts/InstrumentSerif";
+import { PixelBot, BotProp } from "../components/PixelBot";
+import { BrandLogo, FaceAvatar } from "../components/BrandMarks";
+import { clamp, easeOut } from "../components/GlassKit";
+import { colors, fonts } from "../theme";
+
+// Superkind vision film "Schwarm" for the company account (Pius 2026-10-20), modelled on the
+// OpenSwarm launch reel: CRT TV with Niklas → public-domain archive montage (Prelinger, 1940/50s,
+// no watermarks) → pixel-bot swarm → chaos → break into the bright Superkind world (letterbox
+// opens to full 9:16) → company brain → particle sphere → logo. Voice = HeyGen render ff9b0cc9,
+// music = two ElevenLabs halves (dark build with hard stop, bright finale), SFX from ElevenLabs.
+
+const { fontFamily: serif } = loadInstrumentSerif("normal", { weights: ["400"], subsets: ["latin", "latin-ext"] });
+const { fontFamily: serifItalic } = loadInstrumentSerif("italic", { weights: ["400"], subsets: ["latin", "latin-ext"] });
+
+const D = "vision-schwarm/";
+export const VS_FPS = 25;
+export const VS_SECONDS = 34.4;
+const O = 0.7; // voice offset: TV switches on before Niklas speaks
+const BREAK = 21.26; // "Was, wenn" — dark letterbox world ends, bright full-frame world starts
+const FILM_H = 810; // 4:3, like the archive film and the old TV
+const FILM_TOP = (1920 - FILM_H) / 2;
+const PAPER = "#F7F3EE";
+
+// Word timings on the final timeline (whisper on the HeyGen render + O).
+const W = {
+  frueher: 0.74, etagen: 2.37, papierkram: 3.98, abtippen: 5.02, ablegen: 5.85, nachfragen: 6.6, jeden: 7.5,
+  heute: 8.46, eigenes: 10.35, aus: 11.54, agenten: 12.62, mails: 13.47, rechnungen: 14.79, angebote: 15.95,
+  rund: 17.06, aber: 18.18, tools: 18.76, kein: 19.62, chaos: 20.64, was: 21.26, kraft: 22.46, trotzdem: 23.32,
+  griff: 24.28, ein: 25.34, gehirn: 25.6, klare: 26.58, direkt: 27.66, outlook: 28.27, sap: 29.04, datev: 29.42,
+  superkind: 30.15, jeder: 30.83, mitarbeiter: 31.19, sein: 32.0, team: 32.81,
+};
+
+// Phrase subtitles (sound-off viewers): [start, end, text].
+const SUBS: [number, number, string][] = [
+  [0.74, 2.3, "Früher brauchte eine Firma"], [2.3, 3.7, "ganze Etagen voller Leute."], [3.7, 4.95, "Nur für Papierkram."],
+  [4.95, 5.8, "Abtippen."], [5.8, 6.55, "Ablegen."], [6.55, 7.45, "Nachfragen."], [7.45, 8.4, "Jeden Tag."],
+  [8.46, 10.3, "Heute kann jeder Mitarbeiter"], [10.3, 11.5, "sein eigenes Team haben."], [11.5, 12.55, "Aus KI."],
+  [12.6, 14.7, "Agenten, die Mails beantworten,"], [14.7, 15.9, "Rechnungen prüfen,"], [15.9, 17.0, "Angebote schreiben."],
+  [17.0, 18.1, "Rund um die Uhr."], [18.15, 19.55, "Aber zehn Tools ohne Plan"], [19.55, 20.55, "sind kein Team."], [20.55, 21.1, "Das ist Chaos."],
+  [21.26, 23.25, "Was, wenn du die ganze Kraft nutzt"], [23.25, 25.2, "und trotzdem alles im Griff behältst?"],
+  [25.3, 26.5, "Ein Firmengehirn."], [26.5, 27.6, "Klare Rollen."], [27.6, 30.0, "Direkt in Outlook, SAP und DATEV."],
+];
+
+const rnd = (i: number) => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+const useSec = () => { const f = useCurrentFrame(); const { fps } = useVideoConfig(); return f / fps; };
+const ramp = (t: number, a: number, b: number, from = 0, to = 1, ease = easeOut) => interpolate(t, [a, b], [from, to], { ...clamp, easing: ease });
+const seq = (a: number, b: number) => ({ from: Math.round(a * VS_FPS), durationInFrames: Math.max(1, Math.round((b - a) * VS_FPS)) });
+
+// ---------- texture ----------
+
+const Defs: React.FC = () => {
+  const f = useCurrentFrame();
+  return (
+    <svg width={0} height={0} style={{ position: "absolute" }}>
+      <defs>
+        <filter id="vsChroma" x="-5%" y="-5%" width="110%" height="110%">
+          <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r" />
+          <feOffset in="r" dx="4" dy="0" result="r2" />
+          <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="gb" />
+          <feOffset in="gb" dx="-3" dy="0" result="gb2" />
+          <feBlend in="r2" in2="gb2" mode="screen" />
+        </filter>
+        <filter id="vsNoise"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed={f % 97} /><feColorMatrix type="saturate" values="0" /></filter>
+      </defs>
+    </svg>
+  );
+};
+
+const Noise: React.FC<{ opacity: number; blend?: React.CSSProperties["mixBlendMode"] }> = ({ opacity, blend = "overlay" }) => (
+  <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity, mixBlendMode: blend, pointerEvents: "none" }}>
+    <rect width="100%" height="100%" filter="url(#vsNoise)" />
+  </svg>
+);
+
+const Scanlines: React.FC<{ opacity?: number; gap?: number }> = ({ opacity = 0.28, gap = 4 }) => (
+  <div style={{ position: "absolute", inset: 0, opacity, pointerEvents: "none", background: `repeating-linear-gradient(0deg, rgba(0,0,0,0.9) 0px, rgba(0,0,0,0.9) 1px, transparent 1px, transparent ${gap}px)` }} />
+);
+
+const Vignette: React.FC<{ strength?: number }> = ({ strength = 0.75 }) => (
+  <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: `radial-gradient(ellipse at 50% 50%, transparent 45%, rgba(0,0,0,${strength}) 100%)` }} />
+);
+
+// ---------- shots inside the 16:9 film frame ----------
+
+// The avatar render starts at timeline 0.7 s; inside a Sequence starting at `at`, it must start `at - O` into the file.
+const AvatarAt: React.FC<{ at: number; width: number; boxW: number; boxH: number; filter?: string }> = ({ at, width, boxW, boxH, filter }) => {
+  const h = (width * 9) / 16;
+  return (
+    <OffthreadVideo src={staticFile(D + "avatar.mp4")} muted startFrom={Math.max(0, Math.round((at - O) * VS_FPS))}
+      style={{ position: "absolute", width, height: h, left: boxW / 2 - 0.48 * width, top: boxH * 0.5 - 0.36 * h, filter }} />
+  );
+};
+
+const Bars: React.FC = () => (
+  <div style={{ position: "absolute", inset: 0, display: "flex" }}>
+    {["#C0C0C0", "#C0C000", "#00C0C0", "#00C000", "#C000C0", "#C00000", "#0000C0"].map((c) => <div key={c} style={{ flex: 1, background: c }} />)}
+  </div>
+);
+
+const TvShot: React.FC<{ at: number }> = ({ at }) => {
+  const t = useSec() + at;
+  const push = 1 + 0.16 * ramp(t, at, at + 1.95, 0, 1, (x) => x);
+  const phase = t < 0.22 ? "bars" : t < 0.62 ? "static" : "pic";
+  const flick = 0.92 + 0.08 * rnd(Math.floor(t * 25));
+  const tvW = 600, tvH = 430, scrW = 430, scrH = 330;
+  return (
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, #1d2a2a 0%, #0b1110 60%, #050707 100%)", overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 170, background: "linear-gradient(180deg, #3a2618, #1b120b)" }} />
+      <div style={{ position: "absolute", left: (1080 - tvW) / 2, top: 170, width: tvW, height: tvH, transform: `scale(${push})`, transformOrigin: "50% 60%" }}>
+        {/* glow of the tube on the wall */}
+        <div style={{ position: "absolute", left: -120, top: -100, width: tvW + 240, height: tvH + 200, borderRadius: "50%", background: `radial-gradient(ellipse, rgba(170,210,200,${phase === "pic" ? 0.16 : 0.22}) 0%, transparent 65%)`, filter: "blur(10px)" }} />
+        {/* cabinet */}
+        <div style={{ position: "absolute", inset: 0, borderRadius: 26, background: "linear-gradient(160deg, #3b3a36 0%, #24231f 45%, #161512 100%)", boxShadow: "0 30px 60px rgba(0,0,0,0.7), inset 0 2px 0 rgba(255,255,255,0.08)" }} />
+        {/* bezel + screen */}
+        <div style={{ position: "absolute", left: 30, top: 40, width: scrW + 24, height: scrH + 24, borderRadius: 34, background: "#0c0c0b", boxShadow: "inset 0 0 18px rgba(0,0,0,0.9)" }} />
+        <div style={{ position: "absolute", left: 42, top: 52, width: scrW, height: scrH, borderRadius: "38px / 32px", overflow: "hidden", background: "#111", opacity: flick }}>
+          {phase === "bars" && <Bars />}
+          {phase === "static" && <div style={{ position: "absolute", inset: 0, background: "#777" }}><Noise opacity={1} blend="normal" /></div>}
+          {phase === "pic" && (
+            <div style={{ position: "absolute", inset: 0, filter: "url(#vsChroma) sepia(0.45) saturate(1.4) contrast(1.35) brightness(0.74) hue-rotate(-14deg)" }}>
+              <AvatarAt at={Math.max(at, 0.62)} width={780} boxW={scrW} boxH={scrH} />
+            </div>
+          )}
+          <Scanlines opacity={0.35} gap={3} />
+          <Noise opacity={0.25} />
+          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.18), transparent 45%), radial-gradient(ellipse at 50% 50%, transparent 55%, rgba(0,0,0,0.75) 100%)" }} />
+        </div>
+        {/* control panel */}
+        <div style={{ position: "absolute", right: 26, top: 46, width: 92, height: 330, borderRadius: 14, background: "linear-gradient(180deg,#2c2b27,#1a1916)" }}>
+          {[0, 1].map((i) => <div key={i} style={{ width: 46, height: 46, margin: "22px auto 0", borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #77736a, #2b2925)", boxShadow: "0 4px 8px rgba(0,0,0,0.6)" }} />)}
+          <div style={{ margin: "30px 16px 0", height: 140, background: "repeating-linear-gradient(0deg,#0d0d0c 0 4px,#2a2925 4px 8px)", borderRadius: 6 }} />
+        </div>
+        <div style={{ position: "absolute", left: 80, bottom: -26, width: 40, height: 30, background: "#141310" }} />
+        <div style={{ position: "absolute", right: 80, bottom: -26, width: 40, height: 30, background: "#141310" }} />
+      </div>
+      <Noise opacity={0.14} />
+      <Vignette strength={0.8} />
+    </AbsoluteFill>
+  );
+};
+
+// Full-frame CRT close-up of Niklas (like the "zoom into the TV" shots in the reference).
+const CrtClose: React.FC<{ at: number; dur: number }> = ({ at, dur }) => {
+  const s = useSec();
+  const push = 1.04 + 0.07 * (s / dur);
+  const roll = (s * 220) % (FILM_H + 200) - 100;
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <div style={{ position: "absolute", inset: 0, transform: `scale(${push})`, filter: "url(#vsChroma) sepia(0.4) saturate(1.35) contrast(1.25) brightness(0.8) hue-rotate(-14deg)" }}>
+        <AvatarAt at={at} width={1700} boxW={1080} boxH={FILM_H} />
+      </div>
+      <Scanlines opacity={0.3} gap={4} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: roll, height: 70, background: "linear-gradient(180deg, transparent, rgba(255,255,255,0.07), transparent)" }} />
+      <Noise opacity={0.22} />
+      <div style={{ position: "absolute", inset: 0, borderRadius: 60, boxShadow: "inset 0 0 220px rgba(0,0,0,0.98)" }} />
+    </AbsoluteFill>
+  );
+};
+
+const Archive: React.FC<{ src: string; from?: number; dur: number }> = ({ src, from = 0, dur }) => {
+  const s = useSec();
+  const f = useCurrentFrame();
+  const push = 1.06 + 0.06 * (s / dur);
+  const weaveX = (rnd(f * 3.1) - 0.5) * 3, weaveY = (rnd(f * 7.7) - 0.5) * 4;
+  const flick = 0.9 + 0.1 * rnd(f * 1.3);
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <OffthreadVideo src={staticFile(D + "archiv/" + src + ".mp4")} muted startFrom={Math.round(from * VS_FPS)}
+        style={{ position: "absolute", width: 1080, height: 810, left: 0, top: (FILM_H - 810) / 2, objectFit: "cover", transform: `translate(${weaveX}px, ${weaveY}px) scale(${push})`, filter: `grayscale(1) sepia(0.18) contrast(1.22) brightness(${0.92 * flick})` }} />
+      <Noise opacity={0.3} />
+      {rnd(f * 0.37) > 0.82 && <div style={{ position: "absolute", left: `${rnd(f) * 100}%`, top: 0, bottom: 0, width: 1.5, background: "rgba(255,255,255,0.35)" }} />}
+      <Vignette strength={0.7} />
+    </AbsoluteFill>
+  );
+};
+
+// ---------- swarm (still in the dark film frame) ----------
+
+const DarkStage: React.FC<{ children: React.ReactNode; red?: number }> = ({ children, red = 0 }) => (
+  <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 55%, ${red > 0 ? `rgb(${40 + 60 * red},${16 - 6 * red},${12})` : "#1a120e"} 0%, #0a0807 70%)`, overflow: "hidden" }}>
+    <div style={{ position: "absolute", left: 290, top: 155, width: 500, height: 500, borderRadius: "50%", background: `radial-gradient(circle, rgba(255,107,53,${0.35 - 0.2 * red}), transparent 70%)`, filter: "blur(30px)" }} />
+    {children}
+    <Noise opacity={0.16} />
+    <Vignette strength={0.7} />
+  </AbsoluteFill>
+);
+
+// One worker, then bots pop up around them and multiply until they fill the frame.
+const SwarmGrow: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const cols = 34, rows = 20;
+  const shown = Math.floor(interpolate(t, [10.35, 10.9, 11.54, 12.45], [0, 3, 12, cols * rows], { ...clamp, easing: (x) => x * x * x }));
+  const zoomOut = ramp(t, 11.3, 12.5, 0, 1);
+  const workerScale = 1 - 0.75 * zoomOut;
+  return (
+    <DarkStage>
+      {/* grid of bots spreading from the centre */}
+      {Array.from({ length: cols * rows }).map((_, i) => {
+        const c = i % cols, r = Math.floor(i / cols);
+        const dx = c - cols / 2 + 0.5, dy = (r - rows / 2 + 0.5) * 1.7;
+        return { i, c, r, d: Math.hypot(dx, dy) + rnd(i) * 0.6 };
+      }).sort((a, b) => a.d - b.d).slice(0, shown).map(({ i, c, r }, k) => {
+        const near = k < 12;
+        const size = near ? interpolate(zoomOut, [0, 1], [6, 2.6]) : 2.6;
+        const x = near && zoomOut < 1 ? interpolate(zoomOut, [0, 1], [540 + Math.cos(k * 2.4) * (150 + k * 12), 16 + c * 31.3]) : 16 + c * 31.3;
+        const y = near && zoomOut < 1 ? interpolate(zoomOut, [0, 1], [405 + Math.sin(k * 2.4) * (110 + k * 6), 36 + r * 37.5]) : 36 + r * 37.5;
+        return <div key={i} style={{ position: "absolute", left: x, top: y, transform: "translate(-50%,-50%)" }}><PixelBot px={size} t={t} seed={i} /></div>;
+      })}
+      {/* the human in the middle */}
+      <div style={{ position: "absolute", left: 540, top: 405, transform: `translate(-50%,-50%) scale(${workerScale})`, opacity: 1 - zoomOut * 0.9 }}>
+        <div style={{ borderRadius: "50%", boxShadow: "0 0 0 6px rgba(255,255,255,0.9), 0 0 60px rgba(255,107,53,0.6)" }}><FaceAvatar seed={4} size={170} /></div>
+      </div>
+    </DarkStage>
+  );
+};
+
+// Bots at work: a wall of bots with the same prop, task icons flying out.
+const SwarmWork: React.FC<{ at: number; prop: BotProp; label: string; icon: "mail" | "invoice" | "offer" | "clock" }> = ({ at, prop, label, icon }) => {
+  const s = useSec();
+  const t = s + at;
+  const n = 7 * 4;
+  return (
+    <DarkStage>
+      {Array.from({ length: n }).map((_, i) => {
+        const c = i % 7, r = Math.floor(i / 7);
+        const pop = ramp(s, i * 0.015, i * 0.015 + 0.25);
+        return (
+          <div key={i} style={{ position: "absolute", left: 60 + c * 140 + (r % 2) * 40, top: 90 + r * 170, opacity: pop, transform: `scale(${0.6 + 0.4 * pop})` }}>
+            <PixelBot px={7} t={t * 1.6} prop={prop} seed={i} />
+          </div>
+        );
+      })}
+      {/* flying task tokens */}
+      {Array.from({ length: 16 }).map((_, i) => {
+        const life = ((s * 1.4 + rnd(i) * 3) % 1.6) / 1.6;
+        const x = 80 + rnd(i + 3) * 920 + life * 120;
+        const y = 760 - life * 800;
+        return <div key={`k${i}`} style={{ position: "absolute", left: x, top: y, opacity: Math.sin(life * Math.PI) }}><Token kind={icon} /></div>;
+      })}
+      <div style={{ position: "absolute", left: 40, top: 30, fontFamily: "Menlo, monospace", fontSize: 22, color: "rgba(255,255,255,0.7)", letterSpacing: 2 }}>{label}</div>
+    </DarkStage>
+  );
+};
+
+const Token: React.FC<{ kind: "mail" | "invoice" | "offer" | "clock" }> = ({ kind }) => {
+  if (kind === "mail") return (
+    <svg width={54} height={40} viewBox="0 0 54 40"><rect x="1" y="1" width="52" height="38" rx="5" fill="#fff" /><path d="M3 4 L27 22 L51 4" stroke={colors.accent} strokeWidth="4" fill="none" /></svg>
+  );
+  if (kind === "invoice") return (
+    <svg width={40} height={52} viewBox="0 0 40 52"><rect x="1" y="1" width="38" height="50" rx="4" fill="#fff" /><rect x="7" y="9" width="20" height="4" fill="#bbb" /><rect x="7" y="18" width="26" height="3" fill="#ddd" /><rect x="7" y="25" width="26" height="3" fill="#ddd" /><circle cx="29" cy="40" r="8" fill="#22C55E" /><path d="M25 40 L28 43 L33 37" stroke="#fff" strokeWidth="2.5" fill="none" /></svg>
+  );
+  if (kind === "offer") return (
+    <svg width={40} height={52} viewBox="0 0 40 52"><rect x="1" y="1" width="38" height="50" rx="4" fill="#fff" /><rect x="7" y="8" width="26" height="6" fill={colors.accent} /><rect x="7" y="20" width="26" height="3" fill="#ddd" /><rect x="7" y="27" width="20" height="3" fill="#ddd" /><rect x="7" y="38" width="14" height="6" rx="2" fill="#111" /></svg>
+  );
+  return <svg width={44} height={44} viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" fill="#fff" /><path d="M22 10 V22 L30 27" stroke="#111" strokeWidth="3" fill="none" /></svg>;
+};
+
+// "Rund um die Uhr": a big clock spinning through days while the swarm keeps working.
+const AroundClock: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const turns = s * 5;
+  const night = (Math.sin(turns * Math.PI) + 1) / 2;
+  return (
+    <AbsoluteFill style={{ background: `linear-gradient(180deg, rgb(${20 + 60 * (1 - night)},${18 + 40 * (1 - night)},${30 + 30 * (1 - night)}), #0a0807)`, overflow: "hidden" }}>
+      {Array.from({ length: 30 }).map((_, i) => (
+        <div key={i} style={{ position: "absolute", left: 20 + (i % 15) * 70, top: 600 + Math.floor(i / 15) * 85 }}><PixelBot px={4} t={t * 2} prop={(["laptop", "calc", "pdf"] as BotProp[])[i % 3]} seed={i} /></div>
+      ))}
+      <svg width={300} height={300} viewBox="0 0 300 300" style={{ position: "absolute", left: 390, top: 150 }}>
+        <circle cx="150" cy="150" r="140" fill="#F7F3EE" stroke="#111" strokeWidth="8" />
+        {Array.from({ length: 12 }).map((_, i) => <rect key={i} x="146" y="18" width="8" height="22" fill="#111" transform={`rotate(${i * 30} 150 150)`} />)}
+        <rect x="145" y="70" width="10" height="84" rx="5" fill="#111" transform={`rotate(${turns * 30} 150 150)`} />
+        <rect x="147" y="38" width="6" height="116" rx="3" fill={colors.accent} transform={`rotate(${turns * 360} 150 150)`} />
+        <circle cx="150" cy="150" r="10" fill="#111" />
+      </svg>
+      <div style={{ position: "absolute", right: 40, top: 30, fontFamily: "Menlo, monospace", fontSize: 26, color: "rgba(255,255,255,0.8)" }}>{`TAG ${1 + Math.floor(turns / 2)}`}</div>
+      <Noise opacity={0.16} />
+      <Vignette strength={0.7} />
+    </AbsoluteFill>
+  );
+};
+
+const TOOL_WINDOWS = ["openai", "claude", "gmail", "googlesheets", "hubspot", "whatsapp", "dropbox", "googledrive", "slack", "teams", "googlecalendar", "outlook", "openai", "claude", "gmail", "hubspot", "whatsapp", "googlesheets"];
+
+// "Zehn Tools ohne Plan": tool windows and notifications pile up, then it glitches into red.
+const Chaos: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const f = useCurrentFrame();
+  const n = Math.floor(interpolate(t, [18.15, 20.4], [1, TOOL_WINDOWS.length], clamp));
+  const red = ramp(t, 19.5, 20.6, 0, 1);
+  const shake = red * 14;
+  const glitch = t > 19.6 && rnd(f * 2.3) > 0.55;
+  return (
+    <DarkStage red={red}>
+      <div style={{ position: "absolute", inset: 0, transform: `translate(${(rnd(f) - 0.5) * shake}px, ${(rnd(f + 9) - 0.5) * shake}px)`, filter: glitch ? "url(#vsChroma)" : undefined }}>
+        {TOOL_WINDOWS.slice(0, n).map((name, i) => {
+          const x = 40 + rnd(i * 5 + 1) * 760, y = 30 + rnd(i * 5 + 2) * 600, rot = (rnd(i * 5 + 3) - 0.5) * 14;
+          return (
+            <div key={i} style={{ position: "absolute", left: x, top: y, width: 260, height: 160, transform: `rotate(${rot}deg)`, borderRadius: 14, background: "#F4F2EE", boxShadow: "0 18px 40px rgba(0,0,0,0.6)", overflow: "hidden" }}>
+              <div style={{ height: 30, background: "#E2DED8", display: "flex", alignItems: "center", gap: 6, padding: "0 10px" }}>
+                {["#FF5F57", "#FEBC2E", "#28C840"].map((c) => <div key={c} style={{ width: 10, height: 10, borderRadius: 5, background: c }} />)}
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 12, padding: 14 }}>
+                <BrandLogo name={name} size={44} />
+                <div style={{ flex: 1 }}>{[0.9, 0.7, 0.8].map((w, j) => <div key={j} style={{ height: 8, width: `${w * 100}%`, background: "#CFCAC2", borderRadius: 4, marginBottom: 8 }} />)}</div>
+              </div>
+              {i % 3 === 0 && <div style={{ position: "absolute", right: 10, top: 40, width: 30, height: 30, borderRadius: 15, background: "#E5484D", color: "#fff", fontFamily: fonts.bold, fontSize: 16, display: "grid", placeItems: "center" }}>{3 + (i % 7)}</div>}
+            </div>
+          );
+        })}
+        {red > 0.3 && Array.from({ length: 6 }).map((_, i) => (
+          <div key={`g${i}`} style={{ position: "absolute", left: 0, right: 0, top: rnd(f * 3 + i) * FILM_H, height: 6 + rnd(f + i) * 30, background: `rgba(${rnd(i + f) > 0.5 ? "255,40,60" : "40,240,255"},0.5)`, mixBlendMode: "screen", transform: `translateX(${(rnd(f * 7 + i) - 0.5) * 120}px)` }} />
+        ))}
+      </div>
+      {t > 20.64 && <div style={{ position: "absolute", inset: 0, background: "#888" }}><Noise opacity={1} blend="normal" /></div>}
+    </DarkStage>
+  );
+};
+
+// ---------- bright world (full 9:16) ----------
+
+// Orange particles: scattered chaos that settles into calm, ordered rings around the centre.
+const Particles: React.FC<{ order: number; cx?: number; cy?: number; radius?: number; count?: number; t: number }> = ({ order, cx = 540, cy = 960, radius = 380, count = 260, t }) => (
+  <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+    {Array.from({ length: count }).map((_, i) => {
+      const ring = i % 3, k = Math.floor(i / 3), per = count / 3;
+      const a = (k / per) * Math.PI * 2 + t * (0.25 + ring * 0.08) * (ring % 2 ? -1 : 1);
+      const r = radius * (0.62 + ring * 0.19);
+      const ox = cx + Math.cos(a) * r, oy = cy + Math.sin(a) * r;
+      const chaosX = rnd(i * 3) * 1080 + Math.sin(t * 3 + i) * 40, chaosY = rnd(i * 3 + 1) * 1920 + Math.cos(t * 2.4 + i) * 40;
+      const x = chaosX + (ox - chaosX) * order, y = chaosY + (oy - chaosY) * order;
+      const len = 14 * (1 - order) + 5;
+      const ang = (1 - order) * rnd(i) * 360 + order * ((a * 180) / Math.PI + 90);
+      return <rect key={i} x={x - len / 2} y={y - 2.5} width={len} height={5} rx={2.5} fill={colors.accent} opacity={0.55 + 0.45 * rnd(i + 7)} transform={`rotate(${ang} ${x} ${y})`} />;
+    })}
+  </svg>
+);
+
+const Break: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const order = ramp(t, 21.5, 24.0, 0, 1);
+  return (
+    <AbsoluteFill style={{ background: PAPER }}>
+      <Particles order={order} t={t} count={480} radius={420} />
+      <div style={{ position: "absolute", left: 540, top: 960, transform: "translate(-50%,-50%)", width: 40 + 40 * order, height: 40 + 40 * order, borderRadius: "50%", background: colors.accent, opacity: order, boxShadow: `0 0 ${80 * order}px rgba(255,107,53,0.6)` }} />
+    </AbsoluteFill>
+  );
+};
+
+// Real Superkind team footage (image film) framed in the calm, ordered world.
+const TeamFilm: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const clips: [string, number, number][] = [["meeting", 23.2, 24.2], ["beratung", 24.2, 24.95], ["team", 24.95, 25.35]];
+  const inP = ramp(t, 23.2, 23.6);
+  return (
+    <AbsoluteFill style={{ background: PAPER }}>
+      <Particles order={1} t={t} radius={520} />
+      <div style={{ position: "absolute", left: 90, top: 960 - 270 - 40, width: 900, height: 540 + 80, opacity: inP, transform: `scale(${0.94 + 0.06 * inP})` }}>
+        <div style={{ position: "absolute", inset: 0, borderRadius: 40, overflow: "hidden", boxShadow: "0 40px 90px rgba(17,17,17,0.25)" }}>
+          {clips.map(([src, a, b]) => (
+            <Sequence key={src} from={Math.round((a - at) * VS_FPS)} durationInFrames={Math.round((b - a) * VS_FPS)} layout="none">
+              <OffthreadVideo src={staticFile(D + "film/" + src + ".mp4")} muted style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.03 + 0.04 * Math.min(1, Math.max(0, (t - a) / (b - a)))})` }} />
+            </Sequence>
+          ))}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+const BrainNode: React.FC<{ size: number; glow: number }> = ({ size, glow }) => (
+  <div style={{ width: size, height: size, borderRadius: size * 0.26, display: "grid", placeItems: "center", background: `linear-gradient(160deg, #FF8A5C 0%, ${colors.accent} 55%, #E4541F 100%)`, boxShadow: `0 0 ${90 * glow}px rgba(255,107,53,${0.55 * glow}), 0 30px 60px rgba(0,0,0,0.18)` }}>
+    <Img src={staticFile("superkind-logo.svg")} style={{ width: size * 0.56, filter: "brightness(0) invert(1)" }} />
+  </div>
+);
+
+const ROLES = [
+  { name: "Buchhaltung", seed: 2, angle: -90, prop: "calc" as BotProp },
+  { name: "Vertrieb", seed: 5, angle: 36, prop: "phone" as BotProp },
+  { name: "Einkauf", seed: 8, angle: 144, prop: "folder" as BotProp },
+];
+const SYSTEMS = [
+  { name: "Outlook", at: W.outlook, x: 215, y: 1500 },
+  { name: "SAP", at: W.sap, x: 540, y: 1560 },
+  { name: "DATEV", at: W.datev, x: 865, y: 1500 },
+];
+
+const Brain: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const cx = 540, cy = 860;
+  const nodeIn = ramp(t, W.ein, W.gehirn + 0.3);
+  return (
+    <AbsoluteFill style={{ background: PAPER }}>
+      <Particles order={1} t={t} radius={300} cy={cy} count={180} />
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+        {ROLES.map((r, i) => {
+          const p = ramp(t, W.klare + i * 0.18, W.klare + i * 0.18 + 0.45);
+          const x = cx + Math.cos((r.angle * Math.PI) / 180) * 410, y = cy + Math.sin((r.angle * Math.PI) / 180) * 410;
+          return <line key={r.name} x1={cx} y1={cy} x2={cx + (x - cx) * p} y2={cy + (y - cy) * p} stroke="#111" strokeOpacity={0.25} strokeWidth={3} strokeDasharray="10 10" strokeDashoffset={-t * 40} />;
+        })}
+        {SYSTEMS.map((sy) => {
+          const p = ramp(t, sy.at - 0.15, sy.at + 0.35);
+          return <line key={sy.name} x1={cx} y1={cy + 170} x2={cx + (sy.x - cx) * p} y2={cy + 170 + (sy.y - 40 - cy - 170) * p} stroke={colors.accent} strokeOpacity={0.55} strokeWidth={4} />;
+        })}
+      </svg>
+      <div style={{ position: "absolute", left: cx, top: cy, transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * nodeIn})`, opacity: nodeIn }}>
+        <BrainNode size={290} glow={0.6 + 0.4 * Math.sin(t * 3)} />
+      </div>
+      {ROLES.map((r, i) => {
+        const p = ramp(t, W.klare + i * 0.18 + 0.2, W.klare + i * 0.18 + 0.6);
+        const x = cx + Math.cos((r.angle * Math.PI) / 180) * 410, y = cy + Math.sin((r.angle * Math.PI) / 180) * 410;
+        return (
+          <div key={r.name} style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${0.7 + 0.3 * p})`, opacity: p, display: "flex", flexDirection: "column", alignItems: "center", gap: 10 }}>
+            <div style={{ display: "flex", alignItems: "flex-end", gap: 6 }}>
+              <PixelBot px={6} t={t} prop={r.prop} seed={i} />
+              <div style={{ borderRadius: "50%", boxShadow: "0 0 0 5px #fff, 0 12px 30px rgba(0,0,0,0.15)" }}><FaceAvatar seed={r.seed} size={160} /></div>
+              <PixelBot px={6} t={t} seed={i + 9} flip />
+            </div>
+            <div style={{ padding: "8px 20px", borderRadius: 999, background: "#111", color: "#fff", fontFamily: fonts.semibold, fontSize: 40 }}>{r.name}</div>
+          </div>
+        );
+      })}
+      {SYSTEMS.map((sy) => {
+        const p = ramp(t, sy.at, sy.at + 0.35);
+        return (
+          <div key={sy.name} style={{ position: "absolute", left: sy.x, top: sy.y, transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * p})`, opacity: p, display: "flex", alignItems: "center", gap: 14, padding: "16px 26px", borderRadius: 22, background: "rgba(255,255,255,0.9)", boxShadow: "0 16px 40px rgba(17,17,17,0.14)", border: "1.5px solid rgba(17,17,17,0.06)" }}>
+            <BrandLogo name={sy.name} size={64} />
+            <span style={{ fontFamily: fonts.semibold, fontSize: 44, color: colors.ink }}>{sy.name}</span>
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+// Fibonacci particle sphere that collapses into the logo.
+const SphereLogo: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const N = 520;
+  const collapse = ramp(t, 30.55, 31.05, 0, 1, (x) => x * x);
+  const grow = ramp(t, 30.1, 30.55);
+  const R = 330 * grow * (1 - collapse) + 6;
+  const rot = t * 1.6;
+  const logoP = ramp(t, 31.0, 31.5);
+  return (
+    <AbsoluteFill style={{ background: PAPER }}>
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: 1 - logoP }}>
+        {Array.from({ length: N }).map((_, i) => {
+          const y = 1 - (i / (N - 1)) * 2, rr = Math.sqrt(1 - y * y), th = i * 2.39996 + rot;
+          const x = Math.cos(th) * rr, z = Math.sin(th) * rr;
+          const px = 540 + x * R, py = 860 + y * R * 0.98, depth = (z + 1) / 2;
+          return <circle key={i} cx={px} cy={py} r={2 + 3.5 * depth} fill={colors.accent} opacity={0.25 + 0.75 * depth} />;
+        })}
+      </svg>
+      <div style={{ position: "absolute", left: 540, top: 860, transform: `translate(-50%,-50%) scale(${0.5 + 0.5 * logoP})`, opacity: logoP }}>
+        <BrainNode size={300} glow={0.8} />
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1060, textAlign: "center", opacity: logoP, transform: `translateY(${(1 - logoP) * 20}px)` }}>
+        <div style={{ fontFamily: fonts.bold, fontSize: 112, letterSpacing: -4, color: colors.ink }}>superkind</div>
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1240, textAlign: "center", fontFamily: serif, fontSize: 66, color: colors.ink, lineHeight: 1.15 }}>
+        {[["Jeder Mitarbeiter.", W.jeder], ["Sein eigenes Team.", W.sein]].map(([txt, a]) => {
+          const p = ramp(t, (a as number) - 0.05, (a as number) + 0.35);
+          return <div key={txt as string} style={{ opacity: p, transform: `translateY(${(1 - p) * 16}px)`, fontFamily: (txt as string).startsWith("Sein") ? serifItalic : serif, color: (txt as string).startsWith("Sein") ? colors.accent : colors.ink }}>{txt}</div>;
+        })}
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1450, textAlign: "center", fontFamily: fonts.semibold, fontSize: 46, letterSpacing: 1, color: colors.ink, opacity: ramp(t, 32.4, 32.9) }}>superkind.ai</div>
+    </AbsoluteFill>
+  );
+};
+
+// ---------- frame + subtitles ----------
+
+const DARK_SHOTS: { a: number; b: number; el: (a: number, b: number) => React.ReactNode }[] = [
+  { a: 0, b: 1.95, el: (a) => <TvShot at={a} /> },
+  { a: 1.95, b: 2.75, el: (a, b) => <Archive src="a01" dur={b - a} /> },
+  { a: 2.75, b: 3.65, el: (a, b) => <Archive src="a02" from={0.4} dur={b - a} /> },
+  { a: 3.65, b: 4.3, el: (a, b) => <Archive src="a05" from={2.4} dur={b - a} /> },
+  { a: 4.3, b: 5.02, el: (a, b) => <Archive src="a04" from={2.4} dur={b - a} /> },
+  { a: 5.02, b: 5.85, el: (a, b) => <Archive src="a07" from={0.3} dur={b - a} /> },
+  { a: 5.85, b: 6.6, el: (a, b) => <Archive src="a15" from={1.4} dur={b - a} /> },
+  { a: 6.6, b: 7.5, el: (a, b) => <Archive src="a10" from={0.2} dur={b - a} /> },
+  { a: 7.5, b: 8.46, el: (a, b) => <Archive src="a14" from={0.6} dur={b - a} /> },
+  { a: 8.46, b: 10.35, el: (a, b) => <CrtClose at={a} dur={b - a} /> },
+  { a: 10.35, b: 12.62, el: (a) => <SwarmGrow at={a} /> },
+  { a: 12.62, b: 14.79, el: (a) => <SwarmWork at={a} prop="laptop" label="MAILS BEANTWORTET: 1.284" icon="mail" /> },
+  { a: 14.79, b: 15.95, el: (a) => <SwarmWork at={a} prop="calc" label="RECHNUNGEN GEPRÜFT: 312" icon="invoice" /> },
+  { a: 15.95, b: 17.06, el: (a) => <SwarmWork at={a} prop="pdf" label="ANGEBOTE GESCHRIEBEN: 47" icon="offer" /> },
+  { a: 17.06, b: 18.15, el: (a) => <AroundClock at={a} /> },
+  { a: 18.15, b: 21.0, el: (a) => <Chaos at={a} /> },
+];
+
+const Subtitle: React.FC<{ t: number; dark: boolean }> = ({ t, dark }) => {
+  const cur = SUBS.find(([a, b]) => t >= a && t < b);
+  if (!cur) return null;
+  const p = ramp(t, cur[0], cur[0] + 0.15);
+  const top = dark ? FILM_TOP + FILM_H + 60 : 1640;
+  return (
+    <div style={{ position: "absolute", left: 60, right: 60, top, textAlign: "center", fontFamily: serif, fontSize: dark ? 70 : 72, lineHeight: 1.1, color: dark ? "#F2EEE8" : colors.ink, opacity: p, transform: `translateY(${(1 - p) * 10}px)` }}>
+      {cur[2]}
+    </div>
+  );
+};
+
+export const VisionSchwarm: React.FC = () => {
+  const t = useSec();
+  const dark = t < BREAK;
+  // Letterbox opens: the film frame grows from 16:9 to full 9:16 right after the break.
+  const open = ramp(t, BREAK, BREAK + 0.7, 0, 1);
+  const flash = interpolate(t, [BREAK - 0.02, BREAK + 0.05, BREAK + 0.6], [0, 1, 0], clamp);
+  const year = t < W.heute ? "1952" : "2026";
+  return (
+    <AbsoluteFill style={{ background: "#000" }}>
+      <Defs />
+      {dark && (
+        <>
+          <div style={{ position: "absolute", left: 0, top: FILM_TOP, width: 1080, height: FILM_H, overflow: "hidden" }}>
+            {DARK_SHOTS.map((s, i) => (
+              <Sequence key={i} {...seq(s.a, s.b)} layout="none">
+                <AbsoluteFill>{s.el(s.a, s.b)}</AbsoluteFill>
+              </Sequence>
+            ))}
+          </div>
+          {t < 21.0 && t > 0.62 && (
+            <div style={{ position: "absolute", left: 0, right: 0, top: FILM_TOP - 110, textAlign: "center", fontFamily: "Menlo, monospace", fontSize: 40, letterSpacing: 14, color: "rgba(242,238,232,0.55)" }}>{year}</div>
+          )}
+          <Subtitle t={t} dark />
+        </>
+      )}
+      {!dark && (
+        <div style={{ position: "absolute", left: 0, width: 1080, top: FILM_TOP * (1 - open), height: FILM_H + (1920 - FILM_H) * open, overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 0, width: 1080, height: 1920, top: -FILM_TOP * (1 - open) }}>
+            <Sequence {...seq(BREAK, 23.2)} layout="none"><AbsoluteFill><Break at={BREAK} /></AbsoluteFill></Sequence>
+            <Sequence {...seq(23.2, 25.34)} layout="none"><AbsoluteFill><TeamFilm at={23.2} /></AbsoluteFill></Sequence>
+            <Sequence {...seq(25.34, 30.1)} layout="none"><AbsoluteFill><Brain at={25.34} /></AbsoluteFill></Sequence>
+            <Sequence {...seq(30.1, VS_SECONDS)} layout="none"><AbsoluteFill><SphereLogo at={30.1} /></AbsoluteFill></Sequence>
+            <Subtitle t={t} dark={false} />
+          </div>
+        </div>
+      )}
+      <AbsoluteFill style={{ background: "#fff", opacity: flash, pointerEvents: "none" }} />
+
+      {/* sound */}
+      <Sequence from={Math.round(O * VS_FPS)} layout="none"><Audio src={staticFile(D + "avatar.mp4")} volume={1} /></Sequence>
+      <Sequence {...seq(0, 21.0)} layout="none"><Audio src={staticFile(D + "dark.mp3")} volume={(f) => interpolate(f / VS_FPS, [0, 0.3, 20.8, 21.0], [0, 0.42, 0.5, 0], clamp)} /></Sequence>
+      <Sequence {...seq(BREAK - 0.1, VS_SECONDS)} layout="none"><Audio src={staticFile(D + "bright.mp3")} startFrom={Math.round(0.7 * VS_FPS)} volume={(f) => interpolate(f / VS_FPS, [0, 0.2, 12.2, 13.2], [0.3, 0.5, 0.5, 0], clamp)} /></Sequence>
+      {([
+        ["tv-on", 0, 0.7], ["static", 0.22, 0.45], ["typewriter", 5.0, 0.35], ["impact", W.heute, 0.55], ["reverse", 10.0, 0.4],
+        ["notif", 18.3, 0.45], ["glitch", 19.7, 0.45], ["glitch", 20.25, 0.5], ["impact", W.chaos, 0.8], ["static", W.chaos, 0.5],
+        ["riser", 18.2, 0.35], ["reverse", BREAK - 0.9, 0.55], ["impact", BREAK, 0.35], ["reverse", 30.3, 0.4], ["impact", 31.0, 0.3],
+      ] as [string, number, number][]).map(([name, at, vol], i) => (
+        <Sequence key={i} from={Math.round(at * VS_FPS)} durationInFrames={name === "static" ? Math.round(0.45 * VS_FPS) : undefined} layout="none">
+          <Audio src={staticFile(D + "sfx/" + name + ".mp3")} volume={vol} />
+        </Sequence>
+      ))}
+    </AbsoluteFill>
+  );
+};

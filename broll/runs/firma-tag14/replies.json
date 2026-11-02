@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Empfängerliste: Guide mit der Frage und der Tabellenvorlage mit Status-Regeln per DM, Trigger-Wort im Video: Adresse)",
+ "commentReply": "Der Guide liegt in deiner DM, mit der Tabellenvorlage. Woher holst du Firmenadressen bisher?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hättest du dem Branchenbuch vertraut?",
+  "Schick ich dir gerade, mit den Status-Regeln. Wie viele Firmen stehen auf deiner Liste?",
+  "Angekommen, die Vorlage liegt in deiner DM. Schaust du sonst zuerst ins Impressum?",
+  "Liegt in deiner DM. Was machst du, wenn zwei Quellen verschiedene Adressen nennen?",
+  "Der Guide ist unterwegs. Hast du schon mal einen Brief an eine alte Adresse geschickt?"
+ ]
+}

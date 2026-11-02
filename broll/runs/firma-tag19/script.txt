@@ -1,0 +1,11 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Fünf Briefe, Einkaufspreis fehlt.
+Heute prüft sie ihre Versandzeile.
+Claude: Briefe angehängt, Websuche bei Printful.
+Versandpreise im Brief: kein Beleg.
+Sie streicht die Beträge.
+Warum? Printful nennt ihr nur Dollar. Umrechnen wäre geraten.
+Hundertneun Euro Verkaufspreis für fünf Shirts? Bleibt offen.
+Ihr fehlen Einkaufspreis und Umsatzsteuer-Status.
+Als Nächstes: Mit oder ohne Umsatzsteuer?
+Kommentiere „Beleg“, ich schick dir den Prompt. In zehn Minuten prüfst du deine Versandzeile.

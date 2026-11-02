@@ -1,0 +1,797 @@
+[
+  {
+    "text": "Wenn",
+    "startMs": 90,
+    "endMs": 210
+  },
+  {
+    "text": "einer",
+    "startMs": 210,
+    "endMs": 470
+  },
+  {
+    "text": "meiner",
+    "startMs": 470,
+    "endMs": 780
+  },
+  {
+    "text": "Freunde",
+    "startMs": 780,
+    "endMs": 1140
+  },
+  {
+    "text": "krank",
+    "startMs": 1140,
+    "endMs": 1390
+  },
+  {
+    "text": "ist,",
+    "startMs": 1390,
+    "endMs": 1850
+  },
+  {
+    "text": "kriegt",
+    "startMs": 1850,
+    "endMs": 1980
+  },
+  {
+    "text": "er",
+    "startMs": 1980,
+    "endMs": 2080
+  },
+  {
+    "text": "von",
+    "startMs": 2080,
+    "endMs": 2230
+  },
+  {
+    "text": "mir",
+    "startMs": 2230,
+    "endMs": 2380
+  },
+  {
+    "text": "Hühnersuppe.",
+    "startMs": 2380,
+    "endMs": 3160
+  },
+  {
+    "text": "Bestellt",
+    "startMs": 3160,
+    "endMs": 3690
+  },
+  {
+    "text": "hat",
+    "startMs": 3690,
+    "endMs": 3870
+  },
+  {
+    "text": "sie",
+    "startMs": 3870,
+    "endMs": 4060
+  },
+  {
+    "text": "eine",
+    "startMs": 4060,
+    "endMs": 4320
+  },
+  {
+    "text": "KI,",
+    "startMs": 4320,
+    "endMs": 4680
+  },
+  {
+    "text": "die",
+    "startMs": 4680,
+    "endMs": 4750
+  },
+  {
+    "text": "unseren",
+    "startMs": 4750,
+    "endMs": 5100
+  },
+  {
+    "text": "Gruppenchat",
+    "startMs": 5100,
+    "endMs": 5660
+  },
+  {
+    "text": "mitliest.",
+    "startMs": 5660,
+    "endMs": 6200
+  },
+  {
+    "text": "Ein",
+    "startMs": 6200,
+    "endMs": 6360
+  },
+  {
+    "text": "guter",
+    "startMs": 6360,
+    "endMs": 6690
+  },
+  {
+    "text": "Freund",
+    "startMs": 6690,
+    "endMs": 6940
+  },
+  {
+    "text": "ist",
+    "startMs": 6940,
+    "endMs": 7100
+  },
+  {
+    "text": "da,",
+    "startMs": 7100,
+    "endMs": 7460
+  },
+  {
+    "text": "wenn",
+    "startMs": 7460,
+    "endMs": 7510
+  },
+  {
+    "text": "es",
+    "startMs": 7510,
+    "endMs": 7610
+  },
+  {
+    "text": "drauf",
+    "startMs": 7610,
+    "endMs": 7880
+  },
+  {
+    "text": "ankommt.",
+    "startMs": 7880,
+    "endMs": 8480
+  },
+  {
+    "text": "Zumindest",
+    "startMs": 8480,
+    "endMs": 8940
+  },
+  {
+    "text": "seine",
+    "startMs": 8940,
+    "endMs": 9200
+  },
+  {
+    "text": "Suppe.",
+    "startMs": 9200,
+    "endMs": 9640
+  },
+  {
+    "text": "Der",
+    "startMs": 9640,
+    "endMs": 9820
+  },
+  {
+    "text": "Agent",
+    "startMs": 9820,
+    "endMs": 10110
+  },
+  {
+    "text": "muss",
+    "startMs": 10110,
+    "endMs": 10380
+  },
+  {
+    "text": "genau",
+    "startMs": 10380,
+    "endMs": 10690
+  },
+  {
+    "text": "hinschauen.",
+    "startMs": 10690,
+    "endMs": 11520
+  },
+  {
+    "text": "Denn",
+    "startMs": 11520,
+    "endMs": 11750
+  },
+  {
+    "text": "ein",
+    "startMs": 11750,
+    "endMs": 11920
+  },
+  {
+    "text": "Mann",
+    "startMs": 11920,
+    "endMs": 12150
+  },
+  {
+    "text": "mit",
+    "startMs": 12150,
+    "endMs": 12330
+  },
+  {
+    "text": "achtunddreißig",
+    "startMs": 12330,
+    "endMs": 12670
+  },
+  {
+    "text": "Grad",
+    "startMs": 12670,
+    "endMs": 12890
+  },
+  {
+    "text": "Fieber",
+    "startMs": 12890,
+    "endMs": 13240
+  },
+  {
+    "text": "macht",
+    "startMs": 13240,
+    "endMs": 13560
+  },
+  {
+    "text": "sein",
+    "startMs": 13560,
+    "endMs": 13760
+  },
+  {
+    "text": "Testament.",
+    "startMs": 13760,
+    "endMs": 14560
+  },
+  {
+    "text": "Deshalb",
+    "startMs": 14560,
+    "endMs": 14910
+  },
+  {
+    "text": "gibt",
+    "startMs": 14910,
+    "endMs": 15210
+  },
+  {
+    "text": "es",
+    "startMs": 15210,
+    "endMs": 15230
+  },
+  {
+    "text": "zwei",
+    "startMs": 15230,
+    "endMs": 15480
+  },
+  {
+    "text": "Stufen.",
+    "startMs": 15480,
+    "endMs": 15880
+  },
+  {
+    "text": "Schreibt",
+    "startMs": 15880,
+    "endMs": 16280
+  },
+  {
+    "text": "einer,",
+    "startMs": 16280,
+    "endMs": 16780
+  },
+  {
+    "text": "bin",
+    "startMs": 16780,
+    "endMs": 16860
+  },
+  {
+    "text": "bisschen",
+    "startMs": 16930,
+    "endMs": 17380
+  },
+  {
+    "text": "erkältet,",
+    "startMs": 17380,
+    "endMs": 17920
+  },
+  {
+    "text": "antwortet",
+    "startMs": 17920,
+    "endMs": 18380
+  },
+  {
+    "text": "der",
+    "startMs": 18380,
+    "endMs": 18520
+  },
+  {
+    "text": "Agent,",
+    "startMs": 18520,
+    "endMs": 19050
+  },
+  {
+    "text": "gute",
+    "startMs": 19050,
+    "endMs": 19090
+  },
+  {
+    "text": "Besserung.",
+    "startMs": 19090,
+    "endMs": 19760
+  },
+  {
+    "text": "Mehr",
+    "startMs": 19760,
+    "endMs": 20000
+  },
+  {
+    "text": "nicht.",
+    "startMs": 20000,
+    "endMs": 20480
+  },
+  {
+    "text": "Letzten",
+    "startMs": 20480,
+    "endMs": 20830
+  },
+  {
+    "text": "Monat",
+    "startMs": 20830,
+    "endMs": 21080
+  },
+  {
+    "text": "hat",
+    "startMs": 21080,
+    "endMs": 21230
+  },
+  {
+    "text": "Tobi",
+    "startMs": 21230,
+    "endMs": 21430
+  },
+  {
+    "text": "geschrieben,",
+    "startMs": 21430,
+    "endMs": 22040
+  },
+  {
+    "text": "ich",
+    "startMs": 22040,
+    "endMs": 22150
+  },
+  {
+    "text": "schaff",
+    "startMs": 22150,
+    "endMs": 22410
+  },
+  {
+    "text": "es",
+    "startMs": 22410,
+    "endMs": 22490
+  },
+  {
+    "text": "nicht",
+    "startMs": 22490,
+    "endMs": 22670
+  },
+  {
+    "text": "mehr",
+    "startMs": 22670,
+    "endMs": 22810
+  },
+  {
+    "text": "bis",
+    "startMs": 22810,
+    "endMs": 22930
+  },
+  {
+    "text": "zur",
+    "startMs": 22930,
+    "endMs": 23040
+  },
+  {
+    "text": "Küche.",
+    "startMs": 23040,
+    "endMs": 23440
+  },
+  {
+    "text": "Da",
+    "startMs": 23440,
+    "endMs": 23540
+  },
+  {
+    "text": "hat",
+    "startMs": 23540,
+    "endMs": 23710
+  },
+  {
+    "text": "der",
+    "startMs": 23710,
+    "endMs": 23790
+  },
+  {
+    "text": "Agent",
+    "startMs": 23790,
+    "endMs": 24020
+  },
+  {
+    "text": "bei",
+    "startMs": 24020,
+    "endMs": 24150
+  },
+  {
+    "text": "Lieferando",
+    "startMs": 24150,
+    "endMs": 24590
+  },
+  {
+    "text": "bestellt.",
+    "startMs": 24590,
+    "endMs": 25160
+  },
+  {
+    "text": "Hühnersuppe",
+    "startMs": 25160,
+    "endMs": 26000
+  },
+  {
+    "text": "und",
+    "startMs": 26000,
+    "endMs": 26210
+  },
+  {
+    "text": "Ingwertee.",
+    "startMs": 26210,
+    "endMs": 26700
+  },
+  {
+    "text": "Dazu",
+    "startMs": 27120,
+    "endMs": 27350
+  },
+  {
+    "text": "hat",
+    "startMs": 27350,
+    "endMs": 27450
+  },
+  {
+    "text": "der",
+    "startMs": 27450,
+    "endMs": 27590
+  },
+  {
+    "text": "Agent",
+    "startMs": 27590,
+    "endMs": 27830
+  },
+  {
+    "text": "ihm",
+    "startMs": 27830,
+    "endMs": 27970
+  },
+  {
+    "text": "eine",
+    "startMs": 27970,
+    "endMs": 28160
+  },
+  {
+    "text": "Studie",
+    "startMs": 28160,
+    "endMs": 28440
+  },
+  {
+    "text": "geschickt.",
+    "startMs": 28440,
+    "endMs": 29080
+  },
+  {
+    "text": "Männer",
+    "startMs": 29140,
+    "endMs": 29440
+  },
+  {
+    "text": "mit",
+    "startMs": 29440,
+    "endMs": 29590
+  },
+  {
+    "text": "Grippe",
+    "startMs": 29590,
+    "endMs": 29890
+  },
+  {
+    "text": "landen",
+    "startMs": 29890,
+    "endMs": 30190
+  },
+  {
+    "text": "wirklich",
+    "startMs": 30190,
+    "endMs": 30270
+  },
+  {
+    "text": "öfter",
+    "startMs": 30190,
+    "endMs": 30490
+  },
+  {
+    "text": "im",
+    "startMs": 30490,
+    "endMs": 30590
+  },
+  {
+    "text": "Krankenhaus.",
+    "startMs": 30590,
+    "endMs": 31360
+  },
+  {
+    "text": "Tobi",
+    "startMs": 31360,
+    "endMs": 31540
+  },
+  {
+    "text": "hat",
+    "startMs": 31540,
+    "endMs": 31680
+  },
+  {
+    "text": "sich",
+    "startMs": 31680,
+    "endMs": 31870
+  },
+  {
+    "text": "endlich",
+    "startMs": 31870,
+    "endMs": 32200
+  },
+  {
+    "text": "ernst",
+    "startMs": 32200,
+    "endMs": 32440
+  },
+  {
+    "text": "genommen",
+    "startMs": 32440,
+    "endMs": 32820
+  },
+  {
+    "text": "gefühlt.",
+    "startMs": 32820,
+    "endMs": 33400
+  },
+  {
+    "text": "Tobi",
+    "startMs": 33400,
+    "endMs": 33600
+  },
+  {
+    "text": "hat",
+    "startMs": 33600,
+    "endMs": 33750
+  },
+  {
+    "text": "ein",
+    "startMs": 33750,
+    "endMs": 33890
+  },
+  {
+    "text": "Foto",
+    "startMs": 33890,
+    "endMs": 34100
+  },
+  {
+    "text": "von",
+    "startMs": 34100,
+    "endMs": 34250
+  },
+  {
+    "text": "der",
+    "startMs": 34250,
+    "endMs": 34400
+  },
+  {
+    "text": "Suppe",
+    "startMs": 34400,
+    "endMs": 34680
+  },
+  {
+    "text": "in",
+    "startMs": 34680,
+    "endMs": 34750
+  },
+  {
+    "text": "die",
+    "startMs": 34750,
+    "endMs": 34900
+  },
+  {
+    "text": "Gruppe",
+    "startMs": 34900,
+    "endMs": 35190
+  },
+  {
+    "text": "gestellt.",
+    "startMs": 35190,
+    "endMs": 35760
+  },
+  {
+    "text": "Darunter,",
+    "startMs": 35760,
+    "endMs": 36290
+  },
+  {
+    "text": "bester",
+    "startMs": 36290,
+    "endMs": 36680
+  },
+  {
+    "text": "Freund",
+    "startMs": 36680,
+    "endMs": 37080
+  },
+  {
+    "text": "der",
+    "startMs": 37080,
+    "endMs": 37280
+  },
+  {
+    "text": "Welt.",
+    "startMs": 37280,
+    "endMs": 37760
+  },
+  {
+    "text": "Inzwischen",
+    "startMs": 37760,
+    "endMs": 38410
+  },
+  {
+    "text": "wird",
+    "startMs": 38410,
+    "endMs": 38670
+  },
+  {
+    "text": "Tobi",
+    "startMs": 38670,
+    "endMs": 38930
+  },
+  {
+    "text": "auffällig",
+    "startMs": 38930,
+    "endMs": 39570
+  },
+  {
+    "text": "oft",
+    "startMs": 39570,
+    "endMs": 39780
+  },
+  {
+    "text": "krank.",
+    "startMs": 39780,
+    "endMs": 40320
+  },
+  {
+    "text": "Immer,",
+    "startMs": 40320,
+    "endMs": 40680
+  },
+  {
+    "text": "wenn",
+    "startMs": 40680,
+    "endMs": 40940
+  },
+  {
+    "text": "Fußball",
+    "startMs": 40940,
+    "endMs": 41330
+  },
+  {
+    "text": "läuft.",
+    "startMs": 41330,
+    "endMs": 41840
+  },
+  {
+    "text": "Letzten",
+    "startMs": 41840,
+    "endMs": 42190
+  },
+  {
+    "text": "Donnerstag,",
+    "startMs": 42190,
+    "endMs": 43020
+  },
+  {
+    "text": "zehn",
+    "startMs": 43020,
+    "endMs": 43160
+  },
+  {
+    "text": "Minuten",
+    "startMs": 43160,
+    "endMs": 43530
+  },
+  {
+    "text": "vor",
+    "startMs": 43530,
+    "endMs": 43690
+  },
+  {
+    "text": "Anpfiff,",
+    "startMs": 43690,
+    "endMs": 44080
+  },
+  {
+    "text": "kam",
+    "startMs": 44080,
+    "endMs": 44300
+  },
+  {
+    "text": "wieder,",
+    "startMs": 44300,
+    "endMs": 44990
+  },
+  {
+    "text": "ich",
+    "startMs": 44990,
+    "endMs": 45050
+  },
+  {
+    "text": "schaff",
+    "startMs": 45050,
+    "endMs": 45340
+  },
+  {
+    "text": "es",
+    "startMs": 45340,
+    "endMs": 45430
+  },
+  {
+    "text": "nicht",
+    "startMs": 45430,
+    "endMs": 45640
+  },
+  {
+    "text": "mehr",
+    "startMs": 45640,
+    "endMs": 45810
+  },
+  {
+    "text": "bis",
+    "startMs": 45810,
+    "endMs": 45940
+  },
+  {
+    "text": "zur",
+    "startMs": 45940,
+    "endMs": 46070
+  },
+  {
+    "text": "Küche.",
+    "startMs": 46070,
+    "endMs": 46360
+  },
+  {
+    "text": "Und",
+    "startMs": 46360,
+    "endMs": 46540
+  },
+  {
+    "text": "direkt",
+    "startMs": 46540,
+    "endMs": 46880
+  },
+  {
+    "text": "danach,",
+    "startMs": 46880,
+    "endMs": 47460
+  },
+  {
+    "text": "gern",
+    "startMs": 47460,
+    "endMs": 47560
+  },
+  {
+    "text": "mit",
+    "startMs": 47560,
+    "endMs": 47710
+  },
+  {
+    "text": "extra",
+    "startMs": 47710,
+    "endMs": 47960
+  },
+  {
+    "text": "Nudeln.",
+    "startMs": 47960,
+    "endMs": 48440
+  }
+]

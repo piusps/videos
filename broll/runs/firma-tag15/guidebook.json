@@ -1,0 +1,320 @@
+{
+ "topic": "Versand",
+ "trigger_word": "Versand",
+ "cover": {
+  "kicker": "KI baut eine Firma · Welche Adresse stimmt?",
+  "title": "Sichere Adressen. In zehn Minuten.",
+  "subtitle": "Die Prüffrage, mit der die KI aus der Serie ihre Empfängerliste für die ersten fünf Werbebriefe per Websuche nachgeprüft und jede Zeile mit Ja, Ja mit Vorbehalt oder Nein für den Versand markiert hat. Mit beiden Varianten der Frage, den Versand-Regeln aus Claudes Datei, der Widerspruchs-Regel und der Liste, was Claude nicht prüfen konnte.",
+  "stat": {
+   "value": "ca. 3 min",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: 18 Websuchen, 3 Seiten wirklich gelesen, eine aktualisierte Excel-Datei. Ergebnis: 4 × Versand Ja, 1 × Ja mit Vorbehalt."
+  },
+  "outcomes": [
+   "Die Prüffrage zum Kopieren, mit Anhang und ohne Anhang",
+   "Die Versand-Regeln: Ja, Ja mit Vorbehalt, Nein",
+   "Die Widerspruchs-Regel: den neuesten Registereintrag suchen",
+   "Ehrlich ausgewiesen: was Claude nicht prüfen konnte"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Die Prüffrage zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** deine Empfängerliste als Excel-Datei an. Dann füge diese Frage ein. Das ist die Frage aus unserem Lauf, nur der erste Satz ist für deine eigene Liste verallgemeinert.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante A: mit Anhang (eigene Empfängerliste als Excel)",
+     "text": "Im Anhang ist meine Empfängerliste für einen Werbebrief als Excel-Datei. Bei einigen Firmen ist die Adresse unsicher oder Quellen widersprechen sich. Klär mit der Websuche über öffentliche, möglichst amtliche Quellen, welche Adresse je Firma stimmt. Zum Beispiel Handelsregister oder Unternehmensregister, sofern ohne Login einsehbar. Markiere, welche Briefe sicher rausgehen können und welche nicht. Nenn je Adresse die Quelle. Nimm nur Firmenangaben, keine privaten Daten. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts. Gib mir die aktualisierte Excel-Datei zurück."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Claude hat in unserem Lauf rund 3 Minuten gearbeitet. Mit Anhängen und Lesen der Versand-Spalte hast du nach etwa 10 Minuten eine Liste, in der jede Zeile sagt, ob der Brief raus kann. Die Postleitzahl-Prüfung bei der Post und der amtliche Registerabruf sind eigene Schritte, die du selbst machst."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → Excel-Datei anhängen → Frage einfügen → senden. Research ist nicht nötig, in unserem Lauf blieb es aus."
+      },
+      {
+       "k": "Ergebnis",
+       "v": "Die aktualisierte Excel-Datei erscheint als Karte im Chat (**„Tabellenkalkulation · XLSX“**). Anklicken, herunterladen, die Spalte **Versand** lesen."
+      },
+      {
+       "k": "Tipp",
+       "v": "Gedächtnis für diesen Chat ausschalten: im **„+“**-Menü das Häkchen bei **„Gedächtnis“** entfernen. So haben wir den Lauf gemacht."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf am 31.10.2026: rund 3 Minuten, 18 Websuchen, 5 Seitenabrufe, davon 2 fehlgeschlagen, also 3 Seiten wirklich gelesen."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/02-versand-ergebnis-anonym.png",
+     "width": "46%",
+     "caption": "So sieht Claudes Antwort aus: echter Lauf vom 31.10.2026, Namen und Adressen von uns geschwärzt. 4 × Versand ja, 1 × mit Vorbehalt."
+    }
+   ]
+  },
+  {
+   "kicker": "Variante B",
+   "title": "Noch keine Liste als Datei?",
+   "intro": "Dann schreibst du die Firmen und die Adressen, die du gefunden hast, direkt in die Frage. Neuer Chat, nichts anhängen, Frage einfügen. Die Spalten gibst du selbst vor. Keine Firma erfinden: Claude prüft nur die Namen, die du angibst.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante B: ohne Anhang (nicht getestet)",
+     "text": "Ich will diese Firmen per Brief anschreiben. Zu jeder habe ich eine Adresse, bin aber unsicher: [FIRMENNAME 1, ADRESSE, WOHER], [FIRMENNAME 2, ADRESSE, WOHER]. Klär mit der Websuche über öffentliche, möglichst amtliche Quellen, welche Adresse je Firma stimmt. Wenn sich Quellen widersprechen, such den neuesten Eintrag. Bau mir eine Excel-Tabelle mit den Spalten Firmenname, Strasse, PLZ, Ort, Versand (Ja / Ja mit Vorbehalt / Nein), Quelle_Adresse, Geprueft_am. Nimm nur Firmenangaben, keine privaten Daten. Sag mir, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Nicht getestet",
+     "text": "Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit der Excel-Liste als Anhang (rund 3 Minuten)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Beispiel",
+      "Wofür die Prüffrage passt"
+     ],
+     "widths": [
+      "26%",
+      "74%"
+     ],
+     "rows": [
+      [
+       "Gebäudereiniger",
+       "Praxen, deren Adresse auf der Website anders steht als im Branchenbuch"
+      ],
+      [
+       "Fotografin",
+       "Firmen, die gerade umgezogen sind (Stellenanzeige nennt neuen Ort)"
+      ],
+      [
+       "Kaffeerösterin",
+       "Büros mit zwei Standorten: welcher bekommt die Probe?"
+      ],
+      [
+       "IT-Techniker",
+       "GmbHs, bei denen Impressum und Registerauszug verschiedene Straßen nennen"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Einstellungen",
+   "title": "Das muss in claude.ai an sein.",
+   "intro": "Drei Dinge braucht die Frage: Websuche, Dateierstellung und den Upload im Chat. Geprüft am 30.10.2026, Menünamen können sich ändern.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Websuche",
+       "text": "In der aktuellen Oberfläche gibt es keinen eigenen Schalter, Claude sucht selbst. In unserem Lauf hat Claude ohne Schalter 18-mal gesucht. Bei Team und Enterprise muss der Owner die Websuche freigeben. Quelle: [Claude Help Center: Web search](https://support.claude.com/en/articles/10684626-enable-and-use-web-search)"
+      },
+      {
+       "title": "Excel-Datei erstellen",
+       "text": "Die Dateierstellung muss an sein, sonst kommt keine Excel-Datei zurück. Quelle: [Claude Help Center: Create and edit files](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)"
+      },
+      {
+       "title": "Anhänge",
+       "text": "Upload im Chat über **„+“**. Quelle: [Claude Help Center: Upload files](https://support.claude.com/en/articles/8241126-upload-files-to-claude)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Versand-Regeln",
+   "title": "Ja, Ja mit Vorbehalt, Nein.",
+   "intro": "Das sind die Regeln aus Claudes Datei, Blatt **„Legende und Offen“**, wörtlich, nur die Betriebsnamen von uns ersetzt. Du kannst sie Claude in der Frage vorgeben oder selbst in deine Liste schreiben.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Versand",
+      "Bedeutung (aus Claudes Datei)"
+     ],
+     "widths": [
+      "24%",
+      "76%"
+     ],
+     "rows": [
+      [
+       "Ja",
+       "„Anschrift durch Impressum und mindestens eine unabhängige Quelle belegt (bei [einem Betrieb] zusätzlich Handelsregister). Brief kann raus.“ Im Lauf las Claude den Registereintrag bei einem Datendienst (Drittanbieter), nicht im amtlichen Register."
+      ],
+      [
+       "Ja mit Vorbehalt",
+       "„Anschrift belegt, ein Detail (hier: PLZ bei [einem Betrieb]) nicht amtlich bestätigt. Vor Druck 1 Minute in der PLZ-Suche der Deutschen Post prüfen.“"
+      ],
+      [
+       "Nein",
+       "„Derzeit kein Fall.“ Leg die Regel trotzdem an: Anschrift nicht belegt oder Widerspruch offen. Dieser Brief geht nicht raus."
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Drei neue Spalten** hat Claude im Lauf an die Liste gehängt:"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Spalte",
+      "Inhalt",
+      "Beispiel (ausgedacht)"
+     ],
+     "widths": [
+      "22%",
+      "48%",
+      "30%"
+     ],
+     "rows": [
+      [
+       "Versand",
+       "Ja / Ja mit Vorbehalt / Nein",
+       "Ja mit Vorbehalt"
+      ],
+      [
+       "Quelle_Adresse",
+       "Woher die Anschrift stammt, je Quelle",
+       "Impressum [domain]; Telefonverzeichnis"
+      ],
+      [
+       "Geprueft_am",
+       "Datum der Prüfung",
+       "31.10.2026"
+      ]
+     ]
+    },
+    {
+     "type": "code",
+     "label": "Kopfzeile Blatt „Empfaenger“ zum Kopieren (Semikolon getrennt)",
+     "text": "Nr;Firmenname;Zusatz;Strasse;PLZ;Ort;Adressstatus;Quelle_im_Brief;Pruefhinweis;Versand;Quelle_Adresse;Geprueft_am"
+    }
+   ]
+  },
+  {
+   "kicker": "Der Widerspruch",
+   "title": "Den neuesten Eintrag suchen.",
+   "intro": "Bei einem Betrieb nannten das Impressum und eine Register-Abschrift verschiedene Anschriften. Claude glaubte dem Impressum. Der Grund: Die Abschrift zeigte nur die Anschrift der Ersteintragung. Laut einem späteren Registereintrag, gelesen bei einem Datendienst, stimmt die Impressum-Adresse.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/05-register-widerspruch-anonym.png",
+     "width": "80%",
+     "caption": "Claudes Begründung im echten Lauf, Namen und Adressen von uns geschwärzt. Quelle des Registereintrags: ein Datendienst (North Data), nicht das amtliche Register."
+    },
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Datum der Abschrift ansehen",
+       "text": "Bei Impressum gegen Register-Abschrift zuerst schauen, von wann die Abschrift ist. Im Lauf gab sie nur die Ersteintragung wieder."
+      },
+      {
+       "title": "Den neuesten Registereintrag suchen",
+       "text": "Nicht irgendeine Abschrift nehmen. Im Lauf nannte ein späterer Eintrag die Impressum-Adresse, danach gab es laut Datendienst keine Änderung der Anschrift mehr."
+      },
+      {
+       "title": "Quelle in die Liste schreiben",
+       "text": "In **Quelle_Adresse** festhalten, woher der Eintrag stammt, auch wenn es ein Datendienst ist. So siehst du später, was amtlich ist und was nicht."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Das amtliche Register hat Claude nicht bedient",
+     "text": "Claude selbst: „Die amtlichen Seiten handelsregister.de und Unternehmensregister selbst: Deren Suche läuft über ein Formular, das ich nicht bedienen kann.“ Den Eintrag las Claude bei einem Datendienst (Drittanbieter). Wer es amtlich will, ruft den Eintrag selbst ab. Claudes Weg aus der Datei, von uns nicht ausprobiert: [handelsregister.de](https://www.handelsregister.de) → **„Normale Suche“** → Registerart, Nummer, Gericht → **„AD“** (aktueller Abdruck)."
+    }
+   ]
+  },
+  {
+   "kicker": "Nicht geprüft",
+   "title": "Was Claude nicht prüfen konnte.",
+   "intro": "Claudes Liste aus dem Lauf, verallgemeinert, Namen und Adressen von uns weggelassen. „Ja“ heißt belegt, nicht amtlich geprüft und nicht zugestellt.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Amtliches Register:** handelsregister.de und Unternehmensregister selbst, die Suche dort ist ein Formular. Die Registerangabe im Lauf stammt von einem Datendienst.",
+      "**Postleitzahl einer Hausnummer:** Die Straße hatte Abschnitte mit zwei PLZ. Claude: „Für die Hausnummer […] selbst habe ich die PLZ aber nicht bestätigt.“",
+      "**Geschäftsraum oder Wohnung:** offen. „Beide Betriebe veröffentlichen sie selbst als Firmenanschrift.“",
+      "**Zustellbarkeit:** keine Prüfung über die Post.",
+      "**Welche von zwei Anschriften:** Ein Betrieb nennt Sitz und Betriebsstätte. Ob er Post lieber an die Betriebsstätte hätte, ist offen. Claude schickt an den Sitz.",
+      "**Handwerksrolle:** laut Claudes Datei nicht öffentlich ohne Weiteres abfragbar, daher nicht genutzt."
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken",
+     "text": "Der Status sprang im Lauf von einer belegten Adresse auf fünf, teils nur über Suchtreffer in Telefon- und Branchenverzeichnissen. Für einen Betrieb fand Claude keine neue Quelle und übernahm den alten Stand. Und 2 von 5 Seitenabrufen schlugen fehl. Lies die Spalte Quelle_Adresse, bevor du druckst."
+    }
+   ]
+  },
+  {
+   "kicker": "Datenschutz",
+   "title": "Nur Firmenangaben.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**„Nimm nur Firmenangaben, keine privaten Daten“ in der Frage lassen.** Der Satz steht in beiden Varianten.",
+      "**Einzelunternehmen:** Bei 4 von 5 Betrieben im Lauf steckt der Name des Inhabers im Firmennamen. Die Liste enthält damit Personendaten, behandle sie so.",
+      "**Quellenarten im Lauf:** eigenes Impressum, Registereintrag über einen Datendienst, Telefon- und Branchenverzeichnisse, PLZ-Verzeichnisse.",
+      "Das ist eine Zusammenfassung aus einem Lauf, keine Rechtsberatung."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Irgendeine Register-Abschrift glauben:** Erst das Datum ansehen, dann den neuesten Eintrag suchen.",
+      "**„Nenn je Adresse die Quelle“ weglassen:** Dann siehst du nicht, ob eine Zeile auf dem Impressum oder nur auf einem Verzeichnis beruht.",
+      "**„Ja mit Vorbehalt“ überlesen:** Die PLZ vor dem Druck selbst in der PLZ-Suche der Deutschen Post prüfen.",
+      "**Datendienst für amtlich halten:** Ein Datendienst gibt das Register wieder, er ist nicht das Register.",
+      "**PLZ als Zahl speichern:** Dann fällt die führende 0 weg. Die PLZ-Spalte als Text anlegen."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Ausblick",
+   "title": "Für den Serienbrief.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Claudes Hinweis aus der Datei",
+     "text": "„Blatt „Empfaenger“ als Datenquelle; Filter auf Versand. Felder: Firmenname, Zusatz, Strasse, PLZ, Ort, Quelle_im_Brief. PLZ ist Text (führende 0 bleibt).“"
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes: Wie kommen die Adressen in den Brief?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Frage, Versand-Regeln, Begründung und Nicht-prüfen-Liste aus einem echten claude.ai-Lauf vom 31.10.2026 (Websuche, 18 Suchen, 3 Seiten gelesen, Gedächtnis aus), wörtlich übernommen oder verallgemeinert, Betriebsnamen und Adressen weggelassen oder neutral ersetzt. Registerangaben im Lauf aus einem Datendienst (Drittanbieter), nicht aus dem amtlichen Register. Beispielwerte ausgedacht. Quellen nicht von uns geprüft. Menünamen können sich ändern."
+}

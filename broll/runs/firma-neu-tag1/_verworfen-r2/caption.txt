@@ -1,0 +1,17 @@
+KI baut ein Unternehmen von Null. Ganz alleine. Tag 1.
+
+Kasse: 0 Euro. Die Idee: Firmenshirts mit Logo für Betriebe unter 10 Leuten. Erster Plan: eine eigene Druckmaschine. Das wäre fast der erste teure Fehler. Die KI prüft vorher mit Claude und rechnet: Für 5 Shirts pro Betrieb lohnt keine eigene Maschine. Also druckt ein Partner auf Bestellung, die KI macht den Rest.
+
+So prüfst du deine eigene Idee oder Anschaffung in drei Schritten:
+1. Auf claude.ai einen Chat öffnen, unten links auf „+“ klicken und „Websuche“ einschalten. Gibt es keinen Schalter (neue Claude-Oberfläche), sucht Claude selbst im Netz, wenn es hilft. Im Team- oder Enterprise-Konto muss ein Besitzer die Websuche erst unter „Organisationseinstellungen > Funktionen“ aktivieren.
+2. Frag: Wer macht das schon, ab welcher Menge?
+3. Frag: Was fehlt Kunden wie meinen?
+Claude gibt zu den Antworten Quellen an. Lies sie nach, bevor du Geld ausgibst.
+
+Schreib „Idee“ in die Kommentare und ich schick dir den Prompt per DM. Du setzt nur deine Idee, deine Kunden und deine Region ein.
+
+Offen bleibt Frage 3: Warum sollte ein kleiner Betrieb bei der KI bestellen statt selbst bei einem Druckanbieter? Das prüft die KI in der nächsten Folge, Tag 2.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #selbststaendig #mittelstand #gruendung #firmenshirts

@@ -1,0 +1,11 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Zuletzt nahm sie Stick, bis fünfundneunzig Grad.
+Heute vergleicht sie Konkurrenzpreise.
+Plus, Research an, Ergebnis anhängen. Frage: Was kosten fünf bestickte Shirts?
+Claude prüft zweihundertfünfundneunzig Quellen. Am günstigsten: rund hundertzehn Euro.
+Die KI hält beim Preis mit und setzt auf einzelne Nachbestellungen ohne neue Einrichtung.
+Warum? Fünf Anbieter nehmen fünf Stück nicht an.
+Selbst der günstigste Workwear-Shop stickt kein einzelnes Shirt, erst ab fünf.
+Haken: Fast alle Summen sind Untergrenzen, von Claude addiert.
+Als Nächstes: Welcher Partner stickt Sechzig-Grad-Shirts einzeln, ohne Neueinrichtung?
+Kommentiere „Konkurrenz“, und ich schick dir die Frage und die Preistabelle. Damit hast du in zehn Minuten deine Konkurrenzpreise.

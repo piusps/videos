@@ -1,0 +1,306 @@
+{
+ "mapping": [
+  [
+   0.0,
+   4.35,
+   0.0,
+   4.35
+  ],
+  [
+   4.35,
+   5.54,
+   4.91,
+   6.1
+  ],
+  [
+   5.54,
+   8.965000000000002,
+   6.22,
+   9.64501133786848
+  ],
+  [
+   9.205,
+   10.61,
+   9.64501133786848,
+   11.050022675736962
+  ],
+  [
+   10.61,
+   12.15,
+   11.050022675736962,
+   12.59002267573696
+  ],
+  [
+   12.15,
+   14.815000000000001,
+   12.63002267573696,
+   15.295034013605441
+  ],
+  [
+   14.815000000000001,
+   15.365,
+   15.84503401360544,
+   16.39501133786848
+  ],
+  [
+   15.365,
+   16.94,
+   16.39501133786848,
+   17.97002267573696
+  ],
+  [
+   16.94,
+   17.785,
+   18.04002267573696,
+   18.88501133786848
+  ],
+  [
+   17.785,
+   19.130000000000003,
+   19.085011337868483,
+   20.430022675736964
+  ],
+  [
+   19.130000000000003,
+   21.375,
+   20.470022675736963,
+   22.715034013605443
+  ],
+  [
+   21.375,
+   22.32,
+   23.345034013605442,
+   24.29002267573696
+  ],
+  [
+   22.990000000000002,
+   25.01,
+   24.29002267573696,
+   26.31002267573696
+  ],
+  [
+   25.01,
+   25.865,
+   26.87002267573696,
+   27.725011337868477
+  ],
+  [
+   25.865,
+   26.655,
+   27.975011337868477,
+   28.765034013605437
+  ],
+  [
+   26.655,
+   27.26,
+   29.335034013605437,
+   29.940022675736955
+  ],
+  [
+   27.26,
+   29.96,
+   30.270022675736957,
+   32.970022675736956
+  ],
+  [
+   30.050000000000004,
+   31.145000000000003,
+   32.970022675736956,
+   34.065034013605434
+  ],
+  [
+   31.145000000000003,
+   32.129999999999995,
+   34.46503401360543,
+   35.45002267573695
+  ],
+  [
+   32.129999999999995,
+   33.905,
+   35.75002267573696,
+   37.52501133786848
+  ],
+  [
+   33.905,
+   36.415000000000006,
+   37.61501133786848,
+   40.12503401360544
+  ],
+  [
+   36.415000000000006,
+   40.542040816326534,
+   40.45503401360545,
+   44.5820634920635
+  ]
+ ],
+ "pausen": [
+  {
+   "nach": 14,
+   "wort": "führt?",
+   "vor": "Ich",
+   "roh": 0.14,
+   "neu": 0.7,
+   "grund": "führt? -> Ich"
+  },
+  {
+   "nach": 18,
+   "wort": "aus.",
+   "vor": "Die",
+   "roh": 0.58,
+   "neu": 0.7,
+   "grund": "aus. -> Die (Rückblick beginnt)"
+  },
+  {
+   "nach": 29,
+   "wort": "Betriebe,",
+   "vor": "bestickt",
+   "roh": 0.39,
+   "neu": 0.15,
+   "grund": "Betriebe, -> bestickt (Rückblick Satz 1 zusammenhalten)"
+  },
+  {
+   "nach": 33,
+   "wort": "Bestellung.",
+   "vor": "Anmelden",
+   "roh": 0.12,
+   "neu": 0.12,
+   "grund": "Rückblick Satz 1 -> 2 (Vorgabe <= 0,2 s)"
+  },
+  {
+   "nach": 37,
+   "wort": "Mensch.",
+   "vor": "Heute",
+   "roh": 0.66,
+   "neu": 0.7,
+   "grund": "Mensch. -> Heute (Rückblick endet, Fahrt zu BETRIEBE)"
+  },
+  {
+   "nach": 44,
+   "wort": "Chemnitz.",
+   "vor": "Claude:",
+   "roh": 0.15,
+   "neu": 0.7,
+   "grund": "Chemnitz. -> Claude (neuer Akt, Region-Karte steht)"
+  },
+  {
+   "nach": 45,
+   "wort": "Claude:",
+   "vor": "letztes",
+   "roh": 0.13,
+   "neu": 0.13,
+   "grund": "Claude: -> letztes (roh 0,13 belassen: mit 0,35 hört STT 5/13 'Websearch', mit 0,13 15/15 'Websuche')"
+  },
+  {
+   "nach": 48,
+   "wort": "angehängt,",
+   "vor": "Websuche,",
+   "roh": 0.28,
+   "neu": 0.35,
+   "grund": "angehängt, -> Websuche (Shot-Wechsel 01 -> 07)"
+  },
+  {
+   "nach": 49,
+   "wort": "Websuche,",
+   "vor": "Excel-Liste.",
+   "roh": 0.15,
+   "neu": 0.35,
+   "grund": "Websuche, -> Excel-Liste (Shot-Wechsel 07 -> 06)"
+  },
+  {
+   "nach": 50,
+   "wort": "Excel-Liste.",
+   "vor": "Fünf",
+   "roh": 0.66,
+   "neu": 0.7,
+   "grund": "Excel-Liste. -> Fünf (Datei-Karte steht, Übergang Liste)"
+  },
+  {
+   "nach": 55,
+   "wort": "ansprechen.",
+   "vor": "Warum?",
+   "roh": 0.27,
+   "neu": 0.9,
+   "grund": "ansprechen. -> Warum (vor dem Warum bis 0,9)"
+  },
+  {
+   "nach": 56,
+   "wort": "Warum?",
+   "vor": "Das",
+   "roh": 1.37,
+   "neu": 0.7,
+   "grund": "Warum? -> Grund 1"
+  },
+  {
+   "nach": 62,
+   "wort": "sichtbar.",
+   "vor": "Einer",
+   "roh": 0.14,
+   "neu": 0.7,
+   "grund": "Grund 1 -> Grund 2 (Karten je >= 1,2 s)"
+  },
+  {
+   "nach": 65,
+   "wort": "ein,",
+   "vor": "braucht",
+   "roh": 0.0,
+   "neu": 0.25,
+   "grund": "ein, -> braucht (Komma hörbar)"
+  },
+  {
+   "nach": 67,
+   "wort": "Kleidung.",
+   "vor": "Haken:",
+   "roh": 0.13,
+   "neu": 0.7,
+   "grund": "Grund 2 -> Haken"
+  },
+  {
+   "nach": 68,
+   "wort": "Haken:",
+   "vor": "Teamgröße",
+   "roh": 0.22,
+   "neu": 0.55,
+   "grund": "Haken: -> Teamgröße"
+  },
+  {
+   "nach": 73,
+   "wort": "Verzeichnis.",
+   "vor": "Als",
+   "roh": 0.79,
+   "neu": 0.7,
+   "grund": "Verzeichnis. -> Als Nächstes (Zähler 17 VON 20 steht)"
+  },
+  {
+   "nach": 75,
+   "wort": "Nächstes:",
+   "vor": "Was",
+   "roh": 0.15,
+   "neu": 0.55,
+   "grund": "Nächstes: -> Was"
+  },
+  {
+   "nach": 78,
+   "wort": "sie?",
+   "vor": "Kommentiere",
+   "roh": 0.4,
+   "neu": 0.7,
+   "grund": "sie? -> CTA"
+  },
+  {
+   "nach": 80,
+   "wort": "„Kunden“,",
+   "vor": "und",
+   "roh": 0.41,
+   "neu": 0.5,
+   "grund": "„Kunden“, -> und (Keyword setzt sich)"
+  },
+  {
+   "nach": 87,
+   "wort": "Listenvorlage.",
+   "vor": "Damit",
+   "roh": 0.37,
+   "neu": 0.7,
+   "grund": "Listenvorlage. -> Damit"
+  }
+ ]
+}

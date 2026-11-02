@@ -1,0 +1,1252 @@
+{
+ "folge": 15,
+ "tag": 15,
+ "serientag": 4,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-31",
+ "slot": "2026-10-31 15:00",
+ "keyword": "Versand",
+ "seconds": 45.0,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 303.5,
+  "musicMute": [],
+  "musicCurve": [
+   [
+    0,
+    0.035
+   ],
+   [
+    22.2,
+    0.035
+   ],
+   [
+    22.4,
+    0.022
+   ],
+   [
+    23.15,
+    0.022
+   ],
+   [
+    23.23,
+    0.05
+   ],
+   [
+    23.9,
+    0.035
+   ],
+   [
+    44.0,
+    0.035
+   ],
+   [
+    44.15,
+    0.05
+   ],
+   [
+    44.6,
+    0.05
+   ],
+   [
+    45.0,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 303,5 s am Stück bis 348,7 (45,2 s inkl. Reserve), nie geloopt. Vortags-Bereich (2026-10-30: Folge 9 276,36–322,9 / Folge 12 328,0–373,58), weder Abschnitt von Folge 13 (0,10–45,10) noch 14 (106,65–152,35), > 150 s Abstand zu beiden. music-explicit-check 2× 0 explizite Wörter, daher kein musicMute. Details musik.txt"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Ziffern in words.json: hundert → 100, Fünf → 5, Vier → 4, zehn → 10. Kollisionen: 'wie' (0.0 / 35.61), 'ein' (0.95 / 18.12 / 28.36), 'das' (1.58 / 5.41 / 29.51), 'ki' (2.0 / 6.87), 'ich' (4.95 / 39.81), 'die' (6.25 / 13.76 / 24.28 / 36.0 / 40.37), 'briefe' (11.09 / 31.35), 'einer' (11.61 / 32.57), 'sie' (13.63 / 21.19), 'adressen' (13.89 / 36.11 / 43.59), 'impressum' (19.14 / 21.81 / 29.8), 'in' (36.54 / 42.43). In episode.json immer 'Wort@Zeit'.",
+ "textregel": "Neue Textblöcke (ohne Untertitel) je ≥ 1,2 s auseinander, ≤ 4 Wörter (+ kleine Unterzeile), nie zwei gleichzeitig. Screenshots: nie mehr als ~12 lesbare Wörter gleichzeitig. Versand-Chips = Bild-Objekt.",
+ "verboten": [
+  "'Hamburg' in irgendeinem Frame",
+  "Betriebs-/Personennamen, Straßen, PLZ, Domains, Telefon, Orte außer Chemnitz, Registernummer",
+  "alle Bilder ohne '-anonym' außer 01, 06, 07",
+  "liste-text.txt, Spalten Quelle_Adresse/Pruefhinweis lesbar",
+  "Umsatz-Zähler",
+  "Haken an GEWERBE",
+  "WEBSITE grün",
+  "'TAG 4'-Slam / 'gestern'",
+  "claude.ai-Sidebar",
+  "'amtlich', 'geprüft im Handelsregister', Handelsregister-Logo/-Schriftzug groß",
+  "Zahl der Suchen (18)",
+  "Kuvert/Briefmarke/Briefkasten/Drucker (Drucken/Porto = Mensch, nicht erzählt)",
+  "'boilr'"
+ ],
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE\nENTWURF",
+   "GEWERBE\nOFFEN",
+   "BETRIEBE",
+   "WERBEBRIEF",
+   "ADRESSEN",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6,
+   7
+  ],
+  "wip": [
+   4
+  ],
+  "current": 8,
+  "done_am_ende": [
+   8
+  ],
+  "notiz": "Anschluss Folge 14 (beats.json plan_vorschlag: done [0,1,2,3,6,7], wip [4], current 8 ADRESSEN). public/firma-ep/tag14/episode.json gab es beim Regie-Lauf noch nicht – falls Design dort anders nummeriert (9 Felder, WERBEBRIEF current mit Unterzeile ADRESSEN), gilt die Folge-14-Fassung und ADRESSEN = Unterzeile. Folge 15: ADRESSEN bleibt current bis zum Ergebnis, bekommt auf 'raus' (B15) den Haken (Vorschlag; 1 Brief mit PLZ-Vorbehalt bleibt als kleiner gelber Punkt). GEWERBE offen mit MENSCH, WEBSITE 'ENTWURF'. Kein Umsatz-Zähler."
+ },
+ "story_objekt": {
+  "name": "empfaengerliste_versand",
+  "quellen": {
+   "xlsx": {
+    "src": "design/lauf/Kolonnenshirt_Empfaenger_Serienbrief.xlsx",
+    "blatt": "Empfaenger",
+    "lesbar": [
+     "Nr",
+     "Versand",
+     "Geprueft_am (31.10.2026)"
+    ],
+    "schwarz": [
+     "Firmenname",
+     "Zusatz",
+     "Strasse",
+     "PLZ",
+     "Ort (nur 'Chemnitz' erlaubt, sonst Balken)",
+     "Quelle_im_Brief",
+     "Pruefhinweis",
+     "Quelle_Adresse"
+    ],
+    "versand": {
+     "1": "Ja",
+     "2": "Ja mit Vorbehalt",
+     "3": "Ja",
+     "4": "Ja",
+     "5": "Ja"
+    },
+    "widerspruch_zeile": 5,
+    "plz_zeile": 2,
+    "hinweis": "Story-Objekt. Lokal aus der xlsx rendern (wie Folge 12/14). Versand-Chips: 'Ja' grün, 'Ja mit Vorbehalt' gelb. Zeile 5 = früherer Widerspruch (Folge 14 rot), jetzt grün. Nie Namen, Straßen, PLZ, Domains, Registernummer."
+   },
+   "alt": {
+    "src": "../firma-tag14/design/lauf/02-empfaenger-tabelle-anonym.png",
+    "hinweis": "Stand Folge 14: Chips 1× Belegt grün, 3× Prüfen gelb, 1× Widerspruch rot (Rückblick)."
+   }
+  },
+  "plaetze": [
+   [
+    "0",
+    "hook: Liste groß, Versand-Spalte 4× Ja, 1× Vorbehalt"
+   ],
+   [
+    "Ich@4.5",
+    "off"
+   ],
+   [
+    "5@10.5",
+    "5 Brief-Miniaturen (1 sicher)"
+   ],
+   [
+    "Heute",
+    "4 Briefe mit '?'"
+   ],
+   [
+    "Claude+0.15",
+    "off (Claude-Weg, XLSX-Karte im Shot)"
+   ],
+   [
+    "Ein@17.8",
+    "off (Quellen-Karten)"
+   ],
+   [
+    "4@30.5",
+    "Liste groß, Versand-Spalte"
+   ],
+   [
+    "Als@34.5",
+    "Liste klein neben dem Brief"
+   ],
+   [
+    "Kommentiere",
+    "Mini-Liste in der Endkarte"
+   ]
+  ]
+ },
+ "shots": {
+  "01": {
+   "src": "design/lauf/01-prompt-mit-anhang.png",
+   "size": [
+    937,
+    678
+   ],
+   "crop": {
+    "x": 730,
+    "y": 10,
+    "w": 200,
+    "h": 195
+   },
+   "marks": [
+    {
+     "x": 738,
+     "y": 18,
+     "w": 180,
+     "h": 178,
+     "farbe": "orange",
+     "at": "Liste",
+     "was": "Anhang-Karte 'Kolonnenshirt_Empfaenger_Serienbrief.xlsx · XLSX'"
+    }
+   ],
+   "hinweis": "Lesbar nur die XLSX-Karte; Prompt darunter nur weiche Textur (enthält 'Handelsregister' – nicht lesbar zeigen). Keine Sidebar."
+  },
+  "07": {
+   "src": "design/lauf/07-schritte-zeile.png",
+   "size": [
+    937,
+    142
+   ],
+   "crop": {
+    "x": 20,
+    "y": 95,
+    "w": 700,
+    "h": 40
+   },
+   "marks": [
+    {
+     "x": 150,
+     "y": 98,
+     "w": 250,
+     "h": 32,
+     "farbe": "orange",
+     "at": "Websuche",
+     "was": "'das Web durchsucht' in 'Eine Datei geteilt, das Web durchsucht und 15 weitere Schritte'"
+    }
+   ],
+   "hinweis": "Nur die graue Schritte-Zeile (≤ 10 Wörter). Zahl der Suchen (18) nicht zeigen."
+  },
+  "06": {
+   "src": "design/lauf/06-datei-karte.png",
+   "size": [
+    937,
+    116
+   ],
+   "hinweis": "Datei-Karte XLSX (aktualisierte Liste) – Übergang in die Excel-Ansicht im Ergebnis-Akt."
+  },
+  "05": {
+   "src": "design/lauf/05-register-widerspruch-anonym.png",
+   "size": [
+    937,
+    270
+   ],
+   "bereiche": {
+    "ersteintragung": {
+     "x": 20,
+     "y": 40,
+     "w": 900,
+     "h": 30,
+     "text": "… ist die Anschrift aus der Ersteintragung von 2014."
+    },
+    "eintrag3": {
+     "x": 20,
+     "y": 100,
+     "w": 900,
+     "h": 64,
+     "text": "Eintragung Nr. 3 … eingetragen am 08.09.2015"
+    },
+    "schluss": {
+     "x": 20,
+     "y": 225,
+     "w": 900,
+     "h": 32,
+     "text": "Das Impressum mit dem Vermerk von 2010 stimmt also noch."
+    }
+   },
+   "hinweis": "Nur als Beleg-Textur hinter den Warum-Karten, je ein Bereich markiert; 'Handelsregister'-Zeile nie groß/lesbar; Branche 'Dachdeckerei' nicht hervorheben."
+  },
+  "03": {
+   "src": "design/lauf/03-kernsatz-anonym.png",
+   "size": [
+    937,
+    86
+   ],
+   "text": "Vier Briefe können ohne Einschränkung raus. Einer kann raus, wenn du vorher kurz die PLZ prüfst. …",
+   "hinweis": "Optional im Ergebnis-Akt als Beleg-Zeile (≤ 12 Wörter sichtbar)."
+  },
+  "02/04/08/09": "in dieser Folge nicht geplant; nur als -anonym"
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 0.74,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Frame 1 = Ergebnis (hooks.md): Hook-Frage oben ab Frame 0 ('Wie viel Umsatz macht eine KI in 100 Tagen?'). Darunter die aktualisierte Excel-Empfängerliste (XLSX): 5 Zeilen, Namen/Adressen schwarze Balken, Spalte VERSAND lesbar: 'Ja' grün 4×, 'Ja mit Vorbehalt' gelb 1×. Daneben klein ein Stapel aus 5 Briefen (Brief-Miniatur Folge 13). Auf 'Umsatz' Marker-Wisch über die Versand-Spalte. Kein Umsatz-Zähler, kein TAG.",
+   "kamera": "langsamer Push-in auf die Versand-Spalte; Drop-Punch +4 % auf 'Umsatz'",
+   "frage": "Was ist das für eine Liste – wer darf raus?",
+   "karten": [
+    {
+     "text": "Wie viel Umsatz macht / eine KI in 100 Tagen?",
+     "at": "0",
+     "t": 0.0
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.35
+    }
+   ],
+   "xlsx": {
+    "src": "design/lauf/Kolonnenshirt_Empfaenger_Serienbrief.xlsx",
+    "blatt": "Empfaenger",
+    "lesbar": [
+     "Nr",
+     "Versand",
+     "Geprueft_am (31.10.2026)"
+    ],
+    "schwarz": [
+     "Firmenname",
+     "Zusatz",
+     "Strasse",
+     "PLZ",
+     "Ort (nur 'Chemnitz' erlaubt, sonst Balken)",
+     "Quelle_im_Brief",
+     "Pruefhinweis",
+     "Quelle_Adresse"
+    ],
+    "versand": {
+     "1": "Ja",
+     "2": "Ja mit Vorbehalt",
+     "3": "Ja",
+     "4": "Ja",
+     "5": "Ja"
+    },
+    "widerspruch_zeile": 5,
+    "plz_zeile": 2,
+    "hinweis": "Story-Objekt. Lokal aus der xlsx rendern (wie Folge 12/14). Versand-Chips: 'Ja' grün, 'Ja mit Vorbehalt' gelb. Zeile 5 = früherer Widerspruch (Folge 14 rot), jetzt grün. Nie Namen, Straßen, PLZ, Domains, Registernummer."
+   },
+   "brief": {
+    "src": "../firma-tag13/design/lauf/04-brief-word.png",
+    "hinweis": "Werbebrief aus Folge 13, Text unlesbar, Empfängerfeld leer/gelb."
+   },
+   "events": [
+    0.0,
+    "Umsatz"
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 0.74,
+   "bis": 3.38,
+   "wort_start": {
+    "w": "macht",
+    "after": 0
+   },
+   "bild": "Nur Ereignisse, kein neuer Text: grüne Chips pulsen nacheinander ('macht', 'Unternehmen', 'das@1.5', 'KI@1.9'), gelber Chip wackelt auf '100', Licht-Sweep auf 'Tage', Kamera rutscht auf 'lang' zur gelben Zeile.",
+   "kamera": "steht, atmet; Mini-Punch auf '100'",
+   "frage": "Warum ist einer gelb?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "macht",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "Unternehmen",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "das@1.5",
+     "f": "popHi",
+     "v": 0.16
+    },
+    {
+     "anker": "KI@1.9",
+     "f": "click",
+     "v": 0.16
+    },
+    {
+     "anker": "100",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Tage",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "lang",
+     "f": "wshort",
+     "v": 0.16
+    }
+   ],
+   "events": [
+    "macht",
+    "Unternehmen",
+    "das@1.5",
+    "KI@1.9",
+    "100",
+    "Tage",
+    "lang"
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.38,
+   "bis": 4.95,
+   "wort_start": {
+    "w": "ganz",
+    "after": 3
+   },
+   "bild": "Stempel 'GANZ ALLEINE.' auf 'alleine'; Punch-in auf 'führt?'; in der Pause danach pulst die Versand-Spalte einmal.",
+   "kamera": "Punch-in 4 % auf 'führt?'",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine",
+     "t": 3.66
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz@3-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    },
+    {
+     "anker": "führt",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "t": 4.5,
+     "f": "tick",
+     "v": 0.15
+    }
+   ],
+   "events": [
+    "ganz@3",
+    "alleine",
+    "führt",
+    4.5
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 4.95,
+   "bis": 6.25,
+   "wort_start": {
+    "w": "Ich",
+    "after": 4.5
+   },
+   "bild": "Liste + Briefstapel fliegen raus, Gründungsplan blendet ein, Maskottchen hüpft auf 'probier'. Nicht erste Folge des Tages: kein Tages-Slam, kein 'TAG 4' (kleines HUD-Badge erlaubt).",
+   "kamera": "Pull-back zum Board",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ich@4.5-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "probier",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "aus@5",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "events": [
+    "Ich@4.5",
+    "probier",
+    "aus@5"
+   ],
+   "hook_at": {
+    "end": "Die@6.0-0.08"
+   }
+  },
+  {
+   "id": "B05",
+   "akt": "rueckblick",
+   "von": 6.25,
+   "bis": 9.41,
+   "wort_start": {
+    "w": "Die",
+    "after": 6.0
+   },
+   "bild": "Gründungsplan ganz im Bild (plan_vorschlag): WERBEBRIEF abgehakt, ADRESSEN gold (current). Produkt-Karte 'SHIRTS MIT LOGO' auf 'verkauft'; auf 'Betriebe@8.9' kleine Handwerker-Silhouetten mit Shirt (kein Text).",
+   "kamera": "ruhig, Board voll",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "at": "verkauft",
+     "t": 7.2
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@6.0-0.08",
+     "f": "wqh",
+     "v": 0.18
+    },
+    {
+     "anker": "verkauft",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Betriebe@8.9",
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "rueckblick",
+   "von": 9.41,
+   "bis": 10.79,
+   "wort_start": {
+    "w": "bestickt",
+    "after": 9.0
+   },
+   "bild": "Banner 'erst auf Bestellung bestickt' in der Produkt-Karte.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "erst auf Bestellung / bestickt",
+     "at": "bestickt",
+     "t": 9.41
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "rueckblick",
+   "von": 10.79,
+   "bis": 13.03,
+   "wort_start": {
+    "w": "5",
+    "after": 10.5
+   },
+   "bild": "Am Feld ADRESSEN (gold) fächern auf '5@10.5' fünf Brief-Miniaturen auf (Folge 13, Empfängerfeld leer); auf 'einer' bekommt EIN Brief einen grünen Haken, vier bleiben grau mit '?' (Stand Folge 14: nur eine Adresse sicher; ALTLISTE als Vorlage für die Farben). Kein neuer Textblock (Ziffer kommt aus den Untertiteln). In der 0,81-s-Pause nach 'sicher.' Kamera auf ADRESSEN.",
+   "kamera": "leichter Push-in auf ADRESSEN",
+   "frage": "Und die anderen vier?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "5@10.5",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "einer@11.5",
+     "f": "check",
+     "v": 0.24
+    },
+    {
+     "anker": "sicher:end+0.1",
+     "f": "wq2",
+     "v": 0.18
+    }
+   ],
+   "altliste": {
+    "src": "../firma-tag14/design/lauf/02-empfaenger-tabelle-anonym.png",
+    "hinweis": "Stand Folge 14: Chips 1× Belegt grün, 3× Prüfen gelb, 1× Widerspruch rot (Rückblick)."
+   },
+   "brief": {
+    "src": "../firma-tag13/design/lauf/04-brief-word.png",
+    "hinweis": "Werbebrief aus Folge 13, Text unlesbar, Empfängerfeld leer/gelb."
+   }
+  },
+  {
+   "id": "B08",
+   "akt": "heute",
+   "von": 13.03,
+   "bis": 15.18,
+   "wort_start": {
+    "w": "Heute",
+    "after": 12.8
+   },
+   "bild": "Pill 'HEUTE: ADRESSEN PRÜFEN' auf 'Heute'. Die vier grauen Briefe mit '?' rücken nach vorn, auf 'Adressen' hebt sich eine Lupe über sie (kein Text).",
+   "kamera": "Fahrt durch ADRESSEN auf die Briefe",
+   "frage": "Wie prüft sie das?",
+   "karten": [
+    {
+     "text": "HEUTE: ADRESSEN PRÜFEN",
+     "at": "Heute",
+     "t": 13.03
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Heute+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "Adressen@13.5",
+     "f": "tick",
+     "v": 0.14
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 15.18,
+   "bis": 16.74,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Echter Shot 01 im Paper-Fenster (SHOT01), Einstieg 'Claude+0.15'. Auf 'Liste' orange Rahmen um die XLSX-Karte (Excel aus Folge 14); auf 'angehängt' Zeiger tippt auf '+', Karte hüpft.",
+   "kamera": "Push-in auf die XLSX-Karte",
+   "frage": "Womit fängt sie an?",
+   "karten": [
+    {
+     "text": "Shot 01 Anhang-Karte XLSX (Screenshot, ≤ 8 lesbare Wörter)",
+     "at": "Claude+0.15",
+     "t": 15.18
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Claude",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "Liste",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "angehängt",
+     "f": "click",
+     "v": 0.22
+    }
+   ],
+   "ton": "Pause 'Claude:' → 'Liste' roh gelassen (0,17 s, Lehre 12); 'angehängt,' → 'Websuche' nur 0,2 s (STT-stabil 17/17, länger kippt zu 'Websearch')",
+   "shot": {
+    "src": "design/lauf/01-prompt-mit-anhang.png",
+    "size": [
+     937,
+     678
+    ],
+    "crop": {
+     "x": 730,
+     "y": 10,
+     "w": 200,
+     "h": 195
+    },
+    "marks": [
+     {
+      "x": 738,
+      "y": 18,
+      "w": 180,
+      "h": 178,
+      "farbe": "orange",
+      "at": "Liste",
+      "was": "Anhang-Karte 'Kolonnenshirt_Empfaenger_Serienbrief.xlsx · XLSX'"
+     }
+    ],
+    "hinweis": "Lesbar nur die XLSX-Karte; Prompt darunter nur weiche Textur (enthält 'Handelsregister' – nicht lesbar zeigen). Keine Sidebar."
+   },
+   "einstieg": "Claude+0.15"
+  },
+  {
+   "id": "B10",
+   "akt": "claude",
+   "von": 16.74,
+   "bis": 18.12,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Schnitt auf echten Shot 07: NUR die Zeile 'Eine Datei geteilt, das Web durchsucht und 15 weitere Schritte'. Auf 'Websuche' Glanz/Unterstrich über 'das Web durchsucht', kleine Lupe. In der 0,7-s-Pause: Zeile klappt zusammen.",
+   "kamera": "leichter Push-in auf die Zeile",
+   "frage": "Wo sucht sie?",
+   "karten": [
+    {
+     "text": "Shot 07 Schritte-Zeile (Screenshot, ≤ 10 Wörter)",
+     "at": "angehängt:end+0.06",
+     "t": 16.74
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "angehängt:end+0.06",
+     "f": "wshort",
+     "v": 0.18
+    },
+    {
+     "anker": "Websuche",
+     "f": "typing",
+     "v": 0.14
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/07-schritte-zeile.png",
+    "size": [
+     937,
+     142
+    ],
+    "crop": {
+     "x": 20,
+     "y": 95,
+     "w": 700,
+     "h": 40
+    },
+    "marks": [
+     {
+      "x": 150,
+      "y": 98,
+      "w": 250,
+      "h": 32,
+      "farbe": "orange",
+      "at": "Websuche",
+      "was": "'das Web durchsucht' in 'Eine Datei geteilt, das Web durchsucht und 15 weitere Schritte'"
+     }
+    ],
+    "hinweis": "Nur die graue Schritte-Zeile (≤ 10 Wörter). Zahl der Suchen (18) nicht zeigen."
+   }
+  },
+  {
+   "id": "B11",
+   "akt": "streit",
+   "von": 18.12,
+   "bis": 21.19,
+   "wort_start": {
+    "w": "Ein",
+    "after": 17.8
+   },
+   "bild": "EIN Block: links Karte 'IMPRESSUM' (Website-Fußzeile, Adresse = schwarzer Balken), rechts Karte 'REGISTER' (Abschrift-Blatt, anderer schwarzer Balken), dazwischen rotes '≠'. Auf 'Betrieb' erscheint oben klein EIN Betriebs-Icon (kein Name). 'Impressum@19' linke Karte leuchtet, 'Register@20' rechte Karte leuchtet. Kein Handelsregister-Logo.",
+   "kamera": "Push-in auf beide Karten",
+   "frage": "Welche stimmt?",
+   "karten": [
+    {
+     "text": "IMPRESSUM ≠ REGISTER",
+     "at": "Ein@17.8",
+     "t": 18.12
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Ein@17.8-0.1",
+     "f": "wq2",
+     "v": 0.18
+    },
+    {
+     "anker": "Impressum@19",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Register@20",
+     "f": "popLo",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "akt": "entscheidung",
+   "von": 21.19,
+   "bis": 23.23,
+   "wort_start": {
+    "w": "Sie",
+    "after": 21.0
+   },
+   "bild": "Auf 'Impressum@21.7' (Wortstart, damit ≥ 1,2 s bis WARUM?) Stempel 'IMPRESSUM' auf die linke Karte, rechte Karte (REGISTER) dimmt und kippt leicht weg (nicht durchgestrichen – sie wird im Warum erklärt). In der 0,9-s-Pause vor 'Warum?': steht, Musik-Mulde (Stück hat dort eine echte Pause).",
+   "kamera": "Push-in auf die Impressum-Karte, Halt",
+   "frage": "Warum dem Impressum?",
+   "karten": [
+    {
+     "text": "IMPRESSUM (Stempel)",
+     "at": "Impressum@21.7",
+     "t": 21.81
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Sie@21.0-0.05",
+     "f": "power",
+     "v": 0.18
+    },
+    {
+     "anker": "Impressum@21.7",
+     "f": "clack",
+     "v": 0.38
+    }
+   ],
+   "ton": "Musik: Mulde Clip 22,4–23,15 (Kurve 0,022, Stück selbst −49…−57 dB 22,85–23,15), Wiedereinsatz des Stücks 23,2 = Akzent auf 'Warum?' (23,23; Kurve 0,05)"
+  },
+  {
+   "id": "B13",
+   "akt": "warum",
+   "von": 23.23,
+   "bis": 26.51,
+   "wort_start": {
+    "w": "Warum",
+    "after": 23.0
+   },
+   "bild": "Impressum-Karte (gewählt) rückt klein ins obere Drittel und bleibt. Pill 'WARUM?' auf 'Warum?'. Karte 1 'ABSCHRIFT VON 2014' auf 'Register-Abschrift' (1,23 s nach der Pill), Gegenwert grau 'Ersteintragung'; auf 'alt' altert das Abschrift-Blatt (vergilbt, Datum 2014). Beleg-Textur: SHOT05 Bereich 'ersteintragung'.",
+   "kamera": "kurze Fahrt nach unten zu den Karten",
+   "frage": "Und woher weiß sie, dass das Impressum stimmt?",
+   "karten": [
+    {
+     "text": "WARUM?",
+     "at": "Warum",
+     "t": 23.23
+    },
+    {
+     "text": "ABSCHRIFT VON 2014",
+     "unter": "Ersteintragung",
+     "vs": null,
+     "at": "Register-Abschrift",
+     "t": 24.46
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.25
+    },
+    {
+     "anker": "Register-Abschrift",
+     "f": "popLo",
+     "v": 0.25
+    },
+    {
+     "anker": "alt",
+     "f": "roll",
+     "v": 0.16
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/05-register-widerspruch-anonym.png",
+    "size": [
+     937,
+     270
+    ],
+    "bereiche": {
+     "ersteintragung": {
+      "x": 20,
+      "y": 40,
+      "w": 900,
+      "h": 30,
+      "text": "… ist die Anschrift aus der Ersteintragung von 2014."
+     },
+     "eintrag3": {
+      "x": 20,
+      "y": 100,
+      "w": 900,
+      "h": 64,
+      "text": "Eintragung Nr. 3 … eingetragen am 08.09.2015"
+     },
+     "schluss": {
+      "x": 20,
+      "y": 225,
+      "w": 900,
+      "h": 32,
+      "text": "Das Impressum mit dem Vermerk von 2010 stimmt also noch."
+     }
+    },
+    "hinweis": "Nur als Beleg-Textur hinter den Warum-Karten, je ein Bereich markiert; 'Handelsregister'-Zeile nie groß/lesbar; Branche 'Dachdeckerei' nicht hervorheben."
+   },
+   "beleg_bereich": "ersteintragung"
+  },
+  {
+   "id": "B14",
+   "akt": "warum",
+   "von": 26.51,
+   "bis": 31.09,
+   "wort_start": {
+    "w": "Laut",
+    "after": 26.0
+   },
+   "bild": "Karte 2 'EINTRAG 2015: IMPRESSUM' auf 'Firmendatenbank' (Lauf: Eintragung Nr. 3 vom 08.09.2015 nennt die Impressum-Adresse), Unterzeile klein 'gelesen bei North Data' (Haken sichtbar, ≤ 4 Wörter), Gegenwert grau 'Abschrift 2014 ✗'. Auf 'bestätigt' Pfeil von Karte 2 zur Impressum-Karte oben; auf 'Impressum@29.7' grüner Haken an der Impressum-Karte. Karte 1 gedimmt. Beleg-Textur SHOT05 'eintrag3'. Nie 'amtlich', 'Handelsregister geprüft'.",
+   "kamera": "leichter Push-in auf Karte 2, dann Tilt zur Impressum-Karte",
+   "frage": "Und die anderen Briefe?",
+   "karten": [
+    {
+     "text": "EINTRAG 2015: IMPRESSUM",
+     "unter": "gelesen bei North Data",
+     "vs": "Abschrift 2014 ✗",
+     "at": "Firmendatenbank",
+     "t": 26.82
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Laut",
+     "f": "wshort",
+     "v": 0.14
+    },
+    {
+     "anker": "Firmendatenbank",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "bestätigt",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Impressum@29.7",
+     "f": "check",
+     "v": 0.24
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/05-register-widerspruch-anonym.png",
+    "size": [
+     937,
+     270
+    ],
+    "bereiche": {
+     "ersteintragung": {
+      "x": 20,
+      "y": 40,
+      "w": 900,
+      "h": 30,
+      "text": "… ist die Anschrift aus der Ersteintragung von 2014."
+     },
+     "eintrag3": {
+      "x": 20,
+      "y": 100,
+      "w": 900,
+      "h": 64,
+      "text": "Eintragung Nr. 3 … eingetragen am 08.09.2015"
+     },
+     "schluss": {
+      "x": 20,
+      "y": 225,
+      "w": 900,
+      "h": 32,
+      "text": "Das Impressum mit dem Vermerk von 2010 stimmt also noch."
+     }
+    },
+    "hinweis": "Nur als Beleg-Textur hinter den Warum-Karten, je ein Bereich markiert; 'Handelsregister'-Zeile nie groß/lesbar; Branche 'Dachdeckerei' nicht hervorheben."
+   },
+   "beleg_bereich": "eintrag3"
+  },
+  {
+   "id": "B15",
+   "akt": "ergebnis",
+   "von": 31.09,
+   "bis": 34.68,
+   "wort_start": {
+    "w": "4",
+    "after": 30.5
+   },
+   "bild": "Warum-Karten raus (0,2 s vor '4'). Story-Objekt kommt groß zurück: die aktualisierte Excel-Liste (XLSX; Übergang über Datei-Karte SHOT06). Auf '4@30.9' leuchten die vier 'Ja'-Chips grün nacheinander (Zeile 5 = früherer Widerspruch springt von rot auf grün), auf 'raus' fliegen vier Briefe aus dem Stapel (kein Kuvert/Briefkasten). Auf 'einer@32.5' gelber Chip 'Ja mit Vorbehalt' (Zeile 2) leuchtet, Karte 'PLZ PRÜFEN' auf 'Postleitzahl-Check' (1,98 s nach den Chips). Am Board-Feld ADRESSEN Haken (Vorschlag). Optional Beleg SHOT03.",
+   "kamera": "Push-in auf die Versand-Spalte, Halt in der 0,7-s-Pause",
+   "frage": "Und wie kommen die Adressen jetzt in den Brief?",
+   "karten": [
+    {
+     "text": "Versand-Chips Ja ×4 (Bild-Objekt)",
+     "at": "4@30.9",
+     "t": 31.09
+    },
+    {
+     "text": "PLZ PRÜFEN",
+     "at": "Postleitzahl-Check",
+     "t": 33.07
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "4@30.5-0.1",
+     "f": "wq2",
+     "v": 0.18
+    },
+    {
+     "anker": "4@30.5",
+     "f": "roll",
+     "v": 0.16
+    },
+    {
+     "anker": "raus",
+     "f": "power",
+     "v": 0.2
+    },
+    {
+     "anker": "einer@32.5",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "Postleitzahl-Check",
+     "f": "stamp",
+     "v": 0.3
+    }
+   ],
+   "xlsx": {
+    "src": "design/lauf/Kolonnenshirt_Empfaenger_Serienbrief.xlsx",
+    "blatt": "Empfaenger",
+    "lesbar": [
+     "Nr",
+     "Versand",
+     "Geprueft_am (31.10.2026)"
+    ],
+    "schwarz": [
+     "Firmenname",
+     "Zusatz",
+     "Strasse",
+     "PLZ",
+     "Ort (nur 'Chemnitz' erlaubt, sonst Balken)",
+     "Quelle_im_Brief",
+     "Pruefhinweis",
+     "Quelle_Adresse"
+    ],
+    "versand": {
+     "1": "Ja",
+     "2": "Ja mit Vorbehalt",
+     "3": "Ja",
+     "4": "Ja",
+     "5": "Ja"
+    },
+    "widerspruch_zeile": 5,
+    "plz_zeile": 2,
+    "hinweis": "Story-Objekt. Lokal aus der xlsx rendern (wie Folge 12/14). Versand-Chips: 'Ja' grün, 'Ja mit Vorbehalt' gelb. Zeile 5 = früherer Widerspruch (Folge 14 rot), jetzt grün. Nie Namen, Straßen, PLZ, Domains, Registernummer."
+   },
+   "shot": {
+    "src": "design/lauf/06-datei-karte.png",
+    "size": [
+     937,
+     116
+    ],
+    "hinweis": "Datei-Karte XLSX (aktualisierte Liste) – Übergang in die Excel-Ansicht im Ergebnis-Akt."
+   },
+   "beleg_optional": {
+    "src": "design/lauf/03-kernsatz-anonym.png",
+    "size": [
+     937,
+     86
+    ],
+    "text": "Vier Briefe können ohne Einschränkung raus. Einer kann raus, wenn du vorher kurz die PLZ prüfst. …",
+    "hinweis": "Optional im Ergebnis-Akt als Beleg-Zeile (≤ 12 Wörter sichtbar)."
+   }
+  },
+  {
+   "id": "B16",
+   "akt": "als_naechstes",
+   "von": 34.68,
+   "bis": 37.85,
+   "wort_start": {
+    "w": "Als",
+    "after": 34.5
+   },
+   "bild": "Pill 'ALS NÄCHSTES' auf 'Als'. Links der Werbebrief (BRIEF) mit leerem gelbem Empfängerfeld, rechts die Liste klein, dazwischen gestrichelter Pfeil mit großem '?'. Frage-Karte 'ADRESSEN IN DEN BRIEF?' auf 'Adressen@36' (1,43 s nach der Pill). Kein Drucker, kein Kuvert.",
+   "kamera": "Push-in auf den Pfeil, Halt",
+   "frage": "Wie macht sie fünf Briefe daraus?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@34.5",
+     "t": 34.68
+    },
+    {
+     "text": "ADRESSEN IN DEN BRIEF?",
+     "at": "Adressen@36",
+     "t": 36.11
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@34.5-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Als@34.5",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "anker": "Adressen@36",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Brief@36.6",
+     "f": "popLo",
+     "v": 0.18
+    }
+   ],
+   "brief": {
+    "src": "../firma-tag13/design/lauf/04-brief-word.png",
+    "hinweis": "Werbebrief aus Folge 13, Text unlesbar, Empfängerfeld leer/gelb."
+   }
+  },
+  {
+   "id": "B17",
+   "akt": "cta",
+   "von": 37.85,
+   "bis": 45.0,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 37.5
+   },
+   "bild": "Endkarte wie Folge 9–14 (end-Akt, itemTag 'DM'): Keyword 'Versand' tippt auf '„Versand“', Haken, Flieger. EIN Block 'PRÜFFRAGE' auf 'Prüffrage' (Snip: XLSX-Karte aus Shot 01 + Mini-Liste mit Versand-Chips, Text unlesbar). Ergebnis-Block '10 MINUTEN: SICHERE ADRESSEN' auf 'Damit+0.05', Puls auf 'sichere'. Halt bis Ende (Endkarte 1,0 s nach Stimmende), Bot-Hüpfer ~44,6.",
+   "kamera": "ruhiger Push-in, Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "Versand (Keyword)",
+     "at": "Versand@38.5",
+     "t": 38.57
+    },
+    {
+     "text": "PRÜFFRAGE",
+     "at": "Prüffrage",
+     "t": 40.52
+    },
+    {
+     "text": "10 MINUTEN: SICHERE ADRESSEN",
+     "at": "Damit+0.05",
+     "t": 41.93
+    },
+    {
+     "text": "Puls auf SICHERE (kein neuer Text)",
+     "at": "sichere"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "Versand@38.5",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Versand@38.5:end",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "ich@39.5",
+     "f": "wqh",
+     "v": 0.2
+    },
+    {
+     "anker": "Prüffrage",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Damit+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "10@42",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "sichere",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "t": 44.6,
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

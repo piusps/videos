@@ -1,0 +1,1483 @@
+{
+ "folge": 13,
+ "tag": 13,
+ "serientag": 3,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-30",
+ "slot": "2026-10-30 21:00",
+ "keyword": "Brief",
+ "seconds": 45.9,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 107.5,
+  "musicCurve": [
+   [
+    0,
+    0.035
+   ],
+   [
+    13.4,
+    0.035
+   ],
+   [
+    13.7,
+    0.026
+   ],
+   [
+    23.75,
+    0.026
+   ],
+   [
+    23.95,
+    0.012
+   ],
+   [
+    24.45,
+    0.012
+   ],
+   [
+    24.55,
+    0.05
+   ],
+   [
+    25.3,
+    0.028
+   ],
+   [
+    42.9,
+    0.028
+   ],
+   [
+    43.3,
+    0.045
+   ],
+   [
+    44.7,
+    0.045
+   ],
+   [
+    44.9,
+    0.08
+   ],
+   [
+    45.4,
+    0.08
+   ],
+   [
+    45.9,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 107,5 s am Stück bis 153,4 (45,9 s), nie geloopt; startet nach 'shit' (Track 107,10–107,28); music-explicit-check 2× ohne explizite Wörter; heute frei war nur 108,5–153,15 (44,65 s) – Ende überlappt Folge 11 (Start 153,15) um 0,25 s im Ausklang; Vortag Folge 6 nutzte 100,16–146,91 (Wiederverwendung wie Folge 8/10/11/12); Details musik.txt"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Ziffern in words.json: hundert → 100, zwanzig → 20, zehn → 10. Kollisionen: 'Brief' (22.06 / 29.33 / '„Brief“' 38.19), 'Liste' (11.75 / 16.99), 'Logo' (8.86 / 17.59), 'Anruf' (23.19 / 30.78), 'Sie'/'sie' (14.48 / 21.59 / 33.09), 'braucht' (26.23 / 31.22), 'Betriebe' (9.63 / 12.72), 'KI' (2.37 / 7.53), 'das' (1.89 / 5.84), 'Die'/'die' (6.89 / 36.29), 'ein'/'Ein' (1.17 / 29.05), 'und' (17.4 / 39.84), 'Mail' nur 22.71 ('Werbe-Mail' 25.65 eigenes Wort) → in episode.json immer 'Wort@Zeit'.",
+ "textregel": "Neue Textblöcke (ohne Untertitel) je ≥ 1,2 s auseinander, ≤ 4 Wörter (+ kleine Unterzeile), nie zwei gleichzeitig (Ausnahme Frame 0: Frage + Kartenstapel E-MAIL/ANRUF, wie Folge 10–12 Frage + Beschriftung). Brief/Screenshots: nie mehr als ~12 lesbare Wörter gleichzeitig.",
+ "verboten": [
+  "'Hamburg' in irgendeinem Frame",
+  "Betriebs-/Personennamen, Straßen, PLZ, Telefon (05 nur als 05-nicht-pruefen-anonym.png, Anhang-Inhalt nie öffnen, Liste nur liste-anonym.png als Textur)",
+  "05-nicht-pruefen.png",
+  "Umsatz-Zähler",
+  "Haken an GEWERBE",
+  "WEBSITE grün",
+  "'Tag drei' gesprochen/als Slam",
+  "claude.ai-Sidebar",
+  "Paragrafen-Stempel, 'Gesetz', 'verboten', 'rechtssicher', 'Urteil bestätigt' groß im Bild",
+  "'ERGÄNZEN'-Stempel oder Versand-Zoom im Warum-Akt (H-01)",
+  "Kuvert/Briefmarke/Briefkasten/Hand (Abschicken wird nicht erzählt)",
+  "'boilr'"
+ ],
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE",
+   "GEWERBE",
+   "BETRIEBE",
+   "WERBEBRIEF",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6
+  ],
+  "wip": {
+   "4": "ENTWURF"
+  },
+  "mensch": {
+   "5": "MENSCH (offen, Personen-Symbol, kein Haken)"
+  },
+  "current": 7,
+  "engine_vorschlag": {
+   "current": 7,
+   "done": [
+    0,
+    1,
+    2,
+    3,
+    6
+   ],
+   "wip": [
+    4,
+    5
+   ]
+  },
+  "notiz": "Anschluss Folge 12 (public/firma-ep/tag12/episode.json: done 0–3, wip [4,5], current 6). Folge 13: BETRIEBE wird im Rückblick abgehakt (auf 'Liste:'), WERBEBRIEF current (gold ab Ende 'Betriebe.'), GEWERBE bleibt offen mit MENSCH, WEBSITE bleibt 'ENTWURF'. Kein Umsatz-Zähler."
+ },
+ "story_objekt": {
+  "name": "brief",
+  "quellen": {
+   "brief": {
+    "src": "design/lauf/04-brief-word.png",
+    "size": [
+     1590,
+     1335
+    ],
+    "ganz": "design/lauf/brief-ansicht.png (1590 × 2245, nur falls die ganze Seite nötig ist; Widerspruchsblock unten nie lesbar groß)",
+    "bereiche": {
+     "logo": {
+      "x": 1083,
+      "y": 135,
+      "w": 332,
+      "h": 125
+     },
+     "absender": {
+      "x": 585,
+      "y": 278,
+      "w": 832,
+      "h": 36
+     },
+     "empfaenger": {
+      "x": 173,
+      "y": 362,
+      "w": 393,
+      "h": 110,
+      "text": "[Firmenname laut Impressum] [Straße Hausnummer] [PLZ Ort]"
+     },
+     "betreff": {
+      "x": 173,
+      "y": 588,
+      "w": 826,
+      "h": 42,
+      "text": "Werbung: Firmenshirts mit Ihrem gestickten Logo"
+     },
+     "preise": {
+      "x": 190,
+      "y": 803,
+      "w": 600,
+      "h": 85
+     },
+     "kernzeile": {
+      "x": 190,
+      "y": 893,
+      "w": 560,
+      "h": 40,
+      "text": "Gestickt wird erst, wenn Sie bestellen."
+     },
+     "versand": {
+      "x": 190,
+      "y": 938,
+      "w": 675,
+      "h": 40,
+      "text": "Versand: [Versandkosten und Lieferzeit ergänzen]"
+     }
+    },
+    "hinweis": "Lokal aus Claudes .docx gerendert (keine Word-/claude.ai-Pixel). Kein Betriebs-/Personenname im Brief (Empfänger nur Platzhalter). Als Papier-Objekt mit leichtem Schatten; lesbar je Beat nur der markierte Bereich (≤ 12 Wörter), Rest Textur. Nie Kuvert, Briefmarke, Briefkasten, Hand."
+   }
+  },
+  "plaetze": [
+   [
+    "0",
+    "hook: Brief groß, Kernzeile markiert, Stapel E-MAIL/ANRUF links"
+   ],
+   [
+    "Ich@4.5",
+    "off"
+   ],
+   [
+    "Werbung",
+    "Brief aus Feld WERBEBRIEF, Betreff leuchtet"
+   ],
+   [
+    "Claude+0.2",
+    "off (Claude-Weg)"
+   ],
+   [
+    "Sie@21",
+    "Brief-Miniatur als dritte Karte"
+   ],
+   [
+    "Warum",
+    "Brief klein oben"
+   ],
+   [
+    "Als@34",
+    "Brief groß, Empfängerfeld"
+   ],
+   [
+    "Kommentiere",
+    "Miniatur in der Endkarte"
+   ]
+  ]
+ },
+ "shots": {
+  "01": {
+   "src": "design/lauf/01-prompt-mit-anhang.png",
+   "size": [
+    1040,
+    830
+   ],
+   "crop": {
+    "x": 36,
+    "y": 112,
+    "w": 984,
+    "h": 640
+   },
+   "marks": [
+    {
+     "x": 53,
+     "y": 132,
+     "w": 178,
+     "h": 178,
+     "farbe": "orange",
+     "at": "Liste@16.5",
+     "was": "Anhang-Karte 'Shirt-Firma Ergebnis Betriebe.md · 41 Zeilen · MD'"
+    },
+    {
+     "x": 245,
+     "y": 132,
+     "w": 178,
+     "h": 178,
+     "farbe": "orange",
+     "at": "Logo@17.2",
+     "was": "Anhang-Karte 'Kolonnenshirt-Logo.svg · 6 Zeilen · TEXT'"
+    },
+    {
+     "x": 52,
+     "y": 702,
+     "w": 32,
+     "h": 32,
+     "at": "angehängt",
+     "was": "Zeiger tippt auf '+'"
+    }
+   ],
+   "hinweis": "Lesbar nur die zwei Anhang-Karten (je ≤ 5 Wörter). Prompt (y 340–690) nur als weiche/abgedunkelte Textur, nie lesbar. Begrüßung 'Abendgedanken' (y < 100) und Fußzeile 'Projekt/Opus/Manuell' (y > 760) nicht zeigen. Keine Sidebar."
+  },
+  "07": {
+   "src": "design/lauf/07-schritte-zeile.png",
+   "size": [
+    1206,
+    205
+   ],
+   "crop": {
+    "x": 30,
+    "y": 8,
+    "w": 690,
+    "h": 40
+   },
+   "marks": [
+    {
+     "x": 44,
+     "y": 12,
+     "w": 640,
+     "h": 32,
+     "farbe": "orange",
+     "at": "Websuche",
+     "was": "Denkblock-Titel 'Suche nach UWG-Regeln für E-Mail-Werbung im B2B-Bereich' (Glanz/Unterstrich)"
+    }
+   ],
+   "hinweis": "Nur die Titelzeile des Denkblocks (8 Wörter). Satz darunter und 'Eine Datei erstellt …'-Zeile nicht (sonst > 12 Wörter). Die Zeile sagt nicht 'Web durchsucht' – Beleg Websuche = LAUF.md (5 Websuchen)."
+  },
+  "06": {
+   "src": "design/lauf/06-datei-karte.png",
+   "size": [
+    1206,
+    170
+   ],
+   "crop": {
+    "x": 38,
+    "y": 20,
+    "w": 785,
+    "h": 102
+   },
+   "marks": [
+    {
+     "x": 40,
+     "y": 22,
+     "w": 780,
+     "h": 97,
+     "farbe": "orange",
+     "at": "Word-Datei",
+     "was": "Datei-Karte 'Kolonnenshirt werbebrief · Dokument · DOCX'"
+    }
+   ]
+  },
+  "02": {
+   "src": "design/lauf/02-rechtslage-quellen.png",
+   "size": [
+    1206,
+    722
+   ],
+   "crop": {
+    "x": 40,
+    "y": 4,
+    "w": 330,
+    "h": 36
+   },
+   "hinweis": "Optional als kleine Beleg-Kachel am Stempel 'DER BRIEF.': nur 'Meine Entscheidung: der Brief.' (4 Wörter). Rest (§ 7 UWG, BGH, OLG) nie lesbar, kein Paragrafen-Stempel."
+  },
+  "03": {
+   "src": "design/lauf/03-entscheidung-gruende.png",
+   "size": [
+    1206,
+    326
+   ],
+   "hinweis": "Optional nur als unlesbare Textur hinter den Warum-Karten (Beleg). Nicht lesbar zeigen."
+  },
+  "brief": {
+   "src": "design/lauf/04-brief-word.png",
+   "size": [
+    1590,
+    1335
+   ],
+   "ganz": "design/lauf/brief-ansicht.png (1590 × 2245, nur falls die ganze Seite nötig ist; Widerspruchsblock unten nie lesbar groß)",
+   "bereiche": {
+    "logo": {
+     "x": 1083,
+     "y": 135,
+     "w": 332,
+     "h": 125
+    },
+    "absender": {
+     "x": 585,
+     "y": 278,
+     "w": 832,
+     "h": 36
+    },
+    "empfaenger": {
+     "x": 173,
+     "y": 362,
+     "w": 393,
+     "h": 110,
+     "text": "[Firmenname laut Impressum] [Straße Hausnummer] [PLZ Ort]"
+    },
+    "betreff": {
+     "x": 173,
+     "y": 588,
+     "w": 826,
+     "h": 42,
+     "text": "Werbung: Firmenshirts mit Ihrem gestickten Logo"
+    },
+    "preise": {
+     "x": 190,
+     "y": 803,
+     "w": 600,
+     "h": 85
+    },
+    "kernzeile": {
+     "x": 190,
+     "y": 893,
+     "w": 560,
+     "h": 40,
+     "text": "Gestickt wird erst, wenn Sie bestellen."
+    },
+    "versand": {
+     "x": 190,
+     "y": 938,
+     "w": 675,
+     "h": 40,
+     "text": "Versand: [Versandkosten und Lieferzeit ergänzen]"
+    }
+   },
+   "hinweis": "Lokal aus Claudes .docx gerendert (keine Word-/claude.ai-Pixel). Kein Betriebs-/Personenname im Brief (Empfänger nur Platzhalter). Als Papier-Objekt mit leichtem Schatten; lesbar je Beat nur der markierte Bereich (≤ 12 Wörter), Rest Textur. Nie Kuvert, Briefmarke, Briefkasten, Hand."
+  },
+  "05/08/04-brief-chat": "in dieser Folge nicht geplant; 05 nur als -anonym"
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 0.89,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Frame 1 = Ergebnis (hooks.md): Hook-Frage oben ab Frame 0 komplett ('Wie viel Umsatz macht eine KI in 100 Tagen?'). Darunter der echte Brief (BRIEF, Papier, leicht schräg) mit Kolonnenshirt-Logo oben rechts und gelben Platzhaltern; lesbar betont nur Betreff + Kernzeile. Links klein gestapelt EIN Block aus zwei Karten 'E-MAIL' / 'ANRUF' (noch nicht gestrichen). Auf 'Umsatz' wischt ein Textmarker über die Kernzeile 'Gestickt wird erst, wenn Sie bestellen.'. HUD 'TAG 3' klein erlaubt. Kein Umsatz-Zähler, kein '14 Platzhalter', keine Quellenzeile.",
+   "kamera": "langsamer Push-in auf den Brief; Drop-Punch +4 % auf 'Umsatz'",
+   "frage": "Was ist das für ein Brief – und wer schreibt den?",
+   "karten": [
+    {
+     "text": "Wie viel Umsatz macht / eine KI in 100 Tagen?",
+     "at": "0",
+     "t": 0.0
+    },
+    {
+     "text": "E-MAIL / ANRUF (ein Kartenstapel, ab Frame 0)",
+     "at": "0",
+     "t": 0.0
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.35
+    }
+   ],
+   "brief": {
+    "src": "design/lauf/04-brief-word.png",
+    "size": [
+     1590,
+     1335
+    ],
+    "ganz": "design/lauf/brief-ansicht.png (1590 × 2245, nur falls die ganze Seite nötig ist; Widerspruchsblock unten nie lesbar groß)",
+    "bereiche": {
+     "logo": {
+      "x": 1083,
+      "y": 135,
+      "w": 332,
+      "h": 125
+     },
+     "absender": {
+      "x": 585,
+      "y": 278,
+      "w": 832,
+      "h": 36
+     },
+     "empfaenger": {
+      "x": 173,
+      "y": 362,
+      "w": 393,
+      "h": 110,
+      "text": "[Firmenname laut Impressum] [Straße Hausnummer] [PLZ Ort]"
+     },
+     "betreff": {
+      "x": 173,
+      "y": 588,
+      "w": 826,
+      "h": 42,
+      "text": "Werbung: Firmenshirts mit Ihrem gestickten Logo"
+     },
+     "preise": {
+      "x": 190,
+      "y": 803,
+      "w": 600,
+      "h": 85
+     },
+     "kernzeile": {
+      "x": 190,
+      "y": 893,
+      "w": 560,
+      "h": 40,
+      "text": "Gestickt wird erst, wenn Sie bestellen."
+     },
+     "versand": {
+      "x": 190,
+      "y": 938,
+      "w": 675,
+      "h": 40,
+      "text": "Versand: [Versandkosten und Lieferzeit ergänzen]"
+     }
+    },
+    "hinweis": "Lokal aus Claudes .docx gerendert (keine Word-/claude.ai-Pixel). Kein Betriebs-/Personenname im Brief (Empfänger nur Platzhalter). Als Papier-Objekt mit leichtem Schatten; lesbar je Beat nur der markierte Bereich (≤ 12 Wörter), Rest Textur. Nie Kuvert, Briefmarke, Briefkasten, Hand."
+   },
+   "events": [
+    0.0,
+    "Umsatz"
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 0.89,
+   "bis": 3.71,
+   "wort_start": {
+    "w": "macht",
+    "after": 0
+   },
+   "bild": "Nur Ereignisse, kein neuer Text: 'macht' Karte E-MAIL wird durchgestrichen (roter Strich); 'Unternehmen' Karte ANRUF wird durchgestrichen; 'das@1.5' Logo auf dem Brief glänzt; 'KI@2' Brief setzt sich gerade; '100' Mini-Punch auf '100' in der Frage; 'Tage' Licht-Sweep über den Brief; 'lang' Kamera rutscht auf die Kernzeile.",
+   "kamera": "steht, atmet; Mini-Punch auf '100'",
+   "frage": "Warum Brief und nicht Mail oder Anruf?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "macht",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "Unternehmen",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "das@1.5",
+     "f": "popHi",
+     "v": 0.16
+    },
+    {
+     "anker": "KI@2",
+     "f": "click",
+     "v": 0.16
+    },
+    {
+     "anker": "100",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Tage",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "lang",
+     "f": "wshort",
+     "v": 0.16
+    }
+   ],
+   "events": [
+    "macht",
+    "Unternehmen",
+    "das@1.5",
+    "KI@2",
+    "100",
+    "Tage",
+    "lang"
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.71,
+   "bis": 5.26,
+   "wort_start": {
+    "w": "ganz",
+    "after": 3.0
+   },
+   "bild": "Stempel 'GANZ ALLEINE.' oben auf 'alleine'; Punch-in auf 'führt?'; bei 4,80 pulst die markierte Kernzeile einmal (kein neuer Text).",
+   "kamera": "Punch-in 4 % auf 'führt?'",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine",
+     "t": 3.98
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz@3-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    },
+    {
+     "anker": "führt",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "t": 4.8,
+     "f": "tick",
+     "v": 0.15
+    }
+   ],
+   "events": [
+    "ganz@3",
+    "alleine",
+    "führt",
+    4.8
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 5.26,
+   "bis": 6.89,
+   "wort_start": {
+    "w": "Ich",
+    "after": 4.5
+   },
+   "bild": "Brief + Kartenstapel fliegen raus (outAt 'Ich'), Gründungsplan blendet ein (planFrom 'Ich-0.05'), Maskottchen hüpft auf 'probier' (ganz im Bild). Kein Slam, kein 'Tag drei' (nicht erste Folge). Hook-Objekt überlappt nie den Plan (raus, bevor der Plan steht).",
+   "kamera": "Pull-back zum Board",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ich@4.5-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "probier",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "aus@5.8",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "events": [
+    "Ich@4.5",
+    "probier",
+    "aus@5.8"
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "rueckblick",
+   "von": 6.89,
+   "bis": 10.25,
+   "wort_start": {
+    "w": "Die",
+    "after": 6.5
+   },
+   "bild": "Gründungsplan ganz im Bild (Layout tag11/tag12, 9 Felder): PRODUKT+KUNDE … LOGO grün abgehakt; WEBSITE 'ENTWURF' (nie grün); GEWERBE offen mit MENSCH-Marke + Personen-Symbol (kein Haken); BETRIEBE noch gold wie Ende Folge 12; WERBEBRIEF, ERSTER UMSATZ offen. Produkt-Karte 'SHIRTS MIT LOGO' auf 'verkauft' (rechts, verdeckt keine Board-Spalte); auf 'Betriebe@9' kleine Handwerker-Silhouetten mit Shirt in der Karte (kein Text, gegen Stillstand > 1,5 s).",
+   "kamera": "ruhig, Board voll",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "at": "verkauft",
+     "t": 7.9
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@6.5-0.08",
+     "f": "wqh",
+     "v": 0.18
+    },
+    {
+     "anker": "verkauft",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Betriebe@9",
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "rueckblick",
+   "von": 10.25,
+   "bis": 11.75,
+   "wort_start": {
+    "w": "bestickt",
+    "after": 9.0
+   },
+   "bild": "Banner 'erst auf Bestellung bestickt' in der Produkt-Karte.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "erst auf Bestellung / bestickt",
+     "at": "bestickt",
+     "t": 10.25
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "rueckblick",
+   "von": 11.75,
+   "bis": 13.82,
+   "wort_start": {
+    "w": "Liste",
+    "after": 11.0
+   },
+   "bild": "Zuletzt erledigter Schritt BETRIEBE (Ergebnis Folge 12) leuchtet auf 'Liste:' und bekommt den grünen Haken; daran die kleine Listen-Karte '20 BETRIEBE · CHEMNITZ', klein '5 zuerst' (Miniatur nur aus firma-tag12/design/lauf/liste-anonym.png, Zeilen als Textur, 5 gelb, nie lesbar). Auf '20' Zähl-Tick. Ab Ende 'Betriebe.' (13,15) in der 0,7-s-Pause: Kamera fährt ein Feld weiter zu WERBEBRIEF, das gold wird (current).",
+   "kamera": "leichter Push-in auf BETRIEBE, dann Fahrt zu WERBEBRIEF",
+   "frage": "Zwanzig Betriebe – und jetzt?",
+   "karten": [
+    {
+     "text": "20 BETRIEBE · CHEMNITZ",
+     "unter": "5 zuerst",
+     "at": "Liste@11",
+     "t": 11.75
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Liste@11",
+     "f": "check",
+     "v": 0.25
+    },
+    {
+     "anker": "20",
+     "f": "roll",
+     "v": 0.16
+    },
+    {
+     "anker": "Betriebe@12.5:end+0.1",
+     "f": "wq2",
+     "v": 0.18
+    }
+   ],
+   "liste_miniatur": "../firma-tag12/design/lauf/liste-anonym.png (nur Textur, Balken schwarz)"
+  },
+  {
+   "id": "B08",
+   "akt": "heute",
+   "von": 13.82,
+   "bis": 16.48,
+   "wort_start": {
+    "w": "Heute",
+    "after": 13.5
+   },
+   "bild": "Pill 'HEUTE: WERBEBRIEF' auf 'Heute'. Feld WERBEBRIEF (gold) öffnet sich; auf 'schreibt' blinkt ein Schreib-Cursor im Feld (kein Text); auf 'Werbung' kommt der Brief (Story-Objekt, derselbe wie Frame 1, ohne Markierung) aus dem Feld nach vorn, Betreff 'Werbung: Firmenshirts mit Ihrem gestickten Logo' leuchtet kurz (einziger lesbarer Teil). Steht bis Shot 01.",
+   "kamera": "Fahrt durch WERBEBRIEF auf den Brief, dann ruhig",
+   "frage": "Darf sie Betriebe einfach anschreiben?",
+   "karten": [
+    {
+     "text": "HEUTE: WERBEBRIEF",
+     "at": "Heute",
+     "t": 13.82
+    },
+    {
+     "text": "Brief mit Betreff (Bild-Objekt, 6 lesbare Wörter)",
+     "at": "Werbung",
+     "t": 15.22
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Heute+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "schreibt",
+     "f": "typing",
+     "v": 0.14
+    },
+    {
+     "anker": "Werbung",
+     "f": "page",
+     "v": 0.24
+    }
+   ],
+   "brief": {
+    "src": "design/lauf/04-brief-word.png",
+    "size": [
+     1590,
+     1335
+    ],
+    "ganz": "design/lauf/brief-ansicht.png (1590 × 2245, nur falls die ganze Seite nötig ist; Widerspruchsblock unten nie lesbar groß)",
+    "bereiche": {
+     "logo": {
+      "x": 1083,
+      "y": 135,
+      "w": 332,
+      "h": 125
+     },
+     "absender": {
+      "x": 585,
+      "y": 278,
+      "w": 832,
+      "h": 36
+     },
+     "empfaenger": {
+      "x": 173,
+      "y": 362,
+      "w": 393,
+      "h": 110,
+      "text": "[Firmenname laut Impressum] [Straße Hausnummer] [PLZ Ort]"
+     },
+     "betreff": {
+      "x": 173,
+      "y": 588,
+      "w": 826,
+      "h": 42,
+      "text": "Werbung: Firmenshirts mit Ihrem gestickten Logo"
+     },
+     "preise": {
+      "x": 190,
+      "y": 803,
+      "w": 600,
+      "h": 85
+     },
+     "kernzeile": {
+      "x": 190,
+      "y": 893,
+      "w": 560,
+      "h": 40,
+      "text": "Gestickt wird erst, wenn Sie bestellen."
+     },
+     "versand": {
+      "x": 190,
+      "y": 938,
+      "w": 675,
+      "h": 40,
+      "text": "Versand: [Versandkosten und Lieferzeit ergänzen]"
+     }
+    },
+    "hinweis": "Lokal aus Claudes .docx gerendert (keine Word-/claude.ai-Pixel). Kein Betriebs-/Personenname im Brief (Empfänger nur Platzhalter). Als Papier-Objekt mit leichtem Schatten; lesbar je Beat nur der markierte Bereich (≤ 12 Wörter), Rest Textur. Nie Kuvert, Briefmarke, Briefkasten, Hand."
+   },
+   "lesbar": "betreff"
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 16.48,
+   "bis": 18.6,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Echter Shot 01 im Paper-Fenster (SHOT01), Einstieg 'Claude+0.2' (Brief hat damit ≥ 1,2 s). 'Liste@16.5' orange Rahmen um die Karte 'Shirt-Firma Ergebnis Betriebe.md', 'Logo@17.2' Rahmen springt auf 'Kolonnenshirt-Logo.svg', 'angehängt' Zeiger tippt auf '+', beide Karten hüpfen. Prompt nur Textur.",
+   "kamera": "Push-in auf die zwei Anhang-Karten",
+   "frage": "Womit fängt sie an?",
+   "karten": [
+    {
+     "text": "Shot 01 Anhang-Karten (Screenshot, ≤ 10 lesbare Wörter)",
+     "at": "Claude+0.2",
+     "t": 16.48
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Claude",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "Liste@16.5",
+     "f": "popLo",
+     "v": 0.2
+    },
+    {
+     "anker": "Logo@17.2",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "angehängt",
+     "f": "click",
+     "v": 0.22
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/01-prompt-mit-anhang.png",
+    "size": [
+     1040,
+     830
+    ],
+    "crop": {
+     "x": 36,
+     "y": 112,
+     "w": 984,
+     "h": 640
+    },
+    "marks": [
+     {
+      "x": 53,
+      "y": 132,
+      "w": 178,
+      "h": 178,
+      "farbe": "orange",
+      "at": "Liste@16.5",
+      "was": "Anhang-Karte 'Shirt-Firma Ergebnis Betriebe.md · 41 Zeilen · MD'"
+     },
+     {
+      "x": 245,
+      "y": 132,
+      "w": 178,
+      "h": 178,
+      "farbe": "orange",
+      "at": "Logo@17.2",
+      "was": "Anhang-Karte 'Kolonnenshirt-Logo.svg · 6 Zeilen · TEXT'"
+     },
+     {
+      "x": 52,
+      "y": 702,
+      "w": 32,
+      "h": 32,
+      "at": "angehängt",
+      "was": "Zeiger tippt auf '+'"
+     }
+    ],
+    "hinweis": "Lesbar nur die zwei Anhang-Karten (je ≤ 5 Wörter). Prompt (y 340–690) nur als weiche/abgedunkelte Textur, nie lesbar. Begrüßung 'Abendgedanken' (y < 100) und Fußzeile 'Projekt/Opus/Manuell' (y > 760) nicht zeigen. Keine Sidebar."
+   },
+   "einstieg": "Claude+0.2"
+  },
+  {
+   "id": "B10",
+   "akt": "claude",
+   "von": 18.6,
+   "bis": 19.83,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Schnitt (in der Pause nach 'angehängt,') auf echten Shot 07: NUR die Denkblock-Titelzeile 'Suche nach UWG-Regeln für E-Mail-Werbung im B2B-Bereich'. Auf 'Websuche' Glanz/Unterstrich über die Zeile, kleine Lupe tippt (kein Text).",
+   "kamera": "leichter Push-in auf die Zeile",
+   "frage": "Was darf man eigentlich?",
+   "karten": [
+    {
+     "text": "Shot 07 Denkblock-Titel (Screenshot, 8 Wörter)",
+     "at": "angehängt:end+0.08",
+     "t": 18.6
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "angehängt:end+0.08",
+     "f": "wshort",
+     "v": 0.18
+    },
+    {
+     "anker": "Websuche",
+     "f": "typing",
+     "v": 0.14
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/07-schritte-zeile.png",
+    "size": [
+     1206,
+     205
+    ],
+    "crop": {
+     "x": 30,
+     "y": 8,
+     "w": 690,
+     "h": 40
+    },
+    "marks": [
+     {
+      "x": 44,
+      "y": 12,
+      "w": 640,
+      "h": 32,
+      "farbe": "orange",
+      "at": "Websuche",
+      "was": "Denkblock-Titel 'Suche nach UWG-Regeln für E-Mail-Werbung im B2B-Bereich' (Glanz/Unterstrich)"
+     }
+    ],
+    "hinweis": "Nur die Titelzeile des Denkblocks (8 Wörter). Satz darunter und 'Eine Datei erstellt …'-Zeile nicht (sonst > 12 Wörter). Die Zeile sagt nicht 'Web durchsucht' – Beleg Websuche = LAUF.md (5 Websuchen)."
+   }
+  },
+  {
+   "id": "B11",
+   "akt": "claude",
+   "von": 19.83,
+   "bis": 21.59,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Schnitt (in der Pause nach 'Websuche,') auf echten Shot 06: Datei-Karte 'Kolonnenshirt werbebrief · Dokument · DOCX', orange Rahmen auf 'Word-Datei', Zeiger klickt. In der 0,7-s-Pause steht das Bild.",
+   "kamera": "Push-in auf die Datei-Karte, Halt",
+   "frage": "Was steht drin – und wie verschickt sie es?",
+   "karten": [
+    {
+     "text": "Shot 06 Datei-Karte DOCX (Screenshot, 5 Wörter)",
+     "at": "Websuche:end+0.22",
+     "t": 19.83
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Word-Datei",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Word-Datei:end",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/06-datei-karte.png",
+    "size": [
+     1206,
+     170
+    ],
+    "crop": {
+     "x": 38,
+     "y": 20,
+     "w": 785,
+     "h": 102
+    },
+    "marks": [
+     {
+      "x": 40,
+      "y": 22,
+      "w": 780,
+      "h": 97,
+      "farbe": "orange",
+      "at": "Word-Datei",
+      "was": "Datei-Karte 'Kolonnenshirt werbebrief · Dokument · DOCX'"
+     }
+    ]
+   }
+  },
+  {
+   "id": "B12",
+   "akt": "entscheidung",
+   "von": 21.59,
+   "bis": 24.55,
+   "wort_start": {
+    "w": "Sie",
+    "after": 21.0
+   },
+   "bild": "Datei-Karte klappt zum Brief auf (Story-Objekt) und wird zur rechten von drei Karten: EIN Block 'E-MAIL · ANRUF · BRIEF' (Bild: Bildschirm-Mail, Telefon, Brief-Miniatur) erscheint auf 'Sie'. Danach nur Ereignisse: 'Brief@22' Brief-Karte hebt sich + leuchtet; 'Mail' E-MAIL wird durchgestrichen; Stempel 'DER BRIEF.' (Lauf-Wort, Z. 25) auf 'Mail:end' auf die Brief-Karte (optional Beleg-Kachel SHOT02 'Meine Entscheidung: der Brief.' klein darunter als Teil des Stempels); 'Anruf' ANRUF wird durchgestrichen. In der 0,9-s-Pause vor 'Warum?': steht, Musik-Mulde.",
+   "kamera": "Push-in auf die Brief-Karte, Halt",
+   "frage": "Warum ausgerechnet ein Brief?",
+   "karten": [
+    {
+     "text": "E-MAIL · ANRUF · BRIEF",
+     "at": "Sie@21",
+     "t": 21.59
+    },
+    {
+     "text": "DER BRIEF. (Stempel)",
+     "at": "Mail:end",
+     "t": 22.91
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Sie@21-0.1",
+     "f": "wq2",
+     "v": 0.18
+    },
+    {
+     "anker": "Brief@22",
+     "f": "power",
+     "v": 0.2
+    },
+    {
+     "anker": "Mail",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "Mail:end",
+     "f": "clack",
+     "v": 0.38
+    },
+    {
+     "anker": "Anruf@23",
+     "f": "tick",
+     "v": 0.18
+    }
+   ],
+   "ton": "Musik-Mulde 23,75–24,45 (Kurve 0,012) = Stille vor dem Warum; Akzent auf 'Warum?' (24,55; Kurve 0,05)",
+   "proof_optional": {
+    "src": "design/lauf/02-rechtslage-quellen.png",
+    "size": [
+     1206,
+     722
+    ],
+    "crop": {
+     "x": 40,
+     "y": 4,
+     "w": 330,
+     "h": 36
+    },
+    "hinweis": "Optional als kleine Beleg-Kachel am Stempel 'DER BRIEF.': nur 'Meine Entscheidung: der Brief.' (4 Wörter). Rest (§ 7 UWG, BGH, OLG) nie lesbar, kein Paragrafen-Stempel."
+   }
+  },
+  {
+   "id": "B13",
+   "akt": "warum",
+   "von": 24.55,
+   "bis": 29.05,
+   "wort_start": {
+    "w": "Warum",
+    "after": 24.0
+   },
+   "bild": "Brief (Story-Objekt) rückt klein ins obere Drittel und bleibt. Pill 'WARUM?' auf 'Warum?' mit kleiner gedimmter Fußzeile 'laut Claude · keine Rechtsberatung' (ein Block, Fußzeile bleibt klein/gedimmt unten bis Ende des Warum-Akts, Ticket R1-05). Karte 1 'E-MAIL: FÄLLT GANZ WEG' auf 'braucht' (≥ 1,2 s nach der Pill), klein 'ohne Einwilligung · auch B2B' (Lauf Z. 29/34: 'unterscheidet nicht zwischen B2C und B2B'), Gegenwert grau 'per Mail fragen ✗' (Lauf: 'du darfst sie nicht per E-Mail einholen'). Auf 'Firmen' kleiner Puls auf 'auch B2B'. Kein Paragraf, kein 'Gesetz'/'verboten'.",
+   "kamera": "kurze Fahrt nach unten zu den Karten, dann ruhig",
+   "frage": "Auch bei Firmen? Und der Brief?",
+   "karten": [
+    {
+     "text": "WARUM? + Fußzeile 'laut Claude · keine Rechtsberatung'",
+     "at": "Warum",
+     "t": 24.55
+    },
+    {
+     "text": "E-MAIL: FÄLLT GANZ WEG",
+     "unter": "ohne Einwilligung · auch B2B",
+     "vs": "per Mail fragen ✗",
+     "at": "braucht@26",
+     "t": 26.23
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.25
+    },
+    {
+     "anker": "braucht@26",
+     "f": "popLo",
+     "v": 0.25
+    },
+    {
+     "anker": "Firmen",
+     "f": "tick",
+     "v": 0.14
+    }
+   ],
+   "fusszeile": {
+    "text": "laut Claude · keine Rechtsberatung",
+    "ab": "Warum",
+    "bis": "Als@34",
+    "stil": "klein, gedimmt (≈ 40 % Deckkraft), unten über den Untertiteln, kein neuer großer Block"
+   },
+   "proof_optional": {
+    "src": "design/lauf/03-entscheidung-gruende.png",
+    "size": [
+     1206,
+     326
+    ],
+    "hinweis": "Optional nur als unlesbare Textur hinter den Warum-Karten (Beleg). Nicht lesbar zeigen."
+   }
+  },
+  {
+   "id": "B14",
+   "akt": "warum",
+   "von": 29.05,
+   "bis": 30.78,
+   "wort_start": {
+    "w": "Ein",
+    "after": 28.5
+   },
+   "bild": "Karte 2 'BRIEF: OHNE EINWILLIGUNG ERLAUBT' auf 'Ein' (Lauf Z. 36), klein 'mit Widerspruchshinweis', Gegenwert grau 'E-Mail ✗'. Auf 'nicht' kleiner Haken an der Brief-Miniatur oben. Karte 1 bleibt gedimmt stehen.",
+   "kamera": "leichter Push-in auf Karte 2",
+   "frage": "Und warum nicht anrufen?",
+   "karten": [
+    {
+     "text": "BRIEF: OHNE EINWILLIGUNG ERLAUBT",
+     "unter": "mit Widerspruchshinweis",
+     "vs": "E-Mail ✗",
+     "at": "Ein@28.5",
+     "t": 29.05
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Ein@28.5",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "nicht@29",
+     "f": "check",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "warum",
+   "von": 30.78,
+   "bis": 34.56,
+   "wort_start": {
+    "w": "Anruf",
+    "after": 30.0
+   },
+   "bild": "H-01: Karte 3 'ANRUF: KEIN KONKRETER GRUND' auf 'Anruf' (Lauf Z. 35), klein 'bei keinem der 5', Gegenwert grau '„Shirts sind nützlich“ ✗' (Lauf: 'Firmenshirts sind nützlich … reicht nicht'). Steht ALLEIN als neuer Text bis 'Als' (30,78–34,56 = 3,8 s): kein Brief-Zoom, kein Versand-Feld, kein ERGÄNZEN in diesem Beat. Auf 'Betrieb.' erscheinen unter der Karte 5 kleine Betriebs-Punkte (Icons, kein Text); auf 'keinen' grauen die 5 kleinen Betriebs-Punkte unter der Karte nacheinander aus (kein Text, keine Namen). Karten 1–2 gedimmt.",
+   "kamera": "leichter Push-in auf Karte 3, Halt in der 0,7-s-Pause",
+   "frage": "Und wohin jetzt mit dem Brief?",
+   "karten": [
+    {
+     "text": "ANRUF: KEIN KONKRETER GRUND",
+     "unter": "bei keinem der 5",
+     "vs": "„Shirts sind nützlich“ ✗",
+     "at": "Anruf@30",
+     "t": 30.78
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Anruf@30",
+     "f": "popLo",
+     "v": 0.24
+    },
+    {
+     "anker": "Anlass",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Betrieb@31.9",
+     "f": "popLo",
+     "v": 0.14
+    },
+    {
+     "anker": "keinen",
+     "f": "roll",
+     "v": 0.16
+    }
+   ]
+  },
+  {
+   "id": "B16",
+   "akt": "als_naechstes",
+   "von": 34.56,
+   "bis": 37.48,
+   "wort_start": {
+    "w": "Als",
+    "after": 34.0
+   },
+   "bild": "Warum-Karten und Fußzeile raus (0,2 s vor 'Als'). Pill 'ALS NÄCHSTES' auf 'Als'. Der Brief (Story-Objekt) fährt groß zurück, Kamera auf den Empfängerblock: die gelben Platzhalter '[Firmenname laut Impressum] [Straße Hausnummer] [PLZ Ort]' pulsen auf 'Wohin', zugleich pulst die gelbe Versand-Zeile kurz (beides vorhandener Brief-Text, KEIN neuer Stempel, KEIN 'ERGÄNZEN' – Haken bleibt in Caption/Guide). Frage-Karte 'WOHIN GEHEN DIE BRIEFE?' auf 'gehen' mit '?' am Empfängerfeld. Board klein in der Ecke optional: WERBEBRIEF gold/'ENTWURF', ERSTER UMSATZ offen. Keine Betriebsnamen, keine Adressen.",
+   "kamera": "Push-in auf das Empfängerfeld, Halt",
+   "frage": "An welche Adressen? Und wann kommt Geld?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@34",
+     "t": 34.56
+    },
+    {
+     "text": "WOHIN GEHEN DIE BRIEFE?",
+     "at": "gehen",
+     "t": 36.09
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@34-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Als@34",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "anker": "Wohin",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "gehen",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Briefe@36",
+     "f": "popLo",
+     "v": 0.18
+    }
+   ],
+   "brief": {
+    "src": "design/lauf/04-brief-word.png",
+    "size": [
+     1590,
+     1335
+    ],
+    "ganz": "design/lauf/brief-ansicht.png (1590 × 2245, nur falls die ganze Seite nötig ist; Widerspruchsblock unten nie lesbar groß)",
+    "bereiche": {
+     "logo": {
+      "x": 1083,
+      "y": 135,
+      "w": 332,
+      "h": 125
+     },
+     "absender": {
+      "x": 585,
+      "y": 278,
+      "w": 832,
+      "h": 36
+     },
+     "empfaenger": {
+      "x": 173,
+      "y": 362,
+      "w": 393,
+      "h": 110,
+      "text": "[Firmenname laut Impressum] [Straße Hausnummer] [PLZ Ort]"
+     },
+     "betreff": {
+      "x": 173,
+      "y": 588,
+      "w": 826,
+      "h": 42,
+      "text": "Werbung: Firmenshirts mit Ihrem gestickten Logo"
+     },
+     "preise": {
+      "x": 190,
+      "y": 803,
+      "w": 600,
+      "h": 85
+     },
+     "kernzeile": {
+      "x": 190,
+      "y": 893,
+      "w": 560,
+      "h": 40,
+      "text": "Gestickt wird erst, wenn Sie bestellen."
+     },
+     "versand": {
+      "x": 190,
+      "y": 938,
+      "w": 675,
+      "h": 40,
+      "text": "Versand: [Versandkosten und Lieferzeit ergänzen]"
+     }
+    },
+    "hinweis": "Lokal aus Claudes .docx gerendert (keine Word-/claude.ai-Pixel). Kein Betriebs-/Personenname im Brief (Empfänger nur Platzhalter). Als Papier-Objekt mit leichtem Schatten; lesbar je Beat nur der markierte Bereich (≤ 12 Wörter), Rest Textur. Nie Kuvert, Briefmarke, Briefkasten, Hand."
+   },
+   "lesbar": "empfaenger (+ versand nur als Puls)"
+  },
+  {
+   "id": "B17",
+   "akt": "cta",
+   "von": 37.48,
+   "bis": 45.9,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 37.0
+   },
+   "bild": "Endkarte wie Folge 9–12 (end-Akt, itemTag 'DM'): Keyword 'Brief' tippt auf '„Brief“', Haken, Flieger. EIN Block 'FRAGE + BRIEFVORLAGE' auf 'Frage' (Snip: Anhang-Karten aus Shot 01 + Miniatur des Briefs mit gelben Feldern, Text unlesbar). Ergebnis als EIN Block 'BRIEFENTWURF IN 10 MINUTEN' auf 'Damit+0.05', Puls auf 'Briefentwurf'. Halt bis Ende (Endkarte 1,0 s nach Stimmende), Bot-Hüpfer ~44,3 gegen Stillstand.",
+   "kamera": "ruhiger Push-in, Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "Brief (Keyword)",
+     "at": "Brief@38",
+     "t": 38.19
+    },
+    {
+     "text": "FRAGE + BRIEFVORLAGE",
+     "at": "Frage",
+     "t": 39.44
+    },
+    {
+     "text": "BRIEFENTWURF IN 10 MINUTEN",
+     "at": "Damit+0.05",
+     "t": 41.38
+    },
+    {
+     "text": "Puls auf BRIEFENTWURF (kein neuer Text)",
+     "at": "Briefentwurf"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "Brief@38",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Brief@38:end",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "ich@38.8",
+     "f": "wqh",
+     "v": 0.2
+    },
+    {
+     "anker": "Frage",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Damit+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "10@42",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "Briefentwurf",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "t": 44.3,
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

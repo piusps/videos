@@ -1,0 +1,26 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae5f17f956c4f443945baaf",
+ "status": "published",
+ "scheduledFor": "2026-10-31 15:00 Europe/Berlin",
+ "folge": 14,
+ "serientag": 4,
+ "ersteFolgeDesTages": false,
+ "note_final": "8,5/10 (finale Prüfung Runde 2, pruefung/final-runde2.md; Runde 1: 7,5 K.-o. Maskottchen)",
+ "video": "runs/firma-tag14/firma-tag14-final.mp4",
+ "cover": "runs/firma-tag14/cover.jpg",
+ "guide": "runs/firma-tag14/adressen-guide.pdf",
+ "hinweis": "Eilauftrag Pius 11:50 für den 12:00-Slot; 12:00 nicht zu schaffen, auf 15:00 gelegt",
+ "ig_media_id": "18018996056745547",
+ "url": "https://www.instagram.com/reel/DfKU9_-jv3Z/",
+ "funnel": {
+  "name": "PTC Funnel Folge 14",
+  "kind": "ptc",
+  "workflowId": "6ae5f5724f538e1aaa45a0ad",
+  "automationId": "6ae5f5729ea5fc7c7fb158e3",
+  "active": true,
+  "attachedTo": "IG media id 18018996056745547",
+  "by": "zernio-golive-arm"
+ }
+}

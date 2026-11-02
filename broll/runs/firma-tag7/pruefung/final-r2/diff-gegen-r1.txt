@@ -1,0 +1,11 @@
+Frames final 1436 r1 1433
+Abschnitte mit Abweichung >1,0 (mittel, 54x96) gegen R1:
+  f0-f122  0.00-4.10s  max 64.6
+  f149-f167  4.97-5.60s  max 26.7
+  f169-f187  5.63-6.27s  max 26.1
+  f498-f503  16.60-16.80s  max 8.0
+  f517-f527  17.23-17.60s  max 18.1
+  f855-f865  28.50-28.87s  max 1.8
+  f867-f868  28.90-28.97s  max 1.1
+  f989-f1039  32.97-34.67s  max 6.5
+Doppelframes (diff<0.05): []

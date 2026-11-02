@@ -1,0 +1,1139 @@
+{
+ "tag": 11,
+ "folge": 11,
+ "serientag": 3,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-30",
+ "keyword": "Gewerbe",
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 153.15,
+  "musicCurve": [
+   [
+    0,
+    0.05
+   ],
+   [
+    21.7,
+    0.05
+   ],
+   [
+    21.95,
+    0.018
+   ],
+   [
+    23.05,
+    0.018
+   ],
+   [
+    23.1,
+    0.065
+   ],
+   [
+    23.8,
+    0.04
+   ],
+   [
+    28.8,
+    0.04
+   ],
+   [
+    29.0,
+    0.033
+   ],
+   [
+    44.79,
+    0.033
+   ],
+   [
+    45.79,
+    0
+   ]
+  ],
+  "musicGain": 1.5
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "sub": "· 12 SCHRITTE",
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "ENTWURF",
+   "GEWERBE",
+   "BETRIEBE",
+   "WERBEBRIEF",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 5,
+  "done": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "wip": [
+   4
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ein": "Ich-0.22",
+   "unt": "Ich-0.2",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "ki": -0.3,
+   "probier": "probier",
+   "das": "das@5",
+   "aus": "aus@5.3",
+   "end": "Die@6-0.08"
+  },
+  "instant": true,
+  "keepHeadline": true,
+  "planFrom": "Ich-0.05"
+ },
+ "claude": {
+  "at": "Heute-0.1",
+  "moveUp": 99,
+  "steps": [],
+  "attach": {
+   "label": "Shirt-Firma Ergebnis Website.md",
+   "sub": "letztes Ergebnis",
+   "at": "Ergebnis"
+  },
+  "prompt": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe Firmenshirts mit gesticktem Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, gestickt erst auf Bestellung über Printful, unter dem Namen Kolonnenshirt. Mein letztes Ergebnis: Die Startseite steht als Entwurf, aber bevor sie online geht, fehlen unter anderem Impressum, Datenschutz und die Frage, ob ich nur an Firmen verkaufe. Eine angemeldete Firma habe ich noch nicht. Finde mit der Websuche heraus, was ich in Deutschland vor dem ersten verkauften Shirt anmelden oder klären muss, jeweils mit offizieller Quelle. Entscheide, was davon als Erstes kommt, und begründe es mit zwei bis drei konkreten Gründen. Markiere, was du selbst erledigen kannst und was nur ein Mensch machen kann. Mach daraus eine Checkliste als Word-Datei. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts.",
+  "typing": [
+   [
+    "Letztes-0.12",
+    ""
+   ]
+  ],
+  "send": "angehängt-0.15"
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@6-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "verkauft"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt"
+   },
+   "last": {
+    "step": 4,
+    "label": "WEBSITE",
+    "at": "Website-Entwurf"
+   },
+   "today": {
+    "step": 5,
+    "pill": "HEUTE: ANMELDEN",
+    "at": "Heute"
+   },
+   "bot": {
+    "dx": 0.55,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "angehängt-0.1",
+   "src": "firma-ep/tag11/shots/01-anhang.png",
+   "cam": [
+    [
+     "angehängt-0.1",
+     1.5,
+     330,
+     312
+    ],
+    [
+     "angehängt+0.3",
+     1.62,
+     310,
+     310
+    ]
+   ],
+   "marks": [
+    {
+     "x": 8,
+     "y": 6,
+     "w": 190,
+     "h": 190,
+     "at": "angehängt",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Websuche-0.08",
+   "src": "firma-ep/tag11/shots/02-websuche.png",
+   "cam": [
+    [
+     "Websuche-0.08",
+     1.0,
+     500,
+     450
+    ],
+    [
+     "Websuche+0.5",
+     1.05,
+     500,
+     440
+    ]
+   ],
+   "marks": [
+    {
+     "x": 14,
+     "y": 32,
+     "w": 962,
+     "h": 73,
+     "at": "Websuche",
+     "color": "orange"
+    },
+    {
+     "x": 28,
+     "y": 144,
+     "w": 865,
+     "h": 65,
+     "at": "Websuche+0.25",
+     "color": "blue"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "13+0.15",
+   "src": "firma-ep/tag11/shots/liste-ganz.png",
+   "cam": [
+    [
+     "13+0.15",
+     0.54,
+     500,
+     907
+    ],
+    [
+     "Punkte",
+     0.575,
+     500,
+     907
+    ]
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Als@21-0.08",
+   "src": "firma-ep/tag11/shots/check-hook.png",
+   "cam": [
+    [
+     "Als@21-0.08",
+     0.95,
+     500,
+     480
+    ],
+    [
+     "Gewerbe",
+     1.0,
+     500,
+     480
+    ]
+   ],
+   "marks": [
+    {
+     "x": 6,
+     "y": 72,
+     "w": 988,
+     "h": 504,
+     "at": "Gewerbe",
+     "color": "yellow"
+    }
+   ]
+  },
+  {
+   "type": "why",
+   "at": "Warum?-0.12",
+   "bare": true,
+   "label": "GEWERBE",
+   "icon": "flyer",
+   "pill": " ",
+   "pillAt": "Warum?",
+   "cards": [
+    {
+     "icon": "warn",
+     "small": "Pflicht ab Beginn",
+     "at": "Pflicht"
+    },
+    {
+     "icon": "check",
+     "small": "Baut darauf auf",
+     "at": "Die@27"
+    }
+   ],
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Haken:-0.12",
+   "src": "firma-ep/tag11/shots/liste-ganz.png",
+   "cam": [
+    [
+     "Haken:-0.12",
+     0.54,
+     500,
+     907
+    ],
+    [
+     "Das@30.5",
+     0.575,
+     500,
+     907
+    ]
+   ],
+   "marks": [
+    {
+     "x": 333,
+     "y": 65,
+     "w": 153,
+     "h": 246,
+     "at": "Das@30.5",
+     "color": "orange"
+    },
+    {
+     "x": 333,
+     "y": 311,
+     "w": 153,
+     "h": 186,
+     "at": "Das@30.5+0.07",
+     "color": "orange"
+    },
+    {
+     "x": 333,
+     "y": 498,
+     "w": 153,
+     "h": 266,
+     "at": "Das@30.5+0.14",
+     "color": "orange"
+    },
+    {
+     "x": 333,
+     "y": 764,
+     "w": 153,
+     "h": 226,
+     "at": "Das@30.5+0.21",
+     "color": "orange"
+    },
+    {
+     "x": 333,
+     "y": 990,
+     "w": 153,
+     "h": 177,
+     "at": "Das@30.5+0.28",
+     "color": "orange"
+    },
+    {
+     "x": 333,
+     "y": 1259,
+     "w": 153,
+     "h": 311,
+     "at": "Das@30.5+0.35",
+     "color": "orange"
+    },
+    {
+     "x": 333,
+     "y": 1571,
+     "w": 153,
+     "h": 241,
+     "at": "Das@30.5+0.42",
+     "color": "orange"
+    },
+    {
+     "x": 847,
+     "y": 353,
+     "w": 153,
+     "h": 250,
+     "at": "Das@30.5+0.49",
+     "color": "orange"
+    },
+    {
+     "x": 847,
+     "y": 604,
+     "w": 153,
+     "h": 121,
+     "at": "Das@30.5+0.56",
+     "color": "orange"
+    },
+    {
+     "x": 0,
+     "y": 65,
+     "w": 486,
+     "h": 246,
+     "at": "Mensch",
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "at": "Als@32-0.12",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Wen zuerst",
+    "ansprechen?"
+   ],
+   "pop": "Als@32",
+   "stamp": null,
+   "bubble": "an?@35",
+   "card": false,
+   "bot": {
+    "dx": 1.55,
+    "dz": -2.4,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Gewerbe@36",
+   "plane": [
+    "Gewerbe@36:end",
+    "Damit+0.2"
+   ],
+   "itemsAt": "Frage",
+   "copyAt": "Damit",
+   "itemTag": "DM",
+   "items": [
+    {
+     "label": "Frage + Checkliste",
+     "snip": "13 Punkte · Mensch oder Claude"
+    }
+   ],
+   "result": {
+    "at": "Damit-0.1",
+    "line1": "in 10 Minuten",
+    "line1At": "10",
+    "parts": [
+     {
+      "text": "deine",
+      "at": "deine"
+     },
+     {
+      "text": "Startliste",
+      "at": "Startliste",
+      "hot": true
+     }
+    ]
+   }
+  }
+ ],
+ "overlays": [
+  {
+   "kind": "partners",
+   "from": 0,
+   "to": "Ich-0.55",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag11/shots/check-hook.png",
+    "srcW": 895,
+    "sx": 0,
+    "sy": 0,
+    "sw": 895,
+    "sh": 860,
+    "w": 660,
+    "y": 630,
+    "at": -1,
+    "to": "Ich-0.55"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Umsatz-0.1",
+   "to": "das@1.5",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag11/shots/check-hook.png",
+    "srcW": 895,
+    "sx": 620,
+    "sy": 66,
+    "sw": 275,
+    "sh": 100,
+    "w": 440,
+    "y": 975,
+    "at": "Umsatz-0.1",
+    "to": "das@1.5"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "ein@1",
+   "to": "eine@1.8+0.45",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag11/shots/check-hook.png",
+    "srcW": 895,
+    "sx": 0,
+    "sy": 66,
+    "sw": 620,
+    "sh": 86,
+    "w": 620,
+    "y": 1170,
+    "at": "ein@1",
+    "to": "eine@1.8+0.45"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "das@1.5",
+   "to": "Tage+0.2",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag11/shots/check-hook.png",
+    "srcW": 895,
+    "sx": 620,
+    "sy": 519,
+    "sw": 275,
+    "sh": 100,
+    "w": 440,
+    "y": 975,
+    "at": "das@1.5",
+    "to": "Tage+0.2"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "eine@1.8+0.47",
+   "to": "alleine",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag11/shots/check-hook.png",
+    "srcW": 895,
+    "sx": 0,
+    "sy": 66,
+    "sw": 86,
+    "sh": 86,
+    "w": 130,
+    "y": 1170,
+    "at": "eine@1.8+0.47",
+    "to": "alleine"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "13+0.15",
+   "to": "Word-Checkliste-0.15",
+   "text": "13 PUNKTE",
+   "y": 1530
+  },
+  {
+   "kind": "partners",
+   "from": "Word-Checkliste-0.05",
+   "to": "Als@21-0.2",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag11/shots/06-datei.png",
+    "srcW": 790,
+    "sx": 0,
+    "sy": 0,
+    "sw": 790,
+    "sh": 102,
+    "w": 880,
+    "y": 1170,
+    "at": "Word-Checkliste-0.05",
+    "to": "Als@21-0.2"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Als@21",
+   "to": "Warum?-0.15",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag11/shots/03-als-erstes.png",
+    "srcW": 484,
+    "sx": 0,
+    "sy": 0,
+    "sw": 484,
+    "sh": 52,
+    "w": 760,
+    "y": 330,
+    "at": "Als@21",
+    "to": "Warum?-0.15",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Warum?-0.12",
+   "to": "Die@27-0.15",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag11/shots/check-hook.png",
+    "srcW": 895,
+    "sx": 0,
+    "sy": 0,
+    "sw": 895,
+    "sh": 860,
+    "w": 500,
+    "y": 420,
+    "at": "Warum?-0.12",
+    "to": "Die@27-0.15"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "Warum?",
+   "to": "Die@27-0.15",
+   "text": "WARUM?",
+   "y": 260
+  },
+  {
+   "kind": "pill",
+   "from": "Pflicht",
+   "to": "Die@27-0.15",
+   "text": "PFLICHT AB BEGINN",
+   "y": 1010,
+   "color": "gold"
+  },
+  {
+   "kind": "nameSign",
+   "from": "Die@27",
+   "to": "Haken:-0.6",
+   "text": "GEWERBE",
+   "head": "ZUERST",
+   "at": "Die@27",
+   "y": 330,
+   "wiggle": [
+    "auf@29"
+   ],
+   "chain": [
+    {
+     "n": " ",
+     "label": "FINANZAMT",
+     "at": "Die@27",
+     "lockAt": "Schritte",
+     "arrowPulse": "anderen"
+    },
+    {
+     "n": " ",
+     "label": "STEUERNUMMER",
+     "at": "Die@27",
+     "lockAt": "bauen",
+     "arrowPulse": "Schritte"
+    },
+    {
+     "n": " ",
+     "label": "VERPACKUNG",
+     "at": "Die@27",
+     "lockAt": "darauf",
+     "arrowPulse": "bauen"
+    }
+   ]
+  },
+  {
+   "kind": "pill",
+   "from": "Heute",
+   "to": "Letztes-0.2",
+   "text": "HEUTE: ANMELDEN",
+   "y": 860,
+   "color": "gold"
+  },
+  {
+   "kind": "nameSign",
+   "from": "Als@32",
+   "to": "Kommentiere-0.2",
+   "text": "WEN?",
+   "head": "ALS NÄCHSTES",
+   "at": "Als@32",
+   "y": 330,
+   "wiggle": [
+    "an?@35"
+   ],
+   "chain": [
+    {
+     "n": " ",
+     "label": "WEBSITE",
+     "at": "Wen"
+    },
+    {
+     "n": " ",
+     "label": "GEWERBE",
+     "at": "Wen"
+    },
+    {
+     "n": " ",
+     "label": "BETRIEBE",
+     "at": "Wen",
+     "current": true
+    }
+   ]
+  },
+  {
+   "kind": "pill",
+   "from": "nur",
+   "to": "Als@32-0.15",
+   "text": "9 VON 13",
+   "y": 1530
+  }
+ ],
+ "bot": {
+  "hops": [
+   [
+    "Heute+0.1",
+    0.3
+   ],
+   [
+    "Pflicht",
+    0.3
+   ],
+   [
+    "Wen",
+    0.35
+   ],
+   [
+    "an?@35",
+    0.3
+   ]
+  ]
+ },
+ "sfx": [
+  {
+   "t": 0.03,
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Umsatz-0.22",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Umsatz+0.04",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.4
+  },
+  {
+   "t": "macht",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Unternehmen",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "das@1.5",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "KI@2",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "100",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Tage",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "lang",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "ganz@3-0.06",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "alleine",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.42
+  },
+  {
+   "t": "führt",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.3
+  },
+  {
+   "t": 4.35,
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.15
+  },
+  {
+   "t": "Ich@4.5-0.05",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "probier",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "aus@5.4",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Die@6-0.08",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "verkauft",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "bestickt",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Website-Entwurf",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "offline",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Heute-0.1",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Heute+0.05",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "anmelden",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Letztes-0.1",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Ergebnis",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "angehängt",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Websuche-0.08",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Websuche+0.3",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "13",
+   "f": "sfx/heygen/extra/counter-roll.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Punkte",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Word-Checkliste",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Word-Checkliste:end",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Als@21-0.05",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Gewerbe@23",
+   "f": "public/sirtoken/sfx-powerup.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Gewerbe@23+0.05",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Warum-0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Warum",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Pflicht+0.03",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Tag",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Die@27-0.05",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "anderen",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Schritte",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "bauen",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "darauf",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "auf@29",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Haken-0.08",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Haken",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Das@30.5",
+   "f": "sfx/heygen/extra/counter-roll.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "nur",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Mensch",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.35
+  },
+  {
+   "t": "Als@32-0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Wen",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "zuerst",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "an@35",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Kommentiere-0.15",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Gewerbe@36.5",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Gewerbe@36.5:end",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "und@37.8",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Frage",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Checkliste+0.1",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Damit+0.05",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Startliste",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.2
+  }
+ ]
+}

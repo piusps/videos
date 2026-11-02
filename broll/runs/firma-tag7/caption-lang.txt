@@ -1,0 +1,21 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Jetzt rechnet sie ihren Preis, und die Rechnung kippt ihre Wahl.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. In der letzten Folge hat sie A61 als Partner gewählt, mit Vorbehalt: einziges belegtes 60-Grad-Arbeitsshirt, ab einem Stück, aber zum Ladenpreis teurer als der Markt. Zweite Wahl war Printful.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai unter Settings > Capabilities „Code execution and file creation“ einschalten (geht in allen Plänen), damit Claude eine echte Excel-Datei baut.
+2. Neuen Chat öffnen, über „+“ und „Upload or add files“ das letzte Ergebnis anhängen, hier den Partnervergleich.
+3. Fragen: Im Anhang ist mein letztes Ergebnis. Rechne meinen Preis als Excel-Datei mit Formeln. Was kostet ein Auftrag mit [Menge] bei jedem Partner, mit Material, Veredelung, Einrichtung, Versand und Mehrwertsteuer? Nimm nur Zahlen aus dem Anhang und schreib dazu, woher geschätzte oder umgerechnete Werte kommen. Schlag einen Verkaufspreis vor, zeig den Rohertrag pro Auftrag und entscheide dich mit zwei bis drei Gründen mit Zahlen. Erfinde nichts.
+4. Fragt claude.ai mittendrin „Permission request: Terminal“, einmal „Allow once“ klicken. Das gilt nur für diesen einen Rechenbefehl in Claudes Sandbox.
+
+Ergebnis im echten Lauf (3 Minuten, eine Excel-Datei mit 75 Formeln, eine Websuche nur für den Dollarkurs): Die KI wechselt zu Printful. Fünf bestickte Shirts kosten im Einkauf bei A61 151,40 Euro brutto, bei Printful 69,14 Euro, die Konkurrenz verkauft für rund 110 Euro. Ein nachbestelltes Einzelshirt kostet bei Printful 15,41 Euro, weil die Stickdatei wiederverwendet wird. Vorschlag: 109 Euro für fünf Shirts, 29,90 Euro für ein Einzelshirt. Rohertrag pro Auftrag (netto, geplant, nicht verdient): +33,50 Euro beim Fünferpaket, bei A61 wären es −35,63 Euro. A61 rechnet sich laut Claude nur mit einem Händlerpreis unter 17,16 Euro netto je besticktem Shirt.
+
+Der Haken: Mit Printful gibt es kein 60-Grad-Versprechen, beim Gildan-Shirt steht nur „machine wash warm“. Gelb markiert in der Datei: Annahme Dollarkurs 1 US-Dollar = 0,8666 Euro (EZB-Referenzkurs vom 15.09.2026, vor dem Start aktualisieren), Stickprogramm bei A61 mit 0 Euro angesetzt (nicht gefunden), Rohertrag mit Vorsteuerabzug gerechnet (als Kleinunternehmer blieben 39,86 Euro).
+
+Kommentiere „Preis“, dann schick ich dir die Frage und die Kalkulationsvorlage mit allen Formeln. Damit rechnest du deinen Preis in zehn Minuten.
+
+Offen bleibt: Wie heißt die Firma? Ohne Namen gibt es kein Logo, kein Muster und keine Werbung.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #kalkulation #firmenshirts

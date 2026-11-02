@@ -1,0 +1,248 @@
+{
+ "topic": "Website",
+ "trigger_word": "Website",
+ "cover": {
+  "kicker": "KI baut eine Firma · Was muss oben auf die Website?",
+  "title": "Dein Startseiten-Entwurf. In wenigen Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie die Startseite für ihre Shirt-Firma gebaut hat. Mit Klickpfad, den drei Dingen für ganz oben, Claudes Gründen, der Online-Checkliste und dem echten Entwurf als Bild.",
+  "stat": {
+   "value": "2 min 12 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: Handy-Startseite mit Logo und Preisen gebaut, die drei Dinge für ganz oben begründet, aufgelistet, was bis online fehlt. Ohne Websuche."
+  },
+  "outcomes": [
+   "Ein Startseiten-Entwurf fürs Handy, mit deinem Logo und nur belegten Angaben",
+   "Die drei Dinge, die ganz oben stehen, mit Begründung",
+   "Die Online-Checkliste: was fehlt, bevor die Seite online gehen darf"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Die Frage zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** und **„Upload or add files“** dein Logo an (SVG oder PNG) und, wenn du eins hast, dein letztes Ergebnis. Dann füge diese Frage ein. Das ist die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Die Frage zum Kopieren (Logo und letztes Ergebnis angehängt)",
+     "text": "Im Anhang sind mein Logo und mein letztes Ergebnis. Ich verkaufe [PRODUKT] an [ZIELGRUPPE]. Mein Preis: [PREIS UND MENGE]. Jetzt brauche ich eine Website, denn [TYPISCHER KUNDE] schaut nach, bevor er bestellt. Bau mir eine einfache Startseite als Vorschau hier im Chat, mit meinem Logo, fürs Handy gedacht. Schreib nur, was belegt ist. [WAS ICH NOCH NICHT VERSPRECHEN KANN] kann ich noch nicht versprechen. Entscheide, welche drei Dinge ganz oben stehen, und begründe es mit zwei bis drei konkreten Gründen. Sag mir auch, was noch fehlt, bevor die Seite online gehen darf. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · wenige Minuten",
+     "text": "In unserem Lauf hat Claude 2 Minuten 12 Sekunden gearbeitet. Danach hast du einen Handy-Entwurf mit deinem Logo, die drei Dinge für ganz oben mit Gründen und die Liste, was bis online fehlt. Alles, was Claude nicht belegen kann, steht als Platzhalter in eckigen Klammern da."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Upload or add files“** → Logo und letztes Ergebnis wählen → Frage einfügen → senden. Research ist nicht nötig, in unserem Lauf blieb es aus."
+      },
+      {
+       "k": "Websuche",
+       "v": "Nicht nötig. In unserem Lauf hat Claude nicht gesucht (0 Websuchen)."
+      },
+      {
+       "k": "Vorschau",
+       "v": "Claude legt die Seite als Vorschau im Chat an. Laut Claude ist sie privat, bis du sie über **„Teilen“** freigibst."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 2 Minuten 12 Sekunden. Mit Einfügen und Lesen: wenige Minuten."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Variante",
+   "title": "Noch kein Logo, noch kein Ergebnis?",
+   "intro": "Dann setzt Claude oben einfach deinen Firmennamen als Schriftzug ein. Neuer Chat, nichts anhängen, Frage einfügen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante ohne Logo und ohne letztes Ergebnis (nicht getestet)",
+     "text": "Ich verkaufe [PRODUKT] an [ZIELGRUPPE]. Mein Preis: [PREIS UND MENGE]. Ein Logo habe ich noch nicht, setz oben einfach den Namen [FIRMENNAME] als Schriftzug ein. Jetzt brauche ich eine Website, denn [TYPISCHER KUNDE] schaut nach, bevor er bestellt. Bau mir eine einfache Startseite als Vorschau hier im Chat, fürs Handy gedacht. Schreib nur, was belegt ist. [WAS ICH NOCH NICHT VERSPRECHEN KANN] kann ich noch nicht versprechen. Entscheide, welche drei Dinge ganz oben stehen, und begründe es mit zwei bis drei konkreten Gründen. Sag mir auch, was noch fehlt, bevor die Seite online gehen darf. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Nicht getestet",
+     "text": "Diese Variante haben wir nicht laufen lassen, die Dauer ist unbekannt. Getestet ist die Fassung mit Logo und Anhang (2 min 12 s)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Beispiel",
+      "[PRODUKT] an [ZIELGRUPPE]",
+      "[TYPISCHER KUNDE]",
+      "Noch nicht versprechen"
+     ],
+     "widths": [
+      "20%",
+      "34%",
+      "20%",
+      "26%"
+     ],
+     "rows": [
+      [
+       "Hundefriseurin",
+       "Hundepflege im Salon an Hundehalter im Stadtteil",
+       "Hundehalterin",
+       "Termine am selben Tag"
+      ],
+      [
+       "Fliesenleger",
+       "Badsanierung an Eigentümer von Altbauwohnungen",
+       "Hausbesitzer",
+       "Fertigstellung in einer Woche"
+      ],
+      [
+       "Kaffeerösterin",
+       "Kaffee mit eigenem Etikett an Büros",
+       "Büroleiterin",
+       "Lieferung am nächsten Tag"
+      ],
+      [
+       "Fotografin",
+       "Bewerbungs- und Teamfotos an kleine Firmen",
+       "Inhaber eines Betriebs",
+       "Bilder am selben Tag"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "[PREIS UND MENGE] setzt du mit deinen echten Zahlen ein, zum Beispiel „Festpreis pro m² nach Besichtigung“ oder „… € pro Person“. Keine Zahl erfinden: Was du nicht weißt, lässt Claude als Platzhalter stehen."
+    }
+   ]
+  },
+  {
+   "kicker": "Ganz oben",
+   "title": "Diese drei Dinge stellt die KI nach oben.",
+   "intro": "Claudes Entscheidung im Lauf für die Shirt-Firma (Firmenshirts mit gesticktem Logo für kleine Handwerks- und Baubetriebe):",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Was es ist und für wen",
+       "text": "„Firmenshirts mit gesticktem Logo. Für Handwerks- und Baubetriebe mit weniger als zehn Leuten.“"
+      },
+      {
+       "num": "02",
+       "title": "Der Preis",
+       "text": "5 Shirts für 109 € brutto, darunter das Einzelshirt für 29,90 €."
+      },
+      {
+       "num": "03",
+       "title": "Der Bestell-Button",
+       "text": "„Jetzt bestellen“, direkt unter dem Preis."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Claudes Gründe, wörtlich:**"
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "**Ein Betrieb, der dich prüft, will drei Fragen schnell beantwortet haben:** Ist das für mich? Was kostet es? Wie bestelle ich? Genau diese drei Punkte stehen vor allem anderen.",
+      "**Auf dem Handy passt nur wenig in den ersten Blick.** Bei rund 650 px sichtbarer Höhe reicht der Platz für Satz, Preis und Button, aber nicht für eine Prozessbeschreibung. Wer nicht scrollt, hat trotzdem alles, um zu entscheiden.",
+      "**Dein Preis ist das stärkste belegte Argument.** Dein Paket mit fünf Shirts passt zur Größe deiner Zielgruppe, und ein fester Bruttopreis spart dem Betrieb eine Anfrage. Andere Argumente wie Qualität, Lieferzeit oder Waschbarkeit kann ich noch nicht belegen, deshalb stehen sie weiter unten als Platzhalter."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Die 650 px sind Claudes eigene Schätzung, keine Quelle. Für deine Firma heißt das: Was ist es und für wen, was kostet es, wie bestellt man. Der Rest darf nach unten."
+    }
+   ]
+  },
+  {
+   "kicker": "Der Entwurf",
+   "title": "So sah die Startseite aus.",
+   "intro": "Der erste Bildschirm der Startseite aus unserem Lauf. Das Bild ist lokal aus Claudes Code gerendert, die Vorschau in claude.ai selbst ist privat.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/entwurf.png",
+     "width": "46%",
+     "caption": "Echter Lauf vom 29.10.2026, erster Bildschirm (390 px breit). Lokal aus Claudes Code gerendert, keine claude.ai-Pixel."
+    },
+    {
+     "type": "p",
+     "text": "Weiter unten stehen 8 Platzhalter in eckigen Klammern, zum Beispiel [VERSANDKOSTEN], [LIEFERZEIT nach Probebestellung], [FOTO: echtes Probeshirt] und [PFLEGEHINWEIS erst nach Waschtest]. Keine erfundenen Kundenstimmen, keine erfundenen Kontaktdaten, keine Waschtemperatur."
+    }
+   ]
+  },
+  {
+   "kicker": "Online-Checkliste",
+   "title": "Was fehlt, bevor die Seite online gehen darf.",
+   "intro": "Claudes Liste aus dem Lauf, zum Abhaken. Claude selbst dazu: **„ich bin kein Anwalt, bitte prüfen lassen“**.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**Rechtlich (ich bin kein Anwalt, bitte prüfen lassen):**"
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "**Impressum** mit Name, ladungsfähiger Anschrift und Kontakt.",
+      "**Datenschutzerklärung.** Schon das Laden von Google Fonts kann darunter fallen. Sicherer ist es, die Schrift selbst zu hosten.",
+      "**AGB, und klären, ob du nur an Firmen verkaufst.** Bei Bestellungen von Verbrauchern brauchst du eine Widerrufsbelehrung. Bei personalisierter Ware gibt es dazu Ausnahmen, die du prüfen lassen solltest.",
+      "**Versandkosten und Lieferzeit** müssen beim Preis stehen.",
+      "**Dein Umsatzsteuer-Status.** Wenn du Kleinunternehmer bist, darfst du keine Mehrwertsteuer ausweisen, und „brutto“ muss anders formuliert werden."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Inhaltlich:**"
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "Wie wird bestellt (Shop, Formular oder E-Mail)? Und wie kommt das Logo des Betriebs zu dir? Aus deinen Angaben geht nicht hervor, ob auf das Shirt das Logo des Kunden oder dein eigenes gestickt wird. Ich bin vom Kundenlogo ausgegangen.",
+      "Shirtmodell, Material, Größen und Farben.",
+      "Ein echtes Foto vom Probeshirt. Das zeigt auch, ob Stich und Fläche so wirken wie geplant.",
+      "Eine Kontakt-E-Mail für Kolonnenshirt.",
+      "Namensprüfung bei DPMA und EUIPO. Die steht laut deinem letzten Ergebnis noch aus.",
+      "Die Lizenz der Schrift Inter im Logo. Meines Wissens steht sie unter der SIL Open Font License, das solltest du aber kurz nachlesen."
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken",
+     "text": "Der Entwurf ist ein Entwurf, nicht online und nicht rechtlich geprüft. Diese Liste ist Claudes Liste aus einem Lauf, keine Rechtsberatung. Für deine Firma lässt du sie prüfen. Claudes nächster Schritt im Lauf: ein Probeshirt bestellen, es liefert Foto, Lieferzeit und Pflegehinweis auf einmal."
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Zu viel oben:** Auf dem Handy passt in den ersten Blick nur wenig. Was es ist, Preis, Bestellen. Fertig.",
+      "**Unbelegte Versprechen:** Lieferzeit, Qualität, Waschbarkeit erst auf die Seite, wenn du sie belegen kannst.",
+      "**„Erfinde nichts“ weglassen:** Dann füllt Claude Lücken eventuell selbst. Mit dem Satz bleiben sie Platzhalter.",
+      "**Den Entwurf für fertig halten:** Ohne Impressum und Datenschutzerklärung nicht online."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes fragt die KI: Was muss sie anmelden?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Entscheidung, Gründe und Liste aus einem echten claude.ai-Lauf vom 29.10.2026 (ohne Websuche, 2 min 12 s), wörtlich übernommen, an einer Stelle gekürzt; die Liste ist nicht von uns rechtlich geprüft. Bild lokal aus Claudes Code gerendert. Menünamen können sich ändern."
+}

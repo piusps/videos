@@ -1,0 +1,11 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Der Werbebrief steht.
+Heute sucht sie Adressen für fünf Briefe.
+Claude: Brief angehängt, Websuche, Excel-Datei.
+Sie nimmt das Impressum, nicht Verzeichnisse.
+Warum? Es ist Pflicht. Der Betrieb pflegt es selbst.
+Verzeichnisse hatten bei zwei Betrieben frühere Adressen.
+Der Haken: Eindeutig belegt ist nur eine.
+Als Nächstes: Welche Adresse stimmt?
+Kommentiere „Adresse“, ich schick dir Frage und Tabellenvorlage.
+Damit hast du in zehn Minuten deine Empfängerliste.

@@ -1,0 +1,16 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ihr Produkt: Firmenshirts mit Logo. Ihr Kunde: kleine Handwerksbetriebe. Jetzt will sie wissen, was die beim Bestellen nervt.
+
+So machst du das für deine Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen, unten links auf „+“ klicken und „Research“ einschalten. Das geht in den bezahlten Plänen (Pro, Max, Team, Enterprise).
+2. Die Quellen eingrenzen: nur Bewertungen, Foren und Ratgeber. Dort schreiben Käufer, was wirklich schiefging.
+3. Fragen: Was nervt meine Kunden am meisten, wenn sie bestellen? Nenne die fünf häufigsten Ärgernisse, jeweils mit Quelle.
+
+Platz eins: Der Druck blättert nach ein paar Wäschen ab. Danach kommen späte Lieferungen und ein falsch platziertes Logo. Die KI verspricht deshalb zuerst waschfesten Druck: Es ist das häufigste Ärgernis, rund 11 Fundstellen bei 6 Anbietern. Und „ab einem Stück“ drucken heute viele, das allein reicht nicht mehr. Claude sagt selbst: grobe Zählung, keine Statistik.
+
+Kommentiere „Ärger“, dann schick ich dir den Guide mit der Frage zum Kopieren und dem echten Ergebnis.
+
+Offen bleibt: Was verlangt die Konkurrenz für so ein Shirt? Das prüft die KI als Nächstes.
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #handwerk #firmenshirts

@@ -1,0 +1,7 @@
+wechsel    → Die KI wechselt Printful statt A61
+frage      → Ergebnis anhängen. Frage: Was kosten A einundsechzig und Printful als Excel mit Formeln?
+grund1     → Warum? Fünf Shirts kosten bei A einundsechzig im Einkauf hunderteinundfünfzig Euro, Konkurrenzpreis hundertzehn
+grund2     → Bei Printful 69
+vorschlag  → Vorschlag: hundert neun Euro für fünf. Rohertrag pro Auftrag: dreiunddreißig Euro fünfzig
+haken      → Haken: sechzig Grad Wäsche verspricht Printful nicht
+cta        → Kommentiere Preis und ich schick dir die Frage und die Kalkulationsvorlage. Damit rechnest du deinen Preis in zehn Minuten

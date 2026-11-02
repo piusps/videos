@@ -1,0 +1,11 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Fünf Briefe, einer sicher.
+Heute prüft sie die Adressen.
+Claude: Liste angehängt, Websuche.
+Ein Betrieb: Impressum gegen Register.
+Sie glaubt dem Impressum.
+Warum? Die Register-Abschrift war alt.
+Laut Firmendatenbank bestätigt ein neuerer Eintrag das Impressum.
+Vier Briefe können raus, einer nach Postleitzahl-Check.
+Als Nächstes: Wie kommen die Adressen in den Brief?
+Kommentiere „Versand“, ich schick dir die Prüffrage. Damit hast du in zehn Minuten sichere Adressen.

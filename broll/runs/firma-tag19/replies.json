@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge 19 Stimmt die Versandzeile: Prüf-Prompt per DM, Trigger-Wort im Video: Beleg)",
+ "commentReply": "Der Prompt liegt in deiner DM. Was steht bei dir gerade in der Versandzeile?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Nennst du Versandkosten im Angebot oder erst später?",
+  "Schick ich dir gerade. Über welchen Anbieter verschickst du?",
+  "Liegt in deiner DM. Hast du für deine Lieferzeit eine Quelle?",
+  "Angekommen, der Prompt ist dabei. Rechnest du Versand extra oder ist er im Preis?",
+  "Ist unterwegs. Welche Zahl in deinem Angebot würdest du zuerst prüfen?"
+ ]
+}

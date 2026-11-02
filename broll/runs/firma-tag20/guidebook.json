@@ -1,0 +1,434 @@
+{
+ "topic": "Steuer",
+ "trigger_word": "Steuer",
+ "cover": {
+  "kicker": "KI baut eine Firma · Mit oder ohne Umsatzsteuer?",
+  "title": "Beide Steuer-Wege durchrechnen. In zehn Minuten.",
+  "subtitle": "Der Prompt, mit dem die KI aus der Serie entschieden hat, ob ihre Firma als Kleinunternehmer startet oder mit Umsatzsteuer: Websuche nach Gesetz und IHK, beide Wege für den eigenen Preis gerechnet, Entscheidung mit Gründen. Mit dem Rechenweg zum Selbsteintragen, der ehrlichen Gegenseite und der Liste, was nur ein Mensch erledigen kann.",
+  "stat": {
+   "value": "1 min 31 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: 5 Websuchen, 3 Seitenabrufe (einer abgelehnt). Entscheidung: mit Umsatzsteuer, also Verzicht auf die Kleinunternehmerregelung."
+  },
+  "outcomes": [
+   "Der Steuer-Prompt zum Kopieren, mit Anhang und ohne",
+   "Der Rechenweg beider Wege für deinen eigenen Preis",
+   "Die Gegenseite, ehrlich: wann Kleinunternehmer besser sein kann",
+   "Was Claude nicht prüft und was nur ein Mensch erledigt"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Der Steuer-Prompt zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** dein Angebot und deine Kalkulation an, zum Beispiel als Word- oder Textdatei. Dann füge diesen Prompt ein und ersetze die Teile in eckigen Klammern. Das ist der Prompt aus unserem Lauf, verallgemeinert für deine eigene Firma.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante A: mit Anhang (Angebot und Kalkulation)",
+     "text": "Ich gründe gerade eine kleine Firma. Im Anhang stehen mein Angebot und meine Kalkulation: [PAKETPREIS] brutto für [MENGE] [PRODUKT], [EINZELPREIS] für ein einzelnes Stück, Einkauf bei [LIEFERANT]. Meine Kunden sind [KUNDEN]. Prüf mit der Websuche, ob ich als Kleinunternehmer starten soll oder mit Umsatzsteuer, jeweils mit Quelle (Gesetz, Finanzverwaltung, IHK). Rechne für meine Preise aus, was das jeweils für mich bedeutet. Entscheide dich für einen Weg, mit zwei bis drei konkreten Gründen. Sag mir, was du nicht prüfen kannst. Erfinde nichts. Ich weiß, dass das keine Steuerberatung ist."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Claude hat in unserem Lauf 1 Minute 31 Sekunden gearbeitet. Mit Anhängen, Lesen der Antwort und dem Eintragen deines eigenen Einkaufspreises in den Rechenweg (Seite 5) hast du nach etwa 10 Minuten beide Wege für deinen Preis durchgerechnet."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → Häkchen bei **„Gedächtnis“** entfernen → **„Dateien hochladen oder hinzufügen“** → Angebot und Kalkulation anhängen → Prompt einfügen → senden."
+      },
+      {
+       "k": "Websuche",
+       "v": "Muss an sein, Claude sucht Gesetz und IHK-Seiten selbst. In unserem Lauf: 5 Websuchen und 3 Seitenabrufe, Research aus."
+      },
+      {
+       "k": "Ergebnis",
+       "v": "Eine Antwort im Chat: Rechtslage mit Quellen, Rechnung beider Wege, Entscheidung mit Gründen, Liste „Was ich nicht prüfen konnte“."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf am 31.10.2026: 1 Minute 31 Sekunden."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Keine Steuerberatung",
+     "text": "Claude ist kein Steuerberater, und dieser Guide ist keine Steuerberatung. Die Antwort hilft dir, die Frage zu verstehen und deine Zahlen vorzubereiten. Entscheiden und anmelden tust du mit deiner Steuerberatung oder dem Finanzamt."
+    }
+   ]
+  },
+  {
+   "kicker": "So sieht es aus",
+   "title": "Der Prompt im Lauf und die Entscheidung.",
+   "intro": "Angehängt war die Marge-Rechnung aus den Folgen davor: 109 € brutto für 5 gestickte Shirts, 29,90 € für ein Einzelshirt, Einkauf bei Printful. Der Einkaufspreis pro Shirt fehlte, ohne Printful-Konto war er nicht zu finden.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/01-prompt-mit-anhang.png",
+     "width": "40%",
+     "caption": "Echter Lauf vom 31.10.2026: Anhang und Prompt vor dem Senden."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/02-entscheidung.png",
+     "width": "72%",
+     "caption": "Claudes Entscheidung im Lauf."
+    }
+   ]
+  },
+  {
+   "kicker": "Variante B",
+   "title": "Keine Kalkulation zur Hand? Dann ohne Anhang.",
+   "intro": "Du willst erst mal nur wissen, welcher Weg für deinen Preis infrage kommt? Dann schreib Preis, Einkauf und Kunden direkt in den Prompt.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante B: ohne Anhang (nicht getestet)",
+     "text": "Ich bin [DEIN BERUF] und verkaufe [PRODUKT] für [PREIS] brutto an [KUNDEN]. Mein Einkauf: [EINKAUF] netto pro Stück bei [LIEFERANT]. Prüf mit der Websuche, ob ich als Kleinunternehmer starten soll oder mit Umsatzsteuer, mit Quelle (Gesetz, IHK). Rechne beide Wege für meinen Preis durch, entscheide dich mit zwei bis drei Gründen und sag mir, was du nicht prüfen kannst. Erfinde nichts. Ich weiß, dass das keine Steuerberatung ist."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Nicht getestet",
+     "text": "Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit Anhang (1 Minute 31 Sekunden)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Beispiel",
+      "Wofür die Frage passt"
+     ],
+     "widths": [
+      "32%",
+      "68%"
+     ],
+     "rows": [
+      [
+       "Webdesignerin für Arztpraxen",
+       "Geschäftskunden mit Vorsteuerabzug, kaum Wareneinkauf, aber Software-Abos mit Umsatzsteuer"
+      ],
+      [
+       "Hundetrainer",
+       "Fast nur Privatkunden, da kann Kleinunternehmer der bessere Weg sein"
+      ],
+      [
+       "Schreiner mit Einzelstücken",
+       "Holzeinkauf mit Umsatzsteuer, Kunden gemischt privat und gewerblich"
+      ],
+      [
+       "Fotografin",
+       "Hochzeiten privat, Firmenshootings gewerblich, Kamerakauf mit Umsatzsteuer"
+      ]
+     ],
+     "caption": "Beispiele ohne Lauf-Daten: Sie zeigen nur, wofür die Frage passt, nicht welcher Weg richtig ist."
+    }
+   ]
+  },
+  {
+   "kicker": "Der Rechenweg",
+   "title": "So rechnest du beide Wege selbst.",
+   "break_before": true,
+   "intro": "Claude hat im Lauf mit P gerechnet, dem Nettopreis, den du pro Stück beim Lieferanten zahlst. Den kennst nur du, aus deinem eigenen Konto oder deiner Rechnung. Die gleichen Schritte kannst du mit Taschenrechner oder als Nachfrage im selben Chat machen.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Netto aus deinem Bruttopreis",
+       "text": "**Netto = Brutto ÷ 1,19.** Die Umsatzsteuer darin: **Brutto − Netto.** Im Lauf: 109 € ÷ 1,19 = 91,60 €, darin 17,40 € Umsatzsteuer."
+      },
+      {
+       "title": "Weg 1: mit Umsatzsteuer",
+       "text": "Dir bleibt der Nettopreis, die Umsatzsteuer geht ans Finanzamt. Berechnet dein Lieferant Umsatzsteuer, holst du sie dir als Vorsteuer zurück. **Dir bleibt: Netto − Menge × P.** Im Lauf: 91,60 € − 5 × P."
+      },
+      {
+       "title": "Weg 2: Kleinunternehmer",
+       "text": "Du weist keine Umsatzsteuer aus und behältst den ganzen Preis, hast aber keinen Vorsteuerabzug. Schlägt dein Lieferant 19 % auf, zahlst du die drauf. **Dir bleibt: Brutto − Menge × 1,19 × P.** Im Lauf: 109 € − 5,95 × P."
+      },
+      {
+       "title": "Was dein Kunde wirklich zahlt",
+       "text": "Ein Kunde mit Vorsteuerabzug holt sich deine Umsatzsteuer zurück und zahlt effektiv netto. Im Lauf: 91,60 € statt 109 €, also 17,40 € weniger. Beim Kleinunternehmer zahlt er die vollen 109 €. Privatkunden und Kunden ohne Vorsteuerabzug zahlen immer brutto."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "head": [
+      "Zum Eintragen",
+      "Formel",
+      "Dein Wert"
+     ],
+     "widths": [
+      "34%",
+      "42%",
+      "24%"
+     ],
+     "rows": [
+      [
+       "Netto",
+       "Brutto ÷ 1,19",
+       ""
+      ],
+      [
+       "Umsatzsteuer im Preis",
+       "Brutto − Netto",
+       ""
+      ],
+      [
+       "Dir bleibt mit Umsatzsteuer",
+       "Netto − Menge × P",
+       ""
+      ],
+      [
+       "Dir bleibt als Kleinunternehmer",
+       "Brutto − Menge × 1,19 × P",
+       ""
+      ],
+      [
+       "P, bei dem nichts übrig bleibt",
+       "Netto ÷ Menge",
+       ""
+      ]
+     ],
+     "caption": "1,19 × P gilt nur, wenn dein Lieferant 19 % Umsatzsteuer berechnet. Versand und einmalige Kosten kommen noch dazu."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Rechnung im Lauf",
+   "title": "109 € und 29,90 €, beide Wege.",
+   "intro": "So hat Claude es für das Angebot aus der Serie gerechnet. Wir haben jede Zahl nachgerechnet. Eine Marge in Euro gibt es nicht, weil der Einkaufspreis P fehlt.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Claudes Rechnung im Lauf",
+      "Mit Umsatzsteuer",
+      "Kleinunternehmer"
+     ],
+     "widths": [
+      "38%",
+      "31%",
+      "31%"
+     ],
+     "rows": [
+      [
+       "5er-Paket 109 €: dir bleibt",
+       "91,60 € − 5 × P",
+       "109 € − 5,95 × P"
+      ],
+      [
+       "Logo-Digitalisierung, einmalig",
+       "2,95–6,50 €",
+       "3,51–7,74 € (mit 19 %)"
+      ],
+      [
+       "Nichts übrig bei P =",
+       "18,32 € (mit 6,50 € Digitalisierung rund 17,02 €)",
+       "genauso"
+      ],
+      [
+       "Einzelshirt 29,90 €: dir bleibt",
+       "25,13 € − P",
+       "29,90 € − 1,19 × P"
+      ],
+      [
+       "Nichts übrig bei P =",
+       "25,13 €",
+       "genauso"
+      ],
+      [
+       "Betrieb mit Vorsteuerabzug zahlt effektiv",
+       "91,60 € bzw. 25,13 €",
+       "109 € bzw. 29,90 €"
+      ]
+     ],
+     "caption": "Alle Null-Grenzen ohne Versand. Die 19 % Aufschlag auf den Einkauf beim Kleinunternehmer: laut Testbericht, Printfuls eigene Aussage nicht geprüft."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/08-rechnung-tabelle.png",
+     "width": "58%",
+     "caption": "Echter Lauf vom 31.10.2026: Claudes Tabelle. P = Printful-Nettopreis pro besticktem Shirt."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Entscheidung",
+   "title": "Mit Umsatzsteuer. Und der Haken.",
+   "break_before": true,
+   "intro": "Claude hat sich für die Umsatzsteuer entschieden, also für den Verzicht auf die Kleinunternehmerregelung, mit drei Gründen. Der Haken steht gleich dabei.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/10-drei-gruende.png",
+     "width": "50%",
+     "caption": "Echter Lauf vom 31.10.2026. Grund 2 stützt sich auf einen Testbericht. Den Verweis auf § 14 Abs. 3 UStG in Grund 3 haben wir nicht gegengeprüft."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Grund 1",
+       "v": "Kunden sind Betriebe. Wer Vorsteuerabzug hat, holt sich von 109 € die 17,40 € Umsatzsteuer zurück. Nachgerechnet: 109 − 109 ÷ 1,19 = 17,40 €. Beim Einzelshirt 4,77 €."
+      },
+      {
+       "k": "Grund 2",
+       "v": "Ohne Vorsteuerabzug bliebe der Einkauf bei Printful 19 % teurer. **Laut Testbericht** (ecom-tools.de), Printfuls eigene Aussage nicht geprüft."
+      },
+      {
+       "k": "Haken",
+       "v": "Der Verzicht bindet mindestens fünf Kalenderjahre ([§ 19 Abs. 3 UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html), von uns nachgelesen). Dazu kommen Umsatzsteuer-Voranmeldungen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Gegenseite",
+   "title": "Wann Kleinunternehmer besser sein kann.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Gleicher Bruttopreis, mehr Marge als Kleinunternehmer:** 109 € − 5,95 × P ist genau das 1,19-Fache von 91,60 € − 5 × P. Dir bleiben 19 % mehr.",
+      "**Kunden ohne Vorsteuerabzug holen sich nichts zurück:** Privatkunden und Betriebe, die selbst Kleinunternehmer sind, zahlen immer brutto. Claude: „Für ihn kippt Grund 1.“",
+      "**Laut IHK** kann der Verzicht sinnvoll sein, wenn man „überwiegend an andere Unternehmer und nicht an Privatkunden“ leistet ([IHK Schwarzwald-Baar-Heuberg](https://www.ihk.de/sbh/unternehmer/recht-steuern/steuern/kleinunternehmerregelung-5678528)).",
+      "**Offen im Lauf:** 109 € brutto lassen oder 109 € netto verlangen (= 129,71 € brutto)? Dann läge der Weg mit Umsatzsteuer laut Claude um 0,95 × P pro Paket vorn. Claude hat beides gerechnet und nicht entschieden."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Gegenprüfung",
+   "title": "Was wir nachgelesen haben.",
+   "break_before": true,
+   "intro": "Claude konnte den Gesetzestext im Lauf nicht direkt abrufen und hat sich auf IHK-Seiten und Fachquellen gestützt. Wir haben die wichtigsten Aussagen danach selbst nachgelesen, am 31.10.2026.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Aussage aus dem Lauf",
+      "Quelle",
+      "Stand"
+     ],
+     "widths": [
+      "46%",
+      "30%",
+      "24%"
+     ],
+     "rows": [
+      [
+       "Kleinunternehmer: Vorjahr höchstens 25.000 €, laufendes Jahr höchstens 100.000 €",
+       "[§ 19 UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html)",
+       "von uns nachgelesen"
+      ],
+      [
+       "Im Gründungsjahr gilt: tatsächlicher Umsatz höchstens 25.000 €",
+       "[IHK München](https://www.ihk-muenchen.de/ratgeber/steuern/steuerarten/umsatzsteuer/kleinunternehmerregelung/)",
+       "von uns nachgelesen"
+      ],
+      [
+       "Kleinunternehmer haben keinen Vorsteuerabzug",
+       "IHK München (§ 15 Abs. 2 UStG)",
+       "von uns nachgelesen"
+      ],
+      [
+       "Verzicht bindet mindestens fünf Kalenderjahre",
+       "§ 19 Abs. 3 UStG",
+       "von uns nachgelesen"
+      ],
+      [
+       "Verzicht sinnvoll bei überwiegend Unternehmerkunden",
+       "IHK Schwarzwald-Baar-Heuberg",
+       "von uns nachgelesen"
+      ],
+      [
+       "Printful schlägt ohne USt-ID 19 % auf",
+       "Testbericht ecom-tools.de",
+       "Printfuls eigene Aussage nicht geprüft"
+      ],
+      [
+       "Erlass der Finanzverwaltung vom 18.03.2025",
+       "laut IHK Ostwürttemberg",
+       "nicht gelesen"
+      ]
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/04-vorsteuer-verzicht-5-jahre.png",
+     "width": "70%",
+     "caption": "Echter Lauf vom 31.10.2026: Vorsteuerabzug und Verzicht."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/05-printful-19-prozent.png",
+     "width": "70%",
+     "caption": "Echter Lauf vom 31.10.2026: Printful laut Testbericht. Printfuls eigene Aussage nicht geprüft."
+    }
+   ]
+  },
+  {
+   "kicker": "Nicht geprüft",
+   "title": "Was Claude nicht prüfen kann.",
+   "intro": "Claude hat am Ende selbst aufgelistet, was offen bleibt.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/11-nicht-pruefen.png",
+     "width": "70%",
+     "caption": "Echter Lauf vom 31.10.2026: Claudes Liste „Was ich nicht prüfen konnte“."
+    }
+   ]
+  },
+  {
+   "kicker": "Das macht ein Mensch",
+   "title": "Diese Schritte erledigt Claude nicht.",
+   "intro": "Claude rechnet und sucht Quellen. Anmelden, beantragen und nachsehen im eigenen Konto kann nur ein Mensch. In der Serie ist davon noch nichts erledigt.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Mensch:** Einkaufspreis im eigenen Lieferanten-Konto nachsehen und als P eintragen.",
+      "**Mensch:** Prüfen, ob deine Kunden wirklich Vorsteuerabzug haben.",
+      "**Mensch:** Jahresumsatz schätzen und gegen 25.000 € (Vorjahr) und 100.000 € (laufendes Jahr) halten.",
+      "**Mensch:** Den Weg mit Steuerberatung oder Finanzamt klären, bevor du dich festlegst.",
+      "**Mensch:** Bei „mit Umsatzsteuer“: den Verzicht auf die Kleinunternehmerregelung gegenüber dem Finanzamt erklären.",
+      "**Mensch:** USt-ID beantragen, wenn du sie brauchst.",
+      "**Mensch:** Umsatzsteuer-Voranmeldungen abgeben, wenn du mit Umsatzsteuer startest."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Nur mit dem Bruttopreis rechnen:** Mit Umsatzsteuer bleibt dir nur der Nettopreis, als Kleinunternehmer der ganze Preis, aber dein Einkauf wird teurer.",
+      "**Die Kunden vergessen:** Ob Grund 1 trägt, hängt allein daran, ob deine Kunden Vorsteuerabzug haben.",
+      "**Die fünf Jahre übersehen:** Der Verzicht lässt sich nicht nach einem Jahr zurücknehmen.",
+      "**Testbericht als Lieferantenaussage nehmen:** Was dein Lieferant aufschlägt, siehst du nur in deinem eigenen Konto.",
+      "**„Erfinde nichts“ weglassen:** Dann riskierst du ausgedachte Grenzen oder Quellen.",
+      "**Claudes Antwort für die Anmeldung halten:** Das ist eine Zusammenfassung aus einem Lauf, keine Steuerberatung."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes: Was muss auf ihre Rechnung?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Steuer-, Geschäfts- oder Rechtsberatung. Prompt, Rechnung, Entscheidung und Nicht-prüfen-Liste aus einem echten claude.ai-Lauf vom 31.10.2026 (1 min 31 s, 5 Websuchen, 3 Seitenabrufe, einer davon abgelehnt, Gedächtnis aus), wörtlich übernommen oder verallgemeinert. Alle Beträge von uns nachgerechnet. Gegenprüfung: § 19 UStG (gesetze-im-internet.de), IHK München, IHK Schwarzwald-Baar-Heuberg, abgerufen am 31.10.2026. Die 19 % Aufschlag von Printful ohne USt-ID stammen aus einem Testbericht, Printfuls eigene Aussage nicht geprüft. Variante B und Beispiele nach Beruf nicht getestet. Menünamen können sich ändern."
+}

@@ -1,0 +1,75 @@
+===== Betriebe A1:K27
+Nr | Firma (wie in Quelle) | Gewerk | PLZ / Ort | Adresse / Kontakt | Größenangabe | Art der Größenquelle | Quelle (Link) | Weitere Quelle | Top-5-Rang | Hinweis
+1 | JuniusBau | Zimmerei, Rohbau, Holzschutz | 09114 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/wood-protection-285415 |  |  | 
+2 | Zimmerei Jens Knauth | Zimmerei (Carports, Holzfassaden, Dämmung) | 09117 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/wood-protection-285415 | https://web2.cylex.de/suche/%C3%BCberdachungen/Chemnitz | 4 | Laut Cylex eigene Marken-Website carport-chemnitz.de
+3 | HF-Elektroservice GmbH | Elektroinstallation, Blitzschutz, Beleuchtung | 09119 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/lighting-systems-663009 |  |  | 
+4 | Elektro Seidel | Elektroinstallation, Gebäudeautomation | 09116 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/lighting-systems-663009 |  |  | 
+5 | Witt & Liebscher Elektroanlagen GmbH | Elektroanlagen, Mittelspannung, Trafostationen | 09120 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/lighting-systems-663009 |  |  | Eher Industrie-/Netzkunden
+6 | Elektro-Metzler | Elektroinstallation, Sicherheitstechnik | 09126 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/companies/elektrometzler-143906 |  | 5 | Laut Verzeichnis 4. Generation, Einsatzradius 20 km
+7 | Barthel Haustechnik | Heizung, Sanitär, Elektro, Photovoltaik | 09126 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/blitzschutzerdungsanlagen-426333 |  |  | 
+8 | Baugeschäft Winkler | Maurer, Beton, Putz, Gerüst, Sanierung | 09116 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/bricklaying-445465 |  |  | 
+9 | Grätsch & Söhne GmbH | Maurer, Beton, Fassade, Tiefbau | 09116 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/natural-stone-and-concrete-work |  |  | 
+10 | LSG-Baugesellschaft Chemnitz mbH | Maurer, Straßen- und Tiefbau | 09120 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/tiefbauarbeiten-241493 |  |  | 
+11 | BPC Bauprojekte Chemnitz GmbH | Rohbau, Trockenbau, Außenanlagen | 09117 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/shell-594484 |  |  | 
+12 | Großmann Bau | Maurer, Trockenbau, Fassade, Pflaster | 09126 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/bricklaying-445465 |  |  | 
+13 | Bauunternehmen Dirk Daniel | Maurer, Beton, WDVS, Pflaster | 09120 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/bricklaying-445465 |  |  | 
+14 | Bauwerk Chemnitz Immobilien GmbH | Maurer, Beton, Rohbau, schlüsselfertig | 09119 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/bricklaying-445465 |  |  | Name deutet auch auf Immobiliengeschäft hin
+15 | USP Pflugbeil | Trockenbau, Erdarbeiten | 09120 Chemnitz | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/earthworks-656896 |  |  | 
+16 | PFALZ GmbH | Fliesen, Naturstein | 09228 Chemnitz-Wittgensdorf | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/natural-stone-and-concrete-work |  |  | 
+17 | Dachdeckerei Tillmann GmbH & Co. KG | Dachdeckerei, Dachklempnerei, Zimmerei | 09114 Chemnitz | Ziegeleistraße 7, 09114 Chemnitz; Tel. 0371 / 411065 (laut Website) | Cosuno: 5-9; Website: 6 Gesellen, 1 Helfer, 1 Azubi | Branchenverzeichnis + eigene Website | https://directory.cosuno.com/en/germany/chemnitz/lichtkuppeln | https://www.dachdeckerei-tillmann.de/unsere-firma-dachdecker-chemnitz-dachdeckerei-tillmann/ | 2 | Website-Seite ist laut Suchindex rund 10 Jahre alt
+18 | Heil Bedachung und Gerüstbau GbR | Bedachung, Gerüstbau, Klempnerei, PV | 09217 Burgstädt (ca. 15 km) | Straße nicht angegeben (Verzeichnis zeigt nur PLZ) | Cosuno-Verzeichnis: 5-9 Beschäftigte | Branchenverzeichnis | https://directory.cosuno.com/en/germany/chemnitz/lichtkuppeln |  |  | Liegt im Umland, nicht im Stadtgebiet
+19 | Fabrice Müller Malerbetrieb | Maler, Bodenbelag, kleiner Trockenbau | 09111 Chemnitz | Arbeitsort laut Stellenanzeige: Elisenstr. 25, 09111 Chemnitz | Betriebsgröße 3, gegründet 2021 | Jobbörse der Bundesagentur für Arbeit | https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002436033-S |  | 1 | Stellenanzeige für Maler online, Alter: über 30 Tage
+20 | Malermeister Andreas Demeter | Maler, Putz, Bodenbeläge, Fassade | Flöha OT Falkenau + Betriebsstätte Chemnitz | Betriebsstätte laut Website: Annaberger Straße 351a, Chemnitz | 8 Mitarbeiter | Eigene Website | https://www.maler-demeter.de/ |  | 3 | Sitz im Umland, Betriebsstätte in Chemnitz
+ | Anzahl Betriebe | =COUNTA(B2:B21) |  |  |  |  |  |  |  | 
+ | davon Top 5 | =COUNT(J2:J21) |  |  |  |  |  |  |  | 
+ | davon mit Größe aus 2+ Quellen oder eigener Angabe | =COUNTIF(G2:G21,"<>Branchenverzeichnis") |  |  |  |  |  |  |  | 
+ | Legende: gelb = Top 5. Nur Firmenangaben aus den Quellen, keine Ansprechpartner oder privaten Daten. Cosuno zeigt Straßen nur als Platzhalter, deshalb dort nur PLZ. |  |  |  |  |  |  |  |  | 
+===== Top 5 A1:G9
+Rang | Firma | Gewerk | Grund 1 | Grund 2 | Grund 3 | Erster Kontaktweg (Vorschlag)
+1 | Fabrice Müller Malerbetrieb | Maler | Größe genau belegt: 3 Personen, gegründet 2021 (Jobbörse der BA). Ein junger Betrieb hat oft noch keine feste Firmenkleidung – das ist eine Annahme, nicht geprüft. | Sucht laut Anzeige einen Maler, unbefristet ab sofort. Wer einstellt, braucht Kleidung für neue Leute. | Arbeitet bei Kunden innen und außen – das Shirt ist beim Kunden sichtbar. | Brief an den Betrieb oder Anruf mit klarem Bezug zur Neueinstellung
+2 | Dachdeckerei Tillmann GmbH & Co. KG | Dachdecker | Größe aus zwei Quellen: Cosuno 5-9 und eigene Website mit 6 Gesellen, 1 Helfer, 1 Azubi (Seite ist alt). | Dachdecker arbeiten sichtbar von der Straße aus – ein Logo auf dem Rücken wirkt dort als Werbung. | Adresse und Telefon stehen auf der eigenen Website, ein Brief kommt also sicher an. | Brief an Ziegeleistraße 7, danach Anruf
+3 | Malermeister Andreas Demeter | Maler | Eigene Website nennt genau 8 Mitarbeiter – passt in die Zielgröße. | Zwei Standorte (Flöha und Chemnitz): gleiche Kleidung macht das Team an beiden Orten erkennbar – Annahme. | Arbeitet laut Website für private und gewerbliche Kunden, also viel Kundenkontakt. | Brief an die Chemnitzer Betriebsstätte
+4 | Zimmerei Jens Knauth | Zimmerei | Cosuno: 5-9 Beschäftigte. | Betreibt laut Cylex eine eigene Website nur für Carports – der Betrieb investiert schon in eigene Vermarktung. | Carports und Holzarbeiten beim Privatkunden – das Team ist dort tagelang sichtbar. | Brief; Website-Adresse vorher selbst prüfen
+5 | Elektro-Metzler | Elektro | Cosuno: 5-9 Beschäftigte. | Laut Verzeichnis Familienbetrieb in 4. Generation – ein alter Name, auf den man stolz sein kann. Ob das zu Shirts führt, ist eine Annahme. | Einsatzradius laut Verzeichnis nur 20 km: sehr lokal, Monteure arbeiten in Wohnungen und Häusern. | Brief; Adresse vorher über Impressum ermitteln
+ | Warum diese fünf: | Sie decken vier Gewerke ab (Maler, Dach, Zimmerei, Elektro). So siehst du im Test, welches Gewerk am besten anspricht. Bei vier der fünf gibt es mehr als eine Angabe zur Größe oder eine eigene Website. Tiefbau- und Straßenbaufirmen habe ich zurückgestellt, weil ihr Team seltener beim Endkunden auftritt. |  |  |  | 
+ | Gilt für alle: | Unaufgeforderte Werbe-E-Mails an Firmen sind nach § 7 UWG ohne vorherige Einwilligung grundsätzlich unzulässig. Werbeanrufe bei Firmen brauchen eine mutmaßliche Einwilligung mit konkretem Bezug zum Betrieb. Brief oder persönlicher Besuch sind deshalb der naheliegende erste Kontakt. |  |  |  | 
+===== Testregion A1:C7
+Testregion: Stadt Chemnitz und nahes Umland (bis ca. 20 km) |  | 
+Punkt | Inhalt | Quelle
+Grund 1: viele Betriebe je Einwohner | Sachsen hat rund 50 Handwerksbetriebe je 10.000 Einwohner, der Bundesschnitt liegt bei 38,4. Bei Dachdeckern: über 30 je 100.000 Einwohner in Sachsen, 3,8 in Hamburg. | https://www.aroundhome.de/energieeffizientes-wohnen/studien/handwerksbetriebsdichte/
+Grund 2: genug, aber überschaubar | In der Stadt Chemnitz gab es 587 Bau- und Ausbaubetriebe der Anlage A, dazu 57 im Holz- und Bautenschutz (Stand 31.12.2021). Das reicht für einen Test und bleibt auf einer Stadt. | https://www.hwk-chemnitz.de/fileadmin/user_upload/Top_nav/Ueber-uns/Zahlen-Daten-Fakten/211231-Betriebsstatistik-nach-Landkreisen-04-2021.pdf
+Grund 3: Stimmung relativ gut | Im Frühjahr 2025 bewerteten die Betriebe der Stadt Chemnitz ihre Lage am besten im Kammerbezirk. | https://www.hwk-chemnitz.de/fileadmin/user_upload/Top_nav/Ueber-uns/Konjunkturberichte/HWK-Konjunkturbericht_01-25_WEB.pdf
+Gegenargument | Derselbe Bericht nennt einen deutlichen Rückgang bei den Ausbaugewerken und knappe Auftragsbestände. Betriebe könnten bei Ausgaben vorsichtig sein. | https://www.hwk-chemnitz.de/fileadmin/user_upload/Top_nav/Ueber-uns/Konjunkturberichte/HWK-Konjunkturbericht_01-25_WEB.pdf
+Einschränkung der Daten | Die Dichte-Studie ist von Aroundhome (ein Vermittlungsportal), beruht laut Methodik auf Destatis-Daten. Die Kammerzahlen sind von 2021. | 
+===== Nicht geprüft A1:B10
+Was ich nicht prüfen konnte | Warum es wichtig ist
+Aktuelle Mitarbeiterzahlen | Cosuno nennt Größenklassen ohne Datum und ohne Angabe, ob der Inhaber mitzählt. Die Tillmann-Seite ist alt. Die BA-Angabe stammt aus einer Stellenanzeige.
+Ob die Betriebe noch aktiv sind | Handelsregister und Gewerbestatus habe ich nicht abgefragt. Ein Anruf oder Blick ins Impressum klärt das.
+Ob sie schon Firmenkleidung haben | Das sieht man nur auf Fotos oder vor Ort. Die Top-5-Gründe dazu sind Annahmen und so markiert.
+Straßenadressen bei Cosuno-Einträgen | Cosuno zeigt Platzhalter statt Straße. Für einen Brief brauchst du das Impressum der Firma.
+Die Website carport-chemnitz.de | Erwähnt in einem Cylex-Eintrag, selbst nicht aufgerufen.
+Ob die Stellenanzeige von Fabrice Müller noch offen ist | Sie war über 30 Tage online.
+Datenschutz beim Speichern der Liste | Firmennamen von Einzelunternehmen enthalten den Namen des Inhabers. Ob du die Liste für Werbung speichern darfst, habe ich nicht geprüft.
+Regeln für Werbebriefe | Für E-Mail und Telefon habe ich IHK-Quellen. Die Regeln für Briefwerbung habe ich nicht eigens recherchiert.
+Ich bin kein Anwalt | Die Hinweise zum UWG ersetzen keine Rechtsberatung.
+===== Quellen A1:B20
+Quelle | Link
+Cosuno: Holzschutz Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/wood-protection-285415
+Cosuno: Beleuchtung Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/lighting-systems-663009
+Cosuno: Elektro-Metzler | https://directory.cosuno.com/en/germany/companies/elektrometzler-143906
+Cosuno: Blitzschutz Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/blitzschutzerdungsanlagen-426333
+Cosuno: Maurerarbeiten Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/bricklaying-445465
+Cosuno: Naturstein Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/natural-stone-and-concrete-work
+Cosuno: Tiefbau Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/tiefbauarbeiten-241493
+Cosuno: Rohbau Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/shell-594484
+Cosuno: Erdarbeiten Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/earthworks-656896
+Cosuno: Lichtkuppeln Chemnitz | https://directory.cosuno.com/en/germany/chemnitz/lichtkuppeln
+Cylex: Überdachungen Chemnitz | https://web2.cylex.de/suche/%C3%BCberdachungen/Chemnitz
+Dachdeckerei Tillmann: Unsere Firma | https://www.dachdeckerei-tillmann.de/unsere-firma-dachdecker-chemnitz-dachdeckerei-tillmann/
+BA-Jobbörse: Fabrice Müller Malerbetrieb | https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1002436033-S
+Malermeister Andreas Demeter | https://www.maler-demeter.de/
+Aroundhome: Handwerksbetriebsdichte 2026 | https://www.aroundhome.de/energieeffizientes-wohnen/studien/handwerksbetriebsdichte/
+HWK Chemnitz: Betriebsstatistik 31.12.2021 | https://www.hwk-chemnitz.de/fileadmin/user_upload/Top_nav/Ueber-uns/Zahlen-Daten-Fakten/211231-Betriebsstatistik-nach-Landkreisen-04-2021.pdf
+HWK Chemnitz: Konjunkturbericht Frühjahr 2025 | https://www.hwk-chemnitz.de/fileadmin/user_upload/Top_nav/Ueber-uns/Konjunkturberichte/HWK-Konjunkturbericht_01-25_WEB.pdf
+IHK Aachen: Telefon- und E-Mail-Werbung | https://www.ihk.de/aachen/recht/rechtsinformationen/aktuelle-dokumente-zum-thema-recht/telemarketing-telefon-werbung-telefax-werbung-und-e-mail-werber-607350
+IHK Bodensee-Oberschwaben: Was ist erlaubt? | https://www.ihk.de/bodensee-oberschwaben/recht/werbung-und-vertrieb/was-ist-erlaubt-1943228

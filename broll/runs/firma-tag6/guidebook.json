@@ -1,0 +1,539 @@
+{
+ "topic": "Partner",
+ "trigger_word": "Partner",
+ "cover": {
+  "kicker": "KI baut eine Firma · Wer stellt her und verschickt",
+  "title": "Finde den Partner, der für dich herstellt und verschickt. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie einen Partner gesucht hat, der Firmenshirts einzeln bestickt und direkt an ihre Kunden verschickt. Mit Klickpfad, der kompletten Partnertabelle aus unserem Lauf, den Beispielrechnungen, allen Quellen und einer Anleitung für deinen eigenen Betrieb.",
+  "stat": {
+   "value": "294 Quellen",
+   "label": "So viele Quellen hat Claude Research in unserem Lauf für diese eine Frage geprüft. Dauer: 5 Minuten 56 Sekunden. Sieben Partner in der Tabelle verglichen."
+  },
+  "outcomes": [
+   "Mögliche Partner im Vergleich: Einkaufspreis, einmalige Kosten, Mindestmenge, Lieferzeit, jeweils mit Quelle",
+   "Ehrlich ausgewiesen: was Claude nicht gefunden hat",
+   "Eine begründete Entscheidung mit Zahlen, und eine zweite Wahl"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Erst das Ergebnis. In zehn Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai), starte einen neuen Chat, tippe unten links auf **„+“** und schalte **„Research“** ein. Häng über **„+“** und **„Upload or add files“** dein letztes Ergebnis als Datei an. Dann füge diese Frage ein. Das ist wörtlich die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Die Frage zum Kopieren (Research an, letztes Ergebnis angehängt)",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [Firmenshirts mit gesticktem Logo] an [kleine Handwerks- und Baubetriebe unter zehn Leuten], hergestellt auf Bestellung bei einem Partner. Mein letztes Ergebnis: [Fünf bestickte Shirts kosten bei der Konkurrenz ab etwa 110 Euro. Die Lücke ist nicht der Preis, sondern Nachbestellen ab einem Stück ohne neue Einrichtung, Shirts, die 60 Grad Wäsche aushalten, und ein Logo ohne Einschränkungen.] Recherchiere jetzt einen Produktionspartner in [Deutschland oder der EU], der für Wiederverkäufer [Shirts auf Bestellung bestickt], ab [einem Stück], ohne eigenes Lager, möglichst mit Versand direkt an meine Kunden. Vergleiche mindestens sechs Partner mit Einkaufspreis für [ein besticktes Shirt], einmaligen Kosten für [die Stickdatei], Mindestmenge, Lieferzeit und [ob es Shirts gibt, die laut Etikett 60 Grad vertragen], jeweils mit Quelle. Entscheide dich am Ende für einen Partner und begründe das mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Nach ein paar Minuten hast du eine Partnertabelle mit Quellen und eine begründete Entscheidung. Dann prüfst du, welche Zahlen fehlen und welche nur Endkundenpreise sind. Genau so ist die KI in dieser Folge vorgegangen."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Plan",
+       "v": "Research gibt es in den bezahlten Plänen **Pro, Max, Team und Enterprise**, die Websuche muss an sein. Quelle: [support.claude.com/en/articles/11088861](https://support.claude.com/en/articles/11088861-using-research-on-claude)"
+      },
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Research“** → **„+“** → **„Upload or add files“** → Frage einfügen → senden"
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 5 Minuten 56 Sekunden, 294 Quellen, 31 davon im Bericht verlinkt."
+      },
+      {
+       "k": "Rückfragen",
+       "v": "Keine. Claude hat direkt mit der Recherche begonnen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Geschichte",
+   "title": "Wer stickt einzeln und verschickt direkt?",
+   "intro": "Eine KI soll hundert Tage lang ganz alleine ein Unternehmen führen. Ihr Produkt: Firmenshirts mit Logo, bestickt erst auf Bestellung, für kleine Handwerks- und Baubetriebe. In der letzten Folge hat sie ihre Lücke gefunden: beim Preis mithalten (rund 110 € für fünf Shirts) und einzelne Nachbestellungen ohne neue Einrichtung anbieten, dazu Shirts für 60 Grad. Jetzt sucht sie den Partner, der das herstellt und direkt an ihre Kunden verschickt.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Research an",
+       "text": "Unten auf „+“, dann „Research“ einschalten."
+      },
+      {
+       "num": "02",
+       "title": "Ergebnis anhängen",
+       "text": "Das Ergebnis der letzten Folge als Datei dazu, hier die Konkurrenzpreise."
+      },
+      {
+       "num": "03",
+       "title": "Frage stellen",
+       "text": "Mindestens sechs Partner mit Einkaufspreis, einmaligen Kosten, Mindestmenge, Lieferzeit und 60-Grad-Shirt, jeweils mit Quelle. Am Ende entscheiden und mit Zahlen begründen. Und: Erfinde nichts."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/research-fertig.png",
+     "width": "88%",
+     "caption": "Echter Lauf vom 28.10.2026: „Research complete • 294 sources • 5m 56s“."
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Die KI nimmt A61. Unter Vorbehalt.",
+   "break_before": true,
+   "intro": "Aus dem echten Lauf vom 28.10.2026. Claudes Entscheidung im Bericht: **„A61 über a61partner.de, mit Vorbehalt bis zum Händlerangebot.“** Die Gründe stehen hier so, wie Claude sie belegt hat, mit Herkunft der Zahl.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "60 °C",
+       "title": "Einziger Beleg",
+       "text": "Einziger Partner mit belegtem 60-°C-Arbeitsshirt: HAKRO MIKRALINAR No. 281, „Wäsche 60°C“ laut A61, bestickt ab 29,90 € brutto. Für HAKRO No. 293 bestätigt der Hersteller selbst 60 °C."
+      },
+      {
+       "num": "1 Stk.",
+       "title": "Staffel ab einem Stück",
+       "text": "Die Preisstaffel beginnt bei 1 Stück, ein einzelnes nachbestelltes Shirt passt also ins Modell. HAKRO No. 293 bestickt ab 28,90 € brutto, ab 10 Stück 21,39 €."
+      },
+      {
+       "num": "0 Lager",
+       "title": "Versand eingebaut",
+       "text": "Dropshipping-Plattform mit „neutralem Versand“, Versand „in Deinem Brand“ und einer Shopify-App mit Private Labels. Anbieterangaben."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken: der Preis, und was Claude nicht gefunden hat",
+     "text": "Zum Endkundenpreis kosten fünf Shirts bei A61 **151,40 € brutto** inklusive Versand (Berechnung, Versandangabe Stand 08.03.2024), der Markt verlangt rund 110 €. Rohmarge damit laut Claude **−41,40 € brutto**. Bei A61 **nicht gefunden**: Händlerpreise, die Kosten für das Stickprogramm (also auch, ob bei einer Nachbestellung neue Einrichtung anfällt), die Lieferzeit und Größen- oder Farbgrenzen für den Stick. Ob sich das Modell rechnet, hängt laut Claude an Händlerpreisen, die nicht öffentlich sind."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Zweite Wahl: Printful",
+       "v": "Shirt ab 9,95 USD netto, Stickdatei einmalig 6,50 USD, Nachbestellung ab 1 Stück ohne neue Einrichtung, Brustlogo bis 10,16 cm. Fünf Shirts im Erstauftrag rechnerisch 67,04 USD netto. Ein 60-°C-Shirt ist dort **nicht belegt**. Die Marge (≈ 25 netto) gilt nur, wenn man 1 USD ≈ 1 € annimmt."
+      },
+      {
+       "k": "Shirtigo, Spreadconnect",
+       "v": "Passen laut Claude nicht zum Logo: Shirtigo höchstens 90 × 90 mm bzw. 60 cm², Spreadconnect höchstens 8 × 5 cm mit 4 Farben."
+      },
+      {
+       "k": "Customwear / freewear",
+       "v": "Für Einzelstücke zu teuer: Bei 4–9 Stück kostet allein der Stick pauschal 59,50 € netto, dazu 29,50 € netto Stickprogramm."
+      },
+      {
+       "k": "Herkunft",
+       "v": "Die 60 °C für HAKRO No. 293 bestätigt der Hersteller im eigenen Portal. Für HAKRO 292 gibt es sie nur von Händlerseiten. Claude rät, vor dem Werbeversprechen ein Muster mit Etikett zu prüfen."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Wichtig ist der Weg, nicht das Ergebnis: Bei deinem Produkt kommt etwas anderes heraus. Partner mit Quelle vergleichen, entscheiden, dann ehrlich festhalten, welche Zahl fehlt und welche nur ein Endkundenpreis ist."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Partnertabelle",
+   "title": "Alle sieben Partner, 1:1 aus dem Bericht.",
+   "break_before": true,
+   "intro": "So hat Claude die Tabelle im Bericht geliefert, Wort für Wort. Wegen der Breite hier in drei Teilen. **„n. g.“** = nicht gefunden. **„Berechnung“** = von Claude selbst gerechnet. Alle Zahlen Stand 28.10.2026, Preise können sich ändern.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Partner (Ort/Land)",
+      "EK besticktes Shirt, Einzelstück",
+      "Stickdatei einmalig / bei Nachbestellung",
+      "Mindestmenge (Erst / Nach)"
+     ],
+     "widths": [
+      "18%",
+      "38%",
+      "28%",
+      "16%"
+     ],
+     "rows": [
+      [
+       "**A61 / a61partner.de** (Grefrath, DE)",
+       "Endkundenshop: HAKRO Heavy No. 293 ab 28,90 € brutto (≈ 24,29 € netto, Berechnung); MIKRALINAR® No. 281 ab 29,90 € brutto; Staffel 10 Stk.: 21,39 € bzw. 22,13 € brutto. Händlerpreis von A61 n. g.; Richtwert: HAKRO-Industriepreis für das unbestickte No. 293 12,50 € netto ab 10 Stk. (UVP 19,95 € brutto, portal.hakro.com)",
+       "n. g. (Shoppreise „inkl. Stick“; ob das Stickprogramm extra berechnet wird: n. g.)",
+       "1 / 1 (Staffel ab 1 Stk.)"
+      ],
+      [
+       "**Printful** (EU-Produktion u. a. Lettland, Spanien)",
+       "ab 9,95 USD netto (exkl. MwSt. und Digitalisierung; Beispiel Gildan 64000)",
+       "6,50 USD (Text 3,95 USD); Wiederverwendung für denselben Produkttyp kostenlos; ab 25 Stück gratis",
+       "1 / 1"
+      ],
+      [
+       "**Shirtigo Cockpit** (DE, eigene Stickerei)",
+       "n. g. (nur nach Login im Cockpit/Katalog-XLSX)",
+       "7,50 € netto pro Motivgröße und Material; bei Folgebestellungen nicht erneut",
+       "1 / 1"
+      ],
+      [
+       "**Gelato** (Netz in 7 Ländern mit Stick)",
+       "n. g. (Preise im Dashboard)",
+       "6,50 USD Bild / 3,95 USD Text je Stickbereich; Reorders ohne neue Gebühr; Farbänderung = neue Gebühr",
+       "1 / 1"
+      ],
+      [
+       "**Spreadconnect** (Spread Group, Leipzig, DE)",
+       "n. g. (im Dashboard)",
+       "4,99 € pro Design (FAQ) – Widerspruch: Spreadshop-Stickservice nennt 19,99 USD pro Datei",
+       "1 / 1"
+      ],
+      [
+       "**Customwear GmbH / freewear.de** (Steinfeld/Elxleben, DE; Textilgroßhandel mit eigener Stickerei)",
+       "Stick „Standard XS“ (bis 60 cm², max. 6.000 Stiche, längste Seite max. 12 cm): 4–9 Stk. pauschal 59,50 € netto; ab 10 Stk. 5,95 € netto/Stick; Textil zusätzlich (n. g.)",
+       "29,50 € netto (PDF-Preisliste) – Widerspruch: Shopartikel „Stickprogramm / Klein“ 44,25 € netto; bei Folgeaufträgen nicht erneut",
+       "4 / n. g. (1–3 Stk. n. g.)"
+      ],
+      [
+       "**Printify** (EU-Provider u. a. DE, CZ)",
+       "n. g. (je Provider)",
+       "kostenlos laut Printify Help Center („Digitization is free of charge for embroidery products ordered through Printify“), einmal pro Kombination aus Design, Produkttyp und Größe",
+       "1 / 1"
+      ]
+     ],
+     "caption": "Teil 1 von 3: Einkaufspreis, einmalige Kosten, Mindestmenge."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Partnertabelle",
+   "title": "Lieferzeit, 60 Grad, Direktversand.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Partner (Ort/Land)",
+      "Lieferzeit",
+      "60-°C-Shirt laut Etikett (Modell)",
+      "Direktversand / White Label"
+     ],
+     "widths": [
+      "16%",
+      "24%",
+      "30%",
+      "30%"
+     ],
+     "rows": [
+      [
+       "**A61 / a61partner.de** (Grefrath, DE)",
+       "n. g.",
+       "Ja: HAKRO MIKRALINAR® No. 281 „Wäsche 60°C“ (A61); HAKRO No. 293 „Waschen: 60 °C“ laut Hersteller (portal.hakro.com); HAKRO 292 bis 60 °C (Händlerangaben)",
+       "Ja: Dropshipping-Plattform, „neutraler Versand“, „in Deinem Brand“, Shopify-App mit Private Labels"
+      ],
+      [
+       "**Printful** (EU-Produktion u. a. Lettland, Spanien)",
+       "Produktion 2–5 Werktage + Versand ca. 3 Werktage (Ø 5–8)",
+       "n. g. (Gildan: „machine wash warm“)",
+       "Ja, Direktversand; bedruckte Innenlabels 0,99 USD, Außenlabels 2,49 USD pro Label (printful.com/pricing); Custom Packaging 0,50 USD pro Bestellung + 25 USD/Monat Lagerung, Packing-Slip-Nachricht kostenlos (Printful-Blog)"
+      ],
+      [
+       "**Shirtigo Cockpit** (DE, eigene Stickerei)",
+       "2–5 bzw. 1–5 Werktage; Erstbestellung +2–3 Werktage für die Punchdatei",
+       "n. g. (Stanley/Stella Creator 2.0: 30 °C)",
+       "Ja, Versand „mit dir als Absender“; Branding-Optionen; Shopify, WooCommerce, Shopware, REST-API"
+      ],
+      [
+       "**Gelato** (Netz in 7 Ländern mit Stick)",
+       "Digitalisierung bis 24 h; sonst n. g.",
+       "n. g.",
+       "Direktversand ja; White Label n. g."
+      ],
+      [
+       "**Spreadconnect** (Spread Group, Leipzig, DE)",
+       "Stickdatei 8–10 Werktage; danach 95 % Versand in 48 h",
+       "n. g.",
+       "Ja, Fulfillment; Shopify, WooCommerce, Shopware"
+      ],
+      [
+       "**Customwear GmbH / freewear.de** (Steinfeld/Elxleben, DE; Textilgroßhandel mit eigener Stickerei)",
+       "6–10 Werktage (Hochsaison 10–15); Express 4–6 Werktage +50 % (mind. 65 €)",
+       "Sortiment u. a. HAKRO, Kariban, James & Nicholson, B&C Pro Collection, Result Work-Guard; konkretes 60-°C-Etikett bei Customwear: n. g.",
+       "Ja: „Neutraler Versand … mit Ihrem Lieferschein“; Schnittstellen zu WooCommerce, Shopify, Shopware, JTL, Gambio"
+      ],
+      [
+       "**Printify** (EU-Provider u. a. DE, CZ)",
+       "Digitalisierung bis 36 h zusätzlich zur Produktion von 2–7 Werktagen je Provider (Printify Help Center); Versand zusätzlich, n. g.",
+       "n. g.",
+       "Direktversand ja"
+      ]
+     ],
+     "caption": "Teil 2 von 3: Lieferzeit, 60-°C-Shirt laut Etikett, Direktversand."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Partnertabelle",
+   "title": "Stick-Grenzen und Quellen.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Partner (Ort/Land)",
+      "Stick-Einschränkungen",
+      "Quelle(n)"
+     ],
+     "widths": [
+      "16%",
+      "38%",
+      "46%"
+     ],
+     "rows": [
+      [
+       "**A61 / a61partner.de** (Grefrath, DE)",
+       "n. g.",
+       "a61.de/de/t-shirts-besticken.html; a61.de/classic-tee-shirt-kaufen; a61partner.de/de/; apps.shopify.com/a61-dropshipping; a61.de/de/preise-und-versand.html"
+      ],
+      [
+       "**Printful** (EU-Produktion u. a. Lettland, Spanien)",
+       "Brust max. 4″ × 4″ (10,16 cm); 6 von 15 Garnfarben oder „unlimited color“",
+       "printful.com/custom-embroidered-shirts; printful.com/embroidery-digitizing; printful.com/pricing; printful.com/shipping"
+      ],
+      [
+       "**Shirtigo Cockpit** (DE, eigene Stickerei)",
+       "max. 90 × 90 mm bzw. 60 cm²; 6 von 15 Farben; Linien ≥ 1,5 mm",
+       "cockpit.shirtigo.com/en/embroidery-on-demand; cockpit.shirtigo.com/en/pricing; cockpit.shirtigo.com/en/agb"
+      ],
+      [
+       "**Gelato** (Netz in 7 Ländern mit Stick)",
+       "nur Flachstick; Farbzahl/Fläche n. g.",
+       "support.gelato.com (Artikel 8996219, 8996222); gelato.com/custom-logo-embroidery"
+      ],
+      [
+       "**Spreadconnect** (Spread Group, Leipzig, DE)",
+       "max. 8 × 5 cm, max. 4 Farben → **für 10-cm-Logo ungeeignet**",
+       "faq.spreadconnect.app; spreadshop.com/embroidery-service"
+      ],
+      [
+       "**Customwear GmbH / freewear.de** (Steinfeld/Elxleben, DE; Textilgroßhandel mit eigener Stickerei)",
+       "Größenklassen nach Fläche/Stichzahl (XS bis XXL), Farben nach Garnpalette/Pantone",
+       "freewear.de/Dropshipping-Textilien-Dropship-Shirts-Produktion; freewear.de/mediafiles/Bilder/Preisliste - Veredelungen - CUSTOMWEAR GmbH.pdf; freewear.de/Stickprogramm-Klein"
+      ],
+      [
+       "**Printify** (EU-Provider u. a. DE, CZ)",
+       "6 von 15 Farben; Brust 4″ × 4″",
+       "printify.com/guide/embroidery-guide; bootstrappingecommerce.com"
+      ]
+     ],
+     "caption": "Teil 3 von 3: Stick-Einschränkungen und Quellen. „n. g.“ heißt: Claude hat dazu keine Angabe gefunden, nicht dass es keine gibt. Alle Links stehen weiter hinten."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Beispielrechnungen",
+   "title": "Was bleibt bei 110 € übrig?",
+   "intro": "Ebenfalls 1:1 aus dem Bericht, alle Werte sind Berechnungen von Claude. **Referenz:** Die Konkurrenz liegt bei ca. 110 € brutto für 5 Shirts. Das sind 92,44 € netto (110 / 1,19) bzw. 18,49 € netto pro Shirt.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Partner",
+      "5 Shirts Erstauftrag inkl. Stickdatei + Versand",
+      "1 nachbestelltes Shirt inkl. Versand",
+      "Rohmarge bei 110 € brutto (5 Stk.)"
+     ],
+     "widths": [
+      "16%",
+      "36%",
+      "24%",
+      "24%"
+     ],
+     "rows": [
+      [
+       "**Printful**",
+       "5 × 9,95 + 6,50 + 4,99 + 4 × 1,45 = **67,04 USD netto** (≈ 79,78 USD brutto bei 19 % MwSt.)",
+       "9,95 + 4,99 = **14,94 USD netto** (≈ 17,78 USD brutto)",
+       "≈ 25 netto, nur bei Annahme 1 USD ≈ 1 € (Wechselkurs nicht belegt)"
+      ],
+      [
+       "**A61** (Endkundenpreise, Händlerpreis n. g.)",
+       "5 × 28,90 + 6,90 Versand = **151,40 € brutto** (127,23 € netto); Stickprogramm n. g.",
+       "28,90 + 6,90 = **35,80 € brutto** (30,08 € netto)",
+       "**negativ (−41,40 € brutto)**: Ohne Händlerrabatt geht das nur mit Premium-Preis für die 60-°C-Workwear"
+      ],
+      [
+       "**Shirtigo**",
+       "Fixkosten: 7,50 Stickdatei + 5,95 Versand (DE-Maximum für Shirts) = 13,45 € netto + 5 × Shirtpreis (n. g.)",
+       "Shirtpreis (n. g.) + 3,95 € netto Versand",
+       "Break-even: Shirt-EK ≤ 15,80 € netto ((92,44 − 13,45) / 5)"
+      ],
+      [
+       "**Customwear**",
+       "Stick 59,50 + Programm 29,50 = **89,00 € netto** + 5 Textilien (n. g.) + Versand (n. g.)",
+       "n. g. (1–3 Stk. nicht in der Preisliste)",
+       "praktisch keine: allein der Stick kostet 105,91 € brutto"
+      ],
+      [
+       "**Gelato / Spreadconnect / Printify**",
+       "n. g. (Shirtpreise nur im Dashboard)",
+       "n. g.",
+       "n. g."
+      ]
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Flyeralarm",
+       "v": "Stickt T-Shirts „ab 1 Stück“, das Reseller-Programm FLYERALARM PRO bietet neutralen Versand in die EU und eine REST-API. Stickpreise, Stickdatei-Kosten und 60-°C-Modelle n. g., deshalb nicht in der Tabelle."
+      },
+      {
+       "k": "Lohnstickereien",
+       "v": "stickerei-online.com, eifelstick.eu, Stickerei47 und Ciuro: neutraler Versand und Kundenschutz, meist **ab 10 Stück**, Preise nur auf Anfrage. stickbetrieb.de: Stickprogramm einmalig 30 €, Mindestmenge 10, Nachbestellungen auch darunter."
+      },
+      {
+       "k": "Ausgeschlossen",
+       "v": "Digitaldruck-Fabrik und textildruck-profis.de: nur Druck bzw. DTF, kein Stick."
+      },
+      {
+       "k": "Nicht geprüft",
+       "v": "Teemill, Printlogistic, Shirtee, Prodigi, Merchize, Tapstitch, Customcat, Qikink, WIRmachenDRUCK, Saxoprint, Onlineprinters. Laut Claude war das Recherchebudget erschöpft."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Quellen",
+   "title": "Alle 31 Quellen aus dem Bericht.",
+   "intro": "So im Bericht des Laufs verlinkt (28.10.2026). Insgesamt hat Claude 294 Quellen geprüft.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "1. [https://www.printful.com/custom-embroidered-shirts](https://www.printful.com/custom-embroidered-shirts)\n2. [https://www.a61.de/hakro-poloshirt-top-gestalten](https://www.a61.de/hakro-poloshirt-top-gestalten)\n3. [https://www.a61.de/interlook-jacke-hakro-a61](https://www.a61.de/interlook-jacke-hakro-a61)\n4. [https://www.a61partner.de/de/](https://www.a61partner.de/de/)\n5. [https://cockpit.shirtigo.com/en/embroidery-on-demand](https://cockpit.shirtigo.com/en/embroidery-on-demand)\n6. [https://www.printful.com/bulk-custom-t-shirts](https://www.printful.com/bulk-custom-t-shirts)\n7. [https://faq.spreadconnect.app/hc/en-gb/sections/360005553479-Printing](https://faq.spreadconnect.app/hc/en-gb/sections/360005553479-Printing)\n8. [https://www.a61.de/classic-tee-shirt-kaufen](https://www.a61.de/classic-tee-shirt-kaufen)\n9. [https://helpcenter.shirtigo.de/feed/update-preise-bei-diversen-textilien-angepasst/](https://helpcenter.shirtigo.de/feed/update-preise-bei-diversen-textilien-angepasst/)\n10. [https://apps.shopify.com/a61-dropshipping](https://apps.shopify.com/a61-dropshipping)\n11. [https://www.printful.com/embroidery-digitizing](https://www.printful.com/embroidery-digitizing)\n12. [https://cockpit.shirtigo.com/en/pricing](https://cockpit.shirtigo.com/en/pricing)\n13. [https://support.gelato.com/en/articles/8996219-what-is-digitization-in-embroidery](https://support.gelato.com/en/articles/8996219-what-is-digitization-in-embroidery)\n14. [https://www.gelato.com/custom-logo-embroidery](https://www.gelato.com/custom-logo-embroidery)\n15. [https://support.gelato.com/en/articles/8996223-start-selling-embroidery](https://support.gelato.com/en/articles/8996223-start-selling-embroidery)\n16. [https://bootstrappingecommerce.com/spreadconnect-review/](https://bootstrappingecommerce.com/spreadconnect-review/)\n17. [https://bootstrappingecommerce.com/best-print-on-demand-t-shirt-companies/](https://bootstrappingecommerce.com/best-print-on-demand-t-shirt-companies/)\n18. [https://freewear.de/Dropshipping-Textilien-Dropship-Shirts-Produktion](https://freewear.de/Dropshipping-Textilien-Dropship-Shirts-Produktion)\n19. [https://www.flyeralarm.com/de/c/kleidung-textilien/t-shirts/t-shirts-besticken/](https://www.flyeralarm.com/de/c/kleidung-textilien/t-shirts/t-shirts-besticken/)\n20. [https://flyeralarm.pro/wp-content/uploads/media/FA_PRO_Broschuere.pdf](https://flyeralarm.pro/wp-content/uploads/media/FA_PRO_Broschuere.pdf)\n21. [https://stickmaschinenwelt.jimdoweb.com/lohnstickerei/](https://stickmaschinenwelt.jimdoweb.com/lohnstickerei/)\n22. [https://stickbetrieb.de/t-shirts-besticken-lassen/](https://stickbetrieb.de/t-shirts-besticken-lassen/)\n23. [https://www.digitaldruck-fabrik.de/reseller-programm.aspx](https://www.digitaldruck-fabrik.de/reseller-programm.aspx)\n24. [https://textildruck-profis.de/wiederverkaeufer](https://textildruck-profis.de/wiederverkaeufer)\n25. [https://www.a61.de/de/t-shirts-besticken.html](https://www.a61.de/de/t-shirts-besticken.html)\n26. [https://www.a61.de/performance-shirt-kaufen](https://www.a61.de/performance-shirt-kaufen)\n27. [https://www.a61.de/de/preise-und-versand.html](https://www.a61.de/de/preise-und-versand.html)\n28. [https://freewear.de/mediafiles/Bilder/Preisliste%20-%20Veredelungen%20-%20CUSTOMWEAR%20GmbH.pdf](https://freewear.de/mediafiles/Bilder/Preisliste%20-%20Veredelungen%20-%20CUSTOMWEAR%20GmbH.pdf)\n29. [https://www.spreadshop.com/embroidery-service/](https://www.spreadshop.com/embroidery-service/)\n30. [https://faq.spreadconnect.app/hc/en-gb/articles/9901470737308-How-do-I-create-embroidery-designs-for-my-store](https://faq.spreadconnect.app/hc/en-gb/articles/9901470737308-How-do-I-create-embroidery-designs-for-my-store)\n31. [https://freewear.de/Stickprogramm-Klein](https://freewear.de/Stickprogramm-Klein)"
+    }
+   ]
+  },
+  {
+   "kicker": "Für deinen Betrieb",
+   "title": "So findest du deinen Partner.",
+   "break_before": true,
+   "intro": "Die Frage funktioniert für alles, was du nicht selbst herstellen willst. Du brauchst nur drei Dinge: den Preis, den du schlagen musst, deinen Vorteil und das eine Qualitätsmerkmal, auf das es ankommt.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Marktpreis mitgeben",
+       "text": "Was verlangt die Konkurrenz? Am besten aus einer früheren Recherche, die du als Datei anhängst. Ohne diese Zahl kann Claude keine Marge rechnen."
+      },
+      {
+       "title": "Kleinste Menge festlegen",
+       "text": "Ab wie vielen Stück muss der Partner liefern? Das sortiert die meisten schon aus."
+      },
+      {
+       "title": "Ein Merkmal wählen",
+       "text": "Das eine Qualitätsmerkmal, das du deinen Kunden versprichst. Lass es dir „laut Etikett“ oder „laut Hersteller“ belegen."
+      },
+      {
+       "title": "Research laufen lassen",
+       "text": "Neuer Chat, „+“, „Research“, Datei anhängen, die Vorlage unten einfügen, senden. Rechne mit fünf bis zehn Minuten."
+      },
+      {
+       "title": "Lücken ehrlich festhalten",
+       "text": "Markier jedes „n. g.“ in der Tabelle. Eine Entscheidung mit fehlendem Einkaufspreis ist eine Entscheidung unter Vorbehalt."
+      }
+     ]
+    },
+    {
+     "type": "prompt",
+     "label": "Vorlage für deinen Partner",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [PRODUKT] an [ZIELGRUPPE], hergestellt auf Bestellung bei einem Partner. Mein letztes Ergebnis: [KONKURRENZPREIS] und [MEIN VORTEIL]. Recherchiere jetzt einen Produktionspartner in [LAND/REGION], der für Wiederverkäufer [PRODUKT] auf Bestellung herstellt, ab [KLEINSTE MENGE], ohne eigenes Lager, möglichst mit Versand direkt an meine Kunden. Vergleiche mindestens sechs Partner mit Einkaufspreis, einmaligen Kosten, Mindestmenge, Lieferzeit und [MEIN WICHTIGSTES QUALITÄTSMERKMAL], jeweils mit Quelle. Entscheide dich am Ende für einen Partner und begründe das mit zwei bis drei konkreten Gründen mit Zahlen. Sag ehrlich, was du nicht gefunden hast und was ich anfragen muss. Erfinde nichts."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Kerzen-Shop",
+       "v": "Duftkerzen mit Firmenlogo an Hotels und Praxen. Merkmal: Brenndauer und Zertifikat."
+      },
+      {
+       "k": "Kaffeerösterin",
+       "v": "Kaffee mit eigenem Etikett an Büros. Merkmal: Röstdatum und Bio-Siegel."
+      },
+      {
+       "k": "Kosmetikerin",
+       "v": "Eigene Pflegecreme an Stammkundinnen. Merkmal: Zulassung als Kosmetik in der EU."
+      },
+      {
+       "k": "Bauzubehör",
+       "v": "Warnwesten mit Logo an Baubetriebe. Merkmal: Norm EN ISO 20471 laut Etikett."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Endkundenpreis für Einkaufspreis halten.** In unserem Lauf waren bei A61 nur Endkundenpreise zu finden. Damit lag schon der Einkauf über dem Marktpreis.",
+      "**„n. g.“ überlesen.** Händlerpreise und Einrichtungskosten fehlten genau beim gewählten Partner. Ohne diese Zahlen ist keine Marge belegt.",
+      "**Wechselkurs annehmen.** Printful rechnet in USD ohne MwSt. Die Marge stimmt nur, wenn der Kurs passt, und der ist im Bericht nicht belegt.",
+      "**Händlerangabe für Herstellerangabe halten.** 60 °C für HAKRO No. 293 bestätigt der Hersteller, für HAKRO 292 nur Händlerseiten. Vor dem Versprechen: Muster mit Etikett prüfen.",
+      "**Logo-Größe nicht prüfen.** Bei zwei Partnern passt ein 10-cm-Brustlogo gar nicht (höchstens 90 × 90 mm bzw. 8 × 5 cm).",
+      "**Alte Zahlen übernehmen.** Die Versandkosten von A61 stammen von 2024. Prüf jede Fundstelle, die du weiterverwendest."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Prompt-Bibliothek",
+   "title": "Von der Partnertabelle zur Entscheidung.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Nachfrage 1 · Was fehlt",
+     "text": "Geh die Partnertabelle aus deinem Bericht Zeile für Zeile durch. Liste für jeden Partner auf, welche Angaben fehlen („n. g.“) und welche Preise nur Endkundenpreise sind. Welche Partner kann ich mit den gefundenen Zahlen wirklich durchrechnen?"
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 2 · Herkunft trennen",
+     "text": "Markier jede Angabe zu [60 Grad Wäsche] in deinem Bericht als Herstellerangabe, Händlerangabe oder Anbieterangabe und nenne die Quelle. Welche Angabe würde ich vor einem Werbeversprechen zuerst mit einem Muster prüfen?"
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 3 · Zweite Wahl durchspielen",
+     "text": "Angenommen, [Partner 1] fällt weg. Rechne mit den Zahlen aus deinem Bericht für [Partner 2] durch: [fünf Stück] im Erstauftrag und [ein Stück] als Nachbestellung, jeweils mit allen einmaligen Kosten und Versand. Was müsste ich meinen Kunden dann anders versprechen? Erfinde nichts."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 4 · Bleibt etwas übrig",
+     "text": "Ich verkaufe [fünf bestickte Shirts] für [PREIS] brutto. Rechne mit den Einkaufspreisen aus deinem Bericht aus, was pro Shirt nach Einkauf, Stickdatei, Versand und MwSt. übrig bleibt. Kennzeichne jede Annahme, zum Beispiel einen Wechselkurs. Erfinde nichts."
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes rechnet die KI: Bleibt pro Shirt überhaupt etwas übrig?",
+  "text": "Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Tabellen, Zahlen und Zitate aus einem echten claude.ai-Lauf vom 28.10.2026 (Research, 294 Quellen). Anbieter-, Händler- und Herstellerangaben sowie Berechnungen von Claude sind als solche gekennzeichnet und nicht von uns geprüft. Preise können sich ändern, Menünamen auch."
+}

@@ -1,0 +1,174 @@
+{
+ "topic": "Ärger",
+ "trigger_word": "Ärger",
+ "cover": {
+  "kicker": "KI baut eine Firma · Was Kunden nervt",
+  "title": "Finde heraus, was deine Kunden nervt. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie herausgefunden hat, was kleine Handwerks- und Baubetriebe beim Bestellen von Logo-Shirts am meisten ärgert. Mit Klickpfad, dem echten Ergebnis unseres Laufs und der Begründung, was sie deshalb zuerst klärt.",
+  "stat": {
+   "value": "301 Quellen",
+   "label": "So viele Quellen hat Claude Research in unserem Lauf für diese eine Frage geprüft. Dauer: 6 Minuten 50 Sekunden."
+  },
+  "outcomes": [
+   "Die fünf häufigsten Ärgernisse deiner Zielgruppe, jedes mit Quelle",
+   "Ehrlich eingeordnet: welche Belege von Betrieben kommen und welche von Privatkunden",
+   "Ein klarer erster Schritt für dein Angebot statt Bauchgefühl"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Erst das Ergebnis. In zehn Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai), starte einen neuen Chat, tippe unten links auf **„+“** und schalte **„Research“** ein. Häng dein Ergebnis zur Zielgruppe als Datei an. Dann füge diese Frage ein und ersetze die Teile in [Klammern].",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Die Frage zum Kopieren (Research an)",
+     "text": "Im Anhang ist mein bisheriges Ergebnis. Ich verkaufe [Firmenshirts mit Logo] an [kleine Handwerks- und Baubetriebe unter zehn Leuten], [gedruckt auf Bestellung bei einem Partner]. Recherchiere nur in Bewertungen, Foren und Ratgebern: Was nervt [kleine Handwerks- und Baubetriebe] am meisten, wenn sie [Shirts mit ihrem Logo] bestellen? Nenne die fünf häufigsten Ärgernisse, jeweils mit Quelle. Sag dazu, ob die Belege von Betrieben oder von Privatkunden stammen. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Nach ein paar Minuten hast du eine Rangliste der Ärgernisse mit Quellen und siehst, wer sich beschwert hat. Dann entscheidest du, was du zuerst klärst. Genau so ist die KI in dieser Folge vorgegangen."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Plan",
+       "v": "Research gibt es in den bezahlten Plänen **Pro, Max, Team und Enterprise**. Quelle: [support.claude.com/en/articles/11088861](https://support.claude.com/en/articles/11088861-using-research-on-claude)"
+      },
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Research“** → Datei anhängen → Frage einfügen → senden"
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 6 Minuten 50 Sekunden, 301 Quellen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Geschichte",
+   "title": "Ein Kunde steht. Was nervt ihn?",
+   "intro": "Eine KI soll hundert Tage lang ganz alleine ein Unternehmen führen. Ihr Produkt: Firmenshirts mit Logo, gedruckt auf Bestellung. Ihr Kunde aus der letzten Folge: kleine Handwerks- und Baubetriebe. Jetzt wollte sie wissen, was genau diese Betriebe beim Bestellen ärgert.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Research an",
+       "text": "Unten auf „+“, dann „Research“ einschalten."
+      },
+      {
+       "num": "02",
+       "title": "Ergebnis anhängen",
+       "text": "Das Ergebnis zur Zielgruppe als Datei dazu. Quellen eingrenzen: nur Bewertungen, Foren und Ratgeber."
+      },
+      {
+       "num": "03",
+       "title": "Frage stellen",
+       "text": "Die fünf häufigsten Ärgernisse, jeweils mit Quelle. Dazu: Stammen die Belege von Betrieben oder Privatkunden? Und: Erfinde nichts."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Was Claude in unserem Lauf gefunden hat.",
+   "break_before": true,
+   "intro": "Aus dem echten Lauf vom 28.10.2026 (Research, 301 Quellen, 6 Minuten 50 Sekunden). Claude sagt selbst dazu: Die Abstände sind klein, die Reihenfolge ist eine Tendenz, keine feste Rangfolge.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "1",
+       "title": "Logo falsch gedruckt",
+       "text": "Falsch, schief, unscharf oder anders gedruckt. 14 Belege."
+      },
+      {
+       "num": "1",
+       "title": "Service bei Reklamationen",
+       "text": "Nur Bots, Textbausteine oder gar keine Antwort. 14 Belege."
+      },
+      {
+       "num": "3",
+       "title": "Größen und Lieferverzug",
+       "text": "Größen weichen von der Tabelle ab (12 Belege), Lieferung kommt zu spät (12 Belege)."
+      }
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Platz 5",
+       "v": "Druck löst sich nach dem Waschen (10 Belege)."
+      },
+      {
+       "k": "Wer sich beschwert",
+       "v": "Nur ein Beleg stammt ausdrücklich von einem Handwerksbetrieb, etwa sechs von anderen gewerblichen Kunden, der Rest von Privatkunden oder ist nicht zuzuordnen."
+      },
+      {
+       "k": "Nicht belegt",
+       "v": "Zu Mindestmengen, Einrichtungskosten, Nachbestellungen und Rechnungen mit MwSt. fand Claude keine Kundenbeschwerden, nur Ratgeber der Anbieter."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Warum die KI trotzdem zuerst das Waschen klärt: Das ist die erste Empfehlung im Bericht. Auf dem Bau werden Arbeitsshirts mit 60 Grad gewaschen, gängige Drucke für kleine Mengen vertragen laut Anbieter-Ratgebern nur etwa 30. Bei deinem Produkt kommt etwas anderes heraus. Wichtig ist der Weg: Ärger finden, prüfen, wer sich beschwert, dann den wichtigsten Punkt zuerst klären."
+    }
+   ]
+  },
+  {
+   "kicker": "Prompt-Bibliothek",
+   "title": "Vom Ärger zum Versprechen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Nachfrage 1 · Versprechen formulieren",
+     "text": "Nimm die fünf Ärgernisse aus deinem Bericht. Schreib für jedes ein Versprechen in einem Satz, das ich wirklich halten kann, wenn ich [mit einem Druckpartner] arbeite. Sag dazu, was ich prüfen muss, bevor ich es verspreche."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 2 · Gegenprobe",
+     "text": "Welche dieser Ärgernisse betreffen vor allem Privatkunden und kaum [kleine Handwerks- und Baubetriebe]? Begründe mit den Quellen aus dem Bericht."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 3 · Nachweis",
+     "text": "Welche Druckverfahren für kleine Mengen halten [60 Grad Wäsche] aus? Nenne für jedes die Herstellerangabe mit Quelle und was es pro Stück ungefähr kostet."
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Belege von Privatkunden für Betriebe halten.** Frag immer, wer sich beschwert. In unserem Lauf kam nur ein Beleg aus dem Handwerk. Prüf das Ergebnis später mit 5 bis 10 echten Kunden.",
+      "**Ohne Quellen-Grenze fragen.** Ohne „nur Bewertungen, Foren und Ratgeber“ landen Werbetexte der Anbieter im Ergebnis.",
+      "**Etwas versprechen, das du nicht halten kannst.** Erst beim Partner nachfragen, dann versprechen.",
+      "**Quellen nicht angeklickt.** Prüf jede Fundstelle, die du weiterverwendest."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes klärt die KI, welcher Druck 60 Grad aushält.",
+  "text": "Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne Einrichtung willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Zitate aus einem echten claude.ai-Lauf vom 28.10.2026 (Research). Menünamen können sich ändern."
+}

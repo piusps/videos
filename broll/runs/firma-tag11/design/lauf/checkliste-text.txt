@@ -1,0 +1,134 @@
+Kolonnenshirt
+Checkliste: Was vor dem ersten verkauften Shirt angemeldet oder geklärt sein muss
+Stand 29. Oktober 2026. Recherchiert per Websuche, keine Rechts- oder Steuerberatung. Behördenquellen sind direkt verlinkt; Kanzlei- und Anbieterquellen sind als „nicht amtlich“ gekennzeichnet.
+Was als Erstes kommt: die Gewerbeanmeldung
+Drei Gründe:
+Sie ist die gesetzliche Voraussetzung. § 14 GewO verlangt die Anzeige gleichzeitig mit dem Beginn des Gewerbes. Wer ohne Anmeldung anfängt, verstößt gegen diese Pflicht.
+Sie schaltet die anderen Schritte frei. Danach folgt der Fragebogen beim Finanzamt und damit die Steuernummer. Die braucht die LUCID-Registrierung als Stammdatum, und dein USt-Status entscheidet, wie der Preis auf der Seite stehen darf.
+Sie ist schnell und günstig. 25 € in Hamburg, einreichbar beim Bezirksamt oder bei der Handelskammer. Kein anderer Punkt der Liste hängt an so wenig Vorarbeit.
+Parallel dazu solltest du die Frage „nur an Firmen?“ entscheiden (Punkt 4), weil sie fast alle Website-Texte bestimmt.
+Legende
+Mensch = nur du (oder ein Anwalt/Steuerberater) kannst es erledigen: Unterschrift, Konto, Entscheidung oder rechtliche Prüfung.   Claude = ich kann es mit deinen Angaben erstellen oder in die Seite einbauen.
+Phase 1 · Anmelden und entscheiden (jetzt)
+☐
+Aufgabe
+Wer
+Quelle
+☐
+1. Gewerbe in Hamburg anmelden (zuerst)
+Pflicht nach § 14 GewO: Wer ein Gewerbe beginnt, muss es gleichzeitig anzeigen. Zuständig ist das Bezirksamt deines Betriebssitzes; die Handelskammer Hamburg nimmt Anmeldungen ebenfalls an. Gebühr laut Handelskammer: 25 €.
+Tätigkeit z. B. „Online-Handel mit bestickter Arbeitskleidung (Herstellung durch Dienstleister auf Bestellung)“ – Formulierung mit dem Amt abstimmen.
+Mensch
+Du reichst ein und zahlst. Claude kann den Tätigkeitstext und eine Ausfüllliste vorbereiten.
+§ 14 GewO (Gesetze im Internet)
+Handelskammer Hamburg: Gewerbeanmeldung
+☐
+2. ELSTER-Konto + Fragebogen zur steuerlichen Erfassung
+Den Fragebogen gibt es nur elektronisch über ELSTER. Frist: ein Monat nach Beginn der Tätigkeit (§ 138 AO). Danach teilt das Finanzamt die Steuernummer mit.
+Im Fragebogen kannst du auch eine USt-IdNr. beantragen (laut Merkblatt LfSt Bayern).
+Mensch
+Konto und Absenden nur durch dich. Claude kann einen Antwortzettel mit deinen Zahlen vorbereiten.
+LfSt Bayern: Merkblatt steuerliche Erfassung (Juni 2025) (bundesweites Verfahren, Merkblatt aus Bayern)
+FIM-Portal: Fragebogen zur steuerlichen Erfassung
+☐
+3. Entscheiden: Kleinunternehmer oder nicht
+Kleinunternehmerregelung (§ 19 UStG): Vorjahresumsatz max. 25.000 €, laufendes Jahr max. 100.000 €. Freiwilliger Verzicht ist möglich (§ 19 Abs. 3 UStG). Die Wahl triffst du im Fragebogen.
+Folge für die Website: Als Kleinunternehmer weist du keine USt aus, das Wort „brutto“ muss weg. Ohne Kleinunternehmer stecken in 109 € rund 91,60 € netto, in 29,90 € rund 25,13 € netto (bei 19 %).
+Mensch
+Entscheidung mit Steuerberater. Claude kann beide Varianten mit deinen Kosten durchrechnen.
+§ 19 UStG (Gesetze im Internet)
+Finanzamt BW: Kleinunternehmerregelung
+☐
+4. Entscheiden: nur an Firmen (B2B) oder auch an Verbraucher
+Diese Entscheidung bestimmt fast alle Website-Texte in Phase 3 (Widerruf, Preisangaben, AGB, Produktangaben).
+Ein bloßer Hinweis „nur B2B“ reicht laut Kanzlei-Quellen nicht; nötig sind klare Hinweise auf jeder Seite und eine Bestätigung im Bestellprozess. Eine Behördenquelle dazu habe ich nicht gefunden.
+Mensch
+Geschäftsentscheidung. Claude kann die Folgen beider Wege gegenüberstellen und die Hinweise in die Seite einbauen.
+IT-Recht Kanzlei: reiner B2B-Shop (Kanzlei, nicht amtlich)
+IT-Recht Kanzlei: BGH zur B2B-Beschränkung (Kanzlei, nicht amtlich)
+☐
+5. Name „Kolonnenshirt“ prüfen (DPMA, EUIPO)
+Das DPMA prüft bei einer Anmeldung keine älteren Rechte Dritter; das musst du selbst recherchieren. DPMAregister ist kostenlos. Der Name geht später auch als Markenname ins LUCID-Register.
+Mensch
+Rechtliche Bewertung durch Markenanwalt. Claude kann eine erste Websuche nach gleichen Namen machen, das ist keine Ähnlichkeitsrecherche.
+DPMA: Markenrecherche
+Phase 2 · Verpackung (nach der Steuernummer, vor dem ersten Versand)
+☐
+Aufgabe
+Wer
+Quelle
+☐
+6. Im Verpackungsregister LUCID registrieren
+Seit 12. August 2026 gelten die EU-Verpackungsverordnung (PPWR) und das VerpackDG. Printful schreibt, dass Händler sich jetzt unter eigenem Namen registrieren müssen, auch wenn Printful alle Bestellungen versendet; die Printful-Nummer reicht nicht mehr.
+Die Registrierung ist kostenlos. Laut ZSVR werden Stammdaten wie USt-IdNr. bzw. Steuernummer abgefragt – deshalb erst nach Schritt 2.
+Laut ZSVR ist Versandverpackung ausnahmslos systembeteiligungspflichtig, auch beim Versand an Gewerbekunden.
+Mensch
+Laut ZSVR persönliche Pflicht des Unternehmens. Claude kann die Datenliste vorbereiten.
+ZSVR: Registrierung im LUCID-Register
+ZSVR: Was seit 12. August 2026 gilt
+ZSVR: Versand- und Onlinehandel
+Printful-Hilfe: VerpackDG / LUCID (Anbieter, nicht amtlich)
+☐
+7. Vertrag mit einem dualen System + Mengenmeldung
+Vor dem ersten Inverkehrbringen Systembeteiligung abschließen und die Verpackungsmengen melden. Material, Gewicht und Volumen der Printful-Verpackung musst du beim Lieferanten erfragen. Printful übernimmt laut eigener Aussage die Kosten für seine eigene Verpackung – wie das mit deiner Pflicht zusammenspielt, unbedingt klären (siehe „Was ich nicht prüfen konnte“).
+Mensch
+Vertrag schließt du. Claude kann die Systembetreiber-Liste der ZSVR mit dir durchgehen.
+ZSVR: Versand- und Onlinehandel
+Printful-Hilfe: VerpackDG / LUCID (Anbieter, nicht amtlich)
+Phase 3 · Website, bevor sie online geht
+☐
+Aufgabe
+Wer
+Quelle
+☐
+8. Impressum (§ 5 DDG)
+Seit 14.05.2024 steht die Pflicht in § 5 DDG statt TMG. Mindestens Name, ladungsfähige Anschrift, schnelle elektronische Kontaktaufnahme (laut IHK Telefon und E-Mail), ggf. USt-IdNr.; die Steuernummer gehört nicht hinein.
+Claude
+Entwurf und Einbau, sobald du die Daten lieferst. Prüfung durch Anwalt empfohlen.
+IHK Chemnitz: Impressumspflicht
+IHK München: Impressum
+☐
+9. Datenschutzerklärung (Art. 13 DSGVO)
+Inhalt hängt von den eingesetzten Diensten ab (Shop-System, Zahlung, Formular, Schriften, Hosting). Schrift Inter am besten selbst hosten statt von Google laden.
+Claude
+Dienste-Liste, Entwurf, Schrift selbst hosten. Rechtliche Prüfung durch Mensch.
+HmbBfDI: Datenschutzkonformer Internetauftritt
+☐
+10. Nur bei Verbrauchern: Widerrufsbelehrung + Widerrufsbutton
+Seit 19. Juni 2026 brauchen Online-Shops mit Verbraucherverträgen eine elektronische Widerrufsfunktion (§ 356a BGB).
+Bei Ware nach Kundenspezifikation (z. B. Kundenlogo) ist das Widerrufsrecht nach § 312g Abs. 2 Nr. 1 BGB ausgeschlossen; laut EuGH auch schon vor Produktionsbeginn. Ob deine Shirts darunter fallen, prüfen lassen.
+Bei reinem B2B entfallen beide Punkte.
+Mensch
+Rechtstexte durch Anwalt oder Händlerverband. Claude kann den Button technisch einbauen.
+IHK Köln: Widerrufsfunktion seit Juni 2026
+IT-Recht Kanzlei: Ausnahmen vom Widerrufsrecht (Kanzlei, nicht amtlich)
+☐
+11. AGB passend zur B2B/B2C-Entscheidung
+Bei reinem B2B: AGB dürfen nicht zusätzlich Verbraucher ansprechen, sonst wird die Beschränkung aufgeweicht (Kanzlei-Quelle).
+Mensch
+Anwalt oder Rechtstexte-Dienst. Claude kann einbinden.
+IT-Recht Kanzlei: reiner B2B-Shop (Kanzlei, nicht amtlich)
+☐
+12. Preis- und Produktangaben auf der Seite
+USt-Formulierung nach Schritt 3; Versandkosten und Lieferzeit beim Preis (aus deinem letzten Ergebnis).
+Faserzusammensetzung muss Verbrauchern vor dem Kauf angezeigt werden (EU-Textilkennzeichnungsverordnung).
+Wenn die Shirts Verbraucherprodukte sind: Herstellerangaben und ggf. Sicherheitshinweise im Angebot (GPSR, Art. 19). Wer eigene Marke führt, kann als Hersteller gelten.
+Claude
+Texte einbauen, sobald du Material und Herstellerdaten von Printful lieferst.
+IHK München: Merkblatt Textilkennzeichnung
+IHK Köln: Produktsicherheit (GPSR)
+☐
+13. Keinen Link zur OS-Plattform einbauen
+Die EU-Plattform zur Online-Streitbeilegung ist seit 20. Juli 2025 abgeschaltet; Hinweise darauf sollen entfernt werden. Andere Hinweise zur Verbraucherstreitbeilegung (§ 36 VSBG) können weiter nötig sein – prüfen lassen.
+Claude
+Sicherstellen, dass nichts davon auf der Seite steht.
+IHK Stuttgart: OS-Plattform eingestellt
+Was ich nicht prüfen konnte
+Deine persönliche Lage: Ich kenne weder deine Rechtsform noch ob du nebenberuflich startest. Ich bin von einem Einzelunternehmen ausgegangen.
+Wer genau beim Verpackungsrecht „Hersteller“ und „Erzeuger“ ist: Printful sagt, du musst dich registrieren. Die ZSVR-Regeln hängen aber von Branding, Lieferkette und Sitz von Printful ab. Das konnte ich nicht abschließend klären; frag direkt bei der ZSVR oder einem Anwalt nach.
+Ob die Produktsicherheitsverordnung (GPSR) bei reinem B2B-Verkauf greift: Sie gilt für Verbraucherprodukte. Ob Arbeitsshirts dazu zählen, wenn Betriebe sie kaufen, habe ich nicht geprüft.
+Ob die Ausnahme vom Widerrufsrecht für deine Shirts gilt: Die Quellen dazu sind Kanzlei-Artikel, keine Behörde.
+Den offiziellen Hamburg-Service-Eintrag zur Gewerbeanmeldung konnte ich nicht direkt öffnen. Gebühr und Zuständigkeit stammen von der Handelskammer Hamburg.
+Ob § 36 VSBG (Hinweis zur Verbraucherschlichtung) für dich gilt und welcher Text nötig ist.
+Weitere mögliche Pflichten, die ich nicht recherchiert habe: Handwerkskammer (die Stickerei macht Printful, nicht du), Berufsgenossenschaft, Krankenversicherung, Gewerbesteuer, EUIPO-Recherche, aktuelle Printful-AGB, Lizenz der Schrift Inter, Rechtsfragen zum Sticken fremder Kundenlogos.
+Kein Ergebnis hier ist Rechts- oder Steuerberatung. Ich bin kein Anwalt und kein Steuerberater.

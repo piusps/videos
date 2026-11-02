@@ -1,0 +1,437 @@
+[
+  {
+    "text": "Dein",
+    "startMs": 60,
+    "endMs": 300
+  },
+  {
+    "text": "Vater",
+    "startMs": 300,
+    "endMs": 650
+  },
+  {
+    "text": "hat",
+    "startMs": 650,
+    "endMs": 770
+  },
+  {
+    "text": "ChatGPT",
+    "startMs": 770,
+    "endMs": 1200
+  },
+  {
+    "text": "entdeckt.",
+    "startMs": 1200,
+    "endMs": 2000
+  },
+  {
+    "text": "Seitdem",
+    "startMs": 2000,
+    "endMs": 2230
+  },
+  {
+    "text": "verliert",
+    "startMs": 2230,
+    "endMs": 2650
+  },
+  {
+    "text": "er",
+    "startMs": 2650,
+    "endMs": 2670
+  },
+  {
+    "text": "keine",
+    "startMs": 2670,
+    "endMs": 2890
+  },
+  {
+    "text": "Diskussion",
+    "startMs": 2890,
+    "endMs": 3330
+  },
+  {
+    "text": "mehr.",
+    "startMs": 3330,
+    "endMs": 3680
+  },
+  {
+    "text": "Früher",
+    "startMs": 3680,
+    "endMs": 3990
+  },
+  {
+    "text": "hat",
+    "startMs": 3990,
+    "endMs": 4140
+  },
+  {
+    "text": "er",
+    "startMs": 4140,
+    "endMs": 4210
+  },
+  {
+    "text": "einfach",
+    "startMs": 4210,
+    "endMs": 4520
+  },
+  {
+    "text": "lauter",
+    "startMs": 4520,
+    "endMs": 4790
+  },
+  {
+    "text": "geredet.",
+    "startMs": 4790,
+    "endMs": 5380
+  },
+  {
+    "text": "Jetzt",
+    "startMs": 5380,
+    "endMs": 5600
+  },
+  {
+    "text": "tippt",
+    "startMs": 5600,
+    "endMs": 5830
+  },
+  {
+    "text": "er,",
+    "startMs": 5830,
+    "endMs": 6010
+  },
+  {
+    "text": "hab",
+    "startMs": 6010,
+    "endMs": 6240
+  },
+  {
+    "text": "ich",
+    "startMs": 6240,
+    "endMs": 6380
+  },
+  {
+    "text": "recht.",
+    "startMs": 6380,
+    "endMs": 6920
+  },
+  {
+    "text": "ChatGPT",
+    "startMs": 6920,
+    "endMs": 7430
+  },
+  {
+    "text": "schreibt,",
+    "startMs": 7430,
+    "endMs": 8230
+  },
+  {
+    "text": "das",
+    "startMs": 8230,
+    "endMs": 8300
+  },
+  {
+    "text": "ist",
+    "startMs": 8300,
+    "endMs": 8440
+  },
+  {
+    "text": "ein",
+    "startMs": 8440,
+    "endMs": 8600
+  },
+  {
+    "text": "sehr",
+    "startMs": 8600,
+    "endMs": 8810
+  },
+  {
+    "text": "guter",
+    "startMs": 8810,
+    "endMs": 9080
+  },
+  {
+    "text": "Punkt.",
+    "startMs": 9080,
+    "endMs": 9620
+  },
+  {
+    "text": "Er",
+    "startMs": 9620,
+    "endMs": 9650
+  },
+  {
+    "text": "liest",
+    "startMs": 9650,
+    "endMs": 10050
+  },
+  {
+    "text": "es",
+    "startMs": 10050,
+    "endMs": 10110
+  },
+  {
+    "text": "dir",
+    "startMs": 10110,
+    "endMs": 10310
+  },
+  {
+    "text": "laut",
+    "startMs": 10310,
+    "endMs": 10580
+  },
+  {
+    "text": "vor.",
+    "startMs": 10580,
+    "endMs": 10840
+  },
+  {
+    "text": "Mit",
+    "startMs": 10840,
+    "endMs": 11070
+  },
+  {
+    "text": "Brille.",
+    "startMs": 11070,
+    "endMs": 11660
+  },
+  {
+    "text": "Dir",
+    "startMs": 11660,
+    "endMs": 11740
+  },
+  {
+    "text": "schickt",
+    "startMs": 11740,
+    "endMs": 12070
+  },
+  {
+    "text": "er",
+    "startMs": 12070,
+    "endMs": 12160
+  },
+  {
+    "text": "einen",
+    "startMs": 12160,
+    "endMs": 12400
+  },
+  {
+    "text": "Screenshot,",
+    "startMs": 12400,
+    "endMs": 13080
+  },
+  {
+    "text": "welche",
+    "startMs": 13080,
+    "endMs": 13350
+  },
+  {
+    "text": "Jobs",
+    "startMs": 13350,
+    "endMs": 13570
+  },
+  {
+    "text": "es",
+    "startMs": 13570,
+    "endMs": 13650
+  },
+  {
+    "text": "in",
+    "startMs": 13650,
+    "endMs": 13750
+  },
+  {
+    "text": "zehn",
+    "startMs": 13750,
+    "endMs": 14060
+  },
+  {
+    "text": "Jahren",
+    "startMs": 14060,
+    "endMs": 14360
+  },
+  {
+    "text": "noch",
+    "startMs": 14360,
+    "endMs": 14570
+  },
+  {
+    "text": "gibt.",
+    "startMs": 14570,
+    "endMs": 14960
+  },
+  {
+    "text": "Deiner",
+    "startMs": 14960,
+    "endMs": 15270
+  },
+  {
+    "text": "ist",
+    "startMs": 15270,
+    "endMs": 15420
+  },
+  {
+    "text": "nicht",
+    "startMs": 15420,
+    "endMs": 15680
+  },
+  {
+    "text": "dabei.",
+    "startMs": 15680,
+    "endMs": 16210
+  },
+  {
+    "text": "Deine",
+    "startMs": 16210,
+    "endMs": 16350
+  },
+  {
+    "text": "Mutter",
+    "startMs": 16350,
+    "endMs": 16640
+  },
+  {
+    "text": "antwortet",
+    "startMs": 16640,
+    "endMs": 17060
+  },
+  {
+    "text": "mit",
+    "startMs": 17060,
+    "endMs": 17200
+  },
+  {
+    "text": "einem",
+    "startMs": 17200,
+    "endMs": 17490
+  },
+  {
+    "text": "Screenshot.",
+    "startMs": 17490,
+    "endMs": 18120
+  },
+  {
+    "text": "Ihr",
+    "startMs": 18120,
+    "endMs": 18340
+  },
+  {
+    "text": "ChatGPT",
+    "startMs": 18340,
+    "endMs": 18740
+  },
+  {
+    "text": "gibt",
+    "startMs": 18740,
+    "endMs": 18990
+  },
+  {
+    "text": "ihr",
+    "startMs": 18990,
+    "endMs": 19250
+  },
+  {
+    "text": "auch",
+    "startMs": 19250,
+    "endMs": 19430
+  },
+  {
+    "text": "recht.",
+    "startMs": 19430,
+    "endMs": 20000
+  },
+  {
+    "text": "Gestern",
+    "startMs": 20000,
+    "endMs": 20380
+  },
+  {
+    "text": "hat",
+    "startMs": 20380,
+    "endMs": 20540
+  },
+  {
+    "text": "er",
+    "startMs": 20540,
+    "endMs": 20710
+  },
+  {
+    "text": "gefragt,",
+    "startMs": 20710,
+    "endMs": 21150
+  },
+  {
+    "text": "wie",
+    "startMs": 21150,
+    "endMs": 21400
+  },
+  {
+    "text": "oft",
+    "startMs": 21400,
+    "endMs": 21470
+  },
+  {
+    "text": "Kinder",
+    "startMs": 21470,
+    "endMs": 21800
+  },
+  {
+    "text": "ihre",
+    "startMs": 21800,
+    "endMs": 22020
+  },
+  {
+    "text": "Eltern",
+    "startMs": 22020,
+    "endMs": 22350
+  },
+  {
+    "text": "anrufen",
+    "startMs": 22350,
+    "endMs": 22770
+  },
+  {
+    "text": "sollten.",
+    "startMs": 22770,
+    "endMs": 23360
+  },
+  {
+    "text": "Den",
+    "startMs": 23360,
+    "endMs": 23500
+  },
+  {
+    "text": "Screenshot",
+    "startMs": 23500,
+    "endMs": 23970
+  },
+  {
+    "text": "hat",
+    "startMs": 23970,
+    "endMs": 24180
+  },
+  {
+    "text": "er",
+    "startMs": 24180,
+    "endMs": 24200
+  },
+  {
+    "text": "dir",
+    "startMs": 24200,
+    "endMs": 24340
+  },
+  {
+    "text": "geschickt.",
+    "startMs": 24340,
+    "endMs": 25100
+  },
+  {
+    "text": "Ohne",
+    "startMs": 25100,
+    "endMs": 25300
+  },
+  {
+    "text": "Text.",
+    "startMs": 25300,
+    "endMs": 25840
+  }
+]

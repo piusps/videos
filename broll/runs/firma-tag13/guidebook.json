@@ -1,0 +1,354 @@
+{
+ "topic": "Werbebrief",
+ "trigger_word": "Brief",
+ "cover": {
+  "kicker": "KI baut eine Firma · Mail, Anruf oder Brief?",
+  "title": "Dein erster Werbebrief. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie per Websuche geklärt hat, wie sie Betriebe zum ersten Mal werblich ansprechen darf, und dann ihren ersten Werbebrief als Word-Datei geschrieben hat. Mit beiden Varianten der Frage, der echten Briefvorlage, den drei Wegen im Vergleich mit Quellen und der Liste, was Claude nicht prüfen konnte.",
+  "stat": {
+   "value": "2 min 25 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: 5 Websuchen, E-Mail, Anruf und Brief verglichen, sich für den Brief entschieden und ihn als Word-Datei geschrieben."
+  },
+  "outcomes": [
+   "Die Frage zum Kopieren, mit Anhang und ohne Anhang",
+   "Die echte Briefvorlage mit allen Platzhaltern",
+   "E-Mail, Anruf, Brief: Claudes Aussagen und die Quellen aus dem Lauf",
+   "Ehrlich ausgewiesen: was Claude nicht prüfen konnte"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Die Frage zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** und **„Upload or add files“** dein letztes Ergebnis an (zum Beispiel deine Liste mit Betrieben) und dein Logo. Dann füge diese Frage ein. Das ist die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante A: mit Anhang (letztes Ergebnis + Logo)",
+     "text": "Im Anhang sind mein letztes Ergebnis und mein Logo. Ich verkaufe [PRODUKT] an [ZIELKUNDEN], unter dem Namen [FIRMENNAME]. Mein Angebot: [PREIS UND MENGE]. [WAS ICH NOCH NICHT VERSPRECHEN KANN]. Mein letztes Ergebnis: [STAND IN EINEM SATZ, z. B. zwanzig passende Firmen, fünf davon spreche ich zuerst an]. Prüf mit der Websuche, wie ich diese Firmen zum ersten Mal werblich ansprechen darf, per E-Mail, Anruf oder Brief, jeweils mit Quelle. Entscheide dich für einen Weg und begründe es mit zwei bis drei konkreten Gründen. Schreib dann den ersten Werbebrief, so kurz, dass [TYPISCHER KUNDE] ihn in einer Minute liest, als Word-Datei. Schreib nur, was belegt ist. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "p",
+     "text": "**Nur Logo, keine Liste:** den ersten Satz ersetzen durch „Im Anhang ist mein Logo.“ **Nur Liste, kein Logo:** „Im Anhang ist mein letztes Ergebnis.“ Der Brief kommt dann ohne Logo."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Claude hat in unserem Lauf 2 Minuten 25 Sekunden gearbeitet. Mit Anhängen, Lesen und deinen eigenen Angaben in den gelben Feldern hast du nach etwa 10 Minuten einen Briefentwurf: Weg mit Begründung und Quellen, Brief als Word-Datei, Liste der offenen Punkte. Empfängeradressen sind darin nicht enthalten, das ist ein eigener Schritt."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Upload or add files“** → letztes Ergebnis und Logo wählen → Frage einfügen → senden. Research ist nicht nötig, in unserem Lauf blieb es aus."
+      },
+      {
+       "k": "Ergebnis",
+       "v": "Die Word-Datei erscheint als Karte im Chat (**„Dokument · DOCX“**). Anklicken, herunterladen, in Word die gelben Felder ausfüllen."
+      },
+      {
+       "k": "Tipp",
+       "v": "Gedächtnis für diesen Chat ausschalten: im **„+“**-Menü das Häkchen bei **„Gedächtnis“** entfernen. So haben wir den Lauf gemacht."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 2 Minuten 25 Sekunden, 5 Websuchen, 11 Quellenlinks, 1 Word-Datei."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Variante B",
+   "title": "Noch keine Liste, noch kein Logo?",
+   "intro": "Dann fragst du ohne Anhang. Neuer Chat, nichts anhängen, Frage einfügen. Claude lässt Platzhalter für Logo, Absender und Empfänger.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante B: ohne Anhang (nicht getestet)",
+     "text": "Ich verkaufe [PRODUKT] an [ZIELKUNDEN], unter dem Namen [FIRMENNAME]. Mein Angebot: [PREIS UND MENGE]. [WAS ICH NOCH NICHT VERSPRECHEN KANN]. Ich will [ZIELKUNDEN, z. B. kleine Arztpraxen in meiner Stadt] zum ersten Mal anschreiben. Prüf mit der Websuche, wie ich solche Firmen zum ersten Mal werblich ansprechen darf, per E-Mail, Anruf oder Brief, jeweils mit Quelle. Entscheide dich für einen Weg und begründe es mit zwei bis drei konkreten Gründen. Schreib dann den ersten Werbebrief, so kurz, dass [TYPISCHER KUNDE] ihn in einer Minute liest, als Word-Datei. Lass Platzhalter für Logo, Absender und Empfänger. Schreib nur, was belegt ist. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Nicht getestet",
+     "text": "Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit beiden Anhängen (2 min 25 s). Ohne Liste kann Claude nicht auf deine konkreten Betriebe eingehen, zum Beispiel ob es für einen Anruf einen Anlass gibt."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Beispiel",
+      "[PRODUKT] an [ZIELKUNDEN]",
+      "Noch nicht versprechen",
+      "[TYPISCHER KUNDE]"
+     ],
+     "widths": [
+      "18%",
+      "40%",
+      "22%",
+      "20%"
+     ],
+     "rows": [
+      [
+       "Gebäudereiniger",
+       "Glasreinigung im Monatsabo an Arztpraxen und Kanzleien im Erdgeschoss",
+       "Termine am Wochenende",
+       "eine Praxismanagerin"
+      ],
+      [
+       "Fotografin",
+       "Team- und Bewerbungsfotos vor Ort an Firmen mit 5–20 Leuten",
+       "Lieferung am selben Tag",
+       "ein Geschäftsführer"
+      ],
+      [
+       "Kaffeerösterin",
+       "Kaffee mit eigenem Etikett an Büros",
+       "Bio-Siegel",
+       "eine Büroleiterin"
+      ],
+      [
+       "IT-Techniker",
+       "PC- und WLAN-Betreuung an kleine Handwerksbetriebe",
+       "24-Stunden-Notdienst",
+       "eine Meisterin im eigenen Betrieb"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "[PREIS UND MENGE] setzt du mit deinen echten Zahlen ein, zum Beispiel „eigener Monatspreis“, „Festpreis pro Teamtermin“, „Probepaket mit drei Sorten“ oder „Monatspauschale je Arbeitsplatz“. Keine Zahl erfinden: Was du nicht weißt, lässt Claude als Platzhalter stehen."
+    }
+   ]
+  },
+  {
+   "kicker": "Einstellungen",
+   "title": "Das muss in claude.ai an sein.",
+   "intro": "Drei Dinge braucht die Frage: Websuche, Dateierstellung und den Upload im Chat. Stand 30.10.2026, Menünamen können sich ändern.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Websuche",
+       "text": "Im Chat über **„+“** → **„Web search“** (Häkchen). In der neuen Oberfläche gibt es keinen eigenen Schalter, Claude sucht selbst. In unserem Lauf hat Claude ohne Schalter 5-mal gesucht. Bei Team und Enterprise muss der Owner die Websuche unter **Organization settings → Capabilities** freigeben. Quelle: [Claude Help Center: Web search](https://support.claude.com/en/articles/10684626-enable-and-use-web-search)"
+      },
+      {
+       "title": "Word-Datei erstellen",
+       "text": "Unter **Settings → Capabilities** **„Create and edit files“** bzw. **„Code execution and file creation“** einschalten. Verfügbar auf Free, Pro, Max, Team und Enterprise. Quelle: [Claude Help Center: Create and edit files](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)"
+      },
+      {
+       "title": "Anhänge",
+       "text": "Upload im Chat über **„+“**. Offiziell gelistet sind u. a. PDF, DOCX, CSV und TXT. Wir haben eine .md-Liste und ein .svg-Logo angehängt, beides wurde angenommen, steht aber nicht in der Liste. Im Zweifel die Liste als .txt oder .docx und das Logo als PNG anhängen. Quelle: [Claude Help Center: Upload files](https://support.claude.com/en/articles/8241126-upload-files-to-claude)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die drei Wege",
+   "title": "Die KI nimmt den Brief.",
+   "intro": "Claudes Aussagen aus dem Lauf, wörtlich. Claude selbst dazu: **„Ich bin kein Anwalt; das ist eine Zusammenfassung der Quellen, keine Rechtsberatung.“**",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "E-Mail",
+       "title": "Fällt ganz weg",
+       "text": "„E-Mail-Werbung ohne vorherige ausdrückliche und nachweisbare Einwilligung gilt nach § 7 UWG als belästigende Werbung und ist grundsätzlich unzulässig. Das UWG unterscheidet dabei gar nicht zwischen B2C und B2B. Du darfst auch nicht per E-Mail nach der Einwilligung fragen: Die Empfänger dürfen nicht angeschrieben werden, um zu fragen, ob sie eine Einwilligung in E-Mail-Werbung geben möchten.“"
+      },
+      {
+       "num": "Anruf",
+       "title": "Nur mit konkretem Anlass",
+       "text": "„Bei Gewerbetreibenden genügt eine mutmaßliche Einwilligung, die sich in der Regel aber nur annehmen lässt, wenn der Anruf einen hinreichend spezifischen Bezug zum Gewerbe des Angerufenen hat. Dass die Leistung für den Betrieb nützlich ist, reicht dafür nicht aus. Laut BGH kann nur ein konkreter Grund aus dem Interessenbereich des Angerufenen eine mutmaßliche Einwilligung begründen. Das Risiko einer Fehleinschätzung trägt grundsätzlich der Anrufer.“"
+      },
+      {
+       "num": "Brief",
+       "title": "Grundsätzlich zulässig",
+       "text": "„Da Briefwerbung in § 7 UWG anders als E-Mail-Werbung in keinem der geregelten Tatbestände vorkommt, ist sie grundsätzlich zulässig. Beim Datenschutz hat das OLG Stuttgart 2024 entschieden, dass personalisierte Briefwerbung ohne Einwilligung zulässig ist und erst ein Widerspruch weitere Werbung dieser Art unzulässig macht. Eine Bedingung: Der Empfänger muss spätestens bei der ersten Kommunikation ausdrücklich auf sein Widerspruchsrecht hingewiesen werden, verständlich und getrennt von anderen Informationen.“"
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Warum der Brief, Claudes Gründe wörtlich:**"
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "„Für E-Mail fehlt dir die Einwilligung, und du darfst sie nicht per E-Mail einholen. Der Weg fällt also ganz weg.“",
+      "„Für einen Anruf hast du bei keinem der fünf Betriebe einen konkreten Grund, der aus seinem Interesse kommt. ‚Firmenshirts sind nützlich für Handwerker‘ reicht laut den Quellen nicht. Das Risiko läge bei dir.“",
+      "„Der Brief ist ohne Einwilligung erlaubt. Die einzige Pflicht, den Widerspruchshinweis, erfüllt der Brief bereits. Ein ‚Keine Werbung‘-Aufkleber stoppt ihn nicht: Die Post muss adressierte Briefe zustellen, auch Werbebriefe.“"
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Die Gründe gelten für die fünf Betriebe der Shirt-Firma. Für deine Firma kann die Abwägung anders ausfallen, zum Beispiel wenn es für einen Anruf einen konkreten Anlass gibt. Deshalb fragt die Frage jedes Mal neu mit Websuche."
+    }
+   ]
+  },
+  {
+   "kicker": "Quellen",
+   "title": "Die 11 Quellen aus der Antwort.",
+   "intro": "Alle Quellen sind Suchtreffer, Claude hat keine Seite geöffnet. Die meisten sind Kanzlei- und IHK-Seiten, kein Gesetz von einem amtlichen Portal, kein Urteil im Volltext. Das OLG-Stuttgart-Urteil ist nur über zwei Kanzlei-Seiten belegt. Claude: „Ich bin kein Anwalt; das ist eine Zusammenfassung der Quellen, keine Rechtsberatung.“",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Weg",
+      "Quelle (Suchtreffer)",
+      "Art"
+     ],
+     "widths": [
+      "14%",
+      "62%",
+      "24%"
+     ],
+     "rows": [
+      [
+       "E-Mail",
+       "[IHK Bodensee-Oberschwaben: Werbung – was ist erlaubt?](https://www.ihk.de/bodensee-oberschwaben/recht/werbung-und-vertrieb/was-ist-erlaubt-1943228)",
+       "IHK"
+      ],
+      [
+       "E-Mail",
+       "[IHK Karlsruhe: Werbung – was ist erlaubt?](https://www.ihk.de/karlsruhe/fachthemen/recht/wettbewerbsrecht/werbung-was-ist-erlaubt-2459622)",
+       "IHK"
+      ],
+      [
+       "E-Mail",
+       "[IT-Recht Kanzlei: B2B-E-Mail-Marketing](https://www.it-recht-kanzlei.de/b2b-e-mail-marketing-unterlassung-schadensersatz-uwg-dsgvo.html)",
+       "Kanzlei"
+      ],
+      [
+       "E-Mail",
+       "[Computerwoche: E-Mail-Werbung und DSGVO](https://www.computerwoche.de/a/lass-uns-freunde-bleiben,3545372)",
+       "Fachpresse"
+      ],
+      [
+       "Anruf",
+       "[IHK-Merkblatt: Werbung per Telefon (ULB Bonn)](https://epflicht.ulb.uni-bonn.de/download/pdf/446310)",
+       "IHK-Merkblatt über Uni-Archiv"
+      ],
+      [
+       "Anruf",
+       "[Betriebs-Berater: BGH I ZR 27/08](https://betriebs-berater.ruw.de/wirtschaftsrecht/urteile/Telefonwerbung-nach-Unternehmenswechsel-17124)",
+       "Fachpresse"
+      ],
+      [
+       "Anruf",
+       "[Dr. Datenschutz: Telefonische Kaltakquise B2B](https://www.dr-datenschutz.de/ist-die-telefonische-kaltakquise-im-b2b-nach-dsgvo-verboten/)",
+       "Berater"
+      ],
+      [
+       "Brief",
+       "[IT-Recht Kanzlei: OLG Stuttgart zur Briefwerbung](https://www.it-recht-kanzlei.de/olg-stuttgart-briefwerbung-datenschutz.html)",
+       "Kanzlei"
+      ],
+      [
+       "Brief",
+       "[Kanzlei Plutte: OLG Stuttgart, 2 U 63/22](https://www.ra-plutte.de/olg-stuttgart-personalisierte-briefwerbung-dsgvo-konform/amp/)",
+       "Kanzlei"
+      ],
+      [
+       "Brief",
+       "[Art. 21 DSGVO (Jusline)](https://www.jusline.at/gesetz/dsgvo/paragraf/21.pdf)",
+       "Gesetzestext über Jusline (österr. Portal)"
+      ],
+      [
+       "Brief",
+       "[Verbraucherzentrale: Werbung im Briefkasten](https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/werbung/briefkastenwerbung-wie-sie-sich-gegen-unerwuenschte-werbung-wehren-10418)",
+       "Verbraucherzentrale"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Die Zuordnung zu den Wegen folgt der Antwort im Lauf. Die Quellen haben wir nicht rechtlich geprüft."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Briefvorlage",
+   "title": "Der echte Brief aus dem Lauf.",
+   "intro": "Eine Seite, Betreff beginnt mit „Werbung:“, Widerspruchshinweis unter einer Linie. Das Bild ist lokal aus Claudes Word-Datei gerendert, keine claude.ai-Pixel und nicht Words eigene Ansicht.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/brief-ansicht.png",
+     "width": "70%",
+     "caption": "Echter Lauf vom 29.10.2026: Claudes Datei, lokal gerendert. Gelb = 14 Platzhalter, die du selbst ausfüllst."
+    }
+   ]
+  },
+  {
+   "kicker": "Zum Kopieren",
+   "title": "Die Briefvorlage als Text.",
+   "intro": "Wörtlich aus Claudes Word-Datei, Absatz für Absatz. Alles in [eckigen Klammern] ist im Original gelb markiert und wird von dir ersetzt.",
+   "blocks": [
+    {
+     "type": "code",
+     "label": "Werbebrief · Vorlage aus dem Lauf",
+     "text": "[Dein Name] · Kolonnenshirt · [Straße, PLZ Ort] · [Telefon] · [E-Mail]\n\n[Firmenname laut Impressum]\n[Straße Hausnummer]\n[PLZ Ort]\n\n[Ort, Datum]\n\nWerbung: Firmenshirts mit Ihrem gestickten Logo\n\nGuten Tag,\n\nich verkaufe unter dem Namen Kolonnenshirt Firmenshirts mit gesticktem Logo, gemacht für kleine Handwerks- und Baubetriebe.\n\n• 5 Shirts mit Ihrem Logo: 109 Euro brutto\n• Ein Shirt nachbestellen: 29,90 Euro brutto\n• Gestickt wird erst, wenn Sie bestellen.\n• Versand: [Versandkosten und Lieferzeit ergänzen]\n\nWenn Sie Interesse haben, rufen Sie mich an oder schreiben Sie mir: [Telefon] oder [E-Mail].\n\nViele Grüße\n\n[Dein Name], Kolonnenshirt\n\n────────────────────────────\nIhr Recht auf Widerspruch\nSie können der Nutzung Ihrer Daten für Werbung jederzeit widersprechen. Ein kurzer Anruf, eine E-Mail oder ein Brief an die Adresse oben genügt. Danach erhalten Sie von mir keine Werbung mehr.\nIhre Firmenanschrift stammt aus [Quelle, z. B. Ihrem Impressum]. Mehr zum Datenschutz: [Link oder Hinweis zur Datenschutzerklärung]"
+    },
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Beispielangaben der Shirt-Firma",
+     "text": "Diese Teile stammen aus dem Beispiel der Serie und werden durch deine ersetzt: **Kolonnenshirt** (3×), **Firmenshirts mit gesticktem Logo**, **kleine Handwerks- und Baubetriebe**, die beiden Preiszeilen und **„Gestickt wird erst, wenn Sie bestellen.“** Betreff mit „Werbung:“ und den abgetrennten Widerspruchshinweis behältst du."
+    }
+   ]
+  },
+  {
+   "kicker": "Nicht geprüft",
+   "title": "Was Claude nicht prüfen konnte.",
+   "intro": "Claudes Liste aus dem Lauf, wörtlich. Der Brief ist so nicht abschickbar: Absender, Empfänger, Versand und Datenschutzlink setzt erst ein Mensch ein.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Versandkosten und Lieferzeit:** Die kenne ich nicht. Ohne sie wirkt „109 €“ womöglich wie ein Endpreis. Trag sie ein oder streich die Zeile bewusst.",
+      "**„Brutto“:** Falls du Kleinunternehmer nach § 19 UStG bist, weist du keine Umsatzsteuer aus. Dann passt das Wort „brutto“ nicht. Das habe ich nicht geprüft.",
+      "**Datenschutz-Informationspflichten (Art. 14 DSGVO):** Bei Einzelunternehmen verarbeitest du Daten einer Person, die du nicht bei ihr selbst erhoben hast. Ob über den Widerspruchshinweis und die Quellenangabe hinaus vollständige Datenschutzinformationen nötig sind, habe ich nicht im Einzelnen geprüft. Deshalb gibt es den Platzhalter für den Link zur Datenschutzerklärung.",
+      "**Pflichtangaben im Geschäftsbrief:** Welche Angaben auf deinen Briefbogen müssen, hängt von deiner Rechtsform ab. Die kenne ich nicht.",
+      "**Die Betriebe selbst:** Ob sie noch aktiv sind, ob sie schon Firmenkleidung haben und die Impressums-Adressen der fünf, das ist weiter offen, wie im letzten Ergebnis.",
+      "**Rechtsprechung:** Die Gerichtsurteile sind Einzelfälle. Dass ein Gericht bei dir genauso entscheidet, ist nicht garantiert."
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken",
+     "text": "Im Brief beim Einzelshirt hat Claude „brutto“ ergänzt, in der Frage stand es nicht. Prüf jede Zahl im Brief gegen deine eigenen Angaben. Und: Das ist eine Zusammenfassung von Suchtreffern, keine Rechtsberatung. Für deine Firma lässt du sie prüfen."
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Ohne „jeweils mit Quelle“ fragen:** Dann siehst du eventuell nicht, worauf sich eine Aussage stützt. Mit „Prüf mit der Websuche … jeweils mit Quelle“ steht hinter jeder Aussage ein Link.",
+      "**„Erfinde nichts“ weglassen:** Dann füllt Claude Lücken eventuell selbst. Mit dem Satz bleiben sie gelbe Platzhalter.",
+      "**Widerspruchshinweis streichen:** Laut Claudes Quellen muss er spätestens beim ersten Brief stehen, getrennt vom Rest.",
+      "**Den Entwurf für fertig halten:** Absender, Empfänger, Versand und Datenschutzlink fehlen noch. Die Adressen der Betriebe sind ein eigener Schritt."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes fragt die KI: An welche Adressen gehen die Briefe?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Frage, Entscheidung, Gründe, Brief und Liste aus einem echten claude.ai-Lauf vom 29.10.2026 (Websuche, 5 Suchen, 11 Quellen als Suchtreffer, keine Seite geöffnet), wörtlich übernommen, an einer Stelle ein Name neutral ersetzt. Quellen und Aussagen nicht von uns rechtlich geprüft. Bild lokal aus Claudes Word-Datei gerendert. Menünamen können sich ändern."
+}

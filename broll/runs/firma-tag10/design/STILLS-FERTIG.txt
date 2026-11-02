@@ -1,0 +1,28 @@
+STILLS FERTIG · Folge 10 „Website“ · firma-design · 2026-10-30
+Stand: Regie v2 (STATUS „REGIE v2 fertig 2026-10-30 11:01“), words.json v2 („Logo anhängen. Bitte: Startseite fürs Handy.“, „… deinen Startseiten-Entwurf.“), Länge 46,43 s.
+episode.json: public/firma-ep/tag10/episode.json (erzeugt von runs/firma-tag10/design/build/make_episode.py, alle Zeiten Wort-Anker)
+Assets: public/firma-ep/tag10/shots/ (handy-hook.png, handy-zonen.png, handy-falz.png = Mockups aus website-handy.png, Build-Skript design/build/phones.py; 01-prompt-mit-anhang.png, 05-artifact-karte.png = echte claude.ai-Shots). Shot 04 NICHT kopiert, nirgends verwendet.
+
+Stills (runs/firma-tag10/design/stills/, je + vergleich-*.jpg neben Folge 9; Brett: vergleich-brett.jpg)
+01-hook.png              0,4 s  Frage komplett + Handy mit echter Website-Vorschau, Stempel ENTWURF quer über den Handy-Rand, kein Board (planFrom „Ich“)
+02-rueckblick-board.png 12,5 s  Board: 1–7 grün, LOGO abgehakt mit „BLAUER BLOCK“, WEBSITE (8) gold „?“ = current, Produkt-Karte + Banner
+03-weg-claude.png       18,2 s  echter Shot 01 (Begrüßung weggeschnitten), Anhang-Chip orange, Prompt-Zeile „… mit meinem Logo, fürs Handy gedacht“ gelb
+04-entscheidung.png     22,8 s  Handy groß, Zonen 1 (Satz+Zielgruppe) → 2 (Preisbox) → 3 (Button) nacheinander orange gerahmt, Kamera fährt mit
+05-warum.png            28,3 s  Karte „WARUM DIESE DREI?“ (Handy-Symbol), Karten 1 Für mich? / 2 Was kostet es? / 3 Wie bestellen? (aus dem Lauf)
+06-erster-blick.png     29,6 s  Handy unter „Jetzt bestellen“ abgedunkelt + gestrichelte Falz, rote Markierung; „So funktioniert's“ ist im Bild-Asset gar nicht enthalten
+07-haken.png            33,5 s  Handy klein oben, Pill HAKEN, darunter IMPRESSUM ? und DATENSCHUTZ ? (nacheinander), kein Screenshot 04, kein „NICHT ONLINE“
+08-als-naechstes.png    35,2 s  Karte ALS NÄCHSTES „Was muss sie anmelden?“
+09-cta.png              44,5 s  KOMMENTIERE WEBSITE, DM1 Die Frage, DM2 Online-Checkliste (Impressum · Datenschutz, ohne Kontakt-Mail-Zeile), „in wenigen Minuten / dein Startseiten-Entwurf“
+
+Selbstcheck
+- Text: Abstände neuer Textblöcke ≥ 1,2 s (GANZ ALLEINE 3,92 · Produkt 7,78 · Banner 10,21 · BLAUER BLOCK 11,70 · HEUTE: WEBSITE 13,84 · Anhang 16,07 · WARUM 24,26 · Karten 25,51/26,71/27,91 (+1,25/+1,2/+1,2) · ERSTER BLICK +1,26 · HAKEN +1,32 · IMPRESSUM +1,27 · DATENSCHUTZ +1,23 · ALS NÄCHSTES +1,83 · Endkarte). Karten/Stempel ≤ 4 Wörter.
+- Hook: Frame 0 = Frage + Handy + ENTWURF; Handy fliegt vor „Ich“ raus, Board erst ab „Ich“ (kein Überlappen). Ereignisse 0–6 s: Engine-Hook (Drop, Schnitte h2/h3, Stuhl, Stempel, Hebel, Lampen) + Maskottchen-Hüpfer auf das/KI/Tage/führt. Prüfung per 4-fps-Bogen nach dem Render.
+- Board: LOGO abgehakt, WEBSITE current gold, nie grün. Kein Umsatz-Zähler. HUD TAG 3, kein Slam.
+- Keine claude.ai-Sidebar, keine Namen/Mails, kein „Hamburg“, Begrüßung „Abendgedanken“ weggeschnitten.
+- Maskottchen ganz im Bild bzw. im Warum hinter den Karten.
+
+Grenzen (ohne neuen Engine-Code, nur Daten):
+- Das echte Logo-Bild steht nicht auf der LOGO-Kachel (Board-Kachel kann nur Text); das echte Logo ist im Handy (Website-Kopf) ab Frame 0 zu sehen.
+- WEBSITE-Kachel zeigt gold „?“ statt „ENTWURF“; das Wort ENTWURF trägt der Stempel am Handy. Kein neues „?“-Feld nach WEBSITE im Als-Nächstes-Beat.
+- Handy im Hook als Beleg-Kachel (weißer Rahmen, dünne orange Kante der Engine).
+Hook 0-6 s: Zonen-Lupen (Satz 1,57 / Preis 2,38 / Button 3,13 / Logo 4,28) neben den Engine-Ereignissen; GANZ ALLEINE liegt frei über dem Handy. Bogen: pruefung/hookcheck/hook-0-6s-4fps.jpg

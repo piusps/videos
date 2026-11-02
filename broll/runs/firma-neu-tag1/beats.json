@@ -1,0 +1,1142 @@
+{
+ "folge": "firma-neu-tag1",
+ "fps": 30,
+ "dauer": 36.3,
+ "voice": "firma-neu-tag1/voice.mp3",
+ "words": "firma-neu-tag1/words.json",
+ "musik": {
+  "datei": "firma-neu-tag1/music.mp3",
+  "kurve": [
+   {
+    "t": 0.0,
+    "vol": 0.16
+   },
+   {
+    "t": 8.2,
+    "vol": 0.2
+   },
+   {
+    "t": 21.2,
+    "vol": 0.28
+   },
+   {
+    "t": 23.7,
+    "vol": 0.2
+   },
+   {
+    "t": 26.85,
+    "vol": 0.2
+   },
+   {
+    "t": 26.95,
+    "vol": 0.03,
+    "notiz": "kurze Stille vor der Pointe"
+   },
+   {
+    "t": 27.2,
+    "vol": 0.3,
+    "notiz": "Akzent auf Firmenshirts"
+   },
+   {
+    "t": 28.4,
+    "vol": 0.2
+   },
+   {
+    "t": 32.3,
+    "vol": 0.22
+   },
+   {
+    "t": 35.6,
+    "vol": 0.22
+   },
+   {
+    "t": 36.3,
+    "vol": 0.0
+   }
+  ],
+  "ziel_lufs": -14
+ },
+ "shots": {
+  "s1": {
+   "datei": "firma-neu-tag1/shots/s1-plus-research.png",
+   "quelle": "lauf-tag1/01",
+   "px": [
+    470,
+    714
+   ],
+   "marken": {
+    "plus": [
+     20,
+     142,
+     76,
+     198
+    ],
+    "research": [
+     50,
+     595,
+     460,
+     645
+    ]
+   }
+  },
+  "s2": {
+   "datei": "firma-neu-tag1/shots/s2-prompt.png",
+   "quelle": "lauf-tag1/07",
+   "px": [
+    1018,
+    448
+   ],
+   "marken_ca": {
+    "kein_lager": [
+     555,
+     82,
+     850,
+     118
+    ],
+    "keine_maschine": [
+     862,
+     82,
+     1000,
+     118,
+     "+",
+     36,
+     122,
+     235,
+     158
+    ],
+    "kleine_betriebe": [
+     160,
+     165,
+     760,
+     200
+    ],
+    "immer_wieder": [
+     36,
+     250,
+     1000,
+     327
+    ],
+    "frage_start": [
+     700,
+     208,
+     1000,
+     242
+    ]
+   }
+  },
+  "s3": {
+   "datei": "firma-neu-tag1/shots/s3-research-laeuft.png",
+   "quelle": "lauf-tag1/04",
+   "px": [
+    1528,
+    408
+   ],
+   "marken": {
+    "quellen": [
+     80,
+     292,
+     560,
+     330
+    ]
+   }
+  },
+  "s4": {
+   "datei": "firma-neu-tag1/shots/s4-research-complete.png",
+   "quelle": "lauf-tag1/05",
+   "px": [
+    1202,
+    215
+   ],
+   "marken": {
+    "quellen": [
+     140,
+     92,
+     630,
+     128
+    ]
+   }
+  },
+  "s5": {
+   "datei": "firma-neu-tag1/shots/s5-ergebnis.png",
+   "quelle": "lauf-tag1/06",
+   "px": [
+    1048,
+    520
+   ],
+   "marken_ca": {
+    "drucksachen": [
+     505,
+     145,
+     712,
+     188
+    ],
+    "arbeitskleidung_mit_logo": [
+     318,
+     188,
+     705,
+     230
+    ]
+   }
+  },
+  "s6": {
+   "datei": "firma-neu-tag1/shots/s6-keine-statistik.png",
+   "quelle": "lauf-tag1/05",
+   "px": [
+    1202,
+    252
+   ],
+   "marken_ca": {
+    "wie_oft": [
+     830,
+     185,
+     1105,
+     225
+    ],
+    "keine_statistik": [
+     700,
+     225,
+     1100,
+     252
+    ]
+   }
+  }
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "von": 0.0,
+   "bis": 3.18,
+   "wort_start": {
+    "w": "Was",
+    "after": 0
+   },
+   "gesagt": "Was passiert, wenn eine KI ganz alleine ein Unternehmen aufbaut?",
+   "bild": "HOOK = Produkt-Wand. Frame 1: Wand 'WAS VERKAUFEN WIR?' mit 9 Karten bildfüllend, oranger Gründer klein davor schaut hoch. Lichtkegel springt über die Karten (Suche).",
+   "kamera": "langsamer Push-in auf die Wand (100 → 112 %)",
+   "karten": [
+    {
+     "typ": "TextHook",
+     "text": "KI GRÜNDET",
+     "at": {
+      "w": "KI",
+      "after": 0.9
+     }
+    },
+    {
+     "typ": "TextHook",
+     "text": "EINE FIRMA",
+     "at": {
+      "w": "ein",
+      "after": 1.9
+     }
+    },
+    {
+     "typ": "TextHook-Pill",
+     "text": "GANZ ALLEINE",
+     "at": {
+      "w": "ganz",
+      "after": 1.3
+     }
+    },
+    {
+     "typ": "Wand-Scan",
+     "karte_highlight": [
+      0,
+      4,
+      8,
+      2
+     ],
+     "at": [
+      {
+       "w": "KI",
+       "after": 0.9
+      },
+      {
+       "w": "alleine",
+       "after": 1.5
+      },
+      {
+       "w": "Unternehmen",
+       "after": 2.0
+      },
+      {
+       "w": "aufbaut?",
+       "after": 2.5
+      }
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "n": "ui-pop",
+     "at": 0.05,
+     "v": 0.35
+    },
+    {
+     "n": "tick",
+     "at": 0.95,
+     "v": 0.3
+    },
+    {
+     "n": "tick",
+     "at": 1.58,
+     "v": 0.3
+    },
+    {
+     "n": "tick",
+     "at": 2.11,
+     "v": 0.3
+    },
+    {
+     "n": "bump",
+     "at": 2.55,
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "von": 3.18,
+   "bis": 4.33,
+   "wort_start": {
+    "w": "Ich",
+    "after": 3.0
+   },
+   "gesagt": "Ich probier das aus.",
+   "bild": "Kamera zieht zurück: Gründer-Insel kommt ins Bild, Zähler am Tisch 'KASSE 0 €' klappt auf, Gründer dreht sich zur Kamera.",
+   "kamera": "Pull-back von der Wand auf Wand + Insel (Wand bleibt oben im Bild)",
+   "karten": [
+    {
+     "typ": "Zaehler-am-Objekt",
+     "label": "KASSE",
+     "wert": "0 €",
+     "at": {
+      "w": "probier",
+      "after": 3.2
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "whoosh-quick",
+     "at": 3.15,
+     "v": 0.25
+    },
+    {
+     "n": "counter-roll-short",
+     "at": 3.37,
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "von": 4.33,
+   "bis": 5.3,
+   "wort_start": {
+    "w": "Tag",
+    "after": 4.2
+   },
+   "gesagt": "Tag 1.",
+   "bild": "'TAG 1' stempelt unter den Text-Hook, Hook fährt bei 5.25 nach oben raus.",
+   "kamera": "steht (Mikro-Drift)",
+   "karten": [
+    {
+     "typ": "TextHook-Tag",
+     "text": "TAG 1",
+     "at": {
+      "w": "1.",
+      "after": 4.5
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "stamp-clack",
+     "at": 4.68,
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "von": 5.3,
+   "bis": 6.6,
+   "wort_start": {
+    "w": "Sie",
+    "after": 5.2
+   },
+   "gesagt": "Sie hat noch kein Produkt.",
+   "bild": "Alle 9 Karten der Wand drehen sich auf ein graues '?'. Zähler am Tisch: 'PRODUKT: ?' neben 'KASSE 0 €'.",
+   "kamera": "kurzer Push-in auf die Wand",
+   "karten": [
+    {
+     "typ": "Wand-Flip",
+     "alle": "?",
+     "at": {
+      "w": "kein",
+      "after": 5.7
+     }
+    },
+    {
+     "typ": "Zaehler-am-Objekt",
+     "label": "PRODUKT",
+     "wert": "?",
+     "at": {
+      "w": "Produkt.",
+      "after": 5.9
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "page-turn",
+     "at": 5.84,
+     "v": 0.35
+    },
+    {
+     "n": "bump",
+     "at": 6.05,
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "von": 6.6,
+   "bis": 8.2,
+   "wort_start": {
+    "w": "Heute",
+    "after": 6.5
+   },
+   "gesagt": "Heute sucht sie es mit Claude.",
+   "bild": "Gründer läuft zum Laptop auf der Insel; bei 'Claude' echtes Claude-Logo auf dem Laptop-Screen, Sticker 'HEUTE: PRODUKT FINDEN'.",
+   "kamera": "Fahrt zur Insel, endet nah am Laptop (Übergang ins Paper-Fenster)",
+   "karten": [
+    {
+     "typ": "WordSticker",
+     "text": "HEUTE: PRODUKT FINDEN",
+     "at": {
+      "w": "Heute",
+      "after": 6.5
+     },
+     "until": 8.15
+    },
+    {
+     "typ": "Logo",
+     "datei": "logos/claude.svg",
+     "at": {
+      "w": "Claude.",
+      "after": 7.4
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "ui-pop",
+     "at": 6.72,
+     "v": 0.35
+    },
+    {
+     "n": "whoosh-quick",
+     "at": 7.0,
+     "v": 0.22
+    },
+    {
+     "n": "chime",
+     "at": 7.6,
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "von": 8.2,
+   "bis": 11.15,
+   "wort_start": {
+    "w": "Erstens:",
+    "after": 8.0
+   },
+   "gesagt": "Erstens: unten aufs Plus, Research an.",
+   "bild": "Schritt-Leiste 1·2·3 kommt (1 aktiv). Claude-Paper-Fenster mit Shot s1 (nur Eingabefeld + Plus-Menü, keine Sidebar, keine Chat-Liste). Zeiger fährt auf '+', Klick, Menü klappt auf, Zeiger auf 'Research', oranger Rahmen, Haken.",
+   "kamera": "Paper-Fenster 2D vorn, Welt unscharf dahinter; Zoom im Shot 100 → 135 % auf das Menü",
+   "karten": [
+    {
+     "typ": "StepBar",
+     "labels": [
+      "PLUS → RESEARCH",
+      "REGELN",
+      "FRAGE"
+     ],
+     "aktiv": 0,
+     "at": {
+      "w": "Erstens:",
+      "after": 8.0
+     }
+    },
+    {
+     "typ": "ClaudePaper",
+     "shot": "s1",
+     "at": {
+      "w": "Erstens:",
+      "after": 8.0
+     }
+    },
+    {
+     "typ": "Zeiger",
+     "ziel": "s1.plus",
+     "at": {
+      "w": "unten",
+      "after": 8.7
+     },
+     "klick": {
+      "w": "Plus,",
+      "after": 9.3
+     }
+    },
+    {
+     "typ": "Zeiger",
+     "ziel": "s1.research",
+     "at": {
+      "w": "Plus,",
+      "after": 9.3,
+      "offset": 0.3
+     },
+     "klick": {
+      "w": "Research",
+      "after": 10.0
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s1.research",
+     "farbe": "orange",
+     "at": {
+      "w": "Research",
+      "after": 10.0
+     }
+    },
+    {
+     "typ": "Check",
+     "at": {
+      "w": "an.",
+      "after": 10.4
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "whoosh-quick",
+     "at": 8.18,
+     "v": 0.22
+    },
+    {
+     "n": "ui-pop",
+     "at": 8.25,
+     "v": 0.35
+    },
+    {
+     "n": "click",
+     "at": 9.4,
+     "v": 0.4
+    },
+    {
+     "n": "click",
+     "at": 10.1,
+     "v": 0.4
+    },
+    {
+     "n": "check",
+     "at": 10.5,
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "von": 11.15,
+   "bis": 16.15,
+   "wort_start": {
+    "w": "Zweitens:",
+    "after": 11.0
+   },
+   "gesagt": "Zweitens: Schreib deine Regeln dazu. Kein Lager, keine Maschine, nur kleine Betriebe als Kunden.",
+   "bild": "Schritt 2 aktiv (1 grüner Haken). Paper wechselt auf Shot s2 (echte Prompt-Blase), Text tippt sich zeilenweise ein ab 'Schreib'. Dann nacheinander gelb/orange markiert: 'kein eigenes Lager' → 'keine eigene Maschine' → 'kleine Betriebe mit weniger als zehn Leuten'. Je Regel ein kleiner Chip unter dem Fenster.",
+   "kamera": "Shot-Zoom wandert mit der jeweiligen Markierung (Pan im Bild, 120 %)",
+   "karten": [
+    {
+     "typ": "StepBar",
+     "aktiv": 1,
+     "at": {
+      "w": "Zweitens:",
+      "after": 11.0
+     }
+    },
+    {
+     "typ": "ClaudePaper",
+     "shot": "s2",
+     "reveal": "zeilenweise 11.98 → 13.1",
+     "at": {
+      "w": "Schreib",
+      "after": 11.9
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s2.kein_lager",
+     "chip": "KEIN LAGER",
+     "at": {
+      "w": "Kein",
+      "after": 13.2
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s2.keine_maschine",
+     "chip": "KEINE MASCHINE",
+     "at": {
+      "w": "keine",
+      "after": 13.9
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s2.kleine_betriebe",
+     "chip": "KLEINE BETRIEBE",
+     "at": {
+      "w": "kleine",
+      "after": 14.9
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "page-turn",
+     "at": 11.2,
+     "v": 0.3
+    },
+    {
+     "n": "typing",
+     "at": 11.98,
+     "v": 0.2
+    },
+    {
+     "n": "pop-low",
+     "at": 13.27,
+     "v": 0.35
+    },
+    {
+     "n": "pop-high",
+     "at": 13.95,
+     "v": 0.35
+    },
+    {
+     "n": "synth-pop",
+     "at": 14.94,
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "von": 16.15,
+   "bis": 19.3,
+   "wort_start": {
+    "w": "Drittens:",
+    "after": 16.0
+   },
+   "gesagt": "Drittens: Frag, was diese Betriebe immer wieder kaufen.",
+   "bild": "Schritt 3 aktiv. Shot s2 scrollt nach unten auf 'Recherchiere: Welche zehn Produkte oder Leistungen kaufen solche Betriebe immer wieder'; bei 'immer wieder' Markierung. Bei 'kaufen' Zeiger klickt Senden (Pfeil), kleine Bestätigung.",
+   "kamera": "Shot-Pan nach unten, leichter Push-in auf die Frage",
+   "karten": [
+    {
+     "typ": "StepBar",
+     "aktiv": 2,
+     "at": {
+      "w": "Drittens:",
+      "after": 16.0
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s2.frage_start",
+     "notiz": "'Recherchiere: Welche …' leuchtet auf, Shot scrollt dorthin",
+     "at": {
+      "w": "Frag,",
+      "after": 16.9
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s2.immer_wieder",
+     "at": {
+      "w": "immer",
+      "after": 18.0
+     }
+    },
+    {
+     "typ": "Senden",
+     "at": {
+      "w": "kaufen.",
+      "after": 18.5
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "ui-pop",
+     "at": 16.22,
+     "v": 0.35
+    },
+    {
+     "n": "tick",
+     "at": 17.08,
+     "v": 0.3
+    },
+    {
+     "n": "chime",
+     "at": 18.15,
+     "v": 0.22
+    },
+    {
+     "n": "click",
+     "at": 18.7,
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "von": 19.3,
+   "bis": 21.15,
+   "wort_start": {
+    "w": "Claude",
+    "after": 19.2
+   },
+   "gesagt": "Claude prüft über 300 Quellen.",
+   "bild": "Shot s3 (echte Research-Karte '169 sources and counting… 53s'), daneben großer Zähler am Objekt, rollt 0 → 169; bei 'dreihundert' Wechsel auf s4 'Research complete • 314 sources • 5m 30s', Zähler springt auf 314 (echter Wert), Rahmen um '314 sources'.",
+   "kamera": "Push-in auf die Quellenzeile",
+   "karten": [
+    {
+     "typ": "ClaudePaper",
+     "shot": "s3",
+     "at": {
+      "w": "Claude",
+      "after": 19.2
+     }
+    },
+    {
+     "typ": "Zaehler",
+     "label": "QUELLEN",
+     "von": 0,
+     "bis": 169,
+     "at": {
+      "w": "prüft",
+      "after": 19.5
+     }
+    },
+    {
+     "typ": "ClaudePaper",
+     "shot": "s4",
+     "at": {
+      "w": "300",
+      "after": 20.0
+     }
+    },
+    {
+     "typ": "Zaehler",
+     "label": "QUELLEN",
+     "von": 169,
+     "bis": 314,
+     "at": {
+      "w": "300",
+      "after": 20.0
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s4.quellen",
+     "at": {
+      "w": "Quellen.",
+      "after": 20.4
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "counter-roll",
+     "at": 19.65,
+     "v": 0.3
+    },
+    {
+     "n": "ping",
+     "at": 20.55,
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "von": 21.15,
+   "bis": 23.72,
+   "wort_start": {
+    "w": "Am",
+    "after": 21.0
+   },
+   "gesagt": "Am besten passen Drucksachen und Arbeitskleidung mit Logo.",
+   "bild": "Shot s5 (Bericht-Kopf mit Ergebnis-Absatz). Der Ergebnis-Satz wird markiert: erst 'Drucksachen', dann 'Arbeitskleidung mit Logo' (stärker, orange). Rest des Absatzes leicht abgedunkelt.",
+   "kamera": "Zoom auf die zwei ersten Zeilen des Absatzes (ca. 150 %)",
+   "karten": [
+    {
+     "typ": "ClaudePaper",
+     "shot": "s5",
+     "at": {
+      "w": "Am",
+      "after": 21.0
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s5.drucksachen",
+     "at": {
+      "w": "Drucksachen",
+      "after": 21.7
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s5.arbeitskleidung_mit_logo",
+     "farbe": "orange",
+     "at": {
+      "w": "Arbeitskleidung",
+      "after": 22.4
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "page-turn",
+     "at": 21.2,
+     "v": 0.3
+    },
+    {
+     "n": "pop-low",
+     "at": 21.9,
+     "v": 0.35
+    },
+    {
+     "n": "check",
+     "at": 22.6,
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "von": 23.72,
+   "bis": 25.72,
+   "wort_start": {
+    "w": "Ein",
+    "after": 23.6
+   },
+   "gesagt": "Ein Partner druckt sie schon ab einem Stück.",
+   "bild": "Paper raus, zurück in die Welt: blaue Partner-Insel leuchtet auf, Druckmaschine läuft an, genau EIN Shirt fällt auf den Stapel. Zähler am Stapel '1 STÜCK'. Sticker 'PARTNER DRUCKT' (blau).",
+   "kamera": "Fahrt vom Paper zur Partner-Insel (rechts hinten), endet halbnah an der Maschine",
+   "karten": [
+    {
+     "typ": "WordSticker",
+     "text": "PARTNER DRUCKT",
+     "bg": "blue",
+     "at": {
+      "w": "Partner",
+      "after": 23.9
+     },
+     "until": 25.7
+    },
+    {
+     "typ": "Maschine",
+     "running": true,
+     "at": {
+      "w": "druckt",
+      "after": 24.2
+     }
+    },
+    {
+     "typ": "Zaehler-am-Objekt",
+     "label": "AB",
+     "wert": "1 STÜCK",
+     "at": {
+      "w": "einem",
+      "after": 25.0
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "whoosh-quick-high",
+     "at": 23.7,
+     "v": 0.22
+    },
+    {
+     "n": "click-low",
+     "at": 24.27,
+     "v": 0.35
+    },
+    {
+     "n": "jump",
+     "at": 25.1,
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "von": 25.72,
+   "bis": 28.3,
+   "wort_start": {
+    "w": "Die",
+    "after": 25.6
+   },
+   "gesagt": "Die KI nimmt die Kleidung: Firmenshirts.",
+   "bild": "Zurück zur Produkt-Wand (Bogen zum Hook): die '?'-Karten werden nacheinander durchgestrichen (25.9–26.9), nur die Shirt-Karte bleibt. Kurze Musikstille, dann bei 'Firmenshirts' Karte groß + oranger Sticker 'FIRMENSHIRTS', Gründer hält ein Shirt hoch, kleiner Weißblitz. Zähler am Tisch: 'PRODUKT: FIRMENSHIRTS'.",
+   "kamera": "Fahrt zur Wand, bei 'Firmenshirts' harter Push-in auf die Shirt-Karte",
+   "karten": [
+    {
+     "typ": "Wand-Streichen",
+     "von": {
+      "w": "nimmt",
+      "after": 26.0
+     },
+     "bis": 26.95
+    },
+    {
+     "typ": "WordSticker",
+     "text": "FIRMENSHIRTS",
+     "bg": "orange",
+     "at": {
+      "w": "Firmenshirts.",
+      "after": 27.0
+     },
+     "until": 28.3
+    },
+    {
+     "typ": "Zaehler-am-Objekt",
+     "label": "PRODUKT",
+     "wert": "FIRMENSHIRTS",
+     "at": {
+      "w": "Firmenshirts.",
+      "after": 27.0
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "whoosh-quick",
+     "at": 25.7,
+     "v": 0.22
+    },
+    {
+     "n": "paper-tear",
+     "at": 26.2,
+     "v": 0.25
+    },
+    {
+     "n": "stamp",
+     "at": 27.23,
+     "v": 0.45
+    },
+    {
+     "n": "powerup",
+     "at": 27.3,
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B13",
+   "von": 28.3,
+   "bis": 32.28,
+   "wort_start": {
+    "w": "Nur",
+    "after": 28.2
+   },
+   "gesagt": "Nur eins findet Claude nirgends: wie oft Betriebe nachbestellen. Das klärt sie morgen.",
+   "bild": "Paper mit Shot s6 (letzter Satz der echten Antwort). Markierung 'in keiner Statistik gefunden' bei 'nirgends', dann 'Wie oft Kleinstbetriebe … nachbestellen'. Bei 'Das klärt sie morgen' Paper raus: Gründer am Tisch, Hängeschild 'TAG 2: NACHBESTELLUNG?' schwingt ein.",
+   "kamera": "Paper 2D, Zoom auf die letzte Zeile; ab 31.36 Pull-back auf die Insel",
+   "karten": [
+    {
+     "typ": "ClaudePaper",
+     "shot": "s6",
+     "at": {
+      "w": "Nur",
+      "after": 28.2
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s6.keine_statistik",
+     "farbe": "rot",
+     "at": {
+      "w": "nirgends:",
+      "after": 29.1
+     }
+    },
+    {
+     "typ": "Highlight",
+     "ziel": "s6.wie_oft",
+     "at": {
+      "w": "nachbestellen.",
+      "after": 30.3
+     }
+    },
+    {
+     "typ": "HangingTag",
+     "text": "TAG 2",
+     "sub": "NACHBESTELLUNG?",
+     "at": {
+      "w": "Das",
+      "after": 31.2
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "ui-pop",
+     "at": 28.38,
+     "v": 0.3
+    },
+    {
+     "n": "bump",
+     "at": 29.3,
+     "v": 0.35
+    },
+    {
+     "n": "tick",
+     "at": 30.5,
+     "v": 0.3
+    },
+    {
+     "n": "whoosh-quick-high",
+     "at": 31.3,
+     "v": 0.2
+    },
+    {
+     "n": "chime-asc",
+     "at": 31.6,
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "von": 32.28,
+   "bis": 36.3,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 32.0
+   },
+   "gesagt": "Kommentiere „Produkt“, und ich schick dir den Guide.",
+   "bild": "End-Karte: Kommentar-Feld tippt 'Produkt' (Keyword groß, orange, M-011), darunter 'Guide per DM' mit PDF-Icon, das bei 'Guide' in eine DM-Blase fliegt. Gründer winkt unten an der Insel. Welt dahinter unscharf, ruhig.",
+   "kamera": "ruhiger Push-in auf die Karte, letzte Sekunde Halt",
+   "karten": [
+    {
+     "typ": "KeywordCard",
+     "keyword": "Produkt",
+     "at": {
+      "w": "Kommentiere",
+      "after": 32.0
+     }
+    },
+    {
+     "typ": "Tippen",
+     "text": "Produkt",
+     "at": {
+      "w": "„Produkt“,",
+      "after": 32.8
+     }
+    },
+    {
+     "typ": "Kommentar-gesendet",
+     "notiz": "Kommentar mit 'Produkt' rutscht als Bubble hoch, Haken",
+     "at": {
+      "w": "und",
+      "after": 33.5
+     }
+    },
+    {
+     "typ": "Promise",
+     "text": "Guide per DM",
+     "at": {
+      "w": "schick",
+      "after": 34.3
+     }
+    },
+    {
+     "typ": "PDF-in-DM",
+     "at": {
+      "w": "Guide.",
+      "after": 34.8
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "n": "ui-pop",
+     "at": 32.33,
+     "v": 0.4
+    },
+    {
+     "n": "typing",
+     "at": 32.9,
+     "v": 0.22
+    },
+    {
+     "n": "check",
+     "at": 33.9,
+     "v": 0.3
+    },
+    {
+     "n": "pop-high",
+     "at": 34.3,
+     "v": 0.35
+    },
+    {
+     "n": "chime",
+     "at": 34.95,
+     "v": 0.3
+    },
+    {
+     "n": "ui-pop",
+     "at": 35.6,
+     "v": 0.3
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "ui-pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "jump": "public/sirtoken/sfx-jump.mp3",
+  "powerup": "public/sirtoken/sfx-powerup.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "whoosh-quick": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "pop-low": "sfx/heygen/variants/pop-low.mp3",
+  "pop-high": "sfx/heygen/variants/pop-high.mp3",
+  "synth-pop": "sfx/heygen/synth-pop.mp3",
+  "click-low": "sfx/heygen/variants/click-low.mp3",
+  "whoosh-quick-high": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "ping": "sfx/ping.mp3",
+  "chime-asc": "sfx/heygen/chime-asc.mp3",
+  "counter-roll": "sfx/heygen/extra/counter-roll.mp3",
+  "counter-roll-short": "sfx/heygen/extra/counter-roll-short.mp3",
+  "page-turn": "sfx/heygen/extra/page-turn.mp3",
+  "paper-tear": "sfx/heygen/extra/paper-tear.mp3",
+  "stamp-clack": "sfx/heygen/extra/stamp-clack.mp3"
+ },
+ "anker_regel": "Zeit = erstes Wort w in words.json mit s >= after, plus offset (Standard 0). Nie nur über das Wort verankern."
+}

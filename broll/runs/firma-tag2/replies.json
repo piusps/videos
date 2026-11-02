@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Kunde: Guide mit den drei Schritten per DM, Trigger-Wort im Video: Kunde)",
+ "commentReply": "Der Guide liegt in deiner DM. Wer wäre dein erster Kunde?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Welche Branche würdest du zuerst fragen?",
+  "Schick ich dir gerade. Verkaufst du eher an Betriebe oder an Privatleute?",
+  "Angekommen, alles liegt in deiner DM. Hättest du auch das Handwerk genommen?",
+  "Liegt in deiner DM. Kennst du jemanden aus dem Handwerk, der Logo-Shirts trägt?",
+  "Der Guide ist unterwegs. Was würdest du Claude als Erstes anhängen?"
+ ]
+}

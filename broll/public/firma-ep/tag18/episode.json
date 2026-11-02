@@ -1,0 +1,2545 @@
+{
+ "ringLight": 0.3,
+ "tag": 18,
+ "folge": 18,
+ "serientag": 5,
+ "ersteFolgeDesTages": true,
+ "date": "2026-11-01",
+ "keyword": "Marge",
+ "seconds": 44.51,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 50.85,
+  "musicMute": [],
+  "musicCurve": [
+   [
+    0,
+    0.04
+   ],
+   [
+    25.6,
+    0.04
+   ],
+   [
+    25.85,
+    0.025
+   ],
+   [
+    26.62,
+    0.025
+   ],
+   [
+    26.69,
+    0.05
+   ],
+   [
+    27.4,
+    0.03
+   ],
+   [
+    43.35,
+    0.03
+   ],
+   [
+    43.51,
+    0.05
+   ],
+   [
+    44.1,
+    0.05
+   ],
+   [
+    44.51,
+    0
+   ]
+  ]
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "sub": "· 12 SCHRITTE",
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE\nENTWURF",
+   "GEWERBE\nMENSCH",
+   "BETRIEBE",
+   "BRIEF\n+ ADRESSEN",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 7,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6
+  ],
+  "wip": [
+   4
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@5",
+   "aus": "aus@5.3",
+   "tagWord": "Tag@6",
+   "tagNum": "5@6.3",
+   "end": "Die@7-0.08"
+  },
+  "instant": true,
+  "keepHeadline": true,
+  "planFrom": "Ich-0.05"
+ },
+ "claude": {
+  "at": "Werbebrief-0.04",
+  "moveUp": 99,
+  "steps": [],
+  "prompt": "Im Anhang sind meine fünf Serienbriefe aus dem letzten Schritt, mit der Versandzeile. Mein Angebot: 109 Euro brutto für fünf Shirts, 29,90 Euro für ein nachbestelltes Einzelshirt, Firmenlogo auf der Brust gestickt, erst auf Bestellung über Printful, Kunden in Deutschland. Finde mit der Websuche heraus, was mich ein besticktes Shirt bei Printful im Einkauf kostet: Grundpreis des Shirts, Preis für den Stick und eine mögliche Gebühr fürs Digitalisieren des Logos, jeweils mit Quelle. Rechne dann mit dem Versand aus meinem Brief aus, was von 109 Euro für fünf Shirts und von 29,90 Euro für ein Einzelshirt übrig bleibt. Sag mir, ob die Preise so bleiben können, mit zwei bis drei Gründen. Sag mir, was du ohne Printful-Konto nicht sehen kannst. Erfinde nichts.",
+  "typing": [
+   [
+    "Werbebrief-0.04",
+    ""
+   ]
+  ],
+  "send": "Werbebrief-0.03"
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@7-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "verkauft"
+   },
+   "today": {
+    "step": 7,
+    "pill": "HEUTE: MARGE",
+    "at": "Heute-0.1"
+   },
+   "bot": {
+    "dx": 0.8,
+    "s": 0.4
+   }
+  },
+  {
+   "type": "question",
+   "at": "Werbebrief-0.04",
+   "lines": [
+    " "
+   ],
+   "card": false,
+   "stamp": null,
+   "bot": {
+    "dx": 1.6,
+    "dz": -1.8,
+    "s": 0.55
+   }
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "bare": true,
+   "label": "PREIS",
+   "icon": "shirt",
+   "pill": " ",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "euro",
+     "small": "8 € Rabatt",
+     "at": "8@28"
+    },
+    {
+     "icon": "warn",
+     "small": "ab 17 € nichts",
+     "at": "17@30.9"
+    }
+   ],
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@34-0.14",
+   "pill": "",
+   "lines": [
+    "Stimmt die",
+    "Versandzeile?"
+   ],
+   "pop": "Stimmt-0.05",
+   "stamp": null,
+   "bubble": "Versandzeile",
+   "bot": {
+    "dx": 1.6,
+    "dz": -1.8,
+    "s": 0.55
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Marge@38",
+   "plane": [
+    "Marge@38:end+0.05",
+    "Rechenweg-0.1"
+   ],
+   "itemsAt": "Rechenweg",
+   "copyAt": "In@41",
+   "itemTag": "DM",
+   "dimBoard": false,
+   "items": []
+  }
+ ],
+ "overlays": [
+  {
+   "kind": "partners",
+   "from": 0,
+   "to": "Umsatz",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": -1,
+    "to": "Umsatz"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Umsatz",
+   "to": "macht-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "Umsatz-0.60",
+    "to": "macht+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "macht",
+   "to": "Unternehmen-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "macht-0.60",
+    "to": "Unternehmen+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Unternehmen",
+   "to": "das@1.5-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "Unternehmen-0.60",
+    "to": "das@1.5+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "das@1.5",
+   "to": "KI@1.9-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "das@1.5-0.60",
+    "to": "KI@1.9+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "KI@1.9",
+   "to": "100-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "KI@1.9-0.60",
+    "to": "100+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "100",
+   "to": "Tage-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-6.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "100-0.60",
+    "to": "Tage+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Tage",
+   "to": "lang-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-7.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "Tage-0.60",
+    "to": "lang+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "lang",
+   "to": "führt:end-0.46",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-8.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "lang-0.60",
+    "to": "führt:end+8.90"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "führt:end-0.1",
+   "to": "Ich-0.46",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/hook-9.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "führt:end-0.70",
+    "to": "Ich+8.91"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "verkauft-0.15",
+   "to": "Betriebe-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/rec-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 360,
+    "w": 1000,
+    "y": 1025,
+    "at": "verkauft-0.75",
+    "to": "Betriebe+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Betriebe",
+   "to": "bestickt-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/rec-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 360,
+    "w": 1000,
+    "y": 1025,
+    "at": "Betriebe-0.60",
+    "to": "bestickt+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "bestickt",
+   "to": "Werbebrief-0.44",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/rec-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 360,
+    "w": 1000,
+    "y": 1025,
+    "at": "bestickt-0.60",
+    "to": "Werbebrief+8.93"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Werbebrief-0.01",
+   "to": "Werbebrief+0.2",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/brief-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Werbebrief-0.61",
+    "to": "Werbebrief+0.2"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Werbebrief+0.2",
+   "to": "Versand@12.5-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/brief-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Werbebrief-0.40",
+    "to": "Versand@12.5+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Versand@12.5",
+   "to": "extra-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/brief-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Versand@12.5-0.60",
+    "to": "extra+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "extra",
+   "to": "extra:end-0.24",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/brief-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "extra-0.60",
+    "to": "extra:end+9.12"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "extra:end+0.12",
+   "to": "Heute-0.43",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/brief-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "extra:end-0.48",
+    "to": "Heute+8.94"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Heute-0.06",
+   "to": "Marge@15-0.11",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/heute-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Heute-0.66",
+    "to": "Marge@15+9.25"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Marge@15+0.25",
+   "to": "Marge@15:end-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/heute-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Marge@15-0.35",
+    "to": "Marge@15:end+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Marge@15:end",
+   "to": "Marge@15:end-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/heute-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Marge@15:end-0.60",
+    "to": "Marge@15:end+9.30"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Marge@15:end+0.3",
+   "to": "Claude-0.66",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/heute-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Marge@15:end-0.30",
+    "to": "Claude+8.70"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Claude-0.3",
+   "to": "Claude-0.49",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/heute-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Claude-0.90",
+    "to": "Claude+8.88"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "Heute+0.05",
+   "to": "Claude-0.3",
+   "text": "HEUTE: MARGE",
+   "y": 1240
+  },
+  {
+   "kind": "partners",
+   "from": "Claude-0.04",
+   "to": "Brief@16.5-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/weg-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 1040,
+    "y": 230,
+    "at": "Claude-0.64",
+    "to": "Brief@16.5+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Brief@16.5",
+   "to": "angehängt-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/weg-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 1040,
+    "y": 230,
+    "at": "Brief@16.5-0.60",
+    "to": "angehängt+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "angehängt",
+   "to": "Websuche-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/weg-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 1040,
+    "y": 230,
+    "at": "angehängt-0.60",
+    "to": "Websuche+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Websuche",
+   "to": "Websuche-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/weg-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 1040,
+    "y": 230,
+    "at": "Websuche-0.60",
+    "to": "Websuche+9.30",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Websuche+0.3",
+   "to": "Printful@18-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/weg-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 1040,
+    "y": 230,
+    "at": "Websuche-0.30",
+    "to": "Printful@18+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Printful@18",
+   "to": "Printful@18:end-0.16",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/weg-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 1040,
+    "y": 230,
+    "at": "Printful@18-0.60",
+    "to": "Printful@18:end+9.20",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Printful@18:end+0.2",
+   "to": "Ohne-0.43",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/weg-6.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 1040,
+    "y": 230,
+    "at": "Printful@18:end-0.40",
+    "to": "Ohne+8.94",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Ohne-0.06",
+   "to": "Printful-Konto-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/erg-0.png",
+    "srcW": 1060,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1060,
+    "sh": 1007,
+    "w": 1040,
+    "y": 230,
+    "at": "Ohne-0.66",
+    "to": "Printful-Konto+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Printful-Konto",
+   "to": "keinen-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/erg-1.png",
+    "srcW": 1060,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1060,
+    "sh": 1007,
+    "w": 1040,
+    "y": 230,
+    "at": "Printful-Konto-0.60",
+    "to": "keinen+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "keinen",
+   "to": "Einkaufspreis@21.6-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/erg-2.png",
+    "srcW": 1060,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1060,
+    "sh": 1007,
+    "w": 1040,
+    "y": 230,
+    "at": "keinen-0.60",
+    "to": "Einkaufspreis@21.6+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Einkaufspreis@21.6",
+   "to": "Einkaufspreis@21.6-0.11",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/erg-3.png",
+    "srcW": 1060,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1060,
+    "sh": 1007,
+    "w": 1040,
+    "y": 230,
+    "at": "Einkaufspreis@21.6-0.60",
+    "to": "Einkaufspreis@21.6+9.25",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Einkaufspreis@21.6+0.25",
+   "to": "Einkaufspreis@21.6:end-0.11",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/erg-4.png",
+    "srcW": 1060,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1060,
+    "sh": 1007,
+    "w": 1040,
+    "y": 230,
+    "at": "Einkaufspreis@21.6-0.35",
+    "to": "Einkaufspreis@21.6:end+9.25",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Einkaufspreis@21.6:end+0.25",
+   "to": "Ihren-0.43",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/erg-5.png",
+    "srcW": 1060,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1060,
+    "sh": 1007,
+    "w": 1040,
+    "y": 230,
+    "at": "Einkaufspreis@21.6:end-0.35",
+    "to": "Ihren+8.94",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Ihren-0.06",
+   "to": "Verkaufspreis-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/ent-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 960,
+    "y": 230,
+    "at": "Ihren-0.66",
+    "to": "Verkaufspreis+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Verkaufspreis",
+   "to": "Fünferpack-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/ent-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 960,
+    "y": 230,
+    "at": "Verkaufspreis-0.60",
+    "to": "Fünferpack+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Fünferpack",
+   "to": "lässt-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/ent-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 960,
+    "y": 230,
+    "at": "Fünferpack-0.60",
+    "to": "lässt+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "lässt",
+   "to": "offen-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/ent-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 960,
+    "y": 230,
+    "at": "lässt-0.60",
+    "to": "offen+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "offen",
+   "to": "offen:end-0.01",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/ent-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 960,
+    "y": 230,
+    "at": "offen-0.60",
+    "to": "offen:end+9.35"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "offen:end+0.35",
+   "to": "Warum-0.51",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/ent-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 950,
+    "w": 960,
+    "y": 230,
+    "at": "offen:end-0.25",
+    "to": "Warum+8.86"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Warum-0.06",
+   "to": "Dort-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/why-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 660,
+    "w": 820,
+    "y": 330,
+    "at": "Warum-0.66",
+    "to": "Dort+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Dort",
+   "to": "8@28-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/why-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 660,
+    "w": 820,
+    "y": 330,
+    "at": "Dort-0.60",
+    "to": "8@28+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "8@28",
+   "to": "Rabatt-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/why-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 660,
+    "w": 820,
+    "y": 330,
+    "at": "8@28-0.60",
+    "to": "Rabatt+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Rabatt",
+   "to": "17@30.9-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/why-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 660,
+    "w": 820,
+    "y": 330,
+    "at": "Rabatt-0.60",
+    "to": "17@30.9+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "17@30.9",
+   "to": "Einkauf@31.5-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/why-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 660,
+    "w": 820,
+    "y": 330,
+    "at": "17@30.9-0.60",
+    "to": "Einkauf@31.5+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Einkauf@31.5",
+   "to": "nichts-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/why-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 660,
+    "w": 820,
+    "y": 330,
+    "at": "Einkauf@31.5-0.60",
+    "to": "nichts+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "nichts",
+   "to": "nichts:end-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/why-6.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 660,
+    "w": 820,
+    "y": 330,
+    "at": "nichts-0.60",
+    "to": "nichts:end+9.30"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "nichts:end+0.3",
+   "to": "Als@34-0.56",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/why-7.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 660,
+    "w": 820,
+    "y": 330,
+    "at": "nichts:end-0.30",
+    "to": "Als@34+8.81"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "Warum",
+   "to": "Als@34-0.5",
+   "text": "WARUM?",
+   "y": 196
+  },
+  {
+   "kind": "partners",
+   "from": "Als@34-0.14",
+   "to": "Stimmt",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/next-1.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 640,
+    "y": 250,
+    "at": "Als@34-0.74",
+    "to": "Stimmt"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Stimmt",
+   "to": "Versandzeile-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/next-1.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 640,
+    "y": 250,
+    "at": "Stimmt-0.60",
+    "to": "Versandzeile+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Versandzeile",
+   "to": "Versandzeile+0.09",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/next-2.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 640,
+    "y": 250,
+    "at": "Versandzeile-0.60",
+    "to": "Versandzeile+9.45"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Versandzeile+0.45",
+   "to": "Versandzeile:end-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/next-3.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 640,
+    "y": 250,
+    "at": "Versandzeile-0.15",
+    "to": "Versandzeile:end+9.30"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Versandzeile:end+0.3",
+   "to": "Kommentiere-0.56",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/next-4.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 640,
+    "y": 250,
+    "at": "Versandzeile:end-0.30",
+    "to": "Kommentiere+8.81"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Rechenweg-0.05",
+   "to": "In@41-0.46",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/cta-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1040,
+    "y": 112,
+    "at": "Rechenweg-0.65",
+    "to": "In@41+8.90"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "In@41-0.1",
+   "to": "bleibt@42.7-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/cta-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1040,
+    "y": 112,
+    "at": "In@41-0.70",
+    "to": "bleibt@42.7+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "bleibt@42.7",
+   "to": "bleibt@42.7+0.14",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/cta-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1040,
+    "y": 112,
+    "at": "bleibt@42.7-0.60",
+    "to": "bleibt@42.7+9.50"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "bleibt@42.7+0.5",
+   "to": "bleibt@42.7:end-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/cta-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1040,
+    "y": 112,
+    "at": "bleibt@42.7-0.10",
+    "to": "bleibt@42.7:end+9.30"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "bleibt@42.7:end+0.3",
+   "to": 99,
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag18/shots/cta-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1080,
+    "y": 112,
+    "at": "bleibt@42.7:end-0.30",
+    "to": 99
+   }
+  }
+ ],
+ "captionY": [
+  {
+   "from": "Die@7-0.08",
+   "to": "Werbebrief-0.04",
+   "y": 1690
+  },
+  {
+   "from": "Kommentiere-0.15",
+   "to": "Rechenweg:end+0.3",
+   "y": 1640
+  },
+  {
+   "from": "Rechenweg:end+0.3",
+   "to": "bleibt@42.7:end+3",
+   "y": 1210
+  }
+ ],
+ "bot": {
+  "hops": [
+   [
+    "Unternehmen",
+    0.4
+   ],
+   [
+    "das@1.5",
+    0.5
+   ],
+   [
+    "KI@1.9",
+    0.4
+   ],
+   [
+    "100",
+    0.45
+   ],
+   [
+    "Tage",
+    0.5
+   ],
+   [
+    "lang",
+    0.4
+   ],
+   [
+    "führt?+0.5",
+    0.35
+   ],
+   [
+    "Logo",
+    0.3
+   ],
+   [
+    "Bestellung",
+    0.35
+   ],
+   [
+    "Dort",
+    0.3
+   ],
+   [
+    "pro@29.4",
+    0.35
+   ],
+   [
+    "extra:end+0.2",
+    0.35
+   ],
+   [
+    "offen:end+0.3",
+    0.3
+   ],
+   [
+    "Versandzeile:end",
+    0.35
+   ],
+   [
+    "bleibt@42.7:end+0.4",
+    0.2
+   ]
+  ]
+ },
+ "sfx": [
+  {
+   "t": 0.03,
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Umsatz-0.22",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Umsatz",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Umsatz+0.04",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.35
+  },
+  {
+   "t": "macht",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Unternehmen",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "das@1.5",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "KI@1.9",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "100",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Tage",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "lang",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "ganz@3-0.06",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "alleine",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.42
+  },
+  {
+   "t": "führt",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "führt?:end-0.1",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.15
+  },
+  {
+   "t": "Ich@4.5-0.05",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "probier",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "aus@5",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Tag@6.0",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "5@6.3",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.38
+  },
+  {
+   "t": "Die@6.9-0.08",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "verkauft",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Betriebe@9.5",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "Logo",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "bestickt",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Bestellung",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Werbebrief",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Versand@12.5",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "extra",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Heute-0.1",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Heute+0.05",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Marge@14.9+0.25",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Marge@14.9:end",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Claude",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Brief@16.6",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "angehängt",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Websuche",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Printful@18.4",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Ohne@19.5",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Printful-Konto",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "keinen",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Einkaufspreis@21.6",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.32
+  },
+  {
+   "t": "Einkaufspreis@21.6:end+0.25",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "Ihren-0.1",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Verkaufspreis",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Fünferpack",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "lässt",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "offen",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Warum-0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Warum",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "8@28.3",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Rabatt",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Dort",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "pro@29.4",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "Ab@30.3",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "17@30.8",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Einkauf@31.5",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "nichts",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Als@33.8-0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Als@33.8",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Stimmt",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Versandzeile",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Versandzeile:end",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "Kommentiere-0.15",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Marge@38.2",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Marge@38.2:end",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "ich@39",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Rechenweg",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "In@41.2",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "10@41.5",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "bleibt@42.7",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.2
+  },
+  {
+   "t": 44.21,
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  }
+ ]
+}

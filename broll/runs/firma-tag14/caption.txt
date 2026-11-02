@@ -1,0 +1,26 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Heute sucht sie die Adressen für ihre ersten 5 Werbebriefe.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. Der Werbebrief steht, aber die Empfänger fehlen noch.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ den Brief und die Firmenliste anhängen.
+2. Fragen: „Hol mit der Websuche die Postadressen dieser Betriebe, aus dem Impressum oder anderen öffentlichen Quellen, jeweils mit Quelle. Bau daraus eine Empfängerliste für den Serienbrief als Excel-Datei. Markiere, welche Adresse belegt ist, welche nicht und wo sich Quellen widersprechen. Keine privaten Daten. Erfinde nichts.“
+3. Die Spalte „Adressstatus“ lesen und die unsicheren Zeilen selbst klären.
+
+Echter Lauf (2 Min. 40 s, 15 Websuchen): eine Excel-Datei mit 3 Blättern, Empfänger, Belege und offene Punkte. Laut Claude alle 5 aus dem Impressum; gelesen hat sie nur 2, 3 kamen aus Suchtreffern.
+
+Warum das Impressum? Die Gründe laut Claude:
+- Das Impressum ist Pflicht. Der Betrieb muss dort eine Anschrift angeben, unter der er erreichbar ist.
+- Der Betrieb pflegt die Angabe selbst. Branchenverzeichnisse übernehmen oft alte Daten. Bei 2 Betrieben standen dort noch frühere Adressen.
+
+Der Haken: Eindeutig belegt ist nur 1 Adresse. Bei 3 Betrieben soll man noch etwas prüfen, bei 1 widersprechen sich Impressum und eine Abschrift aus dem Handelsregister. Das amtliche Register hat Claude nicht selbst abgefragt.
+
+Datenschutz: Eine Adresse, die privat sein könnte, hat Claude bewusst weggelassen. Namen und Adressen zeige ich nicht.
+
+Kommentiere „Adresse“, und ich schick dir die Frage zum Kopieren und die Tabellenvorlage mit den Status-Regeln. Damit hast du in 10 Minuten deine eigene Empfängerliste.
+
+Offen bleibt: Welche Adresse stimmt, wenn Impressum und Register sich widersprechen?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #kundengewinnung #firmenshirts

@@ -1,0 +1,216 @@
+{
+ "topic": "Kunden",
+ "trigger_word": "Kunden",
+ "cover": {
+  "kicker": "KI baut eine Firma · Wen spricht sie zuerst an?",
+  "title": "Mögliche Firmenkunden. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie zwanzig echte Betriebe als mögliche Kunden für ihre Shirt-Firma gefunden und fünf davon ausgewählt hat. Mit Variante ohne Anhang, Beispielen für deinen Beruf, der Listenvorlage und den Prüfpunkten für jeden Betrieb.",
+  "stat": {
+   "value": "5 min 20 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: Testregion begründet, 20 Betriebe mit Quelle gefunden, fünf ausgewählt, alles als Excel-Datei."
+  },
+  "outcomes": [
+   "Die Frage zum Kopieren, mit und ohne Anhang",
+   "Die Listenvorlage: fünf Blätter mit allen Spalten",
+   "Prüfpunkte für jeden Betrieb, bevor du irgendwen ansprichst"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Deine Liste. In zehn Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** dein letztes Ergebnis an, zum Beispiel dein Angebot oder deine Preisliste. Dann füge diese Frage ein. Das ist die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante A: mit Anhang (letztes Ergebnis angehängt)",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [PRODUKT] an [ZIELGRUPPE], die [GRÖSSE, z. B. unter zehn Leute] haben. Mein letztes Ergebnis: [STAND IN EINEM SATZ]. Ich will wissen, wen ich zuerst anspreche. Wähl eine Testregion in Deutschland, unabhängig von meinem Standort, und begründe sie. Finde dort mit der Websuche zwanzig echte Betriebe aus meiner Zielgruppe, die nach ihrer Website oder einem Branchenverzeichnis wahrscheinlich [GRÖSSE] haben, mit Quelle für jeden. Nimm nur Firmenangaben, keine Privatpersonen. Entscheide, welche fünf du zuerst ansprechen würdest, und begründe es mit zwei bis drei konkreten Gründen. Mach daraus eine Excel-Tabelle. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Nach gut fünf Minuten hast du eine Excel-Datei mit fünf Blättern: zwanzig Betriebe mit Quelle, die fünf für den Anfang mit Gründen, die begründete Testregion und eine Liste, was Claude nicht prüfen konnte. Mit Einfügen und Lesen sind es etwa zehn Minuten."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → Datei anhängen → Frage einfügen → senden. Research ist nicht nötig, ein Konnektor auch nicht."
+      },
+      {
+       "k": "Websuche",
+       "v": "Läuft ohne eigenen Schalter, Claude sucht selbst. In Team- und Enterprise-Konten muss ein Owner die Websuche erst freigeben."
+      },
+      {
+       "k": "Gedächtnis",
+       "v": "Tipp: im Plus-Menü das Häkchen **„Gedächtnis“** für diesen Chat ausschalten, damit nichts Privates einfließt."
+      },
+      {
+       "k": "Ergebnis",
+       "v": "Die Datei erscheint als Karte im Chat („Tabellenkalkulation · XLSX“). Unser Lauf: 5 Minuten 20 Sekunden, 26 Websuchen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Ohne Anhang",
+   "title": "Noch kein Ergebnis als Datei? Geht auch.",
+   "intro": "Der erste Satz fällt weg, dein Stand steht einfach im Text. Der Rest bleibt gleich.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante B: ohne Anhang",
+     "text": "Ich verkaufe [PRODUKT] an [ZIELGRUPPE], die [GRÖSSE] haben. Mein Stand: [STAND IN EINEM SATZ, z. B. Angebot und Preis stehen, noch kein Kunde]. Ich will wissen, wen ich zuerst anspreche. Wähl eine Testregion in Deutschland, unabhängig von meinem Standort, und begründe sie. Finde dort mit der Websuche zwanzig echte Betriebe aus meiner Zielgruppe, die nach ihrer Website oder einem Branchenverzeichnis wahrscheinlich [GRÖSSE] haben, mit Quelle für jeden. Nimm nur Firmenangaben, keine Privatpersonen. Entscheide, welche fünf du zuerst ansprechen würdest, und begründe es mit zwei bis drei konkreten Gründen. Mach daraus eine Excel-Tabelle. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Region selbst festlegen",
+     "text": "Du willst nur in deiner Gegend suchen? Ersetze „Wähl eine Testregion in Deutschland, unabhängig von meinem Standort, und begründe sie.“ durch: „Such in [REGION] und sag mir, was gegen diese Region spricht.“"
+    }
+   ]
+  },
+  {
+   "kicker": "Für deinen Beruf",
+   "title": "So füllst du die Klammern.",
+   "intro": "Vier Beispiele für [PRODUKT], [ZIELGRUPPE], [GRÖSSE] und [STAND]. Passt für alle, die an Betriebe verkaufen. Wer an Privatleute verkauft, bekommt mit dieser Frage keine Kundenliste, denn Claude nimmt nur Firmenangaben.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Fotografin",
+       "text": "[Team- und Bewerbungsfotos] an [kleine Handwerksbetriebe und Praxen], [unter zehn Leute]. Stand: [Preisliste steht, noch kein Kunde]."
+      },
+      {
+       "num": "02",
+       "title": "Gebäudereiniger",
+       "text": "[Unterhaltsreinigung] an [Arzt- und Physiopraxen], [zwei bis zehn Leute]. Stand: [Angebot und Stundensatz stehen]."
+      },
+      {
+       "num": "03",
+       "title": "Webdesigner",
+       "text": "[Onepager für Betriebe] an [Elektro- und Sanitärbetriebe ohne eigene Website], [unter zehn Leute]. Stand: [Musterseite gebaut]."
+      },
+      {
+       "num": "04",
+       "title": "Kaffeerösterin",
+       "text": "[Kaffee im Abo fürs Büro] an [Agenturen und Kanzleien], [fünf bis zwanzig Leute]. Stand: [Etikett und Preis stehen]."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Listenvorlage",
+   "title": "Fünf Blätter. So hat Claude die Liste gebaut.",
+   "intro": "Das ist der Spaltenaufbau der echten Excel-Datei aus unserem Lauf. Willst du genau diese Vorlage, häng den Zusatz unten an deine Frage an.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "table",
+     "head": ["Blatt", "Spalten"],
+     "widths": ["22%", "78%"],
+     "rows": [
+      ["**Betriebe**", "Nr · Firma (wie in Quelle) · Gewerk · PLZ / Ort · Adresse / Kontakt · Größenangabe · Art der Größenquelle · Quelle (Link) · Weitere Quelle · Top-5-Rang · Hinweis. Darunter drei Zählzeilen: Anzahl Betriebe · davon Top 5 · davon mit Größe aus 2+ Quellen oder eigener Angabe. Top 5 gelb markiert."],
+      ["**Top 5**", "Rang · Firma · Gewerk · Grund 1 · Grund 2 · Grund 3 · Erster Kontaktweg (Vorschlag). Darunter „Warum diese fünf“ und „Gilt für alle“."],
+      ["**Testregion**", "Punkt · Inhalt · Quelle (Gründe, Gegenargument, Einschränkung der Daten)"],
+      ["**Nicht geprüft**", "Was ich nicht prüfen konnte · Warum es wichtig ist"],
+      ["**Quellen**", "Quelle · Link"]
+     ]
+    },
+    {
+     "type": "prompt",
+     "label": "Zusatz zum Anhängen an Variante A oder B",
+     "text": "Nutze genau diese Blätter und Spalten: Blatt „Betriebe“: Nr, Firma (wie in Quelle), Gewerk, PLZ / Ort, Adresse / Kontakt, Größenangabe, Art der Größenquelle, Quelle (Link), Weitere Quelle, Top-5-Rang, Hinweis; darunter die Zählzeilen Anzahl Betriebe, davon Top 5, davon mit Größe aus 2+ Quellen oder eigener Angabe; Top 5 gelb markieren. Blatt „Top 5“: Rang, Firma, Gewerk, Grund 1, Grund 2, Grund 3, Erster Kontaktweg (Vorschlag); darunter „Warum diese fünf“ und „Gilt für alle“. Blatt „Testregion“: Punkt, Inhalt, Quelle. Blatt „Nicht geprüft“: Was ich nicht prüfen konnte, Warum es wichtig ist. Blatt „Quellen“: Quelle, Link."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/liste-anonym.png",
+     "width": "100%",
+     "caption": "Blatt „Betriebe“ aus unserem Lauf, anonymisiert: Firmennamen ersetzt, Kontakt, Links und Hinweise geschwärzt. Gelb = Claudes Top 5. Die Betriebe selbst stehen nicht in diesem Guide, deine Liste entsteht mit deiner Frage."
+    }
+   ]
+  },
+  {
+   "kicker": "Prüfpunkte",
+   "title": "Das prüfst du bei jedem Betrieb selbst.",
+   "intro": "Claudes Liste ist eine Liste möglicher Kunden mit Quelle, keine fertige Kundenliste. Bevor du irgendwen ansprichst, gehst du diese Punkte durch. Sie stammen aus Claudes Blatt „Nicht geprüft“ und dem Hinweis zum Kontaktweg.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Gibt es den Betrieb noch?** Impressum und Website ansehen. Handelsregister und Gewerbestatus hat Claude in unserem Lauf nicht abgefragt.",
+      "**Adresse aus dem Impressum.** Branchenverzeichnisse zeigen oft nur die PLZ. In unserem Lauf standen bei einem Verzeichnis nur Platzhalter statt Straße.",
+      "**Woher kommt die Größe?** Spalte „Art der Größenquelle“: Steht dort nur „Branchenverzeichnis“, ist es eine Größenklasse ohne Datum, keine Zählung. In unserem Lauf war das bei 17 von 20 so, genauer belegt nur bei 3.",
+      "**Ist ein Grund nur eine Annahme?** Claude markiert das selbst („Annahme, nicht geprüft“), zum Beispiel ob ein Betrieb schon Firmenkleidung hat.",
+      "**Ist die Stellenanzeige noch offen?** Wenn „stellt gerade ein“ ein Grund ist: Datum der Anzeige prüfen. In unserem Lauf war sie schon über 30 Tage online.",
+      "**Datenschutz beim Speichern:** Bei Einzelunternehmen steckt der Name des Inhabers im Firmennamen. Ob du die Liste für Werbung speichern darfst, hat Claude nicht geprüft.",
+      "**Kontaktweg:** siehe Kasten unten."
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Kontaktweg: Was Claude dazu gefunden hat (keine Rechtsberatung)",
+     "text": "Laut Claude, mit IHK-Quellen: Werbe-E-Mails ohne vorherige ausdrückliche Einwilligung sind nach § 7 UWG grundsätzlich unzulässig, auch an Firmen. Werbeanrufe bei Firmen brauchen eine mutmaßliche Einwilligung mit konkretem Bezug zum Betrieb. Brief oder Besuch nannte Claude den sichereren ersten Schritt. Regeln für Werbebriefe hat Claude in unserem Lauf nicht eigens recherchiert. Claude selbst: „Ich bin kein Anwalt.“ Im Zweifel fragst du deine IHK oder einen Anwalt."
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Was die KI in unserem Lauf entschieden hat.",
+   "intro": "Unsere KI verkauft Shirts mit gesticktem Logo an kleine Handwerks- und Baubetriebe. Das kam heraus, ohne Namen.",
+   "blocks": [
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Testregion",
+       "v": "Chemnitz mit nahem Umland (bis ca. 20 km). Sachsen hat 50,03 Handwerksbetriebe je 10.000 Einwohner, der Bundesschnitt liegt bei 38,4. In der Stadt gab es 587 Bau- und Ausbaubetriebe der Anlage A (Stand Ende 2021)."
+      },
+      {
+       "k": "Gegenargument",
+       "v": "Von Claude selbst: Rückgang bei den Ausbaugewerken und knappe Auftragsbestände (HWK-Konjunkturbericht Frühjahr 2025). Betriebe könnten bei Ausgaben vorsichtig sein."
+      },
+      {
+       "k": "Liste",
+       "v": "20 Betriebe, jeder mit Link: Bau, Elektro, Dach, Maler, Zimmerei, Fliesen und andere. 18 in der Stadt, 2 im Umland."
+      },
+      {
+       "k": "Top 5",
+       "v": "Zwei Maler, ein Dachdecker, eine Zimmerei, ein Elektrobetrieb. Gründe: „das Shirt ist beim Kunden sichtbar“, und „Wer einstellt, braucht Kleidung für neue Leute.“ Tief- und Straßenbau zurückgestellt, weil das Team seltener beim Endkunden auftritt."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken",
+     "text": "Bei 17 von 20 Betrieben stammt die Teamgröße nur aus einem Branchenverzeichnis, genauer belegt ist sie bei 3. Ob die Betriebe noch aktiv sind und schon Firmenkleidung haben, konnte Claude nicht prüfen."
+    }
+   ]
+  },
+  {
+   "kicker": "Quellen",
+   "title": "Die Quellen aus der Antwort.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "[Aroundhome: Handwerksbetriebsdichte 2026](https://www.aroundhome.de/energieeffizientes-wohnen/studien/handwerksbetriebsdichte/) (ein Vermittlungsportal, laut Claude auf Destatis-Basis) · [HWK Chemnitz: Betriebsstatistik 2021](https://www.hwk-chemnitz.de/fileadmin/user_upload/Top_nav/Ueber-uns/Zahlen-Daten-Fakten/211231-Betriebsstatistik-nach-Landkreisen-04-2021.pdf) · [HWK Chemnitz: Konjunkturbericht Frühjahr 2025](https://www.hwk-chemnitz.de/fileadmin/user_upload/Top_nav/Ueber-uns/Konjunkturberichte/HWK-Konjunkturbericht_01-25_WEB.pdf) · [IHK Aachen: Telefon- und E-Mail-Werbung](https://www.ihk.de/aachen/recht/rechtsinformationen/aktuelle-dokumente-zum-thema-recht/telemarketing-telefon-werbung-telefax-werbung-und-e-mail-werber-607350) · [IHK Bodensee-Oberschwaben: Was ist erlaubt?](https://www.ihk.de/bodensee-oberschwaben/recht/werbung-und-vertrieb/was-ist-erlaubt-1943228)"
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes: Was schreibt die KI den fünf?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Frage, Spaltenaufbau, Gründe und Zitate aus einem echten claude.ai-Lauf vom 29.10.2026 (Websuche, 26 Suchen, kein Konnektor). Zahlen und Rechtshinweise laut Claude mit Quelle, nicht von uns nachgeprüft. Betriebe aus dem Lauf stehen bewusst nicht in diesem Guide. Menünamen können sich ändern."
+}

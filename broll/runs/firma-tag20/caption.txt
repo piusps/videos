@@ -1,0 +1,30 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Heute klärt sie: Startet die Firma mit Umsatzsteuer oder als Kleinunternehmer?
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt auf Bestellung über Printful. Angebot: 109 € brutto für 5 Shirts, 29,90 € für ein Einzelshirt. Die Werbebriefe stehen, der Preis ist offen.
+
+So geht das für die eigene Firma mit Claude:
+1. Neuer Chat auf claude.ai, über „+“ Angebot und Kalkulation anhängen.
+2. Fragen: „Prüf mit der Websuche, ob ich als Kleinunternehmer starten soll oder mit Umsatzsteuer, jeweils mit Quelle (Gesetz, Finanzverwaltung, IHK). Rechne beide Wege für meine Preise. Entscheide dich mit zwei bis drei Gründen. Sag mir, was du nicht prüfen kannst. Erfinde nichts.“
+3. Eigenen Einkaufspreis eintragen, Ergebnis mit Steuerberatung klären.
+
+Ergebnis im echten Lauf (anderthalb Minuten, Websuche zu § 19 UStG, mehrere IHK-Seiten, ein Testbericht): „Starte mit Umsatzsteuer, also mit Verzicht auf die Kleinunternehmerregelung.“
+
+Warum?
+- Die Kunden sind Betriebe. Zahlt ein Betrieb mit Vorsteuerabzug 109 €, holt er sich 17,40 € Umsatzsteuer vom Finanzamt zurück.
+- Als Kleinunternehmer bliebe der Einkauf bei Printful dauerhaft 19 % teurer, weil der Vorsteuerabzug fehlt.
+- Das Angebot ist schon als brutto formuliert.
+
+Der Haken: fünf Jahre Bindung an den Verzicht, dazu Umsatzsteuer-Voranmeldungen.
+Die Gegenseite, ehrlich: Bei gleichem Bruttopreis wäre die eigene Marge als Kleinunternehmer höher. Und ein Betrieb, der selbst Kleinunternehmer ist, holt sich nichts zurück.
+
+Nicht prüfen konnte Claude: Einkaufspreis, Vorsteuerabzug der Kunden, Printfuls eigene Aussage zu den 19 % (nur Testbericht).
+
+Anmelden beim Finanzamt kann nur ein Mensch. Das hier ist keine Steuerberatung.
+
+Kommentiere „Steuer“, und ich schick dir den Prompt. Damit rechnest du in 10 Minuten beide Wege für deinen Preis durch.
+
+Offen bleibt: Was muss auf ihre Rechnung?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #kleinunternehmer #umsatzsteuer #selbststaendig

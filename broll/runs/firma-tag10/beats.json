@@ -1,0 +1,1020 @@
+{
+ "folge": 10,
+ "tag": 10,
+ "serientag": 3,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-30",
+ "slot": "2026-10-30 15:00",
+ "keyword": "Website",
+ "seconds": 46.43,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 57.325,
+  "musicCurve": [
+   [
+    0,
+    0.05
+   ],
+   [
+    19.1,
+    0.05
+   ],
+   [
+    19.35,
+    0.018
+   ],
+   [
+    20.85,
+    0.018
+   ],
+   [
+    20.95,
+    0.06
+   ],
+   [
+    21.7,
+    0.035
+   ],
+   [
+    45.43,
+    0.035
+   ],
+   [
+    46.43,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 57,325 s am Stück bis 103,755 (46,43 s), nie geloopt; music-explicit-check 2× 0 explizite Wörter (regie/musik-abschnitt-v2.mp3); heute keine Überschneidung mit Folge 9 (276,36–322,8); Details regieplan.md"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Zahl in words.json: hundert → 100. Kollisionen: 'Logo' (8.71 / 11.70 / 15.98), 'Betriebe' (9.45 / 21.72 / 26.43), 'sie' (14.40 / 20.20 / 36.24), 'Website' (14.81 / 38.56), 'das' (1.82 / 5.73 / 25.97), 'nicht' (28.74 / 33.32), 'und' (32.02 / 39.58 / 40.77), 'in' (28.93 / 43.27), 'KI' (2.38 / 7.41), 'Ich'/'ich' (5.28 / 39.76), 'aus' (5.90), 'Als' (34.74) → in episode.json immer 'Wort@Zeit'.",
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "current": 7,
+  "notiz": "Anschluss Folge 9 (done 0–5, current 6 LOGO). Folge 10: LOGO (6) abgehakt = zuletzt erledigt, leuchtet auf 'Logo:' mit dem echten Logo-Bild; WEBSITE (7) current (gold), Etikett 'ENTWURF' ab Haken/Als Nächstes, nie grün. Im Übergabe-Beat GEWERBE als neues Feld nach WEBSITE mit '?' (Tagesbriefing: ab Folge 11 GEWERBE, BETRIEBE, WERBEBRIEF zwischen WEBSITE und ERSTER UMSATZ). Kein Umsatz-Zähler."
+ },
+ "story_objekt": {
+  "name": "websiteHandy",
+  "src": "design/lauf/website-handy.png (1170×2532, lokal aus Claudes Code gerendert, keine claude.ai-Pixel)",
+  "stempel": [
+   "ENTWURF (ab Frame 0)",
+   "PRIVAT (ab 'nicht@33')"
+  ],
+  "plaetze": [
+   [
+    "0",
+    "hook (Bildmitte unter der Frage)"
+   ],
+   [
+    "Ich@5",
+    "off"
+   ],
+   [
+    "Handy:end",
+    "hook/groß (aus Artifact-Karte)"
+   ],
+   [
+    "Warum",
+    "top"
+   ],
+   [
+    "Als@34",
+    "small"
+   ],
+   [
+    "Kommentiere",
+    "off"
+   ]
+  ],
+  "zonen_original_px": {
+   "1": {
+    "x": 48,
+    "y": 399,
+    "w": 952,
+    "h": 418
+   },
+   "2": {
+    "x": 48,
+    "y": 894,
+    "w": 1074,
+    "h": 597
+   },
+   "3": {
+    "x": 48,
+    "y": 1565,
+    "w": 1074,
+    "h": 166
+   }
+  },
+  "falz_y_original": 1745
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 1.2,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Frame 1 = Ergebnis, nur Belegtes: Handy-Mockup mittig unter der Hook-Frage, darin design/lauf/website-handy.png (erster Bildschirm, Logo KOLONNEN SHIRT, 'Firmenshirts mit gesticktem Logo.', Zielgruppe, Preisbox 5 Shirts 109 € / Einzelshirt 29,90 €, Button 'Jetzt bestellen', Platzhalter [VERSANDKOSTEN] sichtbar). Schräger Stempel 'ENTWURF' quer über dem Handy-Rand ab Frame 0. Hook-Frage 'Wie viel Umsatz macht / eine KI in 100 Tagen?' ab Frame 0 komplett (instant), Drop-Akzent auf 'Umsatz'. HUD-Badge 'TAG 3' klein ab Frame 0 (kein Slam). Kein Adressfeld/keine Domain, kein Umsatz-Zähler. Board ausgeblendet bis 'Ich' (planFrom).",
+   "kamera": "langsamer Push-in aufs Handy; Punch +4 % auf 'Umsatz'",
+   "frage": "Was ist das für eine Seite, und ist die echt?",
+   "karten": [
+    {
+     "text": "Wie viel Umsatz macht / eine KI in 100 Tagen?",
+     "at": "0"
+    },
+    {
+     "text": "ENTWURF (Stempel)",
+     "at": "0"
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.4
+    },
+    {
+     "anker": "macht",
+     "f": "tick",
+     "v": 0.18
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 1.2,
+   "bis": 3.65,
+   "wort_start": {
+    "w": "Unternehmen",
+    "after": 1.0
+   },
+   "bild": "Ereignisse am Handy (kein neuer Text): auf 'Unternehmen' Logo-Zone glimmt kurz, auf 'das@1.8' die Seite scrollt 20 px und federt zurück, auf 'KI' Preisbox pulsiert, auf '100' Button 'Jetzt bestellen' drückt sich einmal ein (Klick-Animation, ohne Folge).",
+   "kamera": "steht, atmet; Mini-Punch auf '100'",
+   "frage": "Kann eine KI das wirklich allein?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Unternehmen",
+     "f": "wshort",
+     "v": 0.2
+    },
+    {
+     "anker": "das@1.8",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "KI",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "100",
+     "f": "click",
+     "v": 0.25
+    }
+   ],
+   "events": [
+    "Unternehmen",
+    "das@1.8",
+    "KI",
+    "100",
+    "Tage"
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.65,
+   "bis": 5.28,
+   "wort_start": {
+    "w": "ganz",
+    "after": 3.5
+   },
+   "bild": "Stempel 'GANZ ALLEINE.' auf 'alleine'; auf 'führt?' Punch-in, danach (4,7 s) ENTWURF-Stempel wackelt einmal nach.",
+   "kamera": "Punch-in 4 % auf 'führt?'",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz@3.5-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    },
+    {
+     "anker": "führt",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "t": 4.72,
+     "f": "tick",
+     "v": 0.15
+    }
+   ],
+   "events": [
+    "ganz@3.5",
+    "alleine",
+    "führt",
+    4.72
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 5.28,
+   "bis": 6.81,
+   "wort_start": {
+    "w": "Ich",
+    "after": 5.0
+   },
+   "bild": "Handy fliegt nach oben raus (outAt 'Ich'), Gründungsplan blendet ein (planFrom 'Ich-0.05'), Maskottchen hüpft auf 'probier'. Kein Slam, kein 'Tag drei' (nicht erste Folge).",
+   "kamera": "Pull-back zum Board",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ich@5-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "probier",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "aus@5.8",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "events": [
+    "Ich@5",
+    "probier",
+    "aus@5.8",
+    6.3
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "rueckblick",
+   "von": 6.81,
+   "bis": 10.21,
+   "wort_start": {
+    "w": "Die",
+    "after": 6.5
+   },
+   "bild": "Gründungsplan ganz im Bild: PRODUKT, KUNDE, DRUCK, PREIS, PARTNER (PRINTFUL), NAME (KOLONNENSHIRT) grün abgehakt, LOGO noch neutral, WEBSITE offen. Produkt-Karte 'SHIRTS MIT LOGO' fliegt auf 'verkauft' unter das Board.",
+   "kamera": "ruhig, Board voll",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "at": "verkauft"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@6.5-0.08",
+     "f": "wqh",
+     "v": 0.18
+    },
+    {
+     "anker": "verkauft",
+     "f": "popHi",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "rueckblick",
+   "von": 10.21,
+   "bis": 11.7,
+   "wort_start": {
+    "w": "bestickt",
+    "after": 10.0
+   },
+   "bild": "Banner 'erst auf Bestellung bestickt' in der Produkt-Karte.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "erst auf Bestellung / bestickt",
+     "at": "bestickt"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "rueckblick",
+   "von": 11.7,
+   "bis": 13.84,
+   "wort_start": {
+    "w": "Logo",
+    "after": 11.5
+   },
+   "bild": "Zuletzt erledigter Schritt LOGO: echtes Logo (design/lauf/Kolonnenshirt-Logo.svg, dunkelblauer Block, weiße Schrift) fliegt auf 'Logo:' auf die LOGO-Zeile, Haken, Zeile leuchtet grün auf (auf 'Block.' Logo hüpft). Label groß = das Logo-Bild selbst (keine neue Textkarte).",
+   "kamera": "leichter Push-in auf LOGO",
+   "frage": "Und was kommt jetzt?",
+   "karten": [
+    {
+     "text": "[Logo-Bild KOLONNEN SHIRT] auf Zeile LOGO",
+     "at": "Logo@11.5"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Logo@11.5",
+     "f": "wq",
+     "v": 0.18
+    },
+    {
+     "anker": "Logo@11.5+0.35",
+     "f": "check",
+     "v": 0.3
+    },
+    {
+     "anker": "Block",
+     "f": "popLo",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "akt": "rueckblick",
+   "von": 13.84,
+   "bis": 15.97,
+   "wort_start": {
+    "w": "Heute",
+    "after": 13.0
+   },
+   "bild": "Fahrt zur Zeile WEBSITE (gold, current), Pill 'HEUTE: WEBSITE' unter dem Board, Feld WEBSITE bekommt kleines 'ENTWURF'-Etikett erst im Haken (B15), hier nur '?'. Produkt-Karte fliegt raus.",
+   "kamera": "Fahrt auf Zeile WEBSITE",
+   "frage": "Was kommt auf so eine Seite?",
+   "karten": [
+    {
+     "text": "HEUTE: WEBSITE",
+     "at": "Heute"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Heute+0.05",
+     "f": "chime",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 15.97,
+   "bis": 18.24,
+   "wort_start": {
+    "w": "Logo",
+    "after": 15.5
+   },
+   "bild": "Echter Shot 01-prompt-mit-anhang.png im Paper-Fenster, oberer Teil (Begrüßung + 'Zum Projekt hinzufügen') weggeschnitten: crop y 225–770 (Original-px 1050 breit). Auf 'Logo@15.5' Kamera auf Anhang-Chips; auf 'anhängen' Chip 'Kolonnenshirt-Logo.svg' orange gerahmt (x 245 y 235 w 180 h 178), Zeiger am '+'; in der Pause nach 'anhängen.' Pan in den Prompt; auf 'Bitte' Zeiger an den Prompt-Anfang, auf 'Startseite' gelbe Markierung der Prompt-Zeilen 'Bau mir eine einfache Startseite als Vorschau hier im Chat, mit meinem Logo, fürs Handy gedacht.' (x 50 y 598 w 980 h 70).",
+   "kamera": "Push-in auf Chip, dann Pan nach unten in den Prompt (Schlüsselzeile ≥ 40 px)",
+   "frage": "Was genau hat sie gefragt?",
+   "karten": [
+    {
+     "text": "Markierung Chip Logo.svg (Rahmen)",
+     "at": "anhängen"
+    },
+    {
+     "text": "Markierung Prompt-Zeile Startseite fürs Handy",
+     "at": "Startseite"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Logo@15.5-0.1",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "anhängen",
+     "f": "popLo",
+     "v": 0.25
+    },
+    {
+     "anker": "Bitte",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "Startseite",
+     "f": "typing",
+     "v": 0.14
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/01-prompt-mit-anhang.png",
+    "crop_original_px": [
+     225,
+     770
+    ],
+    "marks_original_px": [
+     {
+      "x": 245,
+      "y": 235,
+      "w": 180,
+      "h": 178,
+      "at": "anhängen",
+      "color": "orange"
+     },
+     {
+      "x": 50,
+      "y": 598,
+      "w": 980,
+      "h": 70,
+      "at": "Startseite",
+      "color": "yellow"
+     }
+    ]
+   }
+  },
+  {
+   "id": "B10",
+   "akt": "claude",
+   "von": 18.24,
+   "bis": 19.46,
+   "wort_start": {
+    "w": "fürs",
+    "after": 17.9
+   },
+   "bild": "Senden-Klick (Zeiger auf den orangen Pfeil x 985 y 790 in Shot 01), Schnitt auf echten Shot 05-artifact-karte.png: Karte 'Kolonnenshirt Startseite · Claude Design · Nur du' (x 44 y 217 w 780 h 96) orange gerahmt, Zeile '3 Dateien erstellt …' grau. Auf 'Handy.' Zeiger klickt die Karte, sie zoomt auf und wird zum Handy (Übergang in B11). Zeiger nur zeigen, nichts wird geteilt.",
+   "kamera": "kurzer Push-in auf die Artifact-Karte, Karte wächst zum Handy",
+   "frage": "Und was kommt raus?",
+   "karten": [
+    {
+     "text": "Rahmen Artifact-Karte 'Kolonnenshirt Startseite · Nur du'",
+     "at": "fürs-0.05"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "fürs-0.1",
+     "f": "clickHi",
+     "v": 0.25
+    },
+    {
+     "anker": "fürs",
+     "f": "wq",
+     "v": 0.18
+    },
+    {
+     "anker": "Handy",
+     "f": "click",
+     "v": 0.25
+    },
+    {
+     "anker": "Handy:end",
+     "f": "wqh",
+     "v": 0.2
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/05-artifact-karte.png",
+    "marks_original_px": [
+     {
+      "x": 44,
+      "y": 217,
+      "w": 780,
+      "h": 96,
+      "at": "fürs-0.05",
+      "color": "orange"
+     }
+    ]
+   }
+  },
+  {
+   "id": "B11",
+   "akt": "entscheidung",
+   "von": 19.46,
+   "bis": 20.98,
+   "wort_start": {
+    "w": "Ganz",
+    "after": 19.0
+   },
+   "bild": "Story-Objekt Handy (website-handy.png) groß, Seite ganz oben. Musik-Mulde (natürliche Stille im Stück, Clip 19,4–20,1). Kleine Beleg-Kachel oben rechts: Shot 02 nur Band y 125–310 ('Was ganz oben steht und warum' + Punkte 1–3), klein, nicht zum Lesen. Ziffer-Badges 1/2/3 noch grau am rechten Handyrand.",
+   "kamera": "langsamer Push-in auf das obere Drittel des Handys",
+   "frage": "Was kommt nach oben?",
+   "karten": [
+    {
+     "text": "Beleg-Kachel Shot 02 (y 125–310)",
+     "at": "Ganz@19-0.05"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Ganz@19-0.05",
+     "f": "page",
+     "v": 0.18
+    }
+   ],
+   "ton": "Musik fast still (Mulde 19,35–20,85, Kurve 0,018)",
+   "proof": {
+    "src": "design/lauf/02-entscheidung-gruende.png",
+    "crop_original_px": [
+     120,
+     315
+    ]
+   }
+  },
+  {
+   "id": "B12",
+   "akt": "entscheidung",
+   "von": 20.98,
+   "bis": 23.27,
+   "wort_start": {
+    "w": "Firmenshirts",
+    "after": 20.5
+   },
+   "bild": "Drei Zonen nacheinander markiert (Rahmen + Badge-Ziffer wird orange), synchron: Zone 1 Satz 'Firmenshirts mit gesticktem Logo.' + Zielgruppe (website-handy.png Original-px x 48 y 399 w 952 h 418) auf 'Firmenshirts' (Musik-Schlag im Stück genau hier, Track 78,3, Clip 20,95); Zone 2 Preisbox (x 48 y 894 w 1074 h 597) auf 'Preis'.",
+   "kamera": "Push-in auf Zone 1, Fahrt nach unten zur Preisbox",
+   "frage": "Und der Preis?",
+   "karten": [
+    {
+     "text": "Zone 1 (Rahmen, Badge 1)",
+     "at": "Firmenshirts"
+    },
+    {
+     "text": "Zone 2 Preisbox (Rahmen, Badge 2)",
+     "at": "Preis"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Firmenshirts",
+     "f": "power",
+     "v": 0.22
+    },
+    {
+     "anker": "Firmenshirts+0.05",
+     "f": "popLo",
+     "v": 0.28
+    },
+    {
+     "anker": "Preis",
+     "f": "popHi",
+     "v": 0.25
+    }
+   ],
+   "ton": "Musik-Akzent auf 'Firmenshirts' (Kurve 0,06), danach lauterer Teil auf 0,035",
+   "zonen_original_px": {
+    "1": {
+     "x": 48,
+     "y": 399,
+     "w": 952,
+     "h": 418
+    },
+    "2": {
+     "x": 48,
+     "y": 894,
+     "w": 1074,
+     "h": 597
+    },
+    "3": {
+     "x": 48,
+     "y": 1565,
+     "w": 1074,
+     "h": 166
+    }
+   }
+  },
+  {
+   "id": "B13",
+   "akt": "entscheidung",
+   "von": 23.27,
+   "bis": 24.94,
+   "wort_start": {
+    "w": "Bestellknopf",
+    "after": 23.0
+   },
+   "bild": "Zone 3 Button 'Jetzt bestellen' (x 48 y 1565 w 1074 h 166) auf 'Bestellknopf' markiert, Button drückt sich ein. Alle drei Rahmen stehen. In der 0,9-s-Pause danach: nichts Neues, Handy steht (Entscheidung setzt sich), nur Zeiger-Glanz über den Button bei Bestellknopf+0,5.",
+   "kamera": "Halt",
+   "frage": "Warum genau diese drei?",
+   "karten": [
+    {
+     "text": "Zone 3 Button (Rahmen, Badge 3)",
+     "at": "Bestellknopf"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Bestellknopf",
+     "f": "click",
+     "v": 0.28
+    },
+    {
+     "anker": "Bestellknopf+0.15",
+     "f": "check",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "akt": "warum",
+   "von": 24.94,
+   "bis": 28.17,
+   "wort_start": {
+    "w": "Warum",
+    "after": 24.5
+   },
+   "bild": "Handy rückt ins obere Drittel (bleibt stehen, Rahmen bleiben). Pill 'WARUM DIESE DREI?' auf 'Warum?'. Danach drei Fragekarten nacheinander (Wortlaut aus dem Lauf, Karte links, Pfeil auf die passende Zone): 1 'IST DAS FÜR MICH?' → Zone 1 (25,57), 2 'WAS KOSTET ES?' → Zone 2 (26,77, auf 'Betriebe schnell'), 3 'WIE BESTELLE ICH?' → Zone 3 (27,97, in der Pause nach 'wissen.'). Karten stapeln sich, bleiben bis Haken. Der gesprochene Satz trägt allein, die Karten verstärken nur.",
+   "kamera": "kurze Fahrt nach oben, dann ruhig",
+   "frage": "Warum?",
+   "karten": [
+    {
+     "text": "WARUM DIESE DREI?",
+     "at": "Warum"
+    },
+    {
+     "text": "IST DAS FÜR MICH?",
+     "at": "Warum+0.63",
+     "zone": 1,
+     "t": 25.57
+    },
+    {
+     "text": "WAS KOSTET ES?",
+     "at": "Warum+1.83",
+     "zone": 2,
+     "t": 26.77
+    },
+    {
+     "text": "WIE BESTELLE ICH?",
+     "at": "Warum+3.03",
+     "zone": 3,
+     "t": 27.97
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.25
+    },
+    {
+     "anker": "Warum+0.63",
+     "f": "popLo",
+     "v": 0.25
+    },
+    {
+     "anker": "Warum+1.83",
+     "f": "popLo",
+     "v": 0.22
+    },
+    {
+     "anker": "Warum+3.03",
+     "f": "popLo",
+     "v": 0.22
+    }
+   ],
+   "why_hinweis": "Kartenabstand je 1,20 s (Engine-Grenze ≥ 1,2 s): Pill 24,94 → Karte 1 25,57 → 2 26,77 → 3 27,97 → Karte 4 29,27. Keine Gegenwerte nötig; falls why.cards[].vs verlangt: grau nichts."
+  },
+  {
+   "id": "B15",
+   "akt": "warum",
+   "von": 28.17,
+   "bis": 30.49,
+   "wort_start": {
+    "w": "Mehr",
+    "after": 28.0
+   },
+   "bild": "Grund 2 als Bild (R1-01, Pflicht): auf 'Mehr' wird das Handy-Bild direkt unter dem Button 'Jetzt bestellen' beschnitten: Kante bei website-handy.png Original-y 1745 (Button-Unterkante 1731 + 14 px), alles darunter (Platzhalter-Zeile, 'So funktioniert's', Schritte) abgedunkelt auf ≥ 85 % Schwarz bzw. weggeschnitten, an der Kante eine gestrichelte Falz-Linie. Auf 'ersten' Karte 4 'ERSTER BLICK' (Pfeil auf die Falz-Linie). 'So funktioniert's' ist in diesem Beat in keinem Frame sichtbar.",
+   "kamera": "leichter Pull-back, damit das ganze Handy mit Falz im Bild ist",
+   "frage": "Passt nicht mehr drauf?",
+   "karten": [
+    {
+     "text": "Falz-Linie unter 'Jetzt bestellen' (Abdunklung darunter)",
+     "at": "Mehr"
+    },
+    {
+     "text": "ERSTER BLICK",
+     "at": "ersten",
+     "t": 29.27
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Mehr-0.05",
+     "f": "wshort",
+     "v": 0.18
+    },
+    {
+     "anker": "ersten",
+     "f": "popHi",
+     "v": 0.25
+    }
+   ],
+   "crop_original_y": 1745,
+   "verboten_sichtbar": [
+    "So funktioniert's",
+    "[WIE GEBESTELLT WIRD …]",
+    "Schritte 1–3"
+   ]
+  },
+  {
+   "id": "B16",
+   "akt": "haken",
+   "von": 30.49,
+   "bis": 31.34,
+   "wort_start": {
+    "w": "Haken",
+    "after": 30.0
+   },
+   "bild": "Pill 'HAKEN' (Aussage, fallend gesprochen). Warum-Karten 1–3 fliegen 0,2 s vorher raus (whyOutLead), Karte 4 'ERSTER BLICK' bleibt bis 'Ohne' (1,22 s ab 29,27 bis 30,49, dann raus mit der Pill-Ankunft). Handy bleibt (Story-Objekt), Footer-Zeile der Seite wird nicht gezeigt.",
+   "kamera": "Push-in auf das Handy",
+   "frage": "Was ist der Haken?",
+   "karten": [
+    {
+     "text": "HAKEN",
+     "at": "Haken"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Haken-0.08",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Haken",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B17",
+   "akt": "haken",
+   "von": 31.34,
+   "bis": 34.81,
+   "wort_start": {
+    "w": "Ohne",
+    "after": 31.0
+   },
+   "bild": "Zwei Pflicht-Felder an der Seite des Handys (Lauf-Wörter, je ≤ 1 Wort): 'IMPRESSUM' auf 'Impressum' (31,60), 'DATENSCHUTZ' auf Wortmitte 'Datenschutzerklärung' (+0,60 = 32,83, damit ≥ 1,2 s Abstand), beide als leere gestrichelte Felder mit grauem '?'. Auf 'online' schlägt der vorhandene Stempel 'ENTWURF' noch einmal auf (kein neuer Text; ein zweiter Stempel 'PRIVAT' käme 0,6 s nach DATENSCHUTZ und bricht die 1,2-s-Regel). Kein 'NICHT ONLINE'-Stempel, keine Domain, kein Hosting. Screenshot 04 wird NICHT gezeigt (private Zeile).",
+   "kamera": "ruhig, leichter Push-in",
+   "frage": "Und warum darf sie nicht online?",
+   "karten": [
+    {
+     "text": "IMPRESSUM",
+     "at": "Impressum",
+     "t": 31.6
+    },
+    {
+     "text": "DATENSCHUTZ",
+     "at": "Datenschutzerklärung+0.6",
+     "t": 32.83
+    },
+    {
+     "text": "ENTWURF (vorhandener Stempel, erneuter Aufschlag, kein neuer Text)",
+     "at": "online"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Impressum",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Datenschutzerklärung+0.6",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "online",
+     "f": "stamp",
+     "v": 0.35
+    }
+   ],
+   "screenshot_04": "nicht verwenden (Chef K.-o.: Zeile mit privater Mail/boilr). Karten statt Screenshot."
+  },
+  {
+   "id": "B18",
+   "akt": "als_naechstes",
+   "von": 34.81,
+   "bis": 37.77,
+   "wort_start": {
+    "w": "Als",
+    "after": 34.0
+   },
+   "bild": "Pill 'ALS NÄCHSTES' auf 'Als@34'. Board-Ausschnitt klein oben: WEBSITE mit Etikett 'ENTWURF' (nicht grün), dahinter ein neues gestricheltes Feld nur mit großem '?' (ohne Wort; Board-Erweiterung GEWERBE erst ab Folge 11 beschriftet, Design entscheidet Layout), poppt auf 'anmelden'. Auf 'Was+0.08' (36,03, 1,22 s nach der Pill) Frage-Karte 'WAS MUSS SIE ANMELDEN?' (4 Wörter). Kein Ortsname, kein Formular, das ausgefüllt aussieht.",
+   "kamera": "ruhig, leichter Push-in auf GEWERBE ?",
+   "frage": "Was muss man anmelden?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@34"
+    },
+    {
+     "text": "WAS MUSS SIE ANMELDEN?",
+     "at": "Was@35+0.08",
+     "t": 36.03
+    },
+    {
+     "text": "? (Board-Feld nach WEBSITE, gestrichelt, kein Wort)",
+     "at": "anmelden"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@34-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Was@35+0.08",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "anmelden",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "anmelden:end",
+     "f": "popLo",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B19",
+   "akt": "cta",
+   "von": 37.77,
+   "bis": 46.43,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 37.0
+   },
+   "bild": "Endkarte wie Folge 9 (end-Akt, itemTag 'DM'): Keyword 'Website' tippt auf '„Website“', Haken, Flieger. Items nacheinander: 'Die Frage' (Snip aus Shot 01: „Bau mir eine einfache Startseite … fürs Handy gedacht …“) auf 'Frage@40' (40,28); 'Online-Checkliste' (Snip: Impressum · Datenschutz · AGB · Versand · USt-Status, nur Lauf-Punkte, ohne Kontakt-Mail-Zeile) auf 'Online-Checkliste+0.4' (41,50). Ergebnis als EIN Block 'STARTSEITEN-ENTWURF IN MINUTEN' (3 Wörter) auf 'Damit+0.1' (1,26 s nach dem 2. Item), auf 'Minuten' Puls auf MINUTEN, auf 'Startseiten-Entwurf' kleines Handy-Icon mit ENTWURF-Stempel (kein neuer Text). Halt bis 46,43 (Endkarte 1,0 s nach Stimmende). Keine Domain, kein 'online'.",
+   "kamera": "ruhiger Push-in, Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "Website (Keyword)",
+     "at": "Website@38"
+    },
+    {
+     "text": "Die Frage",
+     "at": "Frage@40",
+     "t": 40.28
+    },
+    {
+     "text": "Online-Checkliste",
+     "at": "Online-Checkliste+0.4",
+     "t": 41.5
+    },
+    {
+     "text": "STARTSEITEN-ENTWURF IN MINUTEN",
+     "at": "Damit+0.1",
+     "t": 42.73
+    },
+    {
+     "text": "Puls auf MINUTEN (kein neuer Text)",
+     "at": "Minuten"
+    },
+    {
+     "text": "Handy-Icon mit ENTWURF (kein neuer Text)",
+     "at": "Startseiten-Entwurf"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "Website@38",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Website@38:end",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "und@39.5",
+     "f": "wqh",
+     "v": 0.2
+    },
+    {
+     "anker": "Frage@40",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Online-Checkliste+0.4",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Damit+0.1",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "Minuten",
+     "f": "pop",
+     "v": 0.2
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

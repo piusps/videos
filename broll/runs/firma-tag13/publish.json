@@ -1,0 +1,26 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae4cbd69bf0788d8cc91fa9",
+ "status": "published",
+ "scheduledFor": "2026-10-31 09:00 Europe/Berlin",
+ "folge": 13,
+ "serientag": 4,
+ "ersteFolgeDesTages": true,
+ "note_final": "8,5/10 (finale Prüfung Runde 1, pruefung/final-runde1.md; manuell Frame für Frame, Gemini ausgefallen)",
+ "video": "runs/firma-tag13/firma-tag13-final.mp4",
+ "cover": "runs/firma-tag13/cover.jpg",
+ "guide": "runs/firma-tag13/werbebrief-guide.pdf",
+ "funnel": {
+  "name": "PTC Funnel Folge 13",
+  "kind": "ptc",
+  "workflowId": "6ae5a1f02974ee398945032d",
+  "automationId": "6ae5a1f0998baff6997b0aea",
+  "active": true,
+  "attachedTo": "IG media id 18083775806391113",
+  "created": "2026-10-31T08:08:15.326Z",
+  "by": "zernio-golive-arm"
+ },
+ "ig_media_id": "18083775806391113",
+ "url": "https://www.instagram.com/reel/DfJrryojCGI/"
+}

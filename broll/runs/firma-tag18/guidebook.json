@@ -1,0 +1,304 @@
+{
+ "topic": "Marge",
+ "trigger_word": "Marge",
+ "cover": {
+  "kicker": "KI baut eine Firma · Was zahlt sie für das gestickte Shirt?",
+  "title": "Rechne aus, was dir bleibt. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie ihre Marge gerechnet hat: Websuche nach dem Einkaufspreis, Rechnung gegen den eigenen Preis, Entscheidung „bleibt der Paketpreis oder nicht“. Mit dem Rechenweg zum Selbstrechnen, der Schwelle für deinen Einkauf und der Liste, was Claude ohne Anbieter-Konto nicht sehen kann.",
+  "stat": {
+   "value": "1 min 55 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: 5 Websuchen, 3 Seitenabrufe, eine Rechnung mit Platzhalter für den Shirtpreis. Entscheidung: Einzelpreis bleibt, Paketpreis offen."
+  },
+  "outcomes": [
+   "Die Marge-Frage zum Kopieren, mit Anhang und ohne",
+   "Der Rechenweg: netto, Versand, Einmalgebühren, Schwelle",
+   "Die Entscheidung aus dem Lauf: warum der Paketpreis offen bleibt",
+   "Ehrlich ausgewiesen: was Claude ohne Konto nicht sehen kann"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Die Marge-Frage zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** deinen Angebotsbrief als Word-Datei an, in dem dein Preis und die Versandzeile stehen. Dann füge diese Frage ein und ersetze die Teile in eckigen Klammern. Das ist die Frage aus unserem Lauf, verallgemeinert für dein eigenes Angebot.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante A: mit Anhang (dein Brief oder Angebot als Word-Datei)",
+     "text": "Im Anhang ist mein Angebotsbrief mit der Versandzeile. Mein Angebot: [PREIS] brutto für [MENGE] [PRODUKT], [PREIS] für ein einzelnes Stück, hergestellt erst auf Bestellung über [ANBIETER], Kunden in Deutschland. Finde mit der Websuche heraus, was mich ein Stück bei [ANBIETER] im Einkauf kostet: Grundpreis, Veredelung und mögliche Einmalgebühren, jeweils mit Quelle. Rechne dann mit dem Versand aus meinem Brief aus, was von meinem Paketpreis und vom Einzelpreis übrig bleibt. Sag mir, ob die Preise so bleiben können, mit zwei bis drei Gründen. Sag mir, was du ohne [ANBIETER]-Konto nicht sehen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Claude hat in unserem Lauf 1 Minute 55 Sekunden gearbeitet. Mit Anhängen, Lesen der Antwort und dem Nachrechnen auf Seite 4 weißt du nach etwa 10 Minuten, ab welchem Einkaufspreis pro Stück dir nichts mehr bleibt. Den echten Einkaufspreis siehst du danach in deinem Anbieter-Konto."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → Häkchen bei **„Gedächtnis“** entfernen → **„Dateien hochladen oder hinzufügen“** → Brief anhängen → Frage einfügen → senden."
+      },
+      {
+       "k": "Websuche",
+       "v": "Muss in den Einstellungen an sein, Claude sucht den Einkaufspreis selbst. In unserem Lauf: 5 Websuchen und 3 Seitenabrufe, Research aus."
+      },
+      {
+       "k": "Ergebnis",
+       "v": "Claudes Antwort im Chat: was gefunden wurde, mit Quellen, eine Rechnung als Tabelle, die Entscheidung mit Gründen und die Liste, was offen bleibt."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf am 31.10.2026: 1 Minute 55 Sekunden."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "So sieht es aus",
+   "title": "Kein Einkaufspreis gefunden. Ehrlich gesagt.",
+   "intro": "Claudes erster Absatz im Lauf. Den Euro-Preis des bestickten Shirts zeigt der Anbieter erst im Konto. Statt einen Preis zu raten, rechnet Claude mit Platzhalter weiter.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/02-kernsatz-kein-preis.png",
+     "width": "92%",
+     "caption": "Echter Lauf vom 31.10.2026: Claudes Kernsatz vor der Rechnung."
+    },
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Was Claude gefunden hat",
+     "text": "Laut Printful ist eine Stickerei in Standardgröße im Produktpreis enthalten. Extra kosten nur weitere Platzierungen, große Stickereien nach Stichzahl und das einmalige Digitalisieren des Logos."
+    }
+   ]
+  },
+  {
+   "kicker": "Variante B",
+   "title": "Noch kein Brief? Dann ohne Anhang.",
+   "intro": "Du willst erst wissen, ob dein Paketpreis trägt? Dann schreib dein Angebot direkt in die Frage.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante B: ohne Anhang (nicht getestet)",
+     "text": "Ich bin [DEIN BERUF] und verkaufe [PRODUKT] für [PREIS] pro Stück und [PREIS] für [MENGE] Stück, Versand [VERSAND] extra, hergestellt über [ANBIETER]. Mein Einkaufspreis pro Stück ist [EINKAUF] (oder: unbekannt, dann such ihn mit der Websuche, mit Quelle). Rechne aus, was mir pro Bestellung bleibt und ab welchem Einkaufspreis pro Stück nichts mehr übrig ist. Sag mir, ob mein Paketpreis so bleiben kann, mit zwei bis drei Gründen, und was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Nicht getestet",
+     "text": "Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit Anhang (1 Minute 55 Sekunden)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Beispiel",
+      "Wofür die Rechnung passt"
+     ],
+     "widths": [
+      "30%",
+      "70%"
+     ],
+     "rows": [
+      [
+       "Kaffeerösterin",
+       "Abo mit 3 Beuteln gegen Einzelbeutel, Einkauf Rohkaffee + Verpackung"
+      ],
+      [
+       "Grafikerin mit Print-on-Demand-Postern",
+       "3er-Set gegen Einzelposter, Druckpreis beim Anbieter"
+      ],
+      [
+       "Hundefriseur mit Merch",
+       "Bestickte Caps fürs Team-Set gegen Einzelcap"
+      ],
+      [
+       "Tischler",
+       "4 Schneidebretter im Paket gegen eins, Holz + Gravur pro Stück"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Der Rechenweg",
+   "title": "So rechnest du es selbst nach.",
+   "break_before": true,
+   "intro": "Claude hat in unserem Lauf in vier Schritten gerechnet. Die gleichen vier Schritte kannst du mit deinen eigenen Zahlen machen, mit Taschenrechner oder als Nachfrage im selben Chat.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Verkaufspreis netto",
+       "text": "Wenn du mit Umsatzsteuer rechnest: **Bruttopreis ÷ 1,19.** Im Lauf: 109 € ÷ 1,19 = 91,60 €."
+      },
+      {
+       "title": "Versand dazu und ab",
+       "text": "**+ Versand, den der Kunde zahlt (netto) − Versand, den du an den Anbieter zahlst.** Beide Werte netto."
+      },
+      {
+       "title": "Einmalgebühren abziehen",
+       "text": "Zum Beispiel das Digitalisieren des Logos beim ersten Auftrag. Bei Folgebestellungen fällt sie weg."
+      },
+      {
+       "title": "Schwelle ausrechnen",
+       "text": "**Was für die Ware bleibt ÷ Stückzahl.** So viel darf ein Stück im Einkauf höchstens kosten, sonst bleibt nichts."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "head": [
+      "Claudes Rechnung im Lauf (netto)",
+      "5 Shirts für 109 €",
+      "1 Shirt für 29,90 €"
+     ],
+     "widths": [
+      "40%",
+      "30%",
+      "30%"
+     ],
+     "rows": [
+      [
+       "Dein Preis netto",
+       "91,60 €",
+       "25,13 €"
+      ],
+      [
+       "+ Versand vom Kunden (aus dem Brief)",
+       "9,41 €",
+       "4,37 €"
+      ],
+      [
+       "− Versand an Printful",
+       "9,49 €",
+       "4,49 €"
+      ],
+      [
+       "− Digitalisierung, nur erste Bestellung (laut Claude; Printful nennt 2,95–6,50 € pro Design)",
+       "5,75 €",
+       "–"
+      ],
+      [
+       "Bleibt für die Shirts",
+       "85,77 €",
+       "25,01 €"
+      ],
+      [
+       "Schwelle Einkauf pro Shirt",
+       "17,15 €",
+       "25,01 €"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Die 5,75 € sind nicht bestätigt",
+     "text": "Die Digitalisierung steht in Claudes Rechnung mit 5,75 € (laut Claude; Printful nennt 2,95–6,50 € pro Design, einmalig). Wir haben die Spanne auf printful.com/pricing gefunden, die 5,75 € nicht. Mit der Spanne liegt die Schwelle für die erste 5er-Bestellung bei **17,00–17,71 €** pro Shirt. Claudes Annahme dabei: du rechnest mit Umsatzsteuer und hast beim Anbieter eine USt-IdNr. hinterlegt."
+    }
+   ]
+  },
+  {
+   "kicker": "So sieht es aus",
+   "title": "Claudes Rechnung im Chat.",
+   "intro": "Die Tabelle aus dem Lauf, darunter die Schwelle. Darunter Claudes zweite Tabelle mit angenommenen Shirtpreisen.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/06-rechnung-tabelle.png",
+     "width": "88%",
+     "caption": "Echter Lauf vom 31.10.2026. Digitalisierung 5,75 € laut Claude; Printful nennt 2,95–6,50 € pro Design."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/10-annahmen-tabelle.png",
+     "width": "88%",
+     "caption": "Annahmen: Die Shirtpreise 12, 14 und 16 € sind Annahmen aus dem Lauf, keine gefundenen Preise."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Entscheidung",
+   "title": "Einzelpreis bleibt. Paketpreis offen.",
+   "intro": "Ob 109 € für fünf Shirts reichen, hängt am echten Einkaufspreis. Den kannte Claude nicht. Deshalb bleibt der Paketpreis offen.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/08-entscheidung-gruende.png",
+     "width": "88%",
+     "caption": "Echter Lauf vom 31.10.2026: Claudes Antwort auf die Frage, ob die Preise so bleiben können."
+    },
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Claude wörtlich",
+     "text": "„Den 5er für 109 € würde ich erst festlegen, wenn du den echten Stickpreis im Konto gesehen hast.“ Der Grund: „Der Mengenrabatt frisst die Marge. Im 5er kostet ein Shirt 21,80 € statt 29,90 €.“"
+    }
+   ],
+   "break_before": true
+  },
+  {
+   "kicker": "Nicht sichtbar",
+   "title": "Was Claude ohne Konto nicht sehen kann.",
+   "intro": "Claude hat am Ende selbst aufgelistet, was offen bleibt. Verallgemeinert für dein Angebot:",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/09-ohne-konto-nicht-sehen.png",
+     "width": "88%",
+     "caption": "Echter Lauf vom 31.10.2026: Claudes Liste „Was ich ohne Printful-Konto nicht sehen kann“."
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "**Dein echter Einkaufspreis:** für Modell, Farbe und Größe. Davon hängt ab, ob dein Paketpreis trägt.",
+      "**Fertigungsort und Währung:** wo produziert wird und ob ein umgerechneter Preis mit dem Wechselkurs schwankt.",
+      "**Aufpreise:** für Sondergrößen oder große Motive.",
+      "**Versand und Steuer im Checkout:** verbindlich ist nur, was dein Konto an der Kasse zeigt."
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Tipp aus dem Lauf: Testbestellung bis zur Kasse",
+     "text": "Leg im eigenen, kostenlosen Anbieter-Konto dein Produkt an und klick eine Testbestellung bis zur Kasse durch. Nicht bezahlen. Den Preis von dort setzt du als [EINKAUF] in Variante B ein oder schreibst ihn im selben Chat nach."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/11-konto-testbestellung.png",
+     "width": "88%",
+     "caption": "Echter Lauf vom 31.10.2026: Claudes Vorschlag. Wir haben das nicht gemacht, kein Konto, nichts bestellt."
+    }
+   ],
+   "break_before": true
+  },
+  {
+   "kicker": "Ehrlich",
+   "title": "Was in der Rechnung fehlt.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Nicht abgezogen:** Zahlungsgebühren, Retouren, Größenaufpreise und deine eigene Zeit. Die Schwelle ist die Grenze zu null, kein Gewinn.",
+      "**Claudes Beträge als Anbieterpreis übernehmen:** Die Shirtpreise in der zweiten Tabelle sind Annahmen. Der echte Preis steht nur im Konto.",
+      "**Nur mit dem Einzelpreis rechnen:** Der Paketrabatt ändert die Schwelle stark. Rechne Einzelstück und Paket getrennt.",
+      "**„Erfinde nichts“ weglassen:** Dann riskierst du ausgedachte Preise ohne Quelle.",
+      "**Steuer:** Keine Steuerberatung. Ob du netto rechnen kannst, hängt von deiner steuerlichen Lage ab. Kläre das mit deiner Steuerberatung."
+     ]
+    }
+   ],
+   "break_before": true
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes: Stimmt die Versandzeile?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts-, Steuer- oder Rechtsberatung. Frage, Rechnung, Entscheidung und Nicht-sichtbar-Liste aus einem echten claude.ai-Lauf vom 31.10.2026 (1 min 55 s, 5 Websuchen, 3 Seitenabrufe, Gedächtnis aus, kein Research), wörtlich übernommen oder verallgemeinert. Alle Beträge in den Tabellen sind Claudes Rechnung; die Digitalisierung mit 5,75 € laut Claude, Printful nennt 2,95–6,50 € pro Design (printful.com/pricing, abgerufen am 31.10.2026). Shirtpreise 12/14/16 € sind Annahmen, keine gefundenen Preise. Nichts bestellt, kein Anbieter-Konto. Variante B und Beispiele nach Beruf nicht getestet. Menünamen können sich ändern."
+}

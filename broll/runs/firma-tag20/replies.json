@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge 20 Mit oder ohne Umsatzsteuer: Steuer-Prompt per DM, Trigger-Wort im Video: Steuer)",
+ "commentReply": "Der Prompt liegt in deiner DM. Verkaufst du eher an Firmen oder an Privatleute?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Bist du gerade Kleinunternehmer oder schon mit Umsatzsteuer unterwegs?",
+  "Schick ich dir gerade. Kennst du deinen Einkaufspreis pro Stück schon genau?",
+  "Liegt in deiner DM. Holen sich deine Kunden die Umsatzsteuer zurück?",
+  "Angekommen, der Prompt ist dabei. Ist das kurz vor der Gründung oder läuft die Firma schon?",
+  "Ist unterwegs. Steht bei dir im Angebot brutto oder netto?"
+ ]
+}

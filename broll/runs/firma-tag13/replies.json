@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Werbebrief: Guide mit der Frage, der echten Briefvorlage und den drei Wegen im Vergleich per DM, Trigger-Wort im Video: Brief)",
+ "commentReply": "Der Guide liegt in deiner DM, mit der Briefvorlage. Hast du schon mal Werbung per Brief verschickt?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hättest du eher angerufen?",
+  "Schick ich dir gerade, mit allen drei Wegen im Vergleich. Welcher war für dich neu?",
+  "Angekommen, die Vorlage liegt in deiner DM. Was würdest du in die erste Zeile schreiben?",
+  "Liegt in deiner DM, gelbe Felder zum Ausfüllen inklusive. Wen würdest du als Erstes anschreiben?",
+  "Der Guide ist unterwegs. Liest du Werbebriefe selbst eigentlich noch?"
+ ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Haken!",
+    "startMs": 0,
+    "endMs": 1000
+  },
+  {
+    "text": "Fast",
+    "startMs": 1000,
+    "endMs": 1210
+  },
+  {
+    "text": "alle",
+    "startMs": 1210,
+    "endMs": 1420
+  },
+  {
+    "text": "Gradzahlen",
+    "startMs": 1420,
+    "endMs": 1940
+  },
+  {
+    "text": "sind",
+    "startMs": 1940,
+    "endMs": 2150
+  },
+  {
+    "text": "Anbieterangaben.",
+    "startMs": 2150,
+    "endMs": 3000
+  }
+]

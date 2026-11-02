@@ -1,0 +1,414 @@
+{
+ "topic": "Gewerbe",
+ "trigger_word": "Gewerbe",
+ "cover": {
+  "kicker": "KI baut eine Firma · Was muss ich vor dem ersten Verkauf anmelden?",
+  "title": "Deine Startliste vor dem ersten Verkauf. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie per Websuche geklärt hat, was ihre Shirt-Firma vor dem ersten Verkauf anmelden oder klären muss. Mit Klickpfad, beiden Vorlagen (mit und ohne Anhang), der echten Checkliste aus unserem Lauf mit Mensch/Claude-Markierung und Quellen, Claudes Begründung und dem, was Claude nicht prüfen konnte.",
+  "stat": {
+   "value": "4 min 52 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: 18 Websuchen, 17 Quellenlinks in der Antwort, eine Word-Checkliste mit 13 Punkten."
+  },
+  "outcomes": [
+   "Eine Checkliste als Word-Datei: was du vor dem ersten Verkauf anmelden oder klären musst, mit Quellen",
+   "Jeder Punkt markiert: „Mensch“ oder „Claude“, im Lauf 9 zu 4",
+   "Ehrlich ausgewiesen: was Claude nicht prüfen konnte"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Die Frage zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** unten links dein letztes Ergebnis als Datei an, zum Beispiel deinen Website-Entwurf oder dein Angebot. Dann füge Vorlage A ein. Ohne Datei zum Anhängen nimmst du Vorlage B. Die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Vorlage A · mit Anhang",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [PRODUKT] an [ZIELGRUPPE], [WIE/ÜBER WEN GELIEFERT WIRD]. Mein letztes Ergebnis: [STAND IN EINEM SATZ, z. B. Website steht als Entwurf, Impressum fehlt]. Eine angemeldete Firma habe ich noch nicht. Finde mit der Websuche heraus, was ich in Deutschland vor dem ersten Verkauf anmelden oder klären muss, jeweils mit offizieller Quelle. Entscheide, was davon als Erstes kommt, und begründe es mit zwei bis drei konkreten Gründen. Markiere, was du selbst erledigen kannst und was nur ein Mensch machen kann. Mach daraus eine Checkliste als Word-Datei. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "prompt",
+     "label": "Vorlage B · ohne Anhang",
+     "text": "Ich verkaufe [PRODUKT] an [ZIELGRUPPE], [WIE/ÜBER WEN GELIEFERT WIRD]. Mein Stand: [STAND IN EINEM SATZ, z. B. Preisliste steht, noch keine Website]. Eine angemeldete Firma habe ich noch nicht. Finde mit der Websuche heraus, was ich in Deutschland vor dem ersten Verkauf anmelden oder klären muss, jeweils mit offizieller Quelle. Entscheide, was davon als Erstes kommt, und begründe es mit zwei bis drei konkreten Gründen. Markiere, was du selbst erledigen kannst und was nur ein Mensch machen kann. Mach daraus eine Checkliste als Word-Datei. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "In unserem Lauf stand die Checkliste nach knapp fünf Minuten als Word-Datei im Chat. Mit Ausfüllen und Lesen bist du in etwa zehn Minuten durch und weißt, welche Punkte du selbst erledigen musst."
+    }
+   ]
+  },
+  {
+   "kicker": "Für deinen Betrieb",
+   "title": "So füllst du die Klammern aus.",
+   "intro": "Vier Beispiele. Wer etwas zum Anhängen hat, nimmt Vorlage A, sonst B.",
+   "blocks": [
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Hundefriseurin",
+       "v": "[Hundepflege im Salon] an [Hundehalter im Stadtteil], [im eigenen Salon], Stand [Preisliste steht, Räume noch nicht gemietet] → Vorlage B."
+      },
+      {
+       "k": "Fliesenleger",
+       "v": "[Badsanierung] an [Eigentümer von Altbauwohnungen], [selbst vor Ort, Material vom Großhandel], Stand [erstes Angebot geschrieben] → Vorlage A, Angebot anhängen."
+      },
+      {
+       "k": "Kaffeerösterin",
+       "v": "[Kaffee mit eigenem Etikett] an [Büros], [Versand im eigenen Paket], Stand [Etikett und Preis stehen] → Vorlage A oder B."
+      },
+      {
+       "k": "Fotografin",
+       "v": "[Bewerbungs- und Teamfotos] an [kleine Firmen], [Termine beim Kunden], Stand [Website als Entwurf] → Vorlage A, Entwurf anhängen."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/prompt.png",
+     "width": "38%",
+     "caption": "Echter Lauf vom 29.10.2026: das letzte Ergebnis als Datei angehängt, darunter die Frage im Original (Firmenshirts, Printful, Kolonnenshirt)."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → Datei anhängen → Frage einfügen → senden. Research ist nicht nötig, in unserem Lauf blieb es aus."
+      },
+      {
+       "k": "Websuche",
+       "v": "Es gibt keinen eigenen Schalter, Claude sucht selbst, wenn es hilft. In unserem Lauf: 18 Suchen. In Team- und Enterprise-Konten muss ein Owner die Websuche erst freigeben."
+      },
+      {
+       "k": "Word-Datei",
+       "v": "Damit Claude die Datei bauen kann, muss in den Einstellungen die Dateierstellung an sein. Die Datei erscheint als Karte im Chat („Dokument · DOCX“)."
+      },
+      {
+       "k": "Gedächtnis",
+       "v": "Sollen private Daten nicht einfließen, schalte das Gedächtnis für diesen Chat aus: im Plus-Menü das Häkchen bei **„Gedächtnis“** entfernen. In unserem Lauf galt das nur für diesen einen Chat."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Als Erstes: die Gewerbeanmeldung.",
+   "break_before": true,
+   "intro": "Claudes Entscheidung im Lauf, mit drei Gründen aus der Word-Datei (Grund 3 gekürzt, ohne Ortsangaben).",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Sie ist die gesetzliche Voraussetzung.",
+       "text": "§ 14 GewO verlangt die Anzeige gleichzeitig mit dem Beginn des Gewerbes. Wer ohne Anmeldung anfängt, verstößt gegen diese Pflicht."
+      },
+      {
+       "num": "02",
+       "title": "Sie schaltet die anderen Schritte frei.",
+       "text": "Danach folgt der Fragebogen beim Finanzamt und damit die Steuernummer. Die braucht die LUCID-Registrierung als Stammdatum, und dein USt-Status entscheidet, wie der Preis auf der Seite stehen darf."
+      },
+      {
+       "num": "03",
+       "title": "Sie ist schnell und günstig.",
+       "text": "Kein anderer Punkt der Liste hängt an so wenig Vorarbeit."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Parallel dazu solltest du die Frage „nur an Firmen?“ entscheiden (Punkt 4), weil sie fast alle Website-Texte bestimmt."
+    },
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Anmerkung der Redaktion",
+     "text": "Zuständigkeit und Gebühr hat Claude im Lauf für eine einzelne Stadt genannt; wir lassen sie weg. Auskunft gibt die Gewerbebehörde vor Ort."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Eine Neuerung laut Claude",
+     "text": "„Seit dem 12. August 2026 gilt ein neues Verpackungsrecht (EU-Verordnung PPWR und das deutsche VerpackDG). Laut Printful reicht deren LUCID-Nummer für Händler nicht mehr aus. Du musst dich selbst registrieren und einen Vertrag mit einem dualen System schließen. Laut Verpackungsregister gilt das für Versandverpackungen ohne Ausnahme, auch wenn du nur an Firmen lieferst.“ Ob Händler oder Printful als Hersteller zählt, konnte Claude nicht prüfen (siehe unten)."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/datei.png",
+     "width": "70%",
+     "caption": "Echter Lauf: die Checkliste als Word-Datei im Chat."
+    }
+   ]
+  },
+  {
+   "kicker": "Die echte Checkliste",
+   "title": "13 Punkte. 9 × Mensch, 4 × Claude.",
+   "break_before": true,
+   "intro": "1:1 aus Claudes Word-Datei vom 29.10.2026, nur die Ortsangaben sind entfernt (¹ ²). Die Markierung „Mensch“/„Claude“ steht so in der Datei. Kopfzeile der Datei: „Recherchiert per Websuche, keine Rechts- oder Steuerberatung. Behördenquellen sind direkt verlinkt; Kanzlei- und Anbieterquellen sind als „nicht amtlich“ gekennzeichnet.“",
+   "blocks": [
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Mensch",
+       "v": "„nur du (oder ein Anwalt/Steuerberater) kannst es erledigen: Unterschrift, Konto, Entscheidung oder rechtliche Prüfung.“"
+      },
+      {
+       "k": "Claude",
+       "v": "„ich kann es mit deinen Angaben erstellen oder in die Seite einbauen.“"
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "head": [
+      "#",
+      "Phase 1 · Anmelden und entscheiden (jetzt)",
+      "Wer",
+      "Quelle"
+     ],
+     "widths": [
+      "5%",
+      "49%",
+      "21%",
+      "25%"
+     ],
+     "rows": [
+      [
+       "1",
+       "**Gewerbe anmelden (zuerst)**\nPflicht nach § 14 GewO: Wer ein Gewerbe beginnt, muss es gleichzeitig anzeigen.¹\nTätigkeit z. B. „Online-Handel mit bestickter Arbeitskleidung (Herstellung durch Dienstleister auf Bestellung)“ – Formulierung mit dem Amt abstimmen.",
+       "**Mensch**\nDu reichst ein und zahlst. Claude kann den Tätigkeitstext und eine Ausfüllliste vorbereiten.",
+       "[§ 14 GewO (Gesetze im Internet)](https://www.gesetze-im-internet.de/gewo/__14.html)"
+      ],
+      [
+       "2",
+       "**ELSTER-Konto + Fragebogen zur steuerlichen Erfassung**\nDen Fragebogen gibt es nur elektronisch über ELSTER. Frist: ein Monat nach Beginn der Tätigkeit (§ 138 AO). Danach teilt das Finanzamt die Steuernummer mit.\nIm Fragebogen kannst du auch eine USt-IdNr. beantragen (laut Merkblatt LfSt Bayern).",
+       "**Mensch**\nKonto und Absenden nur durch dich. Claude kann einen Antwortzettel mit deinen Zahlen vorbereiten.",
+       "[LfSt Bayern: Merkblatt steuerliche Erfassung (Juni 2025)](https://www.lfst.bayern.de/fileadmin/RESSOURCEN/INFORMATIONEN/Steuerinfos/Zielgruppen/Existenzgruender/Merkblattblatt_zur_steuerlichen_Erfassung_Neugruender_Juni_2025.pdf) (bundesweites Verfahren, Merkblatt aus Bayern)\n[FIM-Portal: Fragebogen zur steuerlichen Erfassung](https://fimportal.de/api/v0/leistung-stammtexte/L100001/365573585/pvog/de/pdf)"
+      ],
+      [
+       "3",
+       "**Entscheiden: Kleinunternehmer oder nicht**\nKleinunternehmerregelung (§ 19 UStG): Vorjahresumsatz max. 25.000 €, laufendes Jahr max. 100.000 €. Freiwilliger Verzicht ist möglich (§ 19 Abs. 3 UStG). Die Wahl triffst du im Fragebogen.\nFolge für die Website: Als Kleinunternehmer weist du keine USt aus, das Wort „brutto“ muss weg. Ohne Kleinunternehmer stecken in 109 € rund 91,60 € netto, in 29,90 € rund 25,13 € netto (bei 19 %).",
+       "**Mensch**\nEntscheidung mit Steuerberater. Claude kann beide Varianten mit deinen Kosten durchrechnen.",
+       "[§ 19 UStG (Gesetze im Internet)](https://www.gesetze-im-internet.de/ustg_1980/__19.html)\n[Finanzamt BW: Kleinunternehmerregelung](https://finanzamt-bw.fv-bwl.de/,Lde/Startseite/Service/Was+ist+die+sogenannte+Kleinunternehmerregelung_)"
+      ],
+      [
+       "4",
+       "**Entscheiden: nur an Firmen (B2B) oder auch an Verbraucher**\nDiese Entscheidung bestimmt fast alle Website-Texte in Phase 3 (Widerruf, Preisangaben, AGB, Produktangaben).\nEin bloßer Hinweis „nur B2B“ reicht laut Kanzlei-Quellen nicht; nötig sind klare Hinweise auf jeder Seite und eine Bestätigung im Bestellprozess. Eine Behördenquelle dazu habe ich nicht gefunden.",
+       "**Mensch**\nGeschäftsentscheidung. Claude kann die Folgen beider Wege gegenüberstellen und die Hinweise in die Seite einbauen.",
+       "[IT-Recht Kanzlei: reiner B2B-Shop](https://www.it-recht-kanzlei.de/reiner-b2b-shop-anleitung.html) (Kanzlei, nicht amtlich)\n[IT-Recht Kanzlei: BGH zur B2B-Beschränkung](https://www.it-recht-kanzlei.de/b2b-.shop-bgh-anforderungen-beschraenkung-erwerberkreis.html) (Kanzlei, nicht amtlich)"
+      ],
+      [
+       "5",
+       "**Name „Kolonnenshirt“ prüfen (DPMA, EUIPO)**\nDas DPMA prüft bei einer Anmeldung keine älteren Rechte Dritter; das musst du selbst recherchieren. DPMAregister ist kostenlos. Der Name geht später auch als Markenname ins LUCID-Register.",
+       "**Mensch**\nRechtliche Bewertung durch Markenanwalt. Claude kann eine erste Websuche nach gleichen Namen machen, das ist keine Ähnlichkeitsrecherche.",
+       "[DPMA: Markenrecherche](https://dpma.de/marken/markenrecherche)"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "head": [
+      "#",
+      "Phase 2 · Verpackung (nach der Steuernummer, vor dem ersten Versand)",
+      "Wer",
+      "Quelle"
+     ],
+     "widths": [
+      "5%",
+      "49%",
+      "21%",
+      "25%"
+     ],
+     "rows": [
+      [
+       "6",
+       "**Im Verpackungsregister LUCID registrieren**\nSeit 12. August 2026 gelten die EU-Verpackungsverordnung (PPWR) und das VerpackDG. Printful schreibt, dass Händler sich jetzt unter eigenem Namen registrieren müssen, auch wenn Printful alle Bestellungen versendet; die Printful-Nummer reicht nicht mehr.\nDie Registrierung ist kostenlos. Laut ZSVR werden Stammdaten wie USt-IdNr. bzw. Steuernummer abgefragt – deshalb erst nach Schritt 2.\nLaut ZSVR ist Versandverpackung ausnahmslos systembeteiligungspflichtig, auch beim Versand an Gewerbekunden.",
+       "**Mensch**\nLaut ZSVR persönliche Pflicht des Unternehmens. Claude kann die Datenliste vorbereiten.",
+       "[ZSVR: Registrierung im LUCID-Register](https://www.verpackungsregister.org/en/registration/find-out-about-registrations)\n[ZSVR: Was seit 12. August 2026 gilt](https://www.verpackungsregister.org/en/i-want-to-know-what-changed-on-12-august-2026)\n[ZSVR: Versand- und Onlinehandel](https://www.verpackungsregister.org/en/knowledge-bases/mail-order-companies-and-online-retailers)\n[Printful-Hilfe: VerpackDG / LUCID](https://help.printful.com/hc/en-us/articles/360014010680-How-does-the-German-Packaging-Act-VerpackDG-affect-my-business) (Anbieter, nicht amtlich)"
+      ],
+      [
+       "7",
+       "**Vertrag mit einem dualen System + Mengenmeldung**\nVor dem ersten Inverkehrbringen Systembeteiligung abschließen und die Verpackungsmengen melden. Material, Gewicht und Volumen der Printful-Verpackung musst du beim Lieferanten erfragen. Printful übernimmt laut eigener Aussage die Kosten für seine eigene Verpackung – wie das mit deiner Pflicht zusammenspielt, unbedingt klären (siehe „Was ich nicht prüfen konnte“).",
+       "**Mensch**\nVertrag schließt du. Claude kann die Systembetreiber-Liste der ZSVR mit dir durchgehen.",
+       "[ZSVR: Versand- und Onlinehandel](https://www.verpackungsregister.org/en/knowledge-bases/mail-order-companies-and-online-retailers)\n[Printful-Hilfe: VerpackDG / LUCID](https://help.printful.com/hc/en-us/articles/360014010680-How-does-the-German-Packaging-Act-VerpackDG-affect-my-business) (Anbieter, nicht amtlich)"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "head": [
+      "#",
+      "Phase 3 · Website, bevor sie online geht",
+      "Wer",
+      "Quelle"
+     ],
+     "widths": [
+      "5%",
+      "49%",
+      "21%",
+      "25%"
+     ],
+     "rows": [
+      [
+       "8",
+       "**Impressum (§ 5 DDG)**\nSeit 14.05.2024 steht die Pflicht in § 5 DDG statt TMG. Mindestens Name, ladungsfähige Anschrift, schnelle elektronische Kontaktaufnahme (laut IHK Telefon und E-Mail), ggf. USt-IdNr.; die Steuernummer gehört nicht hinein.",
+       "**Claude**\nEntwurf und Einbau, sobald du die Daten lieferst. Prüfung durch Anwalt empfohlen.",
+       "[IHK Chemnitz: Impressumspflicht](https://www.ihk.de/chemnitz/recht-und-steuern/rechtsinformationen/internetrecht/pflichtangaben-im-internet-die-impressumspflicht-4401580)\n[IHK München: Impressum](https://www.ihk-muenchen.de/ratgeber/recht/internetrecht/impressum/)"
+      ],
+      [
+       "9",
+       "**Datenschutzerklärung (Art. 13 DSGVO)**\nInhalt hängt von den eingesetzten Diensten ab (Shop-System, Zahlung, Formular, Schriften, Hosting). Schrift Inter am besten selbst hosten statt von Google laden.",
+       "**Claude**\nDienste-Liste, Entwurf, Schrift selbst hosten. Rechtliche Prüfung durch Mensch.",
+       "Quelle im Lauf: Landesdatenschutzbehörde (ortsbezogen, entfernt)²"
+      ],
+      [
+       "10",
+       "**Nur bei Verbrauchern: Widerrufsbelehrung + Widerrufsbutton**\nSeit 19. Juni 2026 brauchen Online-Shops mit Verbraucherverträgen eine elektronische Widerrufsfunktion (§ 356a BGB).\nBei Ware nach Kundenspezifikation (z. B. Kundenlogo) ist das Widerrufsrecht nach § 312g Abs. 2 Nr. 1 BGB ausgeschlossen; laut EuGH auch schon vor Produktionsbeginn. Ob deine Shirts darunter fallen, prüfen lassen.\nBei reinem B2B entfallen beide Punkte.",
+       "**Mensch**\nRechtstexte durch Anwalt oder Händlerverband. Claude kann den Button technisch einbauen.",
+       "[IHK Köln: Widerrufsfunktion seit Juni 2026](https://www.ihk.de/koeln/hauptnavigation/recht-steuern/widerrufsbutton-neue-pflicht-ab-juni-2026-6950888)\n[IT-Recht Kanzlei: Ausnahmen vom Widerrufsrecht](https://www.it-recht-kanzlei.de/ausnahmen-widerrufsrecht.html) (Kanzlei, nicht amtlich)"
+      ],
+      [
+       "11",
+       "**AGB passend zur B2B/B2C-Entscheidung**\nBei reinem B2B: AGB dürfen nicht zusätzlich Verbraucher ansprechen, sonst wird die Beschränkung aufgeweicht (Kanzlei-Quelle).",
+       "**Mensch**\nAnwalt oder Rechtstexte-Dienst. Claude kann einbinden.",
+       "[IT-Recht Kanzlei: reiner B2B-Shop](https://www.it-recht-kanzlei.de/reiner-b2b-shop-anleitung.html) (Kanzlei, nicht amtlich)"
+      ],
+      [
+       "12",
+       "**Preis- und Produktangaben auf der Seite**\nUSt-Formulierung nach Schritt 3; Versandkosten und Lieferzeit beim Preis (aus deinem letzten Ergebnis).\nFaserzusammensetzung muss Verbrauchern vor dem Kauf angezeigt werden (EU-Textilkennzeichnungsverordnung).\nWenn die Shirts Verbraucherprodukte sind: Herstellerangaben und ggf. Sicherheitshinweise im Angebot (GPSR, Art. 19). Wer eigene Marke führt, kann als Hersteller gelten.",
+       "**Claude**\nTexte einbauen, sobald du Material und Herstellerdaten von Printful lieferst.",
+       "[IHK München: Merkblatt Textilkennzeichnung](https://www.ihk-muenchen.de/ihk/Medien/Merkblatt-Textilkennzeichnung_2022.pdf)\n[IHK Köln: Produktsicherheit (GPSR)](https://www.ihk.de/koeln/hauptnavigation/recht-steuern/produktsicherheit-6206448)"
+      ],
+      [
+       "13",
+       "**Keinen Link zur OS-Plattform einbauen**\nDie EU-Plattform zur Online-Streitbeilegung ist seit 20. Juli 2025 abgeschaltet; Hinweise darauf sollen entfernt werden. Andere Hinweise zur Verbraucherstreitbeilegung (§ 36 VSBG) können weiter nötig sein – prüfen lassen.",
+       "**Claude**\nSicherstellen, dass nichts davon auf der Seite steht.",
+       "[IHK Stuttgart: OS-Plattform eingestellt](https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/it-recht/os-plattform-zur-streitbeilegung-wird-eingestellt-6488402)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "So sieht die Datei aus",
+   "title": "Die Stempel im Original.",
+   "break_before": true,
+   "intro": "Ausschnitte aus Claudes Word-Datei, lokal gerendert (Ersatzschrift). Orange = „Mensch“, grün = „Claude“. Punkt 1 ist im Bild weggelassen, weil er die Stadt nennt.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "¹ Anmerkung der Redaktion: Zuständigkeit und Gebühr hat Claude im Lauf für eine einzelne Stadt genannt; wir lassen sie weg. Auskunft gibt die Gewerbebehörde vor Ort.\n² Anmerkung der Redaktion: Die Quelle zu Punkt 9 im Lauf war die Seite einer einzelnen Landesdatenschutzbehörde; wir lassen sie weg, weil sie ortsbezogen ist."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/mensch.png",
+     "width": "56%",
+     "caption": "Phase 1, Punkte 2 bis 5: alle „Mensch“."
+    },
+    {
+     "type": "image",
+     "src": "guide-img/claude.png",
+     "width": "56%",
+     "caption": "Phase 3, Punkte 12 und 13: „Claude“."
+    }
+   ]
+  },
+  {
+   "kicker": "Was Claude nicht prüfen konnte",
+   "title": "Das steht nicht auf der Liste.",
+   "break_before": false,
+   "intro": "Wörtlich aus der Word-Datei. Ein Punkt zu einem Ortsportal ist weggelassen, weil er die Stadt nennt. „Nicht geprüft“ heißt nicht „gilt nicht“.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Deine persönliche Lage:** Ich kenne weder deine Rechtsform noch ob du nebenberuflich startest. Ich bin von einem Einzelunternehmen ausgegangen.",
+      "**Wer genau beim Verpackungsrecht „Hersteller“ und „Erzeuger“ ist:** Printful sagt, du musst dich registrieren. Die ZSVR-Regeln hängen aber von Branding, Lieferkette und Sitz von Printful ab. Das konnte ich nicht abschließend klären; frag direkt bei der ZSVR oder einem Anwalt nach.",
+      "**Ob die Produktsicherheitsverordnung (GPSR) bei reinem B2B-Verkauf greift:** Sie gilt für Verbraucherprodukte. Ob Arbeitsshirts dazu zählen, wenn Betriebe sie kaufen, habe ich nicht geprüft.",
+      "**Ob die Ausnahme vom Widerrufsrecht für deine Shirts gilt:** Die Quellen dazu sind Kanzlei-Artikel, keine Behörde.",
+      "**Ob § 36 VSBG** (Hinweis zur Verbraucherschlichtung) für dich gilt und welcher Text nötig ist.",
+      "**Weitere mögliche Pflichten, die ich nicht recherchiert habe:** Handwerkskammer (die Stickerei macht Printful, nicht du), Berufsgenossenschaft, Krankenversicherung, Gewerbesteuer, EUIPO-Recherche, aktuelle Printful-AGB, Lizenz der Schrift Inter, Rechtsfragen zum Sticken fremder Kundenlogos."
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/nicht-pruefen.png",
+     "width": "80%",
+     "caption": "Echter Lauf: Claudes Antwort im Chat (ein Punkt zur Stadt herausgeschnitten)."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Keine Rechts- oder Steuerberatung",
+     "text": "Claude schreibt selbst: „Ich bin kein Anwalt und kein Steuerberater.“ Die Liste ist nicht vollständig und nicht rechtssicher, sie ist dein Startpunkt. Punkte mit „Mensch“ erledigst du selbst oder lässt sie prüfen, auch Claudes Entwürfe für Impressum und Datenschutz."
+    }
+   ]
+  },
+  {
+   "kicker": "Nachfragen",
+   "title": "Von der Liste zum ersten Schritt.",
+   "intro": "Im selben Chat weiterfragen. Jede Nachfrage greift auf, was Claude in der Datei selbst angeboten hat.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Nachfrage 1 · Gewerbe vor Ort",
+     "text": "Mein Betriebssitz ist in [STADT]. Finde mit der Websuche heraus, welche Stelle dort die Gewerbeanmeldung annimmt, ob es online geht und was es kostet, nur mit Quelle der Stadt oder der Kammer. Sag dazu, was du nicht bestätigen konntest. Erfinde nichts."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 2 · Ausfüllliste",
+     "text": "Bereite mir für die Gewerbeanmeldung einen Tätigkeitstext und eine Ausfüllliste vor: welche Angaben ich brauche und welche Unterlagen ich bereitlegen muss. Einreichen mache ich selbst. Markiere, was ich mit dem Amt abstimmen sollte."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 3 · Kleinunternehmer",
+     "text": "Rechne mir beide Varianten durch, mit und ohne Kleinunternehmerregelung: Meine Preise sind [PREISE], meine Kosten [KOSTEN], erwarteter Umsatz im ersten Jahr [UMSATZ]. Zeig, was sich auf der Website ändert. Die Entscheidung treffe ich mit meinem Steuerberater."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 4 · Fragen für den Termin",
+     "text": "Mach aus allem, was du nicht prüfen konntest, eine Liste mit Fragen für meinen Termin bei [STEUERBERATER/ANWALT]: pro Punkt eine Frage, warum sie wichtig ist und welche Quelle du dazu hattest. Erfinde nichts."
+    }
+   ]
+  },
+  {
+   "kicker": "Quellen",
+   "title": "Die Quellen aus Lauf und Datei.",
+   "intro": "Ohne die zwei ortsbezogenen Quellen (Kammer-Seite zur Gewerbeanmeldung, Landesdatenschutzbehörde).",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "[§ 14 GewO](https://www.gesetze-im-internet.de/gewo/__14.html) · [§ 19 UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html)\n[LfSt Bayern: Merkblatt steuerliche Erfassung](https://www.lfst.bayern.de/fileadmin/RESSOURCEN/INFORMATIONEN/Steuerinfos/Zielgruppen/Existenzgruender/Merkblattblatt_zur_steuerlichen_Erfassung_Neugruender_Juni_2025.pdf) · [FIM-Portal: Fragebogen zur steuerlichen Erfassung](https://fimportal.de/api/v0/leistung-stammtexte/L100001/365573585/pvog/de/pdf) · [Finanzamt BW: Kleinunternehmerregelung](https://finanzamt-bw.fv-bwl.de/,Lde/Startseite/Service/Was+ist+die+sogenannte+Kleinunternehmerregelung_)\n[ZSVR: Was seit 12. August 2026 gilt](https://www.verpackungsregister.org/en/i-want-to-know-what-changed-on-12-august-2026) · [ZSVR: Versand- und Onlinehandel](https://www.verpackungsregister.org/en/knowledge-bases/mail-order-companies-and-online-retailers) · [ZSVR: Registrierung LUCID](https://www.verpackungsregister.org/en/registration/find-out-about-registrations)\n[IHK Chemnitz: Impressumspflicht](https://www.ihk.de/chemnitz/recht-und-steuern/rechtsinformationen/internetrecht/pflichtangaben-im-internet-die-impressumspflicht-4401580) · [IHK München: Impressum](https://www.ihk-muenchen.de/ratgeber/recht/internetrecht/impressum/) · [IHK Köln: Widerrufsfunktion](https://www.ihk.de/koeln/hauptnavigation/recht-steuern/widerrufsbutton-neue-pflicht-ab-juni-2026-6950888) · [IHK München: Textilkennzeichnung](https://www.ihk-muenchen.de/ihk/Medien/Merkblatt-Textilkennzeichnung_2022.pdf) · [IHK Köln: Produktsicherheit](https://www.ihk.de/koeln/hauptnavigation/recht-steuern/produktsicherheit-6206448) · [IHK Stuttgart: OS-Plattform eingestellt](https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/it-recht/os-plattform-zur-streitbeilegung-wird-eingestellt-6488402)\n[DPMA: Markenrecherche](https://dpma.de/marken/markenrecherche)\nNicht amtlich: [Printful-Hilfe: VerpackDG](https://help.printful.com/hc/en-us/articles/360014010680-How-does-the-German-Packaging-Act-VerpackDG-affect-my-business) (Anbieter) · [IT-Recht Kanzlei: reiner B2B-Shop](https://www.it-recht-kanzlei.de/reiner-b2b-shop-anleitung.html) · [IT-Recht Kanzlei: BGH zur B2B-Beschränkung](https://www.it-recht-kanzlei.de/b2b-.shop-bgh-anforderungen-beschraenkung-erwerberkreis.html) · [IT-Recht Kanzlei: Ausnahmen vom Widerrufsrecht](https://www.it-recht-kanzlei.de/ausnahmen-widerrufsrecht.html) (Kanzlei)"
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Die Liste für vollständig halten.** Claude nennt selbst Pflichten, die es nicht recherchiert hat, etwa Berufsgenossenschaft und Gewerbesteuer.",
+      "**„Nicht geprüft“ als „gilt nicht“ lesen.** Hersteller-Rolle, GPSR bei B2B und die Widerrufs-Ausnahme sind offen, nicht erledigt.",
+      "**Zuständigkeit und Gebühr aus einer anderen Stadt übernehmen.** Das klärst du bei der Gewerbebehörde an deinem Betriebssitz.",
+      "**Claudes Entwürfe ungeprüft online stellen.** Bei Impressum und Datenschutz empfiehlt Claude selbst eine Prüfung durch einen Menschen.",
+      "**Die Reihenfolge überspringen.** Laut Claude bauen die Schritte aufeinander auf: erst das Gewerbe, dann der Fragebogen beim Finanzamt und die Steuernummer, dann die LUCID-Registrierung."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes fragt die KI: Wen spricht sie zuerst an?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Rechts- oder Steuerberatung, keine Gewähr auf Vollständigkeit. Checkliste, Gründe und Zitate aus einem echten claude.ai-Lauf vom 29.10.2026 (Websuche, 18 Suchen, 17 Quellenlinks, Word-Datei). Angaben sind Ergebnisse von Claude mit den genannten Quellen und nicht von uns geprüft. Nichts davon wurde angemeldet. Gesetze, Fristen und Menünamen können sich ändern."
+}

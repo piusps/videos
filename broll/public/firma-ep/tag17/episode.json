@@ -1,0 +1,2314 @@
+{
+ "tag": 17,
+ "folge": 17,
+ "serientag": 4,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-31",
+ "keyword": "Versand",
+ "seconds": 44.56,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 154.3,
+  "musicMute": [],
+  "musicCurve": [
+   [
+    0,
+    0.05
+   ],
+   [
+    23.75,
+    0.05
+   ],
+   [
+    23.95,
+    0.03
+   ],
+   [
+    24.8,
+    0.03
+   ],
+   [
+    24.86,
+    0.06
+   ],
+   [
+    25.6,
+    0.04
+   ],
+   [
+    27.5,
+    0.04
+   ],
+   [
+    28.0,
+    0.032
+   ],
+   [
+    43.4,
+    0.032
+   ],
+   [
+    43.56,
+    0.05
+   ],
+   [
+    44.1,
+    0.05
+   ],
+   [
+    44.56,
+    0
+   ]
+  ]
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "sub": "· 12 SCHRITTE",
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE\nENTWURF",
+   "GEWERBE\nMENSCH",
+   "BETRIEBE",
+   "BRIEF\n+ ADRESSEN",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 7,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6
+  ],
+  "wip": [
+   4
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@5",
+   "aus": "aus@5.3",
+   "end": "Die@6-0.08"
+  },
+  "instant": true,
+  "keepHeadline": true,
+  "planFrom": "Ich-0.05"
+ },
+ "claude": {
+  "at": "5@10.5-0.04",
+  "moveUp": 99,
+  "steps": [],
+  "prompt": "Im Anhang sind meine fünf Serienbriefe aus dem letzten Schritt. Mein Angebot: 109 Euro brutto für fünf Shirts, 29,90 Euro für ein nachbestelltes Einzelshirt, gestickt erst auf Bestellung über Printful, Kunden in Deutschland. Im Brief ist der Platzhalter „Versandkosten und Lieferzeit“ noch offen. Finde mit der Websuche heraus, was der Versand bei Printful nach Deutschland für eine Bestellung von fünf Shirts und für ein Einzelshirt kostet, jeweils mit Quelle. Rechne aus, ob der Versand in meinen Preisen von 109 Euro und 29,90 Euro noch drin ist oder ob ich die Versandkosten im Brief extra nennen muss. Trag das Ergebnis in die Briefe ein, wo der Platzhalter steht, und gib sie mir als Word-Datei zurück. Sag mir, was du nicht prüfen kannst. Erfinde nichts.",
+  "typing": [
+   [
+    "5@10.5-0.04",
+    ""
+   ]
+  ],
+  "send": "5@10.5-0.03"
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@6-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "verkauft"
+   },
+   "today": {
+    "step": 7,
+    "pill": "HEUTE: SHIRT-VERSAND",
+    "at": "Heute-0.1"
+   },
+   "bot": {
+    "dx": 0.8,
+    "s": 0.4
+   }
+  },
+  {
+   "type": "question",
+   "at": "5@10.5-0.04",
+   "lines": [
+    " "
+   ],
+   "card": false,
+   "stamp": null,
+   "bot": {
+    "dx": 1.6,
+    "dz": -1.8,
+    "s": 0.55
+   }
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "bare": true,
+   "label": "BRIEF",
+   "icon": "web",
+   "pill": " ",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "warn",
+     "small": "Einkaufspreis fehlt",
+     "at": "Einkaufspreis"
+    },
+    {
+     "icon": "euro",
+     "small": "17 % vom Preis",
+     "at": "17@30"
+    }
+   ],
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@33-0.14",
+   "pill": "",
+   "lines": [
+    "Einkaufspreis",
+    "Stick-Shirt?"
+   ],
+   "pop": "Als@33-0.14",
+   "stamp": null,
+   "bubble": "Shirt@35.9",
+   "bot": {
+    "dx": 1.6,
+    "dz": -1.8,
+    "s": 0.55
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Versand@37.5",
+   "plane": [
+    "Versand@37.5:end+0.05",
+    "Anleitung-0.1"
+   ],
+   "itemsAt": "Anleitung",
+   "copyAt": "Damit",
+   "itemTag": "DM",
+   "dimBoard": false,
+   "items": []
+  }
+ ],
+ "overlays": [
+  {
+   "kind": "partners",
+   "from": 0,
+   "to": "Umsatz",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": -1,
+    "to": "Umsatz"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Umsatz",
+   "to": "macht-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "Umsatz-0.60",
+    "to": "macht+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "macht",
+   "to": "Unternehmen-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "macht-0.60",
+    "to": "Unternehmen+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Unternehmen",
+   "to": "das@1.5-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "Unternehmen-0.60",
+    "to": "das@1.5+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "das@1.5",
+   "to": "KI@1.9-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "das@1.5-0.60",
+    "to": "KI@1.9+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "KI@1.9",
+   "to": "100-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "KI@1.9-0.60",
+    "to": "100+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "100",
+   "to": "Tage-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-6.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "100-0.60",
+    "to": "Tage+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Tage",
+   "to": "lang-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-7.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "Tage-0.60",
+    "to": "lang+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "lang",
+   "to": "führt:end-0.16",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-8.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "lang-0.60",
+    "to": "führt:end+9.20"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "führt:end+0.2",
+   "to": "Ich-0.34",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/hook-9.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 900,
+    "w": 900,
+    "y": 520,
+    "at": "führt:end-0.40",
+    "to": "Ich+9.03"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "verkauft-0.15",
+   "to": "5@10.5-0.44",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/rec-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 270,
+    "w": 1000,
+    "y": 1025,
+    "at": "verkauft-0.75",
+    "to": "5@10.5+8.93"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "5@10.5-0.01",
+   "to": "5@10.5+0.2",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "5@10.5-0.61",
+    "to": "5@10.5+0.2"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "5@10.5+0.2",
+   "to": "Versandpreis-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "5@10.5-0.40",
+    "to": "Versandpreis+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Versandpreis",
+   "to": "fehlt-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Versandpreis-0.60",
+    "to": "fehlt+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "fehlt",
+   "to": "fehlt:end-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "fehlt-0.60",
+    "to": "fehlt:end+9.30"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "fehlt:end+0.3",
+   "to": "fehlt:end+0.34",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "fehlt:end-0.30",
+    "to": "fehlt:end+9.70"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "fehlt:end+0.7",
+   "to": "Heute-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "fehlt:end+0.10",
+    "to": "Heute+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Heute",
+   "to": "Shirt-Versand-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Heute-0.60",
+    "to": "Shirt-Versand+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Shirt-Versand",
+   "to": "Shirt-Versand+0.09",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-6.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Shirt-Versand-0.60",
+    "to": "Shirt-Versand+9.45"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Shirt-Versand+0.45",
+   "to": "Shirt-Versand:end-0.21",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-7.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Shirt-Versand-0.15",
+    "to": "Shirt-Versand:end+9.15"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Shirt-Versand:end+0.15",
+   "to": "Claude-0.49",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/heute-8.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1300,
+    "w": 1080,
+    "y": -60,
+    "at": "Shirt-Versand:end-0.45",
+    "to": "Claude+8.88"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "Heute+0.05",
+   "to": "Claude-0.3",
+   "text": "HEUTE: SHIRT-VERSAND",
+   "y": 1200
+  },
+  {
+   "kind": "partners",
+   "from": "Claude-0.04",
+   "to": "Briefe@17-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/weg-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 230,
+    "at": "Claude-0.64",
+    "to": "Briefe@17+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Briefe@17",
+   "to": "angehängt-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/weg-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 230,
+    "at": "Briefe@17-0.60",
+    "to": "angehängt+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "angehängt",
+   "to": "Websuche-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/weg-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 230,
+    "at": "angehängt-0.60",
+    "to": "Websuche+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Websuche",
+   "to": "Websuche-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/weg-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 230,
+    "at": "Websuche-0.60",
+    "to": "Websuche+9.30",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Websuche+0.3",
+   "to": "Printful-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/weg-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 230,
+    "at": "Websuche-0.30",
+    "to": "Printful+9.00",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Printful",
+   "to": "Printful:end-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/weg-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 230,
+    "at": "Printful-0.60",
+    "to": "Printful:end+9.30",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Printful:end+0.3",
+   "to": "Nach-0.43",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/weg-6.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 230,
+    "at": "Printful:end-0.30",
+    "to": "Nach+8.94",
+    "label": "Claude"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Nach-0.06",
+   "to": "knapp-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "Nach-0.66",
+    "to": "knapp+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "knapp",
+   "to": "2@21-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "knapp-0.60",
+    "to": "2@21+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "2@21",
+   "to": "Minuten@21.3:end-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "2@21-0.60",
+    "to": "Minuten@21.3:end+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Minuten@21.3:end",
+   "to": "Brief@21.8-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "Minuten@21.3:end-0.60",
+    "to": "Brief@21.8+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Brief@21.8",
+   "to": "Brief@21.8:end-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "Brief@21.8-0.60",
+    "to": "Brief@21.8:end+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Brief@21.8:end",
+   "to": "Versand@22.5-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "Brief@21.8:end-0.60",
+    "to": "Versand@22.5+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Versand@22.5",
+   "to": "extra-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-6.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "Versand@22.5-0.60",
+    "to": "extra+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "extra",
+   "to": "extra:end-0.06",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-7.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "extra-0.60",
+    "to": "extra:end+9.30"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "extra:end+0.3",
+   "to": "Warum-0.51",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/erg-8.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 900,
+    "y": 250,
+    "at": "extra:end-0.30",
+    "to": "Warum+8.86"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "Warum",
+   "to": "Als@33-0.5",
+   "text": "WARUM?",
+   "y": 240
+  },
+  {
+   "kind": "partners",
+   "from": "Warum-0.06",
+   "to": "Einkaufspreis-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/why-0.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 330,
+    "at": "Warum-0.66",
+    "to": "Einkaufspreis+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Einkaufspreis",
+   "to": "passt-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/why-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 330,
+    "at": "Einkaufspreis-0.60",
+    "to": "passt+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "passt",
+   "to": "17@30-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/why-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 330,
+    "at": "passt-0.60",
+    "to": "17@30+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "17@30",
+   "to": "Einzelshirt-Preis-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/why-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 330,
+    "at": "17@30-0.60",
+    "to": "Einzelshirt-Preis+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Einzelshirt-Preis",
+   "to": "Einzelshirt-Preis:end-0.16",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/why-4.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 330,
+    "at": "Einzelshirt-Preis-0.60",
+    "to": "Einzelshirt-Preis:end+9.20"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Einzelshirt-Preis:end+0.2",
+   "to": "Als@33-0.56",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/why-5.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 820,
+    "y": 330,
+    "at": "Einzelshirt-Preis:end-0.40",
+    "to": "Als@33+8.81"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Als@33-0.10",
+   "to": "Als@33+0.1",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/next-0.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 680,
+    "y": 160,
+    "at": "Als@33-0.70",
+    "to": "Als@33+0.1"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Als@33+0.1",
+   "to": "zahlt-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/next-0.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 680,
+    "y": 160,
+    "at": "Als@33-0.50",
+    "to": "zahlt+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "zahlt",
+   "to": "gestickte-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/next-1.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 680,
+    "y": 160,
+    "at": "zahlt-0.60",
+    "to": "gestickte+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "gestickte",
+   "to": "Shirt@35.9-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/next-2.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 680,
+    "y": 160,
+    "at": "gestickte-0.60",
+    "to": "Shirt@35.9+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Shirt@35.9",
+   "to": "Shirt@35.9:end-0.26",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/next-3.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 680,
+    "y": 160,
+    "at": "Shirt@35.9-0.60",
+    "to": "Shirt@35.9:end+9.10"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Shirt@35.9:end+0.1",
+   "to": "Shirt@35.9:end+0.09",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/next-4.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 680,
+    "y": 160,
+    "at": "Shirt@35.9:end-0.50",
+    "to": "Shirt@35.9:end+9.45"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Shirt@35.9:end+0.45",
+   "to": "Kommentiere-0.56",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/next-5.png",
+    "srcW": 900,
+    "sx": 0,
+    "sy": 0,
+    "sw": 900,
+    "sh": 360,
+    "w": 680,
+    "y": 160,
+    "at": "Shirt@35.9:end-0.15",
+    "to": "Kommentiere+8.81"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Anleitung-0.05",
+   "to": "Damit-0.46",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/cta-1.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1080,
+    "y": 112,
+    "at": "Anleitung-0.65",
+    "to": "Damit+8.90"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Damit-0.1",
+   "to": "Preis@42.8-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/cta-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1080,
+    "y": 112,
+    "at": "Damit-0.70",
+    "to": "Preis@42.8+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Preis@42.8",
+   "to": "Preis@42.8+0.14",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/cta-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1080,
+    "y": 112,
+    "at": "Preis@42.8-0.60",
+    "to": "Preis@42.8+9.50"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Preis@42.8+0.5",
+   "to": "durch-0.36",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/cta-2.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1080,
+    "y": 112,
+    "at": "Preis@42.8-0.10",
+    "to": "durch+9.00"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "durch",
+   "to": 99,
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag17/shots/cta-3.png",
+    "srcW": 1000,
+    "sx": 0,
+    "sy": 0,
+    "sw": 1000,
+    "sh": 1000,
+    "w": 1080,
+    "y": 112,
+    "at": "durch-0.60",
+    "to": 99
+   }
+  }
+ ],
+ "captionY": [
+  {
+   "from": "Die@6-0.08",
+   "to": "5@10.5-0.04",
+   "y": 1690
+  },
+  {
+   "from": "Kommentiere-0.15",
+   "to": "Anleitung:end+0.3",
+   "y": 1640
+  },
+  {
+   "from": "Anleitung:end+0.3",
+   "to": "durch:end+3",
+   "y": 1210
+  }
+ ],
+ "bot": {
+  "hops": [
+   [
+    "Unternehmen",
+    0.4
+   ],
+   [
+    "das@1.5",
+    0.5
+   ],
+   [
+    "KI@1.9",
+    0.4
+   ],
+   [
+    "100",
+    0.45
+   ],
+   [
+    "Tage",
+    0.5
+   ],
+   [
+    "lang",
+    0.4
+   ],
+   [
+    "führt?+0.5",
+    0.35
+   ],
+   [
+    "extra:end+0.3",
+    0.35
+   ],
+   [
+    "Shirt@35.9:end+0.3",
+    0.35
+   ],
+   [
+    "durch:end+0.4",
+    0.2
+   ]
+  ]
+ },
+ "sfx": [
+  {
+   "t": 0.03,
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Umsatz-0.22",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Umsatz",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Umsatz+0.04",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.35
+  },
+  {
+   "t": "macht",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Unternehmen",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "das@1.5",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "KI@1.9",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "100",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Tage",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "lang",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "ganz@3-0.06",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "alleine",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.42
+  },
+  {
+   "t": "führt",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.3
+  },
+  {
+   "t": 4.6,
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.15
+  },
+  {
+   "t": "Ich@4.5-0.05",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "probier",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "aus@5",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Die@6.0-0.08",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "verkauft",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Betriebe@8.8",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "bestickt",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "5@10.5",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Versandpreis",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "fehlt",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "fehlt:end+0.2",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Heute-0.1",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Heute+0.05",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Shirt-Versand",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Shirt-Versand:end",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "Claude",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Briefe@17.0",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "angehängt",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Websuche",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Printful",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Nach@20.0",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Minuten@21",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Brief@21.5",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Versand@22.5",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "extra",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.32
+  },
+  {
+   "t": "Warum-0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Warum",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Einkaufspreis",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Preis@28.5",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "frisst",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "17@30.0",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Einzelshirt-Preis",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Als@32.8-0.1",
+   "f": "sfx/heygen/whoosh-airy.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Als@32.8",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "zahlt",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "gestickte",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Shirt@35.8",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Kommentiere-0.15",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Versand@37.5",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Versand@37.5:end",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "ich@39",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Anleitung",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Damit+0.05",
+   "f": "public/sirtoken/sfx-chime.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "10@42",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  },
+  {
+   "t": "Preis@42.8",
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.2
+  },
+  {
+   "t": 44.26,
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.12
+  }
+ ]
+}

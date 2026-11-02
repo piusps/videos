@@ -1,0 +1,1118 @@
+{
+ "folge": 16,
+ "tag": 16,
+ "serientag": 4,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-31",
+ "slot": "2026-10-31 18:00",
+ "keyword": "Serienbrief",
+ "seconds": 44.13,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 53.3,
+  "musicMute": [],
+  "musicCurve": [
+   [
+    0,
+    0.04
+   ],
+   [
+    22.9,
+    0.04
+   ],
+   [
+    23.1,
+    0.025
+   ],
+   [
+    24.15,
+    0.025
+   ],
+   [
+    24.21,
+    0.05
+   ],
+   [
+    24.9,
+    0.03
+   ],
+   [
+    43.0,
+    0.03
+   ],
+   [
+    43.15,
+    0.05
+   ],
+   [
+    43.7,
+    0.05
+   ],
+   [
+    44.13,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 53,3 s am Stück bis 98,0 (44,7 s inkl. Reserve), nie geloopt. Vortags-Bereich Folge 10 (2026-10-30, 57,325–103,755), kein Abschnitt von Folge 13 (0,10–45,10), 8,2 s Abstand zu dessen Ende, 8,65 s vor Folge 14 (106,65 ff.), weit weg von Folge 15 (303,5 ff.). music-explicit-check 3× 0 explizite Wörter, daher kein musicMute. Details musik.txt"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Ziffern in words.json: hundert → 100, fünf → 5, vier → 4, zehn → 10. Kollisionen: 'ein' (0.95 / 10.7), 'das' (1.58 / 5.41), 'ki' (2.0 / 6.86), 'ich' (4.95 / 38.57), 'die' (6.23 / 14.03 / 25.61 / 39.08), 'der' (6.7 / 26.37 / 34.4 / 34.89), 'shirts' (7.62 / 35.05), 'brief' (10.89 / 14.81 / 16.52), '5' (11.3 / 20.02), 'adressen' (11.57 / 14.15), 'in' (14.59 / 26.28 / 30.55 / 41.08), 'liste' (17.09 / 26.52), 'nur' (22.47 / 25.29). In episode.json immer 'Wort@Zeit'.",
+ "textregel": "Neue Textblöcke (ohne Untertitel) je ≥ 1,2 s auseinander, ≤ 4 Wörter (+ kleine Unterzeile/Gegenwert), nie zwei gleichzeitig. Screenshots: nie mehr als ~12 lesbare Wörter gleichzeitig. Briefseiten/gelbe Platzhalter = Bild-Objekt (Lauf-Wortlaut).",
+ "verboten": [
+  "Betriebs-/Personennamen, Straßen, PLZ, Websites der Betriebe, Telefon, Orte außer Chemnitz",
+  "briefe-text.txt",
+  "alle Bilder ohne '-anonym' außer 01, 03, 04, 06, 07",
+  "Umsatz-Zähler",
+  "Haken an GEWERBE",
+  "WEBSITE grün",
+  "Haken an WERBEBRIEF + ADRESSEN (Briefe nicht versandfertig)",
+  "'TAG 4'-Slam / 'gestern'",
+  "claude.ai-Sidebar",
+  "'versandfertig', 'Briefe sind raus', 'vier Briefe'",
+  "Kuvert/Briefmarke/Briefkasten/Drucker/Porto (Drucken/Porto = Mensch, nicht erzählt; Versand = Shirts an Kunden)",
+  "'boilr'",
+  "'Hamburg'"
+ ],
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "sub": "· 12 SCHRITTE",
+  "steps": [
+   "PRODUKT\n+ KUNDE",
+   "DRUCK\n+ PREIS",
+   "PARTNER\n+ NAME",
+   "LOGO",
+   "WEBSITE\nENTWURF",
+   "GEWERBE\nOFFEN",
+   "BETRIEBE",
+   "WERBEBRIEF\n+ ADRESSEN",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 7,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   6
+  ],
+  "wip": [
+   4
+  ],
+  "notiz": "Nummerierung 1:1 aus public/firma-ep/tag13–15/episode.json (Briefing: halten). Folge 16: WERBEBRIEF + ADRESSEN bleibt current und bekommt KEINEN Haken (Briefe haben noch 10 gelbe Felder, nicht versandfertig). Vorschlag: kleiner Fortschritts-Punkt '5 Briefe' am Feld im Ergebnis-Beat (B10), keine neue Karte. GEWERBE offen, WEBSITE 'ENTWURF'. Kein Umsatz-Zähler."
+ },
+ "story_objekt": {
+  "name": "fuenf_briefseiten",
+  "quellen": {
+   "briefe": {
+    "src": "design/lauf/Kolonnenshirt_Serienbriefe.docx",
+    "seiten": 5,
+    "lesbar": [
+     "Logo",
+     "Betreff 'Werbung: …'",
+     "gelbe Platzhalter ([Dein Name], [Ort, Datum], [Versandkosten und Lieferzeit ergänzen], [Telefon], [E-Mail], [Link oder Hinweis zur Datenschutzerklärung])"
+    ],
+    "schwarz": [
+     "Empfängerblock (Firmenname, Zusatz, Straße, PLZ Ort)",
+     "Website im Datenschutzsatz"
+    ],
+    "gefuellt_je_brief": [
+     "Firmenname",
+     "Straße",
+     "PLZ und Ort",
+     "Quelle im Datenschutzsatz"
+    ],
+    "offen_je_brief": 10,
+    "vorbehalt_seite": 2,
+    "hinweis": "Story-Objekt. Lokal aus der .docx rendern (wie brief-ansicht Folge 13): 5 Seiten, Empfängerblock + Website = schwarze Balken, gelbe Platzhalter lesbar. Gefüllte 4 Stellen = grün umrandete Balken. Nie briefe-text.txt, nie Namen/Straßen/PLZ/Orte außer Chemnitz."
+   },
+   "brief13": {
+    "src": "../firma-tag13/design/lauf/04-brief-word.png",
+    "hinweis": "Werbebrief aus Folge 13 (eine Seite), Empfängerfeld gelb/leer. Rückblick."
+   },
+   "liste15": {
+    "src": "../firma-tag15/design/lauf/Kolonnenshirt_Empfaenger_Serienbrief.xlsx",
+    "hinweis": "Excel aus Folge 15 klein (wie Folge 15 gerendert): Namen/Adressen schwarz, Versand-Chips 4× Ja grün, 1× Ja mit Vorbehalt gelb. Rückblick + Claude-Weg."
+   }
+  },
+  "plaetze": [
+   [
+    "0",
+    "hook: fünf Seiten gefächert, gelbe Lücken"
+   ],
+   [
+    "Ich@4.5",
+    "off"
+   ],
+   [
+    "Ein@10.5",
+    "EIN Brief + Liste getrennt"
+   ],
+   [
+    "Heute",
+    "Adress-Balken schweben zum Brief"
+   ],
+   [
+    "Claude+0.15",
+    "off (Anhang-Karten im Shot)"
+   ],
+   [
+    "5@20",
+    "fünf Seiten aus der Datei-Karte"
+   ],
+   [
+    "4@22.5",
+    "eine Seite vorn, 4 grün"
+   ],
+   [
+    "Absender",
+    "gelbe Felder der Seite"
+   ],
+   [
+    "Als@31.8",
+    "Versand-Zeile → Paket"
+   ],
+   [
+    "Kommentiere",
+    "Mini-Briefstapel in der Endkarte"
+   ]
+  ]
+ },
+ "shots": {
+  "01": {
+   "src": "design/lauf/01-prompt-mit-anhang.png",
+   "size": [
+    1035,
+    532
+   ],
+   "crop": {
+    "x": 555,
+    "y": 40,
+    "w": 385,
+    "h": 192
+   },
+   "marks": [
+    {
+     "x": 562,
+     "y": 48,
+     "w": 178,
+     "h": 178,
+     "farbe": "orange",
+     "at": "Brief@16.4",
+     "was": "Anhang-Karte 'Kolonnenshirt_Werbebrief.docx · DOCX'"
+    },
+    {
+     "x": 754,
+     "y": 48,
+     "w": 178,
+     "h": 178,
+     "farbe": "orange",
+     "at": "Liste@16.9",
+     "was": "Anhang-Karte 'Kolonnenshirt_Empfaenger_Serienbrief.xlsx · XLSX'"
+    }
+   ],
+   "hinweis": "Lesbar nur die beiden Anhang-Karten; Prompt darunter nur weiche Textur. Keine Sidebar."
+  },
+  "07": {
+   "src": "design/lauf/07-schritte-zeile.png",
+   "size": [
+    1147,
+    105
+   ],
+   "hinweis": "Optional unter der Minuten-Karte: nur die graue Schritte-Zeile 'Eine Datei geteilt, 3 Dateien gelesen, 4 Befehle ausgeführt' (≤ 10 Wörter), kein Zusatztext."
+  },
+  "06": {
+   "src": "design/lauf/06-datei-karte.png",
+   "size": [
+    937,
+    82
+   ],
+   "hinweis": "Datei-Karte 'Kolonnenshirt serienbriefe · Dokument · DOCX' – aus ihr fächern auf '5@20' die fünf Briefseiten auf."
+  },
+  "04": {
+   "src": "design/lauf/04-offen-platzhalter.png",
+   "size": [
+    1147,
+    420
+   ],
+   "bereiche": {
+    "absender": {
+     "x": 70,
+     "y": 62,
+     "w": 700,
+     "h": 32,
+     "at": "Absender"
+    },
+    "datum": {
+     "x": 70,
+     "y": 100,
+     "w": 900,
+     "h": 54,
+     "at": "Datum"
+    },
+    "versand": {
+     "x": 70,
+     "y": 168,
+     "w": 540,
+     "h": 32,
+     "at": "Versandkosten"
+    }
+   },
+   "hinweis": "Beleg-Textur hinter dem 2. Warum-Grund, je Bereich auf sein Wort markiert. Nie als Lesetext groß (> 12 Wörter)."
+  },
+  "08-anonym": {
+   "src": "design/lauf/08-gefuellt-anonym.png",
+   "size": [
+    1147,
+    265
+   ],
+   "hinweis": "Optional Beleg-Textur hinter Grund 1 ('Pro Brief nur Felder aus der Empfängerliste'), nur -anonym."
+  },
+  "02/05": "in dieser Folge nicht geplant; nur als -anonym"
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 0.74,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Frame 1 = Ergebnis (hooks.md): Hook-Frage oben ab Frame 0 ('Wie viel Umsatz macht eine KI in 100 Tagen?'). Darunter die fünf echten Briefseiten aus Claudes Word-Datei (BRIEFE) gefächert: Logo oben, Empfängerblock schwarze Balken, gelbe Platzhalter lesbar. Auf 'Umsatz' Marker-Wisch über die gelben Felder der vordersten Seite. Kein Umsatz-Zähler, kein TAG.",
+   "kamera": "langsamer Push-in auf die vorderste Seite; Drop-Punch +4 % auf 'Umsatz'",
+   "frage": "Fünf Briefe – warum sind da noch gelbe Lücken?",
+   "karten": [
+    {
+     "text": "Wie viel Umsatz macht / eine KI in 100 Tagen?",
+     "at": "0",
+     "t": 0.0
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.35
+    }
+   ],
+   "briefe": {
+    "src": "design/lauf/Kolonnenshirt_Serienbriefe.docx",
+    "seiten": 5,
+    "lesbar": [
+     "Logo",
+     "Betreff 'Werbung: …'",
+     "gelbe Platzhalter ([Dein Name], [Ort, Datum], [Versandkosten und Lieferzeit ergänzen], [Telefon], [E-Mail], [Link oder Hinweis zur Datenschutzerklärung])"
+    ],
+    "schwarz": [
+     "Empfängerblock (Firmenname, Zusatz, Straße, PLZ Ort)",
+     "Website im Datenschutzsatz"
+    ],
+    "gefuellt_je_brief": [
+     "Firmenname",
+     "Straße",
+     "PLZ und Ort",
+     "Quelle im Datenschutzsatz"
+    ],
+    "offen_je_brief": 10,
+    "vorbehalt_seite": 2,
+    "hinweis": "Story-Objekt. Lokal aus der .docx rendern (wie brief-ansicht Folge 13): 5 Seiten, Empfängerblock + Website = schwarze Balken, gelbe Platzhalter lesbar. Gefüllte 4 Stellen = grün umrandete Balken. Nie briefe-text.txt, nie Namen/Straßen/PLZ/Orte außer Chemnitz."
+   },
+   "events": [
+    0.0,
+    "Umsatz"
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 0.74,
+   "bis": 3.38,
+   "wort_start": {
+    "w": "macht",
+    "after": 0
+   },
+   "bild": "Nur Ereignisse, kein neuer Text: die gelben Platzhalter der vordersten Seite pulsen nacheinander ('macht', 'Unternehmen', 'das@1.5', 'KI@1.9'), die Seiten blättern einmal auf '100', Licht-Sweep auf 'Tage', Kamera rutscht auf 'lang' auf die gelbe Versand-Zeile.",
+   "kamera": "steht, atmet; Mini-Punch auf '100'",
+   "frage": "Was fehlt da noch?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "macht",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "Unternehmen",
+     "f": "tick",
+     "v": 0.18
+    },
+    {
+     "anker": "das@1.5",
+     "f": "popHi",
+     "v": 0.16
+    },
+    {
+     "anker": "KI@1.9",
+     "f": "click",
+     "v": 0.16
+    },
+    {
+     "anker": "100",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "Tage",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "lang",
+     "f": "wshort",
+     "v": 0.16
+    }
+   ],
+   "events": [
+    "macht",
+    "Unternehmen",
+    "das@1.5",
+    "KI@1.9",
+    "100",
+    "Tage",
+    "lang"
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.38,
+   "bis": 4.95,
+   "wort_start": {
+    "w": "ganz",
+    "after": 3
+   },
+   "bild": "Stempel 'GANZ ALLEINE.' auf 'alleine'; Punch-in auf 'führt?'; in der Pause danach pulsen die gelben Felder einmal.",
+   "kamera": "Punch-in 4 % auf 'führt?'",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine",
+     "t": 3.66
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz@3-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    },
+    {
+     "anker": "führt",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "t": 4.6,
+     "f": "tick",
+     "v": 0.15
+    }
+   ],
+   "events": [
+    "ganz@3",
+    "alleine",
+    "führt",
+    4.6
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 4.95,
+   "bis": 6.23,
+   "wort_start": {
+    "w": "Ich",
+    "after": 4.5
+   },
+   "bild": "Briefstapel fliegt raus, Gründungsplan blendet ein, Maskottchen hüpft auf 'probier'. Nicht erste Folge des Tages: kein Tages-Slam, kein 'TAG 4' (kleines HUD-Badge erlaubt).",
+   "kamera": "Pull-back zum Board",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ich@4.5-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "probier",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "aus@5",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "events": [
+    "Ich@4.5",
+    "probier",
+    "aus@5"
+   ],
+   "hook_at": {
+    "end": "Die@6.0-0.08"
+   }
+  },
+  {
+   "id": "B05",
+   "akt": "rueckblick",
+   "von": 6.23,
+   "bis": 9.34,
+   "wort_start": {
+    "w": "Die",
+    "after": 6.0
+   },
+   "bild": "Gründungsplan ganz im Bild (plan, wie Folge 13–15): WERBEBRIEF + ADRESSEN gold (current). Produkt-Karte 'SHIRTS MIT LOGO' auf 'verkauft'; auf 'Betriebe@8.8' kleine Handwerker-Silhouetten mit Shirt (kein Text).",
+   "kamera": "ruhig, Board voll",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "at": "verkauft",
+     "t": 7.21
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@6.0-0.08",
+     "f": "wqh",
+     "v": 0.18
+    },
+    {
+     "anker": "verkauft",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Betriebe@8.8",
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "rueckblick",
+   "von": 9.34,
+   "bis": 10.7,
+   "wort_start": {
+    "w": "bestickt",
+    "after": 9.0
+   },
+   "bild": "Banner 'erst auf Bestellung bestickt' in der Produkt-Karte.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "erst auf Bestellung / bestickt",
+     "at": "bestickt",
+     "t": 9.34
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "rueckblick",
+   "von": 10.7,
+   "bis": 13.47,
+   "wort_start": {
+    "w": "Ein",
+    "after": 10.5
+   },
+   "bild": "Am Feld WERBEBRIEF + ADRESSEN (gold): auf 'Ein@10.7' EIN Brief (BRIEF13, Empfängerfeld gelb leer) legt sich hin; auf '5@11.3' schiebt sich daneben die Liste aus Folge 15 (LISTE15) mit fünf Zeilen; auf 'geprüft' grüner Haken an der Liste (Chips 4× grün, 1× gelb bleiben Bild-Objekt). Kein neuer Textblock (Ziffer kommt aus den Untertiteln). Brief und Liste liegen GETRENNT – das ist die Lücke für heute.",
+   "kamera": "leichter Push-in auf Brief + Liste",
+   "frage": "Und wie kommt das zusammen?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ein@10.5",
+     "f": "page",
+     "v": 0.2
+    },
+    {
+     "anker": "5@11.2",
+     "f": "popLo",
+     "v": 0.18
+    },
+    {
+     "anker": "geprüft",
+     "f": "check",
+     "v": 0.24
+    },
+    {
+     "anker": "geprüft:end+0.15",
+     "f": "wq2",
+     "v": 0.18
+    }
+   ],
+   "brief": {
+    "src": "../firma-tag13/design/lauf/04-brief-word.png",
+    "hinweis": "Werbebrief aus Folge 13 (eine Seite), Empfängerfeld gelb/leer. Rückblick."
+   },
+   "liste": {
+    "src": "../firma-tag15/design/lauf/Kolonnenshirt_Empfaenger_Serienbrief.xlsx",
+    "hinweis": "Excel aus Folge 15 klein (wie Folge 15 gerendert): Namen/Adressen schwarz, Versand-Chips 4× Ja grün, 1× Ja mit Vorbehalt gelb. Rückblick + Claude-Weg."
+   }
+  },
+  {
+   "id": "B08",
+   "akt": "heute",
+   "von": 13.47,
+   "bis": 16.02,
+   "wort_start": {
+    "w": "Heute",
+    "after": 13.0
+   },
+   "bild": "Pill 'HEUTE: ADRESSEN → BRIEF' auf 'Heute'. Auf 'Adressen@14.1' lösen sich fünf Adress-Balken (schwarz, unlesbar) aus der Liste und schweben zum leeren gelben Empfängerfeld des Briefs; auf 'Brief@14.8' stoppen sie davor (noch nicht drin).",
+   "kamera": "Fahrt von der Liste zum Brief",
+   "frage": "Wie macht sie das?",
+   "karten": [
+    {
+     "text": "HEUTE: ADRESSEN → BRIEF",
+     "at": "Heute",
+     "t": 13.47
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Heute+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "Adressen@14.1",
+     "f": "wshort",
+     "v": 0.14
+    },
+    {
+     "anker": "Brief@14.8",
+     "f": "tick",
+     "v": 0.14
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 16.02,
+   "bis": 18.63,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Echter Shot 01 im Paper-Fenster (SHOT01), Einstieg 'Claude+0.15': nur die zwei Anhang-Karten. Auf 'Brief@16.4' orange Rahmen um DOCX, auf 'Liste@16.9' um XLSX; auf 'angehängt' Zeiger tippt auf '+', beide Karten hüpfen.",
+   "kamera": "Push-in auf die Anhang-Karten",
+   "frage": "Womit fängt sie an?",
+   "karten": [
+    {
+     "text": "Shot 01 Anhang-Karten DOCX + XLSX (Screenshot, ≤ 8 lesbare Wörter)",
+     "at": "Claude+0.15",
+     "t": 16.02
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Claude",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "Brief@16.4",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Liste@16.9",
+     "f": "popLo",
+     "v": 0.2
+    },
+    {
+     "anker": "angehängt",
+     "f": "click",
+     "v": 0.22
+    }
+   ],
+   "ton": "Pause 'Claude:' → 'Brief' 0,25 s (Stimme), danach 0,7 s bis 'Nach'",
+   "shot": {
+    "src": "design/lauf/01-prompt-mit-anhang.png",
+    "size": [
+     1035,
+     532
+    ],
+    "crop": {
+     "x": 555,
+     "y": 40,
+     "w": 385,
+     "h": 192
+    },
+    "marks": [
+     {
+      "x": 562,
+      "y": 48,
+      "w": 178,
+      "h": 178,
+      "farbe": "orange",
+      "at": "Brief@16.4",
+      "was": "Anhang-Karte 'Kolonnenshirt_Werbebrief.docx · DOCX'"
+     },
+     {
+      "x": 754,
+      "y": 48,
+      "w": 178,
+      "h": 178,
+      "farbe": "orange",
+      "at": "Liste@16.9",
+      "was": "Anhang-Karte 'Kolonnenshirt_Empfaenger_Serienbrief.xlsx · XLSX'"
+     }
+    ],
+    "hinweis": "Lesbar nur die beiden Anhang-Karten; Prompt darunter nur weiche Textur. Keine Sidebar."
+   },
+   "einstieg": "Claude+0.15"
+  },
+  {
+   "id": "B10",
+   "akt": "ergebnis",
+   "von": 18.63,
+   "bis": 21.55,
+   "wort_start": {
+    "w": "Nach",
+    "after": 18.3
+   },
+   "bild": "Karte '≈ 1 MINUTE' auf 'Minute' mit kleiner Stoppuhr, die eine Runde läuft (Lauf 12:14:16 → 12:15:16). Darunter optional SHOT07 (Schritte-Zeile) weich. Auf '5@20' fächern aus der Datei-Karte (SHOT06) die fünf Briefseiten (BRIEFE) auf – das Story-Objekt kehrt aus Frame 1 zurück.",
+   "kamera": "Pull-back, damit alle fünf Seiten ganz im Bild sind",
+   "frage": "Sind die jetzt fertig?",
+   "karten": [
+    {
+     "text": "≈ 1 MINUTE",
+     "at": "Minute",
+     "t": 19.11
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Nach@18.3",
+     "f": "wshort",
+     "v": 0.16
+    },
+    {
+     "anker": "Minute",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "5@20",
+     "f": "power",
+     "v": 0.22
+    },
+    {
+     "anker": "Briefe@20.3",
+     "f": "page",
+     "v": 0.2
+    }
+   ],
+   "briefe": {
+    "src": "design/lauf/Kolonnenshirt_Serienbriefe.docx",
+    "seiten": 5,
+    "lesbar": [
+     "Logo",
+     "Betreff 'Werbung: …'",
+     "gelbe Platzhalter ([Dein Name], [Ort, Datum], [Versandkosten und Lieferzeit ergänzen], [Telefon], [E-Mail], [Link oder Hinweis zur Datenschutzerklärung])"
+    ],
+    "schwarz": [
+     "Empfängerblock (Firmenname, Zusatz, Straße, PLZ Ort)",
+     "Website im Datenschutzsatz"
+    ],
+    "gefuellt_je_brief": [
+     "Firmenname",
+     "Straße",
+     "PLZ und Ort",
+     "Quelle im Datenschutzsatz"
+    ],
+    "offen_je_brief": 10,
+    "vorbehalt_seite": 2,
+    "hinweis": "Story-Objekt. Lokal aus der .docx rendern (wie brief-ansicht Folge 13): 5 Seiten, Empfängerblock + Website = schwarze Balken, gelbe Platzhalter lesbar. Gefüllte 4 Stellen = grün umrandete Balken. Nie briefe-text.txt, nie Namen/Straßen/PLZ/Orte außer Chemnitz."
+   },
+   "shot": {
+    "src": "design/lauf/06-datei-karte.png",
+    "size": [
+     937,
+     82
+    ],
+    "hinweis": "Datei-Karte 'Kolonnenshirt serienbriefe · Dokument · DOCX' – aus ihr fächern auf '5@20' die fünf Briefseiten auf."
+   },
+   "shot_optional": {
+    "src": "design/lauf/07-schritte-zeile.png",
+    "size": [
+     1147,
+     105
+    ],
+    "hinweis": "Optional unter der Minuten-Karte: nur die graue Schritte-Zeile 'Eine Datei geteilt, 3 Dateien gelesen, 4 Befehle ausgeführt' (≤ 10 Wörter), kein Zusatztext."
+   }
+  },
+  {
+   "id": "B11",
+   "akt": "entscheidung",
+   "von": 21.55,
+   "bis": 24.21,
+   "wort_start": {
+    "w": "Aber",
+    "after": 21.0
+   },
+   "bild": "Entscheidung: Kamera holt EINE Briefseite nach vorn (Seite 1). Auf '4@22.6' leuchten genau vier Stellen grün (geschwärzt: Firmenname, Straße, PLZ/Ort, Quelle im Datenschutzsatz), die übrigen gelben Platzhalter pulsen. Karte '4 VON 14 GEFÜLLT' (Lauf: 4 von 14 Platzhaltern je Brief). Damit klar ist: vier Felder PRO BRIEF, nicht vier Briefe (Prüfer-Auflage). In der 0,89-s-Pause vor 'Warum?' steht das Bild, Musik-Mulde.",
+   "kamera": "Push-in auf eine Seite, Halt",
+   "frage": "Warum nur vier?",
+   "karten": [
+    {
+     "text": "4 VON 14 GEFÜLLT",
+     "at": "4@22.6",
+     "t": 22.65
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Aber-0.08",
+     "f": "wq2",
+     "v": 0.18
+    },
+    {
+     "anker": "4@22.5",
+     "f": "clack",
+     "v": 0.34
+    },
+    {
+     "anker": "Felder@22.9",
+     "f": "tick",
+     "v": 0.14
+    }
+   ],
+   "ton": "Musik: Mulde Clip 23,1–24,15 (Kurve 0,025); das Stück wird ab ~24–25 s lauter (Track 77–78 s) = natürlicher Akzent auf 'Warum?' (24,21; Kurve 0,05)"
+  },
+  {
+   "id": "B12",
+   "akt": "warum",
+   "von": 24.21,
+   "bis": 27.56,
+   "wort_start": {
+    "w": "Warum",
+    "after": 24.0
+   },
+   "bild": "Briefseite (gewählt) rückt ins obere Drittel und bleibt. Pill 'WARUM?' auf 'Warum?'. Grund 1 auf 'Liste@26.5': Karte 'STEHT IN DER LISTE', Gegenwert grau 'Erfinden ✗' (Prompt 'Erfinde nichts'); die vier grünen Stellen verbinden sich per Linie mit einer Mini-Liste (Spaltenköpfe Firmenname / Strasse / PLZ / Ort lesbar, Inhalte schwarz). Beleg-Textur optional SHOT08 (anonym).",
+   "kamera": "kurze Fahrt nach unten zu den Karten",
+   "frage": "Und der Rest?",
+   "karten": [
+    {
+     "text": "WARUM?",
+     "at": "Warum",
+     "t": 24.21
+    },
+    {
+     "text": "STEHT IN DER LISTE",
+     "unter": null,
+     "vs": "Erfinden ✗",
+     "at": "Liste@26.5",
+     "t": 26.52
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.25
+    },
+    {
+     "anker": "Liste@26.0",
+     "f": "popLo",
+     "v": 0.22
+    }
+   ],
+   "beleg_optional": {
+    "src": "design/lauf/08-gefuellt-anonym.png",
+    "size": [
+     1147,
+     265
+    ],
+    "hinweis": "Optional Beleg-Textur hinter Grund 1 ('Pro Brief nur Felder aus der Empfängerliste'), nur -anonym."
+   }
+  },
+  {
+   "id": "B13",
+   "akt": "warum",
+   "von": 27.56,
+   "bis": 32.1,
+   "wort_start": {
+    "w": "Absender",
+    "after": 27.0
+   },
+   "bild": "Grund 2: auf der Briefseite oben leuchten nacheinander die gelben Platzhalter auf ihr Wort: 'Absender' → [Dein Name]-Zeile, 'Datum' → [Ort, Datum], 'Versandkosten' → Zeile 'Versand: [Versandkosten und Lieferzeit ergänzen]' mit kleinem Shirt-Paket-Icon daneben (Prüfer-Auflage: Versand der SHIRTS an den Kunden, nie Briefmarke/Kuvert/Porto). Auf 'fehlen' Karte 'FEHLT IN BEIDEN DATEIEN', Gegenwert grau 'Brief ✗ · Liste ✗'. Beleg-Textur SHOT04 (Bereiche je Wort).",
+   "kamera": "leichter Push-in auf die gelben Felder, Halt in der 0,7-s-Pause",
+   "frage": "Und was macht sie damit?",
+   "karten": [
+    {
+     "text": "FEHLT IN BEIDEN DATEIEN",
+     "unter": null,
+     "vs": "Brief ✗ · Liste ✗",
+     "at": "fehlen",
+     "t": 30.17
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Absender",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Datum",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Versandkosten",
+     "f": "popHi",
+     "v": 0.18
+    },
+    {
+     "anker": "fehlen",
+     "f": "stamp",
+     "v": 0.28
+    }
+   ],
+   "beleg": {
+    "src": "design/lauf/04-offen-platzhalter.png",
+    "size": [
+     1147,
+     420
+    ],
+    "bereiche": {
+     "absender": {
+      "x": 70,
+      "y": 62,
+      "w": 700,
+      "h": 32,
+      "at": "Absender"
+     },
+     "datum": {
+      "x": 70,
+      "y": 100,
+      "w": 900,
+      "h": 54,
+      "at": "Datum"
+     },
+     "versand": {
+      "x": 70,
+      "y": 168,
+      "w": 540,
+      "h": 32,
+      "at": "Versandkosten"
+     }
+    },
+    "hinweis": "Beleg-Textur hinter dem 2. Warum-Grund, je Bereich auf sein Wort markiert. Nie als Lesetext groß (> 12 Wörter)."
+   }
+  },
+  {
+   "id": "B14",
+   "akt": "als_naechstes",
+   "von": 32.1,
+   "bis": 36.32,
+   "wort_start": {
+    "w": "Als",
+    "after": 31.8
+   },
+   "bild": "Pill 'ALS NÄCHSTES' auf 'Als'. Die gelbe Versand-Zeile aus dem Brief löst sich, daneben ein Karton mit Logo-Shirt (Paket an einen Betrieb) und ein Preisschild '? €'. Frage-Karte 'VERSAND DER SHIRTS?' auf 'Versand@34.5'. Kein Kuvert, keine Briefmarke, kein Drucker.",
+   "kamera": "Push-in auf Paket + Preisschild, Halt",
+   "frage": "Was kostet das?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@31.8",
+     "t": 32.1
+    },
+    {
+     "text": "VERSAND DER SHIRTS?",
+     "at": "Versand@34.5",
+     "t": 34.54
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@31.8-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Als@31.8",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "anker": "kostet",
+     "f": "tick",
+     "v": 0.14
+    },
+    {
+     "anker": "Versand@34.5",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Shirts",
+     "f": "popLo",
+     "v": 0.18
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "cta",
+   "von": 36.32,
+   "bis": 44.13,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 36.0
+   },
+   "bild": "Endkarte wie Folge 9–15 (end-Akt, itemTag 'DM'): Keyword 'Serienbrief' tippt auf '„Serienbrief“', Haken, Flieger. EIN Block 'ANLEITUNG' auf 'Anleitung' (Snip: Anhang-Karten DOCX + XLSX aus Shot 01 + Mini-Briefstapel, Text unlesbar). Ergebnis-Block '10 MINUTEN: EIGENE SERIENBRIEFE' auf 'Damit+0.05', Puls auf 'eigene'. Halt bis Ende (Endkarte 1,0 s nach Stimmende), Bot-Hüpfer ~SEC-0,3.",
+   "kamera": "ruhiger Push-in, Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "Serienbrief (Keyword)",
+     "at": "Serienbrief@37",
+     "t": 37.23
+    },
+    {
+     "text": "ANLEITUNG",
+     "at": "Anleitung",
+     "t": 39.22
+    },
+    {
+     "text": "10 MINUTEN: EIGENE SERIENBRIEFE",
+     "at": "Damit+0.05",
+     "t": 40.52
+    },
+    {
+     "text": "Puls auf EIGENE (kein neuer Text)",
+     "at": "eigene"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "Serienbrief@37",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Serienbrief@37:end",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "ich@38.4",
+     "f": "wqh",
+     "v": 0.2
+    },
+    {
+     "anker": "Anleitung",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Damit+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "10@41",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "eigene",
+     "f": "pop",
+     "v": 0.2
+    },
+    {
+     "t": 43.83,
+     "f": "tick",
+     "v": 0.12
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

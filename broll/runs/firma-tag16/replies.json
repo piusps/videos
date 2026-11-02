@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Wie kommen die Adressen in den Brief: Serienbrief-Anleitung mit Prompt per DM, Trigger-Wort im Video: Serienbrief)",
+ "commentReply": "Die Anleitung liegt in deiner DM. An wen willst du deinen ersten Serienbrief schicken?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Kopierst du Adressen bisher noch von Hand?",
+  "Schick ich dir gerade, mit dem Prompt. Wie viele Briefe willst du rausschicken?",
+  "Liegt in deiner DM. Schreibst du lieber Brief oder Mail an Firmen?",
+  "Angekommen, der Prompt ist dabei. Hast du deine Empfängerliste schon in Excel?",
+  "Die Anleitung ist unterwegs. Welches Feld im Brief füllst du zuerst?"
+ ]
+}

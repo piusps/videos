@@ -1,0 +1,313 @@
+{
+ "topic": "Versand",
+ "trigger_word": "Versand",
+ "cover": {
+  "kicker": "KI baut eine Firma · Was kostet der Versand der Shirts?",
+  "title": "Deinen Preis mit Versand durchrechnen. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie den Versand für ihre Shirts geklärt hat: Websuche nach dem Versandtarif, Rechnung gegen den eigenen Preis, Entscheidung „inklusive oder extra“. Mit dem Rechenweg zum Selbstrechnen, unserer Gegenprüfung und der Liste, was Claude nicht prüfen kann.",
+  "stat": {
+   "value": "1 min 39 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: 5 Websuchen, 1 Seitenabruf, eine Word-Datei mit der neuen Versandzeile in allen 5 Briefen. Entscheidung: Versand extra."
+  },
+  "outcomes": [
+   "Die Versand-Frage zum Kopieren, mit Anhang und ohne",
+   "Der Rechenweg: erstes Teil + Aufschlag, Steuer, Schwelle",
+   "Unsere Gegenprüfung: warum nur der Checkout verbindlich ist",
+   "Ehrlich ausgewiesen: was Claude nicht prüfen kann"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Die Versand-Frage zum Kopieren.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** deinen Angebotsbrief als Word-Datei an, in dem der Platzhalter für die Versandkosten noch offen ist. Dann füge diese Frage ein und ersetze die Teile in eckigen Klammern. Das ist die Frage aus unserem Lauf, verallgemeinert für dein eigenes Angebot.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante A: mit Anhang (dein Brief als Word-Datei)",
+     "text": "Im Anhang ist mein Angebotsbrief. Mein Angebot: [PREIS] für [MENGE] [PRODUKT], hergestellt und verschickt über [ANBIETER], Kunden in Deutschland. Im Brief ist der Platzhalter „Versandkosten“ noch offen. Finde mit der Websuche heraus, was der Versand bei [ANBIETER] nach Deutschland für [MENGE] und für ein einzelnes Teil kostet, jeweils mit Quelle. Rechne aus, ob der Versand in meinem Preis noch drin ist oder ob ich die Versandkosten im Brief extra nennen muss. Trag das Ergebnis in den Brief ein, wo der Platzhalter steht, und gib ihn mir als Word-Datei zurück. Sag mir, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Claude hat in unserem Lauf 1 Minute 39 Sekunden gearbeitet. Mit Anhängen, Lesen der Antwort und dem Nachrechnen auf der nächsten Seite hast du nach etwa 10 Minuten deinen Preis mit Versand durchgerechnet. Den verbindlichen Versandpreis siehst du danach im Checkout deines Anbieters."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → Häkchen bei **„Gedächtnis“** entfernen → **„Dateien hochladen oder hinzufügen“** → Brief anhängen → Frage einfügen → senden."
+      },
+      {
+       "k": "Websuche",
+       "v": "Muss an sein, Claude sucht den Versandtarif selbst. In unserem Lauf: 5 Websuchen und 1 Seitenabruf, Research aus."
+      },
+      {
+       "k": "Ergebnis",
+       "v": "Die fertige Datei erscheint als Karte im Chat (**„Dokument · DOCX“**). Darüber steht Claudes Rechnung mit Quellen."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf am 31.10.2026: 1 Minute 39 Sekunden."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "So sieht es aus",
+   "title": "Die neue Zeile im Brief.",
+   "intro": "Seite 1 von 5 aus Claudes Datei. Orange markiert: die Zeile, die Claude eingetragen hat. Claude schreibt den Versand als „zzgl.“, also extra. Die Beträge darin sind Claudes eigene, aufgerundete Rechnung, kein Preis von Printful (siehe Gegenprüfung).",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/brief-versandzeile.png",
+     "width": "80%",
+     "caption": "Echter Lauf vom 31.10.2026, Seite 1 von 5. Empfängerblock und Website von uns geschwärzt. Den Satz zur Lieferzeit hinter der Versandzeile haben wir ausgeblendet, weil er nicht sicher belegt ist."
+    }
+   ]
+  },
+  {
+   "kicker": "Variante B",
+   "title": "Noch kein Brief? Dann ohne Anhang.",
+   "intro": "Du willst erst wissen, ob dein Preis den Versand trägt? Dann schreib dein Angebot direkt in die Frage.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Variante B: ohne Anhang (nicht getestet)",
+     "text": "Ich verkaufe [PRODUKT] für [PREIS], verschickt über [ANBIETER] nach Deutschland. Finde mit der Websuche die Versandkosten für ein Teil und für [MENGE] Teile, mit Quelle. Rechne aus, wie viel mich ein Teil im Einkauf höchstens kosten darf, damit nach dem Versand nichts draufgeht, einmal mit und einmal ohne Umsatzsteuer. Sag mir, ob ich den Versand extra nennen sollte und was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Nicht getestet",
+     "text": "Variante B ist eine ungetestete Abwandlung des echten Prompts. Getestet ist Variante A mit Anhang (1 Minute 39 Sekunden)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Beispiel",
+      "Wofür die Rechnung passt"
+     ],
+     "widths": [
+      "26%",
+      "74%"
+     ],
+     "rows": [
+      [
+       "Kaffeerösterin",
+       "250-g-Beutel im Abo: Versand pro Paket gegen den Preis pro Beutel"
+      ],
+      [
+       "Kerzenmacher",
+       "Geschenkset mit 3 Kerzen in schweren Glasgläsern"
+      ],
+      [
+       "Fotografin",
+       "Gedruckte Fotobücher über einen Druckdienst, Versand pro Buch"
+      ],
+      [
+       "Tischler",
+       "Schneidebretter im Onlineshop, 1 Stück gegen 4 Stück"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Der Rechenweg",
+   "title": "So rechnest du es selbst nach.",
+   "break_before": true,
+   "intro": "Claude hat in unserem Lauf in vier Schritten gerechnet. Die gleichen vier Schritte kannst du mit deinen eigenen Zahlen machen, mit Taschenrechner oder als Nachfrage im selben Chat.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Versand für deine Menge",
+       "text": "Bei vielen Anbietern gilt: Preis für das erste Teil plus ein Aufschlag für jedes weitere Teil. **Versand = erstes Teil + (Menge − 1) × Aufschlag.**"
+      },
+      {
+       "title": "Steuer klären",
+       "text": "Steht der Tarif ohne Umsatzsteuer da? Dann prüfen, ob sie für dich dazukommt. Laut einem Testbericht, den Claude zitiert, schlägt Printful ohne geprüfte USt-IdNr. 19 % deutsche Umsatzsteuer auf."
+      },
+      {
+       "title": "Schwelle ausrechnen",
+       "text": "So viel darf ein Teil im Einkauf höchstens kosten, damit nach dem Versand nichts draufgeht: **(Verkaufspreis − Versand) ÷ Menge.** Mit Umsatzsteuer-Ausweis rechnest du mit Netto-Preisen, als Kleinunternehmer mit Brutto-Preisen."
+      },
+      {
+       "title": "Anteil am Preis",
+       "text": "**Versand ÷ Verkaufspreis.** So siehst du, wie viel vom Preis der Versand frisst. Im Lauf beim Einzelshirt laut Claude etwa 17 % des Nettopreises."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "head": [
+      "Claudes Rechnung im Lauf",
+      "5 Shirts für 109 €",
+      "1 Shirt für 29,90 €"
+     ],
+     "widths": [
+      "40%",
+      "30%",
+      "30%"
+     ],
+     "rows": [
+      [
+       "Tarif laut Claude (Dollar)",
+       "4,99 $ + 4 × 1,45 $ = 10,79 $",
+       "4,99 $"
+      ],
+      [
+       "Umgerechnet (Kurs Juli 2026)",
+       "≈ 9,39 €",
+       "≈ 4,34 €"
+      ],
+      [
+       "Mit 19 % USt",
+       "≈ 11,17 €",
+       "≈ 5,17 €"
+      ],
+      [
+       "Im Brief, von Claude aufgerundet",
+       "11,20 €",
+       "5,20 €"
+      ],
+      [
+       "Schwelle Einkauf pro Shirt (netto)",
+       "16,44 €",
+       "20,79 €"
+      ],
+      [
+       "Schwelle Einkauf (Kleinunternehmer)",
+       "19,57 €",
+       "24,73 €"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Das ist Claudes Rechnung, kein Printful-Preis",
+     "text": "Alle Beträge in dieser Tabelle hat Claude im Lauf gerechnet. Den Kurs nennt Claude selbst „vom Juli 2026, einen tagesaktuellen Kurs habe ich nicht gefunden“. Das Aufrunden auf 11,20 € und 5,20 € ist laut Claude „meine Entscheidung“."
+    }
+   ]
+  },
+  {
+   "kicker": "Gegenprüfung",
+   "title": "Wir haben nachgesehen. Andere Zahlen.",
+   "intro": "Nach dem Lauf haben wir dieselbe Versandseite selbst abgerufen: [printful.com/shipping](https://www.printful.com/shipping), am 31.10.2026. Uns zeigte sie Euro statt Dollar.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Unsere Gegenprüfung",
+      "5 Shirts",
+      "1 Shirt"
+     ],
+     "widths": [
+      "40%",
+      "30%",
+      "30%"
+     ],
+     "rows": [
+      [
+       "Europa, T-Shirts: 4,49 € erstes Teil, + 1,25 € je weiteres",
+       "4,49 € + 4 × 1,25 € = 9,49 €",
+       "4,49 €"
+      ],
+      [
+       "Mit 19 % USt (die Seite nennt keine USt)",
+       "≈ 11,29 €",
+       "≈ 5,34 €"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Verbindlich ist nur der Checkout",
+     "text": "Mit Steuer liegen unsere Werte knapp über Claudes 11,20 € und 5,20 €. Versandseiten zeigen je nach Land und Währung andere Zahlen. Welcher Preis für dein Konto gilt, zeigt dir nur der Checkout oder der Versandrechner in deinem eigenen Konto. Claude sagt das selbst: „Den genauen Preis zeigt dir Printful im Checkout oder im Versandrechner deines Kontos.“"
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "Tarif im eigenen Konto nachsehen, bevor die Zahl in einen Brief oder Shop geht.",
+      "Prüfen, in welcher Währung du abgerechnet wirst.",
+      "Lieferzeiten nicht aus der Antwort übernehmen: In unserem Lauf waren sie nicht sicher belegt. Nur nennen, was dein Anbieter für dein Konto angibt."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Entscheidung",
+   "title": "Nicht belegt? Dann Versand extra.",
+   "intro": "Ob der Versand in 109 € und 29,90 € passt, konnte Claude nicht sagen. Deshalb steht er im Brief extra.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/04-passt-preis-tabelle.png",
+     "width": "82%",
+     "caption": "Echter Lauf vom 31.10.2026: Claudes Antwort auf die Frage, ob der Versand in den Preis passt."
+    },
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Claude wörtlich",
+     "text": "„Weil ich nicht belegen kann, dass der Versand in deinen Preisen drin ist, steht er im Brief separat.“ Und: „Wenn dein Shirt-Einkaufspreis klar unter den Werten in der Tabelle liegt, kannst du die Zeile auch auf „Versand innerhalb Deutschlands inklusive“ ändern.“"
+    }
+   ]
+  },
+  {
+   "kicker": "Nicht geprüft",
+   "title": "Was Claude nicht prüfen kann.",
+   "intro": "Claude hat am Ende selbst aufgelistet, was offen bleibt. Verallgemeinert für dein Angebot:",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/10-nicht-pruefen.png",
+     "width": "82%",
+     "caption": "Echter Lauf vom 31.10.2026: Claudes Liste „Was ich nicht prüfen konnte“."
+    },
+    {
+     "type": "checklist",
+     "items": [
+      "**Dein Einkaufspreis:** Davon hängt ab, ob sich das Angebot überhaupt rechnet. Im Lauf fehlte der Preis für das gestickte Shirt.",
+      "**Währung und Kurs:** ob du in Euro oder Dollar abgerechnet wirst und zu welchem Kurs.",
+      "**Dein Konto-Tarif:** ob der öffentliche Tarif für dein Konto gilt. Verbindlich nur im Checkout.",
+      "**Dein Steuerstatus:** mit oder ohne Umsatzsteuer-Ausweis, USt-IdNr.",
+      "**Lieferzeit:** besonders bei Sonderfertigung wie Stickerei.",
+      "**Rechtliche Preisangaben:** Claude: „Ich bin kein Anwalt.“"
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Claudes Betrag als Anbieterpreis übernehmen:** Im Lauf hat Claude umgerechnet und aufgerundet. Unsere Gegenprüfung sah andere Zahlen.",
+      "**Steuer vergessen:** 19 % auf den Versand machen den Unterschied zwischen „passt“ und „passt nicht“.",
+      "**Nur mit einem Teil rechnen:** Der Aufschlag je weiteres Teil ändert den Anteil am Preis stark. Rechne Einzelteil und Paket getrennt.",
+      "**„Erfinde nichts“ weglassen:** Dann riskierst du ausgedachte Tarife ohne Quelle.",
+      "**Brief für fertig halten:** Claude füllt nur die Versandzeile. Im Lauf blieben 9 gelbe Platzhalter je Brief offen, etwa Absender, Kontakt und Datum.",
+      "Das ist eine Zusammenfassung aus einem Lauf, keine Steuer- oder Rechtsberatung."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes: Was zahlt sie für das gestickte Shirt?",
+  "text": "Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts-, Steuer- oder Rechtsberatung. Frage, Rechnung, Entscheidung und Nicht-prüfen-Liste aus einem echten claude.ai-Lauf vom 31.10.2026 (1 min 39 s, 5 Websuchen, 1 Seitenabruf, Gedächtnis aus), wörtlich übernommen oder verallgemeinert. Beträge in Dollar und die gerundeten Euro-Beträge sind Claudes Rechnung. Gegenprüfung: printful.com/shipping, abgerufen am 31.10.2026. Verbindlich ist nur der Checkout im eigenen Konto. Betriebsnamen, Anschriften und Websites weggelassen oder geschwärzt. Variante B und Beispiele nach Beruf nicht getestet. Menünamen können sich ändern."
+}

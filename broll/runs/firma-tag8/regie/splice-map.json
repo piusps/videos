@@ -1,0 +1,208 @@
+{
+ "mapping": [
+  [
+   0.0,
+   3.8450000000000006,
+   0.0,
+   3.8450113378684807
+  ],
+  [
+   4.035,
+   7.66,
+   3.8450113378684807,
+   7.470000000000001
+  ],
+  [
+   7.73,
+   8.97,
+   7.470000000000001,
+   8.71
+  ],
+  [
+   9.06,
+   10.305,
+   8.71,
+   9.95498866213152
+  ],
+  [
+   10.565000000000001,
+   11.58,
+   9.95498866213152,
+   10.969977324263038
+  ],
+  [
+   11.790000000000001,
+   13.305000000000001,
+   10.969977324263038,
+   12.484988662131519
+  ],
+  [
+   13.305000000000001,
+   21.115000000000002,
+   12.70498866213152,
+   20.51498866213152
+  ],
+  [
+   21.315000000000005,
+   23.015,
+   20.51498866213152,
+   22.214988662131518
+  ],
+  [
+   23.015,
+   23.535,
+   22.394988662131517,
+   22.914988662131517
+  ],
+  [
+   23.585000000000004,
+   26.69,
+   22.914988662131517,
+   26.019977324263035
+  ],
+  [
+   26.73,
+   29.115000000000002,
+   26.019977324263035,
+   28.404988662131515
+  ],
+  [
+   29.115000000000002,
+   30.875,
+   28.49498866213152,
+   30.25498866213152
+  ],
+  [
+   30.875,
+   36.915,
+   30.59498866213152,
+   36.63498866213152
+  ],
+  [
+   37.025,
+   42.05499999999999,
+   36.63498866213152,
+   41.66498866213152
+  ],
+  [
+   42.205,
+   44.695419501133784,
+   41.66498866213152,
+   44.155419501133785
+  ]
+ ],
+ "pausen": [
+  {
+   "nach": 14,
+   "wort": "führt?",
+   "vor": "Ich",
+   "roh": 0.44,
+   "neu": 0.25,
+   "grund": "führt? -> Ich"
+  },
+  {
+   "nach": 29,
+   "wort": "Betriebe,",
+   "vor": "bestickt",
+   "roh": 0.17,
+   "neu": 0.1,
+   "grund": "Rückblick"
+  },
+  {
+   "nach": 33,
+   "wort": "Bestellung.",
+   "vor": "Printful",
+   "roh": 0.21,
+   "neu": 0.12,
+   "grund": "Rückblick"
+  },
+  {
+   "nach": 36,
+   "wort": "Vorschlag:",
+   "vor": "hundertneun",
+   "roh": 0.41,
+   "neu": 0.15,
+   "grund": "Rückblick (Doppelpunkt)"
+  },
+  {
+   "nach": 39,
+   "wort": "fünf.",
+   "vor": "Heute",
+   "roh": 0.41,
+   "neu": 0.2,
+   "grund": "fünf. -> Heute"
+  },
+  {
+   "nach": 44,
+   "wort": "Firmennamen.",
+   "vor": "Ergebnis",
+   "roh": 0.0,
+   "neu": 0.22,
+   "grund": "Firmennamen. -> Ergebnis (neuer Akt)"
+  },
+  {
+   "nach": 64,
+   "wort": "Kluft.",
+   "vor": "Die",
+   "roh": 0.55,
+   "neu": 0.35,
+   "grund": "Kluft. -> Die KI wählt"
+  },
+  {
+   "nach": 68,
+   "wort": "Kolonnenshirt.",
+   "vor": "Warum?",
+   "roh": 0.17,
+   "neu": 0.35,
+   "grund": "Kolonnenshirt. -> Warum (Entscheidung setzt sich)"
+  },
+  {
+   "nach": 69,
+   "wort": "Warum?",
+   "vor": "Kolonne",
+   "roh": 0.4,
+   "neu": 0.35,
+   "grund": "Warum? -> Grund 1"
+  },
+  {
+   "nach": 78,
+   "wort": "Fünferpaket.",
+   "vor": "Firma",
+   "roh": 0.34,
+   "neu": 0.3,
+   "grund": "zwischen Grund 1 und 2"
+  },
+  {
+   "nach": 86,
+   "wort": "gefunden.",
+   "vor": "Die",
+   "roh": 0.21,
+   "neu": 0.3,
+   "grund": "zwischen Grund 2 und 3"
+  },
+  {
+   "nach": 90,
+   "wort": "Allerweltswörter.",
+   "vor": "Haken:",
+   "roh": 0.21,
+   "neu": 0.55,
+   "grund": "Allerweltswörter. -> Haken (Warum-Karte 3 steht >= 1,2 s, Haken setzt sich)"
+  },
+  {
+   "nach": 108,
+   "wort": "Nächstes:",
+   "vor": "Wie",
+   "roh": 0.36,
+   "neu": 0.25,
+   "grund": "Nächstes: -> Wie"
+  },
+  {
+   "nach": 126,
+   "wort": "Prüfliste.",
+   "vor": "Damit",
+   "roh": 0.4,
+   "neu": 0.25,
+   "grund": "Prüfliste. -> Damit"
+  }
+ ]
+}

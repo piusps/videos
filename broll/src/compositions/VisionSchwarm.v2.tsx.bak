@@ -1,0 +1,723 @@
+import React from "react";
+import { AbsoluteFill, Audio, Easing, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { loadFont as loadInstrumentSerif } from "@remotion/google-fonts/InstrumentSerif";
+import { loadFont as loadMono } from "@remotion/google-fonts/JetBrainsMono";
+import { PixelBot, BotProp } from "../components/PixelBot";
+import { BrandLogo, FaceAvatar } from "../components/BrandMarks";
+import { colors, fonts } from "../theme";
+import captions from "../../runs/vision-schwarm/captions.json";
+
+// Superkind vision film "Schwarm" for the company account, v2 after Pius' feedback (2026-10-20):
+// real CRT TV photo (CC0, Unsplash via Wikimedia, brand mark retouched) with Niklas in black & white,
+// zoomed out to head + shoulders + upper chest, shaky, no colour fringes; Inter Bold captions with the
+// active word in orange; the KI part in the FP-N Opus look (off-white grid, white/glass cards, PixelBots,
+// count-ups); only real app logos (public/logos); Tame Impala "Loser" instrumental, quieter; softer glitch;
+// image-film footage as a techy "live" feed with agent chips instead of a corporate photo frame;
+// role cards in the Opus style. Archive = Prelinger public domain (no watermarks).
+
+const { fontFamily: serif } = loadInstrumentSerif("normal", { weights: ["400"], subsets: ["latin", "latin-ext"] });
+const { fontFamily: serifItalic } = loadInstrumentSerif("italic", { weights: ["400"], subsets: ["latin", "latin-ext"] });
+
+loadMono("normal", { weights: ["700", "800"], subsets: ["latin", "latin-ext"] });
+
+const D = "vision-schwarm/";
+export const VS_FPS = 25;
+export const VS_SECONDS = 34.4;
+const O = 0.7; // voice offset: TV switches on before Niklas speaks
+const BREAK = 21.26; // "Was, wenn" — letterbox world ends, bright full-frame world starts
+const FILM_H = 810; // 4:3, like the archive film and the old TV
+const FILM_TOP = (1920 - FILM_H) / 2;
+const ACC = colors.accent;
+
+const C = {
+  bg: "#F3EFE6", grid: "rgba(0,0,0,0.045)", ink: "#151515", dim: "#8A877F", line: "#E7E4DD", card: "#FFFFFF",
+  orange: "#D97757", green: "#1E9E57", greenSoft: "#E6F5EC", red: "#E5484D", redSoft: "#FDE8E8", chip: "#141414", gold: "#F5C542", blue: "#3E8EF7",
+};
+const MONO = "JetBrains Mono";
+const shadow = "0 22px 48px rgba(20,20,20,0.10), 0 3px 8px rgba(20,20,20,0.06)";
+const glassLight: React.CSSProperties = {
+  background: "linear-gradient(150deg, rgba(255,255,255,0.86), rgba(255,255,255,0.62))",
+  border: "1.5px solid rgba(255,255,255,0.95)",
+  backdropFilter: "blur(24px) saturate(160%)",
+  WebkitBackdropFilter: "blur(24px) saturate(160%)",
+  boxShadow: "0 30px 70px rgba(30,24,16,0.14), 0 4px 12px rgba(30,24,16,0.06), inset 0 1px 0 rgba(255,255,255,1)",
+};
+
+// Word timings on the final timeline (whisper on the HeyGen render + O).
+type Cap = { text: string; startMs: number; endMs: number };
+const WORDS = (captions as Cap[]).map((c) => ({ s: c.startMs / 1000 + O, e: c.endMs / 1000 + O }));
+const W = {
+  heute: 8.46, eigenes: 10.35, aus: 11.54, agenten: 12.62, mails: 13.47, rechnungen: 14.79, angebote: 15.95,
+  rund: 17.06, chaos: 20.64, kraft: 22.46, trotzdem: 23.32, griff: 24.28, ein: 25.34, gehirn: 25.6, klare: 26.58,
+  direkt: 27.66, outlook: 28.27, sap: 29.04, datev: 29.42, superkind: 30.15, jeder: 30.83, sein: 32.0,
+};
+
+const SUBS: [number, number, string][] = [
+  [0.74, 2.3, "Früher brauchte eine Firma"], [2.3, 3.7, "ganze Etagen voller Leute."], [3.7, 4.95, "Nur für Papierkram."],
+  [4.95, 5.8, "Abtippen."], [5.8, 6.55, "Ablegen."], [6.55, 7.45, "Nachfragen."], [7.45, 8.4, "Jeden Tag."],
+  [8.46, 10.3, "Heute kann jeder Mitarbeiter"], [10.3, 11.5, "sein eigenes Team haben."], [11.5, 12.55, "Aus KI."],
+  [12.6, 14.7, "Agenten, die Mails beantworten,"], [14.7, 15.9, "Rechnungen prüfen,"], [15.9, 17.0, "Angebote schreiben."],
+  [17.0, 18.1, "Rund um die Uhr."], [18.15, 19.55, "Aber zehn Tools ohne Plan"], [19.55, 20.55, "sind kein Team."], [20.55, 21.1, "Das ist Chaos."],
+  [21.26, 23.25, "Was, wenn du die ganze Kraft nutzt"], [23.25, 25.2, "und trotzdem alles im Griff behältst?"],
+  [25.3, 26.5, "Ein Firmengehirn."], [26.5, 27.6, "Klare Rollen."], [27.6, 30.0, "Direkt in Outlook, SAP und DATEV."],
+];
+
+const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
+const rnd = (i: number) => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+const useSec = () => { const f = useCurrentFrame(); const { fps } = useVideoConfig(); return f / fps; };
+const k = (t: number, a: number, d = 0.3, e = Easing.out(Easing.cubic)) => interpolate(t, [a, a + d], [0, 1], { ...clamp, easing: e });
+const pop = (t: number, a: number, d = 0.38) => interpolate(t, [a, a + d], [0, 1], { ...clamp, easing: Easing.out(Easing.back(1.7)) });
+const popStyle = (t: number, a: number, rise = 18, from = 0.7): React.CSSProperties => {
+  const p = pop(t, a);
+  return { opacity: k(t, a, 0.14), transform: `translateY(${(1 - Math.min(p, 1)) * rise}px) scale(${from + (1 - from) * p})` };
+};
+const count = (t: number, a: number, b: number, to: number) => Math.round(to * interpolate(t, [a, b], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) }));
+const de = (n: number) => n.toLocaleString("de-DE");
+const seq = (a: number, b: number) => ({ from: Math.round(a * VS_FPS), durationInFrames: Math.max(1, Math.round((b - a) * VS_FPS)) });
+
+// ---------- texture ----------
+
+const Defs: React.FC = () => {
+  const f = useCurrentFrame();
+  return (
+    <svg width={0} height={0} style={{ position: "absolute" }}>
+      <defs>
+        <filter id="vsChroma" x="-5%" y="-5%" width="110%" height="110%">
+          <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r" />
+          <feOffset in="r" dx="4" dy="0" result="r2" />
+          <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="gb" />
+          <feOffset in="gb" dx="-3" dy="0" result="gb2" />
+          <feBlend in="r2" in2="gb2" mode="screen" />
+        </filter>
+        <filter id="vsNoise"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed={f % 97} /><feColorMatrix type="saturate" values="0" /></filter>
+      </defs>
+    </svg>
+  );
+};
+const Noise: React.FC<{ opacity: number; blend?: React.CSSProperties["mixBlendMode"] }> = ({ opacity, blend = "overlay" }) => (
+  <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity, mixBlendMode: blend, pointerEvents: "none" }}>
+    <rect width="100%" height="100%" filter="url(#vsNoise)" />
+  </svg>
+);
+const Scanlines: React.FC<{ opacity?: number; gap?: number }> = ({ opacity = 0.28, gap = 4 }) => (
+  <div style={{ position: "absolute", inset: 0, opacity, pointerEvents: "none", background: `repeating-linear-gradient(0deg, rgba(0,0,0,0.9) 0px, rgba(0,0,0,0.9) 1px, transparent 1px, transparent ${gap}px)` }} />
+);
+const Vignette: React.FC<{ strength?: number }> = ({ strength = 0.75 }) => (
+  <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: `radial-gradient(ellipse at 50% 50%, transparent 45%, rgba(0,0,0,${strength}) 100%)` }} />
+);
+const OpusBg: React.FC<{ children?: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
+  <AbsoluteFill style={{ background: C.bg, overflow: "hidden", ...style }}>
+    <div style={{ position: "absolute", inset: 0, backgroundImage: `linear-gradient(${C.grid} 1.5px, transparent 1.5px), linear-gradient(90deg, ${C.grid} 1.5px, transparent 1.5px)`, backgroundSize: "60px 60px" }} />
+    {children}
+  </AbsoluteFill>
+);
+const LabelChip: React.FC<{ text: string; dot?: string; style?: React.CSSProperties; size?: number }> = ({ text, dot = ACC, style, size = 28 }) => (
+  <div style={{ display: "inline-flex", alignItems: "center", gap: 12, background: C.chip, color: "#FFF", fontFamily: fonts.semibold, fontSize: size, padding: `${size * 0.36}px ${size * 0.8}px ${size * 0.36}px ${size * 0.6}px`, borderRadius: 999, boxShadow: "0 10px 24px rgba(0,0,0,0.18)", whiteSpace: "nowrap", ...style }}>
+    <span style={{ width: size * 0.48, height: size * 0.48, borderRadius: "50%", background: dot }} />
+    {text}
+  </div>
+);
+const Tag: React.FC<{ text: string; color: string; size?: number; style?: React.CSSProperties }> = ({ text, color, size = 18, style }) => (
+  <span style={{ display: "inline-block", fontFamily: MONO, fontWeight: 800, fontSize: size, letterSpacing: "0.12em", color: "#FFF", background: color, padding: `${size * 0.33}px ${size * 0.55}px ${size * 0.33}px ${size * 0.66}px`, borderRadius: 8, whiteSpace: "nowrap", ...style }}>{text}</span>
+);
+const Check: React.FC<{ size: number; color?: string; p?: number }> = ({ size, color = "#FFF", p = 1 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke={color} strokeWidth={3.2} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={24} strokeDashoffset={24 * (1 - p)} /></svg>
+);
+const Traffic: React.FC = () => (
+  <div style={{ display: "flex", gap: 9 }}>{["#FF5F57", "#FEBC2E", "#28C840"].map((c) => <div key={c} style={{ width: 14, height: 14, borderRadius: 7, background: c }} />)}</div>
+);
+
+// ---------- Niklas in black & white: shaky old broadcast ----------
+
+// The avatar render starts at timeline O; inside a Sequence starting at `at`, it must start `at - O` into the file.
+// `top`/`bottom` = fraction of the 16:9 render that fills the box vertically (head ≈ 0.12, upper chest ≈ 0.88).
+const BwAvatar: React.FC<{ at: number; boxW: number; boxH: number; top?: number; bottom?: number }> = ({ at, boxW, boxH, top = 0.1, bottom = 0.9 }) => {
+  const f = useCurrentFrame();
+  const t = f / VS_FPS;
+  const h = boxH / (bottom - top), w = (h * 16) / 9;
+  const jx = (rnd(f * 1.7) - 0.5) * 3 + Math.sin(t * 9) * 1.2;
+  const jy = (rnd(f * 3.3) - 0.5) * 3 + Math.sin(t * 2.3) * 2.5;
+  const hop = rnd(Math.floor(t * 3) + at * 10) > 0.86 ? (rnd(f) - 0.5) * 14 : 0; // the odd vertical-hold hop
+  const flick = 0.93 + 0.07 * rnd(f * 0.9);
+  return (
+    <AbsoluteFill style={{ background: "#0d0d0d", overflow: "hidden" }}>
+      <OffthreadVideo src={staticFile(D + "avatar.mp4")} muted startFrom={Math.max(0, Math.round((at - O) * VS_FPS))}
+        style={{ position: "absolute", width: w, height: h, left: boxW / 2 - 0.48 * w + jx, top: -top * h + jy + hop, filter: `grayscale(1) contrast(1.32) brightness(${0.86 * flick}) blur(0.5px)` }} />
+      <Scanlines opacity={0.22} gap={4} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: ((t * 160) % (boxH + 160)) - 80, height: 60, background: "linear-gradient(180deg, transparent, rgba(255,255,255,0.08), transparent)" }} />
+      <Noise opacity={0.32} />
+      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 45%, rgba(255,255,255,0.06), transparent 60%)" }} />
+    </AbsoluteFill>
+  );
+};
+
+// Real CRT TV photo; the screen is cut out of tv-frame.png and Niklas plays behind it.
+const TV_S = 0.62, TV_X = -27, TV_Y = 0;
+const SCR = { x: 436 * TV_S + TV_X, y: 256 * TV_S + TV_Y, w: (1259 - 436) * TV_S, h: (901 - 256) * TV_S };
+const Bars: React.FC = () => (
+  <div style={{ position: "absolute", inset: 0, display: "flex", filter: "grayscale(1) contrast(1.2)" }}>
+    {["#C0C0C0", "#C0C000", "#00C0C0", "#00C000", "#C000C0", "#C00000", "#0000C0"].map((c) => <div key={c} style={{ flex: 1, background: c }} />)}
+  </div>
+);
+const TvShot: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const push = 1 + 0.2 * interpolate(t, [0, 1.95], [0, 1], { ...clamp, easing: Easing.inOut(Easing.sin) });
+  const phase = t < 0.22 ? "bars" : t < 0.62 ? "static" : "pic";
+  const glow = phase === "pic" ? 0.18 : 0.3;
+  return (
+    <AbsoluteFill style={{ background: "#111", overflow: "hidden" }}>
+      <div style={{ position: "absolute", inset: 0, transform: `scale(${push})`, transformOrigin: `${SCR.x + SCR.w / 2}px ${SCR.y + SCR.h / 2}px` }}>
+        <div style={{ position: "absolute", left: SCR.x - 4, top: SCR.y - 4, width: SCR.w + 8, height: SCR.h + 8, overflow: "hidden", borderRadius: 60 }}>
+          {phase === "bars" && <Bars />}
+          {phase === "static" && <div style={{ position: "absolute", inset: 0, background: "#8a8a8a" }}><Noise opacity={1} blend="normal" /></div>}
+          {phase === "pic" && <BwAvatar at={Math.max(at, 0.62)} boxW={SCR.w + 8} boxH={SCR.h + 8} top={0.12} bottom={0.88} />}
+          <Scanlines opacity={0.3} gap={3} />
+          <div style={{ position: "absolute", inset: 0, boxShadow: "inset 0 0 70px rgba(0,0,0,0.85)" }} />
+        </div>
+        <Img src={staticFile(D + "tv/tv-frame.png")} style={{ position: "absolute", left: TV_X, top: TV_Y, width: 3000 * TV_S, height: 2002 * TV_S }} />
+        {/* the photo's own glass reflections on top of the picture */}
+        <Img src={staticFile(D + "tv/tv-glass.png")} style={{ position: "absolute", left: 380 * TV_S + TV_X, top: 200 * TV_S + TV_Y, width: 940 * TV_S, height: 760 * TV_S, mixBlendMode: "screen", opacity: 0.32 }} />
+        {/* light spill from the tube onto the cabinet */}
+        <div style={{ position: "absolute", left: SCR.x - 120, top: SCR.y - 90, width: SCR.w + 240, height: SCR.h + 180, borderRadius: "50%", background: `radial-gradient(ellipse, rgba(220,230,235,${glow}) 0%, transparent 62%)`, mixBlendMode: "screen", pointerEvents: "none" }} />
+      </div>
+      <Noise opacity={0.16} />
+      <Vignette strength={0.7} />
+    </AbsoluteFill>
+  );
+};
+
+const CrtClose: React.FC<{ at: number; dur: number }> = ({ at, dur }) => {
+  const s = useSec();
+  const push = 1.0 + 0.05 * (s / dur);
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <div style={{ position: "absolute", inset: 0, transform: `scale(${push})` }}><BwAvatar at={at} boxW={1080} boxH={FILM_H} top={0.1} bottom={0.92} /></div>
+      <div style={{ position: "absolute", inset: 0, borderRadius: 70, boxShadow: "inset 0 0 200px rgba(0,0,0,0.95)" }} />
+    </AbsoluteFill>
+  );
+};
+
+const Archive: React.FC<{ src: string; from?: number; dur: number }> = ({ src, from = 0, dur }) => {
+  const s = useSec();
+  const f = useCurrentFrame();
+  const push = 1.06 + 0.06 * (s / dur);
+  const weaveX = (rnd(f * 3.1) - 0.5) * 3, weaveY = (rnd(f * 7.7) - 0.5) * 4;
+  const flick = 0.9 + 0.1 * rnd(f * 1.3);
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <OffthreadVideo src={staticFile(D + "archiv/" + src + ".mp4")} muted startFrom={Math.round(from * VS_FPS)}
+        style={{ position: "absolute", width: 1080, height: 810, left: 0, top: (FILM_H - 810) / 2, objectFit: "cover", transform: `translate(${weaveX}px, ${weaveY}px) scale(${push})`, filter: `grayscale(1) sepia(0.18) contrast(1.22) brightness(${0.92 * flick})` }} />
+      <Noise opacity={0.3} />
+      {rnd(f * 0.37) > 0.82 && <div style={{ position: "absolute", left: `${rnd(f) * 100}%`, top: 0, bottom: 0, width: 1.5, background: "rgba(255,255,255,0.35)" }} />}
+      <Vignette strength={0.7} />
+    </AbsoluteFill>
+  );
+};
+
+// ---------- KI part in the FP-N Opus look (inside the 4:3 frame) ----------
+
+const AGENTS: { name: string; prop: BotProp; x: number; y: number }[] = [
+  { name: "Mail-Agent", prop: "laptop", x: 210, y: 170 },
+  { name: "Rechnungs-Agent", prop: "calc", x: 860, y: 170 },
+  { name: "Angebots-Agent", prop: "pdf", x: 540, y: 650 },
+];
+
+const AgentCard: React.FC<{ t: number; name: string; prop: BotProp; seed: number }> = ({ t, name, prop, seed }) => (
+  <div style={{ ...glassLight, borderRadius: 26, padding: "16px 24px 16px 18px", display: "flex", alignItems: "center", gap: 16, whiteSpace: "nowrap" }}>
+    <PixelBot px={5} t={t} prop={prop} seed={seed} />
+    <div>
+      <div style={{ fontFamily: fonts.semibold, fontSize: 30, color: C.ink, letterSpacing: -0.3 }}>{name}</div>
+      <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 4, fontFamily: MONO, fontSize: 17, color: C.green, fontWeight: 700, letterSpacing: "0.08em" }}>
+        <span style={{ width: 10, height: 10, borderRadius: "50%", background: C.green, boxShadow: `0 0 8px ${C.green}` }} />AKTIV
+      </div>
+    </div>
+  </div>
+);
+
+// One employee gets their own team of agents; on "Aus KI" the camera pulls back: everyone has one.
+const TeamScene: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const out = interpolate(t, [W.aus - 0.05, W.aus + 0.6], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const zoom = 1 - 0.64 * out;
+  const n = Math.max(3, count(t, W.aus, W.aus + 0.9, 48));
+  const cluster = (cx: number, cy: number, seed: number, main: boolean) => (
+    <div style={{ position: "absolute", left: cx - 540, top: cy - 405, width: 1080, height: 810 }}>
+      <svg width={1080} height={810} style={{ position: "absolute", inset: 0 }}>
+        {AGENTS.map((a, i) => {
+          const p = main ? k(t, W.eigenes + 0.1 + i * 0.22, 0.35) : 1;
+          return <line key={i} x1={540} y1={400} x2={540 + (a.x - 540) * p} y2={400 + (a.y - 400) * p} stroke={ACC} strokeOpacity={0.55} strokeWidth={4} strokeDasharray="12 10" strokeDashoffset={-t * 60} />;
+        })}
+      </svg>
+      {AGENTS.map((a, i) => (
+        <div key={a.name} style={{ position: "absolute", left: a.x, top: a.y, transform: "translate(-50%,-50%)" }}>
+          <div style={main ? popStyle(t, W.eigenes + 0.25 + i * 0.22, 20, 0.5) : {}}><AgentCard t={t} name={a.name} prop={a.prop} seed={i + seed} /></div>
+        </div>
+      ))}
+      <div style={{ position: "absolute", left: 540, top: 400, transform: "translate(-50%,-50%)" }}>
+        <div style={{ ...glassLight, borderRadius: 34, padding: "22px 30px", display: "flex", alignItems: "center", gap: 20, ...(main ? popStyle(t, at, 16, 0.6) : {}) }}>
+          <div style={{ borderRadius: "50%", boxShadow: `0 0 0 5px #fff, 0 0 0 9px ${ACC}` }}><FaceAvatar seed={2 + seed} size={104} /></div>
+          <div>
+            <div style={{ fontFamily: fonts.bold, fontSize: 42, color: C.ink, letterSpacing: -0.8 }}>{["Lena", "Tom", "Aylin", "Jonas", "Mara", "Ben", "Ole", "Nina", "Can"][seed % 9]}</div>
+            <Tag text={["BUCHHALTUNG", "VERTRIEB", "EINKAUF", "PERSONAL", "SERVICE", "LOGISTIK", "EINKAUF", "VERTRIEB", "SERVICE"][seed % 9]} color={C.chip} size={17} style={{ marginTop: 8 }} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+  const GRID = [-1, 0, 1].flatMap((gy) => [-1, 0, 1].map((gx) => ({ gx, gy })));
+  return (
+    <OpusBg>
+      <div style={{ position: "absolute", inset: 0, transform: `scale(${zoom})`, transformOrigin: "540px 405px" }}>
+        {GRID.map(({ gx, gy }, i) => {
+          const main = gx === 0 && gy === 0;
+          if (!main && out <= 0) return null;
+          return <div key={i} style={{ position: "absolute", inset: 0, opacity: main ? 1 : k(t, W.aus + 0.1 + i * 0.03, 0.3) }}>{cluster(540 + gx * 1200, 405 + gy * 900, main ? 0 : i, main)}</div>;
+        })}
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 22, display: "flex", justifyContent: "center", ...popStyle(t, W.aus - 0.1, 10, 0.6) }}>
+        <LabelChip text={`${n} Agenten aktiv`} dot={C.green} size={30} />
+      </div>
+    </OpusBg>
+  );
+};
+
+// Superkind dashboard (stylised, no real product UI): three KPI tiles count up while the panel below shows the work.
+const KPIS = [
+  { label: "Mails beantwortet", to: 1284, a: W.agenten, b: W.rechnungen - 0.1, color: C.blue },
+  { label: "Rechnungen geprüft", to: 312, a: W.rechnungen, b: W.angebote - 0.1, color: C.green },
+  { label: "Angebote geschrieben", to: 47, a: W.angebote, b: W.rund - 0.1, color: ACC },
+];
+const MAILS = [["Müller GmbH", "Lieferung KW 44?"], ["Stadtwerke", "Zählerstand bitte"], ["Kunde Becker", "Rückfrage Angebot"], ["Spedition Kraus", "Termin Abholung"]];
+const INVOICES: [string, string, boolean][] = [["Bürobedarf Weber", "412,80 €", true], ["Druckerei Lang", "1.290,00 €", true], ["Druckerei Lang", "1.290,00 €", false], ["IT-Service Nord", "860,00 €", true]];
+
+const Dashboard: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const phase = t < W.rechnungen ? 0 : t < W.angebote ? 1 : 2;
+  const pa = KPIS[phase].a;
+  return (
+    <OpusBg>
+      <div style={{ position: "absolute", left: 50, top: 36, width: 980, height: 738, ...glassLight, borderRadius: 34, overflow: "hidden", ...popStyle(t, at, 24, 0.9) }}>
+        <div style={{ height: 58, display: "flex", alignItems: "center", gap: 18, padding: "0 24px", borderBottom: `1px solid ${C.line}` }}>
+          <Traffic />
+          <div style={{ fontFamily: fonts.semibold, fontSize: 22, color: C.dim }}>Heute · alle Agenten</div>
+          <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 8, fontFamily: MONO, fontSize: 18, fontWeight: 700, color: C.green }}><span style={{ width: 10, height: 10, borderRadius: 5, background: C.green }} />LIVE</div>
+        </div>
+        <div style={{ display: "flex", gap: 18, padding: "22px 24px 0" }}>
+          {KPIS.map((kp, i) => {
+            const on = t >= kp.a - 0.05;
+            const active = i === phase;
+            return (
+              <div key={kp.label} style={{ flex: 1, height: 176, borderRadius: 22, background: "#fff", boxShadow: active ? `0 0 0 4px ${kp.color}, ${shadow}` : shadow, padding: "18px 22px", opacity: on ? 1 : 0.45, transform: `scale(${active ? 1 + 0.03 * pop(t, kp.a, 0.4) : 1})` }}>
+                <div style={{ fontFamily: fonts.semibold, fontSize: 22, color: C.dim }}>{kp.label}</div>
+                <div style={{ fontFamily: fonts.bold, fontSize: 70, letterSpacing: -2, color: C.ink, fontVariantNumeric: "tabular-nums", marginTop: 4 }}>{de(count(t, kp.a, kp.b, kp.to))}</div>
+                <svg width={250} height={34} viewBox="0 0 250 34">
+                  <polyline fill="none" stroke={kp.color} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round"
+                    points={Array.from({ length: 12 }, (_, j) => `${j * 22},${30 - (j / 11) * 24 * k(t, kp.a, 1.2) - rnd(j + i * 9) * 6}`).join(" ")} />
+                </svg>
+              </div>
+            );
+          })}
+        </div>
+        <div style={{ position: "absolute", left: 24, right: 24, top: 278, bottom: 24, borderRadius: 22, background: "#fff", boxShadow: shadow, overflow: "hidden", padding: "14px 24px" }}>
+          {phase === 0 && MAILS.map(([from, subj], i) => {
+            const da = pa + 0.3 + i * 0.4;
+            const done = t > da;
+            return (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 18, height: 100, borderBottom: i < 3 ? `1px solid ${C.line}` : "none", ...popStyle(t, pa + i * 0.08, 12, 0.9) }}>
+                <FaceAvatar seed={i + 11} size={58} />
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontFamily: fonts.semibold, fontSize: 28, color: C.ink }}>{from}</div>
+                  <div style={{ fontFamily: fonts.regular, fontSize: 22, color: C.dim }}>{subj}</div>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 18px", borderRadius: 999, background: done ? C.greenSoft : "#F2F1EE", color: done ? C.green : C.dim, fontFamily: fonts.semibold, fontSize: 22 }}>
+                  {done ? <><Check size={22} color={C.green} p={k(t, da, 0.25)} />Beantwortet</> : "Offen"}
+                </div>
+              </div>
+            );
+          })}
+          {phase === 1 && INVOICES.map(([who, amt, ok], i) => {
+            const a = pa + 0.15 + i * 0.22;
+            const done = t > a;
+            return (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 18, height: 100, borderBottom: i < 3 ? `1px solid ${C.line}` : "none", background: done && !ok ? C.redSoft : "transparent", margin: "0 -24px", padding: "0 24px", ...popStyle(t, pa + i * 0.06, 12, 0.9) }}>
+                <div style={{ width: 46, height: 58, borderRadius: 6, background: "#fff", border: `2px solid ${C.line}`, display: "grid", placeItems: "center", fontFamily: MONO, fontSize: 13, fontWeight: 800, color: C.dim }}>RE</div>
+                <div style={{ flex: 1, fontFamily: fonts.semibold, fontSize: 28, color: C.ink }}>{who}</div>
+                <div style={{ fontFamily: MONO, fontSize: 25, fontWeight: 700, color: C.ink }}>{amt}</div>
+                <div style={{ width: 250, display: "flex", justifyContent: "flex-end" }}>
+                  {done && (ok ? <Tag text="GEPRÜFT" color={C.green} size={18} /> : <Tag text="DOPPELT · GESTOPPT" color={C.red} size={18} />)}
+                </div>
+              </div>
+            );
+          })}
+          {phase === 2 && (
+            <div style={{ display: "flex", gap: 30, height: "100%", alignItems: "center" }}>
+              <div style={{ width: 360, height: 360, borderRadius: 14, border: `2px solid ${C.line}`, padding: 24, boxSizing: "border-box", ...popStyle(t, pa, 12, 0.9) }}>
+                <div style={{ fontFamily: fonts.bold, fontSize: 28, color: C.ink }}>Angebot #2026-114</div>
+                <div style={{ fontFamily: fonts.regular, fontSize: 19, color: C.dim, marginBottom: 18 }}>für Bauer &amp; Söhne</div>
+                {[0.9, 0.75, 0.85, 0.6, 0.8].map((w, i) => <div key={i} style={{ height: 11, borderRadius: 6, background: "#E9E6E0", width: `${w * 100 * k(t, pa + 0.1 + i * 0.12, 0.25)}%`, marginBottom: 13 }} />)}
+                <div style={{ marginTop: 16, fontFamily: MONO, fontSize: 34, fontWeight: 800, color: C.ink, opacity: k(t, pa + 0.6, 0.2) }}>{de(count(t, pa + 0.6, pa + 1.0, 12480))} €</div>
+              </div>
+              <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 22 }}>
+                {([["Positionen aus Preisliste", 0.3], ["Rabatt Stammkunde", 0.5], ["PDF an Kunden versendet", 0.75]] as [string, number][]).map(([txt, d], i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "center", gap: 14, ...popStyle(t, pa + d, 12, 0.8) }}>
+                    <div style={{ width: 42, height: 42, borderRadius: 21, background: C.green, display: "grid", placeItems: "center", flexShrink: 0 }}><Check size={24} p={k(t, pa + d, 0.25)} /></div>
+                    <div style={{ fontFamily: fonts.semibold, fontSize: 28, color: C.ink }}>{txt}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </OpusBg>
+  );
+};
+
+// "Rund um die Uhr": a frosted-glass watch face over a day→night sky, time racing, a 24 h ring filling.
+const ClockScene: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const prog = interpolate(t, [at, at + 1.1], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const hours = 8 + prog * 24;
+  const night = Math.sin(prog * Math.PI);
+  const mix = (a: number[], b: number[]) => `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * night)).join(",")})`;
+  const hh = Math.floor(hours) % 24, mm = Math.floor((hours % 1) * 60);
+  const R = 250, cx = 420, cy = 405;
+  const ink = night > 0.5 ? "#fff" : C.ink;
+  return (
+    <AbsoluteFill style={{ background: `linear-gradient(180deg, ${mix([243, 239, 230], [22, 27, 48])}, ${mix([236, 226, 210], [40, 34, 60])})`, overflow: "hidden" }}>
+      {Array.from({ length: 40 }).map((_, i) => <div key={i} style={{ position: "absolute", left: rnd(i) * 1080, top: rnd(i + 50) * 810, width: 3, height: 3, borderRadius: 2, background: "#fff", opacity: night * (0.4 + 0.6 * rnd(i + 9)) }} />)}
+      <div style={{ position: "absolute", left: cx - 230, top: cy - 230, width: 460, height: 460, borderRadius: "50%", background: `radial-gradient(circle, rgba(255,107,53,${0.4 - 0.15 * night}), transparent 70%)`, filter: "blur(30px)" }} />
+      <div style={{ position: "absolute", left: cx - R, top: cy - R, width: 2 * R, height: 2 * R, borderRadius: "50%", ...glassLight, background: `linear-gradient(150deg, rgba(255,255,255,${0.78 - 0.55 * night}), rgba(255,255,255,${0.4 - 0.3 * night}))` }} />
+      <svg width={1080} height={810} style={{ position: "absolute", inset: 0 }}>
+        <circle cx={cx} cy={cy} r={R + 28} fill="none" stroke={night > 0.5 ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.08)"} strokeWidth={10} />
+        <circle cx={cx} cy={cy} r={R + 28} fill="none" stroke={ACC} strokeWidth={10} strokeLinecap="round" strokeDasharray={2 * Math.PI * (R + 28)} strokeDashoffset={2 * Math.PI * (R + 28) * (1 - prog)} transform={`rotate(-90 ${cx} ${cy})`} />
+        {Array.from({ length: 60 }).map((_, i) => (
+          <line key={i} x1={cx} y1={cy - R + 18} x2={cx} y2={cy - R + (i % 5 === 0 ? 46 : 30)} stroke={ink} strokeOpacity={i % 5 === 0 ? 0.85 : 0.3} strokeWidth={i % 5 === 0 ? 5 : 2.5} strokeLinecap="round" transform={`rotate(${i * 6} ${cx} ${cy})`} />
+        ))}
+        <line x1={cx} y1={cy} x2={cx} y2={cy - 130} stroke={ink} strokeWidth={12} strokeLinecap="round" transform={`rotate(${hours * 30} ${cx} ${cy})`} />
+        <line x1={cx} y1={cy} x2={cx} y2={cy - 190} stroke={ink} strokeWidth={8} strokeLinecap="round" transform={`rotate(${hours * 360} ${cx} ${cy})`} />
+        <circle cx={cx} cy={cy} r={12} fill={ACC} />
+      </svg>
+      <div style={{ position: "absolute", left: cx + R + 70, top: cy - 120, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 16 }}>
+        <div style={{ ...glassLight, borderRadius: 24, padding: "14px 26px", fontFamily: fonts.bold, fontSize: 64, letterSpacing: -1.5, color: C.ink, fontVariantNumeric: "tabular-nums" }}>{`${String(hh).padStart(2, "0")}:${String(mm).padStart(2, "0")}`}</div>
+        <Tag text={night > 0.5 ? "NACHTS AKTIV" : "AKTIV"} color={C.green} size={20} />
+        <div style={{ marginTop: 10 }}><PixelBot px={6} t={t * 2} prop="stopwatch" /></div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+const TOOL_WINDOWS = ["chatgpt", "claude", "gmail", "sheets", "hubspot", "whatsapp", "dropbox", "drive", "slack", "teams", "calendar", "outlook", "chatgpt", "claude", "gmail", "hubspot", "whatsapp", "sheets"];
+
+// "Zehn Tools ohne Plan": tool windows pile up, then it tips into red (visual as in v1, real logos now).
+const DarkStage: React.FC<{ children: React.ReactNode; red?: number }> = ({ children, red = 0 }) => (
+  <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 55%, ${red > 0 ? `rgb(${40 + 60 * red},${16 - 6 * red},12)` : "#1a120e"} 0%, #0a0807 70%)`, overflow: "hidden" }}>
+    <div style={{ position: "absolute", left: 290, top: 155, width: 500, height: 500, borderRadius: "50%", background: `radial-gradient(circle, rgba(255,107,53,${0.35 - 0.2 * red}), transparent 70%)`, filter: "blur(30px)" }} />
+    {children}
+    <Noise opacity={0.16} />
+    <Vignette strength={0.7} />
+  </AbsoluteFill>
+);
+const Chaos: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const f = useCurrentFrame();
+  const n = Math.floor(interpolate(t, [18.15, 20.4], [1, TOOL_WINDOWS.length], clamp));
+  const red = k(t, 19.5, 1.1);
+  const shake = red * 12;
+  const glitch = t > 19.6 && rnd(f * 2.3) > 0.6;
+  return (
+    <DarkStage red={red}>
+      <div style={{ position: "absolute", inset: 0, transform: `translate(${(rnd(f) - 0.5) * shake}px, ${(rnd(f + 9) - 0.5) * shake}px)`, filter: glitch ? "url(#vsChroma)" : undefined }}>
+        {TOOL_WINDOWS.slice(0, n).map((name, i) => {
+          const x = 40 + rnd(i * 5 + 1) * 760, y = 30 + rnd(i * 5 + 2) * 600, rot = (rnd(i * 5 + 3) - 0.5) * 14;
+          return (
+            <div key={i} style={{ position: "absolute", left: x, top: y, width: 260, height: 160, transform: `rotate(${rot}deg)`, borderRadius: 14, background: "#F4F2EE", boxShadow: "0 18px 40px rgba(0,0,0,0.6)", overflow: "hidden" }}>
+              <div style={{ height: 30, background: "#E2DED8", display: "flex", alignItems: "center", gap: 6, padding: "0 10px" }}>
+                {["#FF5F57", "#FEBC2E", "#28C840"].map((c) => <div key={c} style={{ width: 10, height: 10, borderRadius: 5, background: c }} />)}
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 12, padding: 14 }}>
+                <BrandLogo name={name} size={44} />
+                <div style={{ flex: 1 }}>{[0.9, 0.7, 0.8].map((w, j) => <div key={j} style={{ height: 8, width: `${w * 100}%`, background: "#CFCAC2", borderRadius: 4, marginBottom: 8 }} />)}</div>
+              </div>
+              {i % 3 === 0 && <div style={{ position: "absolute", right: 10, top: 40, width: 30, height: 30, borderRadius: 15, background: "#E5484D", color: "#fff", fontFamily: fonts.bold, fontSize: 16, display: "grid", placeItems: "center" }}>{3 + (i % 7)}</div>}
+            </div>
+          );
+        })}
+        {red > 0.3 && Array.from({ length: 5 }).map((_, i) => (
+          <div key={`g${i}`} style={{ position: "absolute", left: 0, right: 0, top: rnd(f * 3 + i) * FILM_H, height: 6 + rnd(f + i) * 24, background: `rgba(${rnd(i + f) > 0.5 ? "255,40,60" : "40,240,255"},0.4)`, mixBlendMode: "screen", transform: `translateX(${(rnd(f * 7 + i) - 0.5) * 100}px)` }} />
+        ))}
+      </div>
+      {t > 20.64 && <div style={{ position: "absolute", inset: 0, background: "#888" }}><Noise opacity={1} blend="normal" /></div>}
+    </DarkStage>
+  );
+};
+
+// ---------- bright world (full 9:16) ----------
+
+const Particles: React.FC<{ order: number; cx?: number; cy?: number; radius?: number; count?: number; t: number }> = ({ order, cx = 540, cy = 960, radius = 380, count: n = 260, t }) => (
+  <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+    {Array.from({ length: n }).map((_, i) => {
+      const ring = i % 3, kk = Math.floor(i / 3), per = n / 3;
+      const a = (kk / per) * Math.PI * 2 + t * (0.25 + ring * 0.08) * (ring % 2 ? -1 : 1);
+      const r = radius * (0.62 + ring * 0.19);
+      const ox = cx + Math.cos(a) * r, oy = cy + Math.sin(a) * r;
+      const chaosX = rnd(i * 3) * 1080 + Math.sin(t * 3 + i) * 40, chaosY = rnd(i * 3 + 1) * 1920 + Math.cos(t * 2.4 + i) * 40;
+      const x = chaosX + (ox - chaosX) * order, y = chaosY + (oy - chaosY) * order;
+      const len = 14 * (1 - order) + 5;
+      const ang = (1 - order) * rnd(i) * 360 + order * ((a * 180) / Math.PI + 90);
+      return <rect key={i} x={x - len / 2} y={y - 2.5} width={len} height={5} rx={2.5} fill={ACC} opacity={0.55 + 0.45 * rnd(i + 7)} transform={`rotate(${ang} ${x} ${y})`} />;
+    })}
+  </svg>
+);
+
+const Break: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const order = k(t, 21.5, 2.5);
+  return (
+    <OpusBg>
+      <Particles order={order} t={t} count={480} radius={420} />
+      <div style={{ position: "absolute", left: 540, top: 960, transform: "translate(-50%,-50%)", width: 40 + 40 * order, height: 40 + 40 * order, borderRadius: "50%", background: ACC, opacity: order, boxShadow: `0 0 ${80 * order}px rgba(255,107,53,0.6)` }} />
+    </OpusBg>
+  );
+};
+
+// Real Superkind footage as a techy "live" feed: graded, scan corners, agent chips that show who stays in control.
+const FEED: [string, number, number][] = [["meeting", 23.2, 24.2], ["beratung", 24.2, 24.95], ["team", 24.95, 25.4]];
+const CHIPS: [string, BotProp, number, number, number][] = [
+  ["Agent schreibt Protokoll", "laptop", 23.45, 110, 300],
+  ["Freigabe bleibt bei dir", "stamp", 23.9, 380, 1175],
+  ["Jeder Schritt protokolliert", "folder", 24.45, 140, 1300],
+];
+const LiveFeed: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const f = useCurrentFrame();
+  const inP = k(t, 23.2, 0.35);
+  const fx = 60, fy = 420, fw = 960, fh = 720;
+  const corner = (x: number, y: number, rx: number, ry: number) => <path d={`M${x} ${y + 46 * ry} V${y} H${x + 46 * rx}`} fill="none" stroke={ACC} strokeWidth={6} strokeLinecap="round" />;
+  return (
+    <OpusBg>
+      <Particles order={1} t={t} radius={560} />
+      <div style={{ position: "absolute", left: fx, top: fy, width: fw, height: fh, borderRadius: 36, overflow: "hidden", background: "#111", boxShadow: "0 40px 90px rgba(17,17,17,0.28)", opacity: inP, transform: `scale(${0.94 + 0.06 * inP})` }}>
+        {FEED.map(([src, a, b]) => (
+          <Sequence key={src} from={Math.round((a - at) * VS_FPS)} durationInFrames={Math.round((b - a) * VS_FPS)} layout="none">
+            <OffthreadVideo src={staticFile(D + "film/" + src + ".mp4")} muted style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", filter: "saturate(0.35) contrast(1.15) brightness(0.92) sepia(0.15)", transform: `scale(${1.08 + 0.05 * k(t, a, b - a, (x) => x)})` }} />
+          </Sequence>
+        ))}
+        <Scanlines opacity={0.12} gap={4} />
+        <Noise opacity={0.12} />
+        <svg width={fw} height={fh} style={{ position: "absolute", inset: 0 }}>
+          {corner(30, 30, 1, 1)}{corner(fw - 30, 30, -1, 1)}{corner(30, fh - 30, 1, -1)}{corner(fw - 30, fh - 30, -1, -1)}
+        </svg>
+        <div style={{ position: "absolute", left: 40, top: 40, display: "flex", alignItems: "center", gap: 10, padding: "8px 16px", borderRadius: 999, background: "rgba(0,0,0,0.55)", fontFamily: MONO, fontSize: 20, fontWeight: 700, color: "#fff", letterSpacing: "0.1em" }}>
+          <span style={{ width: 12, height: 12, borderRadius: 6, background: C.red, opacity: f % 20 < 12 ? 1 : 0.3 }} />LIVE · BEIM KUNDEN
+        </div>
+      </div>
+      {CHIPS.map(([txt, prop, a, x, y], i) => (
+        <div key={i} style={{ position: "absolute", left: x, top: y, ...popStyle(t, a, 20, 0.5) }}>
+          <div style={{ ...glassLight, borderRadius: 24, padding: "14px 24px 14px 16px", display: "flex", alignItems: "center", gap: 14 }}>
+            <PixelBot px={4} t={t} prop={prop} seed={i} />
+            <div style={{ fontFamily: fonts.semibold, fontSize: 30, color: C.ink, whiteSpace: "nowrap" }}>{txt}</div>
+            <div style={{ width: 34, height: 34, borderRadius: 17, background: C.green, display: "grid", placeItems: "center" }}><Check size={20} p={k(t, a + 0.15, 0.25)} /></div>
+          </div>
+        </div>
+      ))}
+    </OpusBg>
+  );
+};
+
+const BrainNode: React.FC<{ size: number; glow: number }> = ({ size, glow }) => (
+  <div style={{ width: size, height: size, borderRadius: size * 0.26, display: "grid", placeItems: "center", background: `linear-gradient(160deg, #FF8A5C 0%, ${ACC} 55%, #E4541F 100%)`, boxShadow: `0 0 ${90 * glow}px rgba(255,107,53,${0.55 * glow}), 0 30px 60px rgba(0,0,0,0.18)` }}>
+    <Img src={staticFile("superkind-logo.svg")} style={{ width: size * 0.56, filter: "brightness(0) invert(1)" }} />
+  </div>
+);
+
+const ROLES = [
+  { name: "BUCHHALTUNG", seed: 2, prop: "calc" as BotProp, color: C.green, x: 200 },
+  { name: "VERTRIEB", seed: 5, prop: "phone" as BotProp, color: C.blue, x: 540 },
+  { name: "EINKAUF", seed: 8, prop: "folder" as BotProp, color: ACC, x: 880 },
+];
+const SYSTEMS = [
+  { name: "Outlook", at: W.outlook, x: 200 },
+  { name: "SAP", at: W.sap, x: 540 },
+  { name: "DATEV", at: W.datev, x: 880 },
+];
+
+const Brain: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const cx = 540, cy = 470, roleY = 930, sysY = 1390;
+  return (
+    <OpusBg>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 205, display: "flex", justifyContent: "center", ...popStyle(t, W.ein, 10, 0.6) }}><LabelChip text="Firmengehirn" size={34} /></div>
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+        {ROLES.map((r, i) => {
+          const p = k(t, W.klare + i * 0.15, 0.4);
+          const y2 = cy + 120 + (roleY - 185 - cy - 120) * p;
+          return <path key={r.name} d={`M${cx} ${cy + 120} C ${cx} ${cy + 250}, ${r.x} ${y2 - 130}, ${r.x} ${y2}`} fill="none" stroke={r.color} strokeOpacity={0.6} strokeWidth={5} strokeDasharray="12 12" strokeDashoffset={-t * 50} />;
+        })}
+        {SYSTEMS.map((sy) => {
+          const p = k(t, sy.at - 0.1, 0.3);
+          return <line key={sy.name} x1={sy.x} y1={roleY + 190} x2={sy.x} y2={roleY + 190 + (sysY - 55 - roleY - 190) * p} stroke={C.ink} strokeOpacity={0.25} strokeWidth={4} strokeDasharray="8 10" />;
+        })}
+      </svg>
+      <div style={{ position: "absolute", left: cx, top: cy, transform: "translate(-50%,-50%)" }}>
+        <div style={popStyle(t, W.gehirn - 0.15, 20, 0.5)}><BrainNode size={240} glow={0.6 + 0.4 * Math.sin(t * 3)} /></div>
+      </div>
+      {ROLES.map((r, i) => (
+        <div key={r.name} style={{ position: "absolute", left: r.x - 150, top: roleY - 185, width: 300, height: 375, ...popStyle(t, W.klare + 0.1 + i * 0.15, 40, 0.4) }}>
+          <div style={{ position: "absolute", inset: 0, background: "#FFF", borderRadius: 22, boxShadow: shadow, border: `5px solid ${r.color}` }} />
+          <div style={{ position: "absolute", left: 0, right: 0, top: 30, display: "flex", justifyContent: "center" }}>
+            <div style={{ borderRadius: "50%", boxShadow: `0 0 0 5px #fff, 0 0 0 9px ${r.color}` }}><FaceAvatar seed={r.seed} size={110} /></div>
+          </div>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 172, display: "flex", justifyContent: "center", gap: 6 }}>
+            <PixelBot px={6} t={t} prop={r.prop} seed={i} />
+            <PixelBot px={6} t={t} seed={i + 7} />
+          </div>
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 26, display: "flex", justifyContent: "center" }}><Tag text={r.name} color={r.color} size={24} /></div>
+        </div>
+      ))}
+      {SYSTEMS.map((sy) => (
+        <div key={sy.name} style={{ position: "absolute", left: sy.x, top: sysY, transform: "translate(-50%,-50%)" }}>
+          <div style={{ ...glassLight, borderRadius: 24, padding: "16px 24px", display: "flex", alignItems: "center", gap: 14, ...popStyle(t, sy.at, 20, 0.5) }}>
+            <BrandLogo name={sy.name} size={58} />
+            <span style={{ fontFamily: fonts.bold, fontSize: 38, letterSpacing: -0.5, color: C.ink }}>{sy.name}</span>
+          </div>
+        </div>
+      ))}
+    </OpusBg>
+  );
+};
+
+const SphereLogo: React.FC<{ at: number }> = ({ at }) => {
+  const s = useSec();
+  const t = s + at;
+  const N = 520;
+  const collapse = interpolate(t, [30.55, 31.05], [0, 1], { ...clamp, easing: (x) => x * x });
+  const grow = k(t, 30.1, 0.45);
+  const R = 330 * grow * (1 - collapse) + 6;
+  const rot = t * 1.6;
+  const logoP = k(t, 31.0, 0.5);
+  return (
+    <OpusBg>
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: 1 - logoP }}>
+        {Array.from({ length: N }).map((_, i) => {
+          const y = 1 - (i / (N - 1)) * 2, rr = Math.sqrt(1 - y * y), th = i * 2.39996 + rot;
+          const x = Math.cos(th) * rr, z = Math.sin(th) * rr;
+          const depth = (z + 1) / 2;
+          return <circle key={i} cx={540 + x * R} cy={860 + y * R * 0.98} r={2 + 3.5 * depth} fill={ACC} opacity={0.25 + 0.75 * depth} />;
+        })}
+      </svg>
+      <div style={{ position: "absolute", left: 540, top: 860, transform: `translate(-50%,-50%) scale(${0.5 + 0.5 * logoP})`, opacity: logoP }}><BrainNode size={300} glow={0.8} /></div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1060, textAlign: "center", opacity: logoP, transform: `translateY(${(1 - logoP) * 20}px)` }}>
+        <div style={{ fontFamily: fonts.bold, fontSize: 112, letterSpacing: -4, color: C.ink }}>superkind</div>
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1240, textAlign: "center", fontSize: 66, lineHeight: 1.15 }}>
+        {([["Jeder Mitarbeiter.", W.jeder, serif, C.ink], ["Sein eigenes Team.", W.sein, serifItalic, ACC]] as [string, number, string, string][]).map(([txt, a, ff, col]) => {
+          const p = k(t, a - 0.05, 0.4);
+          return <div key={txt} style={{ opacity: p, transform: `translateY(${(1 - p) * 16}px)`, fontFamily: ff, color: col }}>{txt}</div>;
+        })}
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1450, textAlign: "center", fontFamily: fonts.semibold, fontSize: 46, letterSpacing: 1, color: C.ink, opacity: k(t, 32.4, 0.5) }}>superkind.ai</div>
+    </OpusBg>
+  );
+};
+
+// ---------- frame + captions ----------
+
+const DARK_SHOTS: { a: number; b: number; el: (a: number, b: number) => React.ReactNode }[] = [
+  { a: 0, b: 1.95, el: (a) => <TvShot at={a} /> },
+  { a: 1.95, b: 2.75, el: (a, b) => <Archive src="a01" dur={b - a} /> },
+  { a: 2.75, b: 3.65, el: (a, b) => <Archive src="a02" from={0.4} dur={b - a} /> },
+  { a: 3.65, b: 4.3, el: (a, b) => <Archive src="a05" from={2.4} dur={b - a} /> },
+  { a: 4.3, b: 5.02, el: (a, b) => <Archive src="a04" from={2.4} dur={b - a} /> },
+  { a: 5.02, b: 5.85, el: (a, b) => <Archive src="a07" from={0.3} dur={b - a} /> },
+  { a: 5.85, b: 6.6, el: (a, b) => <Archive src="a15" from={1.4} dur={b - a} /> },
+  { a: 6.6, b: 7.5, el: (a, b) => <Archive src="a10" from={0.2} dur={b - a} /> },
+  { a: 7.5, b: 8.46, el: (a, b) => <Archive src="a14" from={0.6} dur={b - a} /> },
+  { a: 8.46, b: 10.35, el: (a, b) => <CrtClose at={a} dur={b - a} /> },
+  { a: 10.35, b: 12.62, el: (a) => <TeamScene at={a} /> },
+  { a: 12.62, b: 17.06, el: (a) => <Dashboard at={a} /> },
+  { a: 17.06, b: 18.15, el: (a) => <ClockScene at={a} /> },
+  { a: 18.15, b: 21.0, el: (a) => <Chaos at={a} /> },
+];
+
+// Clean bold captions (Inter Bold), active word in Superkind orange.
+const Caption: React.FC<{ t: number; dark: boolean }> = ({ t, dark }) => {
+  const cur = SUBS.find(([a, b]) => t >= a && t < b);
+  if (!cur) return null;
+  const [a, b, text] = cur;
+  const words = text.split(" ");
+  const ws = WORDS.filter((w) => w.s >= a - 0.12 && w.s < b);
+  const times = ws.length === words.length ? ws.map((w) => w.s) : words.map((_, i) => a + ((b - a) * i) / words.length);
+  const active = times.reduce((acc, s0, i) => (t >= s0 - 0.04 ? i : acc), 0);
+  const p = k(t, a, 0.16);
+  const top = dark ? FILM_TOP + FILM_H + 56 : 1630;
+  return (
+    <div style={{ position: "absolute", left: 50, right: 50, top, display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: 16, rowGap: 4, fontFamily: fonts.bold, fontSize: 64, letterSpacing: -1.6, lineHeight: 1.12, opacity: p, transform: `translateY(${(1 - p) * 10}px)` }}>
+      {words.map((w, i) => (
+        <span key={i} style={{ color: i === active ? ACC : dark ? "#FFFFFF" : C.ink, opacity: i <= active ? 1 : 0.55 }}>{w}</span>
+      ))}
+    </div>
+  );
+};
+
+export const VisionSchwarm: React.FC = () => {
+  const t = useSec();
+  const dark = t < BREAK;
+  const open = k(t, BREAK, 0.7, Easing.bezier(0.16, 1, 0.3, 1));
+  const flash = interpolate(t, [BREAK - 0.02, BREAK + 0.05, BREAK + 0.6], [0, 1, 0], clamp);
+  const year = t < W.heute ? "1952" : "2026";
+  return (
+    <AbsoluteFill style={{ background: "#000" }}>
+      <Defs />
+      {dark && (
+        <>
+          <div style={{ position: "absolute", left: 0, top: FILM_TOP, width: 1080, height: FILM_H, overflow: "hidden" }}>
+            {DARK_SHOTS.map((s, i) => (
+              <Sequence key={i} {...seq(s.a, s.b)} layout="none">
+                <AbsoluteFill>{s.el(s.a, s.b)}</AbsoluteFill>
+              </Sequence>
+            ))}
+          </div>
+          {t < 21.0 && t > 0.62 && (
+            <div style={{ position: "absolute", left: 0, right: 0, top: FILM_TOP - 110, textAlign: "center", fontFamily: MONO, fontWeight: 700, fontSize: 40, letterSpacing: 14, color: "rgba(255,255,255,0.6)" }}>{year}</div>
+          )}
+          <Caption t={t} dark />
+        </>
+      )}
+      {!dark && (
+        <div style={{ position: "absolute", left: 0, width: 1080, top: FILM_TOP * (1 - open), height: FILM_H + (1920 - FILM_H) * open, overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 0, width: 1080, height: 1920, top: -FILM_TOP * (1 - open) }}>
+            <Sequence {...seq(BREAK, 23.2)} layout="none"><AbsoluteFill><Break at={BREAK} /></AbsoluteFill></Sequence>
+            <Sequence {...seq(23.2, 25.34)} layout="none"><AbsoluteFill><LiveFeed at={23.2} /></AbsoluteFill></Sequence>
+            <Sequence {...seq(25.34, 30.1)} layout="none"><AbsoluteFill><Brain at={25.34} /></AbsoluteFill></Sequence>
+            <Sequence {...seq(30.1, VS_SECONDS)} layout="none"><AbsoluteFill><SphereLogo at={30.1} /></AbsoluteFill></Sequence>
+            {t < 30.1 && <Caption t={t} dark={false} />}
+          </div>
+        </div>
+      )}
+      <AbsoluteFill style={{ background: "#fff", opacity: flash, pointerEvents: "none" }} />
+
+      {/* sound: voice, Tame Impala "Loser" (instrumental) kept low, its beat lands on "Aus KI" and again on the break */}
+      <Sequence from={Math.round(O * VS_FPS)} layout="none"><Audio src={staticFile(D + "avatar.mp4")} volume={1} /></Sequence>
+      <Sequence {...seq(0.54, 21.0)} layout="none"><Audio src={staticFile(D + "loser.mp3")} volume={(f) => interpolate(f / VS_FPS, [0, 0.4, 19.9, 20.4], [0, 0.15, 0.15, 0], clamp)} /></Sequence>
+      <Sequence {...seq(BREAK - 0.35, VS_SECONDS)} layout="none"><Audio src={staticFile(D + "loser.mp3")} startFrom={Math.round(10.6 * VS_FPS)} volume={(f) => interpolate(f / VS_FPS, [0, 0.4, 11.9, 13.5], [0.17, 0.17, 0.17, 0], clamp)} /></Sequence>
+      {([
+        ["tv-on", 0, 0.5], ["static", 0.22, 0.25], ["typewriter", 5.0, 0.25], ["reverse", W.heute - 0.6, 0.25],
+        ["notif", 18.3, 0.11], ["riser", 18.4, 0.11], ["glitch", 19.8, 0.05], ["glitch", 20.3, 0.06], ["impact", W.chaos, 0.2], ["static", W.chaos, 0.07],
+        ["reverse", BREAK - 0.9, 0.25], ["impact", BREAK, 0.18], ["reverse", 30.3, 0.3], ["impact", 31.0, 0.22],
+      ] as [string, number, number][]).map(([name, at0, vol], i) => (
+        <Sequence key={i} from={Math.round(at0 * VS_FPS)} durationInFrames={name === "static" ? Math.round(0.4 * VS_FPS) : undefined} layout="none">
+          <Audio src={staticFile(D + "sfx/" + name + ".mp3")} volume={vol} />
+        </Sequence>
+      ))}
+    </AbsoluteFill>
+  );
+};

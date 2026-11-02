@@ -1,0 +1,1816 @@
+{
+ "folge": 11,
+ "tag": 11,
+ "serientag": 3,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-30",
+ "slot": "2026-10-30 18:00",
+ "keyword": "Gewerbe",
+ "seconds": 45.79,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 153.15,
+  "musicCurve": [
+   [
+    0,
+    0.05
+   ],
+   [
+    21.7,
+    0.05
+   ],
+   [
+    21.95,
+    0.018
+   ],
+   [
+    23.05,
+    0.018
+   ],
+   [
+    23.1,
+    0.065
+   ],
+   [
+    23.8,
+    0.04
+   ],
+   [
+    28.8,
+    0.04
+   ],
+   [
+    29.0,
+    0.033
+   ],
+   [
+    44.79,
+    0.033
+   ],
+   [
+    45.79,
+    0
+   ]
+  ],
+  "musikHinweis": "GONE ab 153,15 s am Stück bis 198,94 (45,79 s), nie geloopt; music-explicit-check 2× ohne explizite Wörter; keine Überschneidung mit Folge 9 (276,36–322,8) und Folge 10 (57,5–103,66); Details musik.txt"
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Ziffern in words.json: hundert → 100, dreizehn → 13, zehn → 10. Kollisionen: 'Als' (21.62 / 32.81), 'Die' (6.52 / 27.67), 'das' (1.64 / 5.35 / 22.92), 'Gewerbe' (23.16 / 37.03), 'KI' (2.07 / 7.09), 'sie' (14.55 / 34.79), 'auf' (10.46 / 29.11), 'ein' (1.02 / 31.66), 'und' (38.04 / 39.22), 'Checkliste' ≠ 'Word-Checkliste' → in episode.json immer 'Wort@Zeit'.",
+ "textregel": "Neue Textblöcke (ohne Untertitel) je ≥ 1,2 s auseinander, ≤ 4 Wörter, nie zwei gleichzeitig (Ausnahme Frame 0: Frage + Stempel MENSCH, wie Folge 10 ENTWURF). Screenshots: nie mehr als ~12 lesbare Wörter gleichzeitig.",
+ "verboten": [
+  "Ortsname (Hamburg) oder Ortskürzel (HmbBfDI) in irgendeinem Frame",
+  "Gebühr 25 €",
+  "Spalte 'Quelle' der Checkliste",
+  "Abschnitt 'Was ich nicht prüfen konnte' der Datei",
+  "Shot 05 (05-nicht-pruefen.png) – nicht verwenden",
+  "Karte mit 'TAG' allein oder 'TAG 1'/'TAG EINS'",
+  "Umsatz-Zähler",
+  "Haken an GEWERBE",
+  "'Tag drei' gesprochen/als Slam"
+ ],
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "GEWERBE",
+   "BETRIEBE",
+   "WERBEBRIEF",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "draft": {
+   "7": "ENTWURF"
+  },
+  "current": 8,
+  "notiz": "Anschluss Folge 10 (done 0–6, WEBSITE current mit 'ENTWURF', '?'-Feld danach). Folge 11: WEBSITE bleibt 'ENTWURF' (nie grün), GEWERBE current (gold, ab 'Heute'), BETRIEBE/WERBEBRIEF/ERSTER UMSATZ offen; BETRIEBE bekommt im Übergabe-Beat ein '?'. 12 Felder: Design entscheidet Layout (z. B. 2 Spalten oder kompaktere Zeilen), Look bleibt. Kein Umsatz-Zähler."
+ },
+ "story_objekt": {
+  "name": "checkliste",
+  "quellen": {
+   "frame1": {
+    "src": "design/lauf/04-nur-ein-mensch-word.png",
+    "size": [
+     1800,
+     2300
+    ],
+    "crop": {
+     "x": 258,
+     "y": 70,
+     "w": 895,
+     "h": 860
+    },
+    "masks": [
+     {
+      "x": 498,
+      "y": 148,
+      "w": 156,
+      "h": 38,
+      "fill": "#2B2B2B",
+      "grund": "Titel Punkt 1 'in [Ort]' -> Schwärzungsbalken"
+     },
+     {
+      "x": 346,
+      "y": 226,
+      "w": 526,
+      "h": 192,
+      "fill": "#FFFFFF",
+      "grund": "Text Punkt 1, 1. Absatz (Bezirksamt, Kammer mit Ortsname, Gebühr 25 €) -> papierweiß"
+     }
+    ],
+    "hinweis": "Spalten Kästchen + Aufgabe + Wer, Kopfzeile + Punkte 1–2. Spalte 'Quelle' (x ≥ 1153) nie zeigen (Kammer mit Ortsname). Lokal aus Claudes .docx gerendert, keine claude.ai-Pixel. Vorschau: regie/crops/04-frame1.png",
+    "mensch_zellen": [
+     {
+      "punkt": 1,
+      "x": 878,
+      "y": 133,
+      "w": 274,
+      "h": 452
+     },
+     {
+      "punkt": 2,
+      "x": 878,
+      "y": 586,
+      "w": 274,
+      "h": 342
+     }
+    ],
+    "stempel_ziel_punkt1": {
+     "x": 360,
+     "y": 140,
+     "w": 790,
+     "h": 440
+    }
+   },
+   "ganz": {
+    "src": "design/lauf/checkliste-ansicht.png",
+    "size": [
+     1800,
+     7520
+    ],
+    "crop": {
+     "x": 258,
+     "y": 1133,
+     "w": 895,
+     "h": 5430
+    },
+    "masks": [
+     {
+      "x": 498,
+      "y": 1268,
+      "w": 156,
+      "h": 38,
+      "fill": "#2B2B2B",
+      "grund": "Titel Punkt 1 'in [Ort]' -> Schwärzungsbalken"
+     },
+     {
+      "x": 346,
+      "y": 1346,
+      "w": 526,
+      "h": 192,
+      "fill": "#FFFFFF",
+      "grund": "Text Punkt 1, 1. Absatz (Bezirksamt, Kammer mit Ortsname, Gebühr 25 €) -> papierweiß"
+     }
+    ],
+    "wer_zellen": [
+     {
+      "punkt": 1,
+      "x": 878,
+      "y": 1253,
+      "w": 274,
+      "h": 452,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 2,
+      "x": 878,
+      "y": 1706,
+      "w": 274,
+      "h": 342,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 3,
+      "x": 878,
+      "y": 2049,
+      "w": 274,
+      "h": 489,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 4,
+      "x": 878,
+      "y": 2539,
+      "w": 274,
+      "h": 415,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 5,
+      "x": 878,
+      "y": 2955,
+      "w": 274,
+      "h": 326,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 6,
+      "x": 878,
+      "y": 3450,
+      "w": 274,
+      "h": 572,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 7,
+      "x": 878,
+      "y": 4023,
+      "w": 274,
+      "h": 444,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 8,
+      "x": 878,
+      "y": 4637,
+      "w": 274,
+      "h": 259,
+      "stempel": "Claude",
+      "farbe": "grün"
+     },
+     {
+      "punkt": 9,
+      "x": 878,
+      "y": 4897,
+      "w": 274,
+      "h": 222,
+      "stempel": "Claude",
+      "farbe": "grün"
+     },
+     {
+      "punkt": 10,
+      "x": 878,
+      "y": 5120,
+      "w": 274,
+      "h": 460,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 11,
+      "x": 878,
+      "y": 5581,
+      "w": 274,
+      "h": 223,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 12,
+      "x": 878,
+      "y": 5805,
+      "w": 274,
+      "h": 497,
+      "stempel": "Claude",
+      "farbe": "grün"
+     },
+     {
+      "punkt": 13,
+      "x": 878,
+      "y": 6303,
+      "w": 274,
+      "h": 259,
+      "stempel": "Claude",
+      "farbe": "grün"
+     }
+    ],
+    "hinweis": "Ganze Checkliste (3 Phasen, 13 Punkte), nur bis Spalte 'Wer' (x < 1153: Quelle-Spalte mit Kammer-/Behörden-Ortsnamen nie zeigen). Nicht ab y 6563 (Abschnitt 'Was ich nicht prüfen konnte' nennt den Ort zweimal) und nicht über y 1133 (Gründe-Block nennt Ort + 25 €). Vorschau: regie/crops/ansicht-haken.png"
+   }
+  },
+  "plaetze": [
+   [
+    "0",
+    "hook (unter der Frage)"
+   ],
+   [
+    "Ich@4.5",
+    "off"
+   ],
+   [
+    "Word-Checkliste:end",
+    "groß (aus der Datei-Karte)"
+   ],
+   [
+    "Warum",
+    "top"
+   ],
+   [
+    "Haken",
+    "ganz (alle 13 Punkte)"
+   ],
+   [
+    "Als@32",
+    "off"
+   ]
+  ],
+  "stempel": "MENSCH (Wortlaut Spalte 'Wer'), ab Frame 0 auf Punkt 1, erneuter Aufschlag auf 'Mensch.' (31,81)"
+ },
+ "shots": {
+  "01": {
+   "src": "design/lauf/01-prompt-mit-anhang.png",
+   "size": [
+    1060,
+    840
+   ],
+   "crop": {
+    "x": 40,
+    "y": 150,
+    "w": 990,
+    "h": 560
+   },
+   "marks": [
+    {
+     "x": 52,
+     "y": 160,
+     "w": 180,
+     "h": 180,
+     "farbe": "orange",
+     "was": "Anhang-Karte 'Shirt-Firma Ergebnis Website.md · 39 Zeilen · MD'"
+    }
+   ],
+   "hinweis": "Nie 'Abendgedanken'-Begrüßung (y < 140) und nicht die Fußzeile 'Projekt/Opus/Manuell' (y > 760). Prompt-Text nur als Textur unscharf/abgedunkelt hinter der Karte; lesbar nur die Karte (≤ 12 Wörter)."
+  },
+  "02": {
+   "src": "design/lauf/02-quellen.png",
+   "size": [
+    1100,
+    700
+   ],
+   "crop": {
+    "x": 40,
+    "y": 128,
+    "w": 660,
+    "h": 300
+   },
+   "hinweis": "NUR dieses Band (8 Quellen: LfSt Bayern … IHK Chemnitz). Zeile 2 (y 100–126, Kammer mit Ortsname) und 'HmbBfDI' (y 430–456, Ortskürzel) liegen außerhalb und dürfen auch beim Scrollen nie ins Bild. Fenster nur ~3 Zeilen hoch (≤ 12 Wörter gleichzeitig lesbar), Band scrollt 1× nach oben durch. Vorschau: regie/crops/02-quellen-band.png"
+  },
+  "03": {
+   "src": "design/lauf/03-entscheidung-gruende.png",
+   "size": [
+    1100,
+    480
+   ],
+   "baender": {
+    "als_erstes": {
+     "x": 30,
+     "y": 66,
+     "w": 456,
+     "h": 44,
+     "text": "Als Erstes kommt die Gewerbeanmeldung"
+    },
+    "grund1": {
+     "x": 48,
+     "y": 116,
+     "w": 392,
+     "h": 38,
+     "text": "1. Sie ist Pflicht ab dem ersten Tag."
+    },
+    "grund2": {
+     "x": 48,
+     "y": 186,
+     "w": 460,
+     "h": 38,
+     "text": "2. Die anderen Schritte bauen darauf auf."
+    }
+   },
+   "hinweis": "Nur diese Bänder. Rechte Kante 'als_erstes' bei x 486 hart: danach folgt 'in [Ort], aus drei Gründen'. Grund 3 (y 320–385: 25 €, Bezirksamt) nie. Vorschauen regie/crops/03-*.png"
+  },
+  "06": {
+   "src": "design/lauf/06-datei-karte.png",
+   "size": [
+    1100,
+    170
+   ],
+   "crop": {
+    "x": 30,
+    "y": 10,
+    "w": 790,
+    "h": 102
+   },
+   "marks": [
+    {
+     "x": 34,
+     "y": 14,
+     "w": 780,
+     "h": 96,
+     "farbe": "orange",
+     "was": "Datei-Karte 'Kolonnenshirt checkliste erster verkauf · Dokument · DOCX'"
+    }
+   ]
+  },
+  "04": {
+   "src": "design/lauf/04-nur-ein-mensch-word.png",
+   "size": [
+    1800,
+    2300
+   ],
+   "crop": {
+    "x": 258,
+    "y": 70,
+    "w": 895,
+    "h": 860
+   },
+   "masks": [
+    {
+     "x": 498,
+     "y": 148,
+     "w": 156,
+     "h": 38,
+     "fill": "#2B2B2B",
+     "grund": "Titel Punkt 1 'in [Ort]' -> Schwärzungsbalken"
+    },
+    {
+     "x": 346,
+     "y": 226,
+     "w": 526,
+     "h": 192,
+     "fill": "#FFFFFF",
+     "grund": "Text Punkt 1, 1. Absatz (Bezirksamt, Kammer mit Ortsname, Gebühr 25 €) -> papierweiß"
+    }
+   ],
+   "hinweis": "Spalten Kästchen + Aufgabe + Wer, Kopfzeile + Punkte 1–2. Spalte 'Quelle' (x ≥ 1153) nie zeigen (Kammer mit Ortsname). Lokal aus Claudes .docx gerendert, keine claude.ai-Pixel. Vorschau: regie/crops/04-frame1.png",
+   "mensch_zellen": [
+    {
+     "punkt": 1,
+     "x": 878,
+     "y": 133,
+     "w": 274,
+     "h": 452
+    },
+    {
+     "punkt": 2,
+     "x": 878,
+     "y": 586,
+     "w": 274,
+     "h": 342
+    }
+   ],
+   "stempel_ziel_punkt1": {
+    "x": 360,
+    "y": 140,
+    "w": 790,
+    "h": 440
+   }
+  },
+  "checkliste": {
+   "src": "design/lauf/checkliste-ansicht.png",
+   "size": [
+    1800,
+    7520
+   ],
+   "crop": {
+    "x": 258,
+    "y": 1133,
+    "w": 895,
+    "h": 5430
+   },
+   "masks": [
+    {
+     "x": 498,
+     "y": 1268,
+     "w": 156,
+     "h": 38,
+     "fill": "#2B2B2B",
+     "grund": "Titel Punkt 1 'in [Ort]' -> Schwärzungsbalken"
+    },
+    {
+     "x": 346,
+     "y": 1346,
+     "w": 526,
+     "h": 192,
+     "fill": "#FFFFFF",
+     "grund": "Text Punkt 1, 1. Absatz (Bezirksamt, Kammer mit Ortsname, Gebühr 25 €) -> papierweiß"
+    }
+   ],
+   "wer_zellen": [
+    {
+     "punkt": 1,
+     "x": 878,
+     "y": 1253,
+     "w": 274,
+     "h": 452,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 2,
+     "x": 878,
+     "y": 1706,
+     "w": 274,
+     "h": 342,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 3,
+     "x": 878,
+     "y": 2049,
+     "w": 274,
+     "h": 489,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 4,
+     "x": 878,
+     "y": 2539,
+     "w": 274,
+     "h": 415,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 5,
+     "x": 878,
+     "y": 2955,
+     "w": 274,
+     "h": 326,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 6,
+     "x": 878,
+     "y": 3450,
+     "w": 274,
+     "h": 572,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 7,
+     "x": 878,
+     "y": 4023,
+     "w": 274,
+     "h": 444,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 8,
+     "x": 878,
+     "y": 4637,
+     "w": 274,
+     "h": 259,
+     "stempel": "Claude",
+     "farbe": "grün"
+    },
+    {
+     "punkt": 9,
+     "x": 878,
+     "y": 4897,
+     "w": 274,
+     "h": 222,
+     "stempel": "Claude",
+     "farbe": "grün"
+    },
+    {
+     "punkt": 10,
+     "x": 878,
+     "y": 5120,
+     "w": 274,
+     "h": 460,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 11,
+     "x": 878,
+     "y": 5581,
+     "w": 274,
+     "h": 223,
+     "stempel": "Mensch",
+     "farbe": "orange"
+    },
+    {
+     "punkt": 12,
+     "x": 878,
+     "y": 5805,
+     "w": 274,
+     "h": 497,
+     "stempel": "Claude",
+     "farbe": "grün"
+    },
+    {
+     "punkt": 13,
+     "x": 878,
+     "y": 6303,
+     "w": 274,
+     "h": 259,
+     "stempel": "Claude",
+     "farbe": "grün"
+    }
+   ],
+   "hinweis": "Ganze Checkliste (3 Phasen, 13 Punkte), nur bis Spalte 'Wer' (x < 1153: Quelle-Spalte mit Kammer-/Behörden-Ortsnamen nie zeigen). Nicht ab y 6563 (Abschnitt 'Was ich nicht prüfen konnte' nennt den Ort zweimal) und nicht über y 1133 (Gründe-Block nennt Ort + 25 €). Vorschau: regie/crops/ansicht-haken.png"
+  },
+  "05": "NICHT verwenden (Ort 2×)",
+  "07": "optional nur Zeile y 36–76"
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 0.43,
+   "wort_start": {
+    "w": null,
+    "after": 0
+   },
+   "bild": "Frame 1 = Ergebnis, nur Belegtes: Hook-Frage oben ab Frame 0 komplett (instant). Darunter die echte Checkliste aus Claudes Word-Datei (SHOT04-Ausschnitt: Kopfzeile + Punkte 1–2, orange 'Mensch'-Zellen der Datei sichtbar, Ankreuzkästchen leer, Ort geschwärzt). Schräger Stempel 'MENSCH' (Wortlaut der Datei-Spalte 'Wer') liegt ab Frame 0 auf Punkt 1 (wie ENTWURF in Folge 10). Kein Zähler, kein Umsatz-Zähler. HUD-Badge 'TAG 3' klein erlaubt (nicht gesprochen). Checkliste überlappt nie den Gründungsplan (Board ausgeblendet bis 'Ich').",
+   "kamera": "langsamer Push-in auf Punkt 1; Drop-Punch +4 % auf 'Umsatz'",
+   "frage": "Warum steht da 'Mensch', wenn eine KI das allein macht?",
+   "karten": [
+    {
+     "text": "Wie viel Umsatz macht / eine KI in 100 Tagen?",
+     "at": "0",
+     "t": 0.0
+    },
+    {
+     "text": "MENSCH (Stempel auf Punkt 1, ab Frame 0)",
+     "at": "0",
+     "t": 0.0
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.4
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/04-nur-ein-mensch-word.png",
+    "size": [
+     1800,
+     2300
+    ],
+    "crop": {
+     "x": 258,
+     "y": 70,
+     "w": 895,
+     "h": 860
+    },
+    "masks": [
+     {
+      "x": 498,
+      "y": 148,
+      "w": 156,
+      "h": 38,
+      "fill": "#2B2B2B",
+      "grund": "Titel Punkt 1 'in [Ort]' -> Schwärzungsbalken"
+     },
+     {
+      "x": 346,
+      "y": 226,
+      "w": 526,
+      "h": 192,
+      "fill": "#FFFFFF",
+      "grund": "Text Punkt 1, 1. Absatz (Bezirksamt, Kammer mit Ortsname, Gebühr 25 €) -> papierweiß"
+     }
+    ],
+    "hinweis": "Spalten Kästchen + Aufgabe + Wer, Kopfzeile + Punkte 1–2. Spalte 'Quelle' (x ≥ 1153) nie zeigen (Kammer mit Ortsname). Lokal aus Claudes .docx gerendert, keine claude.ai-Pixel. Vorschau: regie/crops/04-frame1.png",
+    "mensch_zellen": [
+     {
+      "punkt": 1,
+      "x": 878,
+      "y": 133,
+      "w": 274,
+      "h": 452
+     },
+     {
+      "punkt": 2,
+      "x": 878,
+      "y": 586,
+      "w": 274,
+      "h": 342
+     }
+    ],
+    "stempel_ziel_punkt1": {
+     "x": 360,
+     "y": 140,
+     "w": 790,
+     "h": 440
+    }
+   },
+   "events": [
+    0.0,
+    "Umsatz"
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 0.43,
+   "bis": 3.33,
+   "wort_start": {
+    "w": "Umsatz",
+    "after": 0
+   },
+   "bild": "Nur Ereignisse am Hook-Objekt, kein neuer Text: auf 'macht' Mensch-Zelle Punkt 1 glüht; auf 'Unternehmen' Zelle Punkt 2 pulst (Welle nach unten); auf 'das@1.5' leeres Kästchen Punkt 1 blinkt kurz (bleibt leer); auf 'KI@2' Stempel MENSCH wackelt; auf '100' Mini-Punch auf '100' in der Hook-Frage; auf 'Tage' Schatten des Stempels MENSCH zieht kurz nach (Licht-Sweep über Punkt 1); auf 'lang' Kamera rutscht auf Punkt 1 zu.",
+   "kamera": "steht, atmet; Mini-Punch auf '100'",
+   "frage": "Kann eine KI das wirklich allein?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "macht",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "Unternehmen",
+     "f": "popLo",
+     "v": 0.2
+    },
+    {
+     "anker": "das@1.5",
+     "f": "click",
+     "v": 0.18
+    },
+    {
+     "anker": "KI@2",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "100",
+     "f": "popHi",
+     "v": 0.2
+    },
+    {
+     "anker": "Tage",
+     "f": "tick",
+     "v": 0.12
+    },
+    {
+     "anker": "lang",
+     "f": "wshort",
+     "v": 0.16
+    }
+   ],
+   "events": [
+    "macht",
+    "Unternehmen",
+    "das@1.5",
+    "KI@2",
+    "100",
+    "Tage",
+    "lang"
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 3.33,
+   "bis": 4.87,
+   "wort_start": {
+    "w": "ganz",
+    "after": 3.0
+   },
+   "bild": "Stempel 'GANZ ALLEINE.' oben auf 'alleine' (Spannung zum MENSCH-Stempel darunter); auf 'führt?' Punch-in; bei 4,35 stößt MENSCH einmal nach (kein neuer Text).",
+   "kamera": "Punch-in 4 % auf 'führt?'",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine",
+     "t": 3.58
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz@3-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "clack",
+     "v": 0.42
+    },
+    {
+     "anker": "führt",
+     "f": "bump",
+     "v": 0.3
+    },
+    {
+     "t": 4.35,
+     "f": "tick",
+     "v": 0.15
+    }
+   ],
+   "events": [
+    "ganz@3",
+    "alleine",
+    "führt",
+    4.35
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 4.87,
+   "bis": 6.52,
+   "wort_start": {
+    "w": "Ich",
+    "after": 4.5
+   },
+   "bild": "Checkliste fliegt nach unten raus (outAt 'Ich'), Gründungsplan blendet ein (planFrom 'Ich-0.05'), Maskottchen hüpft auf 'probier' (ganz im Bild). Kein Slam, kein 'Tag drei' (nicht erste Folge).",
+   "kamera": "Pull-back zum Board",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Ich@4.5-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "probier",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "aus@5.4",
+     "f": "click",
+     "v": 0.2
+    }
+   ],
+   "events": [
+    "Ich@4.5",
+    "probier",
+    "aus@5.4",
+    6.0
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "rueckblick",
+   "von": 6.52,
+   "bis": 9.84,
+   "wort_start": {
+    "w": "Die",
+    "after": 6.0
+   },
+   "bild": "Gründungsplan ganz im Bild (12 Felder, s. plan_vorschlag): PRODUKT … NAME, LOGO grün abgehakt; WEBSITE neutral; GEWERBE, BETRIEBE, WERBEBRIEF, ERSTER UMSATZ offen. Produkt-Karte 'SHIRTS MIT LOGO' fliegt auf 'verkauft' unter das Board.",
+   "kamera": "ruhig, Board voll",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "at": "verkauft",
+     "t": 7.41
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@6-0.08",
+     "f": "wqh",
+     "v": 0.18
+    },
+    {
+     "anker": "verkauft",
+     "f": "popHi",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "rueckblick",
+   "von": 9.84,
+   "bis": 11.23,
+   "wort_start": {
+    "w": "bestickt",
+    "after": 9.5
+   },
+   "bild": "Banner 'erst auf Bestellung bestickt' in der Produkt-Karte.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "erst auf Bestellung / bestickt",
+     "at": "bestickt",
+     "t": 9.84
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.22
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "rueckblick",
+   "von": 11.23,
+   "bis": 13.23,
+   "wort_start": {
+    "w": "Website-Entwurf",
+    "after": 11.0
+   },
+   "bild": "Zuletzt bearbeiteter Schritt WEBSITE leuchtet kurz auf (NICHT grün, kein Haken): Etikett 'ENTWURF' (Stempel-Wort aus Lauf 10) schlägt auf das Feld WEBSITE auf 'Website-Entwurf'; auf 'offline.' kleines Offline-Symbol (Wolke durchgestrichen o. ä., kein Text) am Feld. Kein neues Bild (Bilder nur aus design/lauf/ von Folge 11; das Handy aus Folge 10 nur, wenn der Chef es als Serien-Asset freigibt).",
+   "kamera": "leichter Push-in auf WEBSITE",
+   "frage": "Und was fehlt noch?",
+   "karten": [
+    {
+     "text": "ENTWURF (Etikett auf WEBSITE)",
+     "at": "Website-Entwurf",
+     "t": 11.23
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Website-Entwurf",
+     "f": "stamp",
+     "v": 0.3
+    },
+    {
+     "anker": "offline",
+     "f": "popLo",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "akt": "rueckblick",
+   "von": 13.23,
+   "bis": 15.87,
+   "wort_start": {
+    "w": "Heute",
+    "after": 13.0
+   },
+   "bild": "Fahrt eine Zeile weiter zu GEWERBE (gold, current), Pill 'HEUTE: ANMELDEN' unter dem Board. Auf 'anmelden?' Feld GEWERBE pulst einmal. Produkt-Karte fliegt raus.",
+   "kamera": "Fahrt auf Zeile GEWERBE",
+   "frage": "Was muss man vor dem ersten Verkauf anmelden?",
+   "karten": [
+    {
+     "text": "HEUTE: ANMELDEN",
+     "at": "Heute",
+     "t": 13.23
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.1",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Heute+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "anmelden",
+     "f": "tick",
+     "v": 0.16
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 15.87,
+   "bis": 17.58,
+   "wort_start": {
+    "w": "Letztes",
+    "after": 15.5
+   },
+   "bild": "Echter Shot 01 im Paper-Fenster (SHOT01-Ausschnitt). Auf 'Letztes' Kamera auf die Anhang-Karte, auf 'Ergebnis' orange Rahmen um die Karte 'Shirt-Firma Ergebnis Website.md · 39 Zeilen', auf 'angehängt' Zeiger tippt auf '+' (x 67 y 716) und die Karte hüpft einmal. Prompt-Text dahinter nur als Textur.",
+   "kamera": "Push-in auf die Anhang-Karte",
+   "frage": "Womit hat sie angefangen?",
+   "karten": [
+    {
+     "text": "Rahmen Anhang-Karte (kein neuer Text)",
+     "at": "Ergebnis"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Letztes-0.1",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "Ergebnis",
+     "f": "popLo",
+     "v": 0.25
+    },
+    {
+     "anker": "angehängt",
+     "f": "click",
+     "v": 0.22
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/01-prompt-mit-anhang.png",
+    "size": [
+     1060,
+     840
+    ],
+    "crop": {
+     "x": 40,
+     "y": 150,
+     "w": 990,
+     "h": 560
+    },
+    "marks": [
+     {
+      "x": 52,
+      "y": 160,
+      "w": 180,
+      "h": 180,
+      "farbe": "orange",
+      "was": "Anhang-Karte 'Shirt-Firma Ergebnis Website.md · 39 Zeilen · MD'"
+     }
+    ],
+    "hinweis": "Nie 'Abendgedanken'-Begrüßung (y < 140) und nicht die Fußzeile 'Projekt/Opus/Manuell' (y > 760). Prompt-Text nur als Textur unscharf/abgedunkelt hinter der Karte; lesbar nur die Karte (≤ 12 Wörter)."
+   }
+  },
+  {
+   "id": "B10",
+   "akt": "claude",
+   "von": 17.58,
+   "bis": 18.61,
+   "wort_start": {
+    "w": "Websuche",
+    "after": 17.0
+   },
+   "bild": "Schnitt auf echten Shot 02 (NUR das Band SHOT02, 8 Quellen, kein Ort): Fenster ~3 Zeilen hoch, Band scrollt bis 'Word-Checkliste' einmal ruhig nach oben; pro Zeile ein kurzer Link-Glanz. Optional klein darüber Shot 07 Zeile 'Rechtliche Anforderungen … recherchiert' (x 40 y 40 w 720 h 32), nicht beides groß.",
+   "kamera": "Pan nach oben durch die Quellen",
+   "frage": "Woher weiß sie das?",
+   "karten": [],
+   "sfx": [
+    {
+     "anker": "Websuche-0.08",
+     "f": "wshort",
+     "v": 0.18
+    },
+    {
+     "anker": "Websuche+0.3",
+     "f": "typing",
+     "v": 0.12
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/02-quellen.png",
+    "size": [
+     1100,
+     700
+    ],
+    "crop": {
+     "x": 40,
+     "y": 128,
+     "w": 660,
+     "h": 300
+    },
+    "hinweis": "NUR dieses Band (8 Quellen: LfSt Bayern … IHK Chemnitz). Zeile 2 (y 100–126, Kammer mit Ortsname) und 'HmbBfDI' (y 430–456, Ortskürzel) liegen außerhalb und dürfen auch beim Scrollen nie ins Bild. Fenster nur ~3 Zeilen hoch (≤ 12 Wörter gleichzeitig lesbar), Band scrollt 1× nach oben durch. Vorschau: regie/crops/02-quellen-band.png"
+   },
+   "shot_optional": {
+    "src": "design/lauf/07-schritte-zeile.png",
+    "crop": {
+     "x": 30,
+     "y": 36,
+     "w": 740,
+     "h": 40
+    }
+   }
+  },
+  {
+   "id": "B11",
+   "akt": "claude",
+   "von": 18.61,
+   "bis": 19.96,
+   "wort_start": {
+    "w": "13",
+    "after": 18.0
+   },
+   "bild": "Zahl als Bild: 13 leere Ankreuzkästchen-Zeilen (Miniatur der echten Checkliste SHOT_ALL, so klein, dass kein Wort lesbar ist) zählen von oben durch; Karte '13 PUNKTE' auf '13'.",
+   "kamera": "steht, leichter Push-in",
+   "frage": "Und als was kommt das raus?",
+   "karten": [
+    {
+     "text": "13 PUNKTE",
+     "at": "13",
+     "t": 18.61
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "13",
+     "f": "roll",
+     "v": 0.2
+    },
+    {
+     "anker": "Punkte",
+     "f": "tick",
+     "v": 0.14
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/checkliste-ansicht.png",
+    "crop": {
+     "x": 258,
+     "y": 1133,
+     "w": 895,
+     "h": 5430
+    },
+    "masks": [
+     {
+      "x": 498,
+      "y": 1268,
+      "w": 156,
+      "h": 38,
+      "fill": "#2B2B2B",
+      "grund": "Titel Punkt 1 'in [Ort]' -> Schwärzungsbalken"
+     },
+     {
+      "x": 346,
+      "y": 1346,
+      "w": 526,
+      "h": 192,
+      "fill": "#FFFFFF",
+      "grund": "Text Punkt 1, 1. Absatz (Bezirksamt, Kammer mit Ortsname, Gebühr 25 €) -> papierweiß"
+     }
+    ],
+    "darstellung": "Miniatur, Text unlesbar"
+   }
+  },
+  {
+   "id": "B12",
+   "akt": "claude",
+   "von": 19.96,
+   "bis": 21.62,
+   "wort_start": {
+    "w": "Word-Checkliste",
+    "after": 19.5
+   },
+   "bild": "Schnitt auf echten Shot 06: Datei-Karte 'Kolonnenshirt checkliste erster verkauf · Dokument · DOCX' orange gerahmt auf 'Word-Checkliste'; '13 PUNKTE' rutscht klein an die Karte. Zeiger klickt die Karte am Satzende (Übergang: Karte klappt zur Checkliste auf, die ab hier Story-Objekt ist).",
+   "kamera": "Push-in auf die Datei-Karte, Karte wächst zur Checkliste",
+   "frage": "Was steht drin?",
+   "karten": [
+    {
+     "text": "Rahmen Datei-Karte DOCX (kein neuer Text)",
+     "at": "Word-Checkliste"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Word-Checkliste",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Word-Checkliste:end",
+     "f": "click",
+     "v": 0.22
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/06-datei-karte.png",
+    "size": [
+     1100,
+     170
+    ],
+    "crop": {
+     "x": 30,
+     "y": 10,
+     "w": 790,
+     "h": 102
+    },
+    "marks": [
+     {
+      "x": 34,
+      "y": 14,
+      "w": 780,
+      "h": 96,
+      "farbe": "orange",
+      "was": "Datei-Karte 'Kolonnenshirt checkliste erster verkauf · Dokument · DOCX'"
+     }
+    ]
+   }
+  },
+  {
+   "id": "B13",
+   "akt": "entscheidung",
+   "von": 21.62,
+   "bis": 24.57,
+   "wort_start": {
+    "w": "Als",
+    "after": 21.0
+   },
+   "bild": "Story-Objekt Checkliste (SHOT04) groß. Auf 'Als@21' echtes Band 'Als Erstes kommt die Gewerbeanmeldung' (SHOT03.baender.als_erstes, hart bei x 486 beschnitten) erscheint oben als Beleg-Zeile. **Musik-Mulde** 21,95–23,05 (natürliche Stille im Stück), Bild steht. Auf 'Gewerbe.' (Musik-Schlag genau hier) Punkt 1 der Checkliste wird gold gerahmt + Ziffer-Badge '1', gleichzeitig leuchtet Board-Feld GEWERBE kurz (Mini-Board oben). In der 0,9-s-Pause danach: nichts Neues, Entscheidung setzt sich.",
+   "kamera": "langsamer Push-in auf Punkt 1, Halt",
+   "frage": "Warum ausgerechnet das zuerst?",
+   "karten": [
+    {
+     "text": "Beleg-Band 'Als Erstes kommt die Gewerbeanmeldung' (Screenshot)",
+     "at": "Als@21",
+     "t": 21.62
+    },
+    {
+     "text": "Rahmen + Badge 1 auf Punkt 1 (kein neuer Text)",
+     "at": "Gewerbe@23"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@21-0.05",
+     "f": "page",
+     "v": 0.18
+    },
+    {
+     "anker": "Gewerbe@23",
+     "f": "power",
+     "v": 0.22
+    },
+    {
+     "anker": "Gewerbe@23+0.05",
+     "f": "check",
+     "v": 0.25
+    }
+   ],
+   "ton": "Musik fast still (Mulde 21,95–23,05, Kurve 0,018), Akzent auf 'Gewerbe.' (0,065)",
+   "shot": {
+    "src": "design/lauf/03-entscheidung-gruende.png",
+    "size": [
+     1100,
+     480
+    ],
+    "baender": {
+     "als_erstes": {
+      "x": 30,
+      "y": 66,
+      "w": 456,
+      "h": 44,
+      "text": "Als Erstes kommt die Gewerbeanmeldung"
+     },
+     "grund1": {
+      "x": 48,
+      "y": 116,
+      "w": 392,
+      "h": 38,
+      "text": "1. Sie ist Pflicht ab dem ersten Tag."
+     },
+     "grund2": {
+      "x": 48,
+      "y": 186,
+      "w": 460,
+      "h": 38,
+      "text": "2. Die anderen Schritte bauen darauf auf."
+     }
+    },
+    "hinweis": "Nur diese Bänder. Rechte Kante 'als_erstes' bei x 486 hart: danach folgt 'in [Ort], aus drei Gründen'. Grund 3 (y 320–385: 25 €, Bezirksamt) nie. Vorschauen regie/crops/03-*.png"
+   },
+   "story_objekt": "checkliste (SHOT04)"
+  },
+  {
+   "id": "B14",
+   "akt": "warum",
+   "von": 24.57,
+   "bis": 27.67,
+   "wort_start": {
+    "w": "Warum",
+    "after": 24.0
+   },
+   "bild": "Checkliste rückt ins obere Drittel (bleibt). Pill 'WARUM?' auf 'Warum?'. Karte 1 'PFLICHT AB BEGINN' (Datei: 'verlangt die Anzeige gleichzeitig mit dem Beginn'; Chat: 'Pflicht ab dem ersten Tag') auf 'Pflicht+0.03', klein darunter '§ 14 GewO', Gegenwert grau 'ohne: Verstoß' (Datei: 'Wer ohne Anmeldung anfängt, verstößt gegen diese Pflicht.'). Pfeil von der Karte auf Punkt 1. Beleg-Kachel klein (nicht zum Lesen): SHOT03.baender.grund1. NIE 'TAG' allein, nie 'TAG 1'/'TAG EINS'.",
+   "kamera": "kurze Fahrt nach oben, dann ruhig",
+   "frage": "Warum Pflicht?",
+   "karten": [
+    {
+     "text": "WARUM?",
+     "at": "Warum",
+     "t": 24.57
+    },
+    {
+     "text": "PFLICHT AB BEGINN",
+     "unter": "§ 14 GewO",
+     "vs": "ohne: Verstoß",
+     "at": "Pflicht+0.03",
+     "t": 25.78
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.25
+    },
+    {
+     "anker": "Pflicht+0.03",
+     "f": "popLo",
+     "v": 0.25
+    },
+    {
+     "anker": "Tag",
+     "f": "tick",
+     "v": 0.14
+    }
+   ],
+   "proof": {
+    "src": "design/lauf/03-entscheidung-gruende.png",
+    "band": {
+     "x": 48,
+     "y": 116,
+     "w": 392,
+     "h": 38,
+     "text": "1. Sie ist Pflicht ab dem ersten Tag."
+    }
+   }
+  },
+  {
+   "id": "B15",
+   "akt": "warum",
+   "von": 27.67,
+   "bis": 30.08,
+   "wort_start": {
+    "w": "Die",
+    "after": 27.0
+   },
+   "bild": "Grund 2 als Bild, GENAU auf 'Die anderen Schritte bauen darauf auf.': Karte 2 = Pfeilkette als EIN Textblock (4 Wörter, alle gleichzeitig, grau): 'GEWERBE → FINANZAMT → STEUERNUMMER → VERPACKUNG' (Lauf-Reihenfolge: Chat Grund 2 'Danach folgt der Fragebogen beim Finanzamt … Steuernummer … Verpackungsregister LUCID'; Datei 'Sie schaltet die anderen Schritte frei'). Ab 'anderen' laufen die Pfeile nacheinander und färben die Stationen orange: 'anderen' GEWERBE (Fundament, dick) → 'Schritte' FINANZAMT → 'bauen' STEUERNUMMER → 'darauf' VERPACKUNG; auf 'auf.' Klammer unter allen drei Folgestationen zeigt zurück auf GEWERBE. Kein zusätzlicher Text. Beleg-Kachel klein: SHOT03.baender.grund2.",
+   "kamera": "leichter Pull-back, Kette ganz im Bild",
+   "frage": "Welche Schritte?",
+   "karten": [
+    {
+     "text": "GEWERBE → FINANZAMT → STEUERNUMMER → VERPACKUNG",
+     "at": "Die@27",
+     "t": 27.67,
+     "vs": null
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@27-0.05",
+     "f": "wshort",
+     "v": 0.18
+    },
+    {
+     "anker": "anderen",
+     "f": "popLo",
+     "v": 0.2
+    },
+    {
+     "anker": "Schritte",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "bauen",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "darauf",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "auf@29",
+     "f": "check",
+     "v": 0.22
+    }
+   ],
+   "proof": {
+    "src": "design/lauf/03-entscheidung-gruende.png",
+    "band": {
+     "x": 48,
+     "y": 186,
+     "w": 460,
+     "h": 38,
+     "text": "2. Die anderen Schritte bauen darauf auf."
+    }
+   },
+   "events": [
+    "Die@27",
+    "anderen",
+    "Schritte",
+    "bauen",
+    "darauf",
+    "auf@29"
+   ]
+  },
+  {
+   "id": "B16",
+   "akt": "haken",
+   "von": 30.08,
+   "bis": 32.81,
+   "wort_start": {
+    "w": "Haken",
+    "after": 29.5
+   },
+   "bild": "Pill 'HAKEN' (fallend gesprochen = Aussage). Warum-Karten fliegen 0,2 s vorher raus. Die GANZE Checkliste (SHOT_ALL, alle 13 Punkte in 3 Phasen, Ort geschwärzt, Quelle-Spalte weg) fährt groß ein. Auf 'Das' bis 'ein' leuchten die 9 orangen 'Mensch'-Zellen nacheinander auf (Punkte 1–7, 10, 11; je ~0,07 s), die 4 grünen 'Claude'-Zellen (8, 9, 12, 13) bleiben gedimmt. Auf 'nur' Zähler-Karte '9 VON 13' (erst hier, nur Bild, nicht gesprochen). Auf 'Mensch.' schlägt der vorhandene Stempel MENSCH auf Punkt 1 noch einmal auf (kein neuer Text). Kein Haken im Kästchen, keine Hand, kein ausgefülltes Formular, kein Haken an GEWERBE auf dem Board.",
+   "kamera": "Pull-back, damit die ganze Liste im Bild ist; Push-in auf Punkt 1 auf 'Mensch.'",
+   "frage": "Was kann sie nicht selbst?",
+   "karten": [
+    {
+     "text": "HAKEN",
+     "at": "Haken",
+     "t": 30.08
+    },
+    {
+     "text": "9 VON 13",
+     "at": "nur",
+     "t": 31.48
+    },
+    {
+     "text": "MENSCH (vorhandener Stempel, erneuter Aufschlag)",
+     "at": "Mensch"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Haken-0.08",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Haken",
+     "f": "page",
+     "v": 0.22
+    },
+    {
+     "anker": "Das@30.5",
+     "f": "roll",
+     "v": 0.18
+    },
+    {
+     "anker": "nur",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Mensch",
+     "f": "stamp",
+     "v": 0.35
+    }
+   ],
+   "shot": {
+    "src": "design/lauf/checkliste-ansicht.png",
+    "size": [
+     1800,
+     7520
+    ],
+    "crop": {
+     "x": 258,
+     "y": 1133,
+     "w": 895,
+     "h": 5430
+    },
+    "masks": [
+     {
+      "x": 498,
+      "y": 1268,
+      "w": 156,
+      "h": 38,
+      "fill": "#2B2B2B",
+      "grund": "Titel Punkt 1 'in [Ort]' -> Schwärzungsbalken"
+     },
+     {
+      "x": 346,
+      "y": 1346,
+      "w": 526,
+      "h": 192,
+      "fill": "#FFFFFF",
+      "grund": "Text Punkt 1, 1. Absatz (Bezirksamt, Kammer mit Ortsname, Gebühr 25 €) -> papierweiß"
+     }
+    ],
+    "wer_zellen": [
+     {
+      "punkt": 1,
+      "x": 878,
+      "y": 1253,
+      "w": 274,
+      "h": 452,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 2,
+      "x": 878,
+      "y": 1706,
+      "w": 274,
+      "h": 342,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 3,
+      "x": 878,
+      "y": 2049,
+      "w": 274,
+      "h": 489,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 4,
+      "x": 878,
+      "y": 2539,
+      "w": 274,
+      "h": 415,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 5,
+      "x": 878,
+      "y": 2955,
+      "w": 274,
+      "h": 326,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 6,
+      "x": 878,
+      "y": 3450,
+      "w": 274,
+      "h": 572,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 7,
+      "x": 878,
+      "y": 4023,
+      "w": 274,
+      "h": 444,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 8,
+      "x": 878,
+      "y": 4637,
+      "w": 274,
+      "h": 259,
+      "stempel": "Claude",
+      "farbe": "grün"
+     },
+     {
+      "punkt": 9,
+      "x": 878,
+      "y": 4897,
+      "w": 274,
+      "h": 222,
+      "stempel": "Claude",
+      "farbe": "grün"
+     },
+     {
+      "punkt": 10,
+      "x": 878,
+      "y": 5120,
+      "w": 274,
+      "h": 460,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 11,
+      "x": 878,
+      "y": 5581,
+      "w": 274,
+      "h": 223,
+      "stempel": "Mensch",
+      "farbe": "orange"
+     },
+     {
+      "punkt": 12,
+      "x": 878,
+      "y": 5805,
+      "w": 274,
+      "h": 497,
+      "stempel": "Claude",
+      "farbe": "grün"
+     },
+     {
+      "punkt": 13,
+      "x": 878,
+      "y": 6303,
+      "w": 274,
+      "h": 259,
+      "stempel": "Claude",
+      "farbe": "grün"
+     }
+    ],
+    "hinweis": "Ganze Checkliste (3 Phasen, 13 Punkte), nur bis Spalte 'Wer' (x < 1153: Quelle-Spalte mit Kammer-/Behörden-Ortsnamen nie zeigen). Nicht ab y 6563 (Abschnitt 'Was ich nicht prüfen konnte' nennt den Ort zweimal) und nicht über y 1133 (Gründe-Block nennt Ort + 25 €). Vorschau: regie/crops/ansicht-haken.png"
+   },
+   "zaehl_reihenfolge": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11
+   ],
+   "gedimmt": [
+    8,
+    9,
+    12,
+    13
+   ]
+  },
+  {
+   "id": "B17",
+   "akt": "als_naechstes",
+   "von": 32.81,
+   "bis": 36.27,
+   "wort_start": {
+    "w": "Als",
+    "after": 32.0
+   },
+   "bild": "Pill 'ALS NÄCHSTES' auf 'Als@32'. Board klein oben: LOGO grün, WEBSITE 'ENTWURF' (nicht grün), GEWERBE gold mit kleinem Personen-Symbol (kein Haken, nicht erledigt), BETRIEBE gestrichelt mit '?' (poppt auf 'Wen'). Frage-Karte 'WEN ZUERST ANSPRECHEN?' auf 'Wen'. Keine Betriebsnamen, keine Region.",
+   "kamera": "ruhig, leichter Push-in auf BETRIEBE ?",
+   "frage": "Wen spricht sie an?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@32",
+     "t": 32.81
+    },
+    {
+     "text": "WEN ZUERST ANSPRECHEN?",
+     "at": "Wen",
+     "t": 34.13
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@32-0.1",
+     "f": "airy",
+     "v": 0.2
+    },
+    {
+     "anker": "Wen",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "zuerst",
+     "f": "tick",
+     "v": 0.16
+    },
+    {
+     "anker": "an@35",
+     "f": "popLo",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B18",
+   "akt": "cta",
+   "von": 36.27,
+   "bis": 45.79,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 35.5
+   },
+   "bild": "Endkarte wie Folge 9/10 (end-Akt, itemTag 'DM'): Keyword 'Gewerbe' tippt auf '„Gewerbe“', Haken, Flieger. Items nacheinander: 'Die Frage' (Snip aus Shot 01: nur Anhang-Karte + 1 Prompt-Zeile 'Mach daraus eine Checkliste als Word-Datei.' x 643 y 628 w 337 h 26 + x 56 y 662 w 127 h 26) auf 'Frage'; 'Echte Checkliste' (Snip = SHOT04 mit Schwärzung, orange Mensch-Zellen) auf 'Checkliste+0.1'. Ergebnis als EIN Block 'STARTLISTE IN 10 MINUTEN' auf 'Damit+0.05', auf 'Startliste' nur Puls. Halt bis Ende (Endkarte 1,0 s nach Stimmende). Kein Ort, keine Gebühr.",
+   "kamera": "ruhiger Push-in, Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "Gewerbe (Keyword)",
+     "at": "Gewerbe@36.5",
+     "t": 37.03
+    },
+    {
+     "text": "Die Frage",
+     "at": "Frage",
+     "t": 38.74
+    },
+    {
+     "text": "Echte Checkliste",
+     "at": "Checkliste+0.1",
+     "t": 39.97
+    },
+    {
+     "text": "STARTLISTE IN 10 MINUTEN",
+     "at": "Damit+0.05",
+     "t": 41.22
+    },
+    {
+     "text": "Puls auf STARTLISTE (kein neuer Text)",
+     "at": "Startliste"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.22
+    },
+    {
+     "anker": "Gewerbe@36.5",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Gewerbe@36.5:end",
+     "f": "check",
+     "v": 0.28
+    },
+    {
+     "anker": "und@37.8",
+     "f": "wqh",
+     "v": 0.2
+    },
+    {
+     "anker": "Frage",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Checkliste+0.1",
+     "f": "popHi",
+     "v": 0.22
+    },
+    {
+     "anker": "Damit+0.05",
+     "f": "chime",
+     "v": 0.22
+    },
+    {
+     "anker": "Startliste",
+     "f": "pop",
+     "v": 0.2
+    }
+   ]
+  }
+ ],
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

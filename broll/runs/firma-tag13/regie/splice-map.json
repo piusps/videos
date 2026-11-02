@@ -1,0 +1,192 @@
+{
+ "quelle": {
+  "eroeffnung": "regie/retake/open4.mp3 0–6.265",
+  "mitte": "regie/voice-r2.mp3 6.915–40.695 (R2 unverändert)",
+  "cta2": "regie/retake/cta1.mp3 3.885–6.827"
+ },
+ "nahtpausen": {
+  "vier.->Die": 0.4,
+  "Briefvorlage.->Damit": 0.7
+ },
+ "offset_mitte_s": -0.3,
+ "offset_cta_s": 37.16,
+ "laenge_s": 43.987,
+ "r2_pausen": [
+  {
+   "nach": 14,
+   "wort": "führt?",
+   "vor": "Ich",
+   "roh": 0.55,
+   "neu": 0.7,
+   "grund": "führt? -> Ich"
+  },
+  {
+   "nach": 18,
+   "wort": "aus.",
+   "vor": "Die",
+   "roh": 0.43,
+   "neu": 0.7,
+   "grund": "aus. -> Die (Rückblick beginnt)"
+  },
+  {
+   "nach": 29,
+   "wort": "Betriebe,",
+   "vor": "bestickt",
+   "roh": 0.17,
+   "neu": 0.15,
+   "grund": "Betriebe, -> bestickt (Rückblick Satz 1 zusammenhalten)"
+  },
+  {
+   "nach": 33,
+   "wort": "Bestellung.",
+   "vor": "Liste:",
+   "roh": 0.31,
+   "neu": 0.15,
+   "grund": "Rückblick Satz 1 -> 2 (kurz, Rückblick <= 6,5 s)"
+  },
+  {
+   "nach": 34,
+   "wort": "Liste:",
+   "vor": "zwanzig",
+   "roh": 0.12,
+   "neu": 0.12,
+   "grund": "Liste: -> zwanzig (Doppelpunkt kurz)"
+  },
+  {
+   "nach": 36,
+   "wort": "Betriebe.",
+   "vor": "Heute",
+   "roh": 0.35,
+   "neu": 0.7,
+   "grund": "Betriebe. -> Heute (Rückblick endet, Fahrt zu WERBEBRIEF)"
+  },
+  {
+   "nach": 42,
+   "wort": "Werbung.",
+   "vor": "Claude:",
+   "roh": 0.23,
+   "neu": 0.7,
+   "grund": "Werbung. -> Claude (neuer Akt Claude-Weg)"
+  },
+  {
+   "nach": 43,
+   "wort": "Claude:",
+   "vor": "Liste",
+   "roh": 0.1,
+   "neu": 0.25,
+   "grund": "Claude: -> Liste (Doppelpunkt ~0,2 s)"
+  },
+  {
+   "nach": 47,
+   "wort": "angehängt,",
+   "vor": "Websuche,",
+   "roh": 0.07,
+   "neu": 0.4,
+   "grund": "angehängt, -> Websuche (Shot 01 -> 07)"
+  },
+  {
+   "nach": 48,
+   "wort": "Websuche,",
+   "vor": "Word-Datei.",
+   "roh": 0.08,
+   "neu": 0.4,
+   "grund": "Websuche, -> Word-Datei (Shot 07 -> 06)"
+  },
+  {
+   "nach": 49,
+   "wort": "Word-Datei.",
+   "vor": "Sie",
+   "roh": 0.44,
+   "neu": 0.7,
+   "grund": "Word-Datei. -> Sie (Datei-Karte steht, Entscheidung)"
+  },
+  {
+   "nach": 56,
+   "wort": "Anruf.",
+   "vor": "Warum?",
+   "roh": 0.36,
+   "neu": 0.9,
+   "grund": "Anruf. -> Warum (vor dem Warum bis 0,9)"
+  },
+  {
+   "nach": 57,
+   "wort": "Warum?",
+   "vor": "Werbe-Mail",
+   "roh": 0.6,
+   "neu": 0.65,
+   "grund": "Warum? -> Grund 1"
+  },
+  {
+   "nach": 60,
+   "wort": "Einwilligung,",
+   "vor": "auch",
+   "roh": 0.04,
+   "neu": 0.2,
+   "grund": "Einwilligung, -> auch (Komma)"
+  },
+  {
+   "nach": 63,
+   "wort": "Firmen.",
+   "vor": "Ein",
+   "roh": 0.13,
+   "neu": 0.55,
+   "grund": "Grund 1 -> Grund 2"
+  },
+  {
+   "nach": 66,
+   "wort": "nicht.",
+   "vor": "Anruf",
+   "roh": 0.15,
+   "neu": 0.7,
+   "grund": "Grund 2 -> Grund 3 (Karte 2 >= 1,2 s)"
+  },
+  {
+   "nach": 71,
+   "wort": "Betrieb.",
+   "vor": "Sie",
+   "roh": 0.22,
+   "neu": 0.5,
+   "grund": "Betrieb. -> Sie sieht keinen (Regel -> Befund)"
+  },
+  {
+   "nach": 74,
+   "wort": "keinen.",
+   "vor": "Als",
+   "roh": 0.13,
+   "neu": 0.7,
+   "grund": "keinen. -> Als Nächstes (Karte 3 steht allein)"
+  },
+  {
+   "nach": 76,
+   "wort": "Nächstes:",
+   "vor": "Wohin",
+   "roh": 0.19,
+   "neu": 0.35,
+   "grund": "Nächstes: -> Wohin"
+  },
+  {
+   "nach": 80,
+   "wort": "Briefe?",
+   "vor": "Kommentiere",
+   "roh": 0.15,
+   "neu": 0.7,
+   "grund": "Briefe? -> CTA"
+  },
+  {
+   "nach": 82,
+   "wort": "„Brief“,",
+   "vor": "ich",
+   "roh": 0.28,
+   "neu": 0.4,
+   "grund": "„Brief“, -> ich (Keyword setzt sich)"
+  },
+  {
+   "nach": 88,
+   "wort": "Briefvorlage.",
+   "vor": "Damit",
+   "roh": 0.56,
+   "neu": 0.7,
+   "grund": "Briefvorlage. -> Damit"
+  }
+ ]
+}

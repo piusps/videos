@@ -1,0 +1,1270 @@
+{
+ "folge": 5,
+ "tag": 5,
+ "serientag": 2,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-29",
+ "keyword": "Konkurrenz",
+ "seconds": 44.8,
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 3.47,
+  "musicCurve": [
+   [
+    0,
+    0.09
+   ],
+   [
+    19.35,
+    0.09
+   ],
+   [
+    20.8,
+    0.09
+   ],
+   [
+    20.88,
+    0.11
+   ],
+   [
+    21.6,
+    0.08
+   ],
+   [
+    38.6,
+    0.08
+   ],
+   [
+    39.6,
+    0.06
+   ],
+   [
+    43.8,
+    0.06
+   ],
+   [
+    44.8,
+    0
+   ]
+  ]
+ },
+ "hinweis_anker": "Anker = Wort + after (Sekunden, words.json). Zahlen stehen in words.json als Ziffern (100, 95, 295, 110, 10, 5, 5., 60-Grad-Shirts). '5' kommt 4× vor (15.72 / 25.41 / 26.30 / 30.56) → immer mit @after. 'Die', 'Claude', 'stickt', 'Konkurrenzpreise', 'Frage' doppelt → mit @after. Engine-norm entfernt Bindestriche: '60-Grad-Shirts' = Anker '60GradShirts'.",
+ "tts_hinweis": "TTS-Text 'Schtick' (regie/script-tts.txt), Caption/words.json 'Stick'. Sonst Wortlaut unverändert.",
+ "plan_vorschlag": {
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "WERBUNG",
+   "ERSTER\nUMSATZ"
+  ],
+  "done": [
+   0,
+   1,
+   2
+  ],
+  "current": 3,
+  "notiz": "Board wie Folge 4, DRUCK jetzt erledigt (Label im Rückblick 'STICK BIS 95 °C'). PREIS bleibt 'current' für Folge 5 (Konkurrenzpreise), 6 (Partner/Einkaufspreis) und 7 (Verkaufspreis); erst Folge 7 hakt PREIS ab. Kein eigener PARTNER-Schritt – Chef/design entscheiden, falls Folge 6 einen eigenen will."
+ },
+ "beats": [
+  {
+   "id": "B01",
+   "akt": "hook",
+   "von": 0.0,
+   "bis": 0.96,
+   "wort_start": {
+    "w": "Wie",
+    "after": 0
+   },
+   "anker": "0",
+   "bild": "Frame 1 = Ergebnis, nur Belegtes: großes Preisschild '5 bestickte Shirts' mit 'ab rund 110 €' (grün, KEINE Obergrenze, kein Bis-Wert) fällt ins Bild; daneben/dahinter eine Reihe von fünf kleinen Shop-Schildern mit roten Stempeln 'ERST AB 10', 'ERST AB 10', 'ERST AB 15', 'ERST AB 20', 'ERST AB 30'. Keine Anbieternamen, keine 208 €, kein Umsatz-Zähler. Text-Hook oben 'Wie viel Umsatz macht / eine KI in 100 Tagen?' (Zeile 2 orange) fällt auf 'Umsatz'.",
+   "kamera": "langsamer Push-in aufs Preisschild",
+   "frage": "Was kosten Firmenshirts – und warum verkauft eine KI sie?",
+   "karten": [
+    {
+     "text": "5 bestickte Shirts · ab rund 110 €",
+     "farbe": "grün",
+     "at": "0"
+    },
+    {
+     "text": "ERST AB 10 / 10 / 15 / 20 / 30",
+     "farbe": "rot (Stempel)",
+     "at": "0",
+     "stagger": 0.08
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.03,
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Umsatz-0.22",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Umsatz+0.04",
+     "f": "bump",
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "akt": "hook",
+   "von": 0.96,
+   "bis": 2.84,
+   "wort_start": {
+    "w": "Unternehmen",
+    "after": 0.9
+   },
+   "anker": "Unternehmen",
+   "bild": "Die fünf 'ERST AB'-Stempel knallen nacheinander auf die Shop-Schilder (Unternehmen → 100), das 110-€-Schild bleibt vorn.",
+   "kamera": "steht, leichtes Atmen",
+   "frage": "Warum nehmen die keine 5 Stück?",
+   "karten": [
+    {
+     "text": "Stempel 1–5 'ERST AB …'",
+     "at": "Unternehmen",
+     "bis": "100"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Unternehmen",
+     "f": "wshort",
+     "v": 0.25
+    },
+    {
+     "anker": "KI@1.7",
+     "f": "clack",
+     "v": 0.3
+    },
+    {
+     "anker": "100",
+     "f": "tick",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "akt": "hook",
+   "von": 2.84,
+   "bis": 3.86,
+   "wort_start": {
+    "w": "ganz",
+    "after": 2.8
+   },
+   "anker": "ganz-0.06",
+   "bild": "Stempel 'GANZ ALLEINE.' auf 'alleine'.",
+   "kamera": "Punch-in 4 %",
+   "frage": "Wirklich ohne Mensch?",
+   "karten": [
+    {
+     "text": "GANZ ALLEINE.",
+     "at": "alleine"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "ganz-0.06",
+     "f": "wq",
+     "v": 0.2
+    },
+    {
+     "anker": "alleine",
+     "f": "stamp",
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "akt": "hook",
+   "von": 3.86,
+   "bis": 4.85,
+   "wort_start": {
+    "w": "Ich",
+    "after": 3.8
+   },
+   "anker": "Ich",
+   "bild": "'Ich probier das aus' = Hand legt Auftrag hin (wie Folge 3/4). KEIN TAG-Slam (nicht erste Folge des Tages); nur das kleine HUD-Badge 'TAG 2' sitzt oben (über die Engine, ersteFolgeDesTages=false).",
+   "kamera": "kleiner Pull-back",
+   "frage": "Was ist das für ein Experiment?",
+   "karten": [
+    {
+     "text": "HUD-Badge TAG 2 (klein, fest)",
+     "at": "Ich"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "probier",
+     "f": "click",
+     "v": 0.45
+    },
+    {
+     "anker": "aus@4.4",
+     "f": "clickHi",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "akt": "recap",
+   "von": 4.85,
+   "bis": 6.36,
+   "wort_start": {
+    "w": "Die",
+    "after": 4.8
+   },
+   "anker": "Die@4.8-0.08",
+   "bild": "Rückblick-Akt: Gründungsplan ganz im Bild, 1 PRODUKT ✓ 2 KUNDE ✓ 3 DRUCK ✓ grün. Auf 'Shirts' fliegt die Produkt-Karte UNTER das Board (deckt keine Spalte): Shirt + 'SHIRTS MIT LOGO'.",
+   "kamera": "steht ruhig, Board voll im Bild",
+   "frage": "Worum geht es hier?",
+   "karten": [
+    {
+     "text": "SHIRTS MIT LOGO",
+     "icon": "shirt",
+     "at": "Shirts@5.9"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@4.8-0.06",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Shirts@5.9-0.2",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "akt": "recap",
+   "von": 6.36,
+   "bis": 8.71,
+   "wort_start": {
+    "w": "Logo",
+    "after": 6.3
+   },
+   "anker": "Logo@6.3",
+   "bild": "Logo erscheint als Stick auf dem Karten-Shirt (Stichkante sichtbar); oranges Banner 'erst auf Bestellung\\nbestickt' auf 'bestickt'.",
+   "kamera": "steht",
+   "frage": "Ohne Lager?",
+   "karten": [
+    {
+     "text": "Logo als Stick auf Shirt",
+     "at": "Logo@6.3"
+    },
+    {
+     "text": "erst auf Bestellung\nbestickt",
+     "at": "bestickt"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Logo@6.3",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "bestickt",
+     "f": "page",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "akt": "recap",
+   "von": 8.71,
+   "bis": 10.88,
+   "wort_start": {
+    "w": "Zuletzt",
+    "after": 8.6
+   },
+   "anker": "Zuletzt",
+   "bild": "Zuletzt erledigter Schritt 3 DRUCK leuchtet grün, hüpft und zeigt das Ergebnis der Vorfolge: klein 'DRUCK', groß 'STICK BIS 95 °C'. Auf '95' pulsiert die Zahl orange; daneben ein Stick-GARN-Objekt (Garnrolle/Stick-Emblem mit Etikett 'Garn 95 °C'). Das ist das Garn, NICHT das Shirt – das 60-°C-Shirt kommt erst im Akt 'Als Nächstes' als eigenes Objekt.",
+   "kamera": "leichter Push-in auf Schritt 3",
+   "frage": "Und was kostet das bei anderen?",
+   "karten": [
+    {
+     "text": "STICK BIS 95 °C",
+     "step": 2,
+     "at": "Zuletzt"
+    },
+    {
+     "text": "Garnrolle 'Garn 95 °C' + Puls '95'",
+     "at": "95"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Zuletzt",
+     "f": "check",
+     "v": 0.3
+    },
+    {
+     "anker": "95",
+     "f": "popLo",
+     "v": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "akt": "recap",
+   "von": 10.88,
+   "bis": 12.5,
+   "wort_start": {
+    "w": "Heute",
+    "after": 10.8
+   },
+   "anker": "Heute",
+   "bild": "Fahrt zum heutigen Schritt 4 PREIS (Board bleibt in voller Breite), Schritt leuchtet gold und poppt, Produkt-Karte fliegt raus, Pill unter dem Board 'HEUTE: KONKURRENZPREISE'. Auf 'Konkurrenzpreise' ein kleiner Stapel Preisschilder an der Zeile.",
+   "kamera": "Fahrt auf Zeile Schritt 4",
+   "frage": "Wie findet sie die Preise?",
+   "karten": [
+    {
+     "text": "HEUTE: KONKURRENZPREISE",
+     "at": "Heute"
+    },
+    {
+     "text": "Preisschild-Stapel",
+     "at": "Konkurrenzpreise@11.6"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Heute-0.15",
+     "f": "wq",
+     "v": 0.25
+    },
+    {
+     "anker": "Heute+0.1",
+     "f": "chime",
+     "v": 0.25
+    },
+    {
+     "anker": "Konkurrenzpreise@11.6+0.2",
+     "f": "popLo",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "akt": "claude",
+   "von": 12.5,
+   "bis": 14.6,
+   "wort_start": {
+    "w": "Plus",
+    "after": 12.5
+   },
+   "anker": "Plus-0.4",
+   "bild": "Paper-Claude-Akt nach echtem Shot 01a (Plus-Menü mit 'Research'): Zeiger auf '+' (Klick auf 'Plus'), Menü, 'Research' anklicken, blaue Research-Pill an ('an'), auf 'Ergebnis' fliegt der Datei-Chip 'Shirt-Firma Ergebnis Druck.md · 34 lines' in den Composer (letztes Ergebnis als Anhang). Schritt-Chips RESEARCH · ANHANG · FRAGE.",
+   "kamera": "Paper vorn, Welt unscharf; Zoom aufs Plus-Menü, dann auf den Chip",
+   "frage": "Wo klicke ich?",
+   "karten": [
+    {
+     "text": "RESEARCH",
+     "at": "Plus-0.4"
+    },
+    {
+     "text": "ANHANG",
+     "at": "Ergebnis-0.15"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Plus",
+     "f": "click",
+     "v": 0.45
+    },
+    {
+     "anker": "Research+0.08",
+     "f": "click",
+     "v": 0.45
+    },
+    {
+     "anker": "an@13.4",
+     "f": "check",
+     "v": 0.35
+    },
+    {
+     "anker": "Ergebnis",
+     "f": "popLo",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "akt": "claudeShot",
+   "von": 14.6,
+   "bis": 16.8,
+   "wort_start": {
+    "w": "Frage",
+    "after": 14.5
+   },
+   "anker": "Frage-0.1",
+   "bild": "Echter Screenshot public/firma-ep/tag5/shots/01b-prompt-mit-anhang.png (Composer mit Anhang 'Shirt-Firma Ergebnis Druck.md', echtem Prompt, aktiver Research-Pill). Markierung gelb 'fünf T-Shirts mit seinem Logo als Stick' auf '5@15.7', orange 'Gesamtpreis für fünf Stück inklusive Einrichtung und Versand' auf 'Shirts@16.3'. Re-Hook-Pill 'Die Frage zum Kopieren → am Ende'. Senden-Klick (oranger Pfeil) auf 'Shirts@16.3+0.3'. Begrüßungszeile oben ('Good evening, …') aus dem Ausschnitt lassen.",
+   "kamera": "Pan im Shot entlang der Markierung, Push-in auf 'Gesamtpreis für fünf Stück'",
+   "frage": "Was genau frage ich?",
+   "karten": [
+    {
+     "text": "FRAGE",
+     "at": "Frage-0.1"
+    },
+    {
+     "text": "Die Frage zum Kopieren → am Ende",
+     "at": "Frage+0.3"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Frage-0.1",
+     "f": "tick",
+     "v": 0.25
+    },
+    {
+     "anker": "Frage+0.2",
+     "f": "typing",
+     "v": 0.2
+    },
+    {
+     "anker": "Shirts@16.3",
+     "f": "popHi",
+     "v": 0.25
+    },
+    {
+     "anker": "Shirts@16.3+0.3",
+     "f": "clickHi",
+     "v": 0.45
+    }
+   ],
+   "marks": [
+    {
+     "find": "fünf T-Shirts mit seinem Logo als Stick",
+     "at": "5@15.7",
+     "color": "yellow",
+     "px_ca": "Zeile 3 der Frage, y ca. 505–528 (Bild 1060 px breit)"
+    },
+    {
+     "find": "Gesamtpreis für fünf Stück inklusive Einrichtung und Versand",
+     "at": "Shirts@16.3",
+     "color": "orange",
+     "px_ca": "y ca. 565–592"
+    }
+   ],
+   "send": "Shirts@16.3+0.3"
+  },
+  {
+   "id": "B11",
+   "akt": "claudeShot",
+   "von": 16.8,
+   "bis": 18.8,
+   "wort_start": {
+    "w": "Claude",
+    "after": 16.7
+   },
+   "anker": "Claude@16.7-0.1",
+   "bild": "Echter Screenshot 02-research-fertig.png: 'Preisvergleich bestickte Firmenshirts · Research complete • 295 sources • 7m 19s'. Oranger Rahmen + Zähler am Objekt rollt 0 → 295 genau auf '295'. NUR den oberen Teil zeigen (Research-Block, y ≤ ca. 240 px): der Antworttext darunter sagt 'Sechs Anbieter', gesprochen wird 'Fünf' (thema.md).",
+   "kamera": "Push-in auf die Quellenzeile",
+   "frage": "So viele Quellen?",
+   "karten": [
+    {
+     "text": "295 QUELLEN",
+     "at": "295"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Claude@16.7-0.05",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Claude@16.7",
+     "f": "roll",
+     "v": 0.3
+    },
+    {
+     "anker": "295+0.7",
+     "f": "ping",
+     "v": 0.3
+    }
+   ],
+   "marks": [
+    {
+     "find": "295 sources",
+     "at": "295",
+     "color": "orange",
+     "px_ca": "x 283, y 142, w 101, h 23 (im 1000 px breiten Bild)"
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "akt": "wall",
+   "von": 18.8,
+   "bis": 20.85,
+   "wort_start": {
+    "w": "Am",
+    "after": 18.7
+   },
+   "anker": "Quellen@18.3+0.3",
+   "bild": "PREISWAND (Story-Objekt bis zum Ende des Warum): Schilder erscheinen MIT Inhalt, Stagger 0,06 s. Reihe 1 = vollständig berechnete Summen für 5 Shirts: 'RUND 110 €' ×2 (grün), '126 €', '151 €' (grau), rechts offen auslaufender Pfeil mit Claude-Zitat '150 € bis über 200 €' (kein Schild, keine 208 €). Reihe 2 = fünf Shop-Schilder 'nimmt 5 Stück nicht' mit roten Stempeln 'ERST AB 10/10/15/20/30'. Auf 'günstigsten' dimmen 126/151/Pfeil, auf '110' bekommen die zwei 110-€-Schilder einen grünen Rahmen + Puls, Stempel 'AB RUND 110 €'. Keine Anbieternamen groß.",
+   "kamera": "Pull-back auf die ganze Wand, dann Push-in auf die 110-€-Schilder",
+   "frage": "Ist 110 € viel oder wenig?",
+   "karten": [
+    {
+     "label": "RUND 110 €",
+     "icon": "shirt",
+     "farbe": "grün"
+    },
+    {
+     "label": "RUND 110 €",
+     "icon": "shirt",
+     "farbe": "grün"
+    },
+    {
+     "label": "126 €",
+     "icon": "shirt"
+    },
+    {
+     "label": "151 €",
+     "icon": "shirt"
+    },
+    {
+     "label": "150 € BIS ÜBER 200 € →",
+     "icon": "more",
+     "stil": "offener Pfeil, Claude-Zitat"
+    },
+    {
+     "label": "ERST AB 10",
+     "icon": "box",
+     "farbe": "rot"
+    },
+    {
+     "label": "ERST AB 10",
+     "icon": "box",
+     "farbe": "rot"
+    },
+    {
+     "label": "ERST AB 15",
+     "icon": "box",
+     "farbe": "rot"
+    },
+    {
+     "label": "ERST AB 20",
+     "icon": "box",
+     "farbe": "rot"
+    },
+    {
+     "label": "ERST AB 30",
+     "icon": "box",
+     "farbe": "rot"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Quellen@18.3+0.3",
+     "f": "page",
+     "v": 0.25
+    },
+    {
+     "anker": "günstigsten",
+     "f": "tick",
+     "v": 0.25
+    },
+    {
+     "anker": "110",
+     "f": "roll",
+     "v": 0.2
+    },
+    {
+     "anker": "Euro",
+     "f": "popHi",
+     "v": 0.3
+    }
+   ],
+   "musik": "Natürliche Pause im Stück (Track 22,88–24,33 = Clip 19,41–20,86): Bett ist unter 'rund 110 Euro' still"
+  },
+  {
+   "id": "B13",
+   "akt": "winner",
+   "von": 20.85,
+   "bis": 24.75,
+   "wort_start": {
+    "w": "Die",
+    "after": 20.8
+   },
+   "anker": "Die@20.8-0.1",
+   "bild": "Entscheidung, zwei Hälften. (a) 'hält beim Preis mit': die 110-€-Schilder bleiben vorn, auf 'mit' setzt sich ein großes '=' zwischen ein Schild 'UNSER PAKET' und 'RUND 110 €' (Gleichstand, kein 'billiger'). (b) 'setzt auf …': auf 'setzt' dimmt die Wand, auf 'einzelne' fliegt ein oranges Schild vor: einzelnes Shirt + '1 SHIRT', auf 'ohne' Zeile 2 'OHNE NEUE EINRICHTUNG', Stempel 'NACHBESTELLEN AB 1' auf 'Einrichtung'. Dieses orange Schild ist ab hier das Story-Objekt.",
+   "kamera": "harter Push-in auf das orange Schild",
+   "frage": "Und warum ist das die Lücke?",
+   "karten": [
+    {
+     "text": "= RUND 110 €",
+     "at": "mit@21.8"
+    },
+    {
+     "text": "1 SHIRT",
+     "icon": "shirt1x",
+     "at": "einzelne"
+    },
+    {
+     "text": "OHNE NEUE EINRICHTUNG",
+     "at": "ohne@23.6"
+    },
+    {
+     "text": "NACHBESTELLEN AB 1",
+     "stempel": true,
+     "at": "Einrichtung@24"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Die@20.8-0.1",
+     "f": "wqh",
+     "v": 0.25
+    },
+    {
+     "anker": "mit@21.8",
+     "f": "tick",
+     "v": 0.3
+    },
+    {
+     "anker": "einzelne",
+     "f": "power",
+     "v": 0.3
+    },
+    {
+     "anker": "ohne@23.6",
+     "f": "popLo",
+     "v": 0.25
+    },
+    {
+     "anker": "Einrichtung@24",
+     "f": "stamp",
+     "v": 0.4
+    }
+   ],
+   "musik": "Bett kommt auf 'Die' (20,88) zurück (Track 24,35 'go'), kurzer Akzent 0,11 bis 21,6"
+  },
+  {
+   "id": "B14",
+   "akt": "why",
+   "von": 24.75,
+   "bis": 25.41,
+   "wort_start": {
+    "w": "Warum",
+    "after": 24.7
+   },
+   "anker": "Warum-0.12",
+   "bild": "Warum-Beat: orange Schild '1 SHIRT · OHNE NEUE EINRICHTUNG' bleibt oben stehen, Pill 'WARUM DIE LÜCKE?' auf 'Warum'.",
+   "kamera": "0,3-s-Fahrt nach oben, dann ruhig",
+   "frage": "Warum?",
+   "karten": [
+    {
+     "text": "WARUM DIE LÜCKE?",
+     "at": "Warum"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Warum-0.15",
+     "f": "wq2",
+     "v": 0.2
+    },
+    {
+     "anker": "Warum",
+     "f": "pop",
+     "v": 0.35
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "akt": "why",
+   "von": 25.41,
+   "bis": 27.36,
+   "wort_start": {
+    "w": "5",
+    "after": 25.3
+   },
+   "anker": "5@25.3",
+   "bild": "Grund-Karte 1 (auf 'Fünf' 25,41): Stapel aus 5 Shirts, groß '5 Stück', klein 'Erstauftrag'. Auf 'nicht' rechts der Gegenwert: fünf kleine Schilder, groß 'erst ab 10–30' rot mit ✗, klein '5 Anbieter' (nicht durchstreichen). Steht 1,95 s.",
+   "kamera": "ruhig",
+   "frage": "Lehnen die wirklich ab?",
+   "karten": [
+    {
+     "icon": "shirt",
+     "big": "5 Stück",
+     "small": "Erstauftrag",
+     "at": "5@25.3",
+     "vs": {
+      "big": "erst ab 10–30",
+      "small": "5 Anbieter",
+      "at": "nicht@26.6",
+      "bad": true
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "5@25.3-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "nicht@26.6",
+     "f": "bump",
+     "v": 0.3
+    }
+   ],
+   "steht_s": 1.95
+  },
+  {
+   "id": "B16",
+   "akt": "why",
+   "von": 27.36,
+   "bis": 31.0,
+   "wort_start": {
+    "w": "Selbst",
+    "after": 27.3
+   },
+   "anker": "Selbst",
+   "bild": "Grund-Karte 2 (auf 'Selbst' 27,36, nach 0,30 s Stimm-Pause): ein einzelnes Shirt mit Schild 'neuer Geselle', groß '1 Shirt', klein 'nachbestellen'. Auf 'erst' rechts der Gegenwert: Workwear-Shop-Schild, groß 'erst ab 5' rot mit ✗, klein 'günstigster Workwear-Shop'. Auf 'einzelnes' wackelt das einzelne Shirt kurz. Steht 3,64 s.",
+   "kamera": "ruhig, minimaler Push-in",
+   "frage": "Und ein einzelnes Shirt?",
+   "karten": [
+    {
+     "icon": "shirt1x",
+     "big": "1 Shirt",
+     "small": "nachbestellen",
+     "at": "Selbst",
+     "vs": {
+      "big": "erst ab 5",
+      "small": "günstigster Workwear-Shop",
+      "at": "erst@30.1",
+      "bad": true
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Selbst-0.08",
+     "f": "popLo",
+     "v": 0.35
+    },
+    {
+     "anker": "einzelnes",
+     "f": "tick",
+     "v": 0.2
+    },
+    {
+     "anker": "erst@30.1",
+     "f": "popHi",
+     "v": 0.25
+    }
+   ],
+   "steht_s": 3.64
+  },
+  {
+   "id": "B17",
+   "akt": "question",
+   "von": 31.0,
+   "bis": 33.9,
+   "wort_start": {
+    "w": "Haken",
+    "after": 30.9
+   },
+   "anker": "Haken-0.12",
+   "bild": "Haken-Beat: Pill 'HAKEN', Claude-Zitat-Karte aus dem Chat: '„Die übrigen Werte habe ich aus Einzelpreisen selbst zusammengerechnet. Es sind meist ‚ab'-Preise, also Untergrenzen.“' (Fast@31.5). Stempel 'UNTERGRENZEN' auf 'Untergrenzen', Marker 'selbst zusammengerechnet' auf 'addiert'. Optional statt Paper-Karte: echter Shot 02 nur als Ausschnitt des Bullets 'Gesamtpreis nur bei wenigen berechenbar' (y ca. 480–600), 'Sechs Anbieter' darf nicht im Bild sein.",
+   "kamera": "Push-in aufs Zitat",
+   "frage": "Kann man den Preisen trauen?",
+   "karten": [
+    {
+     "text": "HAKEN",
+     "at": "Haken"
+    },
+    {
+     "text": "Claude-Zitat Untergrenzen",
+     "at": "Fast@31.5"
+    },
+    {
+     "text": "UNTERGRENZEN",
+     "at": "Untergrenzen"
+    },
+    {
+     "text": "Marker 'selbst zusammengerechnet'",
+     "at": "addiert"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Haken-0.12",
+     "f": "page",
+     "v": 0.3
+    },
+    {
+     "anker": "Untergrenzen",
+     "f": "bump",
+     "v": 0.35
+    },
+    {
+     "anker": "addiert",
+     "f": "tick",
+     "v": 0.25
+    }
+   ]
+  },
+  {
+   "id": "B18",
+   "akt": "question",
+   "von": 33.9,
+   "bis": 37.95,
+   "wort_start": {
+    "w": "Als",
+    "after": 33.8
+   },
+   "anker": "Als@33.8-0.12",
+   "bild": "Offene Frage: Pill 'ALS NÄCHSTES', Karte 'Welcher Partner stickt 60-Grad-Shirts / einzeln, ohne Neueinrichtung?'. GETRENNTE Objekte gegen Verwechslung mit 95 °C: auf '60-Grad-Shirts' ein Shirt mit Pflegeetikett 'Shirt-Stoff 60 °C' (Waschsymbol 60), deutlich anders als die Garnrolle 'Garn 95 °C' aus dem Rückblick; auf 'einzeln' Chip '1×'; auf 'Neueinrichtung' Chip 'keine neue Einrichtung'. Partner als Fragezeichen-Silhouette (noch unbekannt).",
+   "kamera": "ruhig, leichter Push-in",
+   "frage": "Gibt es so einen Partner?",
+   "karten": [
+    {
+     "text": "ALS NÄCHSTES",
+     "at": "Als@33.8"
+    },
+    {
+     "text": "Welcher Partner stickt 60-Grad-Shirts\neinzeln, ohne Neueinrichtung?",
+     "at": "Welcher"
+    },
+    {
+     "text": "Shirt-Stoff 60 °C (Pflegeetikett)",
+     "at": "60GradShirts"
+    },
+    {
+     "text": "1×",
+     "at": "einzeln"
+    },
+    {
+     "text": "keine neue Einrichtung",
+     "at": "Neueinrichtung"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Als@33.8-0.12",
+     "f": "airy",
+     "v": 0.25
+    },
+    {
+     "anker": "Als@33.8",
+     "f": "pop",
+     "v": 0.35
+    },
+    {
+     "anker": "60GradShirts",
+     "f": "popLo",
+     "v": 0.25
+    },
+    {
+     "anker": "Neueinrichtung",
+     "f": "tick",
+     "v": 0.2
+    }
+   ]
+  },
+  {
+   "id": "B19",
+   "akt": "end",
+   "von": 37.95,
+   "bis": 44.8,
+   "wort_start": {
+    "w": "Kommentiere",
+    "after": 37.9
+   },
+   "anker": "Kommentiere-0.15",
+   "bild": "Endkarte: Keyword 'Konkurrenz' tippt sich ein (auf 'Konkurrenz'), Haken, Flieger auf 'und … schick', 2 Items: 'Die Frage' (Prompt-Snippet) auf 'Frage@40', 'Die Preistabelle' mit Ausschnitt aus echtem Shot 03-ergebnis-tabelle.png auf 'Preistabelle'. Ergebnis-Zeile 'in 10 Minuten' (auf '10') + 'deine Konkurrenzpreise' (auf 'Konkurrenzpreise@42.7'), Preisschild-Chips poppen 43,2, Bot-Hüpfer 44,0, Halt bis 44,8.",
+   "kamera": "ruhiger Push-in, letzte Sekunde Halt",
+   "frage": "–",
+   "karten": [
+    {
+     "text": "KOMMENTIERE „KONKURRENZ“",
+     "at": "Konkurrenz@38.5"
+    },
+    {
+     "text": "Die Frage",
+     "at": "Frage@40"
+    },
+    {
+     "text": "Die Preistabelle (Shot 03)",
+     "at": "Preistabelle"
+    },
+    {
+     "text": "in 10 Minuten",
+     "at": "10"
+    },
+    {
+     "text": "deine Konkurrenzpreise",
+     "at": "Konkurrenzpreise@42.7"
+    },
+    {
+     "text": "Preisschild-Chips",
+     "at": "Konkurrenzpreise@42.7+0.45"
+    }
+   ],
+   "sfx": [
+    {
+     "anker": "Kommentiere-0.15",
+     "f": "pop",
+     "v": 0.3
+    },
+    {
+     "anker": "Konkurrenz@38.5-0.05",
+     "f": "typing",
+     "v": 0.25
+    },
+    {
+     "anker": "Konkurrenz@38.5+0.75",
+     "f": "check",
+     "v": 0.35
+    },
+    {
+     "anker": "und@39.4-0.05",
+     "f": "wqh",
+     "v": 0.22
+    },
+    {
+     "anker": "Frage@40",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "Preistabelle",
+     "f": "popHi",
+     "v": 0.3
+    },
+    {
+     "anker": "Damit-0.15",
+     "f": "chime",
+     "v": 0.3
+    },
+    {
+     "anker": "Konkurrenzpreise@42.7+0.45",
+     "f": "pop",
+     "v": 0.3
+    }
+   ]
+  }
+ ],
+ "engine_akte": [
+  {
+   "type": "recap",
+   "at": "Die@4.8-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "Shirts@5.9"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt"
+   },
+   "last": {
+    "step": 2,
+    "label": "STICK BIS 95 °C",
+    "at": "Zuletzt"
+   },
+   "today": {
+    "step": 3,
+    "pill": "HEUTE: KONKURRENZPREISE",
+    "at": "Heute"
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Frage-0.1",
+   "src": "firma-ep/tag5/shots/01b-prompt-mit-anhang.png"
+  },
+  {
+   "type": "claudeShot",
+   "at": "Claude@16.7-0.1",
+   "src": "firma-ep/tag5/shots/02-research-fertig.png",
+   "hinweis": "Kamera nur auf Research-Block (y ≤ ca. 240), 'Sechs Anbieter' nicht zeigen"
+  },
+  {
+   "type": "wall",
+   "at": "Quellen@18.3+0.3",
+   "thinkUntil": "Quellen@18.3+0.5",
+   "hl": [
+    {
+     "i": 0,
+     "at": "110"
+    },
+    {
+     "i": 1,
+     "at": "110"
+    }
+   ],
+   "dim": [
+    {
+     "i": 2,
+     "at": "günstigsten"
+    },
+    {
+     "i": 3,
+     "at": "günstigsten"
+    },
+    {
+     "i": 4,
+     "at": "günstigsten"
+    }
+   ]
+  },
+  {
+   "type": "winner",
+   "at": "Die@20.8-0.1",
+   "label": "1 SHIRT · OHNE NEUE EINRICHTUNG",
+   "icon": "shirt",
+   "fly": "einzelne",
+   "dimAt": "setzt",
+   "stamp": "NACHBESTELLEN AB 1",
+   "stampAt": "Einrichtung@24",
+   "hold": "shirt",
+   "wunsch_gleich": {
+    "text": "=",
+    "between": [
+     "UNSER PAKET",
+     "RUND 110 €"
+    ],
+    "at": "mit@21.8",
+    "notiz": "Gleichstand beim Preis vor dem Flug des orangen Schilds; Engine hat dafür kein Feld"
+   }
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "label": "1 SHIRT · OHNE NEUE EINRICHTUNG",
+   "icon": "shirt",
+   "pill": "WARUM DIE LÜCKE?",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "shirt",
+     "big": "5 Stück",
+     "small": "Erstauftrag",
+     "at": "5@25.3",
+     "vs": {
+      "big": "erst ab 10–30",
+      "small": "5 Anbieter",
+      "at": "nicht@26.6",
+      "bad": true
+     }
+    },
+    {
+     "icon": "shirt1x",
+     "big": "1 Shirt",
+     "small": "nachbestellen",
+     "at": "Selbst",
+     "vs": {
+      "big": "erst ab 5",
+      "small": "günstigster Workwear-Shop",
+      "at": "erst@30.1",
+      "bad": true
+     }
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "at": "Haken-0.12",
+   "pill": "HAKEN",
+   "lines": [
+    "„Es sind meist ‚ab'-Preise,",
+    "also Untergrenzen.“"
+   ],
+   "pop": "Haken",
+   "stamp": "UNTERGRENZEN",
+   "stampAt": "Untergrenzen",
+   "bubble": "Haken+0.3"
+  },
+  {
+   "type": "question",
+   "at": "Als@33.8-0.12",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Welcher Partner stickt 60-Grad-Shirts",
+    "einzeln, ohne Neueinrichtung?"
+   ],
+   "pop": "Als@33.8",
+   "stamp": null,
+   "bubble": "Als@33.8+0.3",
+   "wunsch_objekte": [
+    {
+     "text": "Shirt-Stoff 60 °C",
+     "at": "60GradShirts",
+     "stil": "Shirt mit Pflegeetikett, NICHT die Garnrolle"
+    },
+    {
+     "text": "1×",
+     "at": "einzeln"
+    },
+    {
+     "text": "keine neue Einrichtung",
+     "at": "Neueinrichtung"
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Konkurrenz@38.5",
+   "plane": [
+    "und@39.4-0.05",
+    "schick+0.25"
+   ],
+   "itemsAt": "die@40",
+   "copyAt": "Damit",
+   "items": [
+    {
+     "label": "Die Frage",
+     "snip": "Was zahlt ein kleiner Handwerksbetrieb … fünf T-Shirts mit seinem Logo als Stick …"
+    },
+    {
+     "label": "Die Preistabelle",
+     "snip": "14 Anbieter · Gesamtpreis 5 Stk. · Quelle"
+    }
+   ],
+   "result": {
+    "at": "Damit",
+    "line1": "in 10 Minuten",
+    "line1At": "10",
+    "parts": [
+     {
+      "text": "deine Konkurrenzpreise",
+      "at": "Konkurrenzpreise@42.7",
+      "hot": true
+     }
+    ]
+   },
+   "hopAt": "Konkurrenzpreise@42.7+1.2"
+  }
+ ],
+ "hook_wunsch": {
+  "result": {
+   "kind": "priceTags",
+   "main": {
+    "top": "5 bestickte Shirts",
+    "big": "ab rund 110 €",
+    "farbe": "grün"
+   },
+   "stamps": [
+    "ERST AB 10",
+    "ERST AB 10",
+    "ERST AB 15",
+    "ERST AB 20",
+    "ERST AB 30"
+   ],
+   "stampsAt": [
+    "Unternehmen",
+    "eine@1.5",
+    "KI@1.7",
+    "Tage",
+    "100"
+   ],
+   "notiz": "Engine kennt bisher nur result.kind 'washer'. Neues Objekt in src/components/firma/, keine Obergrenze, keine Namen, keine 208 €."
+  },
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@4.2",
+   "aus": "aus@4.4",
+   "end": "Die@4.8-0.08"
+  }
+ },
+ "claude_wunsch": {
+  "feature": {
+   "label": "Research",
+   "plus": "Plus",
+   "pick": "Research",
+   "on": "an@13.4"
+  },
+  "attach": {
+   "label": "Shirt-Firma Ergebnis Druck.md",
+   "sub": "34 lines",
+   "at": "Ergebnis@13.6"
+  },
+  "steps": [
+   {
+    "label": "RESEARCH",
+    "at": "Plus-0.4"
+   },
+   {
+    "label": "ANHANG",
+    "at": "Ergebnis-0.15"
+   },
+   {
+    "label": "FRAGE",
+    "at": "Frage-0.1"
+   }
+  ],
+  "send": "Shirts@16.3+0.3",
+  "rehook": {
+   "pill": "Die Frage zum Kopieren → am Ende",
+   "from": "Frage+0.3",
+   "to": "Claude@16.7-0.1"
+  }
+ },
+ "sfx_dateien": {
+  "pop": "public/sirtoken/sfx-ui-pop.mp3",
+  "popHi": "sfx/heygen/variants/pop-high.mp3",
+  "popLo": "sfx/heygen/variants/pop-low.mp3",
+  "click": "public/sirtoken/sfx-click.mp3",
+  "clickHi": "sfx/heygen/variants/click-high.mp3",
+  "tick": "sfx/heygen/variants/tick.mp3",
+  "wq": "sfx/heygen/whoosh-quick.mp3",
+  "wq2": "public/sirtoken/sfx-whoosh-quick.mp3",
+  "wqh": "sfx/heygen/variants/whoosh-quick-high.mp3",
+  "wshort": "sfx/heygen/whoosh-short.mp3",
+  "airy": "sfx/heygen/whoosh-airy.mp3",
+  "bump": "public/sirtoken/sfx-bump.mp3",
+  "clack": "sfx/heygen/extra/stamp-clack.mp3",
+  "stamp": "public/sirtoken/sfx-stamp.mp3",
+  "power": "public/sirtoken/sfx-powerup.mp3",
+  "check": "public/sirtoken/sfx-check.mp3",
+  "chime": "public/sirtoken/sfx-chime.mp3",
+  "ping": "sfx/ping.mp3",
+  "page": "sfx/heygen/extra/page-turn.mp3",
+  "typing": "public/sirtoken/sfx-typing.mp3",
+  "roll": "sfx/heygen/extra/counter-roll.mp3"
+ }
+}

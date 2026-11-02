@@ -1,0 +1,408 @@
+{
+ "topic": "Druck",
+ "trigger_word": "Druck",
+ "cover": {
+  "kicker": "KI baut eine Firma · Welches Verfahren hält 60 °C",
+  "title": "Finde das Verfahren, das der Alltag deiner Kunden aushält. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie herausgefunden hat, welches Logo auf einem Arbeitsshirt eine 60-Grad-Wäsche aushält und trotzdem ab einem Stück geht. Mit Klickpfad, der kompletten Vergleichstabelle aller acht Verfahren aus unserem Lauf, allen Quellen und einer Anleitung für deinen eigenen Betrieb.",
+  "stat": {
+   "value": "246 Quellen",
+   "label": "So viele Quellen hat Claude Research in unserem Lauf für diese eine Frage geprüft. Dauer: 5 Minuten 21 Sekunden. Acht Verfahren verglichen."
+  },
+  "outcomes": [
+   "Alle Möglichkeiten für dein Produkt im Vergleich, jede mit Quelle",
+   "Ehrlich eingeordnet: welche Angaben nur vom Anbieter stammen und welche unabhängig geprüft sind",
+   "Eine begründete Entscheidung mit Zahlen statt Bauchgefühl"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Erst das Ergebnis. In zehn Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai), starte einen neuen Chat, tippe unten links auf **„+“** und schalte **„Research“** ein. Häng über **„+“** und **„Upload or add files“** dein letztes Ergebnis als Datei an. Dann füge diese Frage ein. Das ist wörtlich die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Die Frage zum Kopieren (Research an, letztes Ergebnis angehängt)",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [Firmenshirts mit Logo] an [kleine Handwerks- und Baubetriebe unter zehn Leuten], [gedruckt auf Bestellung bei einem Partner]. Ergebnis der letzten Recherche: [Auf dem Bau werden Arbeitsshirts mit 60 Grad gewaschen, die gängigen Drucke für kleine Mengen vertragen nur etwa 30 Grad.] Recherchiere: Welches [Druck- oder Veredelungsverfahren] hält [60 Grad Wäsche] dauerhaft aus und geht trotzdem schon ab [einem Stück]? Vergleiche die Verfahren mit [Waschtemperatur], Mindestmenge und ungefährem Stückpreis, jeweils mit Quelle. Entscheide dich am Ende für ein Verfahren und begründe es mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Nach ein paar Minuten hast du eine Vergleichstabelle mit Quellen und eine begründete Entscheidung. Dann prüfst du, welche Zahlen nur vom Anbieter stammen. Genau so ist die KI in dieser Folge vorgegangen."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Plan",
+       "v": "Research gibt es in den bezahlten Plänen **Pro, Max, Team und Enterprise**, die Websuche muss an sein. Quelle: [support.claude.com/en/articles/11088861](https://support.claude.com/en/articles/11088861-using-research-on-claude)"
+      },
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Research“** → **„+“** → **„Upload or add files“** → Frage einfügen → senden"
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 5 Minuten 21 Sekunden, 246 Quellen, 26 davon im Bericht verlinkt."
+      },
+      {
+       "k": "Rückfragen",
+       "v": "Keine. Claude hat direkt mit der Recherche begonnen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Geschichte",
+   "title": "Der Bau wäscht mit 60 Grad. Welches Logo hält das?",
+   "intro": "Eine KI soll hundert Tage lang ganz alleine ein Unternehmen führen. Ihr Produkt: Firmenshirts mit Logo, gedruckt erst auf Bestellung, für kleine Handwerks- und Baubetriebe. In der letzten Folge hat sie gelernt: Auf dem Bau werden Arbeitsshirts mit 60 Grad gewaschen. Jetzt sucht sie ein Logo, das das aushält, und zwar schon ab einem Stück.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Research an",
+       "text": "Unten auf „+“, dann „Research“ einschalten."
+      },
+      {
+       "num": "02",
+       "title": "Ergebnis anhängen",
+       "text": "Das Ergebnis der letzten Folge als Datei dazu, hier die Recherche zum Waschen."
+      },
+      {
+       "num": "03",
+       "title": "Frage stellen",
+       "text": "Vergleich mit Waschtemperatur, Mindestmenge und Stückpreis, jeweils mit Quelle. Am Ende entscheiden und mit Zahlen begründen. Und: Erfinde nichts."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/research-fertig.png",
+     "width": "88%",
+     "caption": "Echter Lauf vom 28.10.2026: „Research complete • 246 sources • 5m 21s“."
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Die KI nimmt Stickerei. Drei Gründe mit Zahlen.",
+   "break_before": true,
+   "intro": "Aus dem echten Lauf vom 28.10.2026. Claudes Entscheidung im Bericht: **Stickerei**, über einen Druck-auf-Bestellung-Anbieter. Die Gründe stehen hier so, wie Claude sie belegt hat, mit Herkunft der Zahl.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "95 °C",
+       "title": "Hitze mit Abstand",
+       "text": "Beim selben Druck-auf-Bestellung-Anbieter (Spreadshirt) ist Stick bis 95 °C freigegeben, Flex- und Digitaldruck nur bis 30 °C. Anbieterangabe. Das Garn (Madeira Polyneon) ist laut Hersteller bis 95 °C waschbar."
+      },
+      {
+       "num": "1 Stk.",
+       "title": "Ab einem Stück",
+       "text": "Spreadshirt: „keinen Mindestbestellwert – auch nicht beim Stick“. Plastisol-Siebdruck lohnt sich laut Siluri erst „ab 50 Stück pro Motiv“ (B2B-Staffel ab 25), plus 49 € je Farbe."
+      },
+      {
+       "num": "+1 €",
+       "title": "Kleiner Aufpreis",
+       "text": "workwear one: Brustlogo als Druck 4,85 €, als Stick 5,85 € netto je Stück (1–10 Stück). Anbieterpreise, Stand 28.10.2026."
+      }
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "DTF / DTG",
+       "v": "Bei Druck-auf-Bestellung-Anbietern nur 30–40 °C freigegeben; DTG nicht für Polyester geeignet."
+      },
+      {
+       "k": "Flex / Flock",
+       "v": "Die Folie wäre laut Hersteller 60-°C-tauglich, die Shops sagen aber nur 30 °C zu."
+      },
+      {
+       "k": "Siebdruck, Industriewäsche-Transfers",
+       "v": "Mindestmengen von 10 Stück (Supacolor) über 20 Stück (Logotex) bis 25–50 Stück (Siluri)."
+      },
+      {
+       "k": "Sublimation, Patches",
+       "v": "Sublimation nur auf Polyester mit hohem Anteil und hellen Stoffen. Bei aufgebügelten Patches widersprechen sich die Angaben zum Kleber (30 vs. 60 °C)."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken: fast alles sind Anbieterangaben",
+     "text": "Claude schreibt selbst: „Fast alle Temperaturangaben stammen von Anbietern oder Händlern.“ Unabhängig geprüft sind nur die Hohenstein-Bestätigung für das Madeira-Garn (ISO 15797, wiedergegeben in einem Fachmedium) und der TexTest-Bericht des Supacolor-Transfers. Die Recherche liefert also einen Vergleich mit Quellen, keinen Haltbarkeitsnachweis. Den liefert nur ein eigener Waschtest."
+    },
+    {
+     "type": "p",
+     "text": "Wichtig ist der Weg, nicht das Ergebnis: Bei deinem Produkt kommt etwas anderes heraus. Bedingung beim Kunden klären, alle Möglichkeiten mit Quelle vergleichen, entscheiden, dann prüfen, wer die Zahlen eigentlich behauptet."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Vergleichstabelle",
+   "title": "Alle acht Verfahren, 1:1 aus dem Bericht.",
+   "break_before": true,
+   "intro": "So hat Claude die Tabelle im Bericht geliefert, Wort für Wort. Wegen der Breite hier in zwei Teilen. Legende: **H** = Herstellerangabe, **A** = Anbieter- bzw. Händlerangabe, **T** = unabhängiger Test. Alle Zahlen Stand 28.10.2026, Preise können sich ändern.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Verfahren",
+      "max. Waschtemperatur (+ Zyklen)",
+      "Mindestmenge / Einrichtung"
+     ],
+     "widths": [
+      "17%",
+      "50%",
+      "33%"
+     ],
+     "rows": [
+      [
+       "**Stickerei**",
+       "Garn bis 95 °C, chlorbeständig (H, Madeira). ISO-15797-Eignung von Hohenstein bestätigt (T, laut Fachmedium). Spreadshirt: Stick bis 95 °C (A). Printerado: 60 °C, Spezialgarn 95 °C (A). Zyklen: „hunderte Waschgänge“ (A, Printerado, ohne Beleg)",
+       "**Ab 1 Stück:** Spreadshirt (Stickdatei kostenlos), Shirtigo („einmalig 7,50 € netto pro Motivgröße und pro Material“, Erstellung 2–3 Werktage), Printerado, VistaPrint. Klassische Stickereien: Stickprogramm 15–100 € (Jochems), 95 € plus Mindestabnahme 20 Stück (Workline)"
+      ],
+      [
+       "**DTF**",
+       "**Widersprüchlich:** 30 °C (Shirtinator, A). 40 °C freigegeben, „in eigenen Waschtests 60 Grad überstanden“ (Printerado, A). 40 °C, „nicht geeignet“ für 60 °C (Siluri, A). Bis 60 °C, „mindestens 60 Wäschen bei 60°C“, Empfehlung 30 °C (DTF Fuchs, A). Pulver „bis 60 °C“ (dtf47, A)",
+       "Ab 1 Stück. Keine Einrichtung (Printerado) bzw. 12 € je Motiv (Siluri)"
+      ],
+      [
+       "**DTG**",
+       "30 °C (presstige, Spreadshirt „Digitaldruck“, A). 40 °C (gka, customwear, A). Etwa 40–80 Wäschen bei 30–40 °C (lazi-akademie). **Keine 60-°C-Freigabe gefunden**",
+       "Ab 1 Stück, keine Vorkosten"
+      ],
+      [
+       "**Flex-/Flockfolie (Plott)**",
+       "**Folie:** Poli-Flex Turbo bis 60 °C, trocknergeeignet (H, poli-tape.de). Siser P.S./Videoflex bis 60 °C (A, Händlerdatenblätter). Poli-Flex 4675 bis 90 °C (A, Händler). **Print-on-Demand-Pflege:** Spreadshirt und Shirtinator 30 °C (A). Zyklen: **nicht gefunden**",
+       "Ab 1 Stück (z. B. Textilwerbung Wien, The Button Maker). Einrichtung **nicht gefunden**"
+      ],
+      [
+       "**Siebdruck direkt (Plastisol)**",
+       "Plastisol bis 60 °C, 50–80 Wäschen (A, Siluri). „bis zu 60 Grad“ (A, hi5). Spreadshirt-Siebdruck: 40 °C (A)",
+       "Laut Siluri „ab 50 Stück pro Motiv wirtschaftlich“, in der B2B-Staffel ab 25 Stück. 49 € je Farbe (Siluri) bzw. laut Siluri-Ratgeber zur Mindestbestellmenge „Siebbelichtung (ca. 45 € pro Farbe)“"
+      ],
+      [
+       "**Siebdruck-Transfer / Industriewäsche-Transfer**",
+       "Plastisol-Transfer 60 °C. Wasserfarb-Transfer 95 °C (A, Siluri). Supacolor Industrial Wash: **ISO 15797:2017, 50 Zyklen bei 74 °C bestanden (T, TexTest-Bericht 14066, April 2023)**; laut Hersteller „up to 95°C with the harshest chemicals—without fading, cracking or peeling“ (A). Logotex IW: bis 90 °C, 50+ Wäschen (A). AS system Trans Plast 95 H: 95 °C (A, über Fachmedium)",
+       "Siluri ab 50 Stück + Siebkosten. Logotex ab 20 Stück. Supacolor: „a minimum of 10 pieces per order“ (Produkt-FAQ)"
+      ],
+      [
+       "**Sublimation**",
+       "40–60 °C „je nach Material“ (A, schuerze-bedrucken.de). Subli-Flex (Folie für Baumwolle) 40 °C, 50+ Wäschen (H, Forever). Siser Easy Subli 60 °C (A). Spreadshirt „Polyesterdruck“ 30 °C",
+       "**nicht gefunden**"
+      ],
+      [
+       "**Patches/Embleme**",
+       "Aufgenähte Aufnäher bis 95 °C (A, stickbetrieb.de). Gewebt/gedruckt zum Aufbügeln 60 °C, trocknergeeignet (A, foxcuts). **Gegenposition:** aufgebügelt „nur 30 °C (wegen Kleber)“ (A, aufnaeher.de)",
+       "Ab 10 Stück (stickbetrieb.de)"
+      ]
+     ],
+     "caption": "Teil 1 von 2: Waschtemperatur und Mindestmenge."
+    }
+   ]
+  },
+  {
+   "kicker": "Die Vergleichstabelle",
+   "title": "Preise, Material, Quellen.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Verfahren",
+      "Stückpreis 1 Stk. / ca. 10 Stk.",
+      "Material",
+      "Quelle(n)"
+     ],
+     "widths": [
+      "17%",
+      "39%",
+      "24%",
+      "20%"
+     ],
+     "rows": [
+      [
+       "**Stickerei**",
+       "Nur Stick: 5,40 € bei 1 Stk. / 4,86 € ab 10 Stk. (bis 6.000 Stiche, Jochems, netto/brutto nicht angegeben). 5,85 € netto bei 1–10 Stk. (workwear one, Logo ab 5 Stk.). Komplett-Polo: ab 26,90 € (1 Stk.) / ab 20,71 € (10 Stk.) (a61). Spreadshirt: Shirt mit Stickoption ab 21,99 €, Polo 24,99 € (ob inkl. Stick, nicht angegeben). Shirtigo: Stückpreis **nicht gefunden**",
+       "Baumwolle, Mischgewebe, Polyester. Dehnbare Stoffe brauchen Stickvlies",
+       "madeira.de, rw-textilservice.de, spreadshirt.de, cockpit.shirtigo.com, printerado.de, stickerei-jochems.de, workwear-one.de, a61.de"
+      ],
+      [
+       "**DTF**",
+       "Shirtinator: Shirt 11,99 € + Druck 8,00 € = 19,99 €, ab 5 Stk. 10 % Rabatt. Dream-Print: T-Shirt mit Logo ab 8,70 €",
+       "Baumwolle, Mischgewebe, Polyester, alle Farben",
+       "shirtinator.de, printerado.de, siluri.de, dtf-fuchs.de, dtf47.de"
+      ],
+      [
+       "**DTG**",
+       "Shirtinator ab 19,99 € (1 Stk.). Für 10 Stk. **nicht gefunden**",
+       "Baumwolle; Mischgewebe bis ca. 50 % Polyester. Nicht für reines Polyester",
+       "presstige.info, gka.at, lazi-akademie.de, printclix.de"
+      ],
+      [
+       "**Flex-/Flockfolie (Plott)**",
+       "Flex-T-Shirt ab 29,20 € bei 1 Stk. (Printshop Landstraße, AT). 10 Stk.: **nicht gefunden**",
+       "Baumwolle, Polyester, Mischgewebe (Poli-Tape). Nur 1–3 Volltonfarben, keine Verläufe",
+       "poli-tape.de, tiptopcarbon.de, farben-frikell.de, spreadshirt.de"
+      ],
+      [
+       "**Siebdruck direkt (Plastisol)**",
+       "25 Stk. ab 2,90 € + 49 € netto je Farbe (Siluri B2B). 100 Stk. ca. 1,60 € (Siluri). 1–10 Stk.: nicht sinnvoll",
+       "Baumwolle, Mischgewebe",
+       "siluri.de, hi5-textildruck.de"
+      ],
+      [
+       "**Siebdruck-Transfer / Industriewäsche-Transfer**",
+       "**nicht gefunden**",
+       "Baumwolle und Mischgewebe (AS system). Thermo-tex: helle Textilien",
+       "siluri.de, supacolor.com, logotex-transferdruck.eu, rw-textilservice.de"
+      ],
+      [
+       "**Sublimation**",
+       "**nicht gefunden**",
+       "Nur Polyester bzw. mindestens 75 % (hi5) oder 50–65 % Polyesteranteil (schuerze-bedrucken). Am besten auf Weiß/hellem Stoff; keine reine Baumwolle",
+       "hi5-textildruck.de, schuerze-bedrucken.de, forever-ots.de"
+      ],
+      [
+       "**Patches/Embleme**",
+       "**nicht gefunden**",
+       "Baumwolle, Polyester, Mischgewebe (Hitze- bzw. Bügelbeständigkeit nötig)",
+       "stickbetrieb.de, foxcuts.de, aufnaeher.de"
+      ]
+     ],
+     "caption": "Teil 2 von 2: Stückpreis, Material, Quellen. „nicht gefunden“ heißt: Claude hat dazu keine Angabe gefunden, nicht dass es keine gibt. Alle Links stehen direkt darunter."
+    }
+   ]
+  },
+  {
+   "kicker": "Quellen",
+   "title": "Alle 26 Quellen aus dem Bericht.",
+   "intro": "So im Bericht des Laufs verlinkt (28.10.2026). Insgesamt hat Claude 246 Quellen geprüft.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "1. [https://www.spreadshirt.de/gestalten/schuerzen](https://www.spreadshirt.de/gestalten/schuerzen)\n2. [https://www.spreadshirt.de/gestalten/kleidung/besticken](https://www.spreadshirt.de/gestalten/kleidung/besticken)\n3. [https://crimex.com/de-de/blog/werbeartikel-allgemein/t-shirts-mit-aufdrucken-wie-waescht-und-pflegt-man-sie-richtig/](https://crimex.com/de-de/blog/werbeartikel-allgemein/t-shirts-mit-aufdrucken-wie-waescht-und-pflegt-man-sie-richtig/)\n4. [https://werbemittel-oerlikon.ch/wie-man-bedruckte-t-shirts-richtig-pflegt/](https://werbemittel-oerlikon.ch/wie-man-bedruckte-t-shirts-richtig-pflegt/)\n5. [https://www.shirtinator.de/ratgeber/waschanleitung](https://www.shirtinator.de/ratgeber/waschanleitung)\n6. [https://help.spreadshirt.com/hc/en-us/articles/115000153569-Care-instructions-for-printed-and-embroidered-textiles](https://help.spreadshirt.com/hc/en-us/articles/115000153569-Care-instructions-for-printed-and-embroidered-textiles)\n7. [https://garne.madeira.de/startseite/produkte/stickgarne-und-quiltgarne/polyneon/](https://garne.madeira.de/startseite/produkte/stickgarne-und-quiltgarne/polyneon/)\n8. [https://www.rw-textilservice.de/von-waschbestaendigen-bis-leitfaehigen-garnen-335203/](https://www.rw-textilservice.de/von-waschbestaendigen-bis-leitfaehigen-garnen-335203/)\n9. [https://cockpit.shirtigo.com/en/stickerei](https://cockpit.shirtigo.com/en/stickerei)\n10. [https://cockpit.shirtigo.com/en/embroidery-on-demand](https://cockpit.shirtigo.com/en/embroidery-on-demand)\n11. [https://www.spreadshop.de/stick-on-demand/](https://www.spreadshop.de/stick-on-demand/)\n12. [https://www.aufnaeher.de/magazin/aufnaeher-waschen/](https://www.aufnaeher.de/magazin/aufnaeher-waschen/)\n13. [https://poli-tape.de/textile-graphics/poli-flex-turbo/](https://poli-tape.de/textile-graphics/poli-flex-turbo/)\n14. [https://www.groener-schulze.com/transfer/textiltransferfolien/poli-flex-turbo](https://www.groener-schulze.com/transfer/textiltransferfolien/poli-flex-turbo)\n15. [https://www.dtf-fuchs.de/produkte/dtf-meterware](https://www.dtf-fuchs.de/produkte/dtf-meterware)\n16. [https://www.printerado.de/DTF-Transferdruck](https://www.printerado.de/DTF-Transferdruck)\n17. [https://siluri.de/ratgeber/textilien-waschen-veredelt](https://siluri.de/ratgeber/textilien-waschen-veredelt)\n18. [https://siluri.de/ratgeber/nachteile-transferdruck](https://siluri.de/ratgeber/nachteile-transferdruck)\n19. [https://www.bp-online.com/de-de/test-arbeit](https://www.bp-online.com/de-de/test-arbeit)\n20. [https://jefferys.com/glossar/industriewaesche/](https://jefferys.com/glossar/industriewaesche/)\n21. [https://printerado.de/Business-Fashion](https://printerado.de/Business-Fashion)\n22. [https://helpcenter.shirtigo.de/faq/produkte/herstellung-sortiment/was-muss-beim-waschen-der-produkte-beachtet-werden/](https://helpcenter.shirtigo.de/faq/produkte/herstellung-sortiment/was-muss-beim-waschen-der-produkte-beachtet-werden/)\n23. [https://workwear-one.de/Arbeitskleidung-mit-Logo](https://workwear-one.de/Arbeitskleidung-mit-Logo)\n24. [https://www.stickerei-jochems.de/preisliste-f%C3%BCr-logos/](https://www.stickerei-jochems.de/preisliste-f%C3%BCr-logos/)\n25. [https://www.printclix.de/Drucktechniken/DTG-Direct-to-Garment/](https://www.printclix.de/Drucktechniken/DTG-Direct-to-Garment/)\n26. [https://hi5-textildruck.de/druckarten/sublimation/](https://hi5-textildruck.de/druckarten/sublimation/)"
+    }
+   ]
+  },
+  {
+   "kicker": "Für deinen Betrieb",
+   "title": "So machst du das mit deinem Produkt.",
+   "break_before": true,
+   "intro": "Die Frage funktioniert für alles, was beim Kunden etwas aushalten muss: Hitze, Wetter, Transport, Haltbarkeit. Du brauchst nur zwei Dinge: die Bedingung beim Kunden und deine kleinste Menge.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Bedingung aufschreiben",
+       "text": "Was muss dein Produkt beim Kunden aushalten? Am besten aus einer früheren Recherche, die du als Datei anhängst."
+      },
+      {
+       "title": "Kleinste Menge festlegen",
+       "text": "Ab wie vielen Stück willst du liefern? Das sortiert die meisten Möglichkeiten schon aus."
+      },
+      {
+       "title": "Prüfwerte wählen",
+       "text": "Zwei bis drei Zahlen, die du vergleichen willst, zum Beispiel Temperatur, Haltbarkeit oder Gewicht. Dazu immer Mindestmenge und Stückpreis."
+      },
+      {
+       "title": "Research laufen lassen",
+       "text": "Neuer Chat, „+“, „Research“, Datei anhängen, die Vorlage unten einfügen, senden. Rechne mit fünf bis zehn Minuten."
+      },
+      {
+       "title": "Herkunft prüfen",
+       "text": "Markier in der Tabelle, was nur vom Anbieter stammt. Bevor du etwas versprichst: Muster bestellen und selbst testen."
+      }
+     ]
+    },
+    {
+     "type": "prompt",
+     "label": "Vorlage für dein Produkt",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [PRODUKT] an [ZIELGRUPPE], [WIE GELIEFERT]. Ergebnis der letzten Recherche: [BEDINGUNG BEIM KUNDEN, die mein Produkt aushalten muss]. Recherchiere: Welche Ausführung bzw. welches Verfahren hält [BEDINGUNG] dauerhaft aus und geht trotzdem schon ab [KLEINSTE MENGE]? Vergleiche die Möglichkeiten mit [2–3 PRÜFWERTE], Mindestmenge und ungefährem Stückpreis, jeweils mit Quelle. Entscheide dich am Ende für eine Möglichkeit und begründe es mit zwei bis drei konkreten Gründen mit Zahlen. Sag dazu, welche Angaben nur vom Anbieter stammen und welche unabhängig geprüft sind. Erfinde nichts."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Bäckerei",
+       "v": "Brot-Abo an Büros in der Nachbarschaft. Bedingung: Brot muss bis Feierabend frisch bleiben. Welche Verpackung hält das ab 10 Stück am Tag?"
+      },
+      {
+       "k": "Maler",
+       "v": "Fassadenanstrich für Hausbesitzer. Bedingung: Küstenklima, Salzluft. Welche Farbe hält das, auch für eine einzelne Fassade?"
+      },
+      {
+       "k": "Grafikerin",
+       "v": "Aufkleber mit Logo für Firmenwagen von Handwerksbetrieben. Bedingung: Waschanlage und Winter. Welche Folie hält das ab einem Stück?"
+      },
+      {
+       "k": "Imker",
+       "v": "Honig im Glas an Hofläden, in Kisten zu zwölf. Bedingung: Versand im Sommer. Welche Verpackung übersteht das ab einer Kiste?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Anbieterangaben für Beweise halten.** In unserem Lauf waren fast alle Gradzahlen Angaben von Anbietern oder Händlern. Frag immer, wer die Zahl behauptet.",
+      "**Pflegeangabe mit Materialgrenze verwechseln.** Die 30 °C aus der letzten Folge waren Pflegeempfehlungen der Shops, keine Grenze der Folie. Trotzdem gilt gegenüber dem Kunden, was dein Partner zusagt.",
+      "**Das Textil vergessen.** Wenn das Shirt selbst nur 40 °C verträgt, hilft das beste Logo nichts. Nur Shirts anbieten, deren Etikett 60 °C erlaubt.",
+      "**Größe des Logos nicht prüfen.** Beim Stick auf Bestellung sind laut Lauf etwa 8–9 cm Breite und 3–6 Farben realistisch, ein Logo mit 10 × 10 cm ist zu groß.",
+      "**Ohne Muster versprechen.** Claude rät: Ein Muster 10–20-mal bei 60 °C waschen, bevor du „60 °C waschbar“ zusagst.",
+      "**Quellen nicht angeklickt.** Prüf jede Fundstelle, die du weiterverwendest. Preise ändern sich."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Prompt-Bibliothek",
+   "title": "Von der Tabelle zur Zusage.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Nachfrage 1 · Herkunft trennen",
+     "text": "Geh die Tabelle aus deinem Bericht Zeile für Zeile durch. Markier jede Zahl als Herstellerangabe, Anbieterangabe oder unabhängigen Test und nenne dazu die Quelle. Welche Zahlen bleiben übrig, wenn ich nur unabhängige Tests gelten lasse?"
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 2 · Anfrage an den Anbieter",
+     "text": "Schreib mir eine kurze, freundliche Anfrage an [Anbieter]. Ich will schriftlich wissen, ob [die Pflegeangabe von 30 °C] auch für [Stick] gilt und welches [Garn] verwendet wird. Höchstens fünf Sätze, Sie-Form."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 3 · Eigener Test",
+     "text": "Ich will ein Muster selbst testen, bevor ich [„60 °C waschbar“] verspreche. Schreib mir einen einfachen Testplan für zu Hause: wie oft, bei welcher Temperatur, was ich nach jedem Durchgang prüfe und fotografiere. Nutze dafür die Empfehlungen aus deinem Bericht. Erfinde keine Normwerte."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 4 · Konkurrenzpreise",
+     "text": "Recherchiere: Was verlangen Anbieter in Deutschland für [bestickte Firmenshirts] in kleinen Mengen ([1, 5 und 10 Stück])? Nenne Endpreis pro Stück, ob netto oder brutto, und die Quelle. Erfinde nichts."
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes prüft die KI, was die Konkurrenz für bestickte Shirts verlangt.",
+  "text": "Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne Einrichtung willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Tabelle, Zahlen und Zitate aus einem echten claude.ai-Lauf vom 28.10.2026 (Research, 246 Quellen). Anbieter- und Herstellerangaben sind als solche gekennzeichnet und nicht von uns geprüft. Preise können sich ändern, Menünamen auch."
+}

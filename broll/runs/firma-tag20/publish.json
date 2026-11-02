@@ -1,0 +1,26 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae752a718fdd277a22c42e0",
+ "status": "published",
+ "scheduledFor": "2026-11-01 21:00 Europe/Berlin",
+ "folge": 20,
+ "serientag": 5,
+ "ersteFolgeDesTages": false,
+ "note_final": "8,5/10 (finale Prüfung Runde 2, pruefung/final-runde2.md; R1 7,5)",
+ "video": "runs/firma-tag20/firma-tag20-final.mp4",
+ "cover": "runs/firma-tag20/cover.jpg",
+ "guide": "runs/firma-tag20/umsatzsteuer-guide.pdf",
+ "ig_media_id": "18193316347370559",
+ "url": "https://www.instagram.com/reel/DfNiyQgjZiE/",
+ "funnel": {
+  "name": "PTC Funnel Folge 20",
+  "kind": "ptc",
+  "workflowId": "6ae7a5ecda662c387f59ad55",
+  "automationId": "6ae7a5ec4a9842761419a789",
+  "active": true,
+  "attachedTo": "IG media id 18193316347370559",
+  "created": "2026-11-01T20:49:45.748Z",
+  "by": "zernio-golive-arm"
+ }
+}

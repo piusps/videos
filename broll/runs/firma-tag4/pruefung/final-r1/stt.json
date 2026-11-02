@@ -1,0 +1,662 @@
+[
+  {
+    "text": "Wie",
+    "startMs": 50,
+    "endMs": 120
+  },
+  {
+    "text": "viel",
+    "startMs": 120,
+    "endMs": 280
+  },
+  {
+    "text": "Umsatz",
+    "startMs": 280,
+    "endMs": 510
+  },
+  {
+    "text": "macht",
+    "startMs": 510,
+    "endMs": 710
+  },
+  {
+    "text": "ein",
+    "startMs": 710,
+    "endMs": 840
+  },
+  {
+    "text": "Unternehmen,",
+    "startMs": 840,
+    "endMs": 1360
+  },
+  {
+    "text": "das",
+    "startMs": 1360,
+    "endMs": 1590
+  },
+  {
+    "text": "eine",
+    "startMs": 1590,
+    "endMs": 1850
+  },
+  {
+    "text": "KI",
+    "startMs": 1850,
+    "endMs": 2000
+  },
+  {
+    "text": "hundert",
+    "startMs": 2000,
+    "endMs": 2350
+  },
+  {
+    "text": "Tage",
+    "startMs": 2350,
+    "endMs": 2550
+  },
+  {
+    "text": "lang",
+    "startMs": 2550,
+    "endMs": 2750
+  },
+  {
+    "text": "ganz",
+    "startMs": 2750,
+    "endMs": 2950
+  },
+  {
+    "text": "alleine",
+    "startMs": 2950,
+    "endMs": 3320
+  },
+  {
+    "text": "führt?",
+    "startMs": 3320,
+    "endMs": 3760
+  },
+  {
+    "text": "Ich",
+    "startMs": 3760,
+    "endMs": 3910
+  },
+  {
+    "text": "probier",
+    "startMs": 3910,
+    "endMs": 4270
+  },
+  {
+    "text": "das",
+    "startMs": 4270,
+    "endMs": 4420
+  },
+  {
+    "text": "aus.",
+    "startMs": 4420,
+    "endMs": 4760
+  },
+  {
+    "text": "Tag",
+    "startMs": 4760,
+    "endMs": 5260
+  },
+  {
+    "text": "2.",
+    "startMs": 5260,
+    "endMs": 5760
+  },
+  {
+    "text": "Die",
+    "startMs": 5760,
+    "endMs": 5900
+  },
+  {
+    "text": "Firma",
+    "startMs": 5900,
+    "endMs": 6140
+  },
+  {
+    "text": "der",
+    "startMs": 6140,
+    "endMs": 6280
+  },
+  {
+    "text": "KI",
+    "startMs": 6280,
+    "endMs": 6370
+  },
+  {
+    "text": "verkauft",
+    "startMs": 6370,
+    "endMs": 6750
+  },
+  {
+    "text": "Shirts",
+    "startMs": 6750,
+    "endMs": 7030
+  },
+  {
+    "text": "mit",
+    "startMs": 7030,
+    "endMs": 7220
+  },
+  {
+    "text": "Logo",
+    "startMs": 7220,
+    "endMs": 7350
+  },
+  {
+    "text": "an",
+    "startMs": 7350,
+    "endMs": 7440
+  },
+  {
+    "text": "kleine",
+    "startMs": 7440,
+    "endMs": 7720
+  },
+  {
+    "text": "Betriebe,",
+    "startMs": 7720,
+    "endMs": 8320
+  },
+  {
+    "text": "gedruckt",
+    "startMs": 8320,
+    "endMs": 8550
+  },
+  {
+    "text": "erst",
+    "startMs": 8550,
+    "endMs": 8790
+  },
+  {
+    "text": "auf",
+    "startMs": 8790,
+    "endMs": 8880
+  },
+  {
+    "text": "Bestellung.",
+    "startMs": 8880,
+    "endMs": 9600
+  },
+  {
+    "text": "Gestern",
+    "startMs": 9600,
+    "endMs": 9910
+  },
+  {
+    "text": "lernte",
+    "startMs": 9910,
+    "endMs": 10170
+  },
+  {
+    "text": "sie,",
+    "startMs": 10170,
+    "endMs": 10390
+  },
+  {
+    "text": "der",
+    "startMs": 10390,
+    "endMs": 10520
+  },
+  {
+    "text": "Bau",
+    "startMs": 10520,
+    "endMs": 10650
+  },
+  {
+    "text": "wäscht",
+    "startMs": 10650,
+    "endMs": 10950
+  },
+  {
+    "text": "mit",
+    "startMs": 10950,
+    "endMs": 11080
+  },
+  {
+    "text": "60",
+    "startMs": 11080,
+    "endMs": 11370
+  },
+  {
+    "text": "Grad.",
+    "startMs": 11370,
+    "endMs": 11760
+  },
+  {
+    "text": "Heute",
+    "startMs": 11760,
+    "endMs": 12000
+  },
+  {
+    "text": "sucht",
+    "startMs": 12000,
+    "endMs": 12230
+  },
+  {
+    "text": "sie",
+    "startMs": 12230,
+    "endMs": 12370
+  },
+  {
+    "text": "ein",
+    "startMs": 12370,
+    "endMs": 12510
+  },
+  {
+    "text": "Logo,",
+    "startMs": 12510,
+    "endMs": 12780
+  },
+  {
+    "text": "das",
+    "startMs": 12780,
+    "endMs": 12920
+  },
+  {
+    "text": "60",
+    "startMs": 12920,
+    "endMs": 13230
+  },
+  {
+    "text": "Grad",
+    "startMs": 13230,
+    "endMs": 13400
+  },
+  {
+    "text": "aushält.",
+    "startMs": 13400,
+    "endMs": 14040
+  },
+  {
+    "text": "Plus",
+    "startMs": 14040,
+    "endMs": 14290
+  },
+  {
+    "text": "Research",
+    "startMs": 14290,
+    "endMs": 14800
+  },
+  {
+    "text": "an",
+    "startMs": 14800,
+    "endMs": 14920
+  },
+  {
+    "text": "Ergebnis",
+    "startMs": 14920,
+    "endMs": 15430
+  },
+  {
+    "text": "anhängen.",
+    "startMs": 15430,
+    "endMs": 16120
+  },
+  {
+    "text": "Frage,",
+    "startMs": 16120,
+    "endMs": 16580
+  },
+  {
+    "text": "was",
+    "startMs": 16580,
+    "endMs": 16620
+  },
+  {
+    "text": "hält",
+    "startMs": 16620,
+    "endMs": 16870
+  },
+  {
+    "text": "60",
+    "startMs": 16870,
+    "endMs": 17180
+  },
+  {
+    "text": "Grad",
+    "startMs": 17180,
+    "endMs": 17380
+  },
+  {
+    "text": "ab",
+    "startMs": 17380,
+    "endMs": 17490
+  },
+  {
+    "text": "einem",
+    "startMs": 17490,
+    "endMs": 17730
+  },
+  {
+    "text": "Stück?",
+    "startMs": 17730,
+    "endMs": 18240
+  },
+  {
+    "text": "Claude",
+    "startMs": 18240,
+    "endMs": 18580
+  },
+  {
+    "text": "prüft",
+    "startMs": 18580,
+    "endMs": 18910
+  },
+  {
+    "text": "246",
+    "startMs": 18910,
+    "endMs": 19420
+  },
+  {
+    "text": "Quellen.",
+    "startMs": 19420,
+    "endMs": 20040
+  },
+  {
+    "text": "Die",
+    "startMs": 20040,
+    "endMs": 20260
+  },
+  {
+    "text": "KI",
+    "startMs": 20260,
+    "endMs": 20400
+  },
+  {
+    "text": "nimmt",
+    "startMs": 20400,
+    "endMs": 20770
+  },
+  {
+    "text": "Stickerei.",
+    "startMs": 20770,
+    "endMs": 21680
+  },
+  {
+    "text": "Warum?",
+    "startMs": 21680,
+    "endMs": 22680
+  },
+  {
+    "text": "Beim",
+    "startMs": 22680,
+    "endMs": 22870
+  },
+  {
+    "text": "selben",
+    "startMs": 22870,
+    "endMs": 23150
+  },
+  {
+    "text": "Anbieter.",
+    "startMs": 23150,
+    "endMs": 23680
+  },
+  {
+    "text": "Stick",
+    "startMs": 23680,
+    "endMs": 23950
+  },
+  {
+    "text": "bis",
+    "startMs": 23950,
+    "endMs": 24120
+  },
+  {
+    "text": "95",
+    "startMs": 24120,
+    "endMs": 24430
+  },
+  {
+    "text": "Grad,",
+    "startMs": 24430,
+    "endMs": 24740
+  },
+  {
+    "text": "Digitaldruck",
+    "startMs": 24740,
+    "endMs": 25380
+  },
+  {
+    "text": "bis",
+    "startMs": 25380,
+    "endMs": 25540
+  },
+  {
+    "text": "30.",
+    "startMs": 25540,
+    "endMs": 26080
+  },
+  {
+    "text": "Stick",
+    "startMs": 26080,
+    "endMs": 26330
+  },
+  {
+    "text": "geht",
+    "startMs": 26330,
+    "endMs": 26510
+  },
+  {
+    "text": "ab",
+    "startMs": 26510,
+    "endMs": 26600
+  },
+  {
+    "text": "einem",
+    "startMs": 26600,
+    "endMs": 26840
+  },
+  {
+    "text": "Stück,",
+    "startMs": 26840,
+    "endMs": 27220
+  },
+  {
+    "text": "Siebdruck",
+    "startMs": 27220,
+    "endMs": 27630
+  },
+  {
+    "text": "lohnt",
+    "startMs": 27630,
+    "endMs": 27860
+  },
+  {
+    "text": "erst",
+    "startMs": 27860,
+    "endMs": 28050
+  },
+  {
+    "text": "ab",
+    "startMs": 28050,
+    "endMs": 28140
+  },
+  {
+    "text": "50.",
+    "startMs": 28140,
+    "endMs": 28680
+  },
+  {
+    "text": "Haken.",
+    "startMs": 28680,
+    "endMs": 29680
+  },
+  {
+    "text": "Alle",
+    "startMs": 29680,
+    "endMs": 29890
+  },
+  {
+    "text": "Gradzahlen",
+    "startMs": 29890,
+    "endMs": 30460
+  },
+  {
+    "text": "sind",
+    "startMs": 30460,
+    "endMs": 30630
+  },
+  {
+    "text": "Anbieterangaben.",
+    "startMs": 30630,
+    "endMs": 31640
+  },
+  {
+    "text": "Als",
+    "startMs": 31640,
+    "endMs": 31840
+  },
+  {
+    "text": "nächstes.",
+    "startMs": 31840,
+    "endMs": 32640
+  },
+  {
+    "text": "Was",
+    "startMs": 32640,
+    "endMs": 32770
+  },
+  {
+    "text": "verlangt",
+    "startMs": 32770,
+    "endMs": 33110
+  },
+  {
+    "text": "die",
+    "startMs": 33110,
+    "endMs": 33240
+  },
+  {
+    "text": "Konkurrenz",
+    "startMs": 33240,
+    "endMs": 33670
+  },
+  {
+    "text": "für",
+    "startMs": 33670,
+    "endMs": 33840
+  },
+  {
+    "text": "bestickte",
+    "startMs": 33840,
+    "endMs": 34220
+  },
+  {
+    "text": "Shirts?",
+    "startMs": 34220,
+    "endMs": 34680
+  },
+  {
+    "text": "Kommentiere",
+    "startMs": 34680,
+    "endMs": 35220
+  },
+  {
+    "text": "\"Druck\"",
+    "startMs": 35220,
+    "endMs": 35510
+  },
+  {
+    "text": "und",
+    "startMs": 35510,
+    "endMs": 35650
+  },
+  {
+    "text": "ich",
+    "startMs": 35650,
+    "endMs": 35790
+  },
+  {
+    "text": "schick",
+    "startMs": 35790,
+    "endMs": 36070
+  },
+  {
+    "text": "Dir",
+    "startMs": 36070,
+    "endMs": 36210
+  },
+  {
+    "text": "die",
+    "startMs": 36210,
+    "endMs": 36350
+  },
+  {
+    "text": "Frage",
+    "startMs": 36350,
+    "endMs": 36580
+  },
+  {
+    "text": "und",
+    "startMs": 36580,
+    "endMs": 36720
+  },
+  {
+    "text": "die",
+    "startMs": 36720,
+    "endMs": 36880
+  },
+  {
+    "text": "Vergleichstabelle.",
+    "startMs": 36880,
+    "endMs": 37880
+  },
+  {
+    "text": "Damit",
+    "startMs": 37880,
+    "endMs": 38130
+  },
+  {
+    "text": "hast",
+    "startMs": 38130,
+    "endMs": 38330
+  },
+  {
+    "text": "Du",
+    "startMs": 38330,
+    "endMs": 38430
+  },
+  {
+    "text": "in",
+    "startMs": 38430,
+    "endMs": 38530
+  },
+  {
+    "text": "10",
+    "startMs": 38530,
+    "endMs": 38840
+  },
+  {
+    "text": "Minuten",
+    "startMs": 38840,
+    "endMs": 39160
+  },
+  {
+    "text": "die",
+    "startMs": 39160,
+    "endMs": 39310
+  },
+  {
+    "text": "passenden",
+    "startMs": 39310,
+    "endMs": 39750
+  },
+  {
+    "text": "Verfahren",
+    "startMs": 39750,
+    "endMs": 40190
+  },
+  {
+    "text": "mit",
+    "startMs": 40190,
+    "endMs": 40330
+  },
+  {
+    "text": "Quellen.",
+    "startMs": 40330,
+    "endMs": 40880
+  }
+]

@@ -1,0 +1,8 @@
+hook ab 0 s (4.8 s): Stimme -21.3 dB, Musik -41.6 dB, Abstand 20.3 dB
+recap ab 4.9 s (6.1 s): Stimme -21.2 dB, Musik -39.6 dB, Abstand 18.4 dB
+heute ab 11 s (1.6 s): Stimme -20.5 dB, Musik -41.1 dB, Abstand 20.6 dB
+lauf ab 12.6 s (9.7 s): Stimme -21.6 dB, Musik -41.3 dB, Abstand 19.7 dB
+warum ab 22.3 s (8.2 s): Stimme -21.3 dB, Musik -37.0 dB, Abstand 15.7 dB
+haken ab 30.5 s (5.4 s): Stimme -21.4 dB, Musik -36.0 dB, Abstand 14.6 dB
+next ab 35.9 s (2.7 s): Stimme -21.1 dB, Musik -35.4 dB, Abstand 14.3 dB
+cta ab 38.6 s (5.6 s): Stimme -21.9 dB, Musik -35.8 dB, Abstand 13.9 dB

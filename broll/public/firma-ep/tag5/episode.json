@@ -1,0 +1,514 @@
+{
+ "tag": 5,
+ "folge": 5,
+ "serientag": 2,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-29",
+ "seconds": 44.8,
+ "keyword": "Konkurrenz",
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 3.47,
+  "musicMute": [
+   [
+    16.55,
+    17.25
+   ]
+  ]
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 3,
+  "done": [
+   0,
+   1,
+   2
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "result": {
+   "kind": "priceTags",
+   "main": {
+    "top": "5 bestickte Shirts",
+    "big": "ab rund 110 €"
+   },
+   "fillAt": 0.05,
+   "stamps": [
+    {
+     "text": "ERST AB 10",
+     "at": "Unternehmen"
+    },
+    {
+     "text": "ERST AB 10",
+     "at": "das"
+    },
+    {
+     "text": "ERST AB 15",
+     "at": "KI@1.7"
+    },
+    {
+     "text": "ERST AB 20",
+     "at": "100"
+    },
+    {
+     "text": "ERST AB 30",
+     "at": "Tage"
+    }
+   ],
+   "punch": [
+    "eine@1.5",
+    "lang",
+    "ganz"
+   ]
+  },
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@4.2",
+   "aus": "aus@4.4",
+   "end": "Die@4.8-0.08"
+  },
+  "instant": true,
+  "planFrom": "Ich-0.12"
+ },
+ "claude": {
+  "cursorFrom": "Plus-0.45",
+  "steps": [
+   {
+    "label": "RESEARCH",
+    "at": "Plus-0.4"
+   },
+   {
+    "label": "ANHANG",
+    "at": "Ergebnis-0.15"
+   },
+   {
+    "label": "FRAGE",
+    "at": "anhängen+0.05"
+   }
+  ],
+  "feature": {
+   "label": "Research",
+   "icon": "research",
+   "plus": "Plus",
+   "pick": "Research",
+   "on": "an@13.4"
+  },
+  "attach": {
+   "label": "Shirt-Firma Ergebnis Druck.md",
+   "sub": "34 lines",
+   "at": "Ergebnis@13.6"
+  },
+  "prompt": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe Firmenshirts mit Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, hergestellt auf Bestellung bei einem Partner. Mein letztes Ergebnis: Ich nehme Stickerei, weil das Garn bis 95 Grad Wäsche aushält und Stick schon ab einem Stück geht. Recherchiere jetzt die Konkurrenz: Was zahlt ein kleiner Handwerksbetrieb in Deutschland, wenn er fünf T-Shirts mit seinem Logo als Stick auf der Brust bestellt? Vergleiche mindestens acht Anbieter mit dem Gesamtpreis für fünf Stück inklusive Einrichtung und Versand, der Lieferzeit und dem, was im Preis enthalten ist, jeweils mit Quelle. Sag am Ende, wo eine Lücke ist, die eine kleine Firma wie meine nutzen kann, und begründe das mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts.",
+  "typing": [
+   [
+    "anhängen-0.1",
+    ""
+   ],
+   [
+    "Frage-0.12",
+    "Im Anhang ist mein letztes Ergebnis."
+   ]
+  ],
+  "send": "Shirts@16.3+0.3",
+  "rehook": {
+   "lines": [
+    "Die Frage",
+    "zum Kopieren"
+   ],
+   "pill": "→ am Ende",
+   "from": "Frage+0.3",
+   "to": "Claude@16.7-0.1"
+  }
+ },
+ "wall": {
+  "cards": [
+   {
+    "label": "110 €\nworkwear one",
+    "icon": "shirt"
+   },
+   {
+    "label": "126 €\na61",
+    "icon": "shirt"
+   },
+   {
+    "label": "151 €\na61 · 60 °C",
+    "icon": "shirt"
+   },
+   {
+    "label": "150 € BIS\nÜBER 200 € →",
+    "icon": "more"
+   },
+   {
+    "label": "ERST AB 20\nWorkline",
+    "icon": "box"
+   },
+   {
+    "label": "ERST AB 15\nStoiber",
+    "icon": "box"
+   },
+   {
+    "label": "ERST AB 30\nShirtlabor",
+    "icon": "box"
+   },
+   {
+    "label": "ERST AB 10\nstickbetrieb.de",
+    "icon": "box"
+   },
+   {
+    "label": "ERST AB 10\nCUVIO",
+    "icon": "box"
+   }
+  ],
+  "fill": {
+   "at": "Am-0.05",
+   "step": 0.07
+  },
+  "counter": {
+   "label": "QUELLEN",
+   "at": "Am-0.1",
+   "keys": [
+    [
+     "Am-0.05",
+     295,
+     0.6
+    ]
+   ],
+   "pulse": "Am+0.6"
+  },
+  "hl": [
+   {
+    "i": 0,
+    "at": "110"
+   }
+  ],
+  "dim": [
+   {
+    "i": 1,
+    "at": "günstigsten"
+   },
+   {
+    "i": 2,
+    "at": "günstigsten"
+   },
+   {
+    "i": 3,
+    "at": "günstigsten"
+   },
+   {
+    "i": 4,
+    "at": "setzt"
+   },
+   {
+    "i": 5,
+    "at": "setzt"
+   },
+   {
+    "i": 6,
+    "at": "setzt"
+   },
+   {
+    "i": 7,
+    "at": "setzt"
+   },
+   {
+    "i": 8,
+    "at": "setzt"
+   }
+  ],
+  "bot": {
+   "dx": -1.4,
+   "dz": -1.8,
+   "s": 0.8
+  }
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@4.8-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "Shirts@5.9"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt"
+   },
+   "last": {
+    "step": 2,
+    "label": "STICK BIS 95 °C",
+    "at": "Zuletzt",
+    "obj": {
+     "kind": "yarn",
+     "text": "Garn 95 °C",
+     "at": "95@9.5"
+    }
+   },
+   "today": {
+    "step": 3,
+    "pill": "HEUTE: KONKURRENZPREISE",
+    "at": "Heute"
+   },
+   "bot": {
+    "dx": 0.55,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Frage-0.1",
+   "src": "firma-ep/tag5/shots/01b-prompt-mit-anhang.png",
+   "crop": [
+    128,
+    720
+   ],
+   "cam": [
+    [
+     "Frage-0.1",
+     1.0,
+     500,
+     420
+    ],
+    [
+     "5@15.5-0.1",
+     1.6,
+     740,
+     495
+    ],
+    [
+     "Shirts@16.3-0.15",
+     1.6,
+     300,
+     535
+    ]
+   ],
+   "marks": [
+    {
+     "x": 588,
+     "y": 469,
+     "w": 328,
+     "h": 38,
+     "at": "5@15.5",
+     "color": "yellow"
+    },
+    {
+     "x": 50,
+     "y": 527,
+     "w": 490,
+     "h": 38,
+     "at": "Shirts@16.3",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Claude@16.7-0.1",
+   "src": "firma-ep/tag5/shots/02-research-fertig.png",
+   "crop": [
+    0,
+    232
+   ],
+   "cam": [
+    [
+     "Claude@16.7-0.1",
+     1.0,
+     500,
+     140
+    ],
+    [
+     "prüft",
+     1.7,
+     360,
+     150
+    ]
+   ],
+   "marks": [
+    {
+     "x": 276,
+     "y": 138,
+     "w": 112,
+     "h": 34,
+     "at": "295",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "wall",
+   "at": "Am-0.12",
+   "thinkUntil": "Am+0.4",
+   "tie": {
+    "left": "UNSER PAKET",
+    "mid": "mit",
+    "right": "RUND 110 €",
+    "at": "mit@21.8"
+   }
+  },
+  {
+   "type": "winner",
+   "at": "einzelne-0.15",
+   "label": "1 SHIRT\nOHNE NEUE EINRICHTUNG",
+   "icon": "shirt",
+   "fly": "einzelne",
+   "dimAt": "einzelne",
+   "stamp": "EINZELN NACHBESTELLEN",
+   "stampAt": "Einrichtung@24",
+   "hold": "shirt"
+  },
+  {
+   "type": "why",
+   "at": "Warum-0.12",
+   "label": "1 SHIRT\nOHNE NEUE EINRICHTUNG",
+   "icon": "shirt",
+   "pill": "WARUM EINZELN?",
+   "pillAt": "Warum",
+   "cards": [
+    {
+     "icon": "shirt",
+     "big": "5 Stück",
+     "small": "Erstauftrag",
+     "at": "5@25.3",
+     "vs": {
+      "big": "erst ab 10–30",
+      "small": "5 Anbieter",
+      "at": "nicht@26.6",
+      "bad": true
+     }
+    },
+    {
+     "icon": "shirt1x",
+     "big": "1 Shirt",
+     "small": "nachbestellen",
+     "at": "Selbst",
+     "vs": {
+      "big": "erst ab 5",
+      "small": "günstigster Workwear-Shop",
+      "at": "erst@30.1",
+      "bad": true
+     }
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "at": "Haken-0.12",
+   "pill": "HAKEN",
+   "lines": [
+    "„Es sind meist ‚ab'-Preise,",
+    "also Untergrenzen.“"
+   ],
+   "pop": "Haken",
+   "stamp": "UNTERGRENZEN",
+   "stampAt": "Untergrenzen",
+   "bubble": "Haken+0.3",
+   "objects": [
+    {
+     "kind": "chip",
+     "text": "von Claude addiert",
+     "at": "addiert",
+     "color": "gold"
+    }
+   ],
+   "bot": {
+    "dx": 1.9,
+    "dz": -2.0,
+    "s": 0.8
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@33.8-0.12",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Welcher Partner stickt 60-Grad-Shirts",
+    "einzeln, ohne Neueinrichtung?"
+   ],
+   "pop": "Als@33.8",
+   "stamp": null,
+   "bubble": "Als@33.8+0.3",
+   "objects": [
+    {
+     "kind": "careShirt",
+     "text": "Shirt-Stoff 60 °C",
+     "at": "60GradShirts"
+    },
+    {
+     "kind": "chip",
+     "text": "einzeln",
+     "at": "einzeln",
+     "color": "orange"
+    },
+    {
+     "kind": "chip",
+     "text": "keine neue Einrichtung",
+     "at": "Neueinrichtung"
+    }
+   ],
+   "bot": {
+    "dx": 1.9,
+    "dz": -2.0,
+    "s": 0.8
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Konkurrenz@38.5",
+   "plane": [
+    "und@39.4-0.05",
+    "schick+0.25"
+   ],
+   "itemsAt": "die@40",
+   "copyAt": "Damit",
+   "items": [
+    {
+     "label": "Die Frage",
+     "snip": "Was zahlt ein kleiner Handwerksbetrieb … fünf T-Shirts mit seinem Logo als Stick …"
+    },
+    {
+     "label": "Die Preistabelle",
+     "snip": "14 Anbieter · Gesamtpreis 5 Stk. · Quelle"
+    }
+   ],
+   "result": {
+    "at": "Damit",
+    "line1": "in 10 Minuten",
+    "line1At": "10",
+    "parts": [
+     {
+      "text": "deine Konkurrenzpreise",
+      "at": "Konkurrenzpreise@42.7",
+      "hot": true
+     }
+    ]
+   },
+   "hopAt": "Konkurrenzpreise@42.7+1.2",
+   "itemTag": "DM"
+  }
+ ]
+}

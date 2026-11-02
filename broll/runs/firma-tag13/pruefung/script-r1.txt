@@ -1,0 +1,12 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus.
+Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Zwanzig Betriebe in Chemnitz.
+Heute schreibt sie ihren ersten Werbebrief.
+Claude: Liste und Logo angehängt, Websuche zur Rechtslage, Word-Datei.
+Sie wählt den Brief.
+Warum? Werbe-Mail braucht Einwilligung, auch bei Firmen.
+Ein Brief nicht.
+Anruf braucht einen konkreten Grund.
+Haken: Versandkosten fehlen.
+Als Nächstes: Welche Adressen?
+Kommentiere „Brief“, und ich schick dir Frage und Briefvorlage.
+Damit hast du in zehn Minuten einen Briefentwurf für dein eigenes Business.

@@ -1,0 +1,197 @@
+{
+ "topic": "Logo",
+ "trigger_word": "Logo",
+ "cover": {
+  "kicker": "KI baut eine Firma · Lässt sich mein Logo sticken?",
+  "title": "Drei geprüfte Logo-Entwürfe. In fünf Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie drei Logos für ihre Shirt-Firma gezeichnet und gegen die Stick-Vorgaben ihres Anbieters geprüft hat. Mit Klickpfad, Prüfliste, der kompletten Prüftabelle aus unserem Lauf und den Quellen.",
+  "stat": {
+   "value": "4 min 23 s",
+   "label": "So lange hat Claude in unserem Lauf gebraucht: Stick-Vorgaben per Websuche gefunden, drei SVG-Logos gezeichnet, jedes nachgemessen, eins empfohlen."
+  },
+  "outcomes": [
+   "Drei Logo-Entwürfe als SVG, jeder gegen die Stick-Vorgaben deines Anbieters geprüft",
+   "Eine Prüfliste mit den Werten, auf die es beim Sticken ankommt",
+   "Ehrlich ausgewiesen: was erst ein Probeshirt zeigt"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Drei Entwürfe. In fünf Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und starte einen neuen Chat. Häng über **„+“** und **„Upload or add files“** dein letztes Ergebnis an, zum Beispiel deinen Firmennamen oder dein Angebot. Dann füge diese Frage ein. Das ist wörtlich die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Die Frage zum Kopieren (letztes Ergebnis angehängt)",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [Firmenshirts mit gesticktem Logo] an [kleine Handwerks- und Baubetriebe unter zehn Leuten], gestickt erst auf Bestellung über [Printful]. Mein letztes Ergebnis: Der Firmenname ist [Kolonnenshirt], noch ungeprüft. Jetzt brauche ich ein Logo, das sich als Brustlogo sticken lässt, etwa acht bis neun Zentimeter breit. Such mit der Websuche die Stick-Vorgaben von [Printful], zum Beispiel Farbanzahl, kleinste Schrifthöhe und feine Linien, jeweils mit Quelle. Zeichne mir dann drei Logo-Entwürfe als SVG. Prüf jeden Entwurf gegen diese Vorgaben, entscheide dich für einen und begründe es mit zwei bis drei konkreten Gründen. Sag mir auch, was du nicht prüfen kannst. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 5 Minuten",
+     "text": "Nach gut vier Minuten hast du die Stick-Vorgaben mit Quelle, drei Entwürfe als SVG-Datei, eine Prüftabelle und eine begründete Empfehlung. Den Sieger lädst du beim Anbieter hoch und prüfst die Vorschau."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → unten links **„+“** → **„Upload or add files“** → Datei wählen → Frage einfügen → senden. Research ist nicht nötig, in unserem Lauf blieb es aus."
+      },
+      {
+       "k": "Websuche",
+       "v": "Claude sucht selbst, wenn es hilft. In Team- und Enterprise-Konten muss ein Owner die Websuche erst freigeben."
+      },
+      {
+       "k": "Dateien",
+       "v": "Claude zeichnet die SVGs selbst und misst sie nach. Dafür muss in den Einstellungen die Dateierstellung an sein."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 4 Minuten 23 Sekunden, 3 Websuchen, 2 Printful-Quellen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Prüfliste",
+   "title": "Darauf kommt es beim Sticken an.",
+   "intro": "Printfuls Vorgaben für Flachstick, so wie Claude sie mit Quelle gefunden hat (Stand 29.10.2026). Bei einem anderen Anbieter ersetzt du die Werte durch dessen Vorgaben.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Farben:** höchstens 6 Garnfarben pro Design, aus Printfuls Palette mit 15 Farben. Hintergrundflächen zählen mit.",
+      "**Schrifthöhe:** mindestens 6,35 mm. Unter 2,54 mm verschwinden Buchstaben eventuell ganz.",
+      "**Linien:** mindestens 1,27 mm. Dünnere werden eventuell Steppstich oder fallen weg.",
+      "**Lücken, durch die der Stoff scheint:** mindestens 6,35 mm. Zu schmale Lücken besser mit einer Garnfarbe füllen.",
+      "**Datei:** keine Verläufe, transparenter Hintergrund.",
+      "**Größe:** Brustlogo höchstens 4 × 4 Zoll (etwa 101 mm). Die Fläche für dein konkretes Shirt beim Anbieter nachsehen.",
+      "**Vor dem Verkauf:** Vorschau beim Anbieter prüfen und ein Probeshirt sticken lassen.",
+      "**Selbst klären:** Schriftlizenz, ähnliche Logos, Name im Markenregister (keine Rechtsberatung)."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Die KI nimmt Entwurf C.",
+   "intro": "Drei Entwürfe, alle 88 bis 90 mm breit, alle mit 2 Farben. Nur einer besteht alle messbaren Vorgaben.",
+   "blocks": [
+    {
+     "type": "image",
+     "src": "guide-img/entwuerfe.png",
+     "width": "70%",
+     "caption": "Echter Lauf vom 29.10.2026: oben A (zweizeilig mit Balken), Mitte B (Symbol + einzeilig), unten C (Block mit heller Schrift)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "",
+      "A · Zweizeilig",
+      "B · Symbol",
+      "C · Block"
+     ],
+     "widths": [
+      "31%",
+      "23%",
+      "23%",
+      "23%"
+     ],
+     "rows": [
+      [
+       "Größe",
+       "88 × 38 mm",
+       "90 × 31 mm",
+       "88 × 35 mm"
+      ],
+      [
+       "Farben (max. 6)",
+       "2 ✓",
+       "2 ✓",
+       "2 ✓"
+      ],
+      [
+       "Kleinste Schrift (≥ 6,35 mm)",
+       "9,0 mm ✓",
+       "7,2 mm ✓ knapp",
+       "9,5 mm ✓"
+      ],
+      [
+       "Dünnster Strich (≥ 1,27 mm)",
+       "1,68 mm ✓",
+       "1,36 mm ✓ knapp",
+       "1,76 mm ✓"
+      ],
+      [
+       "Lücken unter 6,35 mm",
+       "✗ bis 5,8 mm",
+       "✗ bis 4,1 mm",
+       "✓ keine, mit Navy gefüllt"
+      ]
+     ]
+    },
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Keine zu schmalen Lücken",
+       "text": "Bei A und B sind die Innenräume und Abstände der Buchstaben schmaler als 6,35 mm. C füllt sie mit Navy, das empfiehlt Printful selbst."
+      },
+      {
+       "num": "02",
+       "title": "Größter Abstand zu den Mindestwerten",
+       "text": "9,5 mm Schrift und 1,76 mm Strich. B liegt bei beidem nur knapp drüber."
+      },
+      {
+       "num": "03",
+       "title": "Gleich auf jeder Shirtfarbe",
+       "text": "C bringt seinen Hintergrund mit. A und B würden auf dunklen Shirts verschwinden."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken",
+     "text": "Wie Printful das Logo wirklich digitalisiert, zeigt erst eine echte Stickprobe. Nicht geprüft hat Claude: wie steif die volle Fläche wird, ähnliche Logos, die Lizenz der Schrift. Der Name ist im Markenregister weiter ungeprüft."
+    }
+   ]
+  },
+  {
+   "kicker": "Quellen",
+   "title": "Die Quellen aus der Antwort.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "[Printful Help: How should I prepare my design for embroidery?](https://help.printful.com/hc/en-us/articles/28727397325340-How-should-I-prepare-my-design-for-embroidery) · [Printful Blog: T-shirt design placement guide](https://printful.com/blog/t-shirt-design-placement-guide)"
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Feine Schrift unter 6 mm:** sieht am Bildschirm gut aus, läuft beim Sticken zu.",
+      "**Verläufe und Schatten:** lassen sich nicht sticken.",
+      "**Zu viele Farben:** jede Farbe zählt, auch die Fläche im Hintergrund.",
+      "**Ohne Probe verkaufen:** erst ein Probeshirt, dann der Verkauf."
+     ]
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes fragt die KI: Was muss oben auf ihre Website?",
+  "text": "Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Geschäfts- oder Rechtsberatung. Entwürfe, Tabelle, Gründe und Zitate aus einem echten claude.ai-Lauf vom 29.10.2026 (Websuche, 3 Suchen, 2 Quellen). Printfuls Vorgaben laut Claude mit Quelle, nicht von uns geprüft. Vorgaben und Menünamen können sich ändern."
+}

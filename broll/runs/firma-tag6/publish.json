@@ -1,0 +1,22 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae30de78e7c40a3457b39d6",
+ "status": "published",
+ "scheduledFor": "2026-10-29 15:00 Europe/Berlin",
+ "folge": 6,
+ "serientag": 2,
+ "note_final": "8.4/10 (pruefung/final-runde1.md)",
+ "funnel": {
+  "name": "PTC Funnel Folge 6",
+  "kind": "ptc",
+  "workflowId": "6ae3523bbbb3563e25aa45cd",
+  "automationId": "6ae3523cf0b9b105e7df10b8",
+  "active": true,
+  "attachedTo": "IG media id 17892200454616974",
+  "created": "2026-10-29T14:03:38.256Z",
+  "by": "zernio-golive-arm"
+ },
+ "ig_media_id": "17892200454616974",
+ "url": "https://www.instagram.com/reel/DfFLT34j6Oj/"
+}

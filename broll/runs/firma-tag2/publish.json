@@ -1,0 +1,18 @@
+{
+ "account": "pickthecompany",
+ "via": "Zernio",
+ "zernio_post_id": "6ae219a6ae5242491425b2bb",
+ "status": "published",
+ "ig_media_id": "18118424326807576",
+ "url": "https://www.instagram.com/reel/DfC7KXhEb9A/",
+ "funnel": {
+  "name": "PTC Funnel Tag 2",
+  "kind": "ptc",
+  "workflowId": "6ae22b179ad3397be4342195",
+  "automationId": "6ae22b18b38471a47df8fcbd",
+  "active": true,
+  "attachedTo": "IG media id 18118424326807576",
+  "created": "2026-10-28T17:04:22.490Z",
+  "by": "zernio-golive-arm"
+ }
+}

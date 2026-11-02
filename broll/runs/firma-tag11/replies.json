@@ -1,0 +1,11 @@
+{
+ "trigger": "ALL COMMENTS (Superkind baut Firma, Folge Gewerbe: Guide mit der Frage, der echten Checkliste mit Mensch/Claude-Markierung und den Quellen per DM, Trigger-Wort im Video: Gewerbe)",
+ "commentReply": "Der Guide liegt in deiner DM. Hast du dein Gewerbe schon angemeldet?",
+ "commentReplyVariations": [
+  "Ist raus, schau in deine DM. Hättest du auch mit dem Gewerbe angefangen?",
+  "Schick ich dir gerade, mit allen 13 Punkten und Quellen. Welcher davon ist bei dir noch offen?",
+  "Angekommen, alles liegt in deiner DM. Startest du nebenberuflich oder gleich voll?",
+  "Liegt in deiner DM, mit der Frage zum Kopieren. Was verkaufst du denn?",
+  "Der Guide ist unterwegs. Kleinunternehmer ja oder nein, schon entschieden?"
+ ]
+}

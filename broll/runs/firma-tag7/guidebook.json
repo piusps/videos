@@ -1,0 +1,885 @@
+{
+ "topic": "Preis",
+ "trigger_word": "Preis",
+ "cover": {
+  "kicker": "KI baut eine Firma · Was kostet ein Auftrag",
+  "title": "Rechne deinen Preis, mit Formeln. In zehn Minuten.",
+  "subtitle": "Die Frage, mit der die KI aus der Serie ihren Preis gerechnet hat, und die Kalkulationsvorlage mit allen Formeln als kopierbare Tabelle. Dazu das ausgefüllte Beispiel aus unserem Lauf, alle Annahmen und eine Anleitung für deinen eigenen Betrieb.",
+  "stat": {
+   "value": "75 Formeln",
+   "label": "So viele Formeln stehen in der Excel-Datei, die Claude in unserem Lauf gebaut hat. Dauer: 3 Minuten 1 Sekunde. Die Kontrollsummen treffen den Anhang exakt."
+  },
+  "outcomes": [
+   "Was dich ein Auftrag wirklich kostet: Ware, Veredelung, Einrichtung, Versand, Mehrwertsteuer",
+   "Ein Verkaufspreis mit Rohertrag pro Auftrag, für das Paket und für eine Nachbestellung",
+   "Jede geschätzte oder umgerechnete Zahl mit Herkunft markiert"
+  ]
+ },
+ "sections": [
+  {
+   "kicker": "Quick Win",
+   "title": "Erst das Ergebnis. In zehn Minuten.",
+   "intro": "Öffne [claude.ai](https://claude.ai) und prüfe unter **Settings > Capabilities**, dass **„Code execution and file creation“** an ist. Dann neuer Chat, über **„+“** und **„Upload or add files“** dein letztes Ergebnis anhängen (zum Beispiel deinen Partner- oder Lieferantenvergleich mit Preisen) und diese Frage einfügen. Das ist wörtlich die Frage aus unserem Lauf, die Teile in [Klammern] ersetzt du durch deine eigenen.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Die Frage zum Kopieren (letztes Ergebnis angehängt, kein Research)",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [Firmenshirts mit gesticktem Logo] an [kleine Handwerks- und Baubetriebe unter zehn Leuten]. Mein letztes Ergebnis: [Als Partner kommt A61 infrage, weil er als einziger ein besticktes Shirt mit 60 Grad Wäsche ab einem Stück hat, zweite Wahl ist Printful.] Die Konkurrenz verlangt für [fünf bestickte Shirts] ab etwa [110 Euro] brutto. Rechne jetzt meinen Preis, als Excel-Datei mit Formeln: Was kostet mich [ein Paket mit fünf Shirts] und [ein einzeln nachbestelltes Shirt] bei beiden Partnern, mit [Shirt, Stick, Stickdatei, Versand] und Mehrwertsteuer? Nimm nur Zahlen aus dem Anhang, und wenn du einen Wert schätzen oder umrechnen musst, schreib dazu, woher er kommt. Schlag mir dann einen Verkaufspreis für [das Fünferpaket] und für [ein Einzelshirt] vor, zeig den Rohertrag pro Auftrag, entscheide dich und begründe es mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts."
+    },
+    {
+     "type": "callout",
+     "tone": "win",
+     "title": "Quick Win · 10 Minuten",
+     "text": "Nach ein paar Minuten hast du eine Excel-Datei mit Formeln, einen Preisvorschlag und den Rohertrag pro Auftrag. Dann gehst du die gelb markierten Zahlen durch und ersetzt sie durch echte. Genau so ist die KI in dieser Folge vorgegangen."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Plan",
+       "v": "„Code execution and file creation“ gibt es in allen Plänen. Einschalten unter **Settings > Capabilities**. Quelle: [support.claude.com/en/articles/12111783](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)"
+      },
+      {
+       "k": "Klickpfad",
+       "v": "Neuer Chat → **„+“** → **„Upload or add files“** → letztes Ergebnis anhängen → Frage einfügen → senden"
+      },
+      {
+       "k": "Freigabe",
+       "v": "Kommt mittendrin **„Permission request: Terminal“**, klick **„Allow once“**. Das gilt nur für diesen einen Rechenbefehl in Claudes Sandbox."
+      },
+      {
+       "k": "Dauer",
+       "v": "Unser Lauf: 3 Minuten 1 Sekunde, inklusive Wartezeit auf die Freigabe. Eine Websuche, nur für den Dollarkurs. Keine Rückfragen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Die Geschichte",
+   "title": "Bleibt pro Shirt überhaupt etwas übrig?",
+   "intro": "Eine KI soll hundert Tage lang ganz alleine ein Unternehmen führen. Ihr Produkt: Firmenshirts mit Logo, bestickt erst auf Bestellung, für kleine Handwerks- und Baubetriebe. In der letzten Folge hat sie A61 als Partner gewählt, unter Vorbehalt: einziges belegtes 60-Grad-Arbeitsshirt ab einem Stück, aber zum Ladenpreis teurer als der Markt. Zweite Wahl war Printful. Jetzt rechnet sie, was ein Auftrag bei beiden kostet.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "01",
+       "title": "Datei-Funktion an",
+       "text": "Settings > Capabilities: „Code execution and file creation“, damit Claude eine echte Excel-Datei baut."
+      },
+      {
+       "num": "02",
+       "title": "Ergebnis anhängen",
+       "text": "Das Ergebnis der letzten Folge als Datei dazu, hier der Partnervergleich mit allen Preisen."
+      },
+      {
+       "num": "03",
+       "title": "Frage stellen",
+       "text": "Paket und Einzelstück bei beiden Partnern, als Excel mit Formeln. Nur Zahlen aus dem Anhang, Preis vorschlagen, entscheiden. Und: Erfinde nichts."
+      }
+     ]
+    },
+    {
+     "type": "image",
+     "src": "guide-img/rechentabelle.png",
+     "width": "92%",
+     "caption": "Echter Lauf vom 28.10.2026: die beiden Tabellen aus Claudes Antwort. Die Zahlen sind identisch mit der Excel-Datei."
+    }
+   ]
+  },
+  {
+   "kicker": "Das Ergebnis",
+   "title": "Die KI wechselt: Printful statt A61.",
+   "break_before": true,
+   "intro": "Aus dem echten Lauf vom 28.10.2026. Claudes Entscheidung: **„Ich entscheide mich für Printful, und zwar mit 109 € brutto für das Fünferpaket und 29,90 € brutto für ein nachbestelltes Einzelshirt.“** Die Gründe stehen hier so, wie Claude sie gerechnet hat.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "num": "138 %",
+       "title": "A61 über dem Markt",
+       "text": "Bei A61 kostet das Fünferpaket im Einkauf 151,40 € brutto, das sind 138 % des Konkurrenzpreises von 110 €. Bei Printful 69,14 €, also 63 %."
+      },
+      {
+       "num": "17,16 €",
+       "title": "Verhandlungsziel A61",
+       "text": "Bei 109 € Verkaufspreis darf ein Shirt mit Stick bei A61 höchstens 17,16 € netto kosten, damit nichts verloren geht. Für den gleichen Rohertrag wie Printful nur 10,46 €."
+      },
+      {
+       "num": "15,41 €",
+       "title": "Nachbestellen billig",
+       "text": "Ein einzelnes Shirt kostet bei Printful 15,41 € brutto im Einkauf, weil die Stickdatei wiederverwendet wird."
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "warn",
+     "title": "Der Haken: kein 60-Grad-Versprechen",
+     "text": "Mit Printful kann die Firma laut Anhang **keine 60-°C-Wäsche versprechen**. Beim Gildan-Shirt steht nur **„machine wash warm“**, eine Gradzahl ist nicht angegeben. Claude rät, die Händleranfrage an A61 trotzdem zu schicken: Liegt das Angebot unter 17,16 € netto je Shirt inklusive Stick, rechnet sich das Fünferpaket bei 109 €."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Vorschlag",
+       "v": "**109 € brutto** für fünf Shirts (knapp unter 110 €), **29,90 € brutto** für ein Einzelshirt (unter dem A61-Preis für ein geliefertes Shirt von 35,80 €)."
+      },
+      {
+       "k": "Rohertrag Printful",
+       "v": "Fünferpaket **+33,50 € netto (37 %)**, Einzelshirt **+12,18 € netto (48 %)**."
+      },
+      {
+       "k": "Rohertrag A61 (HAKRO 293)",
+       "v": "Fünferpaket **−35,63 € netto**, Einzelshirt **−4,96 € netto**."
+      },
+      {
+       "k": "Kontrolle",
+       "v": "Die Datei prüft sich selbst gegen den Anhang: 67,04 USD, 14,94 USD und 151,40 € stimmen exakt."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Wichtig ist der Weg, nicht das Ergebnis: Bei deinem Produkt kommt etwas anderes heraus. Rohertrag ist auch nicht Gewinn, Werbung, Gebühren und Steuern fehlen noch."
+    }
+   ]
+  },
+  {
+   "kicker": "Kalkulationsvorlage",
+   "title": "Teil 1: Deine Eingaben.",
+   "break_before": true,
+   "intro": "Die Vorlage ist neutral, sie passt auf jedes Produkt mit zwei Partnern. Trag jede Zahl mit Herkunft ein, am besten aus deinem letzten Ergebnis. **MwSt.** = Mehrwertsteuersatz, **Menge** = Stück pro Paket, **Kurs** = 1 Fremdwährung in €. Partner A rechnet hier in Euro brutto, Partner B in Fremdwährung netto.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Eingabe",
+      "Einheit",
+      "Hinweis"
+     ],
+     "widths": [
+      "44%",
+      "16%",
+      "40%"
+     ],
+     "rows": [
+      [
+       "Mehrwertsteuersatz",
+       "%",
+       "Regelsatz Deutschland 19 %; bei Partnern im Ausland prüfen, wie die MwSt. abgerechnet wird"
+      ],
+      [
+       "Wechselkurs: 1 Fremdwährung in €",
+       "€",
+       "mit Datum und Quelle; vor dem Start aktualisieren; rechnet der Partner in Euro, hier 1 eintragen"
+      ],
+      [
+       "Konkurrenzpreis Paket (brutto)",
+       "€",
+       "aus dem Konkurrenzvergleich"
+      ],
+      [
+       "Stück pro Paket (Menge)",
+       "Stk",
+       "eigene Vorgabe"
+      ],
+      [
+       "**Partner A (Bruttopreise)**",
+       "",
+       ""
+      ],
+      [
+       "Produkt 1 inkl. Veredelung, ab 1 Stk (brutto)",
+       "€/Stk",
+       ""
+      ],
+      [
+       "Produkt 2 inkl. Veredelung, ab 1 Stk (brutto)",
+       "€/Stk",
+       "optionaler zweiter Artikel"
+      ],
+      [
+       "Versand pro Sendung (brutto)",
+       "€",
+       ""
+      ],
+      [
+       "Einrichtung einmalig (brutto)",
+       "€",
+       "nicht gefunden → 0 eintragen und markieren"
+      ],
+      [
+       "Einrichtung bei Nachbestellung erneut?",
+       "0/1",
+       "1 = ja, 0 = nein"
+      ],
+      [
+       "**Partner B (Fremdwährung netto)**",
+       "",
+       ""
+      ],
+      [
+       "Stück inkl. Veredelung",
+       "Fremdwährung/Stk",
+       ""
+      ],
+      [
+       "Einrichtung einmalig",
+       "Fremdwährung",
+       ""
+      ],
+      [
+       "Einrichtung bei Nachbestellung",
+       "Fremdwährung",
+       ""
+      ],
+      [
+       "Versand erstes Stück",
+       "Fremdwährung",
+       ""
+      ],
+      [
+       "Versand je weiteres Stück",
+       "Fremdwährung",
+       ""
+      ],
+      [
+       "**Eigener Verkaufspreis (Vorschlag)**",
+       "",
+       ""
+      ],
+      [
+       "VK Paket (brutto, inkl. Versand)",
+       "€",
+       ""
+      ],
+      [
+       "VK Einzelstück-Nachbestellung (brutto, inkl. Versand)",
+       "€",
+       ""
+      ]
+     ],
+     "caption": "Teil 1 von 3. Tipp aus dem Lauf: Eingaben in Blau (änderbar), geschätzte Werte und Platzhalter in Gelb."
+    }
+   ]
+  },
+  {
+   "kicker": "Kalkulationsvorlage",
+   "title": "Teil 2: Was kostet dich ein Auftrag?",
+   "break_before": true,
+   "intro": "Jede Rechenzeile mit ihrer Formel. Im Blatt steht eine Spalte je Partner. Bei Partner A teilst du die Bruttopreise durch (1 + MwSt.), bei Partner B rechnest du die Fremdwährung mit dem Kurs in Euro um.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Zeile",
+      "Formel"
+     ],
+     "widths": [
+      "32%",
+      "68%"
+     ],
+     "rows": [
+      [
+       "**1) Paket – Erstauftrag**",
+       ""
+      ],
+      [
+       "Stück inkl. Veredelung (netto)",
+       "Partner A: Menge × Brutto-Stückpreis ÷ (1 + MwSt.) · Partner B: Menge × Stückpreis × Kurs"
+      ],
+      [
+       "Einrichtung einmalig (netto)",
+       "Partner A: Einrichtung ÷ (1 + MwSt.) · Partner B: Einrichtung × Kurs"
+      ],
+      [
+       "Versand (netto)",
+       "Partner A: Versand ÷ (1 + MwSt.) · Partner B: (Versand erstes Stück + (Menge − 1) × Versand je weiteres Stück) × Kurs"
+      ],
+      [
+       "Einkauf Paket netto",
+       "Stück + Einrichtung + Versand"
+      ],
+      [
+       "+ Mehrwertsteuer",
+       "Einkauf netto × MwSt."
+      ],
+      [
+       "Einkauf Paket brutto",
+       "Einkauf netto + Mehrwertsteuer"
+      ],
+      [
+       "**2) Ein einzelnes Stück nachbestellt**",
+       ""
+      ],
+      [
+       "1 Stück inkl. Veredelung (netto)",
+       "wie oben, Menge = 1"
+      ],
+      [
+       "Einrichtung bei Nachbestellung (netto)",
+       "Partner A: Einrichtung × (0 oder 1) ÷ (1 + MwSt.) · Partner B: Einrichtung bei Nachbestellung × Kurs"
+      ],
+      [
+       "Versand (netto)",
+       "Partner A: Versand ÷ (1 + MwSt.) · Partner B: Versand erstes Stück × Kurs"
+      ],
+      [
+       "Einkauf Einzelstück netto",
+       "Stück + Einrichtung + Versand"
+      ],
+      [
+       "+ Mehrwertsteuer",
+       "Einkauf netto × MwSt."
+      ],
+      [
+       "Einkauf Einzelstück brutto",
+       "Einkauf netto + Mehrwertsteuer"
+      ]
+     ],
+     "caption": "Teil 2 von 3: Einkauf für das Paket und für ein nachbestelltes Einzelstück."
+    }
+   ]
+  },
+  {
+   "kicker": "Kalkulationsvorlage",
+   "title": "Teil 3: Preis, Rohertrag, Verhandlungsziel.",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Zeile",
+      "Formel"
+     ],
+     "widths": [
+      "36%",
+      "64%"
+     ],
+     "rows": [
+      [
+       "**3) Verkaufspreis und Rohertrag pro Auftrag**",
+       ""
+      ],
+      [
+       "VK Paket netto",
+       "VK Paket brutto ÷ (1 + MwSt.)"
+      ],
+      [
+       "Rohertrag Paket (netto)",
+       "VK netto − Einkauf Paket netto"
+      ],
+      [
+       "Rohertragsquote Paket",
+       "Rohertrag ÷ VK netto"
+      ],
+      [
+       "VK Einzelstück netto",
+       "VK Einzelstück brutto ÷ (1 + MwSt.)"
+      ],
+      [
+       "Rohertrag Einzelstück (netto)",
+       "VK netto − Einkauf Einzelstück netto"
+      ],
+      [
+       "Rohertragsquote Einzelstück",
+       "Rohertrag ÷ VK netto"
+      ],
+      [
+       "**4) Vergleich mit der Konkurrenz**",
+       ""
+      ],
+      [
+       "Rohertrag beim Konkurrenzpreis (netto)",
+       "Konkurrenzpreis ÷ (1 + MwSt.) − Einkauf Paket netto"
+      ],
+      [
+       "Einkauf brutto im Verhältnis zum Konkurrenzpreis",
+       "Einkauf Paket brutto ÷ Konkurrenzpreis (über 100 % = Einkauf teurer als der Verkaufspreis der Konkurrenz)"
+      ],
+      [
+       "**5) Verhandlungsziel für Partner A**",
+       ""
+      ],
+      [
+       "Max. Einkauf je Stück für Rohertrag 0",
+       "(VK Paket netto − Einrichtung − Versand) ÷ Menge"
+      ],
+      [
+       "Max. Einkauf je Stück für gleichen Rohertrag wie Partner B",
+       "(VK Paket netto − Rohertrag Partner B − Einrichtung − Versand) ÷ Menge"
+      ],
+      [
+       "Zum Vergleich: heutiger Stückpreis Partner A (netto)",
+       "Stück netto ÷ Menge"
+      ],
+      [
+       "**6) Kontrolle**",
+       ""
+      ],
+      [
+       "Partner B Paket in Fremdwährung netto",
+       "Einkauf Paket netto ÷ Kurs = Wert im letzten Ergebnis"
+      ],
+      [
+       "Partner B Einzelstück in Fremdwährung netto",
+       "Einkauf Einzelstück netto ÷ Kurs = Wert im letzten Ergebnis"
+      ],
+      [
+       "Partner A Paket brutto",
+       "Einkauf Paket brutto = Wert im letzten Ergebnis"
+      ]
+     ],
+     "caption": "Teil 3 von 3: Verkaufspreis, Rohertrag, Konkurrenzvergleich, Verhandlungsziel, Kontrolle."
+    },
+    {
+     "type": "callout",
+     "tone": "tip",
+     "title": "Hinweise zur Vorlage",
+     "text": "Rohertrag ist nicht Gewinn (Werbung, Gebühren, Steuern fehlen). Annahme Vorsteuerabzug; als Kleinunternehmer mit dem Brutto-Einkauf rechnen. Geschätzte, umgerechnete oder fehlende Werte markieren."
+    }
+   ]
+  },
+  {
+   "kicker": "Beispiel aus dem Lauf",
+   "title": "So sieht die Vorlage ausgefüllt aus.",
+   "break_before": true,
+   "intro": "**Das ist ein Beispiel, nicht dein Preis.** Die Eingaben aus unserem echten Lauf vom 28.10.2026, so wie Claude sie in die Datei geschrieben hat. Partner A = A61 (Endkundenpreise, Händlerpreis nicht gefunden), Partner B = Printful (USD netto). ==Gelb== = in der Datei als geschätzt, umgerechnet oder Platzhalter markiert.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Eingabe",
+      "Wert im Lauf",
+      "Herkunft laut Datei"
+     ],
+     "widths": [
+      "38%",
+      "18%",
+      "44%"
+     ],
+     "rows": [
+      [
+       "Mehrwertsteuersatz",
+       "19 %",
+       "Anhang, Beispielrechnungen"
+      ],
+      [
+       "Wechselkurs: 1 USD in €",
+       "==0,8666 €==",
+       "nicht im Anhang; EZB-Referenzkurs 15.09.2026 (1 € = 1,1539 USD), per Websuche, vor dem Start aktualisieren"
+      ],
+      [
+       "Konkurrenzpreis 5 Shirts (brutto)",
+       "110 €",
+       "Anhang; Konkurrenzpreis fürs Einzelshirt: keiner"
+      ],
+      [
+       "Stück pro Paket",
+       "5",
+       "eigene Vorgabe"
+      ],
+      [
+       "A61: HAKRO 293 bestickt, ab 1 Stk (brutto)",
+       "==28,90 €==",
+       "Anhang; Staffelpreis für 5 Stk nicht angegeben, deshalb 1-Stk-Preis"
+      ],
+      [
+       "A61: HAKRO 281 bestickt, ab 1 Stk (brutto)",
+       "==29,90 €==",
+       "Anhang; Staffelpreis für 5 Stk nicht angegeben"
+      ],
+      [
+       "A61: Versand pro Sendung (brutto)",
+       "==6,90 €==",
+       "Anhang, Endkunden-Versand; Dropshipping-Tarif offen"
+      ],
+      [
+       "A61: Stickprogramm einmalig (brutto)",
+       "==0 €==",
+       "nicht gefunden, Platzhalter; nach Anfrage eintragen"
+      ],
+      [
+       "A61: Stickprogramm bei Nachbestellung erneut?",
+       "==0==",
+       "nicht gefunden, Platzhalter"
+      ],
+      [
+       "Printful: Shirt bestickt (Gildan 64000)",
+       "9,95 USD",
+       "Anhang, netto, exkl. MwSt. und Digitalisierung"
+      ],
+      [
+       "Printful: Stickdatei einmalig",
+       "6,50 USD",
+       "Anhang"
+      ],
+      [
+       "Printful: Stickdatei bei Nachbestellung",
+       "0 USD",
+       "Anhang: Wiederverwendung kostenlos"
+      ],
+      [
+       "Printful: Versand erstes Shirt",
+       "4,99 USD",
+       "Anhang"
+      ],
+      [
+       "Printful: Versand je weiteres Shirt",
+       "==1,45 USD==",
+       "nur in der Beispielrechnung des Anhangs, ohne eigene Quelle"
+      ],
+      [
+       "VK Fünferpaket (brutto, Vorschlag)",
+       "109 €",
+       "knapp unter dem Konkurrenzpreis"
+      ],
+      [
+       "VK Einzelshirt (brutto, Vorschlag)",
+       "29,90 €",
+       "unter dem A61-Preis für ein geliefertes Shirt (35,80 €)"
+      ]
+     ],
+     "caption": "Eingaben aus dem Lauf. Alle Euro-Werte bei A61 brutto, alle Printful-Werte netto in USD."
+    }
+   ]
+  },
+  {
+   "kicker": "Beispiel aus dem Lauf",
+   "title": "Die Rechnung mit echten Zahlen (netto, €).",
+   "break_before": true,
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Zeile",
+      "A61 HAKRO 293",
+      "A61 HAKRO 281",
+      "Printful"
+     ],
+     "widths": [
+      "40%",
+      "20%",
+      "20%",
+      "20%"
+     ],
+     "rows": [
+      [
+       "**1) Fünferpaket – Erstauftrag**",
+       "",
+       "",
+       ""
+      ],
+      [
+       "5 Shirts inkl. Stick",
+       "121,43",
+       "125,63",
+       "43,11"
+      ],
+      [
+       "Stickdatei / Stickprogramm",
+       "==0,00==",
+       "==0,00==",
+       "5,63"
+      ],
+      [
+       "Versand",
+       "5,80",
+       "5,80",
+       "9,35"
+      ],
+      [
+       "Einkauf Fünferpaket netto",
+       "127,23",
+       "131,43",
+       "58,10"
+      ],
+      [
+       "+ Mehrwertsteuer",
+       "24,17",
+       "24,97",
+       "11,04"
+      ],
+      [
+       "**Einkauf Fünferpaket brutto**",
+       "**151,40**",
+       "**156,40**",
+       "**69,14**"
+      ],
+      [
+       "**2) Ein Shirt nachbestellt**",
+       "",
+       "",
+       ""
+      ],
+      [
+       "1 Shirt inkl. Stick",
+       "24,29",
+       "25,13",
+       "8,62"
+      ],
+      [
+       "Stickdatei bei Nachbestellung",
+       "==0,00==",
+       "==0,00==",
+       "0,00"
+      ],
+      [
+       "Versand",
+       "5,80",
+       "5,80",
+       "4,32"
+      ],
+      [
+       "Einkauf Einzelshirt netto",
+       "30,08",
+       "30,92",
+       "12,95"
+      ],
+      [
+       "+ Mehrwertsteuer",
+       "5,72",
+       "5,88",
+       "2,46"
+      ],
+      [
+       "**Einkauf Einzelshirt brutto**",
+       "**35,80**",
+       "**36,80**",
+       "**15,41**"
+      ],
+      [
+       "**3) Verkaufspreis und Rohertrag**",
+       "",
+       "",
+       ""
+      ],
+      [
+       "VK Fünferpaket netto (109 € brutto)",
+       "91,60",
+       "91,60",
+       "91,60"
+      ],
+      [
+       "**Rohertrag Fünferpaket**",
+       "**−35,63**",
+       "**−39,83**",
+       "**+33,50**"
+      ],
+      [
+       "Rohertragsquote Fünferpaket",
+       "−39 %",
+       "−43 %",
+       "37 %"
+      ],
+      [
+       "VK Einzelshirt netto (29,90 € brutto)",
+       "25,13",
+       "25,13",
+       "25,13"
+      ],
+      [
+       "**Rohertrag Einzelshirt**",
+       "**−4,96**",
+       "**−5,80**",
+       "**+12,18**"
+      ],
+      [
+       "Rohertragsquote Einzelshirt",
+       "−20 %",
+       "−23 %",
+       "48 %"
+      ],
+      [
+       "**4) Vergleich mit der Konkurrenz (110 €)**",
+       "",
+       "",
+       ""
+      ],
+      [
+       "Rohertrag bei genau 110 € brutto",
+       "−34,79",
+       "−38,99",
+       "+34,34"
+      ],
+      [
+       "Einkauf brutto ÷ Konkurrenzpreis",
+       "138 %",
+       "142 %",
+       "63 %"
+      ],
+      [
+       "**5) Verhandlungsziel A61**",
+       "",
+       "",
+       ""
+      ],
+      [
+       "Max. Einkauf je Shirt für Rohertrag 0",
+       "17,16",
+       "17,16",
+       "–"
+      ],
+      [
+       "Max. Einkauf je Shirt für Rohertrag wie Printful",
+       "10,46",
+       "10,46",
+       "–"
+      ],
+      [
+       "Heutiger Shop-Preis je Shirt",
+       "24,29",
+       "25,13",
+       "–"
+      ]
+     ],
+     "caption": "Werte aus Claudes Datei, auf Cent gerundet. Printful mit Kurs 0,8666 umgerechnet, A61 bei Stickprogramm 0 €. Kontrolle: Printful 67,04 / 14,94 USD netto, A61 293 Paket 151,40 € brutto, exakt wie im Anhang."
+    }
+   ]
+  },
+  {
+   "kicker": "Annahmen",
+   "title": "Diese Zahlen hat Claude gelb markiert.",
+   "break_before": true,
+   "intro": "Sie stehen nicht oder nicht sicher im Anhang. Bevor du mit einem Ergebnis wie diesem rechnest, ersetzt du sie durch echte Werte.",
+   "blocks": [
+    {
+     "type": "callout",
+     "tone": "note",
+     "title": "Gelb markiert in der Datei",
+     "text": "**Kurs 1 USD = 0,8666 €:** EZB-Referenzkurs vom 15.09.2026 (1 € = 1,1539 USD), per Websuche gefunden. Vor dem Start aktualisieren.\n**Vorsteuerabzug angenommen:** Der Rohertrag ist netto gerechnet. Als Kleinunternehmer rechnest du mit Brutto-Einkaufspreisen, dann bleiben bei Printful vom Fünferpaket für 109 € noch **39,86 €**, beim Einzelshirt **14,49 €**.\n**Stickprogramm bei A61 = 0 €:** Platzhalter, weil nicht gefunden. Kostet es etwas, wird A61 noch teurer.\n**„machine wash warm“ ohne 60 °C:** Beim Gildan-Shirt von Printful steht keine Gradzahl. Ein 60-Grad-Versprechen ist damit nicht belegt.\n**A61-Versand 6,90 €:** Endkunden-Versand, der Dropshipping-Tarif ist offen.\n**Printful 1,45 USD je weiteres Shirt:** nur aus der Beispielrechnung des Anhangs, ohne eigene Quelle.\n**Kein Mengenrabatt für 5 Shirts bei A61:** kein Staffelpreis für 5 Stück im Anhang, deshalb der Preis ab 1 Stück.\n**Kein Konkurrenzpreis fürs Einzelshirt:** Die 29,90 € sind Claudes Vorschlag, gemessen am A61-Shoppreis."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Einzige Fremdquelle",
+       "v": "Der Dollarkurs: [EZB setzt Euro-Referenzkurs auf 1,1539 US-Dollar (goldesel.de)](https://goldesel.de/aktien/news/eurusd-ezb-setzt-euro-referenzkurs-auf-11539-us-dollar). Alle anderen Zahlen stammen aus dem Anhang."
+      },
+      {
+       "k": "A61 HAKRO 281",
+       "v": "Steht in der Kostentabelle und in der Datei. In Claudes Rohertrag-Tabelle im Chat fehlt die Spalte, die Datei zeigt −39,83 € bzw. −5,80 €."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Für deinen Betrieb",
+   "title": "So rechnest du deinen Preis.",
+   "break_before": true,
+   "intro": "Die Frage funktioniert für alles, was du über einen Partner einkaufst und weiterverkaufst. Du brauchst nur drei Dinge: dein letztes Ergebnis mit Preisen als Datei, den Konkurrenzpreis und deine Kostenposten.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      {
+       "title": "Datei-Funktion einschalten",
+       "text": "Settings > Capabilities → „Code execution and file creation“. Ohne sie bekommst du nur eine Tabelle im Chat, keine Excel-Datei mit Formeln."
+      },
+      {
+       "title": "Letztes Ergebnis anhängen",
+       "text": "Partner- oder Lieferantenvergleich mit Preisen. Claude soll nur mit diesen Zahlen rechnen."
+      },
+      {
+       "title": "Kostenposten aufzählen",
+       "text": "Ware, Veredelung, Einrichtung, Versand. Was du nicht nennst, fehlt später in der Rechnung."
+      },
+      {
+       "title": "Frage senden, einmal freigeben",
+       "text": "Kommt „Permission request: Terminal“, klick „Allow once“. Rechne mit drei bis zehn Minuten."
+      },
+      {
+       "title": "Gelbe Zahlen ersetzen",
+       "text": "Jeder geschätzte Wert, jeder Kurs, jeder Platzhalter. Erst dann ist der Preis belegt."
+      }
+     ]
+    },
+    {
+     "type": "prompt",
+     "label": "Vorlage für deinen Preis",
+     "text": "Im Anhang ist mein letztes Ergebnis. Ich verkaufe [PRODUKT] an [ZIELGRUPPE]. Mein letztes Ergebnis: Als Partner kommen [PARTNER A] und [PARTNER B] infrage. Die Konkurrenz verlangt für [MENGE/PAKET] etwa [KONKURRENZPREIS] brutto. Rechne jetzt meinen Preis, als Excel-Datei mit Formeln: Was kostet mich [PAKET] und [EINZELNE NACHBESTELLUNG] bei beiden Partnern, mit [KOSTENPOSTEN, z. B. Ware, Veredelung, Einrichtung, Versand] und Mehrwertsteuer? Nimm nur Zahlen aus dem Anhang, und wenn du einen Wert schätzen oder umrechnen musst, schreib dazu, woher er kommt. Schlag mir dann einen Verkaufspreis für [PAKET] und für [EINZELNE NACHBESTELLUNG] vor, zeig den Rohertrag pro Auftrag, entscheide dich und begründe es mit zwei bis drei konkreten Gründen mit Zahlen. Erfinde nichts."
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "k": "Kerzen-Shop",
+       "v": "Duftkerzen mit Firmenlogo an Hotels und Praxen. Paket: 12 Kerzen. Kosten: Kerze, Etikett, Druckvorlage, Versand."
+      },
+      {
+       "k": "Kaffeerösterin",
+       "v": "Kaffee mit eigenem Etikett an Büros. Paket: 5 kg. Kosten: Rohkaffee, Röstung, Verpackung, Versand."
+      },
+      {
+       "k": "Grafikerin mit Merch",
+       "v": "Tassen mit Kundenmotiv an Vereine. Paket: 20 Tassen. Kosten: Tasse, Druck, Einrichtung, Versand."
+      },
+      {
+       "k": "Bauzubehör",
+       "v": "Warnwesten mit Logo an Baubetriebe. Paket: 10 Westen. Kosten: Weste, Druck, Einrichtung, Versand."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Typische Fehler",
+   "title": "Woran es meistens scheitert.",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      "**Brutto und netto mischen.** Partner A nennt Bruttopreise, Partner B Nettopreise in Dollar. Die Vorlage rechnet beides erst auf netto, dann wird verglichen.",
+      "**Alten Kurs stehen lassen.** Unser Kurs war sechs Wochen alt. Fremdwährung immer mit Datum und Quelle, vor dem Start aktualisieren.",
+      "**Platzhalter für echte Zahl halten.** Das Stickprogramm bei A61 steht mit 0 € drin, weil es nicht gefunden wurde. Kostet es etwas, wird der Einkauf teurer.",
+      "**Rohertrag für Gewinn halten.** Werbung, Gebühren und Steuern fehlen noch. +33,50 € Rohertrag sind kein verdientes Geld.",
+      "**Kleinunternehmer mit Netto rechnen.** Ohne Vorsteuerabzug zählt der Brutto-Einkauf. Lass dir beide Varianten rechnen.",
+      "**Qualitätsversprechen vergessen.** Der billigere Partner kann ein Versprechen kosten. Mit Printful gibt es kein 60-Grad-Etikett."
+     ]
+    }
+   ]
+  },
+  {
+   "kicker": "Prompt-Bibliothek",
+   "title": "Von der Rechnung zur Entscheidung.",
+   "blocks": [
+    {
+     "type": "prompt",
+     "label": "Nachfrage 1 · Kontrolle",
+     "text": "Prüf die Kontrollzeilen in der Datei: Stimmen [der Paketpreis von Partner B in Fremdwährung] und [der Bruttopreis von Partner A] exakt mit dem Anhang überein? Wenn nicht, zeig mir die Zeile und die Formel, in der die Abweichung entsteht."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 2 · Annahmen",
+     "text": "Liste jede gelb markierte Zahl in der Datei auf, mit Herkunft. Rechne für jede aus, wie sich der Rohertrag pro Auftrag ändert, wenn sie [10 %] höher liegt. Welche Zahl muss ich zuerst klären?"
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 3 · Kleinunternehmer",
+     "text": "Ich bin Kleinunternehmer und kann keine Vorsteuer abziehen. Füg in der Datei eine zweite Rechnung hinzu, die mit den Brutto-Einkaufspreisen rechnet, und zeig den Rohertrag pro Auftrag für beide Partner. Erfinde nichts."
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 4 · Preisspanne",
+     "text": "Füg in der Datei eine Tabelle hinzu: Rohertrag pro Auftrag für Paketpreise von [90] bis [130] Euro brutto in Schritten von [5] Euro, für beide Partner. Ab welchem Preis lohnt sich [Partner A]?"
+    },
+    {
+     "type": "prompt",
+     "label": "Nachfrage 5 · Anfrage an den Partner",
+     "text": "Schreib mir eine kurze Anfrage an [Partner A]. Frag nach allen Werten, die in der Datei gelb markiert sind, und nenn als Ziel einen Einkaufspreis unter [Max. Einkauf je Stück aus Zeile 5] netto je Stück. Keine Zahlen erfinden."
+    }
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Als Nächstes sucht die KI einen Namen für die Firma.",
+  "text": "Folg @pickthecompany für die nächste Folge. Und falls du das lieber ohne eigenes Aufsetzen willst: Superkind macht es direkt in Slack und Teams.",
+  "foot": "Folg <strong>@pickthecompany</strong> für die nächste Folge. Unter jedem Video gibt es einen Guide, einfach das Wort aus dem Video kommentieren.",
+  "button": false
+ },
+ "fineprint": "Experiment, keine Steuer-, Rechts- oder Geschäftsberatung. Zahlen und Zitate aus einem echten claude.ai-Lauf vom 28.10.2026 (Excel-Datei mit Formeln, eine Websuche für den Dollarkurs). Annahmen und Platzhalter von Claude sind als solche gekennzeichnet und nicht von uns geprüft. Preise und Kurse können sich ändern, Menünamen auch."
+}

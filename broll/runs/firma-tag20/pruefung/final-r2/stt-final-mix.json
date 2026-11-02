@@ -1,0 +1,4232 @@
+[
+ {
+  "text": "Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probier das aus. Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Briefe stehen, Preis offen. Heute mit oder ohne Umsatzsteuer. Claude, Marge angehängt, Web-Suche, Gesetz, IHK. Sie wählt mit Umsatzsteuer, nicht Kleinunternehmer. Warum? Betriebe mit Vorsteuerabzug holen von hundertneun Euro siebzehn Steuer zurück. Ihr Einkauf bliebe sonst neunzehn Prozent teurer. Der Haken: fünf Jahre Bindung. Als Nächstes: Was muss auf Ihre Rechnung? Kommentiere: Steuer. Ich schick dir den Prompt. In zehn Minuten rechnest du beide Wege durch. [Hintergrundmusik]",
+  "words": [
+   {
+    "text": "Wie",
+    "start": 0.1,
+    "end": 0.2,
+    "type": "word",
+    "logprob": -0.006026904564350843
+   },
+   {
+    "text": "viel",
+    "start": 0.22,
+    "end": 0.34,
+    "type": "word",
+    "logprob": -0.000027656173188006505
+   },
+   {
+    "text": "Umsatz",
+    "start": 0.4,
+    "end": 0.72,
+    "type": "word",
+    "logprob": -0.00000250339189733495
+   },
+   {
+    "text": "macht",
+    "start": 0.76,
+    "end": 0.92,
+    "type": "word",
+    "logprob": -0.000003576272320060525
+   },
+   {
+    "text": "ein",
+    "start": 0.94,
+    "end": 1.06,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "Unternehmen,",
+    "start": 1.1,
+    "end": 1.52,
+    "type": "word",
+    "logprob": -0.0007097456739870722
+   },
+   {
+    "text": "das",
+    "start": 1.6,
+    "end": 1.74,
+    "type": "word",
+    "logprob": -0.00006747018051100895
+   },
+   {
+    "text": "eine",
+    "start": 1.8,
+    "end": 1.98,
+    "type": "word",
+    "logprob": -0.000003814689989667386
+   },
+   {
+    "text": "KI",
+    "start": 2.02,
+    "end": 2.38,
+    "type": "word",
+    "logprob": -0.00006210611172718927
+   },
+   {
+    "text": "hundert",
+    "start": 2.46,
+    "end": 2.82,
+    "type": "word",
+    "logprob": -0.011997208930552006
+   },
+   {
+    "text": "Tage",
+    "start": 2.86,
+    "end": 3.1,
+    "type": "word",
+    "logprob": -0.000003576272320060525
+   },
+   {
+    "text": "lang",
+    "start": 3.16,
+    "end": 3.32,
+    "type": "word",
+    "logprob": -0.000011444026313256472
+   },
+   {
+    "text": "ganz",
+    "start": 3.4,
+    "end": 3.62,
+    "type": "word",
+    "logprob": -0.0000019073468138230965
+   },
+   {
+    "text": "alleine",
+    "start": 3.68,
+    "end": 3.98,
+    "type": "word",
+    "logprob": -0.000018954096958623268
+   },
+   {
+    "text": "führt?",
+    "start": 4.019,
+    "end": 4.24,
+    "type": "word",
+    "logprob": -0.00010847339581232518
+   },
+   {
+    "text": "Ich",
+    "start": 5.02,
+    "end": 5.1,
+    "type": "word",
+    "logprob": -0.000011920858014491387
+   },
+   {
+    "text": "probier",
+    "start": 5.14,
+    "end": 5.38,
+    "type": "word",
+    "logprob": -0.2971911528979295
+   },
+   {
+    "text": "das",
+    "start": 5.42,
+    "end": 5.54,
+    "type": "word",
+    "logprob": -0.00019774865359067917
+   },
+   {
+    "text": "aus.",
+    "start": 5.62,
+    "end": 5.78,
+    "type": "word",
+    "logprob": -0.000009685692701211224
+   },
+   {
+    "text": "Die",
+    "start": 6.2,
+    "end": 6.28,
+    "type": "word",
+    "logprob": -0.00008511180931236595
+   },
+   {
+    "text": "Firma",
+    "start": 6.32,
+    "end": 6.56,
+    "type": "word",
+    "logprob": -0.000014066597032069694
+   },
+   {
+    "text": "der",
+    "start": 6.6,
+    "end": 6.72,
+    "type": "word",
+    "logprob": -0.00016091958968900144
+   },
+   {
+    "text": "KI",
+    "start": 6.76,
+    "end": 7.04,
+    "type": "word",
+    "logprob": -0.00008737658936297521
+   },
+   {
+    "text": "verkauft",
+    "start": 7.08,
+    "end": 7.46,
+    "type": "word",
+    "logprob": -0.000013947389561508317
+   },
+   {
+    "text": "Shirts",
+    "start": 7.5,
+    "end": 7.8,
+    "type": "word",
+    "logprob": -0.0008245882345363498
+   },
+   {
+    "text": "mit",
+    "start": 7.84,
+    "end": 7.98,
+    "type": "word",
+    "logprob": -0.000005125986263010418
+   },
+   {
+    "text": "Logo",
+    "start": 8.039,
+    "end": 8.3,
+    "type": "word",
+    "logprob": -0.0000641325386823155
+   },
+   {
+    "text": "an",
+    "start": 8.36,
+    "end": 8.48,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "kleine",
+    "start": 8.52,
+    "end": 8.74,
+    "type": "word",
+    "logprob": -0.00001728519782773219
+   },
+   {
+    "text": "Betriebe,",
+    "start": 8.78,
+    "end": 9.14,
+    "type": "word",
+    "logprob": -0.000053623495861959076
+   },
+   {
+    "text": "bestickt",
+    "start": 9.54,
+    "end": 9.86,
+    "type": "word",
+    "logprob": -0.0004390510875964537
+   },
+   {
+    "text": "erst",
+    "start": 9.9,
+    "end": 10.06,
+    "type": "word",
+    "logprob": -0.00002276871418871451
+   },
+   {
+    "text": "auf",
+    "start": 10.1,
+    "end": 10.22,
+    "type": "word",
+    "logprob": -0.000016689160474925302
+   },
+   {
+    "text": "Bestellung.",
+    "start": 10.24,
+    "end": 10.68,
+    "type": "word",
+    "logprob": -0.00003876387313539453
+   },
+   {
+    "text": "Briefe",
+    "start": 10.88,
+    "end": 11.14,
+    "type": "word",
+    "logprob": -0.004891022651596207
+   },
+   {
+    "text": "stehen,",
+    "start": 11.18,
+    "end": 11.44,
+    "type": "word",
+    "logprob": -0.00008863698764928683
+   },
+   {
+    "text": "Preis",
+    "start": 11.68,
+    "end": 11.98,
+    "type": "word",
+    "logprob": -0.000058887653722194955
+   },
+   {
+    "text": "offen.",
+    "start": 12.2,
+    "end": 12.46,
+    "type": "word",
+    "logprob": -0.0007651908090326268
+   },
+   {
+    "text": "Heute",
+    "start": 13.06,
+    "end": 13.32,
+    "type": "word",
+    "logprob": -0.0004996005445718765
+   },
+   {
+    "text": "mit",
+    "start": 13.54,
+    "end": 13.72,
+    "type": "word",
+    "logprob": -0.25600680708885193
+   },
+   {
+    "text": "oder",
+    "start": 13.9,
+    "end": 14.06,
+    "type": "word",
+    "logprob": -0.000004291525328881107
+   },
+   {
+    "text": "ohne",
+    "start": 14.2,
+    "end": 14.36,
+    "type": "word",
+    "logprob": -0.00000250339189733495
+   },
+   {
+    "text": "Umsatzsteuer.",
+    "start": 14.44,
+    "end": 15.06,
+    "type": "word",
+    "logprob": -0.0155122117296112
+   },
+   {
+    "text": "Claude,",
+    "start": 15.88,
+    "end": 16.16,
+    "type": "word",
+    "logprob": -0.004708725859278015
+   },
+   {
+    "text": "Marge",
+    "start": 16.44,
+    "end": 16.68,
+    "type": "word",
+    "logprob": -0.010123959928387194
+   },
+   {
+    "text": "angehängt,",
+    "start": 16.74,
+    "end": 17.2,
+    "type": "word",
+    "logprob": -0.00037165742178260077
+   },
+   {
+    "text": "Web-Suche,",
+    "start": 17.38,
+    "end": 17.84,
+    "type": "word",
+    "logprob": -0.1060231554828988
+   },
+   {
+    "text": "Gesetz,",
+    "start": 18.18,
+    "end": 18.62,
+    "type": "word",
+    "logprob": -0.0006923172207150076
+   },
+   {
+    "text": "IHK.",
+    "start": 18.96,
+    "end": 19.46,
+    "type": "word",
+    "logprob": -0.00003349677342612267
+   },
+   {
+    "text": "Sie",
+    "start": 20.18,
+    "end": 20.28,
+    "type": "word",
+    "logprob": -0.0000046491513785440475
+   },
+   {
+    "text": "wählt",
+    "start": 20.32,
+    "end": 20.56,
+    "type": "word",
+    "logprob": -0.00013364631445256236
+   },
+   {
+    "text": "mit",
+    "start": 20.76,
+    "end": 20.9,
+    "type": "word",
+    "logprob": -0.000023007127310847864
+   },
+   {
+    "text": "Umsatzsteuer,",
+    "start": 21.06,
+    "end": 21.72,
+    "type": "word",
+    "logprob": -0.00017400681428206063
+   },
+   {
+    "text": "nicht",
+    "start": 21.88,
+    "end": 22.06,
+    "type": "word",
+    "logprob": -0.0001461399078834802
+   },
+   {
+    "text": "Kleinunternehmer.",
+    "start": 22.1,
+    "end": 22.78,
+    "type": "word",
+    "logprob": -0.0018152225444171342
+   },
+   {
+    "text": "Warum?",
+    "start": 23.74,
+    "end": 24.02,
+    "type": "word",
+    "logprob": -0.000015338120945784794
+   },
+   {
+    "text": "Betriebe",
+    "start": 24.66,
+    "end": 25.02,
+    "type": "word",
+    "logprob": -0.000016763470100045197
+   },
+   {
+    "text": "mit",
+    "start": 25.06,
+    "end": 25.2,
+    "type": "word",
+    "logprob": -0.0000034570634852570947
+   },
+   {
+    "text": "Vorsteuerabzug",
+    "start": 25.26,
+    "end": 26.06,
+    "type": "word",
+    "logprob": -0.0001794129639165476
+   },
+   {
+    "text": "holen",
+    "start": 26.1,
+    "end": 26.34,
+    "type": "word",
+    "logprob": -0.00020585325546562672
+   },
+   {
+    "text": "von",
+    "start": 26.4,
+    "end": 26.54,
+    "type": "word",
+    "logprob": -0.000016569954823353328
+   },
+   {
+    "text": "hundertneun",
+    "start": 26.58,
+    "end": 27.08,
+    "type": "word",
+    "logprob": -0.04113314801361412
+   },
+   {
+    "text": "Euro",
+    "start": 27.22,
+    "end": 27.5,
+    "type": "word",
+    "logprob": -0.000053881147323409095
+   },
+   {
+    "text": "siebzehn",
+    "start": 27.72,
+    "end": 28.08,
+    "type": "word",
+    "logprob": -0.0019031809938461208
+   },
+   {
+    "text": "Steuer",
+    "start": 28.14,
+    "end": 28.46,
+    "type": "word",
+    "logprob": -0.000444551813416183
+   },
+   {
+    "text": "zurück.",
+    "start": 28.52,
+    "end": 28.78,
+    "type": "word",
+    "logprob": -0.000017063788358687555
+   },
+   {
+    "text": "Ihr",
+    "start": 29.4,
+    "end": 29.52,
+    "type": "word",
+    "logprob": -0.00007259582343976945
+   },
+   {
+    "text": "Einkauf",
+    "start": 29.58,
+    "end": 30.02,
+    "type": "word",
+    "logprob": -0.00004362964682513848
+   },
+   {
+    "text": "bliebe",
+    "start": 30.06,
+    "end": 30.26,
+    "type": "word",
+    "logprob": -0.000021775238565169275
+   },
+   {
+    "text": "sonst",
+    "start": 30.32,
+    "end": 30.56,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "neunzehn",
+    "start": 30.62,
+    "end": 30.96,
+    "type": "word",
+    "logprob": -0.0031236786862791632
+   },
+   {
+    "text": "Prozent",
+    "start": 31,
+    "end": 31.36,
+    "type": "word",
+    "logprob": -0.0001515035255579278
+   },
+   {
+    "text": "teurer.",
+    "start": 31.42,
+    "end": 31.74,
+    "type": "word",
+    "logprob": -0.00011708566590381711
+   },
+   {
+    "text": "Der",
+    "start": 32.38,
+    "end": 32.5,
+    "type": "word",
+    "logprob": -0.000008940656698541716
+   },
+   {
+    "text": "Haken:",
+    "start": 32.54,
+    "end": 32.84,
+    "type": "word",
+    "logprob": -0.000502663530596692
+   },
+   {
+    "text": "fünf",
+    "start": 33.02,
+    "end": 33.22,
+    "type": "word",
+    "logprob": -0.011545509099960327
+   },
+   {
+    "text": "Jahre",
+    "start": 33.26,
+    "end": 33.46,
+    "type": "word",
+    "logprob": -0.000007390948667307384
+   },
+   {
+    "text": "Bindung.",
+    "start": 33.52,
+    "end": 33.84,
+    "type": "word",
+    "logprob": -0.000029801434720866382
+   },
+   {
+    "text": "Als",
+    "start": 34.58,
+    "end": 34.72,
+    "type": "word",
+    "logprob": -0.000015616295058862306
+   },
+   {
+    "text": "Nächstes:",
+    "start": 34.76,
+    "end": 35.14,
+    "type": "word",
+    "logprob": -0.0006623790500776118
+   },
+   {
+    "text": "Was",
+    "start": 35.64,
+    "end": 35.84,
+    "type": "word",
+    "logprob": -0.000004887569048150908
+   },
+   {
+    "text": "muss",
+    "start": 35.88,
+    "end": 36.04,
+    "type": "word",
+    "logprob": -0.0000019073468138230965
+   },
+   {
+    "text": "auf",
+    "start": 36.08,
+    "end": 36.18,
+    "type": "word",
+    "logprob": -0.000004291525328881107
+   },
+   {
+    "text": "Ihre",
+    "start": 36.24,
+    "end": 36.38,
+    "type": "word",
+    "logprob": -0.428986519575119
+   },
+   {
+    "text": "Rechnung?",
+    "start": 36.46,
+    "end": 36.8,
+    "type": "word",
+    "logprob": -0.0000023312008528996052
+   },
+   {
+    "text": "Kommentiere:",
+    "start": 37.84,
+    "end": 38.36,
+    "type": "word",
+    "logprob": -0.0035984860357226958
+   },
+   {
+    "text": "Steuer.",
+    "start": 38.68,
+    "end": 39.14,
+    "type": "word",
+    "logprob": -0.09218988444523088
+   },
+   {
+    "text": "Ich",
+    "start": 39.5,
+    "end": 39.6,
+    "type": "word",
+    "logprob": -0.000013232143828645349
+   },
+   {
+    "text": "schick",
+    "start": 39.64,
+    "end": 39.82,
+    "type": "word",
+    "logprob": -0.002074824876558523
+   },
+   {
+    "text": "dir",
+    "start": 39.84,
+    "end": 39.94,
+    "type": "word",
+    "logprob": -0.000004410734163684538
+   },
+   {
+    "text": "den",
+    "start": 39.98,
+    "end": 40.12,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "Prompt.",
+    "start": 40.14,
+    "end": 40.48,
+    "type": "word",
+    "logprob": -0.0009496741527073027
+   },
+   {
+    "text": "In",
+    "start": 41.28,
+    "end": 41.42,
+    "type": "word",
+    "logprob": -0.0000036954811548639555
+   },
+   {
+    "text": "zehn",
+    "start": 41.48,
+    "end": 41.62,
+    "type": "word",
+    "logprob": -0.000005006777428206988
+   },
+   {
+    "text": "Minuten",
+    "start": 41.66,
+    "end": 42.02,
+    "type": "word",
+    "logprob": -0.000004291525328881107
+   },
+   {
+    "text": "rechnest",
+    "start": 42.06,
+    "end": 42.34,
+    "type": "word",
+    "logprob": -0.0002875147943797174
+   },
+   {
+    "text": "du",
+    "start": 42.38,
+    "end": 42.46,
+    "type": "word",
+    "logprob": -0.000011801649634435307
+   },
+   {
+    "text": "beide",
+    "start": 42.48,
+    "end": 42.68,
+    "type": "word",
+    "logprob": -0.000018358061424805783
+   },
+   {
+    "text": "Wege",
+    "start": 42.72,
+    "end": 42.88,
+    "type": "word",
+    "logprob": -0.000019192511899746023
+   },
+   {
+    "text": "durch.",
+    "start": 42.94,
+    "end": 43.22,
+    "type": "word",
+    "logprob": -0.000005682268010787084
+   }
+  ]
+ },
+ {
+  "text": "Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probiere das aus. Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Briefe stehen, Preis offen. Heute mit oder ohne Umsatzsteuer. Claude, Marge angehängt, Websuche, Gesetz, IHK. Sie wählt mit Umsatzsteuer, nicht Kleinunternehmer. Warum? Betriebe mit Vorsteuerabzug holen von hundertneun Euro siebzehn Steuer zurück. Ihr Einkauf bliebe sonst neunzehn Prozent teurer. Der Haken: fünf Jahre Bindung. Als Nächstes: Was muss auf Ihre Rechnung? Kommentiere: Steuer. Ich schick dir den Prompt. In zehn Minuten rechnest du beide Wege durch. [Hintergrundmusik]",
+  "words": [
+   {
+    "text": "Wie",
+    "start": 0.1,
+    "end": 0.2,
+    "type": "word",
+    "logprob": -0.0024171441327780485
+   },
+   {
+    "text": "viel",
+    "start": 0.22,
+    "end": 0.34,
+    "type": "word",
+    "logprob": -0.000033854863431770355
+   },
+   {
+    "text": "Umsatz",
+    "start": 0.4,
+    "end": 0.72,
+    "type": "word",
+    "logprob": -0.000002622600959512056
+   },
+   {
+    "text": "macht",
+    "start": 0.76,
+    "end": 0.92,
+    "type": "word",
+    "logprob": -0.00000250339189733495
+   },
+   {
+    "text": "ein",
+    "start": 0.94,
+    "end": 1.06,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "Unternehmen,",
+    "start": 1.1,
+    "end": 1.52,
+    "type": "word",
+    "logprob": -0.0004361426956336345
+   },
+   {
+    "text": "das",
+    "start": 1.6,
+    "end": 1.74,
+    "type": "word",
+    "logprob": -0.00002288792165927589
+   },
+   {
+    "text": "eine",
+    "start": 1.8,
+    "end": 1.98,
+    "type": "word",
+    "logprob": -0.000003814689989667386
+   },
+   {
+    "text": "KI",
+    "start": 2.02,
+    "end": 2.38,
+    "type": "word",
+    "logprob": -0.00006544376083184034
+   },
+   {
+    "text": "hundert",
+    "start": 2.46,
+    "end": 2.82,
+    "type": "word",
+    "logprob": -0.004599349107593298
+   },
+   {
+    "text": "Tage",
+    "start": 2.86,
+    "end": 3.1,
+    "type": "word",
+    "logprob": -0.000005722029527532868
+   },
+   {
+    "text": "lang",
+    "start": 3.16,
+    "end": 3.32,
+    "type": "word",
+    "logprob": -0.00000834461570775602
+   },
+   {
+    "text": "ganz",
+    "start": 3.4,
+    "end": 3.62,
+    "type": "word",
+    "logprob": -0.000002861018856492592
+   },
+   {
+    "text": "alleine",
+    "start": 3.68,
+    "end": 3.98,
+    "type": "word",
+    "logprob": -0.000032305197237292305
+   },
+   {
+    "text": "führt?",
+    "start": 4.019,
+    "end": 4.24,
+    "type": "word",
+    "logprob": -0.00010102374896329518
+   },
+   {
+    "text": "Ich",
+    "start": 5.02,
+    "end": 5.1,
+    "type": "word",
+    "logprob": -0.0000084638240878121
+   },
+   {
+    "text": "probiere",
+    "start": 5.14,
+    "end": 5.38,
+    "type": "word",
+    "logprob": -0.316439979338611
+   },
+   {
+    "text": "das",
+    "start": 5.42,
+    "end": 5.54,
+    "type": "word",
+    "logprob": -5.960462772236497e-7
+   },
+   {
+    "text": "aus.",
+    "start": 5.62,
+    "end": 5.78,
+    "type": "word",
+    "logprob": -0.00001606328255832068
+   },
+   {
+    "text": "Die",
+    "start": 6.2,
+    "end": 6.28,
+    "type": "word",
+    "logprob": -0.00003671578815556131
+   },
+   {
+    "text": "Firma",
+    "start": 6.32,
+    "end": 6.56,
+    "type": "word",
+    "logprob": -0.0004979324294254184
+   },
+   {
+    "text": "der",
+    "start": 6.6,
+    "end": 6.72,
+    "type": "word",
+    "logprob": -0.00018082413589581847
+   },
+   {
+    "text": "KI",
+    "start": 6.76,
+    "end": 7.04,
+    "type": "word",
+    "logprob": -0.00026890001026913524
+   },
+   {
+    "text": "verkauft",
+    "start": 7.08,
+    "end": 7.46,
+    "type": "word",
+    "logprob": -0.000013470558769768104
+   },
+   {
+    "text": "Shirts",
+    "start": 7.5,
+    "end": 7.8,
+    "type": "word",
+    "logprob": -0.0013227055314928293
+   },
+   {
+    "text": "mit",
+    "start": 7.84,
+    "end": 7.98,
+    "type": "word",
+    "logprob": -0.000006079655122448457
+   },
+   {
+    "text": "Logo",
+    "start": 8.039,
+    "end": 8.3,
+    "type": "word",
+    "logprob": -0.00010215714428341016
+   },
+   {
+    "text": "an",
+    "start": 8.36,
+    "end": 8.48,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "kleine",
+    "start": 8.52,
+    "end": 8.74,
+    "type": "word",
+    "logprob": -0.000019550132492440753
+   },
+   {
+    "text": "Betriebe,",
+    "start": 8.78,
+    "end": 9.14,
+    "type": "word",
+    "logprob": -0.000023218663955049124
+   },
+   {
+    "text": "bestickt",
+    "start": 9.54,
+    "end": 9.86,
+    "type": "word",
+    "logprob": -0.0004220679111313075
+   },
+   {
+    "text": "erst",
+    "start": 9.9,
+    "end": 10.06,
+    "type": "word",
+    "logprob": -0.0000760526381782256
+   },
+   {
+    "text": "auf",
+    "start": 10.1,
+    "end": 10.22,
+    "type": "word",
+    "logprob": -0.000012874520507466514
+   },
+   {
+    "text": "Bestellung.",
+    "start": 10.24,
+    "end": 10.68,
+    "type": "word",
+    "logprob": -0.000053653476408561055
+   },
+   {
+    "text": "Briefe",
+    "start": 10.88,
+    "end": 11.14,
+    "type": "word",
+    "logprob": -0.0030339306296506643
+   },
+   {
+    "text": "stehen,",
+    "start": 11.18,
+    "end": 11.44,
+    "type": "word",
+    "logprob": -0.000014253846269899181
+   },
+   {
+    "text": "Preis",
+    "start": 11.68,
+    "end": 11.98,
+    "type": "word",
+    "logprob": -0.00002992108420585282
+   },
+   {
+    "text": "offen.",
+    "start": 12.2,
+    "end": 12.46,
+    "type": "word",
+    "logprob": -0.00007776057340909877
+   },
+   {
+    "text": "Heute",
+    "start": 13.06,
+    "end": 13.32,
+    "type": "word",
+    "logprob": -0.0002706876548472792
+   },
+   {
+    "text": "mit",
+    "start": 13.54,
+    "end": 13.72,
+    "type": "word",
+    "logprob": -0.011072972789406776
+   },
+   {
+    "text": "oder",
+    "start": 13.92,
+    "end": 14.06,
+    "type": "word",
+    "logprob": -0.0000066756979322235566
+   },
+   {
+    "text": "ohne",
+    "start": 14.2,
+    "end": 14.36,
+    "type": "word",
+    "logprob": -0.000003099436753473128
+   },
+   {
+    "text": "Umsatzsteuer.",
+    "start": 14.44,
+    "end": 15.06,
+    "type": "word",
+    "logprob": -0.04432824889436933
+   },
+   {
+    "text": "Claude,",
+    "start": 15.88,
+    "end": 16.16,
+    "type": "word",
+    "logprob": -0.003332581138238311
+   },
+   {
+    "text": "Marge",
+    "start": 16.44,
+    "end": 16.68,
+    "type": "word",
+    "logprob": -0.0067548230289503405
+   },
+   {
+    "text": "angehängt,",
+    "start": 16.74,
+    "end": 17.2,
+    "type": "word",
+    "logprob": -0.0004108218759824922
+   },
+   {
+    "text": "Websuche,",
+    "start": 17.38,
+    "end": 17.84,
+    "type": "word",
+    "logprob": -0.3902894523350066
+   },
+   {
+    "text": "Gesetz,",
+    "start": 18.18,
+    "end": 18.62,
+    "type": "word",
+    "logprob": -0.000009877113110893074
+   },
+   {
+    "text": "IHK.",
+    "start": 18.96,
+    "end": 19.46,
+    "type": "word",
+    "logprob": -0.00009717344346427126
+   },
+   {
+    "text": "Sie",
+    "start": 20.2,
+    "end": 20.28,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "wählt",
+    "start": 20.32,
+    "end": 20.7,
+    "type": "word",
+    "logprob": -8.821480150800198e-7
+   },
+   {
+    "text": "mit",
+    "start": 20.76,
+    "end": 20.9,
+    "type": "word",
+    "logprob": -0.00019441144831944257
+   },
+   {
+    "text": "Umsatzsteuer,",
+    "start": 21.06,
+    "end": 21.72,
+    "type": "word",
+    "logprob": -0.000010453674873972956
+   },
+   {
+    "text": "nicht",
+    "start": 21.88,
+    "end": 22.06,
+    "type": "word",
+    "logprob": -0.00047755756531842053
+   },
+   {
+    "text": "Kleinunternehmer.",
+    "start": 22.1,
+    "end": 22.78,
+    "type": "word",
+    "logprob": -0.0024720325103878755
+   },
+   {
+    "text": "Warum?",
+    "start": 23.74,
+    "end": 24.02,
+    "type": "word",
+    "logprob": -0.0000016490545569070036
+   },
+   {
+    "text": "Betriebe",
+    "start": 24.66,
+    "end": 25.02,
+    "type": "word",
+    "logprob": -0.00005598117054717022
+   },
+   {
+    "text": "mit",
+    "start": 25.06,
+    "end": 25.2,
+    "type": "word",
+    "logprob": -0.0000014305104514278355
+   },
+   {
+    "text": "Vorsteuerabzug",
+    "start": 25.26,
+    "end": 26.06,
+    "type": "word",
+    "logprob": -0.00007710677872247678
+   },
+   {
+    "text": "holen",
+    "start": 26.1,
+    "end": 26.34,
+    "type": "word",
+    "logprob": -0.0010286045726388693
+   },
+   {
+    "text": "von",
+    "start": 26.4,
+    "end": 26.54,
+    "type": "word",
+    "logprob": -0.0002686616498976946
+   },
+   {
+    "text": "hundertneun",
+    "start": 26.58,
+    "end": 27.08,
+    "type": "word",
+    "logprob": -0.17564523791853306
+   },
+   {
+    "text": "Euro",
+    "start": 27.22,
+    "end": 27.5,
+    "type": "word",
+    "logprob": -0.00001490105023549404
+   },
+   {
+    "text": "siebzehn",
+    "start": 27.72,
+    "end": 28.08,
+    "type": "word",
+    "logprob": -0.0005223678301433665
+   },
+   {
+    "text": "Steuer",
+    "start": 28.14,
+    "end": 28.46,
+    "type": "word",
+    "logprob": -0.000018358061424805783
+   },
+   {
+    "text": "zurück.",
+    "start": 28.52,
+    "end": 28.78,
+    "type": "word",
+    "logprob": -0.0010429946778458543
+   },
+   {
+    "text": "Ihr",
+    "start": 29.4,
+    "end": 29.52,
+    "type": "word",
+    "logprob": -1.1920928244535389e-7
+   },
+   {
+    "text": "Einkauf",
+    "start": 29.58,
+    "end": 30.02,
+    "type": "word",
+    "logprob": -0.000065205356804654
+   },
+   {
+    "text": "bliebe",
+    "start": 30.06,
+    "end": 30.26,
+    "type": "word",
+    "logprob": -0.00004064942610663517
+   },
+   {
+    "text": "sonst",
+    "start": 30.32,
+    "end": 30.56,
+    "type": "word",
+    "logprob": -0.000007390948667307384
+   },
+   {
+    "text": "neunzehn",
+    "start": 30.62,
+    "end": 30.96,
+    "type": "word",
+    "logprob": -0.0044351302976792795
+   },
+   {
+    "text": "Prozent",
+    "start": 31,
+    "end": 31.36,
+    "type": "word",
+    "logprob": -0.000008583032467868179
+   },
+   {
+    "text": "teurer.",
+    "start": 31.42,
+    "end": 31.74,
+    "type": "word",
+    "logprob": -0.00019353518694385587
+   },
+   {
+    "text": "Der",
+    "start": 32.38,
+    "end": 32.5,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "Haken:",
+    "start": 32.54,
+    "end": 32.84,
+    "type": "word",
+    "logprob": -0.000018516496690305455
+   },
+   {
+    "text": "fünf",
+    "start": 33.02,
+    "end": 33.22,
+    "type": "word",
+    "logprob": -0.00013350549852475524
+   },
+   {
+    "text": "Jahre",
+    "start": 33.26,
+    "end": 33.46,
+    "type": "word",
+    "logprob": -0.048730626702308655
+   },
+   {
+    "text": "Bindung.",
+    "start": 33.52,
+    "end": 33.84,
+    "type": "word",
+    "logprob": -0.000026597966098051984
+   },
+   {
+    "text": "Als",
+    "start": 34.58,
+    "end": 34.72,
+    "type": "word",
+    "logprob": -2.3841855067985307e-7
+   },
+   {
+    "text": "Nächstes:",
+    "start": 34.76,
+    "end": 35.14,
+    "type": "word",
+    "logprob": -0.0026066612630933784
+   },
+   {
+    "text": "Was",
+    "start": 35.64,
+    "end": 35.84,
+    "type": "word",
+    "logprob": -2.3841855067985307e-7
+   },
+   {
+    "text": "muss",
+    "start": 35.88,
+    "end": 36.04,
+    "type": "word",
+    "logprob": -0.0000020265558760002023
+   },
+   {
+    "text": "auf",
+    "start": 36.08,
+    "end": 36.18,
+    "type": "word",
+    "logprob": -0.0000010728830375228426
+   },
+   {
+    "text": "Ihre",
+    "start": 36.24,
+    "end": 36.38,
+    "type": "word",
+    "logprob": -0.000005006777428206988
+   },
+   {
+    "text": "Rechnung?",
+    "start": 36.46,
+    "end": 36.8,
+    "type": "word",
+    "logprob": -0.0791804658039281
+   },
+   {
+    "text": "Kommentiere:",
+    "start": 37.84,
+    "end": 38.36,
+    "type": "word",
+    "logprob": -0.00025405709493320217
+   },
+   {
+    "text": "Steuer.",
+    "start": 38.68,
+    "end": 39.14,
+    "type": "word",
+    "logprob": -0.08221489936113358
+   },
+   {
+    "text": "Ich",
+    "start": 39.5,
+    "end": 39.6,
+    "type": "word",
+    "logprob": -0.00020954797219019383
+   },
+   {
+    "text": "schick",
+    "start": 39.64,
+    "end": 39.82,
+    "type": "word",
+    "logprob": -0.00002932476854766719
+   },
+   {
+    "text": "dir",
+    "start": 39.84,
+    "end": 39.94,
+    "type": "word",
+    "logprob": -0.576266884803772
+   },
+   {
+    "text": "den",
+    "start": 39.98,
+    "end": 40.12,
+    "type": "word",
+    "logprob": -0.00003111314072157256
+   },
+   {
+    "text": "Prompt.",
+    "start": 40.14,
+    "end": 40.48,
+    "type": "word",
+    "logprob": -0.0001722573059136526
+   },
+   {
+    "text": "In",
+    "start": 41.28,
+    "end": 41.42,
+    "type": "word",
+    "logprob": -0.0000020265558760002023
+   },
+   {
+    "text": "zehn",
+    "start": 41.48,
+    "end": 41.62,
+    "type": "word",
+    "logprob": -0.000015020257706055418
+   },
+   {
+    "text": "Minuten",
+    "start": 41.66,
+    "end": 42.02,
+    "type": "word",
+    "logprob": -0.0000601988795096986
+   },
+   {
+    "text": "rechnest",
+    "start": 42.06,
+    "end": 42.34,
+    "type": "word",
+    "logprob": -0.0006524583738496403
+   },
+   {
+    "text": "du",
+    "start": 42.38,
+    "end": 42.46,
+    "type": "word",
+    "logprob": -7.152555099310121e-7
+   },
+   {
+    "text": "beide",
+    "start": 42.48,
+    "end": 42.68,
+    "type": "word",
+    "logprob": -0.0000641325386823155
+   },
+   {
+    "text": "Wege",
+    "start": 42.72,
+    "end": 42.88,
+    "type": "word",
+    "logprob": -0.000028132995794294402
+   },
+   {
+    "text": "durch.",
+    "start": 42.94,
+    "end": 43.22,
+    "type": "word",
+    "logprob": -0.000011165867249474104
+   }
+  ]
+ },
+ {
+  "text": "Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probiere das aus. Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Briefe stehen, Preis offen. Heute mit oder ohne Umsatzsteuer. Claude, Marge angehängt, Websearch, Gesetz, IHK. Sie wählt mit Umsatzsteuer, nicht Kleinunternehmer. Warum? Betriebe mit Vorsteuerabzug holen von hundertneun Euro siebzehn Steuer zurück. Ihr Einkauf bliebe sonst neunzehn Prozent teurer. Der Haken: fünf Jahre Bindung. Als Nächstes: Was muss auf Ihre Rechnung? Kommentiere: Steuer. Ich schicke dir den Prompt. In zehn Minuten rechnest du beide Wege durch. [Hintergrundmusik]",
+  "words": [
+   {
+    "text": "Wie",
+    "start": 0.1,
+    "end": 0.2,
+    "type": "word",
+    "logprob": -0.004186675418168306
+   },
+   {
+    "text": "viel",
+    "start": 0.22,
+    "end": 0.34,
+    "type": "word",
+    "logprob": -0.00002169585604860913
+   },
+   {
+    "text": "Umsatz",
+    "start": 0.4,
+    "end": 0.72,
+    "type": "word",
+    "logprob": -0.0000029802276912960224
+   },
+   {
+    "text": "macht",
+    "start": 0.76,
+    "end": 0.92,
+    "type": "word",
+    "logprob": -0.000004172316494077677
+   },
+   {
+    "text": "ein",
+    "start": 0.94,
+    "end": 1.06,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "Unternehmen,",
+    "start": 1.1,
+    "end": 1.52,
+    "type": "word",
+    "logprob": -0.0004126097191677521
+   },
+   {
+    "text": "das",
+    "start": 1.6,
+    "end": 1.74,
+    "type": "word",
+    "logprob": -0.00005590759246842936
+   },
+   {
+    "text": "eine",
+    "start": 1.8,
+    "end": 1.98,
+    "type": "word",
+    "logprob": -0.000004291525328881107
+   },
+   {
+    "text": "KI",
+    "start": 2.02,
+    "end": 2.38,
+    "type": "word",
+    "logprob": -0.00008260862523457035
+   },
+   {
+    "text": "hundert",
+    "start": 2.46,
+    "end": 2.82,
+    "type": "word",
+    "logprob": -0.004505245480686426
+   },
+   {
+    "text": "Tage",
+    "start": 2.86,
+    "end": 3.1,
+    "type": "word",
+    "logprob": -0.000003933898824470816
+   },
+   {
+    "text": "lang",
+    "start": 3.16,
+    "end": 3.32,
+    "type": "word",
+    "logprob": -0.000014066597032069694
+   },
+   {
+    "text": "ganz",
+    "start": 3.4,
+    "end": 3.62,
+    "type": "word",
+    "logprob": -0.0000040531076592742465
+   },
+   {
+    "text": "alleine",
+    "start": 3.68,
+    "end": 3.98,
+    "type": "word",
+    "logprob": -0.000024199192921514623
+   },
+   {
+    "text": "führt?",
+    "start": 4.019,
+    "end": 4.24,
+    "type": "word",
+    "logprob": -0.0000993550250605324
+   },
+   {
+    "text": "Ich",
+    "start": 5.02,
+    "end": 5.1,
+    "type": "word",
+    "logprob": -0.000015616295058862306
+   },
+   {
+    "text": "probiere",
+    "start": 5.14,
+    "end": 5.38,
+    "type": "word",
+    "logprob": -0.3164217112425831
+   },
+   {
+    "text": "das",
+    "start": 5.42,
+    "end": 5.54,
+    "type": "word",
+    "logprob": -9.536738616588991e-7
+   },
+   {
+    "text": "aus.",
+    "start": 5.62,
+    "end": 5.78,
+    "type": "word",
+    "logprob": -0.0000038444896972578135
+   },
+   {
+    "text": "Die",
+    "start": 6.2,
+    "end": 6.28,
+    "type": "word",
+    "logprob": -0.0000609140915912576
+   },
+   {
+    "text": "Firma",
+    "start": 6.32,
+    "end": 6.56,
+    "type": "word",
+    "logprob": -0.0003748429589904845
+   },
+   {
+    "text": "der",
+    "start": 6.6,
+    "end": 6.72,
+    "type": "word",
+    "logprob": -0.000013947389561508317
+   },
+   {
+    "text": "KI",
+    "start": 6.76,
+    "end": 7.04,
+    "type": "word",
+    "logprob": -0.0002613918040879071
+   },
+   {
+    "text": "verkauft",
+    "start": 7.08,
+    "end": 7.46,
+    "type": "word",
+    "logprob": -0.000010490362910786644
+   },
+   {
+    "text": "Shirts",
+    "start": 7.5,
+    "end": 7.8,
+    "type": "word",
+    "logprob": -0.001522930571809411
+   },
+   {
+    "text": "mit",
+    "start": 7.84,
+    "end": 7.98,
+    "type": "word",
+    "logprob": -0.000010251946150674485
+   },
+   {
+    "text": "Logo",
+    "start": 8.039,
+    "end": 8.3,
+    "type": "word",
+    "logprob": -0.00005876845170860179
+   },
+   {
+    "text": "an",
+    "start": 8.36,
+    "end": 8.48,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "kleine",
+    "start": 8.52,
+    "end": 8.74,
+    "type": "word",
+    "logprob": -0.000023603161025675945
+   },
+   {
+    "text": "Betriebe,",
+    "start": 8.78,
+    "end": 9.14,
+    "type": "word",
+    "logprob": -0.00002713863007860103
+   },
+   {
+    "text": "bestickt",
+    "start": 9.54,
+    "end": 9.86,
+    "type": "word",
+    "logprob": -0.0004528601566562429
+   },
+   {
+    "text": "erst",
+    "start": 9.9,
+    "end": 10.06,
+    "type": "word",
+    "logprob": -0.000030397906812140718
+   },
+   {
+    "text": "auf",
+    "start": 10.1,
+    "end": 10.22,
+    "type": "word",
+    "logprob": -0.000018954096958623268
+   },
+   {
+    "text": "Bestellung.",
+    "start": 10.24,
+    "end": 10.68,
+    "type": "word",
+    "logprob": -0.00005123689702073038
+   },
+   {
+    "text": "Briefe",
+    "start": 10.88,
+    "end": 11.14,
+    "type": "word",
+    "logprob": -0.002298901623665491
+   },
+   {
+    "text": "stehen,",
+    "start": 11.18,
+    "end": 11.44,
+    "type": "word",
+    "logprob": -0.00015855641010732922
+   },
+   {
+    "text": "Preis",
+    "start": 11.68,
+    "end": 11.98,
+    "type": "word",
+    "logprob": -0.00007533743337262422
+   },
+   {
+    "text": "offen.",
+    "start": 12.2,
+    "end": 12.46,
+    "type": "word",
+    "logprob": -0.0014285514673701982
+   },
+   {
+    "text": "Heute",
+    "start": 13.06,
+    "end": 13.32,
+    "type": "word",
+    "logprob": -0.00035398892941884696
+   },
+   {
+    "text": "mit",
+    "start": 13.54,
+    "end": 13.72,
+    "type": "word",
+    "logprob": -0.1810166984796524
+   },
+   {
+    "text": "oder",
+    "start": 13.9,
+    "end": 14.06,
+    "type": "word",
+    "logprob": -0.000007271740287251305
+   },
+   {
+    "text": "ohne",
+    "start": 14.2,
+    "end": 14.36,
+    "type": "word",
+    "logprob": -0.0000029802276912960224
+   },
+   {
+    "text": "Umsatzsteuer.",
+    "start": 14.44,
+    "end": 15.06,
+    "type": "word",
+    "logprob": -0.007726961916397648
+   },
+   {
+    "text": "Claude,",
+    "start": 15.88,
+    "end": 16.16,
+    "type": "word",
+    "logprob": -0.004648986072944743
+   },
+   {
+    "text": "Marge",
+    "start": 16.44,
+    "end": 16.68,
+    "type": "word",
+    "logprob": -0.0024986967441691377
+   },
+   {
+    "text": "angehängt,",
+    "start": 16.74,
+    "end": 17.2,
+    "type": "word",
+    "logprob": -0.00037254434062674593
+   },
+   {
+    "text": "Websearch,",
+    "start": 17.38,
+    "end": 17.86,
+    "type": "word",
+    "logprob": -0.8158015079796315
+   },
+   {
+    "text": "Gesetz,",
+    "start": 18.18,
+    "end": 18.62,
+    "type": "word",
+    "logprob": -0.00035163071255997887
+   },
+   {
+    "text": "IHK.",
+    "start": 18.96,
+    "end": 19.46,
+    "type": "word",
+    "logprob": -0.00004592375262113535
+   },
+   {
+    "text": "Sie",
+    "start": 20.18,
+    "end": 20.28,
+    "type": "word",
+    "logprob": -0.000007033323527139146
+   },
+   {
+    "text": "wählt",
+    "start": 20.32,
+    "end": 20.56,
+    "type": "word",
+    "logprob": -0.00043053971596691555
+   },
+   {
+    "text": "mit",
+    "start": 20.76,
+    "end": 20.9,
+    "type": "word",
+    "logprob": -0.0000247952248173533
+   },
+   {
+    "text": "Umsatzsteuer,",
+    "start": 21.06,
+    "end": 21.72,
+    "type": "word",
+    "logprob": -0.00002522508391568688
+   },
+   {
+    "text": "nicht",
+    "start": 21.88,
+    "end": 22.06,
+    "type": "word",
+    "logprob": -0.0007273888913914561
+   },
+   {
+    "text": "Kleinunternehmer.",
+    "start": 22.1,
+    "end": 22.78,
+    "type": "word",
+    "logprob": -0.0021046169841767437
+   },
+   {
+    "text": "Warum?",
+    "start": 23.74,
+    "end": 24.02,
+    "type": "word",
+    "logprob": -0.000014722219892367624
+   },
+   {
+    "text": "Betriebe",
+    "start": 24.66,
+    "end": 25.02,
+    "type": "word",
+    "logprob": -0.00003187228467993464
+   },
+   {
+    "text": "mit",
+    "start": 25.06,
+    "end": 25.2,
+    "type": "word",
+    "logprob": -0.000013232143828645349
+   },
+   {
+    "text": "Vorsteuerabzug",
+    "start": 25.26,
+    "end": 26.06,
+    "type": "word",
+    "logprob": -0.00016200850430842756
+   },
+   {
+    "text": "holen",
+    "start": 26.1,
+    "end": 26.34,
+    "type": "word",
+    "logprob": -0.0003069168305955827
+   },
+   {
+    "text": "von",
+    "start": 26.4,
+    "end": 26.54,
+    "type": "word",
+    "logprob": -0.000025510462364763953
+   },
+   {
+    "text": "hundertneun",
+    "start": 26.58,
+    "end": 27.08,
+    "type": "word",
+    "logprob": -0.11287480459379201
+   },
+   {
+    "text": "Euro",
+    "start": 27.22,
+    "end": 27.5,
+    "type": "word",
+    "logprob": -0.00009119095193454996
+   },
+   {
+    "text": "siebzehn",
+    "start": 27.72,
+    "end": 28.08,
+    "type": "word",
+    "logprob": -0.0034923361854239943
+   },
+   {
+    "text": "Steuer",
+    "start": 28.14,
+    "end": 28.46,
+    "type": "word",
+    "logprob": -0.0010590903693810105
+   },
+   {
+    "text": "zurück.",
+    "start": 28.52,
+    "end": 28.78,
+    "type": "word",
+    "logprob": -0.000017915266129518515
+   },
+   {
+    "text": "Ihr",
+    "start": 29.4,
+    "end": 29.52,
+    "type": "word",
+    "logprob": -0.00007295342220459133
+   },
+   {
+    "text": "Einkauf",
+    "start": 29.58,
+    "end": 30.02,
+    "type": "word",
+    "logprob": -0.00003635817120084539
+   },
+   {
+    "text": "bliebe",
+    "start": 30.06,
+    "end": 30.26,
+    "type": "word",
+    "logprob": -0.000029960582651256118
+   },
+   {
+    "text": "sonst",
+    "start": 30.32,
+    "end": 30.56,
+    "type": "word",
+    "logprob": -2.3841855067985307e-7
+   },
+   {
+    "text": "neunzehn",
+    "start": 30.62,
+    "end": 30.96,
+    "type": "word",
+    "logprob": -0.009248401002423634
+   },
+   {
+    "text": "Prozent",
+    "start": 31,
+    "end": 31.36,
+    "type": "word",
+    "logprob": -0.0009394046501256526
+   },
+   {
+    "text": "teurer.",
+    "start": 31.42,
+    "end": 31.74,
+    "type": "word",
+    "logprob": -0.00019298448887639097
+   },
+   {
+    "text": "Der",
+    "start": 32.38,
+    "end": 32.5,
+    "type": "word",
+    "logprob": -0.000008106198947643861
+   },
+   {
+    "text": "Haken:",
+    "start": 32.54,
+    "end": 32.84,
+    "type": "word",
+    "logprob": -0.0003264319137391188
+   },
+   {
+    "text": "fünf",
+    "start": 33.02,
+    "end": 33.22,
+    "type": "word",
+    "logprob": -0.008924831636250019
+   },
+   {
+    "text": "Jahre",
+    "start": 33.26,
+    "end": 33.46,
+    "type": "word",
+    "logprob": -0.00001549708758830093
+   },
+   {
+    "text": "Bindung.",
+    "start": 33.52,
+    "end": 33.84,
+    "type": "word",
+    "logprob": -0.000050780578021658584
+   },
+   {
+    "text": "Als",
+    "start": 34.58,
+    "end": 34.72,
+    "type": "word",
+    "logprob": -0.00003790783375734463
+   },
+   {
+    "text": "Nächstes:",
+    "start": 34.76,
+    "end": 35.14,
+    "type": "word",
+    "logprob": -0.0004980231350499606
+   },
+   {
+    "text": "Was",
+    "start": 35.64,
+    "end": 35.84,
+    "type": "word",
+    "logprob": -0.000012874520507466514
+   },
+   {
+    "text": "muss",
+    "start": 35.88,
+    "end": 36.04,
+    "type": "word",
+    "logprob": -9.536738616588991e-7
+   },
+   {
+    "text": "auf",
+    "start": 36.08,
+    "end": 36.18,
+    "type": "word",
+    "logprob": -0.000007033323527139146
+   },
+   {
+    "text": "Ihre",
+    "start": 36.24,
+    "end": 36.38,
+    "type": "word",
+    "logprob": -0.07018663734197617
+   },
+   {
+    "text": "Rechnung?",
+    "start": 36.46,
+    "end": 36.8,
+    "type": "word",
+    "logprob": -0.0000034835538447926715
+   },
+   {
+    "text": "Kommentiere:",
+    "start": 37.84,
+    "end": 38.36,
+    "type": "word",
+    "logprob": -0.00045771070532888797
+   },
+   {
+    "text": "Steuer.",
+    "start": 38.68,
+    "end": 39.14,
+    "type": "word",
+    "logprob": -0.005244695340349738
+   },
+   {
+    "text": "Ich",
+    "start": 39.5,
+    "end": 39.6,
+    "type": "word",
+    "logprob": -0.00008630380034446716
+   },
+   {
+    "text": "schicke",
+    "start": 39.64,
+    "end": 39.82,
+    "type": "word",
+    "logprob": -0.19928307192081515
+   },
+   {
+    "text": "dir",
+    "start": 39.86,
+    "end": 39.94,
+    "type": "word",
+    "logprob": -0.000010013530300057027
+   },
+   {
+    "text": "den",
+    "start": 39.98,
+    "end": 40.12,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "Prompt.",
+    "start": 40.14,
+    "end": 40.48,
+    "type": "word",
+    "logprob": -0.0026260375574825696
+   },
+   {
+    "text": "In",
+    "start": 41.28,
+    "end": 41.42,
+    "type": "word",
+    "logprob": -0.000019311717551317997
+   },
+   {
+    "text": "zehn",
+    "start": 41.48,
+    "end": 41.62,
+    "type": "word",
+    "logprob": -0.0000805822346592322
+   },
+   {
+    "text": "Minuten",
+    "start": 41.66,
+    "end": 42.02,
+    "type": "word",
+    "logprob": -0.000005125986263010418
+   },
+   {
+    "text": "rechnest",
+    "start": 42.06,
+    "end": 42.34,
+    "type": "word",
+    "logprob": -0.000602622207182435
+   },
+   {
+    "text": "du",
+    "start": 42.38,
+    "end": 42.46,
+    "type": "word",
+    "logprob": -0.000010490362910786644
+   },
+   {
+    "text": "beide",
+    "start": 42.48,
+    "end": 42.7,
+    "type": "word",
+    "logprob": -0.00003158996332786046
+   },
+   {
+    "text": "Wege",
+    "start": 42.72,
+    "end": 42.92,
+    "type": "word",
+    "logprob": -0.000016093124941107817
+   },
+   {
+    "text": "durch.",
+    "start": 42.94,
+    "end": 43.22,
+    "type": "word",
+    "logprob": -0.000011741940549351662
+   }
+  ]
+ },
+ {
+  "text": "Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probiere das aus. Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Briefe stehen, Preis offen. Heute mit oder ohne Umsatzsteuer? Claude, Marge angehängt, Web-Suche, Gesetz, IHK. Sie wählt mit Umsatzsteuer, nicht Kleinunternehmer. Warum? Betriebe mit Vorsteuerabzug holen von hundertneun Euro siebzehn Steuer zurück. Ihr Einkauf bliebe sonst neunzehn Prozent teurer. Der Haken: fünf Jahre Bindung. Als Nächstes: Was muss auf Ihre Rechnung? Kommentiere: Steuer. Ich schicke dir den Prompt. In zehn Minuten rechnest du beide Wege durch. [Hintergrundmusik]",
+  "words": [
+   {
+    "text": "Wie",
+    "start": 0.1,
+    "end": 0.2,
+    "type": "word",
+    "logprob": -0.0068144542165100574
+   },
+   {
+    "text": "viel",
+    "start": 0.22,
+    "end": 0.34,
+    "type": "word",
+    "logprob": -0.00002098061486321967
+   },
+   {
+    "text": "Umsatz",
+    "start": 0.4,
+    "end": 0.72,
+    "type": "word",
+    "logprob": -0.000002622600959512056
+   },
+   {
+    "text": "macht",
+    "start": 0.76,
+    "end": 0.92,
+    "type": "word",
+    "logprob": -0.0000034570634852570947
+   },
+   {
+    "text": "ein",
+    "start": 0.94,
+    "end": 1.06,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "Unternehmen,",
+    "start": 1.1,
+    "end": 1.52,
+    "type": "word",
+    "logprob": -0.00044045199074579006
+   },
+   {
+    "text": "das",
+    "start": 1.6,
+    "end": 1.74,
+    "type": "word",
+    "logprob": -0.00011264643399044871
+   },
+   {
+    "text": "eine",
+    "start": 1.8,
+    "end": 1.98,
+    "type": "word",
+    "logprob": -0.0000034570634852570947
+   },
+   {
+    "text": "KI",
+    "start": 2.02,
+    "end": 2.38,
+    "type": "word",
+    "logprob": -0.00008999896090244874
+   },
+   {
+    "text": "hundert",
+    "start": 2.46,
+    "end": 2.82,
+    "type": "word",
+    "logprob": -0.009401336312294006
+   },
+   {
+    "text": "Tage",
+    "start": 2.86,
+    "end": 3.1,
+    "type": "word",
+    "logprob": -0.0000023841830625315197
+   },
+   {
+    "text": "lang",
+    "start": 3.16,
+    "end": 3.32,
+    "type": "word",
+    "logprob": -0.00001597391747054644
+   },
+   {
+    "text": "ganz",
+    "start": 3.4,
+    "end": 3.62,
+    "type": "word",
+    "logprob": -0.0000046491513785440475
+   },
+   {
+    "text": "alleine",
+    "start": 3.68,
+    "end": 3.98,
+    "type": "word",
+    "logprob": -0.000023603161025675945
+   },
+   {
+    "text": "führt?",
+    "start": 4.019,
+    "end": 4.24,
+    "type": "word",
+    "logprob": -0.00009428921839453135
+   },
+   {
+    "text": "Ich",
+    "start": 5.02,
+    "end": 5.1,
+    "type": "word",
+    "logprob": -0.000023007127310847864
+   },
+   {
+    "text": "probiere",
+    "start": 5.14,
+    "end": 5.38,
+    "type": "word",
+    "logprob": -0.1743687130365288
+   },
+   {
+    "text": "das",
+    "start": 5.42,
+    "end": 5.54,
+    "type": "word",
+    "logprob": -5.960462772236497e-7
+   },
+   {
+    "text": "aus.",
+    "start": 5.62,
+    "end": 5.78,
+    "type": "word",
+    "logprob": -0.000005334597588557699
+   },
+   {
+    "text": "Die",
+    "start": 6.2,
+    "end": 6.28,
+    "type": "word",
+    "logprob": -0.0002790300059132278
+   },
+   {
+    "text": "Firma",
+    "start": 6.34,
+    "end": 6.56,
+    "type": "word",
+    "logprob": -0.0004677870310842991
+   },
+   {
+    "text": "der",
+    "start": 6.6,
+    "end": 6.72,
+    "type": "word",
+    "logprob": -0.00012492353562265635
+   },
+   {
+    "text": "KI",
+    "start": 6.76,
+    "end": 7.04,
+    "type": "word",
+    "logprob": -0.0001915509783430025
+   },
+   {
+    "text": "verkauft",
+    "start": 7.08,
+    "end": 7.46,
+    "type": "word",
+    "logprob": -0.000012278481335670222
+   },
+   {
+    "text": "Shirts",
+    "start": 7.5,
+    "end": 7.8,
+    "type": "word",
+    "logprob": -0.0019633558113127947
+   },
+   {
+    "text": "mit",
+    "start": 7.84,
+    "end": 7.98,
+    "type": "word",
+    "logprob": -0.000006437280717364047
+   },
+   {
+    "text": "Logo",
+    "start": 8.039,
+    "end": 8.3,
+    "type": "word",
+    "logprob": -0.00011193125828867778
+   },
+   {
+    "text": "an",
+    "start": 8.36,
+    "end": 8.48,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "kleine",
+    "start": 8.52,
+    "end": 8.74,
+    "type": "word",
+    "logprob": -0.000025033637939486653
+   },
+   {
+    "text": "Betriebe,",
+    "start": 8.78,
+    "end": 9.14,
+    "type": "word",
+    "logprob": -0.000032846463505443855
+   },
+   {
+    "text": "bestickt",
+    "start": 9.54,
+    "end": 9.86,
+    "type": "word",
+    "logprob": -0.0004786042118212208
+   },
+   {
+    "text": "erst",
+    "start": 9.9,
+    "end": 10.06,
+    "type": "word",
+    "logprob": -0.00003290122185717337
+   },
+   {
+    "text": "auf",
+    "start": 10.1,
+    "end": 10.22,
+    "type": "word",
+    "logprob": -0.000013232143828645349
+   },
+   {
+    "text": "Bestellung.",
+    "start": 10.24,
+    "end": 10.68,
+    "type": "word",
+    "logprob": -0.000060177075283718295
+   },
+   {
+    "text": "Briefe",
+    "start": 10.88,
+    "end": 11.14,
+    "type": "word",
+    "logprob": -0.0049089036526008085
+   },
+   {
+    "text": "stehen,",
+    "start": 11.18,
+    "end": 11.44,
+    "type": "word",
+    "logprob": -0.000024863008418053922
+   },
+   {
+    "text": "Preis",
+    "start": 11.68,
+    "end": 11.98,
+    "type": "word",
+    "logprob": -0.0000609140915912576
+   },
+   {
+    "text": "offen.",
+    "start": 12.2,
+    "end": 12.46,
+    "type": "word",
+    "logprob": -0.0007723964711014256
+   },
+   {
+    "text": "Heute",
+    "start": 13.06,
+    "end": 13.32,
+    "type": "word",
+    "logprob": -0.0005072260973975062
+   },
+   {
+    "text": "mit",
+    "start": 13.54,
+    "end": 13.72,
+    "type": "word",
+    "logprob": -0.038142625242471695
+   },
+   {
+    "text": "oder",
+    "start": 13.92,
+    "end": 14.06,
+    "type": "word",
+    "logprob": -0.000005245195097813848
+   },
+   {
+    "text": "ohne",
+    "start": 14.2,
+    "end": 14.36,
+    "type": "word",
+    "logprob": -0.000003099436753473128
+   },
+   {
+    "text": "Umsatzsteuer?",
+    "start": 14.44,
+    "end": 15.06,
+    "type": "word",
+    "logprob": -0.024114594827971396
+   },
+   {
+    "text": "Claude,",
+    "start": 15.88,
+    "end": 16.16,
+    "type": "word",
+    "logprob": -0.003663536693368639
+   },
+   {
+    "text": "Marge",
+    "start": 16.44,
+    "end": 16.68,
+    "type": "word",
+    "logprob": -0.008421866595699611
+   },
+   {
+    "text": "angehängt,",
+    "start": 16.74,
+    "end": 17.2,
+    "type": "word",
+    "logprob": -0.00028938369432509605
+   },
+   {
+    "text": "Web-Suche,",
+    "start": 17.38,
+    "end": 17.84,
+    "type": "word",
+    "logprob": -0.12455358595175312
+   },
+   {
+    "text": "Gesetz,",
+    "start": 18.18,
+    "end": 18.62,
+    "type": "word",
+    "logprob": -0.001816425627371895
+   },
+   {
+    "text": "IHK.",
+    "start": 18.96,
+    "end": 19.46,
+    "type": "word",
+    "logprob": -0.00005861797876427488
+   },
+   {
+    "text": "Sie",
+    "start": 20.2,
+    "end": 20.28,
+    "type": "word",
+    "logprob": -0.000007390948667307384
+   },
+   {
+    "text": "wählt",
+    "start": 20.32,
+    "end": 20.56,
+    "type": "word",
+    "logprob": -0.00006699282671434048
+   },
+   {
+    "text": "mit",
+    "start": 20.76,
+    "end": 20.9,
+    "type": "word",
+    "logprob": -0.000017404405298293568
+   },
+   {
+    "text": "Umsatzsteuer,",
+    "start": 21.06,
+    "end": 21.72,
+    "type": "word",
+    "logprob": -0.00012307304621992024
+   },
+   {
+    "text": "nicht",
+    "start": 21.88,
+    "end": 22.06,
+    "type": "word",
+    "logprob": -0.00007164221460698172
+   },
+   {
+    "text": "Kleinunternehmer.",
+    "start": 22.1,
+    "end": 22.78,
+    "type": "word",
+    "logprob": -0.0024971158897691774
+   },
+   {
+    "text": "Warum?",
+    "start": 23.74,
+    "end": 24.02,
+    "type": "word",
+    "logprob": -0.00001599376419865924
+   },
+   {
+    "text": "Betriebe",
+    "start": 24.66,
+    "end": 25.02,
+    "type": "word",
+    "logprob": -0.00004636975094740592
+   },
+   {
+    "text": "mit",
+    "start": 25.06,
+    "end": 25.2,
+    "type": "word",
+    "logprob": -0.000005602820692729438
+   },
+   {
+    "text": "Vorsteuerabzug",
+    "start": 25.26,
+    "end": 26.06,
+    "type": "word",
+    "logprob": -0.0002808024299676098
+   },
+   {
+    "text": "holen",
+    "start": 26.1,
+    "end": 26.34,
+    "type": "word",
+    "logprob": -0.00030655929003842175
+   },
+   {
+    "text": "von",
+    "start": 26.4,
+    "end": 26.54,
+    "type": "word",
+    "logprob": -0.000021934269170742482
+   },
+   {
+    "text": "hundertneun",
+    "start": 26.58,
+    "end": 27.08,
+    "type": "word",
+    "logprob": -0.051313515157248316
+   },
+   {
+    "text": "Euro",
+    "start": 27.22,
+    "end": 27.5,
+    "type": "word",
+    "logprob": -0.00006580135959666222
+   },
+   {
+    "text": "siebzehn",
+    "start": 27.72,
+    "end": 28.08,
+    "type": "word",
+    "logprob": -0.004215764644861508
+   },
+   {
+    "text": "Steuer",
+    "start": 28.14,
+    "end": 28.42,
+    "type": "word",
+    "logprob": -0.0006517431465908885
+   },
+   {
+    "text": "zurück.",
+    "start": 28.52,
+    "end": 28.78,
+    "type": "word",
+    "logprob": -0.00001994177884004752
+   },
+   {
+    "text": "Ihr",
+    "start": 29.4,
+    "end": 29.52,
+    "type": "word",
+    "logprob": -0.00009262132516596466
+   },
+   {
+    "text": "Einkauf",
+    "start": 29.58,
+    "end": 30.02,
+    "type": "word",
+    "logprob": -0.000025629668016335927
+   },
+   {
+    "text": "bliebe",
+    "start": 30.06,
+    "end": 30.26,
+    "type": "word",
+    "logprob": -0.000038264723722628936
+   },
+   {
+    "text": "sonst",
+    "start": 30.32,
+    "end": 30.56,
+    "type": "word",
+    "logprob": -1.1920928244535389e-7
+   },
+   {
+    "text": "neunzehn",
+    "start": 30.62,
+    "end": 30.96,
+    "type": "word",
+    "logprob": -0.033870279692678196
+   },
+   {
+    "text": "Prozent",
+    "start": 31,
+    "end": 31.36,
+    "type": "word",
+    "logprob": -0.0006381620769388974
+   },
+   {
+    "text": "teurer.",
+    "start": 31.4,
+    "end": 31.74,
+    "type": "word",
+    "logprob": -0.000038929070667238974
+   },
+   {
+    "text": "Der",
+    "start": 32.38,
+    "end": 32.5,
+    "type": "word",
+    "logprob": -0.000010371154530730564
+   },
+   {
+    "text": "Haken:",
+    "start": 32.54,
+    "end": 32.84,
+    "type": "word",
+    "logprob": -0.00018860120697657598
+   },
+   {
+    "text": "fünf",
+    "start": 33.02,
+    "end": 33.2,
+    "type": "word",
+    "logprob": -0.006990144029259682
+   },
+   {
+    "text": "Jahre",
+    "start": 33.26,
+    "end": 33.46,
+    "type": "word",
+    "logprob": -0.000016569954823353328
+   },
+   {
+    "text": "Bindung.",
+    "start": 33.52,
+    "end": 33.84,
+    "type": "word",
+    "logprob": -0.000036178709706291556
+   },
+   {
+    "text": "Als",
+    "start": 34.58,
+    "end": 34.72,
+    "type": "word",
+    "logprob": -0.000045536911784438416
+   },
+   {
+    "text": "Nächstes:",
+    "start": 34.76,
+    "end": 35.14,
+    "type": "word",
+    "logprob": -0.00028323325427158526
+   },
+   {
+    "text": "Was",
+    "start": 35.64,
+    "end": 35.84,
+    "type": "word",
+    "logprob": -0.000011205610462639015
+   },
+   {
+    "text": "muss",
+    "start": 35.88,
+    "end": 36.04,
+    "type": "word",
+    "logprob": -0.0000015497195136049413
+   },
+   {
+    "text": "auf",
+    "start": 36.08,
+    "end": 36.18,
+    "type": "word",
+    "logprob": -0.000011444026313256472
+   },
+   {
+    "text": "Ihre",
+    "start": 36.24,
+    "end": 36.38,
+    "type": "word",
+    "logprob": -0.3134287893772125
+   },
+   {
+    "text": "Rechnung?",
+    "start": 36.46,
+    "end": 36.8,
+    "type": "word",
+    "logprob": -0.0000033908355463710095
+   },
+   {
+    "text": "Kommentiere:",
+    "start": 37.84,
+    "end": 38.36,
+    "type": "word",
+    "logprob": -0.00047871811451235163
+   },
+   {
+    "text": "Steuer.",
+    "start": 38.68,
+    "end": 39.04,
+    "type": "word",
+    "logprob": -0.2556037883415619
+   },
+   {
+    "text": "Ich",
+    "start": 39.5,
+    "end": 39.6,
+    "type": "word",
+    "logprob": -0.00007188061863416806
+   },
+   {
+    "text": "schicke",
+    "start": 39.64,
+    "end": 39.82,
+    "type": "word",
+    "logprob": -0.17916960374597174
+   },
+   {
+    "text": "dir",
+    "start": 39.86,
+    "end": 39.94,
+    "type": "word",
+    "logprob": -0.000007033323527139146
+   },
+   {
+    "text": "den",
+    "start": 39.98,
+    "end": 40.12,
+    "type": "word",
+    "logprob": -1.1920928244535389e-7
+   },
+   {
+    "text": "Prompt.",
+    "start": 40.14,
+    "end": 40.44,
+    "type": "word",
+    "logprob": -0.0017927864427877336
+   },
+   {
+    "text": "In",
+    "start": 41.28,
+    "end": 41.42,
+    "type": "word",
+    "logprob": -0.000032543604902457446
+   },
+   {
+    "text": "zehn",
+    "start": 41.48,
+    "end": 41.62,
+    "type": "word",
+    "logprob": -0.0003067976504098624
+   },
+   {
+    "text": "Minuten",
+    "start": 41.66,
+    "end": 42.02,
+    "type": "word",
+    "logprob": -0.000012159273865108844
+   },
+   {
+    "text": "rechnest",
+    "start": 42.06,
+    "end": 42.34,
+    "type": "word",
+    "logprob": -0.0007387681161219462
+   },
+   {
+    "text": "du",
+    "start": 42.38,
+    "end": 42.46,
+    "type": "word",
+    "logprob": -0.000010013530300057027
+   },
+   {
+    "text": "beide",
+    "start": 42.48,
+    "end": 42.7,
+    "type": "word",
+    "logprob": -0.00002288792165927589
+   },
+   {
+    "text": "Wege",
+    "start": 42.72,
+    "end": 42.88,
+    "type": "word",
+    "logprob": -0.00001490105023549404
+   },
+   {
+    "text": "durch.",
+    "start": 42.94,
+    "end": 43.22,
+    "type": "word",
+    "logprob": -0.000007927359244301139
+   }
+  ]
+ },
+ {
+  "text": "Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probiere das aus. Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Briefe stehen, Preis offen. Heute mit oder ohne Umsatzsteuer. Claude, Marge angehängt, Websuche, Gesetz, IHK. Sie wählt mit Umsatzsteuer, nicht Kleinunternehmer. Warum? Betriebe mit Vorsteuerabzug holen von hundertneun Euro siebzehn Steuer zurück. Ihr Einkauf bliebe sonst neunzehn Prozent teurer. Der Haken: fünf Jahre Bindung. Als Nächstes: Was muss auf Ihre Rechnung? Kommentiere: \"Steuer\". Ich schicke dir den Prompt. In zehn Minuten rechnest du beide Wege durch. [Hintergrundmusik]",
+  "words": [
+   {
+    "text": "Wie",
+    "start": 0.1,
+    "end": 0.2,
+    "type": "word",
+    "logprob": -0.0028805925976485014
+   },
+   {
+    "text": "viel",
+    "start": 0.22,
+    "end": 0.34,
+    "type": "word",
+    "logprob": -0.00002038458114839159
+   },
+   {
+    "text": "Umsatz",
+    "start": 0.4,
+    "end": 0.72,
+    "type": "word",
+    "logprob": -0.000002264974000354414
+   },
+   {
+    "text": "macht",
+    "start": 0.76,
+    "end": 0.92,
+    "type": "word",
+    "logprob": -0.0000032186455882765586
+   },
+   {
+    "text": "ein",
+    "start": 0.94,
+    "end": 1.06,
+    "type": "word",
+    "logprob": -2.3841855067985307e-7
+   },
+   {
+    "text": "Unternehmen,",
+    "start": 1.1,
+    "end": 1.52,
+    "type": "word",
+    "logprob": -0.0005470670245036521
+   },
+   {
+    "text": "das",
+    "start": 1.6,
+    "end": 1.74,
+    "type": "word",
+    "logprob": -0.00004458328112377785
+   },
+   {
+    "text": "eine",
+    "start": 1.8,
+    "end": 1.98,
+    "type": "word",
+    "logprob": -0.000003576272320060525
+   },
+   {
+    "text": "KI",
+    "start": 2.02,
+    "end": 2.38,
+    "type": "word",
+    "logprob": -0.00007986703712958843
+   },
+   {
+    "text": "hundert",
+    "start": 2.46,
+    "end": 2.82,
+    "type": "word",
+    "logprob": -0.007229122798889875
+   },
+   {
+    "text": "Tage",
+    "start": 2.86,
+    "end": 3.1,
+    "type": "word",
+    "logprob": -0.000005364403477869928
+   },
+   {
+    "text": "lang",
+    "start": 3.16,
+    "end": 3.32,
+    "type": "word",
+    "logprob": -0.000016569954823353328
+   },
+   {
+    "text": "ganz",
+    "start": 3.4,
+    "end": 3.62,
+    "type": "word",
+    "logprob": -0.000005722029527532868
+   },
+   {
+    "text": "alleine",
+    "start": 3.68,
+    "end": 3.98,
+    "type": "word",
+    "logprob": -0.00002610649426060263
+   },
+   {
+    "text": "führt?",
+    "start": 4.019,
+    "end": 4.24,
+    "type": "word",
+    "logprob": -0.00009764655260369182
+   },
+   {
+    "text": "Ich",
+    "start": 5.02,
+    "end": 5.1,
+    "type": "word",
+    "logprob": -0.000011086402082582936
+   },
+   {
+    "text": "probiere",
+    "start": 5.14,
+    "end": 5.38,
+    "type": "word",
+    "logprob": -0.19352116954541998
+   },
+   {
+    "text": "das",
+    "start": 5.42,
+    "end": 5.54,
+    "type": "word",
+    "logprob": -4.768370445162873e-7
+   },
+   {
+    "text": "aus.",
+    "start": 5.62,
+    "end": 5.78,
+    "type": "word",
+    "logprob": -0.000009745295983520919
+   },
+   {
+    "text": "Die",
+    "start": 6.2,
+    "end": 6.28,
+    "type": "word",
+    "logprob": -0.00014900050882715732
+   },
+   {
+    "text": "Firma",
+    "start": 6.32,
+    "end": 6.56,
+    "type": "word",
+    "logprob": -0.0003280101518612355
+   },
+   {
+    "text": "der",
+    "start": 6.6,
+    "end": 6.72,
+    "type": "word",
+    "logprob": -0.00004589452510117553
+   },
+   {
+    "text": "KI",
+    "start": 6.76,
+    "end": 7.04,
+    "type": "word",
+    "logprob": -0.00025507534155622125
+   },
+   {
+    "text": "verkauft",
+    "start": 7.08,
+    "end": 7.46,
+    "type": "word",
+    "logprob": -0.000010371154530730564
+   },
+   {
+    "text": "Shirts",
+    "start": 7.5,
+    "end": 7.8,
+    "type": "word",
+    "logprob": -0.001705383649095893
+   },
+   {
+    "text": "mit",
+    "start": 7.84,
+    "end": 7.98,
+    "type": "word",
+    "logprob": -0.000004529942543740617
+   },
+   {
+    "text": "Logo",
+    "start": 8.039,
+    "end": 8.3,
+    "type": "word",
+    "logprob": -0.00007295342220459133
+   },
+   {
+    "text": "an",
+    "start": 8.36,
+    "end": 8.48,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "kleine",
+    "start": 8.52,
+    "end": 8.74,
+    "type": "word",
+    "logprob": -0.000017165990357170813
+   },
+   {
+    "text": "Betriebe,",
+    "start": 8.78,
+    "end": 9.14,
+    "type": "word",
+    "logprob": -0.000032741552786319517
+   },
+   {
+    "text": "bestickt",
+    "start": 9.54,
+    "end": 9.86,
+    "type": "word",
+    "logprob": -0.0005853504699189216
+   },
+   {
+    "text": "erst",
+    "start": 9.9,
+    "end": 10.06,
+    "type": "word",
+    "logprob": -0.00007652943895664066
+   },
+   {
+    "text": "auf",
+    "start": 10.1,
+    "end": 10.22,
+    "type": "word",
+    "logprob": -0.000018954096958623268
+   },
+   {
+    "text": "Bestellung.",
+    "start": 10.24,
+    "end": 10.68,
+    "type": "word",
+    "logprob": -0.00004896121506383431
+   },
+   {
+    "text": "Briefe",
+    "start": 10.88,
+    "end": 11.14,
+    "type": "word",
+    "logprob": -0.0037851304883436874
+   },
+   {
+    "text": "stehen,",
+    "start": 11.18,
+    "end": 11.44,
+    "type": "word",
+    "logprob": -0.00008317164247273467
+   },
+   {
+    "text": "Preis",
+    "start": 11.68,
+    "end": 11.98,
+    "type": "word",
+    "logprob": -0.00015507926582358778
+   },
+   {
+    "text": "offen.",
+    "start": 12.2,
+    "end": 12.46,
+    "type": "word",
+    "logprob": -0.0011133464867233063
+   },
+   {
+    "text": "Heute",
+    "start": 13.06,
+    "end": 13.32,
+    "type": "word",
+    "logprob": -0.0002731903805397451
+   },
+   {
+    "text": "mit",
+    "start": 13.54,
+    "end": 13.72,
+    "type": "word",
+    "logprob": -0.2835563123226166
+   },
+   {
+    "text": "oder",
+    "start": 13.92,
+    "end": 14.06,
+    "type": "word",
+    "logprob": -0.0000034570634852570947
+   },
+   {
+    "text": "ohne",
+    "start": 14.2,
+    "end": 14.36,
+    "type": "word",
+    "logprob": -0.000004768360213347478
+   },
+   {
+    "text": "Umsatzsteuer.",
+    "start": 14.44,
+    "end": 15.06,
+    "type": "word",
+    "logprob": -0.006861082361445789
+   },
+   {
+    "text": "Claude,",
+    "start": 15.88,
+    "end": 16.16,
+    "type": "word",
+    "logprob": -0.0033033079733805998
+   },
+   {
+    "text": "Marge",
+    "start": 16.44,
+    "end": 16.68,
+    "type": "word",
+    "logprob": -0.0032867703586589416
+   },
+   {
+    "text": "angehängt,",
+    "start": 16.74,
+    "end": 17.2,
+    "type": "word",
+    "logprob": -0.0003015098452976872
+   },
+   {
+    "text": "Websuche,",
+    "start": 17.38,
+    "end": 17.84,
+    "type": "word",
+    "logprob": -0.378718295026172
+   },
+   {
+    "text": "Gesetz,",
+    "start": 18.18,
+    "end": 18.62,
+    "type": "word",
+    "logprob": -0.000010285906293055242
+   },
+   {
+    "text": "IHK.",
+    "start": 18.96,
+    "end": 19.46,
+    "type": "word",
+    "logprob": -0.00015898620995358215
+   },
+   {
+    "text": "Sie",
+    "start": 20.18,
+    "end": 20.28,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "wählt",
+    "start": 20.32,
+    "end": 20.56,
+    "type": "word",
+    "logprob": -0.0000024557014057791093
+   },
+   {
+    "text": "mit",
+    "start": 20.76,
+    "end": 20.9,
+    "type": "word",
+    "logprob": -0.0003297977091278881
+   },
+   {
+    "text": "Umsatzsteuer,",
+    "start": 21.06,
+    "end": 21.72,
+    "type": "word",
+    "logprob": -0.000009353298187656597
+   },
+   {
+    "text": "nicht",
+    "start": 21.88,
+    "end": 22.06,
+    "type": "word",
+    "logprob": -0.008741564117372036
+   },
+   {
+    "text": "Kleinunternehmer.",
+    "start": 22.1,
+    "end": 22.78,
+    "type": "word",
+    "logprob": -0.005121262994447641
+   },
+   {
+    "text": "Warum?",
+    "start": 23.74,
+    "end": 24.02,
+    "type": "word",
+    "logprob": -0.0000024636418191429734
+   },
+   {
+    "text": "Betriebe",
+    "start": 24.66,
+    "end": 25.02,
+    "type": "word",
+    "logprob": -0.000045029699279552915
+   },
+   {
+    "text": "mit",
+    "start": 25.06,
+    "end": 25.2,
+    "type": "word",
+    "logprob": -0.000002264974000354414
+   },
+   {
+    "text": "Vorsteuerabzug",
+    "start": 25.26,
+    "end": 26.06,
+    "type": "word",
+    "logprob": -0.0000482355591040167
+   },
+   {
+    "text": "holen",
+    "start": 26.1,
+    "end": 26.34,
+    "type": "word",
+    "logprob": -0.0007499027997255325
+   },
+   {
+    "text": "von",
+    "start": 26.4,
+    "end": 26.54,
+    "type": "word",
+    "logprob": -0.00029273517429828644
+   },
+   {
+    "text": "hundertneun",
+    "start": 26.58,
+    "end": 27.08,
+    "type": "word",
+    "logprob": -0.07339765535380138
+   },
+   {
+    "text": "Euro",
+    "start": 27.22,
+    "end": 27.5,
+    "type": "word",
+    "logprob": -0.00004029192859889008
+   },
+   {
+    "text": "siebzehn",
+    "start": 27.72,
+    "end": 28.08,
+    "type": "word",
+    "logprob": -0.0013504097582739405
+   },
+   {
+    "text": "Steuer",
+    "start": 28.14,
+    "end": 28.42,
+    "type": "word",
+    "logprob": -0.000019788545614574105
+   },
+   {
+    "text": "zurück.",
+    "start": 28.52,
+    "end": 28.78,
+    "type": "word",
+    "logprob": -0.0007251018640610189
+   },
+   {
+    "text": "Ihr",
+    "start": 29.4,
+    "end": 29.52,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "Einkauf",
+    "start": 29.58,
+    "end": 30.02,
+    "type": "word",
+    "logprob": -0.00007045020902296528
+   },
+   {
+    "text": "bliebe",
+    "start": 30.06,
+    "end": 30.26,
+    "type": "word",
+    "logprob": -0.00004780141474232854
+   },
+   {
+    "text": "sonst",
+    "start": 30.32,
+    "end": 30.56,
+    "type": "word",
+    "logprob": -0.0000058412379075889476
+   },
+   {
+    "text": "neunzehn",
+    "start": 30.62,
+    "end": 30.96,
+    "type": "word",
+    "logprob": -0.01198484746167594
+   },
+   {
+    "text": "Prozent",
+    "start": 31,
+    "end": 31.36,
+    "type": "word",
+    "logprob": -0.000007033323527139146
+   },
+   {
+    "text": "teurer.",
+    "start": 31.4,
+    "end": 31.74,
+    "type": "word",
+    "logprob": -0.00021633356501687167
+   },
+   {
+    "text": "Der",
+    "start": 32.38,
+    "end": 32.5,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "Haken:",
+    "start": 32.54,
+    "end": 32.84,
+    "type": "word",
+    "logprob": -0.000023125307355561137
+   },
+   {
+    "text": "fünf",
+    "start": 33.02,
+    "end": 33.2,
+    "type": "word",
+    "logprob": -0.0009308296139352024
+   },
+   {
+    "text": "Jahre",
+    "start": 33.26,
+    "end": 33.46,
+    "type": "word",
+    "logprob": -0.02110394835472107
+   },
+   {
+    "text": "Bindung.",
+    "start": 33.52,
+    "end": 33.84,
+    "type": "word",
+    "logprob": -0.00002689592884053127
+   },
+   {
+    "text": "Als",
+    "start": 34.58,
+    "end": 34.72,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "Nächstes:",
+    "start": 34.76,
+    "end": 35.14,
+    "type": "word",
+    "logprob": -0.0006974960641754377
+   },
+   {
+    "text": "Was",
+    "start": 35.64,
+    "end": 35.84,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "muss",
+    "start": 35.88,
+    "end": 36.02,
+    "type": "word",
+    "logprob": -0.000008702239938429557
+   },
+   {
+    "text": "auf",
+    "start": 36.08,
+    "end": 36.18,
+    "type": "word",
+    "logprob": -0.000001311301275563892
+   },
+   {
+    "text": "Ihre",
+    "start": 36.24,
+    "end": 36.38,
+    "type": "word",
+    "logprob": -0.000007748573807475623
+   },
+   {
+    "text": "Rechnung?",
+    "start": 36.46,
+    "end": 36.8,
+    "type": "word",
+    "logprob": -0.34415728515962957
+   },
+   {
+    "text": "Kommentiere:",
+    "start": 37.84,
+    "end": 38.36,
+    "type": "word",
+    "logprob": -0.00038813478507411975
+   },
+   {
+    "text": "\"Steuer\".",
+    "start": 38.62,
+    "end": 39.02,
+    "type": "word",
+    "logprob": -0.25610400399374256
+   },
+   {
+    "text": "Ich",
+    "start": 39.48,
+    "end": 39.6,
+    "type": "word",
+    "logprob": -0.3075297772884369
+   },
+   {
+    "text": "schicke",
+    "start": 39.64,
+    "end": 39.82,
+    "type": "word",
+    "logprob": -0.00007579375025151032
+   },
+   {
+    "text": "dir",
+    "start": 39.86,
+    "end": 39.94,
+    "type": "word",
+    "logprob": -0.632858395576477
+   },
+   {
+    "text": "den",
+    "start": 39.98,
+    "end": 40.12,
+    "type": "word",
+    "logprob": -0.000006794906312279636
+   },
+   {
+    "text": "Prompt.",
+    "start": 40.14,
+    "end": 40.44,
+    "type": "word",
+    "logprob": -0.0002643828047439456
+   },
+   {
+    "text": "In",
+    "start": 41.28,
+    "end": 41.42,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "zehn",
+    "start": 41.48,
+    "end": 41.62,
+    "type": "word",
+    "logprob": -0.000036000557884108275
+   },
+   {
+    "text": "Minuten",
+    "start": 41.66,
+    "end": 42.02,
+    "type": "word",
+    "logprob": -0.0000290866428258596
+   },
+   {
+    "text": "rechnest",
+    "start": 42.06,
+    "end": 42.34,
+    "type": "word",
+    "logprob": -0.0007483099711862451
+   },
+   {
+    "text": "du",
+    "start": 42.38,
+    "end": 42.46,
+    "type": "word",
+    "logprob": -8.344646857949556e-7
+   },
+   {
+    "text": "beide",
+    "start": 42.48,
+    "end": 42.68,
+    "type": "word",
+    "logprob": -0.000003099436753473128
+   },
+   {
+    "text": "Wege",
+    "start": 42.72,
+    "end": 42.88,
+    "type": "word",
+    "logprob": -0.000032066785934148356
+   },
+   {
+    "text": "durch.",
+    "start": 42.94,
+    "end": 43.22,
+    "type": "word",
+    "logprob": -0.00001867592762512989
+   }
+  ]
+ },
+ {
+  "text": "Wie viel Umsatz macht ein Unternehmen, das eine KI hundert Tage lang ganz alleine führt? Ich probiere das aus. Die Firma der KI verkauft Shirts mit Logo an kleine Betriebe, bestickt erst auf Bestellung. Briefe stehen, Preis offen. Heute mit oder ohne Umsatzsteuer? Claude, Marge angehängt, Websuche, Gesetz, IHK. Sie wählt mit Umsatzsteuer, nicht Kleinunternehmer. Warum? Betriebe mit Vorsteuerabzug holen von hundertneun Euro siebzehn Steuer zurück. Ihr Einkauf bliebe sonst neunzehn Prozent teurer. Der Haken: fünf Jahre Bindung. Als Nächstes: Was muss auf Ihre Rechnung? Kommentiere: Steuer. Ich schick dir den Prompt. In zehn Minuten rechnest du beide Wege durch. [Klingelton]",
+  "words": [
+   {
+    "text": "Wie",
+    "start": 0.1,
+    "end": 0.2,
+    "type": "word",
+    "logprob": -0.0019302800064906478
+   },
+   {
+    "text": "viel",
+    "start": 0.22,
+    "end": 0.34,
+    "type": "word",
+    "logprob": -0.0000290866428258596
+   },
+   {
+    "text": "Umsatz",
+    "start": 0.4,
+    "end": 0.72,
+    "type": "word",
+    "logprob": -0.0000019073468138230965
+   },
+   {
+    "text": "macht",
+    "start": 0.76,
+    "end": 0.92,
+    "type": "word",
+    "logprob": -0.000002861018856492592
+   },
+   {
+    "text": "ein",
+    "start": 0.94,
+    "end": 1.06,
+    "type": "word",
+    "logprob": -1.1920928244535389e-7
+   },
+   {
+    "text": "Unternehmen,",
+    "start": 1.1,
+    "end": 1.52,
+    "type": "word",
+    "logprob": -0.0003667931960033381
+   },
+   {
+    "text": "das",
+    "start": 1.6,
+    "end": 1.74,
+    "type": "word",
+    "logprob": -0.00003135155202471651
+   },
+   {
+    "text": "eine",
+    "start": 1.8,
+    "end": 1.98,
+    "type": "word",
+    "logprob": -0.0000032186455882765586
+   },
+   {
+    "text": "KI",
+    "start": 2.02,
+    "end": 2.38,
+    "type": "word",
+    "logprob": -0.00019894051365554333
+   },
+   {
+    "text": "hundert",
+    "start": 2.46,
+    "end": 2.82,
+    "type": "word",
+    "logprob": -0.006995589472353458
+   },
+   {
+    "text": "Tage",
+    "start": 2.86,
+    "end": 3.1,
+    "type": "word",
+    "logprob": -0.0000032186455882765586
+   },
+   {
+    "text": "lang",
+    "start": 3.16,
+    "end": 3.32,
+    "type": "word",
+    "logprob": -0.000007629365427419543
+   },
+   {
+    "text": "ganz",
+    "start": 3.4,
+    "end": 3.62,
+    "type": "word",
+    "logprob": -0.0000020265558760002023
+   },
+   {
+    "text": "alleine",
+    "start": 3.68,
+    "end": 3.98,
+    "type": "word",
+    "logprob": -0.00002407998726994265
+   },
+   {
+    "text": "führt?",
+    "start": 4.019,
+    "end": 4.24,
+    "type": "word",
+    "logprob": -0.00007182050467235968
+   },
+   {
+    "text": "Ich",
+    "start": 5.02,
+    "end": 5.1,
+    "type": "word",
+    "logprob": -0.000011086402082582936
+   },
+   {
+    "text": "probiere",
+    "start": 5.14,
+    "end": 5.38,
+    "type": "word",
+    "logprob": -0.21448130458884407
+   },
+   {
+    "text": "das",
+    "start": 5.42,
+    "end": 5.54,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "aus.",
+    "start": 5.62,
+    "end": 5.78,
+    "type": "word",
+    "logprob": -0.000007688959613005864
+   },
+   {
+    "text": "Die",
+    "start": 6.2,
+    "end": 6.28,
+    "type": "word",
+    "logprob": -0.00004649054244509898
+   },
+   {
+    "text": "Firma",
+    "start": 6.32,
+    "end": 6.56,
+    "type": "word",
+    "logprob": -0.00042083943844772875
+   },
+   {
+    "text": "der",
+    "start": 6.6,
+    "end": 6.72,
+    "type": "word",
+    "logprob": -0.00005876845170860179
+   },
+   {
+    "text": "KI",
+    "start": 6.76,
+    "end": 7.04,
+    "type": "word",
+    "logprob": -0.00017855956684798002
+   },
+   {
+    "text": "verkauft",
+    "start": 7.08,
+    "end": 7.46,
+    "type": "word",
+    "logprob": -0.000013351351299206726
+   },
+   {
+    "text": "Shirts",
+    "start": 7.5,
+    "end": 7.8,
+    "type": "word",
+    "logprob": -0.0017528659664094448
+   },
+   {
+    "text": "mit",
+    "start": 7.84,
+    "end": 7.98,
+    "type": "word",
+    "logprob": -0.000008821448318485636
+   },
+   {
+    "text": "Logo",
+    "start": 8.039,
+    "end": 8.3,
+    "type": "word",
+    "logprob": -0.00006186770770000294
+   },
+   {
+    "text": "an",
+    "start": 8.36,
+    "end": 8.48,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "kleine",
+    "start": 8.52,
+    "end": 8.74,
+    "type": "word",
+    "logprob": -0.00003158996332786046
+   },
+   {
+    "text": "Betriebe,",
+    "start": 8.78,
+    "end": 9.14,
+    "type": "word",
+    "logprob": -0.000027615465316759786
+   },
+   {
+    "text": "bestickt",
+    "start": 9.54,
+    "end": 9.86,
+    "type": "word",
+    "logprob": -0.0004951733135385439
+   },
+   {
+    "text": "erst",
+    "start": 9.9,
+    "end": 10.06,
+    "type": "word",
+    "logprob": -0.00005543078441405669
+   },
+   {
+    "text": "auf",
+    "start": 10.1,
+    "end": 10.22,
+    "type": "word",
+    "logprob": -0.00001645074735279195
+   },
+   {
+    "text": "Bestellung.",
+    "start": 10.24,
+    "end": 10.68,
+    "type": "word",
+    "logprob": -0.00004312024194322558
+   },
+   {
+    "text": "Briefe",
+    "start": 10.88,
+    "end": 11.14,
+    "type": "word",
+    "logprob": -0.003558697100970676
+   },
+   {
+    "text": "stehen,",
+    "start": 11.18,
+    "end": 11.44,
+    "type": "word",
+    "logprob": -0.000024777453810591915
+   },
+   {
+    "text": "Preis",
+    "start": 11.68,
+    "end": 11.98,
+    "type": "word",
+    "logprob": -0.000032066785934148356
+   },
+   {
+    "text": "offen.",
+    "start": 12.2,
+    "end": 12.46,
+    "type": "word",
+    "logprob": -0.0011137828114430686
+   },
+   {
+    "text": "Heute",
+    "start": 13.06,
+    "end": 13.32,
+    "type": "word",
+    "logprob": -0.0002127659390680492
+   },
+   {
+    "text": "mit",
+    "start": 13.54,
+    "end": 13.72,
+    "type": "word",
+    "logprob": -0.05632723122835159
+   },
+   {
+    "text": "oder",
+    "start": 13.92,
+    "end": 14.06,
+    "type": "word",
+    "logprob": -0.000006318072337307967
+   },
+   {
+    "text": "ohne",
+    "start": 14.2,
+    "end": 14.36,
+    "type": "word",
+    "logprob": -0.0000029802276912960224
+   },
+   {
+    "text": "Umsatzsteuer?",
+    "start": 14.44,
+    "end": 15.06,
+    "type": "word",
+    "logprob": -0.0443247736525686
+   },
+   {
+    "text": "Claude,",
+    "start": 15.88,
+    "end": 16.16,
+    "type": "word",
+    "logprob": -0.002904388587921858
+   },
+   {
+    "text": "Marge",
+    "start": 16.44,
+    "end": 16.68,
+    "type": "word",
+    "logprob": -0.00864086449118986
+   },
+   {
+    "text": "angehängt,",
+    "start": 16.74,
+    "end": 17.2,
+    "type": "word",
+    "logprob": -0.0003467334820008716
+   },
+   {
+    "text": "Websuche,",
+    "start": 17.38,
+    "end": 17.84,
+    "type": "word",
+    "logprob": -0.3612271745945084
+   },
+   {
+    "text": "Gesetz,",
+    "start": 18.18,
+    "end": 18.62,
+    "type": "word",
+    "logprob": -0.0000057901007234509705
+   },
+   {
+    "text": "IHK.",
+    "start": 18.96,
+    "end": 19.46,
+    "type": "word",
+    "logprob": -0.0001350397055830399
+   },
+   {
+    "text": "Sie",
+    "start": 20.18,
+    "end": 20.28,
+    "type": "word",
+    "logprob": -1.1920928244535389e-7
+   },
+   {
+    "text": "wählt",
+    "start": 20.32,
+    "end": 20.56,
+    "type": "word",
+    "logprob": -0.0000010013572136813308
+   },
+   {
+    "text": "mit",
+    "start": 20.76,
+    "end": 20.9,
+    "type": "word",
+    "logprob": -0.0001984637783607468
+   },
+   {
+    "text": "Umsatzsteuer,",
+    "start": 21.06,
+    "end": 21.72,
+    "type": "word",
+    "logprob": -0.000007876951048484234
+   },
+   {
+    "text": "nicht",
+    "start": 21.88,
+    "end": 22.06,
+    "type": "word",
+    "logprob": -0.00043418517452664673
+   },
+   {
+    "text": "Kleinunternehmer.",
+    "start": 22.1,
+    "end": 22.78,
+    "type": "word",
+    "logprob": -0.004427403028838693
+   },
+   {
+    "text": "Warum?",
+    "start": 23.74,
+    "end": 24.02,
+    "type": "word",
+    "logprob": -0.0000011920893273990412
+   },
+   {
+    "text": "Betriebe",
+    "start": 24.66,
+    "end": 25.02,
+    "type": "word",
+    "logprob": -0.00003634288393783436
+   },
+   {
+    "text": "mit",
+    "start": 25.06,
+    "end": 25.2,
+    "type": "word",
+    "logprob": -0.0000033378546504536644
+   },
+   {
+    "text": "Vorsteuerabzug",
+    "start": 25.26,
+    "end": 26.06,
+    "type": "word",
+    "logprob": -0.00006861870575188991
+   },
+   {
+    "text": "holen",
+    "start": 26.1,
+    "end": 26.34,
+    "type": "word",
+    "logprob": -0.0010251511121168733
+   },
+   {
+    "text": "von",
+    "start": 26.4,
+    "end": 26.54,
+    "type": "word",
+    "logprob": -0.0003303935518488288
+   },
+   {
+    "text": "hundertneun",
+    "start": 26.58,
+    "end": 27.08,
+    "type": "word",
+    "logprob": -0.04130494860816147
+   },
+   {
+    "text": "Euro",
+    "start": 27.22,
+    "end": 27.5,
+    "type": "word",
+    "logprob": -0.00004088794958079234
+   },
+   {
+    "text": "siebzehn",
+    "start": 27.72,
+    "end": 28.08,
+    "type": "word",
+    "logprob": -0.0009242638479634024
+   },
+   {
+    "text": "Steuer",
+    "start": 28.14,
+    "end": 28.42,
+    "type": "word",
+    "logprob": -0.00003790783375734463
+   },
+   {
+    "text": "zurück.",
+    "start": 28.52,
+    "end": 28.78,
+    "type": "word",
+    "logprob": -0.0006451405244141435
+   },
+   {
+    "text": "Ihr",
+    "start": 29.4,
+    "end": 29.52,
+    "type": "word",
+    "logprob": -1.1920928244535389e-7
+   },
+   {
+    "text": "Einkauf",
+    "start": 29.58,
+    "end": 30.02,
+    "type": "word",
+    "logprob": -0.00008034383063204587
+   },
+   {
+    "text": "bliebe",
+    "start": 30.06,
+    "end": 30.26,
+    "type": "word",
+    "logprob": -0.00004207980540134789
+   },
+   {
+    "text": "sonst",
+    "start": 30.32,
+    "end": 30.56,
+    "type": "word",
+    "logprob": -0.000007271740287251305
+   },
+   {
+    "text": "neunzehn",
+    "start": 30.62,
+    "end": 30.96,
+    "type": "word",
+    "logprob": -0.004222377934638644
+   },
+   {
+    "text": "Prozent",
+    "start": 31,
+    "end": 31.36,
+    "type": "word",
+    "logprob": -0.0000107287787614041
+   },
+   {
+    "text": "teurer.",
+    "start": 31.4,
+    "end": 31.74,
+    "type": "word",
+    "logprob": -0.00012882916793647122
+   },
+   {
+    "text": "Der",
+    "start": 32.38,
+    "end": 32.5,
+    "type": "word",
+    "logprob": 0
+   },
+   {
+    "text": "Haken:",
+    "start": 32.54,
+    "end": 32.84,
+    "type": "word",
+    "logprob": -0.000018178714223419472
+   },
+   {
+    "text": "fünf",
+    "start": 33.02,
+    "end": 33.2,
+    "type": "word",
+    "logprob": -0.0001711698860162869
+   },
+   {
+    "text": "Jahre",
+    "start": 33.26,
+    "end": 33.46,
+    "type": "word",
+    "logprob": -0.033772438764572144
+   },
+   {
+    "text": "Bindung.",
+    "start": 33.52,
+    "end": 33.84,
+    "type": "word",
+    "logprob": -0.000031455195539820124
+   },
+   {
+    "text": "Als",
+    "start": 34.58,
+    "end": 34.72,
+    "type": "word",
+    "logprob": -1.1920928244535389e-7
+   },
+   {
+    "text": "Nächstes:",
+    "start": 34.76,
+    "end": 35.14,
+    "type": "word",
+    "logprob": -0.00017843486441254045
+   },
+   {
+    "text": "Was",
+    "start": 35.64,
+    "end": 35.84,
+    "type": "word",
+    "logprob": -3.576278118089249e-7
+   },
+   {
+    "text": "muss",
+    "start": 35.88,
+    "end": 36.04,
+    "type": "word",
+    "logprob": -0.0000017881377516459906
+   },
+   {
+    "text": "auf",
+    "start": 36.08,
+    "end": 36.18,
+    "type": "word",
+    "logprob": -9.536738616588991e-7
+   },
+   {
+    "text": "Ihre",
+    "start": 36.24,
+    "end": 36.38,
+    "type": "word",
+    "logprob": -0.000005006777428206988
+   },
+   {
+    "text": "Rechnung?",
+    "start": 36.46,
+    "end": 36.8,
+    "type": "word",
+    "logprob": -0.278596944278484
+   },
+   {
+    "text": "Kommentiere:",
+    "start": 37.84,
+    "end": 38.36,
+    "type": "word",
+    "logprob": -0.00039107841014936656
+   },
+   {
+    "text": "Steuer.",
+    "start": 38.68,
+    "end": 39.04,
+    "type": "word",
+    "logprob": -0.06726539986474174
+   },
+   {
+    "text": "Ich",
+    "start": 39.5,
+    "end": 39.6,
+    "type": "word",
+    "logprob": -0.00005447716102935374
+   },
+   {
+    "text": "schick",
+    "start": 39.64,
+    "end": 39.82,
+    "type": "word",
+    "logprob": -0.00001567584672557132
+   },
+   {
+    "text": "dir",
+    "start": 39.84,
+    "end": 39.94,
+    "type": "word",
+    "logprob": -0.6330345869064331
+   },
+   {
+    "text": "den",
+    "start": 39.98,
+    "end": 40.12,
+    "type": "word",
+    "logprob": -0.000037431014789035544
+   },
+   {
+    "text": "Prompt.",
+    "start": 40.14,
+    "end": 40.44,
+    "type": "word",
+    "logprob": -0.00012047020870146039
+   },
+   {
+    "text": "In",
+    "start": 41.28,
+    "end": 41.42,
+    "type": "word",
+    "logprob": -2.3841855067985307e-7
+   },
+   {
+    "text": "zehn",
+    "start": 41.48,
+    "end": 41.62,
+    "type": "word",
+    "logprob": -0.0000017881377516459906
+   },
+   {
+    "text": "Minuten",
+    "start": 41.66,
+    "end": 42.02,
+    "type": "word",
+    "logprob": -0.00004005352093372494
+   },
+   {
+    "text": "rechnest",
+    "start": 42.06,
+    "end": 42.34,
+    "type": "word",
+    "logprob": -0.0008369355696231651
+   },
+   {
+    "text": "du",
+    "start": 42.38,
+    "end": 42.46,
+    "type": "word",
+    "logprob": -9.536738616588991e-7
+   },
+   {
+    "text": "beide",
+    "start": 42.48,
+    "end": 42.7,
+    "type": "word",
+    "logprob": -0.000012516897186287679
+   },
+   {
+    "text": "Wege",
+    "start": 42.72,
+    "end": 42.92,
+    "type": "word",
+    "logprob": -0.000032782016205601394
+   },
+   {
+    "text": "durch.",
+    "start": 42.94,
+    "end": 43.22,
+    "type": "word",
+    "logprob": -0.000011900982447817418
+   }
+  ]
+ }
+]

@@ -1,0 +1,26 @@
+Wie viel Umsatz macht ein Unternehmen, das eine KI 100 Tage lang ganz alleine führt? Heute kommen die Adressen in ihre ersten 5 Werbebriefe.
+
+Stand: Die Firma der KI verkauft Shirts mit Logo an kleine Handwerks- und Baubetriebe, bestickt erst auf Bestellung. Der Werbebrief steht als Word-Datei mit Platzhaltern, die Empfängerliste mit 5 geprüften Adressen als Excel-Datei.
+
+So geht das für die eigene Firma mit Claude:
+1. Auf claude.ai einen neuen Chat öffnen und über „+“ den Brief (Word) und die Liste (Excel) anhängen.
+2. Fragen: „Mach daraus fertige Serienbriefe, einen pro Firma. Nimm nur die Firmen, die laut Liste rausgehen können. Füll nur die Platzhalter, für die es in Brief oder Liste einen Beleg gibt. Sag mir, welche offen bleiben und was du nicht prüfen kannst. Erfinde nichts. Gib mir die Briefe als Word-Datei zurück.“
+3. Die gelben Felder selbst füllen, am schnellsten mit Suchen und Ersetzen in Word.
+
+Ergebnis im echten Lauf (etwa 1 Minute): eine Word-Datei mit 5 Briefen, einer pro Seite, Logo und Layout übernommen. Bei einem Brief soll die Postleitzahl vor dem Druck noch geprüft werden.
+
+Warum nur 4 Felder pro Brief?
+- Nur Firmenname, Straße, PLZ und Ort und die Quelle der Adresse stehen in der Liste.
+- Absender, Datum und Versandkosten nennt keine der beiden Dateien. Sogar das Prüfdatum nimmt Claude bewusst nicht als Briefdatum.
+
+Der Haken: Versandfertig sind die Briefe noch nicht. Ob sie ankommen, ob der Brieftext rechtlich reicht und ob eine Firma Werbung schon abgelehnt hat, kann Claude nicht prüfen. Absender eintragen, drucken und Porto zahlen kann nur ein Mensch.
+
+Namen und Adressen zeige ich nicht.
+
+Kommentiere „Serienbrief“, und ich schick dir die Anleitung mit dem Prompt zum Kopieren. Damit hast du in 10 Minuten eigene Serienbriefe für deine Firma.
+
+Offen bleibt: Was kostet der Versand der Shirts?
+
+(Fiktives Experiment, keine echten Umsätze.)
+
+#claude #ki #gruendung #selbststaendig #kundengewinnung #firmenshirts

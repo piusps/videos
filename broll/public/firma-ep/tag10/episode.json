@@ -1,0 +1,852 @@
+{
+ "tag": 10,
+ "folge": 10,
+ "serientag": 3,
+ "ersteFolgeDesTages": false,
+ "date": "2026-10-30",
+ "keyword": "Website",
+ "audio": {
+  "voice": "voice.mp3",
+  "words": "words.json",
+  "musicStart": 57.325,
+  "musicCurve": [
+   [
+    0,
+    0.05
+   ],
+   [
+    19.1,
+    0.05
+   ],
+   [
+    19.35,
+    0.018
+   ],
+   [
+    20.85,
+    0.018
+   ],
+   [
+    20.95,
+    0.06
+   ],
+   [
+    21.7,
+    0.035
+   ],
+   [
+    45.43,
+    0.035
+   ],
+   [
+    46.43,
+    0
+   ]
+  ],
+  "musicGain": 1.5
+ },
+ "plan": {
+  "title": "GRÜNDUNGSPLAN",
+  "steps": [
+   "PRODUKT",
+   "KUNDE",
+   "DRUCK",
+   "PREIS",
+   "PARTNER",
+   "NAME",
+   "LOGO",
+   "WEBSITE",
+   "ERSTER\nUMSATZ"
+  ],
+  "current": 7,
+  "done": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ]
+ },
+ "hook": {
+  "headline": [
+   "Wie viel Umsatz macht",
+   "eine KI in 100 Tagen?"
+  ],
+  "hot": 1,
+  "stamp": "GANZ ALLEINE.",
+  "at": {
+   "ki": "Umsatz",
+   "ein": "Unternehmen",
+   "unt": "Unternehmen",
+   "aufbaut": "100",
+   "ganz": "ganz",
+   "alleine": "alleine",
+   "ich": "Ich",
+   "probier": "probier",
+   "das": "das@5",
+   "aus": "aus@5.3",
+   "end": "Die@6.5-0.08"
+  },
+  "instant": true,
+  "keepHeadline": true,
+  "planFrom": "Ich-0.05"
+ },
+ "claude": {
+  "moveUp": 99,
+  "steps": [],
+  "at": "Heute+0.15",
+  "attach": {
+   "label": "Kolonnenshirt-Logo.svg",
+   "sub": "dein Logo",
+   "at": "Logo@15.5+0.1"
+  },
+  "prompt": "Im Anhang sind mein Logo als SVG und mein letztes Ergebnis. Ich verkaufe Firmenshirts mit gesticktem Logo an kleine Handwerks- und Baubetriebe unter zehn Leuten, gestickt erst auf Bestellung über Printful. Mein letztes Ergebnis: Das Logo ist der dunkelblaue Block mit weißer Schrift „KOLONNEN SHIRT“, zwei Garnfarben. Mein Preisvorschlag ist 109 Euro brutto für fünf Shirts und 29,90 Euro für ein nachbestelltes Einzelshirt. Jetzt brauche ich eine Website, denn Betriebe schauen nach, bevor sie bestellen. Bau mir eine einfache Startseite als Vorschau hier im Chat, mit meinem Logo, fürs Handy gedacht. Schreib nur, was belegt ist. Sechzig Grad Wäsche kann ich noch nicht versprechen. Entscheide, welche drei Dinge ganz oben stehen, und begründe es mit zwei bis drei konkreten Gründen. Sag mir auch, was noch fehlt, bevor die Seite online gehen darf. Erfinde nichts.",
+  "typing": [
+   [
+    "Logo@15.5",
+    ""
+   ]
+  ],
+  "send": "Startseite-0.5"
+ },
+ "acts": [
+  {
+   "type": "recap",
+   "at": "Die@6.5-0.08",
+   "product": {
+    "label": "SHIRTS MIT LOGO",
+    "at": "verkauft"
+   },
+   "banner": {
+    "text": "erst auf Bestellung\nbestickt",
+    "at": "bestickt"
+   },
+   "last": {
+    "step": 6,
+    "label": "BLAUER BLOCK",
+    "at": "Logo@11.5"
+   },
+   "today": {
+    "step": 7,
+    "pill": "HEUTE: WEBSITE",
+    "at": "Heute"
+   },
+   "bot": {
+    "dx": 0.55,
+    "s": 0.7
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "Startseite-0.5",
+   "src": "firma-ep/tag10/shots/01-prompt-mit-anhang.png",
+   "crop": [
+    214,
+    402
+   ],
+   "cam": [
+    [
+     "Startseite-0.5",
+     1.9,
+     330,
+     310
+    ],
+    [
+     "Startseite-0.49",
+     1.9,
+     330,
+     310
+    ]
+   ],
+   "marks": [
+    {
+     "x": 228,
+     "y": 220,
+     "w": 180,
+     "h": 176,
+     "at": "Startseite-0.35",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Startseite-0.05",
+   "src": "firma-ep/tag10/shots/01-prompt-mit-anhang.png",
+   "crop": [
+    597,
+    647
+   ],
+   "cam": [
+    [
+     "Startseite-0.05",
+     1.75,
+     340,
+     622
+    ],
+    [
+     "Startseite-0.04",
+     1.75,
+     340,
+     622
+    ]
+   ],
+   "marks": [
+    {
+     "x": 48,
+     "y": 600,
+     "w": 910,
+     "h": 44,
+     "at": "Startseite+0.1",
+     "color": "yellow"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Handy.@18-0.08",
+   "src": "firma-ep/tag10/shots/05-artifact-karte.png",
+   "crop": [
+    176,
+    268
+   ],
+   "cam": [
+    [
+     "Handy.@18-0.08",
+     1.45,
+     380,
+     222
+    ],
+    [
+     "Handy.@18-0.07",
+     1.45,
+     380,
+     222
+    ],
+    [
+     "Handy.@18+0.35",
+     1.6,
+     370,
+     222
+    ]
+   ],
+   "marks": [
+    {
+     "x": 34,
+     "y": 180,
+     "w": 660,
+     "h": 86,
+     "at": "Handy.@18+0.15",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "claudeShot",
+   "at": "Ganz@19-0.1",
+   "src": "firma-ep/tag10/shots/handy-zonen.png",
+   "cam": [
+    [
+     "Ganz@19-0.1",
+     0.86,
+     500,
+     600
+    ],
+    [
+     "oben@19",
+     0.92,
+     500,
+     560
+    ],
+    [
+     "Firmenshirts",
+     1.4,
+     470,
+     440
+    ],
+    [
+     "Preis,",
+     1.32,
+     500,
+     717
+    ],
+    [
+     "Bestellknopf.",
+     1.5,
+     500,
+     950
+    ],
+    [
+     "Bestellknopf.:end",
+     1.0,
+     500,
+     640
+    ]
+   ],
+   "marks": [
+    {
+     "x": 217,
+     "y": 303,
+     "w": 504,
+     "h": 230,
+     "at": "Firmenshirts",
+     "color": "orange"
+    },
+    {
+     "x": 217,
+     "y": 556,
+     "w": 567,
+     "h": 322,
+     "at": "Preis,",
+     "color": "orange"
+    },
+    {
+     "x": 217,
+     "y": 901,
+     "w": 567,
+     "h": 101,
+     "at": "Bestellknopf.",
+     "color": "orange"
+    }
+   ]
+  },
+  {
+   "type": "why",
+   "at": "Bestellknopf.:end+0.1",
+   "label": "WARUM DIESE DREI?",
+   "icon": "phone",
+   "pill": " ",
+   "pillAt": "Bestellknopf.:end+0.1",
+   "cards": [
+    {
+     "icon": "people",
+     "small": "Für mich?",
+     "at": "Bestellknopf.:end+1.4"
+    },
+    {
+     "icon": "euro",
+     "small": "Was kostet es?",
+     "at": "Bestellknopf.:end+2.6"
+    },
+    {
+     "icon": "check",
+     "small": "Wie bestellen?",
+     "at": "Bestellknopf.:end+3.8"
+    }
+   ],
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "claudeShot",
+   "at": "ersten-0.1",
+   "src": "firma-ep/tag10/shots/handy-falz.png",
+   "title": "ERSTER BLICK",
+   "cam": [
+    [
+     "ersten-0.1",
+     0.84,
+     500,
+     650
+    ],
+    [
+     "Blick.",
+     0.95,
+     500,
+     720
+    ]
+   ],
+   "marks": []
+  },
+  {
+   "type": "question",
+   "at": "Haken:-0.12",
+   "lines": [
+    "Haken"
+   ],
+   "card": false,
+   "stamp": null,
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "question",
+   "at": "Als@34-0.12",
+   "pill": "ALS NÄCHSTES",
+   "lines": [
+    "Was muss sie",
+    "anmelden?"
+   ],
+   "pop": "Als@34",
+   "stamp": null,
+   "bubble": "anmelden?",
+   "bot": {
+    "dx": 1.25,
+    "dz": -0.9,
+    "s": 0.62
+   }
+  },
+  {
+   "type": "end",
+   "at": "Kommentiere-0.15",
+   "keywordAt": "Website@37",
+   "plane": [
+    "Website@37:end",
+    "Damit+0.2"
+   ],
+   "itemsAt": "Frage@39.5",
+   "copyAt": "Damit",
+   "itemTag": "DM",
+   "items": [
+    {
+     "label": "Frage + Online-Checkliste",
+     "snip": "„Bau mir eine Startseite …“ · Impressum · Datenschutz"
+    }
+   ],
+   "result": {
+    "at": "Damit-0.1",
+    "line1": "in wenigen Minuten",
+    "line1At": "Minuten",
+    "parts": [
+     {
+      "text": "dein",
+      "at": "deinen@42"
+     },
+     {
+      "text": "Startseiten-Entwurf",
+      "at": "deinen@42+0.3",
+      "hot": true
+     }
+    ]
+   }
+  }
+ ],
+ "overlays": [
+  {
+   "kind": "partners",
+   "from": 0,
+   "to": "Ich-0.4",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag10/shots/handy-hook.png",
+    "srcW": 828,
+    "sx": 0,
+    "sy": 0,
+    "sw": 828,
+    "sh": 1351,
+    "w": 420,
+    "y": 650,
+    "at": -1,
+    "to": "Ich-0.4"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "das@1.5-0.25",
+   "to": "KI@2-0.08",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag10/shots/handy-hook.png",
+    "srcW": 828,
+    "sx": 50,
+    "sy": 330,
+    "sw": 720,
+    "sh": 150,
+    "w": 620,
+    "y": 760,
+    "at": "das@1.5-0.25",
+    "to": "KI@2-0.08"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "KI@2",
+   "to": "Tage-0.05",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag10/shots/handy-hook.png",
+    "srcW": 828,
+    "sx": 60,
+    "sy": 650,
+    "sw": 710,
+    "sh": 400,
+    "w": 600,
+    "y": 880,
+    "at": "KI@2",
+    "to": "Tage-0.05"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "Tage",
+   "to": "ganz-0.05",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag10/shots/handy-hook.png",
+    "srcW": 828,
+    "sx": 60,
+    "sy": 1085,
+    "sw": 710,
+    "sh": 130,
+    "w": 620,
+    "y": 1150,
+    "at": "Tage",
+    "to": "ganz-0.05"
+   }
+  },
+  {
+   "kind": "partners",
+   "from": "führt?",
+   "to": "Ich-0.45",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag10/shots/handy-hook.png",
+    "srcW": 828,
+    "sx": 55,
+    "sy": 92,
+    "sw": 268,
+    "sh": 126,
+    "w": 440,
+    "y": 690,
+    "at": "führt?",
+    "to": "Ich-0.45"
+   }
+  },
+  {
+   "kind": "pill",
+   "from": "Heute+0.15",
+   "to": "Logo@15.5-0.15",
+   "text": "HEUTE: WEBSITE",
+   "y": 1110,
+   "color": "gold"
+  },
+  {
+   "kind": "pill",
+   "from": "Haken:",
+   "to": "Als@34-0.15",
+   "text": "HAKEN",
+   "y": 900
+  },
+  {
+   "kind": "pill",
+   "from": "Impressum+0.15",
+   "to": "Als@34-0.15",
+   "text": "IMPRESSUM ?",
+   "y": 1040,
+   "color": "gold"
+  },
+  {
+   "kind": "pill",
+   "from": "Datenschutzerklärung+0.75",
+   "to": "Als@34-0.15",
+   "text": "DATENSCHUTZ ?",
+   "y": 1180,
+   "color": "gold"
+  },
+  {
+   "kind": "partners",
+   "from": "Haken:-0.12",
+   "to": "Als@34-0.3",
+   "keys": [
+    {
+     "at": -1,
+     "place": "off"
+    }
+   ],
+   "cards": [
+    {
+     "name": " "
+    },
+    {
+     "name": " "
+    }
+   ],
+   "proof": {
+    "src": "firma-ep/tag10/shots/handy-hook.png",
+    "srcW": 828,
+    "sx": 0,
+    "sy": 0,
+    "sw": 828,
+    "sh": 1351,
+    "w": 360,
+    "y": 235,
+    "at": "Haken:-0.12",
+    "to": "Als@34-0.3"
+   }
+  }
+ ],
+ "bot": {
+  "hops": [
+   [
+    "das@1.8",
+    0.5
+   ],
+   [
+    "KI@2",
+    0.4
+   ],
+   [
+    "Tage",
+    0.5
+   ],
+   [
+    "führt?",
+    0.45
+   ],
+   [
+    "führt?+0.5",
+    0.35
+   ]
+  ]
+ },
+ "sfx": [
+  {
+   "t": 0.03,
+   "f": "public/sirtoken/sfx-ui-pop.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Umsatz-0.22",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Umsatz+0.04",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.4
+  },
+  {
+   "t": "macht",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Unternehmen",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "das@1.8",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "KI",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "100",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "ganz@3.5-0.06",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "alleine",
+   "f": "sfx/heygen/extra/stamp-clack.mp3",
+   "v": 0.42
+  },
+  {
+   "t": "führt",
+   "f": "public/sirtoken/sfx-bump.mp3",
+   "v": 0.3
+  },
+  {
+   "t": 4.72,
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.15
+  },
+  {
+   "t": "Ich@5-0.05",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "probier",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "aus@5.8",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Logo@11.5",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Logo@11.5+0.35",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.3
+  },
+  {
+   "t": "Block",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Logo@15.5-0.1",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "anhängen",
+   "f": "sfx/heygen/variants/pop-low.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Bitte",
+   "f": "sfx/heygen/variants/tick.mp3",
+   "v": 0.16
+  },
+  {
+   "t": "Startseite",
+   "f": "public/sirtoken/sfx-typing.mp3",
+   "v": 0.14
+  },
+  {
+   "t": "fürs-0.1",
+   "f": "sfx/heygen/variants/click-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "fürs",
+   "f": "sfx/heygen/whoosh-quick.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "Handy",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Handy:end",
+   "f": "sfx/heygen/variants/whoosh-quick-high.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Bestellknopf",
+   "f": "public/sirtoken/sfx-click.mp3",
+   "v": 0.28
+  },
+  {
+   "t": "Bestellknopf+0.15",
+   "f": "public/sirtoken/sfx-check.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Mehr-0.05",
+   "f": "sfx/heygen/whoosh-short.mp3",
+   "v": 0.18
+  },
+  {
+   "t": "ersten",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Haken-0.08",
+   "f": "public/sirtoken/sfx-whoosh-quick.mp3",
+   "v": 0.2
+  },
+  {
+   "t": "Haken",
+   "f": "sfx/heygen/extra/page-turn.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "Impressum",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.25
+  },
+  {
+   "t": "Datenschutzerklärung+0.6",
+   "f": "sfx/heygen/variants/pop-high.mp3",
+   "v": 0.22
+  },
+  {
+   "t": "online",
+   "f": "public/sirtoken/sfx-stamp.mp3",
+   "v": 0.35
+  }
+ ]
+}
